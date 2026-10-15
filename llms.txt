@@ -1,22 +1,28 @@
 # ToolRank
 
-> Editorial rankings of AI tools by use case. Last updated 2026-10-15. Rankings are editorial; featured placements are labelled. Launch offer: free for the first 100 tools (including featured placement); after that, free listing plus paid options at founding prices.
+> Confused by AI? Editorial rankings of AI tools by use case. Last updated 2026-10-15. Rankings are editorial; featured placements are labelled. Launch offer: free for the first 100 tools (including featured placement); after that, free listing plus paid options at founding prices.
 
 ## Categories
 
 
-Audiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). 227 tools ranked; 0 approved user reviews.
+Audiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). 264 tools ranked across 16 categories; 0 approved user reviews.
 
-- [Best for vibe coding](https://toolrank.io/best/vibe-coding/): Describe an app in plain English, get a working app. #1: Lovable.
-- [Best coding assistants](https://toolrank.io/best/coding-assistants/): AI pair programmers for working developers. #1: Cursor.
-- [Best for video](https://toolrank.io/best/video/): Generate and edit video with AI. #1: Runway.
-- [Best agent builder](https://toolrank.io/best/agent-builders/): Build AI agents and multi-step workflows. #1: n8n.
-- [Best for image generation](https://toolrank.io/best/image/): Create and edit images from prompts. #1: Midjourney.
-- [Best for writing](https://toolrank.io/best/writing/): Drafting, editing and long-form writing. #1: Claude.
-- [Best for research & search](https://toolrank.io/best/research/): Answer engines and research assistants. #1: Perplexity.
-- [Best for voice & audio](https://toolrank.io/best/voice-audio/): Speech, voice cloning, music and audio editing. #1: ElevenLabs.
-- [Best for productivity & automation](https://toolrank.io/best/productivity/): Automate work and get more done. #1: Zapier.
-- [Best for crypto & Web3](https://toolrank.io/best/crypto/): On-chain research, AI trading assistants, wallet security, portfolio and tax tools. #1: Nansen.
+- [AI Assistants](https://toolrank.io/best/ai-assistants/): General-purpose AI chat assistants for everyday questions, writing and thinking. 6 tools; #1: ChatGPT.
+- [Coding & App Building](https://toolrank.io/best/coding/): Build apps from a prompt, or code faster with AI pair programmers and agents. 48 tools; #1: Cursor.
+- [Image & Design](https://toolrank.io/best/image/): Create and edit images, graphics and designs from prompts. 19 tools; #1: Midjourney.
+- [Video & Animation](https://toolrank.io/best/video/): Generate, edit, caption and translate video with AI. 27 tools; #1: Runway.
+- [Writing & Content](https://toolrank.io/best/writing/): Drafting, editing, rewriting and long-form writing. 11 tools; #1: Grammarly.
+- [Voice & Audio](https://toolrank.io/best/voice-audio/): Speech, voice cloning, dictation, music and audio editing. 21 tools; #1: ElevenLabs.
+- [Automation & Agents](https://toolrank.io/best/automation/): Automate workflows and build AI agents, no-code or in code. 29 tools; #1: Zapier.
+- [Research & Productivity](https://toolrank.io/best/research/): Answer engines, research assistants, notes, meetings and planning. 29 tools; #1: Perplexity.
+- [Marketing & Sales](https://toolrank.io/best/marketing/): Marketing copy, social content, prospecting and CRM AI. 7 tools; #1: Jasper.
+- [Business & Data](https://toolrank.io/best/business/): AI for workplace suites, databases, meetings and enterprise teams. 9 tools; #1: Microsoft 365 Copilot.
+- [Restaurants & Bars](https://toolrank.io/best/restaurants/): AI phone hosts, voice ordering, marketing and kitchen waste tracking for venues. 7 tools; #1: Slang.ai.
+- [Hospitality & Travel](https://toolrank.io/best/hospitality/): AI trip planners for travellers and guest-messaging and revenue AI for hotels. 7 tools; #1: Mindtrip.
+- [Crypto & Web3](https://toolrank.io/best/crypto/): On-chain research, AI trading assistants, wallet security, portfolio and tax tools. 25 tools; #1: Nansen.
+- [Education & Learning](https://toolrank.io/best/education/): AI tutors, language learning and classroom tools for teachers. 6 tools; #1: Khanmigo.
+- [Health & Fitness](https://toolrank.io/best/health/): AI workout coaching, sleep and recovery insights, symptom checks and wellbeing. 6 tools; #1: Fitbod.
+- [Gaming](https://toolrank.io/best/gaming/): Make games and game assets with AI, or play AI-driven stories. 7 tools; #1: Rosebud AI.
 
 ## Optional
 

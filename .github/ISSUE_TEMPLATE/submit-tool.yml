@@ -16,15 +16,22 @@ body:
     attributes:
       label: Category
       options:
-        - "Best for vibe coding"
-        - "Best coding assistants"
-        - "Best for video"
-        - "Best agent builder"
-        - "Best for image generation"
-        - "Best for writing"
-        - "Best for research & search"
-        - "Best for voice & audio"
-        - "Best for productivity & automation"
+        - "AI Assistants"
+        - "Coding & App Building"
+        - "Image & Design"
+        - "Video & Animation"
+        - "Writing & Content"
+        - "Voice & Audio"
+        - "Automation & Agents"
+        - "Research & Productivity"
+        - "Marketing & Sales"
+        - "Business & Data"
+        - "Restaurants & Bars"
+        - "Hospitality & Travel"
+        - "Crypto & Web3"
+        - "Education & Learning"
+        - "Health & Fitness"
+        - "Gaming"
         - "Other / new category"
     validations: {required: true}
   - type: input
