@@ -19,6 +19,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: GoatCounter connectivity (status only)
+        run: |
+          for u in https://toolrank.goatcounter.com/ https://www.goatcounter.com/; do
+            echo "$u -> $(curl -sS -o /dev/null -m 20 -w '%{http_code} tls=%{ssl_verify_result} ip=%{remote_ip}' "$u" 2>&1 | tail -c 200)"
+          done
+        continue-on-error: true
       - name: Build site (fetches approved reviews)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

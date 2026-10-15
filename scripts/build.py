@@ -167,7 +167,16 @@ def clicks():
                     if attempt == 2 or e.code < 500 and e.code != 429: raise
                 except Exception as e:
                     print(f"WARN clicks: {type(e).__name__}: {getattr(e, 'reason', e)!r} (attempt {attempt})", file=sys.stderr)
-                    if attempt == 2: raise
+                    if attempt == 2:
+                        # Fallback: system curl (different TLS stack). Token goes via stdin config, never argv or logs.
+                        import subprocess
+                        cfg = f'header = "Authorization: Bearer {tok}"\nheader = "Content-Type: application/json"\nheader = "Accept: application/json"\n'
+                        cp_ = subprocess.run(["curl", "-sS", "--http1.1", "-m", "30", "-A", "Mozilla/5.0 (compatible; ToolRankBuild/1.0; +https://toolrank.io)",
+                                              "-K", "-", "-w", "\n%{http_code}", rq.full_url], input=cfg, capture_output=True, text=True)
+                        body, _, code = cp_.stdout.rpartition("\n")
+                        print(f"clicks: curl fallback exit {cp_.returncode}, HTTP {code or 'none'} {cp_.stderr.strip()[:200]}", file=sys.stderr)
+                        if cp_.returncode or code != "200": raise
+                        status = 200; d = json.loads(body); break
                 time.sleep(5)
             hits += d.get("hits") or []; seen += [h["path_id"] for h in d.get("hits") or []]
             if not d.get("more"): break
