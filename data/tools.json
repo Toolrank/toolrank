@@ -56,7 +56,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "ide",
+      "code editor"
+     ]
     },
     {
      "name": "Claude Code",
@@ -92,7 +96,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "ide",
+      "code editor"
+     ]
     }
    ]
   },
@@ -108,7 +116,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "video editing",
+      "video generation"
+     ]
     },
     {
      "name": "Google Veo",
@@ -126,7 +138,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "text to video",
+      "image to video"
+     ]
     },
     {
      "name": "Luma AI",
@@ -135,7 +151,10 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "text to video"
+     ]
     },
     {
      "name": "HeyGen",
@@ -144,7 +163,12 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "avatar",
+      "translation",
+      "dubbing"
+     ]
     },
     {
      "name": "Sora",
@@ -153,7 +177,10 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "tags": [
+      "text to video"
+     ]
     }
    ]
   },
@@ -169,7 +196,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "automation",
+      "self-hosted"
+     ]
     },
     {
      "name": "LangGraph",
@@ -230,7 +261,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "tags": [
+      "text in images",
+      "logo"
+     ]
     },
     {
      "name": "Black Forest Labs (FLUX)",
@@ -248,7 +283,12 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "vector",
+      "icons",
+      "logo"
+     ]
     },
     {
      "name": "Krea",
@@ -291,7 +331,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "grammar",
+      "proofreading"
+     ]
     },
     {
      "name": "Sudowrite",
@@ -334,7 +378,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "podcast",
+      "audio overview"
+     ]
     },
     {
      "name": "Elicit",
@@ -368,7 +416,12 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "text to speech",
+      "voice cloning",
+      "dubbing"
+     ]
     },
     {
      "name": "Suno",
@@ -377,7 +430,10 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "music"
+     ]
     },
     {
      "name": "Udio",
@@ -386,7 +442,10 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "music"
+     ]
     },
     {
      "name": "Descript",
@@ -395,7 +454,13 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "video editing",
+      "podcast",
+      "transcription",
+      "screen recording"
+     ]
     },
     {
      "name": "Wispr Flow",
@@ -404,7 +469,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "dictation",
+      "speech to text"
+     ]
     }
    ]
   },
@@ -420,7 +489,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "automation",
+      "integrations"
+     ]
     },
     {
      "name": "Make",
@@ -429,7 +502,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "automation",
+      "integrations"
+     ]
     },
     {
      "name": "Notion AI",
@@ -447,7 +524,11 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "tags": [
+      "presentations",
+      "slides"
+     ]
     }
    ]
   }
