@@ -115,5 +115,11 @@ def main():
     F.append(f"\n## New this week (as of {N['updated']})\n")
     F += [f"- {n['date']} {n['title']} ({n['type']}): {n['summary']} {n['url']}" for n in sorted(N["items"], key=lambda n: n["date"], reverse=True)]
     (ROOT/"llms-full.txt").write_text("\n".join(F) + "\n")
+    import hashlib
+    V = {a: hashlib.sha1((ROOT/"assets"/a).read_bytes()).hexdigest()[:8] for a in ("app.js", "style.css")}
+    for h in ROOT.rglob("*.html"):
+        s = h.read_text(); n = re.sub(r'(assets/(app\.js|style\.css))(\?v=[0-9a-f]+)?"', lambda m: f'{m.group(1)}?v={V[m.group(2)]}"', s)
+        if n != s: h.write_text(n)
+    print(f"cache-bust: app.js?v={V['app.js']} style.css?v={V['style.css']}")
     print(f"built {len(cats)} category pages, sitemap ({len(urls)} urls), robots, llms.txt, llms-full.txt")
 if __name__ == "__main__": main()

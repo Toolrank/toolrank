@@ -20,10 +20,11 @@ function render(){const qt=toks($("#q").value),p=$("#price").value;sel=$("#cat")
   pk=pk.sort((a,b)=>b.s-a.s||a.r-b.r).slice(0,6);
   h=`<section class="wrap"><p class="muted">No exact match, closest picks:</p><div class="grid">${pk.map(card).join("")}</div><p class="muted">Missing a tool? <a href="/submit.html">Submit a tool</a> (free).</p></section>`}
  $("#cats").innerHTML=h}
-fetch("data/tools.json").then(r=>r.json()).then(d=>{D=d;$("#upd").textContent=d.updated;
+fetch("data/tools.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{D=d;$("#upd").textContent=d.updated;
  d.categories.forEach(c=>{$("#cat").add(new Option(c.title,c.id));$("#chips").insertAdjacentHTML("beforeend",`<span class="chip" data-id="${c.id}">${esc(c.title.replace(/^Best (for )?/,""))}</span>`)});
  $("#chips").onclick=e=>{const id=e.target.dataset.id;if(id==null)return;$("#cat").value=sel===id?"":id;render()};
  const uq=new URLSearchParams(location.search).get("q");if(uq)$("#q").value=uq;
- ["q","cat","price"].forEach(i=>$("#"+i).oninput=render);render()});
-fetch("data/new-this-week.json").then(r=>r.json()).then(d=>{$("#newlist").innerHTML=d.items.sort((a,b)=>b.date.localeCompare(a.date)).map(n=>`<article class="card"><span class="date">${esc(n.date)} · ${esc(n.type)}</span><h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p><a class="go" href="${esc(n.url)}" target="_blank" rel="noopener">Read: ${esc(n.title)} →</a></article>`).join("")});
+ ["q","cat","price"].forEach(i=>$("#"+i).oninput=render);
+ $("#sf").onsubmit=e=>{e.preventDefault();render();$("#q").blur();$("#cats").scrollIntoView({behavior:"smooth",block:"start"})};render()});
+fetch("data/new-this-week.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{$("#newlist").innerHTML=d.items.sort((a,b)=>b.date.localeCompare(a.date)).map(n=>`<article class="card"><span class="date">${esc(n.date)} · ${esc(n.type)}</span><h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p><a class="go" href="${esc(n.url)}" target="_blank" rel="noopener">Read: ${esc(n.title)} →</a></article>`).join("")});
 $("#nl").onsubmit=e=>{e.preventDefault();$("#nlmsg").textContent="Thanks! (placeholder — no signup was sent)"};
