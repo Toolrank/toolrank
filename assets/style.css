@@ -142,3 +142,5 @@ body>section.hero:not(.home):not(.sub):not(.cathero){padding-top:56px}
 @media(max-width:560px){.nlf{flex-direction:column}.nl .btn{width:100%}}
 body:has(.nl-home) .nl-foot{display:none}
 @media(max-width:560px){.nl input{flex:none;width:100%}}
+.nlf{flex:0 0 auto;max-width:none}.nl-compact .nlf .btn{width:100%}
+@media(max-width:560px){.nlf{width:100%}}
