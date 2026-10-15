@@ -269,8 +269,13 @@ def rel(t): return "noopener" + (" sponsored" if t.get("affiliate_url") else "")
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Sora:wght@600;700;800&amp;display=swap">')
+MENU = [("/#browse", "Categories"), ("/#trending", "Trending"), ("/compare/", "Compare"), ("/methodology/", "How we rank"), ("/reviews.html", "Reviews"), ("/services.html", "For makers"), ("/submit.html", "Submit a tool")]
 NAV = (f'<header class="top"><div class="bar">{LOGO}<nav aria-label="Main"><a href="/#browse">Categories</a><a href="/#trending">Trending</a>'
-       f'<a href="/compare/">Compare</a><a href="/reviews.html">Reviews</a><a href="/services.html" class="hm">For makers</a><a class="btn sm" href="/submit.html">Submit a tool</a></nav></div></header>')
+       f'<a href="/compare/">Compare</a><a href="/methodology/">How we rank</a><a href="/reviews.html">Reviews</a><a href="/services.html" class="hm">For makers</a><a class="btn sm" href="/submit.html">Submit a tool</a></nav>'
+       '<div class="mnav"><a class="cpill" href="/compare/">Compare</a><button type="button" class="hb" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><span></span><span></span><span></span></button></div></div>'
+       '<nav id="mmenu" class="mmenu" aria-label="Mobile" hidden>' + "".join(f'<a href="{h}">{l}</a>' for h, l in MENU) + '</nav>'
+       '<script>(function(){var b=document.querySelector(".hb"),m=document.getElementById("mmenu");if(!b)return;function s(o){b.setAttribute("aria-expanded",o);b.setAttribute("aria-label",o?"Close menu":"Open menu");m.hidden=!o;document.documentElement.classList.toggle("mopen",o)}'
+       'b.onclick=function(){s(m.hidden)};m.addEventListener("click",function(e){if(e.target.closest("a"))s(false)});addEventListener("keydown",function(e){if(e.key==="Escape"&&!m.hidden){s(false);b.focus()}})})()</script></header>')
 def FOOT_():
     cl = "".join(f'<a href="/best/{c["id"]}/">{E(c["title"])}</a>' for c in D["categories"])
     return (f'<footer class="foot"><div class="wrap"><div class="fg"><div class="fl">{LOGO}<p class="muted">Confused by AI? We&rsquo;ll find the right tool for you. Editorial rankings, updated <time datetime="{UPD}">{UPD}</time>.</p></div>'
@@ -469,7 +474,7 @@ def new_html():
             + "".join(one(n) for n in its) + '</div></div></section>')
 
 def FRESH():
-    return '<p class="fresh"><span class="fl0">Fresh comparisons:</span>' + ''.join(f'<a class="chip" href="/compare/{k}/">{E(cmp_title(ids))}</a>' for k, ids in COMPARES) + '<a href="/methodology/">How we rank →</a></p>'
+    return '<p class="fresh"><span class="fl0">Fresh comparisons:</span>' + ''.join(f'<a class="chip" href="/compare/{k}/">{E(cmp_title(ids))}</a>' for k, ids in COMPARES) + '<a class="btn" href="/compare/">Compare any tools →</a><a href="/methodology/">How we rank →</a></p>'
 def home(cats):
     tiles = "".join(tile(c) for c in cats)
     body = f"""<section class="hero home"><div class="wrap hw">
@@ -687,6 +692,13 @@ Promise.all([fetch("/data/tools.json").then(r=>r.json()),fetch("/data/reviews.js
 """
 
 EV_CSS = """
+.mnav{display:none;align-items:center;gap:10px}.cpill{background:var(--grad);color:#fff!important;font-weight:700;font-size:14px;padding:8px 16px;border-radius:99px;box-shadow:0 4px 16px #7c5cff55}
+.hb{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:#ffffff0a;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}.hb span{width:18px;height:2px;background:#fff;border-radius:2px;transition:transform .2s,opacity .2s}
+.hb[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.hb[aria-expanded=true] span:nth-child(2){opacity:0}.hb[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mmenu{display:flex;flex-direction:column;padding:8px 16px 18px;border-top:1px solid var(--line);background:#0b0d12f2}.mmenu[hidden]{display:none}.mmenu a{color:var(--txt);font:600 17px var(--hf);padding:13px 4px;border-bottom:1px solid #ffffff0d}.mmenu a:last-child{border:0;margin-top:10px;text-align:center;background:var(--grad);border-radius:99px;color:#fff}
+@media(max-width:760px){.top nav[aria-label=Main]{display:none}.mnav{display:flex}.top .mmenu a{display:block!important;color:var(--txt)}.fresh .chip{display:block;width:100%;box-sizing:border-box}.top .mmenu{align-items:stretch;text-align:left}.top .mmenu a:last-child{text-align:center}}@media(min-width:761px){.mmenu{display:none!important}}
+.fresh .btn{padding:9px 16px;font-size:14px}
+@media(max-width:760px){.fresh{flex-direction:column;align-items:stretch;background:linear-gradient(135deg,#7c5cff1f,#22d3ee12);border:1px solid #7c5cff55;border-radius:20px;padding:16px;margin-top:22px}.fresh .chip{text-align:center;padding:10px 12px;font-size:15px}.fresh .btn{width:100%}.fresh .fl0{color:#fff;font:700 16px var(--hf)}}
 .nv{color:#fbbf24;font-size:.92em;font-weight:500}.yes{color:#4ade80;font-weight:600}.no{color:#f87171;font-weight:600}
 .evd{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:4px 0;font-size:14px}.evd dt{color:var(--mut);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;padding-top:2px}.evd dd{margin:0;color:#d6dae3}
 .acts{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:auto;font-size:14px}.acts a{color:var(--mut);font-weight:600}.acts a:hover{color:#fff}.acts .go{margin-left:auto;color:var(--acc2)}
@@ -726,7 +738,8 @@ def patch(fn, block, extra=None):
     s = re.sub(r'<link rel="preconnect".*?display=swap">', "", s)
     s = re.sub(r'<header class="top">.*?</header>', lambda m: NAV, s, flags=re.S)
     s = re.sub(r'<footer.*?</footer>', lambda m: FOOT, s, flags=re.S)
-    s = s.replace('<link rel="stylesheet" href="/assets/style.css', FONTS + '<link rel="stylesheet" href="/assets/style.css', 1)
+    s = re.sub(r'<link rel="stylesheet" href="/assets/ev\.css[^"]*">', "", s)
+    s = re.sub(r'(<link rel="stylesheet" href="/assets/style\.css[^"]*">)', lambda m: FONTS + m.group(1) + '<link rel="stylesheet" href="/assets/ev.css">', s, count=1)
     if extra: s = extra(s)
     p.write_text(s)
 
