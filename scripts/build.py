@@ -278,9 +278,9 @@ NAV = (f'<header class="top"><div class="bar">{LOGO}<nav aria-label="Main"><a hr
        'b.onclick=function(){s(m.hidden)};m.addEventListener("click",function(e){if(e.target.closest("a"))s(false)});addEventListener("keydown",function(e){if(e.key==="Escape"&&!m.hidden){s(false);b.focus()}})})()</script></header>')
 NL_URL = "https://tools-newsletter-8ee4fe.beehiiv.com/subscribe"
 def NL(cls="", hid="nl"):
-    return (f'<form class="nl {cls}" action="{NL_URL}" method="get" target="_blank" rel="noopener" onsubmit="var e=this.email.value.trim();window.open(\'{NL_URL}\'+(e?\'?email=\'+encodeURIComponent(e):\'\'),\'_blank\',\'noopener\');return false">'
+    return (f'<form class="nl {cls}" action="{NL_URL}" method="get" target="_blank" rel="noopener" onsubmit="window.open(\'{NL_URL}\',\'_blank\',\'noopener\');return false">'
             f'<div class="nlt"><h2 id="{hid}-h">Get the weekly ToolRank brief</h2><p>New AI tools, verified price changes and fresh comparisons. One email a week. Unsubscribe anytime.</p></div>'
-            f'<div class="nlf"><label class="sr" for="{hid}-e">Email address</label><input id="{hid}-e" name="email" type="email" required autocomplete="email" placeholder="you@example.com" aria-labelledby="{hid}-h"><button type="submit" class="btn">Subscribe</button></div></form>')
+            f'<div class="nlf"><label class="sr" for="{hid}-e">Email address</label><input id="{hid}-e" type="email" required autocomplete="email" placeholder="you@example.com" aria-labelledby="{hid}-h"><button type="submit" class="btn">Subscribe</button></div></form>')
 def FOOT_():
     cl = "".join(f'<a href="/best/{c["id"]}/">{E(c["title"])}</a>' for c in D["categories"])
     return (f'<footer class="foot"><div class="wrap">{NL("nl-foot", "nlf")}<div class="fg"><div class="fl">{LOGO}<p class="muted">Confused by AI? We&rsquo;ll find the right tool for you. Editorial rankings, updated <time datetime="{UPD}">{UPD}</time>.</p></div>'
