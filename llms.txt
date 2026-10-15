@@ -5,7 +5,7 @@
 ## Categories
 
 
-Audiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). 202 tools ranked; 0 approved user reviews.
+Audiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). 227 tools ranked; 0 approved user reviews.
 
 - [Best for vibe coding](https://toolrank.io/best/vibe-coding/): Describe an app in plain English, get a working app. #1: Lovable.
 - [Best coding assistants](https://toolrank.io/best/coding-assistants/): AI pair programmers for working developers. #1: Cursor.
@@ -16,6 +16,7 @@ Audiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and de
 - [Best for research & search](https://toolrank.io/best/research/): Answer engines and research assistants. #1: Perplexity.
 - [Best for voice & audio](https://toolrank.io/best/voice-audio/): Speech, voice cloning, music and audio editing. #1: ElevenLabs.
 - [Best for productivity & automation](https://toolrank.io/best/productivity/): Automate work and get more done. #1: Zapier.
+- [Best for crypto & Web3](https://toolrank.io/best/crypto/): On-chain research, AI trading assistants, wallet security, portfolio and tax tools. #1: Nansen.
 
 ## Optional
 

@@ -259,6 +259,37 @@ Page: https://toolrank.io/best/productivity/
 21. Zapier Agents (freemium; audience: business): Zapier's no-code AI agents across 8,000 apps. https://zapier.com/agents
 22. coucou (freemium; audience: business): Tiny Mac-notch/iPhone companion that keeps an eye on your AI coding agents. New open-source launch on GitHub. https://louis-cfm.github.io/coucou/
 
+## Best for crypto & Web3
+
+On-chain research, AI trading assistants, wallet security, portfolio and tax tools.
+Page: https://toolrank.io/best/crypto/
+
+1. Nansen (freemium; audience: both): On-chain analytics with labelled wallets, smart-money tracking and an AI research assistant. https://www.nansen.ai
+2. Arkham (free; audience: both): On-chain intelligence platform that links wallets to entities and tracks fund flows. https://intel.arkm.com
+3. Messari (freemium; audience: both): Crypto research, asset data and AI-powered market intelligence. https://messari.io
+4. Dune (freemium; audience: both): SQL dashboards and data APIs over blockchain data, with AI query assistance. https://dune.com
+5. Kaito (freemium; audience: both): AI-powered crypto search and social mindshare analytics. https://www.kaito.ai
+6. Token Metrics (freemium; audience: consumer): AI-driven crypto token ratings, indices and trading signals. https://www.tokenmetrics.com
+7. Santiment (freemium; audience: both): On-chain, social and development-activity metrics for crypto assets. https://santiment.net
+8. Glassnode (freemium; audience: both): On-chain market intelligence for Bitcoin, Ethereum and other assets. https://glassnode.com
+9. Surf (freemium; audience: consumer): AI research assistant built for crypto questions and on-chain data. https://asksurf.ai
+10. Elfa AI (freemium; audience: consumer): AI social-intelligence feed that surfaces trending crypto narratives for traders. https://www.elfa.ai
+11. ChainGPT (freemium; audience: both): AI models and tools for Web3: crypto chatbot, smart-contract generator and auditor. https://www.chaingpt.org
+12. Bankr (freemium; audience: consumer): AI agent that trades and manages crypto through chat, including on X and Farcaster. https://bankr.bot
+13. Virtuals Protocol (free; audience: consumer): Platform for launching and co-owning tokenised AI agents onchain. https://www.virtuals.io
+14. Scam Sniffer (free; audience: both): Browser extension and feeds that flag crypto phishing and wallet-drainer sites. https://www.scamsniffer.io
+15. Blockaid (paid; audience: business): Web3 security platform that simulates and screens transactions for wallets and dApps. https://www.blockaid.io
+16. GoPlus Security (freemium; audience: business): Token and address risk-detection APIs used by wallets and exchanges. https://gopluslabs.io
+17. De.Fi (freemium; audience: consumer): DeFi app with a smart-contract risk scanner, portfolio dashboard and yield explorer. https://de.fi
+18. Zerion (free; audience: consumer): Multi-chain self-custody wallet and portfolio tracker. https://zerion.io
+19. DeBank (free; audience: consumer): Multi-chain DeFi portfolio tracker with a social layer. https://debank.com
+20. CoinStats (freemium; audience: consumer): Crypto portfolio tracker across exchanges and wallets, with AI insights. https://coinstats.app
+21. Koinly (freemium; audience: both): Crypto tax calculator that imports exchanges and wallets and produces tax reports. https://koinly.io
+22. CoinTracker (freemium; audience: both): Crypto tax and portfolio tracking for individuals and businesses. https://www.cointracker.io
+23. 3Commas (freemium; audience: consumer): Automated crypto trading bots and terminal connected to major exchanges. https://3commas.io
+24. Cryptohopper (freemium; audience: consumer): Cloud crypto trading bot with strategy designer and AI tools. https://www.cryptohopper.com
+25. Chainalysis (paid; audience: business): Blockchain analytics for compliance, investigations and fraud prevention. https://www.chainalysis.com
+
 ## New this week (as of 2026-10-15)
 
 - 2026-10-15 morluto/rea (github): GitHub weekly trending: reverse-engineer apps down to native binaries with agents. https://github.com/morluto/rea

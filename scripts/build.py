@@ -3,7 +3,7 @@
 Outputs: best/<category>/index.html, sitemap.xml, robots.txt, llms.txt, llms-full.txt,
 and refreshes the <!--SEO--> head block + pre-rendered directory in index.html / featured.html.
 BASE is a PLACEHOLDER until the live domain is chosen: change it and rerun."""
-import json, re, html, pathlib, os, sys, urllib.request, urllib.parse
+import json, re, html, pathlib, os, sys, urllib.request, urllib.parse, urllib.error
 BASE = "https://toolrank.io"  # PLACEHOLDER base URL
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 D = json.loads((ROOT/"data/tools.json").read_text())
@@ -83,6 +83,85 @@ def stats_html():
             + ('' if n else ' · <a href="/reviews.html">Be the first to review</a>') + '</span></div><!--/STATS-->')
 CTA = (f'<section class="wrap"><div class="cta"><div><h2>Using AI tools? Leave a review.</h2><p>Help builders and businesses pick the right AI tool.</p></div>'
        f'<a class="btn" href="{E(REVIEW_NEW)}" target="_blank" rel="noopener">Leave a Review</a></div></section>')
+
+# ---- Trending: real public momentum signals only (GitHub stars delta vs stored snapshots; HN stories via Algolia). Refreshed at most every 20h.
+import time, datetime as dt
+def _get(url, gh=False):
+    h = {"User-Agent": "toolrank-build"}
+    tok = os.environ.get("GITHUB_TOKEN")
+    if gh: h["Accept"] = "application/vnd.github+json"; h.update({"Authorization": f"Bearer {tok}"} if tok else {})
+    return json.loads(urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=30).read())
+def gh_repo(u):
+    m = re.match(r"https://github\.com/([^/]+/[^/#?]+)", u)
+    return m.group(1).removesuffix(".git") if m and not m.group(1).startswith(("features/", "orgs/", "topics/")) else None
+def hn_key(t):
+    r = gh_repo(t["url"])
+    if r: return "github.com/" + r
+    pu = urllib.parse.urlparse(t["url"]); return (pu.netloc.removeprefix("www.") + pu.path).rstrip("/")
+def momentum():
+    tp, hp = ROOT/"data/trending.json", ROOT/"data/stars-history.json"
+    old = json.loads(tp.read_text()) if tp.exists() else None
+    if old and not os.environ.get("TRENDING_FORCE") and time.time() - old.get("fetched_ts", 0) < 20*3600: return old
+    try:
+        now = dt.datetime.now(dt.timezone.utc); today = now.strftime("%Y-%m-%d"); tools = [t for c in D["categories"] for t in c["tools"]]
+        hist = json.loads(hp.read_text()) if hp.exists() else {}
+        snap = {}
+        for t in tools:
+            r = gh_repo(t["url"])
+            if r and r not in snap:
+                try: snap[r] = _get(f"https://api.github.com/repos/{r}", gh=True)["stargazers_count"]
+                except urllib.error.HTTPError as e:
+                    if e.code != 404: raise
+                    print(f"WARN trending: repo {r} not found (404)", file=sys.stderr)
+        hist[today] = snap
+        hist = {k: hist[k] for k in sorted(hist)[-30:]}
+        base_day = max([k for k in hist if k <= (now - dt.timedelta(days=7)).strftime("%Y-%m-%d")], default=min(hist))
+        stars = []
+        for t in tools:
+            r = gh_repo(t["url"])
+            if r and r in snap and r in hist[base_day] and base_day != today:
+                stars.append({"tool": t["name"], "repo": r, "gained": snap[r] - hist[base_day][r], "stars": snap[r], "url": t["url"]})
+        stars = sorted([x for x in stars if x["gained"] > 0], key=lambda x: -x["gained"])[:10]
+        keys = {}
+        for t in tools: keys.setdefault(hn_key(t), []).append(t["name"])
+        generic = {"github.com", "google.com", "chatgpt.com", "gemini.google.com", "openai.com", "microsoft.com", "aws.amazon.com", "adobe.com", "anthropic.com"}
+        since = int((now - dt.timedelta(days=7)).timestamp()); hn = []
+        for k, names in keys.items():
+            if len(names) > 1 or k in generic: continue
+            d = _get("https://hn.algolia.com/api/v1/search_by_date?" + urllib.parse.urlencode(
+                {"query": k, "restrictSearchableAttributes": "url", "tags": "story", "numericFilters": f"created_at_i>{since}", "hitsPerPage": 50}))
+            hits = [h for h in d["hits"] if k in (h.get("url") or "")]
+            if hits:
+                top = max(hits, key=lambda h: h.get("points") or 0)
+                hn.append({"tool": names[0], "stories": len(hits), "points": sum(h.get("points") or 0 for h in hits),
+                           "top_title": top.get("title"), "top_url": f"https://news.ycombinator.com/item?id={top['objectID']}"})
+            time.sleep(0.05)
+        hn = sorted(hn, key=lambda x: (-x["points"], -x["stories"]))[:10]
+        out = {"fetched": now.strftime("%Y-%m-%d %H:%M UTC"), "fetched_ts": int(now.timestamp()), "stars_baseline": base_day if base_day != today else None,
+               "repos_tracked": len(snap), "stars": stars, "hn": hn}
+        hp.write_text(json.dumps(hist, indent=1, sort_keys=True) + "\n"); tp.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n")
+        print(f"trending: {len(snap)} repos snapshotted (baseline {out['stars_baseline']}), {len(stars)} gaining, {len(hn)} with HN stories")
+        return out
+    except Exception as e:
+        print(f"WARN trending fetch failed ({e}); keeping previous data", file=sys.stderr)
+        return old or {"fetched": None, "stars_baseline": None, "repos_tracked": 0, "stars": [], "hn": []}
+TR = momentum()
+def trending_html():
+    T = TR
+    if T["stars"]:
+        sb = "".join(f'<li><a href="{E(x["url"])}" target="_blank" rel="noopener">{E(x["tool"])}</a> <span class="up">+{x["gained"]:,}★</span> <span class="muted">({x["stars"]:,} total)</span></li>' for x in T["stars"])
+        sb = f'<ol class="tl">{sb}</ol>'
+    elif T.get("stars_baseline"):
+        sb = '<p class="muted">No tracked repo gained stars in this window.</p>'
+    else:
+        sb = f'<p class="muted">Tracking {T.get("repos_tracked", 0)} GitHub repos. First snapshot taken {E(str(T.get("fetched") or "soon"))}; star gains appear after the next daily update.</p>'
+    hb = (f'<ol class="tl">' + "".join(f'<li><a href="{E(x["top_url"])}" target="_blank" rel="noopener nofollow">{E(x["tool"])}</a> <span class="up">{x["points"]} pts</span> <span class="muted">· {x["stories"]} stor{"ies" if x["stories"] != 1 else "y"}</span></li>' for x in T["hn"]) + '</ol>') \
+        if T["hn"] else '<p class="muted">No Hacker News stories linking to ranked tools in the last 7 days.</p>'
+    base = f'since {T["stars_baseline"]}' if T.get("stars_baseline") else "last 7 days"
+    return (f'<!--TREND--><section id="trending" class="wrap"><h2>🔥 Trending this week</h2><p class="muted small">Real public signals, refreshed daily{" (last update " + E(T["fetched"]) + ")" if T.get("fetched") else ""}. Not paid, not editorial rank.</p>'
+            f'<div class="grid"><article class="card"><h3>GitHub stars gained</h3><span class="tag">Source: GitHub API, {base}</span>{sb}</article>'
+            f'<article class="card"><h3>Hacker News buzz</h3><p class="muted small">Stories linking to a ranked tool, by points.</p><span class="tag">Source: HN Algolia API, last 7 days</span>{hb}</article>'
+            f'<article class="card"><h3>ToolRank visitor trends</h3><span class="tag">Coming soon</span><p class="muted">ToolRank visitor trends coming soon: most-clicked tools from privacy-friendly, cookieless analytics.</p></article></div></section><!--/TREND-->')
 
 def short(c): return re.sub(r"^Best (for )?", "", c["title"])
 def link(t): return t.get("affiliate_url") or t["url"]
@@ -233,6 +312,7 @@ def main():
         s = s.replace('<a href="index.html"', '<a href="/"')
         s = re.sub(r"<!--STATS-->.*?<!--/STATS-->", lambda m: stats_html(), s, flags=re.S)
         s = re.sub(r"<!--CTA-->.*?<!--/CTA-->", lambda m: "<!--CTA-->" + CTA + "<!--/CTA-->", s, flags=re.S)
+        s = re.sub(r"<!--TREND-->.*?<!--/TREND-->", lambda m: trending_html(), s, flags=re.S)
         s = re.sub(r"<!--MAKERS-->.*?<!--/MAKERS-->", lambda m: makers_html(), s, flags=re.S)
         return s
     patch("index.html", head("ToolRank: the best AI tools ranked by use case (" + UPD[:4] + ")",

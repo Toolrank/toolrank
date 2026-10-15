@@ -1,11 +1,11 @@
 const $=s=>document.querySelector(s);let D,sel="",RV={},tab="you";
 const REVIEW_NEW="https://github.com/Toolrank/toolrank/issues/new?template=review.yml";
 const slug=n=>n.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
-const YOU_CATS=new Set(["vibe-coding","video","image","writing","research","voice-audio"]);
+const YOU_CATS=new Set(["vibe-coding","video","image","writing","research","voice-audio","crypto"]);
 const inTab=(t,c)=>tab==="you"?YOU_CATS.has(c.id)&&t.audience!=="business":tab==="business"?(!YOU_CATS.has(c.id)||t.audience!=="consumer"):true;
-const TAG={you:"Consumer and creator tools: video, image, writing, voice, research and vibe coding.",business:"B2B and developer tools: coding assistants, agent builders, productivity and automation.",makers:"Built an AI tool? Get listed free, collect reviews, get featured."};
+const TAG={you:"Consumer and creator tools: video, image, writing, voice, research, vibe coding and crypto.",business:"B2B and developer tools: coding assistants, agent builders, productivity and automation.",makers:"Built an AI tool? Get listed free, collect reviews, get featured."};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const SYN={edit:"edit",edits:"edit",editing:"edit",editor:"edit",editors:"edit",video:"video",videos:"video",code:"code",coding:"code",coder:"code",image:"image",images:"image",photo:"image",photos:"image",picture:"image",voice:"voice",audio:"voice",speech:"voice",agent:"agent",agents:"agent",agentic:"agent",write:"write",writing:"write",writer:"write",writers:"write"};
+const SYN={edit:"edit",edits:"edit",editing:"edit",editor:"edit",editors:"edit",video:"video",videos:"video",code:"code",coding:"code",coder:"code",image:"image",images:"image",photo:"image",photos:"image",picture:"image",voice:"voice",audio:"voice",speech:"voice",agent:"agent",agents:"agent",agentic:"agent",write:"write",writing:"write",writer:"write",writers:"write",crypto:"crypto",cryptocurrency:"crypto",cryptocurrencies:"crypto",bitcoin:"crypto",btc:"crypto",eth:"crypto",ethereum:"crypto",web3:"crypto",blockchain:"crypto",defi:"crypto",nft:"crypto",nfts:"crypto",token:"crypto",tokens:"crypto",wallet:"crypto",wallets:"crypto",onchain:"crypto"};
 const STOP=new Set(["a","an","the","for","and","or","to","of","with","in","on","ai","tool","tools","best"]);
 const stem=w=>SYN[w]||w.replace(/(ing|ers|er|es|s)$/,"").replace(/(.)\1$/,"$1")||w;
 const toks=s=>String(s).toLowerCase().split(/[^a-z0-9]+/).filter(w=>w&&!STOP.has(w)).map(stem);

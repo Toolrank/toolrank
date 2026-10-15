@@ -2792,6 +2792,506 @@
      "audience": "business"
     }
    ]
+  },
+  {
+   "id": "crypto",
+   "title": "Best for crypto & Web3",
+   "blurb": "On-chain research, AI trading assistants, wallet security, portfolio and tax tools.",
+   "tools": [
+    {
+     "name": "Nansen",
+     "url": "https://www.nansen.ai",
+     "verdict": "On-chain analytics with labelled wallets, smart-money tracking and an AI research assistant.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "analytics",
+      "onchain",
+      "defi",
+      "research",
+      "wallet",
+      "cryptocurrency"
+     ],
+     "audience": "both"
+    },
+    {
+     "name": "Arkham",
+     "url": "https://intel.arkm.com",
+     "verdict": "On-chain intelligence platform that links wallets to entities and tracks fund flows.",
+     "pricing": "free",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "bot-blocked (403), known official domain",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "analytics",
+      "onchain",
+      "research",
+      "wallet",
+      "cryptocurrency"
+     ],
+     "audience": "both"
+    },
+    {
+     "name": "Messari",
+     "url": "https://messari.io",
+     "verdict": "Crypto research, asset data and AI-powered market intelligence.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "rate-limited (429), known official domain",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "research",
+      "analytics",
+      "token",
+      "cryptocurrency"
+     ],
+     "audience": "both"
+    },
+    {
+     "name": "Dune",
+     "url": "https://dune.com",
+     "verdict": "SQL dashboards and data APIs over blockchain data, with AI query assistance.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "analytics",
+      "onchain",
+      "data",
+      "defi",
+      "cryptocurrency"
+     ],
+     "audience": "both"
+    },
+    {
+     "name": "Kaito",
+     "url": "https://www.kaito.ai",
+     "verdict": "AI-powered crypto search and social mindshare analytics.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "research",
+      "search",
+      "social",
+      "token",
+      "cryptocurrency"
+     ],
+     "audience": "both"
+    },
+    {
+     "name": "Token Metrics",
+     "url": "https://www.tokenmetrics.com",
+     "verdict": "AI-driven crypto token ratings, indices and trading signals.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "trading",
+      "research",
+      "bitcoin",
+      "token",
+      "cryptocurrency"
+     ],
+     "audience": "consumer"
+    },
+    {
+     "name": "Santiment",
+     "url": "https://santiment.net",
+     "verdict": "On-chain, social and development-activity metrics for crypto assets.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "analytics",
+      "onchain",
+      "social",
+      "trading",
+      "cryptocurrency"
+     ],
+     "audience": "both"
+    },
+    {
+     "name": "Glassnode",
+     "url": "https://glassnode.com",
+     "verdict": "On-chain market intelligence for Bitcoin, Ethereum and other assets.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "bot-blocked (403), known official domain",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "analytics",
+      "onchain",
+      "bitcoin",
+      "ethereum",
+      "cryptocurrency"
+     ],
+     "audience": "both"
+    },
+    {
+     "name": "Surf",
+     "url": "https://asksurf.ai",
+     "verdict": "AI research assistant built for crypto questions and on-chain data.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "research",
+      "ai assistant",
+      "onchain",
+      "cryptocurrency"
+     ],
+     "audience": "consumer"
+    },
+    {
+     "name": "Elfa AI",
+     "url": "https://www.elfa.ai",
+     "verdict": "AI social-intelligence feed that surfaces trending crypto narratives for traders.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "trading",
+      "social",
+      "research",
+      "cryptocurrency"
+     ],
+     "audience": "consumer"
+    },
+    {
+     "name": "ChainGPT",
+     "url": "https://www.chaingpt.org",
+     "verdict": "AI models and tools for Web3: crypto chatbot, smart-contract generator and auditor.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "smart contract",
+      "defi",
+      "nft",
+      "developer",
+      "cryptocurrency"
+     ],
+     "audience": "both"
+    },
+    {
+     "name": "Bankr",
+     "url": "https://bankr.bot",
+     "verdict": "AI agent that trades and manages crypto through chat, including on X and Farcaster.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "trading",
+      "agent",
+      "wallet",
+      "defi",
+      "cryptocurrency"
+     ],
+     "audience": "consumer"
+    },
+    {
+     "name": "Virtuals Protocol",
+     "url": "https://www.virtuals.io",
+     "verdict": "Platform for launching and co-owning tokenised AI agents onchain.",
+     "pricing": "free",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "agent",
+      "token",
+      "defi",
+      "cryptocurrency"
+     ],
+     "audience": "consumer"
+    },
+    {
+     "name": "Scam Sniffer",
+     "url": "https://www.scamsniffer.io",
+     "verdict": "Browser extension and feeds that flag crypto phishing and wallet-drainer sites.",
+     "pricing": "free",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "security",
+      "wallet",
+      "scam",
+      "phishing",
+      "cryptocurrency"
+     ],
+     "audience": "both"
+    },
+    {
+     "name": "Blockaid",
+     "url": "https://www.blockaid.io",
+     "verdict": "Web3 security platform that simulates and screens transactions for wallets and dApps.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "security",
+      "wallet",
+      "scam",
+      "developer",
+      "cryptocurrency"
+     ],
+     "audience": "business"
+    },
+    {
+     "name": "GoPlus Security",
+     "url": "https://gopluslabs.io",
+     "verdict": "Token and address risk-detection APIs used by wallets and exchanges.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "security",
+      "token",
+      "scam",
+      "api",
+      "cryptocurrency"
+     ],
+     "audience": "business"
+    },
+    {
+     "name": "De.Fi",
+     "url": "https://de.fi",
+     "verdict": "DeFi app with a smart-contract risk scanner, portfolio dashboard and yield explorer.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "defi",
+      "security",
+      "portfolio",
+      "scam",
+      "cryptocurrency"
+     ],
+     "audience": "consumer"
+    },
+    {
+     "name": "Zerion",
+     "url": "https://zerion.io",
+     "verdict": "Multi-chain self-custody wallet and portfolio tracker.",
+     "pricing": "free",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "wallet",
+      "portfolio",
+      "defi",
+      "nft",
+      "ethereum",
+      "cryptocurrency"
+     ],
+     "audience": "consumer"
+    },
+    {
+     "name": "DeBank",
+     "url": "https://debank.com",
+     "verdict": "Multi-chain DeFi portfolio tracker with a social layer.",
+     "pricing": "free",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "portfolio",
+      "defi",
+      "wallet",
+      "cryptocurrency"
+     ],
+     "audience": "consumer"
+    },
+    {
+     "name": "CoinStats",
+     "url": "https://coinstats.app",
+     "verdict": "Crypto portfolio tracker across exchanges and wallets, with AI insights.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "portfolio",
+      "bitcoin",
+      "wallet",
+      "tracker",
+      "cryptocurrency"
+     ],
+     "audience": "consumer"
+    },
+    {
+     "name": "Koinly",
+     "url": "https://koinly.io",
+     "verdict": "Crypto tax calculator that imports exchanges and wallets and produces tax reports.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "tax",
+      "portfolio",
+      "bitcoin",
+      "cryptocurrency"
+     ],
+     "audience": "both"
+    },
+    {
+     "name": "CoinTracker",
+     "url": "https://www.cointracker.io",
+     "verdict": "Crypto tax and portfolio tracking for individuals and businesses.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "redirects to cointracker.com, 403 to bots, known official domain",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "tax",
+      "portfolio",
+      "bitcoin",
+      "cryptocurrency"
+     ],
+     "audience": "both"
+    },
+    {
+     "name": "3Commas",
+     "url": "https://3commas.io",
+     "verdict": "Automated crypto trading bots and terminal connected to major exchanges.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "trading",
+      "bot",
+      "bitcoin",
+      "cryptocurrency"
+     ],
+     "audience": "consumer"
+    },
+    {
+     "name": "Cryptohopper",
+     "url": "https://www.cryptohopper.com",
+     "verdict": "Cloud crypto trading bot with strategy designer and AI tools.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "trading",
+      "bot",
+      "bitcoin",
+      "cryptocurrency"
+     ],
+     "audience": "consumer"
+    },
+    {
+     "name": "Chainalysis",
+     "url": "https://www.chainalysis.com",
+     "verdict": "Blockchain analytics for compliance, investigations and fraud prevention.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "crypto",
+      "web3",
+      "blockchain",
+      "compliance",
+      "analytics",
+      "security",
+      "onchain",
+      "cryptocurrency"
+     ],
+     "audience": "business"
+    }
+   ]
   }
  ]
 }
