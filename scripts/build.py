@@ -104,7 +104,7 @@ def main():
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Perplexity-User", "Google-Extended", "Googlebot", "Bingbot", "Applebot", "Applebot-Extended"]
     (ROOT/"robots.txt").write_text("# ToolRank: search engines and AI crawlers are welcome.\n" + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) +
                                    f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
-    L = [f"# ToolRank\n\n> Editorial rankings of AI tools by use case. Last updated {UPD}. Rankings are editorial; featured placements are labelled and paid.\n\n## Categories\n"]
+    L = [f"# ToolRank\n\n> Editorial rankings of AI tools by use case. Last updated {UPD}. Rankings are editorial; featured placements are labelled. Launch offer: free for the first 100 tools (including featured placement); after that, free listing plus paid options at founding prices.\n\n## Categories\n"]
     L += [f"- [{c['title']}]({BASE}/best/{c['id']}/): {c['blurb']} #1: {c['tools'][0]['name']}." for c in cats]
     L += [f"\n## Optional\n\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n"]
     (ROOT/"llms.txt").write_text("\n".join(L))

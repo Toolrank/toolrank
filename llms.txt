@@ -1,6 +1,6 @@
 # ToolRank
 
-> Editorial rankings of AI tools by use case. Last updated 2026-10-15. Rankings are editorial; featured placements are labelled and paid.
+> Editorial rankings of AI tools by use case. Last updated 2026-10-15. Rankings are editorial; featured placements are labelled. Launch offer: free for the first 100 tools (including featured placement); after that, free listing plus paid options at founding prices.
 
 ## Categories
 
