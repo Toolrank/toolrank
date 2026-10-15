@@ -10,7 +10,11 @@ D = json.loads((ROOT/"data/tools.json").read_text())
 N = json.loads((ROOT/"data/new-this-week.json").read_text())
 UPD = D["updated"]; E = html.escape
 LOGO = '<a class="logo" href="/"><img class="mark" src="/assets/logo.svg" alt="" width="46" height="28">Tool<b>Rank</b></a>'
-ORG = {"@type": "Organization", "@id": BASE+"/#org", "name": "ToolRank", "url": BASE+"/"}
+SAMEAS = []  # official ToolRank social/profile URLs; left empty until the owner provides handles
+ORG_DESC = "ToolRank publishes editorial rankings and side-by-side comparisons of AI tools by use case, with pricing and limits checked against vendor pages."
+ORG = {"@type": "Organization", "@id": BASE+"/#org", "name": "ToolRank", "url": BASE+"/", "description": ORG_DESC,
+       "logo": {"@type": "ImageObject", "url": BASE+"/assets/icon-512.png", "width": 512, "height": 512},
+       "publishingPrinciples": BASE+"/methodology/", "sameAs": SAMEAS}
 SITE = {"@type": "WebSite", "@id": BASE+"/#website", "name": "ToolRank", "url": BASE+"/", "publisher": {"@id": BASE+"/#org"},
         "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": BASE+"/?q={search_term_string}"},
                             "query-input": "required name=search_term_string"}}
@@ -254,8 +258,31 @@ def trend_art(i):
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">{d}{v}</svg>'
 
 def domain(u): return urllib.parse.urlparse(u).netloc.removeprefix("www.")
+LOGO_DIR = ROOT/"assets/logos"
+def ensure_logos():
+    """Cache each tool's favicon locally (assets/logos/<slug>.png) so pages never hotlink a third-party icon service.
+    Fetched once per tool; Google's service answers unknown domains with a 404 + generic globe PNG, which we keep as the icon."""
+    LOGO_DIR.mkdir(parents=True, exist_ok=True); got = 0
+    for s, t in TOOLS.items():
+        f = LOGO_DIR/f"{s}.png"
+        if f.exists(): continue
+        u = f"https://www.google.com/s2/favicons?domain={urllib.parse.quote(domain(t['url']))}&sz=64"
+        try: b = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read()
+        except urllib.error.HTTPError as e: b = e.read()
+        except Exception: continue
+        if b[:8] != b"\x89PNG\r\n\x1a\n":  # some domains come back as JPEG/ICO: convert to PNG if Pillow is available
+            try:
+                import io
+                from PIL import Image
+                o = io.BytesIO(); Image.open(io.BytesIO(b)).convert("RGBA").save(o, "PNG"); b = o.getvalue()
+            except Exception: continue
+        f.write_bytes(b); got += 1
+    return got
+def logo_src(t): return f"/assets/logos/{slug(t['name'])}.png"
 def logo_html(t, size=40):
-    return (f'<span class="lg" data-l="{E(t["name"][:1].upper())}" aria-hidden="true"><img src="https://www.google.com/s2/favicons?domain={E(domain(t["url"]))}&amp;sz=64" '
+    if not (LOGO_DIR/f"{slug(t['name'])}.png").exists():
+        return f'<span class="lg" data-l="{E(t["name"][:1].upper())}" aria-hidden="true"></span>'
+    return (f'<span class="lg" data-l="{E(t["name"][:1].upper())}" aria-hidden="true"><img src="{logo_src(t)}" '
             f'alt="" width="{size}" height="{size}" loading="lazy" decoding="async" onerror="this.remove()"></span>')
 def tool_card(t, i, h="h3"):
     return (f'<article class="card tool" id="{slug(t["name"])}"><div class="th">{logo_html(t)}<div class="tt"><{h}><span class="rank">#{i}</span>{E(t["name"])}</{h}>'
@@ -267,8 +294,29 @@ def short(c): return c["title"]
 def link(t): return t.get("affiliate_url") or t["url"]
 def rel(t): return "noopener" + (" sponsored" if t.get("affiliate_url") else "")
 
-FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Sora:wght@600;700;800&amp;display=swap">')
+# Self-hosted, subsetted fonts (latin + common punctuation), variable weight axis clipped to the weights we use.
+FONT_SRC = {"inter": ("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2", 400, 700),
+            "sora": ("https://fonts.gstatic.com/s/sora/v17/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-x.woff2", 600, 800)}
+FONT_UNI = "U+0020-007E,U+00A0-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2032-2033,U+20AC,U+2122,U+2190-2193,U+2212"
+def ensure_fonts():
+    """Download + subset fonts into assets/fonts/ once (needs fontTools + brotli). Skips if files exist."""
+    d = ROOT/"assets/fonts"; d.mkdir(parents=True, exist_ok=True)
+    for name, (u, lo, hi) in FONT_SRC.items():
+        out = d/f"{name}.woff2"
+        if out.exists(): continue
+        import io
+        from fontTools.ttLib import TTFont
+        from fontTools.varLib import instancer
+        from fontTools import subset
+        f = TTFont(io.BytesIO(urllib.request.urlopen(u, timeout=30).read()), lazy=False)
+        if "fvar" in f:
+            f = instancer.instantiateVariableFont(f, {"wght": (lo, hi)}); buf = io.BytesIO(); f.save(buf); buf.seek(0); f = TTFont(buf, lazy=False)
+        opt = subset.Options(); opt.flavor = "woff2"; opt.layout_features = ["kern", "liga", "calt", "tnum"]; opt.name_IDs = ["*"]
+        sb = subset.Subsetter(opt); sb.populate(unicodes=subset.parse_unicodes(FONT_UNI)); sb.subset(f)
+        f.flavor = "woff2"; f.save(str(out))
+FONTS = ('<!--FONTS--><link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/sora.woff2" as="font" type="font/woff2" crossorigin>'
+         '<style>' + "".join(f'@font-face{{font-family:{fam};font-style:normal;font-weight:{lo} {hi};font-display:swap;src:url(/assets/fonts/{n}.woff2) format("woff2");unicode-range:{FONT_UNI}}}'
+                             for n, fam, lo, hi in (("inter", "Inter", 400, 700), ("sora", "Sora", 600, 800))) + '</style><!--/FONTS-->')
 MENU = [("/#browse", "Categories"), ("/#trending", "Trending"), ("/compare/", "Compare"), ("/methodology/", "How we rank"), ("/reviews.html", "Reviews"), ("/services.html", "For makers"), ("/submit.html", "Submit a tool")]
 NAV = (f'<header class="top"><div class="bar">{LOGO}<nav aria-label="Main"><a href="/#browse">Categories</a><a href="/#trending">Trending</a>'
        f'<a href="/compare/">Compare</a><a href="/methodology/">How we rank</a><a href="/reviews.html">Reviews</a><a href="/services.html" class="hm">For makers</a><a class="btn sm" href="/submit.html">Submit a tool</a></nav>'
@@ -283,11 +331,27 @@ def NL(cls="", hid="nl"):
 def FOOT_():
     cl = "".join(f'<a href="/best/{c["id"]}/">{E(c["title"])}</a>' for c in D["categories"])
     return (f'<footer class="foot"><div class="wrap">{NL("nl-foot", "nlf")}<div class="fg"><div class="fl">{LOGO}<p class="muted">Confused by AI? We&rsquo;ll find the right tool for you. Editorial rankings, updated <time datetime="{UPD}">{UPD}</time>.</p></div>'
-            f'<nav class="fc2" aria-label="Categories">{cl}</nav><nav class="fc2" aria-label="ToolRank"><a href="/methodology/">How we rank</a><a href="/compare/">Compare tools</a><a href="/claim/">Claim your listing</a><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/llms.txt">llms.txt</a></nav></div>'
+            f'<nav class="fc2" aria-label="Categories">{cl}</nav><nav class="fc2" aria-label="ToolRank"><a href="/about/">About</a><a href="/methodology/">How we rank</a><a href="/compare/">Compare tools</a><a href="/claim/">Claim your listing</a><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/llms.txt">llms.txt</a></nav></div>'
             f'<p class="si-tag small">ToolRank · Super Intelligence, ranked.</p><p class="muted small">© {UPD[:4]} ToolRank. Some links may become affiliate links; featured placements are labelled. Reviews are user-submitted via GitHub and moderated; they never change the editorial rank.</p></div></footer>')
 FOOT = FOOT_()
+def fit_title(*cands):
+    """First candidate of 60 chars or fewer; else the last one cut at a word boundary."""
+    for c in cands:
+        if len(c) <= 60: return c
+    c = cands[-1].removesuffix(" | ToolRank")
+    return c if len(c) <= 60 else c[:59].rsplit(" ", 1)[0].rstrip(",:;&-") + "…"
+def dot(x): x = (x or "").strip(); return x if not x or x[-1] in ".!?…" else x + "."
+def fit_desc(*sents):
+    """Join sentences in priority order, keeping the result within 70-160 chars."""
+    out = ""
+    for x in (dot(x) for x in sents if x):
+        if len(x) > 160 and not out: x = x[:159].rsplit(" ", 1)[0].rstrip(",:;") + "…"
+        c = (out + " " + x).strip()
+        if len(c) <= 160: out = c
+    if len(out) < 70: out = (out + " Editorial AI tool rankings with sources, by ToolRank.").strip()
+    return out
 def head(title, desc, path, ld, otype="website"):
-    url = BASE + path
+    url = BASE + path; title = fit_title(title); desc = desc if 70 <= len(desc) <= 160 else fit_desc(desc)
     return f"""<!--SEO--><title>{E(title)}</title><meta name="description" content="{E(desc)}">
 <link rel="canonical" href="{url}"><meta name="robots" content="index,follow,max-snippet:-1"><meta name="theme-color" content="#0b1220"><meta name="color-scheme" content="dark">
 <meta property="og:type" content="{otype}"><meta property="og:site_name" content="ToolRank"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}">
@@ -298,19 +362,47 @@ def doc(headblock, body, extra_head=""):
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n{headblock}{FONTS}'
             f'<link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/ev.css">{extra_head}</head><body>\n{NAV}\n{body}\n{FOOT}</body></html>\n')
 
-def tool_ld(t, c, i):
-    o = {"@type": "SoftwareApplication", "name": t["name"], "url": t["url"], "description": t["verdict"], "applicationCategory": "AI tool: " + c["title"]}
-    if t["pricing"] in ("free", "freemium"):
-        o["offers"] = {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": t["pricing"] + " (free tier available)"}
-    n, a = rstat(t)
-    if n: o["aggregateRating"] = {"@type": "AggregateRating", "ratingValue": a, "reviewCount": n, "bestRating": 5, "worstRating": 1}
+APPCAT = {"ai-assistants": "UtilitiesApplication", "coding": "DeveloperApplication", "image": "DesignApplication", "video": "MultimediaApplication",
+          "writing": "UtilitiesApplication", "voice-audio": "MultimediaApplication", "automation": "BusinessApplication", "research": "ReferenceApplication",
+          "marketing": "BusinessApplication", "business": "BusinessApplication", "restaurants": "BusinessApplication", "hospitality": "BusinessApplication",
+          "crypto": "FinanceApplication", "education": "EducationalApplication", "health": "HealthApplication", "gaming": "GameApplication"}
+CUR = {"$": "USD", "€": "EUR", "£": "GBP"}
+def offers_ld(t):
+    """Offers from verified pricing_detail only (free tier and/or the starting paid price as listed by the vendor). Never ratings."""
+    if not verified(t): return None
+    p = PD(t); out = []; src = next((x["url"] for x in t.get("sources", [])), t["url"])
+    if p.get("free_tier"): out.append({"@type": "Offer", "name": "Free plan", "price": "0", "priceCurrency": "USD", "description": p["free_tier"][:300], "url": src})
+    m = re.search(r"(?<![A-Za-z])([$€£])\s?([0-9][0-9,]*(?:\.[0-9]+)?)", p.get("starting_price") or "")
+    if m: out.append({"@type": "Offer", "name": "Starting paid plan", "price": m.group(2).replace(",", ""), "priceCurrency": CUR[m.group(1)], "description": p["starting_price"], "url": src})
+    return out or None
+def app_ld(t, c, desc):
+    o = {"@type": "SoftwareApplication", "name": t["name"], "url": t["url"], "description": desc, "applicationCategory": APPCAT.get(c["id"], "UtilitiesApplication"), "applicationSubCategory": c["title"]}
+    if t.get("platforms"): o["operatingSystem"] = ", ".join(t["platforms"])
+    of = offers_ld(t)
+    if of: o["offers"] = of if len(of) > 1 else of[0]
     return o
+def tool_ld(t, c, i): return app_ld(t, c, t["verdict"])
+def sp_txt(t): return PD(t).get("starting_price") if verified(t) else ""
+def andl(xs): return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " and " + xs[-1]
+def cat_summary(c):
+    """Answer-first summary for a /best/ page: editorial rank + vendor-verified facts only."""
+    ts = c["tools"]; t1 = ts[0]
+    s = [f"Our top pick for {c['title']} is {t1['name']}: {dot(t1['verdict'])}"]
+    if len(ts) > 2: s.append(f"Also ranked: #2 {ts[1]['name']} and #3 {ts[2]['name']}.")
+    pr = [f"{t['name']} from {sp_txt(t)}" for t in ts[:3] if sp_txt(t)]
+    if pr: s.append("Verified starting prices: " + "; ".join(pr) + ".")
+    fr = [t["name"] for t in ts if verified(t) and PD(t).get("free_tier")]
+    if fr: s.append(f"{andl(fr)} {'has' if len(fr) == 1 else 'have'} a free plan confirmed on the vendor's pricing page.")
+    s.append(f"{len(ts)} tools ranked; updated {fmt_date(CHECK_DATE)}.")
+    return " ".join(s)
 def faqs(c):
-    ts = c["tools"]; free = [t["name"] for t in ts if t["pricing"] in ("free", "freemium")]; paid = [t["name"] for t in ts if t["pricing"] == "paid"]
-    return [(f"What is the best AI tool for {c['title'].lower()} right now?", f"In ToolRank's editorial ranking (updated {UPD}), {ts[0]['name']} is ranked #1: {ts[0]['verdict']}"),
-            ("Which of these tools have a free option?",
-             (", ".join(free) + " list a free or freemium tier." if free else "None of the ranked tools are listed as free or freemium.") +
-             (" " + ", ".join(paid) + (" is" if len(paid) == 1 else " are") + " listed as paid." if paid else "") + " Pricing changes often; check each vendor's site."),
+    ts = c["tools"]; vf = [t["name"] for t in ts if verified(t) and PD(t).get("free_tier")]; vn = [t["name"] for t in ts if free_plan(t) == "no"]
+    nv = sum(1 for t in ts if not verified(t))
+    top = f"In ToolRank's editorial ranking (updated {UPD}), {ts[0]['name']} is ranked #1: {dot(ts[0]['verdict'])}" + (f" Paid plans start at {sp_txt(ts[0])} (vendor pricing page, checked {fmt_date(ts[0]['last_verified'])})." if sp_txt(ts[0]) else "")
+    free_a = ((andl(vf) + (" has" if len(vf) == 1 else " have") + " a free plan confirmed on the vendor's pricing page." if vf else "None of the tools we have verified list a free plan.") +
+              (" " + andl(vn) + " list no free plan." if vn else "") + (f" Pricing for the other {nv} tool{'s' if nv != 1 else ''} is not yet verified." if nv else "") + " Pricing changes often; check each vendor's site.")
+    return [(f"What is the best AI tool for {c['title'].lower()} right now?", top),
+            ("Which of these tools have a free plan?", free_a),
             ("How are these tools ranked?", "Rankings are editorial picks by ToolRank, ordered by position in the list. Featured placements are paid, clearly labelled and do not change the editorial rank."),
             ("When was this list last updated?", f"{UPD}.")]
 def tile(c, cls="tile"):
@@ -318,18 +410,21 @@ def tile(c, cls="tile"):
             f'<span class="tn">{E(c["title"])}</span><span class="tc">{len(c["tools"])} tools</span></a>')
 def page(c):
     path = f"/best/{c['id']}/"; fq = faqs(c)
-    title = f"Best AI tools for {c['title']} ({UPD[:4]}): {', '.join(t['name'] for t in c['tools'][:3])} & more | ToolRank"
-    desc = f"{c['blurb']} Ranked: " + ", ".join(f"#{i} {t['name']}" for i, t in enumerate(c["tools"][:12], 1)) + f"{' and more' if len(c['tools']) > 12 else ''}. Updated {UPD}."
+    yr = UPD[:4]
+    title = fit_title(f"{c['title']}: best AI tools ({yr}) | ToolRank", f"Best {c['title']} AI tools ({yr})", f"{c['title']} ({yr}) | ToolRank")
+    desc = fit_desc(c["blurb"], "Top picks: " + ", ".join(f"#{i} {t['name']}" for i, t in enumerate(c["tools"][:3], 1)), f"Updated {fmt_date(CHECK_DATE)}")
     ld = [ORG, SITE, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ToolRank", "item": BASE+"/"},
                                                                      {"@type": "ListItem", "position": 2, "name": c["title"], "item": BASE+path}]},
           {"@type": "ItemList", "name": "Best AI tools: " + c["title"], "description": c["blurb"], "url": BASE+path, "numberOfItems": len(c["tools"]),
            "itemListOrder": "https://schema.org/ItemListOrderAscending",
            "itemListElement": [{"@type": "ListItem", "position": i, "item": tool_ld(t, c, i)} for i, t in enumerate(c["tools"], 1)]},
-          {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": a, "acceptedAnswer": {"@type": "Answer", "text": b}} for a, b in fq]}]
+          {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": a, "acceptedAnswer": {"@type": "Answer", "text": b}} for a, b in fq]},
+          {"@type": "WebPage", "@id": BASE+path, "url": BASE+path, "name": title, "dateModified": CHECK_DATE, "abstract": cat_summary(c), "publisher": {"@id": BASE+"/#org"}}]
     others = "".join(tile(o, "tile sm") for o in D["categories"] if o is not c)
     body = f"""<main><article><section class="hero cathero"><div class="wrap ch"><div><nav class="crumb" aria-label="Breadcrumb"><a href="/">ToolRank</a> › <a href="/#browse">Categories</a></nav>
 <h1>{E(c['title'])}</h1><p class="lead">{E(c['blurb'])}</p><p class="muted small">{len(c['tools'])} tools · Editorial ranking</p><p class="updl">Updated {fmt_date(CHECK_DATE)} · Rankings are editorial, never paid. <a href="/methodology/">How we rank →</a></p></div>
 <img class="chart" src="/assets/cat/{c['id']}.svg" alt="" width="400" height="400"></div></section>
+<section class="sec ans"><div class="wrap"><div class="card pick"><h2>The short answer</h2><p>{E(cat_summary(c))}</p></div></div></section>
 <section class="sec"><div class="wrap"><h2>The ranking</h2><div class="tgrid">{"".join(ev_card(t, i, c) for i, t in enumerate(c["tools"], 1))}</div></div></section>
 {cat_reviews(c)}<section class="sec faq"><div class="wrap"><h2>FAQ</h2>{''.join(f'<details><summary><h3>{E(a)}</h3></summary><p>{E(b)}</p></details>' for a, b in fq)}</div></section>
 </article><section class="sec"><div class="wrap"><h2>More categories</h2><div class="tiles">{others}</div></div></section></main>"""
@@ -417,11 +512,11 @@ FOOT = FOOT_().replace("</div></footer>", "</div>" + WORDMARK + "</footer>")
 def services_page():
     snippet = E('<a href="https://toolrank.io/reviews.html#YOUR-TOOL"><img src="https://toolrank.io/assets/badge.svg" alt="Rated on ToolRank" width="180" height="40"></a>')
     body = (f'<section class="hero sub"><div class="wrap"><h1>Services for AI makers</h1><p class="lead">Get found by the people choosing AI tools. Rankings stay editorial; every paid placement is labelled.</p>{OFFER}</div></section>'
-            f'<main><section class="sec"><div class="wrap"><div class="grid">{services_cards()}</div>{PAYNOTE}</div></section>'
+            f'<main><section class="sec"><div class="wrap"><h2>Services and founding prices</h2><div class="grid">{services_cards()}</div>{PAYNOTE}</div></section>'
             f'<section class="sec" id="badge"><div class="wrap"><h2>Review Boost: the \'Rated on ToolRank\' badge</h2><p class="muted">Free. Ask your users to review you, and link the badge to your reviews. Replace YOUR-TOOL with your tool\'s anchor from the <a href="/reviews.html">reviews page</a>.</p>'
             f'<p><img src="/assets/badge.svg" alt="Rated on ToolRank" width="180" height="40"></p><pre class="code">{snippet}</pre>'
             f'<p><a class="btn" href="{E(REVIEW_NEW)}" target="_blank" rel="noopener">Leave a Review</a> <a class="btn ghost" href="/submit.html">Submit your tool</a></p></div></section></main>')
-    return doc(head("Services for AI makers: listing, reviews, featured spots | ToolRank", "Free listing and Review Boost for AI tools, plus founding prices for verified badges, featured spots, launch spotlights, Launch Kit, AI Stack Audit and comparison pages.", "/services.html", [ORG, SITE]), body)
+    return doc(head("Services for AI makers: listings & featured spots | ToolRank", "Free listing and Review Boost for AI tools, plus founding prices for verified badges, featured spots, launch spotlights and comparison pages.", "/services.html", [ORG, SITE]), body)
 def makers_html():
     return (f'<section class="sec"><div class="wrap"><p class="eyebrow">For makers</p><h2 class="big">Built an AI tool? Get listed free.</h2><p class="muted">Collect reviews and reach people choosing tools.</p>{OFFER}'
             f'<div class="grid">{services_cards()}</div>{PAYNOTE}<p><a href="/services.html">All services and the Review Boost badge →</a> · <a href="/featured.html">Get featured</a></p></div></section>')
@@ -482,7 +577,7 @@ def FRESH():
     return '<p class="fresh"><span class="fl0">Fresh comparisons:</span>' + ''.join(f'<a class="chip" href="/compare/{k}/">{E(cmp_title(ids))}</a>' for k, ids in COMPARES[:6]) + '<a class="btn" href="/compare/">All comparisons →</a><a href="/methodology/">How we rank →</a></p>'
 def home(cats):
     tiles = "".join(tile(c) for c in cats)
-    body = f"""<section class="hero home"><div class="wrap hw">
+    body = f"""<main id="main"><section class="hero home"><div class="wrap hw">
 <div class="seg" role="tablist" aria-label="Audience"><span class="ind" aria-hidden="true"></span><button type="button" role="tab" data-tab="you" aria-selected="true">For You</button><button type="button" role="tab" data-tab="business" aria-selected="false">For Business</button><button type="button" role="tab" data-tab="makers" aria-selected="false">For Makers</button></div>
 <p class="si-eyebrow"><span>Super Intelligence, ranked.</span></p>
 <h1>Confused by AI? <span class="gt">We&rsquo;ll find the right tool for you.</span></h1>
@@ -497,11 +592,11 @@ def home(cats):
 <section class="sec"><div class="wrap"><div class="cta big"><div><h2>Using AI tools? Leave a review.</h2><p>Help builders and businesses pick the right AI tool.</p></div><a class="btn" href="{E(REVIEW_NEW)}" target="_blank" rel="noopener">Leave a Review</a></div></div></section></div>
 <div id="makerspane" class="pane" hidden>{makers_html()}</div>
 <section class="sec"><div class="wrap">{NL("nl-home", "nlh")}</div></section>
-<script src="/assets/app.js"></script>"""
+</main><script src="/assets/app.js"></script>"""
     ild = [ORG, SITE] + [{"@type": "ItemList", "name": "Best AI tools: " + c["title"], "url": f"{BASE}/best/{c['id']}/",
                            "itemListElement": [{"@type": "ListItem", "position": i, "name": t["name"], "url": t["url"]} for i, t in enumerate(c["tools"], 1)]} for c in cats]
     return doc(head("ToolRank: the best AI tools ranked by use case (" + UPD[:4] + ")",
-                    f"Confused by AI? Editorial rankings of {NT} AI tools across {len(cats)} categories: " + ", ".join(c["title"] for c in cats) + f". Updated {UPD}.", "/", ild), body)
+                    f"Confused by AI? Editorial rankings of {NT} AI tools across {len(cats)} categories, with pricing and limits checked against vendor pages. Updated {UPD}.", "/", ild), body)
 
 # ================= Evidence layer (profiles, methodology, comparisons, claim) =================
 CHECK_DATE = "2026-10-16"
@@ -526,11 +621,16 @@ def price_num(s):
     m = re.search(r"[$€£]\s?([0-9][0-9,]*(?:\.[0-9]+)?)", s or "")
     return float(m.group(1).replace(",", "")) if m else None
 def prof(t): return f"/tools/{slug(t['name'])}/"
-def cmp_url(*ts): return "/compare/?tools=" + ",".join(slug(t["name"]) for t in ts)
+def cmp_url(*ts, static=True):
+    """Static /compare/<key>/ page when one exists for this exact set; otherwise the interactive ?tools= URL (made rel=nofollow at build end)."""
+    ids = [slug(t["name"]) for t in ts]
+    k = STATIC_CMP.get(frozenset(ids)) if static and len(ids) > 1 else None
+    return f"/compare/{k}/" if k else "/compare/?tools=" + ",".join(ids)
 CJ = json.loads((ROOT/"data/comparisons.json").read_text())["comparisons"]  # editorial comparison pages (pick + FAQ per page)
 CMP = {c["key"]: c for c in CJ}
 COMPARES = [(c["key"], c["ids"]) for c in CJ] + [(k, i) for k, i in (("lovable-vs-bolt-new", ["lovable", "bolt-new"]), ("make-vs-n8n-vs-zapier", ["make", "n8n", "zapier"])) if k not in CMP]
 CTITLE = {tuple(c["ids"]): c["title"] for c in CJ}
+STATIC_CMP = {frozenset(i): k for k, i in COMPARES}
 def cmp_title(ids): return CTITLE.get(tuple(ids)) or " vs ".join(TOOLS[i]["name"] for i in ids)
 METH_LINK = '<a href="/methodology/">How we rank →</a>'
 DISCLOSE = '<p class="muted small disc">Some links may be affiliate links. They never affect rank.</p>'
@@ -574,17 +674,16 @@ def profile_page(c, i, t):
     revs = (f'<div class="grid">{"".join(review_html(r) for r in rs)}</div>' if rs else '<p class="muted">No reviews yet.</p>') + \
            f'<p><a class="btn ghost" href="{E(review_url(t["name"]))}" target="_blank" rel="noopener">{"Write a review" if n else "Be the first to review"}</a></p>'
     claim = f"https://github.com/{REPO}/issues/new?template=claim-listing.yml&tool=" + urllib.parse.quote(t["name"])
-    o = {"@type": "SoftwareApplication", "name": t["name"], "url": t["url"], "description": t.get("why_rank") or t["verdict"], "applicationCategory": "AI tool: " + c["title"]}
-    if t.get("platforms"): o["operatingSystem"] = ", ".join(t["platforms"])
-    if p.get("free_tier"): o["offers"] = {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free tier: " + p["free_tier"]}
-    if n: o["aggregateRating"] = {"@type": "AggregateRating", "ratingValue": a, "reviewCount": n, "bestRating": 5, "worstRating": 1}
-    ld = [ORG, SITE, o, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ToolRank", "item": BASE+"/"},
+    o = app_ld(t, c, t.get("why_rank") or t["verdict"])
+    summ = tool_summary(c, i, t); fq = tool_faqs(c, i, t)
+    ld = [ORG, SITE, o, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in fq]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ToolRank", "item": BASE+"/"},
           {"@type": "ListItem", "position": 2, "name": c["title"], "item": f"{BASE}/best/{c['id']}/"}, {"@type": "ListItem", "position": 3, "name": t["name"], "item": BASE+path}]}]
     body = f"""<main class="prof"><section class="hero sub phero"><div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">ToolRank</a> › <a href="/best/{c['id']}/">{E(c['title'])}</a></nav>
 <div class="pt">{logo_html(t, 56)}<div><h1>{E(t['name'])}</h1><p class="lead">{E(t.get('job') or t['verdict'])}</p></div></div>
 <p class="pmeta"><span class="rankpill">#{i} in {E(c['title'])}</span>{'<span class="sipick">SI Pick</span>' if i == 1 else ''}<span class="tag {t['pricing']}">{t['pricing']}</span><span class="muted small">Last verified: {E(fmt_date(t['last_verified'])) if v else NV}</span></p>
 <p class="pacts"><a class="btn" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit {E(t['name'])} site →</a> <a class="btn ghost" href="{E(cmp_url(t))}">Compare</a></p>{DISCLOSE}</div></section>
 <div class="wrap pgrid"><div>
+<section class="psec ans"><div class="card pick"><h2>The short answer</h2><p>{E(summ)}</p></div></section>
 <section class="psec"><h2>Why it&rsquo;s ranked here</h2><p>{ev(t.get('why_rank'))}</p><p class="muted small">Editorial verdict: {E(t['verdict'])} {METH_LINK}</p></section>
 <section class="psec warn"><h2>Main limitation</h2><p>{ev(t.get('main_limitation'))}</p></section>
 <section class="psec"><h2>Pricing</h2>{pricing_table(t)}</section>
@@ -592,14 +691,44 @@ def profile_page(c, i, t):
 <section class="psec"><h2>Platforms &amp; integrations</h2><p class="muted small">Platforms</p><div class="chips">{chips(plats)}</div><p class="muted small">Integrations</p><div class="chips">{chips(ints)}</div>
 <p class="muted small">Model / provider: {ev(t.get('model_provider'))}</p></section>
 <section class="psec"><h2>Evidence &amp; sources</h2>{srcs}<p class="muted small">Every fact on this page comes from the sources above. Anything we could not confirm says &ldquo;Not yet verified&rdquo;.</p></section>
+<section class="psec faq" id="faq"><h2>FAQ</h2>{''.join(f'<details><summary><h3>{E(q)}</h3></summary><p>{E(a)}</p></details>' for q, a in fq)}</section>
 <section class="psec" id="reviews"><h2>Reviews</h2>{revs}</section></div>
 <aside class="pside"><div class="card"><h3>Quick facts</h3><dl class="evd"><dt>Starts at</dt><dd>{ev(p.get('starting_price'))}</dd><dt>Free plan</dt><dd>{yn(free_plan(t))}</dd><dt>Verified</dt><dd>{E(fmt_date(t['last_verified'])) if v else NV}</dd></dl>
 <a class="btn" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit site →</a>{DISCLOSE}</div>
 <div class="card"><h3>Related comparisons</h3><ul class="rlist">{relh}</ul></div>
 <div class="card"><h3>Is this your tool?</h3><p>Correct facts, add a demo or pricing link. Free.</p><a href="{E(claim)}" target="_blank" rel="noopener">Claim it free →</a> <a class="muted small" href="/claim/">How claiming works</a></div>{NL("nl-compact", "nlc")}</aside></div></main>"""
-    title = f"{t['name']} review, pricing & limitations ({UPD[:4]}) | ToolRank"
-    desc = (t.get("why_rank") or t["verdict"]) + (f" Starts at {p['starting_price']}." if p.get("starting_price") else "") + f" Ranked #{i} in {c['title']} on ToolRank."
-    return doc(head(title, desc[:300], path, ld, "article"), body)
+    yr = UPD[:4]; nm = t["name"]
+    title = (fit_title(f"{nm} review: pricing & limitations ({yr}) | ToolRank", f"{nm} review, pricing & limits ({yr}) | ToolRank", f"{nm}: pricing & review ({yr}) | ToolRank", f"{nm} review ({yr}) | ToolRank")
+             if v else fit_title(f"{nm} review & ranking ({yr}) | ToolRank", f"{nm} ({yr}) | ToolRank"))
+    desc = fit_desc(t.get("why_rank") or t["verdict"], f"Starts at {p['starting_price']}" if v and p.get("starting_price") else "", f"Ranked #{i} in {c['title']} on ToolRank")
+    return doc(head(title, desc, path, ld, "article"), body)
+
+def tool_summary(c, i, t):
+    """Answer-first summary: editorial rank + verdict, then vendor-verified facts only."""
+    v = verified(t); p = PD(t); nm = t["name"]
+    s = [f"{nm} is ranked #{i} of {len(c['tools'])} in {c['title']} on ToolRank.", dot(t.get("why_rank") or t["verdict"])]
+    if v:
+        if p.get("starting_price"): s.append(f"Paid plans start at {p['starting_price']}.")
+        if p.get("free_tier"): s.append(f"Free plan: {dot(p['free_tier'])}")
+        elif free_plan(t) == "no": s.append("No free plan is listed.")
+        if t.get("best_for"): s.append(f"Best for: {dot(t['best_for'])}")
+        if t.get("main_limitation"): s.append(f"Main limitation: {dot(t['main_limitation'])}")
+        s.append(f"Facts checked against vendor pages on {fmt_date(t['last_verified'])}.")
+    else: s.append(f"Pricing and limits for {nm} are not yet verified against the vendor's own pages.")
+    return " ".join(s)
+def tool_faqs(c, i, t):
+    v = verified(t); p = PD(t); nm = t["name"]; d = fmt_date(t.get("last_verified")); out = []
+    if v:
+        sp = p.get("starting_price")
+        if p.get("free_tier"): out.append((f"Is {nm} free?", f"Yes. {nm}'s pricing page lists a free plan: {dot(p['free_tier'])} Checked {d}."))
+        elif free_plan(t) == "no": out.append((f"Is {nm} free?", f"No free plan is listed on {nm}'s pricing page (checked {d})." + (f" Paid plans start at {sp}." if sp else "")))
+        tiers = [f"{x['name']} ({x['price']})" for x in p.get("tiers", []) if re.search(r"[0-9]", x.get("price", ""))]
+        if sp or tiers: out.append((f"How much does {nm} cost?", (f"Paid plans start at {sp}. " if sp else "") + (f"Plans listed: {'; '.join(tiers)}. " if tiers else "") + f"Prices as shown on the vendor's pricing page on {d}; they can change."))
+        if t.get("best_for"): out.append((f"What is {nm} best for?", dot(t["best_for"]) + (f" Avoid it if: {dot(t['avoid_if'][:1].lower() + t['avoid_if'][1:])}" if t.get("avoid_if") else "")))
+        if t.get("main_limitation"): out.append((f"What is the main limitation of {nm}?", dot(t["main_limitation"])))
+        if t.get("platforms"): out.append((f"Which platforms does {nm} run on?", f"{andl(t['platforms'])}, per the vendor's pages (checked {d})."))
+    out.append((f"How does ToolRank rank {nm}?", f"{nm} is #{i} of {len(c['tools'])} in {c['title']}. Rankings are editorial: capability and reliability weigh more than popularity, and paid placements never change rank."))
+    return out
 
 def methodology_page():
     body = f"""<main><section class="hero sub"><div class="wrap"><h1>How we rank</h1><p class="lead">Rankings on ToolRank are editorial. They are not votes, and they are never paid for.</p></div></section>
@@ -613,6 +742,20 @@ def methodology_page():
 <h2>Vendors: correcting facts</h2><p>If something about your tool is wrong or out of date, <a href="/claim/">claim your listing</a> (free) and send the correction with a link to your pricing or docs page. We verify and update; corrections never buy a higher rank.</p>
 <p class="muted small">Last updated {fmt_date(CHECK_DATE)}.</p></div></section></main>"""
     return doc(head("How ToolRank ranks AI tools: methodology | ToolRank", "Editorial, evidence-based rankings: capability and reliability over popularity, sources and check dates on every profile, sponsorships never affect rank.", "/methodology/", [ORG, SITE]), body)
+
+def about_page():
+    nv = sum(1 for _, _, t in ALLT if verified(t))
+    body = f"""<main><section class="hero sub"><div class="wrap"><h1>About ToolRank</h1><p class="lead">{E(ORG_DESC)}</p></div></section>
+<section class="sec"><div class="wrap prose">
+<h2>What ToolRank is</h2><p>ToolRank is an independent directory of AI tools. Each category page ranks tools for one job, such as coding, image generation or customer support, so you can see which tool we think does that job best and why.</p>
+<h2>What we cover</h2><p>As of {fmt_date(CHECK_DATE)}, ToolRank ranks {NT} tools across {len(D['categories'])} categories and publishes {len(COMPARES)} head-to-head comparison pages. {nv} tool profiles have pricing, free-tier limits and platforms checked against the vendor&rsquo;s own pages, with sources and the check date listed on each profile. Profiles we have not checked yet say &ldquo;Not yet verified&rdquo; instead of guessing.</p>
+<h2>How rankings work</h2><p>Rankings are editorial. Capability and reliability on the core job weigh more than popularity. The full criteria are on <a href="/methodology/">How we rank</a>.</p>
+<h2>How ToolRank is funded</h2><p>Listing is free. Makers can buy clearly labelled placements and services, listed with prices on the <a href="/services.html">services page</a>. Some outbound links may become affiliate links. Paid placements and affiliate links never change a tool&rsquo;s rank.</p>
+<h2>Reviews and corrections</h2><p>User reviews are submitted through public GitHub issues and moderated before they appear. They are shown next to rankings but do not move them. Vendors can <a href="/claim/">claim a listing</a> for free to correct facts, with a link to their own pricing or docs page.</p>
+<h2>Contact</h2><p>The fastest way to reach us is a <a href="https://github.com/{REPO}/issues/new" target="_blank" rel="noopener">GitHub issue</a>. To suggest a tool, use <a href="/submit.html">Submit a tool</a>.</p>
+<p class="muted small">Last updated {fmt_date(CHECK_DATE)}.</p></div></section></main>"""
+    ld = [ORG, SITE, {"@type": "AboutPage", "url": BASE+"/about/", "name": "About ToolRank", "dateModified": CHECK_DATE, "about": {"@id": BASE+"/#org"}, "mainEntity": {"@id": BASE+"/#org"}}]
+    return doc(head("About ToolRank: independent AI tool rankings", "What ToolRank is, what it covers, how rankings work, how the site is funded and how to send corrections or reviews.", "/about/", ld), body)
 
 def claim_page():
     url = f"https://github.com/{REPO}/issues/new?template=claim-listing.yml"
@@ -655,10 +798,10 @@ def cmp_page(key, ids):
 <section class="sec"><div class="wrap"><div class="card pick"><h2>Who should pick which</h2><p>{cj["pick"] if cj else PICK[key]}</p></div>
 <h2>Side by side</h2>{tbl}<p class="muted small">Prices as listed by each vendor on the check date, before tax. Plans and limits change; follow the sources below.</p>
 <h2>Starting price</h2><div class="bars">{bars}</div><p class="muted small">Lowest paid plan shown on each vendor&rsquo;s pricing page, checked {fmt_date(CHECK_DATE)}. Currencies as listed.</p>
-<p><a class="btn ghost" href="{E(cmp_url(*ts))}">Open in the interactive comparer →</a></p><p class="small">Full profiles: {profs}</p>
+<p><a class="btn ghost" href="{E(cmp_url(*ts, static=False))}">Open in the interactive comparer →</a></p><p class="small">Full profiles: {profs}</p>
 {faqh}
 <h2>Sources</h2><ul class="srcs">{srcs}</ul>{relh}{DISCLOSE}{NL("nl-compact", "nlc")}</div></section></main>"""
-    ht = f"{title} ({UPD[:4]}): pricing, limits, which to pick | ToolRank"
+    yr = UPD[:4]; ht = fit_title(f"{title} ({yr}): which to pick | ToolRank", f"{title} ({yr}) | ToolRank", f"{title}: which to pick ({yr})", f"{title} | ToolRank")
     desc = f"{title} compared from vendor pages checked {fmt_date(CHECK_DATE)}: pricing, free tiers, limits, platforms and who should pick which."
     return doc(head(ht, desc, path, ld), body)
 
@@ -676,11 +819,11 @@ def compare_ui_page():
 <label>Max starting price: <b id="fpv">Any</b><input type="range" id="fprice" min="0" max="100" step="5" value="100"></label>
 <fieldset><legend>Platforms</legend><div id="fplat"></div></fieldset>
 <label class="ck"><input type="checkbox" id="fver"> Verified only</label>
-<div class="picker"><label for="fq">Add a tool</label><input id="fq" type="search" placeholder="Search tools…" autocomplete="off"><ul id="fres" role="listbox"></ul></div></aside>
-<section class="cmain" aria-live="polite"><div id="ccards" class="ccards"></div><div id="cmatrix"></div><p class="muted small">Ratings are from moderated user reviews. Some links may be affiliate links. They never affect rank.</p></section></div>{hub}</main>
+<div class="picker"><label for="fq">Add a tool</label><input id="fq" type="search" placeholder="Search tools…" autocomplete="off"><ul id="fres" aria-label="Matching tools"></ul></div></aside>
+<section class="cmain" aria-label="Comparison" aria-live="polite"><div id="ccards" class="ccards"></div><div id="cmatrix"></div><p class="muted small">Ratings are from moderated user reviews. Some links may be affiliate links. They never affect rank.</p></section></div>{hub}</main>
 <dialog id="pick" class="pick-d" aria-labelledby="pickh"><div class="pin"><div class="phd"><h2 id="pickh" class="sh3">Add a tool</h2><button type="button" id="pclose" class="pcl" aria-label="Close">×</button></div><input id="pq" type="search" placeholder="Search tools or categories…" autocomplete="off" aria-label="Search tools" autofocus><div class="pbody"><div id="pres"></div><div id="ppop"></div></div></div></dialog>
 <script src="/assets/compare.js" defer></script>"""
-    return doc(head("Compare AI tools side by side: pricing, free tiers, limits | ToolRank", "Interactive comparison of AI tools: starting price, free tier limits, platforms, integrations, best for and main limitation, from vendor pages.", "/compare/", [ORG, SITE, {"@type": "ItemList", "name": "AI tool comparisons", "itemListElement": [{"@type": "ListItem", "position": n, "name": cmp_title(ids), "url": f"{BASE}/compare/{k}/"} for n, (k, ids) in enumerate(COMPARES, 1)]}]), body)
+    return doc(head("Compare AI tools: pricing, free tiers & limits | ToolRank", "Interactive comparison of AI tools: starting price, free tier limits, platforms, integrations, best for and main limitation, from vendor pages.", "/compare/", [ORG, SITE, {"@type": "ItemList", "name": "AI tool comparisons", "itemListElement": [{"@type": "ListItem", "position": n, "name": cmp_title(ids), "url": f"{BASE}/compare/{k}/"} for n, (k, ids) in enumerate(COMPARES, 1)]}]), body)
 
 COMPARE_JS = r"""(()=>{const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const slug=n=>n.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");const NV='<span class="nv">Not yet verified</span>';
@@ -766,15 +909,16 @@ a.tl{color:inherit}a.tl:hover{color:var(--acc2)}.updl{margin:10px 0 0;font-size:
 #pq{background:var(--bg2);border:1px solid var(--line);color:var(--txt);border-radius:12px;padding:12px 14px;font:500 16px Inter}#pq:focus{outline:2px solid var(--acc);border-color:transparent}.pbody{overflow:auto}
 .ph3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin:6px 0}.plist{list-style:none;margin:0 0 8px;padding:0}.pr{display:flex;align-items:center;gap:12px;width:100%;background:none;border:0;border-radius:12px;padding:10px 8px;color:var(--txt);font:600 15px Inter;text-align:left;cursor:pointer}.pr:hover,.pr:focus-visible{background:#ffffff0d}.pr img{border-radius:6px;background:#fff}.pn{display:flex;flex-direction:column;flex:1}.pn .muted{font-weight:500}
 @media(max-width:760px){.pick-d{width:100vw;max-width:100vw;margin:auto 0 0;border-radius:22px 22px 0 0;max-height:85vh}.ccard.add{min-height:240px}}.btn.sm{padding:9px 16px;font-size:14px}
-.cwrap>*{min-width:0}.mx th[scope=row]{position:sticky;left:0;background:var(--card);z-index:1}.mx table{min-width:640px}
-@media(max-width:900px){.pgrid{grid-template-columns:1fr}.pside{position:static}.psec.bf{grid-template-columns:1fr}.cwrap{grid-template-columns:1fr}.cside{position:static;max-height:none;order:2}
+.cwrap>*{min-width:0}main p a:not([class]),main li a:not([class]){text-decoration:underline;text-underline-offset:2px}.ans .pick{margin:0}.sec.ans{padding-bottom:0}.psec.ans{border:0;padding-bottom:0}.psec.faq details{margin:8px 0}.psec.faq summary h3{display:inline;font-size:16px}
+#ccards:empty{min-height:340px}#cmatrix:empty{min-height:700px}.mx th[scope=row]{position:sticky;left:0;background:var(--card);z-index:1}.mx table{min-width:640px}
+@media(max-width:900px){.pgrid{grid-template-columns:1fr}.pside{position:static}.psec.bf{grid-template-columns:1fr}.cwrap{grid-template-columns:1fr}.cside{position:static;max-height:none;order:2}.cmain{min-height:120vh}
 .ccards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}.ccard{flex:0 0 82%;scroll-snap-align:start}.pbar{grid-template-columns:90px 1fr;}.pbar .bv{grid-column:1/-1;font-size:13px;color:var(--mut)}}
 """
 
 def patch(fn, block, extra=None):
     p = ROOT/fn; s = p.read_text()
     s = re.sub(r"<!--SEO-->.*?<!--/SEO-->", lambda m: block, s, flags=re.S)
-    s = re.sub(r'<link rel="preconnect".*?display=swap">', "", s)
+    s = re.sub(r'<link rel="preconnect".*?display=swap">', "", s); s = re.sub(r"<!--FONTS-->.*?<!--/FONTS-->", "", s, flags=re.S)
     s = re.sub(r'<header class="top">.*?</header>', lambda m: NAV, s, flags=re.S)
     s = re.sub(r'<footer.*?</footer>', lambda m: FOOT, s, flags=re.S)
     s = re.sub(r'<link rel="stylesheet" href="/assets/ev\.css[^"]*">', "", s)
@@ -806,6 +950,7 @@ def build_search_index():
 
 def main():
     cats = D["categories"]
+    ensure_fonts(); print(f"logos: fetched {ensure_logos()} new")
     (ROOT/"assets/cat").mkdir(exist_ok=True); (ROOT/"assets/trend").mkdir(exist_ok=True)
     for c in cats: (ROOT/f"assets/cat/{c['id']}.svg").write_text(cat_art(c["id"]))
     for i in range(3): (ROOT/f"assets/trend/v{i+1}.svg").write_text(trend_art(i))
@@ -813,10 +958,10 @@ def main():
         d = ROOT/"best"/c["id"]; d.mkdir(parents=True, exist_ok=True); (d/"index.html").write_text(page(c))
     for o, n in REDIRECTS.items():
         d = ROOT/"best"/o; d.mkdir(parents=True, exist_ok=True); (d/"index.html").write_text(redirect_page(o, n))
-    (ROOT/"assets/ev.css").write_text(EV_CSS); (ROOT/"assets/compare.js").write_text(COMPARE_JS)
+    (ROOT/"assets/ev.css").write_text(EV_CSS); (ROOT/"assets/compare.js").write_text(COMPARE_JS.replace("https://www.google.com/s2/favicons?domain=${esc(dom(t.url))}&amp;sz=32\" alt=\"\"", "/assets/logos/${t.s}.png\" alt=\"\" onerror=\"this.remove()\"").replace('&amp;sz=64" alt="" width="28" height="28" loading="lazy"', '&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"').replace("https://www.google.com/s2/favicons?domain=${esc(dom(t.url))}&amp;sz=64", "/assets/logos/${t.s}.png"))
     for c, i, t in ALLT:
         d = ROOT/"tools"/slug(t["name"]); d.mkdir(parents=True, exist_ok=True); (d/"index.html").write_text(profile_page(c, i, t))
-    for name, fn in (("methodology", methodology_page), ("claim", claim_page), ("compare", compare_ui_page)):
+    for name, fn in (("methodology", methodology_page), ("claim", claim_page), ("compare", compare_ui_page), ("about", about_page)):
         (ROOT/name).mkdir(exist_ok=True); (ROOT/name/"index.html").write_text(fn())
     for k, ids in COMPARES:
         (ROOT/"compare"/k).mkdir(parents=True, exist_ok=True); (ROOT/"compare"/k/"index.html").write_text(cmp_page(k, ids))
@@ -825,7 +970,7 @@ def main():
     def sub(s): return re.sub(r'(<select name="category"[^>]*>).*?(</select>)', lambda m: m.group(1) + opts + m.group(2), s, flags=re.S)
     patch("featured.html", head("Get your AI tool featured | ToolRank", "Featured placements and newsletter sponsorship on ToolRank. Featured spots are clearly labelled; rankings stay editorial.", "/featured.html", [ORG, SITE]))
     patch("submit.html", head("Submit your AI tool for free | ToolRank", "Submit your AI tool to ToolRank for free. Every submission gets an editorial review; approved tools are listed in the right category.", "/submit.html", [ORG, SITE]), sub)
-    urls = ["/", "/reviews.html", "/services.html", "/submit.html", "/featured.html", "/methodology/", "/claim/", "/compare/"] + [f"/best/{c['id']}/" for c in cats] + [f"/compare/{k}/" for k, _ in COMPARES] + [prof(t) for _, _, t in ALLT]
+    urls = ["/", "/reviews.html", "/services.html", "/submit.html", "/featured.html", "/methodology/", "/claim/", "/compare/", "/about/"] + [f"/best/{c['id']}/" for c in cats] + [f"/compare/{k}/" for k, _ in COMPARES] + [prof(t) for _, _, t in ALLT]
     (ROOT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{UPD}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Perplexity-User", "Google-Extended", "Googlebot", "Bingbot", "Applebot", "Applebot-Extended"]
@@ -835,7 +980,7 @@ def main():
     L += [f"\nAudiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). {NT} tools ranked across {len(cats)} categories; {len(R)} approved user reviews.\n"]
     L += [f"- [{c['title']}]({BASE}/best/{c['id']}/): {c['blurb']} {len(c['tools'])} tools; #1: {c['tools'][0]['name']}." for c in cats]
     def LLM_EV(): return (f"- [How we rank]({BASE}/methodology/): editorial, evidence-based; sources and check dates on every tool profile at {BASE}/tools/<slug>/.\n- [Compare tools (interactive)]({BASE}/compare/)\n" + "".join(f"- [{cmp_title(ids)}]({BASE}/compare/{k}/)\n" for k, ids in COMPARES) + f"- [Claim your listing (free)]({BASE}/claim/)\n")
-    L += [f"\n## Optional\n\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n- [Services for makers]({BASE}/services.html): free listing and Review Boost; founding prices (available now via Stripe checkout): Verified badge US$2, Featured spot US$5/mo, Launch spotlight US$9/wk, Comparison page US$15, Launch Kit US$19, AI Stack Audit US$29.\n" + LLM_EV() + f"- [Reviews]({BASE}/reviews.html): {len(R)} moderated user review(s) collected so far; leave one via GitHub.\n"]
+    L += [f"\n## Optional\n\n- [About ToolRank]({BASE}/about/)\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n- [Services for makers]({BASE}/services.html): free listing and Review Boost; founding prices (available now via Stripe checkout): Verified badge US$2, Featured spot US$5/mo, Launch spotlight US$9/wk, Comparison page US$15, Launch Kit US$19, AI Stack Audit US$29.\n" + LLM_EV() + f"- [Reviews]({BASE}/reviews.html): {len(R)} moderated user review(s) collected so far; leave one via GitHub.\n"]
     (ROOT/"llms.txt").write_text("\n".join(L))
     F = [f"# ToolRank: full rankings\n\nLast updated {UPD}. Source: {BASE}/. Editorial ranking; position 1 = top pick. Pricing labels: free / freemium / paid (as listed; verify with vendor).\n"]
     for c in cats:
@@ -858,6 +1003,7 @@ def main():
         if "shots" in h.parts or h.parent.name in REDIRECTS: continue
         s = h.read_text(); n = re.sub(r"<!--GC-->.*?<!--/GC-->", "", s, flags=re.S); n = re.sub(r"<!--PRIV-->.*?<!--/PRIV-->", "", n, flags=re.S)
         n = n.replace('<p class="muted small">©', PRIV + '<p class="muted small">©', 1).replace("</body>", GC + "</body>", 1)
+        n = re.sub(r'<a (?![^>]*\brel=)([^>]*href="/compare/\?tools=[^"]*"[^>]*)>', r'<a rel="nofollow" \1>', n)
         if 'class="hero' in n and "assets/hero.js" not in n: n = n.replace("</body>", '<script defer src="/assets/hero.js"></script></body>', 1)
         n = re.sub(r'(assets/(app\.js|style\.css|hero\.js|ev\.css|compare\.js))(\?v=[0-9a-f]+)?"', lambda m: f'{m.group(1)}?v={V[m.group(2)]}"', n)
         if n != s: h.write_text(n)

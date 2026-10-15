@@ -26,6 +26,7 @@ Audiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and de
 
 ## Optional
 
+- [About ToolRank](https://toolrank.io/about/)
 - [Full rankings](https://toolrank.io/llms-full.txt)
 - [Submit a tool (free)](https://toolrank.io/submit.html)
 - [Get featured](https://toolrank.io/featured.html)
