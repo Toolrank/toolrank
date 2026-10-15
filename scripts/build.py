@@ -157,8 +157,18 @@ def clicks():
             q = {"start": (now - dt.timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%SZ"), "end": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "limit": 100}
             if seen: q["exclude_paths"] = ",".join(map(str, seen))
             rq = urllib.request.Request("https://toolrank.goatcounter.com/api/v0/stats/hits?" + urllib.parse.urlencode(q),
-                                        headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json", "User-Agent": "toolrank-build"})
-            with urllib.request.urlopen(rq, timeout=30) as r: status = r.status; d = json.loads(r.read())
+                                        headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json", "Accept": "application/json",
+                                                 "User-Agent": "Mozilla/5.0 (compatible; ToolRankBuild/1.0; +https://toolrank.io)"})
+            for attempt in (1, 2):
+                try:
+                    with urllib.request.urlopen(rq, timeout=30) as r: status = r.status; d = json.loads(r.read()); break
+                except urllib.error.HTTPError as e:
+                    print(f"WARN clicks: GoatCounter HTTP {e.code} {e.reason} (attempt {attempt})", file=sys.stderr)
+                    if attempt == 2 or e.code < 500 and e.code != 429: raise
+                except Exception as e:
+                    print(f"WARN clicks: {type(e).__name__}: {getattr(e, 'reason', e)!r} (attempt {attempt})", file=sys.stderr)
+                    if attempt == 2: raise
+                time.sleep(5)
             hits += d.get("hits") or []; seen += [h["path_id"] for h in d.get("hits") or []]
             if not d.get("more"): break
         print(f"clicks: GoatCounter API HTTP {status}, {len(hits)} path(s) returned")
@@ -172,7 +182,7 @@ def clicks():
         out = {"fetched": now.strftime("%Y-%m-%d %H:%M UTC"), "fetched_ts": int(now.timestamp()), "window": "last 7 days", "source": "GoatCounter click/ events (unique visitors)", "top": top}
         cp.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n"); return out
     except Exception as e:
-        print(f"WARN clicks fetch failed ({type(e).__name__}: {getattr(e, 'code', '')}); keeping previous data", file=sys.stderr)
+        print(f"WARN clicks fetch failed ({type(e).__name__}: {getattr(e, 'code', '')} {getattr(e, 'reason', e)!r}); keeping previous data", file=sys.stderr)
         return old
 CL = clicks()
 def clicks_card():
@@ -385,9 +395,11 @@ def main():
         n = n.replace("</footer>", PRIV + "</footer>", 1).replace("</body>", GC + "</body>", 1)
         if n != s: h.write_text(n)
     import hashlib
-    V = {a: hashlib.sha1((ROOT/"assets"/a).read_bytes()).hexdigest()[:8] for a in ("app.js", "style.css")}
+    V = {a: hashlib.sha1((ROOT/"assets"/a).read_bytes()).hexdigest()[:8] for a in ("app.js", "style.css", "hero.js")}
     for h in ROOT.rglob("*.html"):
-        s = h.read_text(); n = re.sub(r'(assets/(app\.js|style\.css))(\?v=[0-9a-f]+)?"', lambda m: f'{m.group(1)}?v={V[m.group(2)]}"', s)
+        if "shots" in h.parts: continue
+        s = h.read_text(); s2 = s if ('class="hero' not in s or "assets/hero.js" in s) else s.replace("</body>", '<script defer src="/assets/hero.js"></script></body>', 1)
+        n = re.sub(r'(assets/(app\.js|style\.css|hero\.js))(\?v=[0-9a-f]+)?"', lambda m: f'{m.group(1)}?v={V[m.group(2)]}"', s2)
         if n != s: h.write_text(n)
     print(f"cache-bust: app.js?v={V['app.js']} style.css?v={V['style.css']}")
     print(f"built {len(cats)} category pages, sitemap ({len(urls)} urls), robots, llms.txt, llms-full.txt")
