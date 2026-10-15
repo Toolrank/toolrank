@@ -366,35 +366,36 @@ def reviews_page():
 SERVICES = [
     ("Free listing", "Free", "Get your AI tool listed in the right category after an editorial review.", "/submit.html", "Submit your tool"),
     ("Review Boost", "Free", "Invite your users to review you on ToolRank, and show an embeddable 'Rated on ToolRank' badge on your site.", "/services.html#badge", "Get the badge"),
-    ("Verified badge", "US$2", "A verified mark on your listing once we confirm you own the tool.", None, None),
-    ("Featured spot", "US$5/mo", "A clearly labelled Featured placement in your category. Editorial rank is unchanged.", None, None),
-    ("Launch spotlight", "US$9/wk", "A week at the top of New this week, labelled as a spotlight.", None, None),
-    ("Comparison page", "US$15", "A Tool vs Tool SEO page comparing your product with an alternative, written editorially.", None, None),
-    ("Launch Kit", "US$19", "Listing, a newsletter mention and an X post from ToolRank for your launch.", None, None),
-    ("AI Stack Audit", "US$29", "For teams: we recommend the best AI tools for your team's workflow.", None, None),
+    ("Verified badge", "US$2", "A verified mark on your listing once we confirm you own the tool.", "https://buy.stripe.com/3cI28r6zg9TE6x99bTbEA00", "Buy now"),
+    ("Featured spot", "US$5/mo", "A clearly labelled Featured placement in your category. Editorial rank is unchanged.", "https://buy.stripe.com/9B600j3n40j49Jl73LbEA01", "Subscribe"),
+    ("Launch spotlight", "US$9/wk", "A week at the top of New this week, labelled as a spotlight.", "https://buy.stripe.com/14A4gz4r83vgg7Jco5bEA02", "Book spotlight"),
+    ("Comparison page", "US$15", "A Tool vs Tool SEO page comparing your product with an alternative, written editorially.", "https://buy.stripe.com/fZueVdf5M9TE08LfAhbEA03", "Buy now"),
+    ("Launch Kit", "US$19", "Listing, a newsletter mention and an X post from ToolRank for your launch.", "https://buy.stripe.com/28E00j4r80j49Jl4VDbEA04", "Buy now"),
+    ("AI Stack Audit", "US$29", "For teams: we recommend the best AI tools for your team's workflow.", "https://buy.stripe.com/14A5kD7Dk4zkcVx87PbEA05", "Buy now"),
 ]
 def services_cards(limit=None):
     out = []
     for name, price, desc, href, lbl in SERVICES[:limit]:
         free = price == "Free"
-        btn = f'<a class="btn" href="{href}">{lbl}</a>' if free else '<button class="btn ghost" disabled>Coming soon</button>'
+        btn = f'<a class="btn" href="{href}">{lbl}</a>' if free else f'<a class="btn" href="{E(href)}" target="_blank" rel="noopener">{E(lbl)}</a>'
         out.append(f'<article class="card plan{" hl" if free else ""}"><h3>{E(name)}</h3><div class="price">{price}</div>'
                    f'<span class="tag">{"Free" if free else "Founding price"}</span><p>{E(desc)}</p>{btn}</article>')
     return "".join(out)
-OFFER = '<p class="offer"><b>Launch offer:</b> free for the first 100 tools, including a featured placement. Paid options below are founding prices and are not on sale yet.</p>'
+OFFER = '<p class="offer"><b>Launch offer:</b> free for the first 100 tools, including a featured placement. Paid options below are founding prices, available now with secure checkout by Stripe.</p>'
+PAYNOTE = '<p class="muted small">Secure checkout by Stripe. After payment we confirm by email within 1 business day. Paid placements are always labelled and never change editorial rank.</p>'
 def services_page():
     snippet = E('<a href="https://toolrank.io/reviews.html#YOUR-TOOL"><img src="https://toolrank.io/assets/badge.svg" alt="Rated on ToolRank" width="180" height="40"></a>')
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 {head("Services for AI makers: listing, reviews, featured spots | ToolRank", "Free listing and Review Boost for AI tools, plus founding prices for verified badges, featured spots, launch spotlights, Launch Kit, AI Stack Audit and comparison pages.", "/services.html", [ORG, SITE])}<link rel="stylesheet" href="/assets/style.css"></head><body>
 {NAV}<section class="hero"><h1>Services for AI makers</h1><p>Get found by the people choosing AI tools. Rankings stay editorial; every paid placement is labelled.</p>{OFFER}</section>
-<main><section class="wrap"><div class="grid">{services_cards()}</div></section>
+<main><section class="wrap"><div class="grid">{services_cards()}</div>{PAYNOTE}</section>
 <section class="wrap" id="badge"><h2>Review Boost: the 'Rated on ToolRank' badge</h2><p class="muted">Free. Ask your users to review you, and link the badge to your reviews. Replace YOUR-TOOL with your tool's anchor from the <a href="/reviews.html">reviews page</a>.</p>
 <p><img src="/assets/badge.svg" alt="Rated on ToolRank" width="180" height="40"></p><pre class="code">{snippet}</pre>
 <p><a class="btn" href="{E(REVIEW_NEW)}" target="_blank" rel="noopener">Leave a Review</a> <a class="btn ghost" href="/submit.html">Submit your tool</a></p></section></main>{FOOT}</body></html>
 """
 def makers_html():
     return (f'<!--MAKERS--><section class="wrap"><h2>For Makers</h2><p class="muted">Built an AI tool? Get listed for free, collect reviews and reach people choosing tools.</p>{OFFER}'
-            f'<div class="grid">{services_cards()}</div><p><a href="/services.html">All services and the Review Boost badge →</a> · <a href="/featured.html">Get featured</a></p></section><!--/MAKERS-->')
+            f'<div class="grid">{services_cards()}</div>{PAYNOTE}<p><a href="/services.html">All services and the Review Boost badge →</a> · <a href="/featured.html">Get featured</a></p></section><!--/MAKERS-->')
 
 WORDMARK = ('<div class="wm" aria-hidden="true"><svg viewBox="0 0 1200 230" preserveAspectRatio="xMidYMid meet"><defs>'
   '<linearGradient id="wmg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0" spreadMethod="reflect">'
@@ -412,14 +413,14 @@ FOOT = FOOT_().replace("</div></footer>", "</div>" + WORDMARK + "</footer>")
 def services_page():
     snippet = E('<a href="https://toolrank.io/reviews.html#YOUR-TOOL"><img src="https://toolrank.io/assets/badge.svg" alt="Rated on ToolRank" width="180" height="40"></a>')
     body = (f'<section class="hero sub"><div class="wrap"><h1>Services for AI makers</h1><p class="lead">Get found by the people choosing AI tools. Rankings stay editorial; every paid placement is labelled.</p>{OFFER}</div></section>'
-            f'<main><section class="sec"><div class="wrap"><div class="grid">{services_cards()}</div></div></section>'
+            f'<main><section class="sec"><div class="wrap"><div class="grid">{services_cards()}</div>{PAYNOTE}</div></section>'
             f'<section class="sec" id="badge"><div class="wrap"><h2>Review Boost: the \'Rated on ToolRank\' badge</h2><p class="muted">Free. Ask your users to review you, and link the badge to your reviews. Replace YOUR-TOOL with your tool\'s anchor from the <a href="/reviews.html">reviews page</a>.</p>'
             f'<p><img src="/assets/badge.svg" alt="Rated on ToolRank" width="180" height="40"></p><pre class="code">{snippet}</pre>'
             f'<p><a class="btn" href="{E(REVIEW_NEW)}" target="_blank" rel="noopener">Leave a Review</a> <a class="btn ghost" href="/submit.html">Submit your tool</a></p></div></section></main>')
     return doc(head("Services for AI makers: listing, reviews, featured spots | ToolRank", "Free listing and Review Boost for AI tools, plus founding prices for verified badges, featured spots, launch spotlights, Launch Kit, AI Stack Audit and comparison pages.", "/services.html", [ORG, SITE]), body)
 def makers_html():
     return (f'<section class="sec"><div class="wrap"><p class="eyebrow">For makers</p><h2 class="big">Built an AI tool? Get listed free.</h2><p class="muted">Collect reviews and reach people choosing tools.</p>{OFFER}'
-            f'<div class="grid">{services_cards()}</div><p><a href="/services.html">All services and the Review Boost badge →</a> · <a href="/featured.html">Get featured</a></p></div></section>')
+            f'<div class="grid">{services_cards()}</div>{PAYNOTE}<p><a href="/services.html">All services and the Review Boost badge →</a> · <a href="/featured.html">Get featured</a></p></div></section>')
 
 def trending_html():
     T = TR; hn = T.get("hn") or []
@@ -829,7 +830,7 @@ def main():
     L += [f"\nAudiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). {NT} tools ranked across {len(cats)} categories; {len(R)} approved user reviews.\n"]
     L += [f"- [{c['title']}]({BASE}/best/{c['id']}/): {c['blurb']} {len(c['tools'])} tools; #1: {c['tools'][0]['name']}." for c in cats]
     def LLM_EV(): return (f"- [How we rank]({BASE}/methodology/): editorial, evidence-based; sources and check dates on every tool profile at {BASE}/tools/<slug>/.\n- [Compare tools (interactive)]({BASE}/compare/)\n" + "".join(f"- [{cmp_title(ids)}]({BASE}/compare/{k}/)\n" for k, ids in COMPARES) + f"- [Claim your listing (free)]({BASE}/claim/)\n")
-    L += [f"\n## Optional\n\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n- [Services for makers]({BASE}/services.html): free listing and Review Boost; founding prices (coming soon): Verified badge US$2, Featured spot US$5/mo, Launch spotlight US$9/wk, Comparison page US$15, Launch Kit US$19, AI Stack Audit US$29.\n" + LLM_EV() + f"- [Reviews]({BASE}/reviews.html): {len(R)} moderated user review(s) collected so far; leave one via GitHub.\n"]
+    L += [f"\n## Optional\n\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n- [Services for makers]({BASE}/services.html): free listing and Review Boost; founding prices (available now via Stripe checkout): Verified badge US$2, Featured spot US$5/mo, Launch spotlight US$9/wk, Comparison page US$15, Launch Kit US$19, AI Stack Audit US$29.\n" + LLM_EV() + f"- [Reviews]({BASE}/reviews.html): {len(R)} moderated user review(s) collected so far; leave one via GitHub.\n"]
     (ROOT/"llms.txt").write_text("\n".join(L))
     F = [f"# ToolRank: full rankings\n\nLast updated {UPD}. Source: {BASE}/. Editorial ranking; position 1 = top pick. Pricing labels: free / freemium / paid (as listed; verify with vendor).\n"]
     for c in cats:
