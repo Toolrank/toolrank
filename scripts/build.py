@@ -146,6 +146,43 @@ def momentum():
         print(f"WARN trending fetch failed ({e}); keeping previous data", file=sys.stderr)
         return old or {"fetched": None, "stars_baseline": None, "repos_tracked": 0, "stars": [], "hn": []}
 TR = momentum()
+def clicks():
+    """Most-clicked tools from GoatCounter 'click/<slug>' events (last 7 days). Needs GOATCOUNTER_TOKEN; fetched at most every 50 min."""
+    cp = ROOT/"data/clicks.json"; old = json.loads(cp.read_text()) if cp.exists() else None
+    tok = os.environ.get("GOATCOUNTER_TOKEN")
+    if not tok or (old and old.get("fetched_ts") and time.time() - old["fetched_ts"] < 50*60): return old
+    try:
+        now = dt.datetime.now(dt.timezone.utc); seen, hits, status = [], [], None
+        for _ in range(5):
+            q = {"start": (now - dt.timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%SZ"), "end": now.strftime("%Y-%m-%dT%H:%M:%SZ"), "limit": 100}
+            if seen: q["exclude_paths"] = ",".join(map(str, seen))
+            rq = urllib.request.Request("https://toolrank.goatcounter.com/api/v0/stats/hits?" + urllib.parse.urlencode(q),
+                                        headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json", "User-Agent": "toolrank-build"})
+            with urllib.request.urlopen(rq, timeout=30) as r: status = r.status; d = json.loads(r.read())
+            hits += d.get("hits") or []; seen += [h["path_id"] for h in d.get("hits") or []]
+            if not d.get("more"): break
+        print(f"clicks: GoatCounter API HTTP {status}, {len(hits)} path(s) returned")
+        names = {slug(t["name"]): t["name"] for c in D["categories"] for t in c["tools"]}
+        agg = {}
+        for h in hits:
+            pth = (h.get("path") or "").lstrip("/")
+            if not pth.startswith("click/"): continue
+            sl = pth[6:]; agg[sl] = agg.get(sl, 0) + int(h.get("count") or 0)
+        top = sorted(({"slug": k, "tool": names.get(k, k), "count": v} for k, v in agg.items() if v > 0 and k in names), key=lambda x: (-x["count"], x["tool"]))[:10]
+        out = {"fetched": now.strftime("%Y-%m-%d %H:%M UTC"), "fetched_ts": int(now.timestamp()), "window": "last 7 days", "source": "GoatCounter click/ events (unique visitors)", "top": top}
+        cp.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n"); return out
+    except Exception as e:
+        print(f"WARN clicks fetch failed ({type(e).__name__}: {getattr(e, 'code', '')}); keeping previous data", file=sys.stderr)
+        return old
+CL = clicks()
+def clicks_card():
+    if CL and CL.get("top"):
+        body = '<ol class="tl">' + "".join(f'<li><a href="/reviews.html#{x["slug"]}">{E(x["tool"])}</a> <span class="up">{x["count"]:,}</span> <span class="muted">visitor{"s" if x["count"] != 1 else ""}</span></li>' for x in CL["top"]) + '</ol>'
+    else:
+        body = '<p class="muted">Collecting clicks, check back soon.</p>'
+    upd = f' (updated {E(CL["fetched"])})' if CL and CL.get("fetched") else ""
+    return f'<article class="card"><h3>Most clicked this week</h3><span class="tag">Source: GoatCounter, cookieless, last 7 days</span><p class="muted small">Visitors who clicked through to each tool from ToolRank{upd}.</p>{body}</article>'
+
 def trending_html():
     T = TR
     if T["stars"]:
@@ -161,7 +198,7 @@ def trending_html():
     return (f'<!--TREND--><section id="trending" class="wrap"><h2>🔥 Trending this week</h2><p class="muted small">Real public signals, refreshed daily{" (last update " + E(T["fetched"]) + ")" if T.get("fetched") else ""}. Not paid, not editorial rank.</p>'
             f'<div class="grid"><article class="card"><h3>GitHub stars gained</h3><span class="tag">Source: GitHub API, {base}</span>{sb}</article>'
             f'<article class="card"><h3>Hacker News buzz</h3><p class="muted small">Stories linking to a ranked tool, by points.</p><span class="tag">Source: HN Algolia API, last 7 days</span>{hb}</article>'
-            f'<article class="card"><h3>Visitor trends</h3><span class="tag">Source: GoatCounter (cookieless)</span><p class="muted">Visitor trends: collecting data, most-clicked tools board coming soon.</p></article></div></section><!--/TREND-->')
+            + clicks_card() + '</div></section><!--/TREND-->')
 
 def short(c): return re.sub(r"^Best (for )?", "", c["title"])
 def link(t): return t.get("affiliate_url") or t["url"]

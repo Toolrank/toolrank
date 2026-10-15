@@ -22,13 +22,14 @@ jobs:
       - name: Build site (fetches approved reviews)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
           REVIEWS_REQUIRED: "1"
         run: python3 scripts/build.py
       - name: Check
         run: python3 scripts/check.py --no-external
       - name: Commit if changed
         run: |
-          if git diff --quiet; then echo "No changes"; exit 0; fi
+          if [ -z "$(git status --porcelain)" ]; then echo "No changes"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
