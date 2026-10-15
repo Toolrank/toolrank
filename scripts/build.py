@@ -67,7 +67,7 @@ def page(c):
     others = "".join(f'<li><a href="/best/{o["id"]}/">{E(o["title"])}</a></li>' for o in D["categories"] if o is not c)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 {head(title, desc, path, ld)}<link rel="stylesheet" href="/assets/style.css"></head><body>
-<header class="top">{LOGO}<nav><a href="/">Directory</a><a href="/featured.html">Get featured</a></nav></header>
+<header class="top">{LOGO}<nav><a href="/">Directory</a><a href="/submit.html">Submit a tool</a><a href="/featured.html">Get featured</a></nav></header>
 <nav class="wrap muted" aria-label="Breadcrumb"><a href="/">ToolRank</a> › {E(c['title'])}</nav>
 <main><article><section class="hero"><h1>{E(c['title'])}</h1><p>{E(c['blurb'])}</p><p class="muted">Last updated <time datetime="{UPD}">{UPD}</time>. Editorial ranking.</p></section>
 <section class="wrap"><h2>The ranking</h2><ol class="muted">{''.join(f'<li><strong>{E(t["name"])}</strong> ({t["pricing"]}): {E(t["verdict"])}</li>' for t in c["tools"])}</ol><div class="grid">{cards(c)}</div></section>
@@ -97,7 +97,8 @@ def main():
     patch("index.html", head("ToolRank: the best AI tools ranked by use case (" + UPD[:4] + ")",
           f"Editorial rankings of AI tools across {len(cats)} use cases: " + ", ".join(short(c) for c in cats) + f". Updated {UPD}.", "/", ild), idx)
     patch("featured.html", head("Get your AI tool featured | ToolRank", "Featured placements and newsletter sponsorship on ToolRank. Featured spots are clearly labelled; rankings stay editorial.", "/featured.html", [ORG, SITE]))
-    urls = ["/", "/featured.html"] + [f"/best/{c['id']}/" for c in cats]
+    patch("submit.html", head("Submit your AI tool for free | ToolRank", "Submit your AI tool to ToolRank for free. Every submission gets an editorial review; approved tools are listed in the right category.", "/submit.html", [ORG, SITE]))
+    urls = ["/", "/submit.html", "/featured.html"] + [f"/best/{c['id']}/" for c in cats]
     (ROOT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{UPD}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Perplexity-User", "Google-Extended", "Googlebot", "Bingbot", "Applebot", "Applebot-Extended"]
@@ -105,7 +106,7 @@ def main():
                                    f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
     L = [f"# ToolRank\n\n> Editorial rankings of AI tools by use case. Last updated {UPD}. Rankings are editorial; featured placements are labelled and paid.\n\n## Categories\n"]
     L += [f"- [{c['title']}]({BASE}/best/{c['id']}/): {c['blurb']} #1: {c['tools'][0]['name']}." for c in cats]
-    L += [f"\n## Optional\n\n- [Full rankings]({BASE}/llms-full.txt)\n- [Get featured]({BASE}/featured.html)\n"]
+    L += [f"\n## Optional\n\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n"]
     (ROOT/"llms.txt").write_text("\n".join(L))
     F = [f"# ToolRank: full rankings\n\nLast updated {UPD}. Source: {BASE}/. Editorial ranking; position 1 = top pick. Pricing labels: free / freemium / paid (as listed; verify with vendor).\n"]
     for c in cats:
