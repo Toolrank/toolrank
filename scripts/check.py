@@ -14,6 +14,14 @@ for c in d["categories"]:
         for k in ("name", "url", "verdict", "pricing"):
             if not t.get(k): fails.append(f"tools.json {c['id']}: missing {k}")
         if t["pricing"] not in ("free", "freemium", "paid"): fails.append(f"bad pricing {t['name']}")
+        if t.get("audience") not in ("consumer", "business", "both"): fails.append(f"bad/missing audience {t['name']}")
+rv = json.loads((ROOT/"data/reviews.json").read_text())
+for r in rv.get("reviews", []):
+    if not (isinstance(r.get("rating"), int) and 1 <= r["rating"] <= 5 and r.get("text") and r.get("url", "").startswith("https://github.com/Toolrank/toolrank/issues/")):
+        fails.append(f"reviews.json: invalid review {r.get('id')}")
+idx = (ROOT/"index.html").read_text()
+if f"<b>{sum(len(c['tools']) for c in d['categories'])}</b> tools ranked" not in idx: fails.append("index.html: tools counter does not match tools.json")
+if f"<b>{len(rv.get('reviews', []))}</b> review" not in idx: fails.append("index.html: reviews counter does not match reviews.json")
 pages = [p for p in ROOT.rglob("*.html")]
 ext = set()
 for p in pages:

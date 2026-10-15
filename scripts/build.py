@@ -3,7 +3,7 @@
 Outputs: best/<category>/index.html, sitemap.xml, robots.txt, llms.txt, llms-full.txt,
 and refreshes the <!--SEO--> head block + pre-rendered directory in index.html / featured.html.
 BASE is a PLACEHOLDER until the live domain is chosen: change it and rerun."""
-import json, re, html, pathlib
+import json, re, html, pathlib, os, sys, urllib.request, urllib.parse
 BASE = "https://toolrank.io"  # PLACEHOLDER base URL
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 D = json.loads((ROOT/"data/tools.json").read_text())
@@ -14,10 +14,82 @@ ORG = {"@type": "Organization", "@id": BASE+"/#org", "name": "ToolRank", "url": 
 SITE = {"@type": "WebSite", "@id": BASE+"/#website", "name": "ToolRank", "url": BASE+"/", "publisher": {"@id": BASE+"/#org"},
         "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": BASE+"/?q={search_term_string}"},
                             "query-input": "required name=search_term_string"}}
+REPO = "Toolrank/toolrank"
+REVIEW_NEW = f"https://github.com/{REPO}/issues/new?template=review.yml"
+def slug(n): return re.sub(r"[^a-z0-9]+", "-", n.lower()).strip("-")
+def review_url(name=""): return REVIEW_NEW + ("&tool_name=" + urllib.parse.quote(name) if name else "")
+TOOLS = {slug(t["name"]): t for c in D["categories"] for t in c["tools"]}
+
+def _sections(body):
+    out, cur = {}, None
+    for line in (body or "").replace("\r", "").split("\n"):
+        m = re.match(r"^###\s+(.*)$", line)
+        if m: cur = m.group(1).strip().lower(); out[cur] = []; continue
+        if cur: out[cur].append(line)
+    return {k: "\n".join(v).strip() for k, v in out.items()}
+
+def fetch_reviews():
+    """Approved reviews = GitHub issues labelled BOTH 'review' and 'approved' (labels only maintainers can add). Never seeded."""
+    tok = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN"); items, page = [], 1
+    while True:
+        rq = urllib.request.Request(f"https://api.github.com/repos/{REPO}/issues?labels=review,approved&state=all&per_page=100&page={page}",
+                                    headers={"Accept": "application/vnd.github+json", "User-Agent": "toolrank-build", **({"Authorization": f"Bearer {tok}"} if tok else {})})
+        batch = json.loads(urllib.request.urlopen(rq, timeout=30).read())
+        items += [i for i in batch if "pull_request" not in i]
+        if len(batch) < 100: break
+        page += 1
+    revs = []
+    for i in items:
+        f = _sections(i.get("body")); m = re.match(r"\s*([1-5])", f.get("rating", ""))
+        name = f.get("tool name", "").strip(); text = f.get("review", "").strip()
+        if not (m and name and text) or i.get("state_reason") == "not_planned": continue
+        t = TOOLS.get(slug(name))
+        revs.append({"id": i["number"], "tool": t["name"] if t else name, "tool_slug": slug(t["name"] if t else name), "listed": bool(t),
+                     "rating": int(m.group(1)), "role": f.get("who you are", "").strip()[:20], "text": text[:2000],
+                     "use_case": re.sub(r"^_No response_$", "", f.get("use case", "").strip())[:200], "author": i["user"]["login"], "date": i["created_at"][:10], "url": i["html_url"]})
+    return sorted(revs, key=lambda r: (r["date"], r["id"]), reverse=True)
+
+def load_reviews():
+    p = ROOT/"data/reviews.json"
+    try:
+        revs = fetch_reviews()
+        p.write_text(json.dumps({"updated": max([r["date"] for r in revs], default=None), "source": "GitHub issues labelled review + approved",
+                                 "reviews": revs}, indent=1, ensure_ascii=False) + "\n")
+        print(f"reviews: fetched {len(revs)} approved review(s) from GitHub")
+    except Exception as e:
+        if os.environ.get("REVIEWS_REQUIRED"): raise
+        print(f"WARN reviews fetch failed ({e}); keeping existing data/reviews.json", file=sys.stderr)
+    return json.loads(p.read_text())["reviews"]
+R = load_reviews()
+RB = {}
+for r in R: RB.setdefault(r["tool_slug"], []).append(r)
+def rstat(t):
+    rs = [r for r in RB.get(slug(t["name"]), []) if r["listed"]]; n = len(rs)
+    return n, (round(sum(r["rating"] for r in rs) / n, 1) if n else None)
+def stars(a): return "★" * int(round(a)) + "☆" * (5 - int(round(a)))
+def rv_line(t):
+    n, a = rstat(t); s = slug(t["name"])
+    lead = f'<a href="/reviews.html#{s}"><span class="st">★ {a}</span> · {n} review{"s" if n != 1 else ""}</a>' if n else f'<a href="/reviews.html#{s}">Reviews (0)</a>'
+    return f'<div class="rvl">{lead}<a class="rvbtn" href="{E(review_url(t["name"]))}" target="_blank" rel="noopener">{"Review" if n else "Be the first to review"}</a></div>'
+def review_html(r):
+    return (f'<article class="card review"><div class="rh"><span class="st" aria-label="{r["rating"]} out of 5">{stars(r["rating"])}</span>'
+            f'<span class="tag">{E(r["role"] or "User")}</span></div><h3>{E(r["tool"])}</h3><p>{E(r["text"])}</p>'
+            + (f'<p class="muted">Use case: {E(r["use_case"])}</p>' if r["use_case"] else "") +
+            f'<p class="muted">by <a href="https://github.com/{E(r["author"])}" rel="nofollow noopener" target="_blank">@{E(r["author"])}</a> · <a href="{E(r["url"])}" target="_blank" rel="nofollow noopener">{r["date"]}</a></p></article>')
+NT = sum(len(c["tools"]) for c in D["categories"])
+def stats_html():
+    n = len(R)
+    return (f'<!--STATS--><div class="stats"><span><b>{NT}</b> tools ranked</span><span><b>{n}</b> review{"s" if n != 1 else ""} collected'
+            + ('' if n else ' · <a href="/reviews.html">Be the first to review</a>') + '</span></div><!--/STATS-->')
+CTA = (f'<section class="wrap"><div class="cta"><div><h2>Using AI tools? Leave a review.</h2><p>Help builders and businesses pick the right AI tool.</p></div>'
+       f'<a class="btn" href="{E(REVIEW_NEW)}" target="_blank" rel="noopener">Leave a Review</a></div></section>')
+
 def short(c): return re.sub(r"^Best (for )?", "", c["title"])
 def link(t): return t.get("affiliate_url") or t["url"]
 def rel(t): return "noopener" + (" sponsored" if t.get("affiliate_url") else "")
 
+NAV = f'<header class="top">{LOGO}<nav><a href="/">Directory</a><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a></nav></header>'
+FOOT = f'<footer class="wrap muted">© {UPD[:4]} ToolRank. Some links may become affiliate links; featured placements are labelled. Reviews are user-submitted via GitHub and moderated; they never change the editorial rank.</footer>'
 def head(title, desc, path, ld, otype="website"):
     url = BASE + path
     return f"""<!--SEO--><title>{E(title)}</title><meta name="description" content="{E(desc)}">
@@ -32,6 +104,8 @@ def tool_ld(t, c, i):
          "applicationCategory": "AI tool: " + short(c)}
     if t["pricing"] in ("free", "freemium"):
         o["offers"] = {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": t["pricing"] + " (free tier available)"}
+    n, a = rstat(t)
+    if n: o["aggregateRating"] = {"@type": "AggregateRating", "ratingValue": a, "reviewCount": n, "bestRating": 5, "worstRating": 1}
     return o
 
 def faqs(c):
@@ -50,7 +124,7 @@ def cards(c, h="h3", base_rank=True):
     out = []
     for i, t in enumerate(c["tools"], 1):
         out.append(f'<article class="card">{"<span class=\"tag feat\">Featured</span>" if t.get("featured") else ""}<{h}><span class="rank">#{i}</span>{E(t["name"])}</{h}><p>{E(t["verdict"])}</p>'
-                   f'<span class="tag {t["pricing"]}">{t["pricing"]}</span><a class="go" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit {E(t["name"])} →</a></article>')
+                   f'<span class="tag {t["pricing"]}">{t["pricing"]}</span>{rv_line(t)}<a class="go" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit {E(t["name"])} →</a></article>')
     return "".join(out)
 
 def page(c):
@@ -67,14 +141,77 @@ def page(c):
     others = "".join(f'<li><a href="/best/{o["id"]}/">{E(o["title"])}</a></li>' for o in D["categories"] if o is not c)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 {head(title, desc, path, ld)}<link rel="stylesheet" href="/assets/style.css"></head><body>
-<header class="top">{LOGO}<nav><a href="/">Directory</a><a href="/submit.html">Submit a tool</a><a href="/featured.html">Get featured</a></nav></header>
+{NAV}
 <nav class="wrap muted" aria-label="Breadcrumb"><a href="/">ToolRank</a> › {E(c['title'])}</nav>
 <main><article><section class="hero"><h1>{E(c['title'])}</h1><p>{E(c['blurb'])}</p><p class="muted">Last updated <time datetime="{UPD}">{UPD}</time>. Editorial ranking.</p></section>
 <section class="wrap"><h2>The ranking</h2><ol class="muted">{''.join(f'<li><strong>{E(t["name"])}</strong> ({t["pricing"]}): {E(t["verdict"])}</li>' for t in c["tools"])}</ol><div class="grid">{cards(c)}</div></section>
-<section class="wrap faq"><h2>FAQ</h2>{''.join(f'<details open><summary><h3 style="display:inline">{E(a)}</h3></summary><p>{E(b)}</p></details>' for a, b in fq)}</section>
+{cat_reviews(c)}<section class="wrap faq"><h2>FAQ</h2>{''.join(f'<details open><summary><h3 style="display:inline">{E(a)}</h3></summary><p>{E(b)}</p></details>' for a, b in fq)}</section>
 </article><section class="wrap"><h2>More categories</h2><ul>{others}</ul></section></main>
-<footer class="wrap muted">© {UPD[:4]} ToolRank. Some links may become affiliate links; featured placements are labelled.</footer></body></html>
+{FOOT}</body></html>
 """
+
+def cat_reviews(c):
+    rs = [r for t in c["tools"] for r in RB.get(slug(t["name"]), []) if r["listed"]]
+    rs.sort(key=lambda r: (r["date"], r["id"]), reverse=True)
+    body = (f'<div class="grid">{"".join(review_html(r) for r in rs[:12])}</div>' + (f'<p><a href="/reviews.html#cat-{c["id"]}">All {len(rs)} reviews →</a></p>' if len(rs) > 12 else "")) if rs else \
+        f'<p class="muted">No reviews yet for {E(short(c).lower())} tools. Used one of them? Be the first to review.</p>'
+    return (f'<section class="wrap" id="reviews"><h2>Reviews: {E(short(c)[:1].upper() + short(c)[1:])}</h2>{body}'
+            f'<div class="cta"><div><h3>Using AI tools? Leave a review.</h3><p>Help builders and businesses pick the right AI tool.</p></div><a class="btn" href="{E(REVIEW_NEW)}" target="_blank" rel="noopener">Leave a Review</a></div></section>')
+
+def reviews_page():
+    secs = []
+    for c in D["categories"]:
+        rows = []
+        for t in c["tools"]:
+            n, a = rstat(t); s = slug(t["name"]); rs = [r for r in RB.get(s, []) if r["listed"]]
+            rows.append(f'<div class="rrow" id="{s}"><div class="rt"><strong>{E(t["name"])}</strong> ' +
+                        (f'<span class="st">{stars(a)} {a}</span> <span class="muted">({n} review{"s" if n != 1 else ""})</span>' if n else '<span class="muted">No reviews yet</span>') +
+                        f'<a class="rvbtn" href="{E(review_url(t["name"]))}" target="_blank" rel="noopener">{"Review" if n else "Be the first to review"}</a></div>' +
+                        (f'<div class="grid">{"".join(review_html(r) for r in rs)}</div>' if rs else "") + '</div>')
+        secs.append(f'<section class="wrap" id="cat-{c["id"]}"><h2><a href="/best/{c["id"]}/">{E(c["title"])}</a></h2>{"".join(rows)}</section>')
+    other = [r for r in R if not r["listed"]]
+    if other: secs.append(f'<section class="wrap"><h2>Other tools (not yet ranked)</h2><div class="grid">{"".join(review_html(r) for r in other)}</div></section>')
+    latest = f'<section class="wrap"><h2>Latest reviews</h2><div class="grid">{"".join(review_html(r) for r in R[:9])}</div></section>' if R else ""
+    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+{head("AI tool reviews from real users | ToolRank", "Honest, moderated reviews of AI tools from users, developers and businesses. Leave a review to help others pick the right AI tool.", "/reviews.html", [ORG, SITE])}<link rel="stylesheet" href="/assets/style.css"></head><body>
+{NAV}<section class="hero"><h1>AI tool reviews</h1><p>Using AI tools? Leave a review. Help builders and businesses pick the right AI tool.</p>{stats_html()}
+<p><a class="btn" href="{E(REVIEW_NEW)}" target="_blank" rel="noopener">Leave a Review</a></p>
+<p class="muted small">Reviews are posted as public GitHub issues (free GitHub account needed) and appear here after a moderation check. We never write or buy reviews, and reviews never change the editorial rank.</p></section>
+<main>{latest}{"".join(secs)}</main>{FOOT}</body></html>
+"""
+
+SERVICES = [
+    ("Free listing", "Free", "Get your AI tool listed in the right category after an editorial review.", "/submit.html", "Submit your tool"),
+    ("Review Boost", "Free", "Invite your users to review you on ToolRank, and show an embeddable 'Rated on ToolRank' badge on your site.", "/services.html#badge", "Get the badge"),
+    ("Verified badge", "US$2", "A verified mark on your listing once we confirm you own the tool.", None, None),
+    ("Featured spot", "US$5/mo", "A clearly labelled Featured placement in your category. Editorial rank is unchanged.", None, None),
+    ("Launch spotlight", "US$9/wk", "A week at the top of New this week, labelled as a spotlight.", None, None),
+    ("Comparison page", "US$15", "A Tool vs Tool SEO page comparing your product with an alternative, written editorially.", None, None),
+    ("Launch Kit", "US$19", "Listing, a newsletter mention and an X post from ToolRank for your launch.", None, None),
+    ("AI Stack Audit", "US$29", "For teams: we recommend the best AI tools for your team's workflow.", None, None),
+]
+def services_cards(limit=None):
+    out = []
+    for name, price, desc, href, lbl in SERVICES[:limit]:
+        free = price == "Free"
+        btn = f'<a class="btn" href="{href}">{lbl}</a>' if free else '<button class="btn ghost" disabled>Coming soon</button>'
+        out.append(f'<article class="card plan{" hl" if free else ""}"><h3>{E(name)}</h3><div class="price">{price}</div>'
+                   f'<span class="tag">{"Free" if free else "Founding price"}</span><p>{E(desc)}</p>{btn}</article>')
+    return "".join(out)
+OFFER = '<p class="offer"><b>Launch offer:</b> free for the first 100 tools, including a featured placement. Paid options below are founding prices and are not on sale yet.</p>'
+def services_page():
+    snippet = E('<a href="https://toolrank.io/reviews.html#YOUR-TOOL"><img src="https://toolrank.io/assets/badge.svg" alt="Rated on ToolRank" width="180" height="40"></a>')
+    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+{head("Services for AI makers: listing, reviews, featured spots | ToolRank", "Free listing and Review Boost for AI tools, plus founding prices for verified badges, featured spots, launch spotlights, Launch Kit, AI Stack Audit and comparison pages.", "/services.html", [ORG, SITE])}<link rel="stylesheet" href="/assets/style.css"></head><body>
+{NAV}<section class="hero"><h1>Services for AI makers</h1><p>Get found by the people choosing AI tools. Rankings stay editorial; every paid placement is labelled.</p>{OFFER}</section>
+<main><section class="wrap"><div class="grid">{services_cards()}</div></section>
+<section class="wrap" id="badge"><h2>Review Boost: the 'Rated on ToolRank' badge</h2><p class="muted">Free. Ask your users to review you, and link the badge to your reviews. Replace YOUR-TOOL with your tool's anchor from the <a href="/reviews.html">reviews page</a>.</p>
+<p><img src="/assets/badge.svg" alt="Rated on ToolRank" width="180" height="40"></p><pre class="code">{snippet}</pre>
+<p><a class="btn" href="{E(REVIEW_NEW)}" target="_blank" rel="noopener">Leave a Review</a> <a class="btn ghost" href="/submit.html">Submit your tool</a></p></section></main>{FOOT}</body></html>
+"""
+def makers_html():
+    return (f'<!--MAKERS--><section class="wrap"><h2>For Makers</h2><p class="muted">Built an AI tool? Get listed for free, collect reviews and reach people choosing tools.</p>{OFFER}'
+            f'<div class="grid">{services_cards()}</div><p><a href="/services.html">All services and the Review Boost badge →</a> · <a href="/featured.html">Get featured</a></p></section><!--/MAKERS-->')
 
 def patch(fn, block, extra=None):
     p = ROOT/fn; s = p.read_text()
@@ -87,31 +224,36 @@ def main():
     for c in D["categories"]:
         d = ROOT/"best"/c["id"]; d.mkdir(parents=True, exist_ok=True); (d/"index.html").write_text(page(c))
     cats = D["categories"]
+    (ROOT/"reviews.html").write_text(reviews_page()); (ROOT/"services.html").write_text(services_page())
     ild = [ORG, SITE] + [{"@type": "ItemList", "name": c["title"], "url": f"{BASE}/best/{c['id']}/",
                            "itemListElement": [{"@type": "ListItem", "position": i, "name": t["name"], "url": t["url"]} for i, t in enumerate(c["tools"], 1)]} for c in cats]
     pre = "<!--PRE-->" + "".join(f'<section id="{c["id"]}"><h2><a href="/best/{c["id"]}/">{E(c["title"])}</a></h2><p class="muted">{E(c["blurb"])}</p><div class="grid">{cards(c)}</div></section>' for c in cats) + "<!--/PRE-->"
     def idx(s):
         s = re.sub(r'<main id="cats">.*?</main>', lambda m: f'<main id="cats">{pre}</main>', s, flags=re.S)
         s = s.replace('<a href="index.html"', '<a href="/"')
+        s = re.sub(r"<!--STATS-->.*?<!--/STATS-->", lambda m: stats_html(), s, flags=re.S)
+        s = re.sub(r"<!--CTA-->.*?<!--/CTA-->", lambda m: "<!--CTA-->" + CTA + "<!--/CTA-->", s, flags=re.S)
+        s = re.sub(r"<!--MAKERS-->.*?<!--/MAKERS-->", lambda m: makers_html(), s, flags=re.S)
         return s
     patch("index.html", head("ToolRank: the best AI tools ranked by use case (" + UPD[:4] + ")",
           f"Editorial rankings of AI tools across {len(cats)} use cases: " + ", ".join(short(c) for c in cats) + f". Updated {UPD}.", "/", ild), idx)
     patch("featured.html", head("Get your AI tool featured | ToolRank", "Featured placements and newsletter sponsorship on ToolRank. Featured spots are clearly labelled; rankings stay editorial.", "/featured.html", [ORG, SITE]))
     patch("submit.html", head("Submit your AI tool for free | ToolRank", "Submit your AI tool to ToolRank for free. Every submission gets an editorial review; approved tools are listed in the right category.", "/submit.html", [ORG, SITE]))
-    urls = ["/", "/submit.html", "/featured.html"] + [f"/best/{c['id']}/" for c in cats]
+    urls = ["/", "/reviews.html", "/services.html", "/submit.html", "/featured.html"] + [f"/best/{c['id']}/" for c in cats]
     (ROOT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{UPD}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Perplexity-User", "Google-Extended", "Googlebot", "Bingbot", "Applebot", "Applebot-Extended"]
     (ROOT/"robots.txt").write_text("# ToolRank: search engines and AI crawlers are welcome.\n" + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) +
                                    f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
     L = [f"# ToolRank\n\n> Editorial rankings of AI tools by use case. Last updated {UPD}. Rankings are editorial; featured placements are labelled. Launch offer: free for the first 100 tools (including featured placement); after that, free listing plus paid options at founding prices.\n\n## Categories\n"]
+    L += [f"\nAudiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). {NT} tools ranked; {len(R)} approved user reviews.\n"]
     L += [f"- [{c['title']}]({BASE}/best/{c['id']}/): {c['blurb']} #1: {c['tools'][0]['name']}." for c in cats]
-    L += [f"\n## Optional\n\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n"]
+    L += [f"\n## Optional\n\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n- [Services for makers]({BASE}/services.html): free listing and Review Boost; founding prices (coming soon): Verified badge US$2, Featured spot US$5/mo, Launch spotlight US$9/wk, Comparison page US$15, Launch Kit US$19, AI Stack Audit US$29.\n- [Reviews]({BASE}/reviews.html): {len(R)} moderated user review(s) collected so far; leave one via GitHub.\n"]
     (ROOT/"llms.txt").write_text("\n".join(L))
     F = [f"# ToolRank: full rankings\n\nLast updated {UPD}. Source: {BASE}/. Editorial ranking; position 1 = top pick. Pricing labels: free / freemium / paid (as listed; verify with vendor).\n"]
     for c in cats:
         F.append(f"\n## {c['title']}\n\n{c['blurb']}\nPage: {BASE}/best/{c['id']}/\n")
-        F += [f"{i}. {t['name']} ({t['pricing']}){' [Featured]' if t.get('featured') else ''}: {t['verdict']} {t['url']}" for i, t in enumerate(c["tools"], 1)]
+        F += [f"{i}. {t['name']} ({t['pricing']}; audience: {t.get('audience','')}){' [Featured]' if t.get('featured') else ''}{f' [user rating {rstat(t)[1]}/5 from {rstat(t)[0]} review(s)]' if rstat(t)[0] else ''}: {t['verdict']} {t['url']}" for i, t in enumerate(c["tools"], 1)]
     F.append(f"\n## New this week (as of {N['updated']})\n")
     F += [f"- {n['date']} {n['title']} ({n['type']}): {n['summary']} {n['url']}" for n in sorted(N["items"], key=lambda n: n["date"], reverse=True)]
     (ROOT/"llms-full.txt").write_text("\n".join(F) + "\n")

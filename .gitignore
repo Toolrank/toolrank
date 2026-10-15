@@ -2,3 +2,4 @@ screenshot-*.png
 *.log
 monetisation/
 __pycache__/
+shots/

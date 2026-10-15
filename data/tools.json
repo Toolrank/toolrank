@@ -13,7 +13,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "audience": "consumer"
     },
     {
      "name": "Bolt.new",
@@ -22,7 +23,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "v0",
@@ -31,7 +33,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Replit",
@@ -40,7 +43,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Base44",
@@ -53,7 +57,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Google AI Studio (Build)",
@@ -66,7 +71,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Firebase Studio",
@@ -79,7 +85,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Create.xyz (Anything)",
@@ -92,7 +99,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Rork",
@@ -105,7 +113,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Softgen",
@@ -118,7 +127,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Tempo",
@@ -131,7 +141,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Same",
@@ -144,7 +155,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (429), known official domain"
+     "url_check": "bot-blocked (429), known official domain",
+     "audience": "consumer"
     },
     {
      "name": "Macaly",
@@ -157,7 +169,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Figma Make",
@@ -170,7 +183,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Bubble",
@@ -183,7 +197,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Glide",
@@ -196,7 +211,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Webflow",
@@ -209,7 +225,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Framer",
@@ -222,7 +239,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Dyad",
@@ -235,7 +253,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "vibe-wise",
@@ -248,7 +267,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "scroll-craft",
@@ -261,7 +281,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "shadcn lint",
@@ -274,7 +295,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     }
    ]
   },
@@ -294,7 +316,8 @@
      "tags": [
       "ide",
       "code editor"
-     ]
+     ],
+     "audience": "business"
     },
     {
      "name": "Claude Code",
@@ -303,7 +326,8 @@
      "pricing": "paid",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "GitHub Copilot",
@@ -312,7 +336,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "OpenAI Codex",
@@ -321,7 +346,8 @@
      "pricing": "paid",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "audience": "business"
     },
     {
      "name": "Windsurf",
@@ -334,7 +360,8 @@
      "tags": [
       "ide",
       "code editor"
-     ]
+     ],
+     "audience": "business"
     },
     {
      "name": "Gemini CLI",
@@ -347,7 +374,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "JetBrains AI (Junie)",
@@ -360,7 +388,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Cline",
@@ -373,7 +402,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Kilo Code",
@@ -386,7 +416,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Aider",
@@ -399,7 +430,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Amp",
@@ -412,7 +444,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Zed",
@@ -425,7 +458,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Amazon Q Developer",
@@ -438,7 +472,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Kiro",
@@ -451,7 +486,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Augment Code",
@@ -464,7 +500,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Devin",
@@ -477,7 +514,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Factory",
@@ -490,7 +528,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Warp",
@@ -503,7 +542,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "OpenCode",
@@ -516,7 +556,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Continue",
@@ -529,7 +570,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "CodeRabbit",
@@ -542,7 +584,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Qodo",
@@ -555,7 +598,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Magpie",
@@ -568,7 +612,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Mono (monocode)",
@@ -581,7 +626,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "OmniRush",
@@ -594,7 +640,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "jevgrep",
@@ -607,7 +654,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     }
    ]
   },
@@ -627,7 +675,8 @@
      "tags": [
       "video editing",
       "video generation"
-     ]
+     ],
+     "audience": "consumer"
     },
     {
      "name": "Google Veo",
@@ -636,7 +685,8 @@
      "pricing": "paid",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Kling AI",
@@ -649,7 +699,8 @@
      "tags": [
       "text to video",
       "image to video"
-     ]
+     ],
+     "audience": "consumer"
     },
     {
      "name": "Luma AI",
@@ -661,7 +712,8 @@
      "url_check": "200 OK 2026-10-15",
      "tags": [
       "text to video"
-     ]
+     ],
+     "audience": "consumer"
     },
     {
      "name": "HeyGen",
@@ -675,7 +727,8 @@
       "avatar",
       "translation",
       "dubbing"
-     ]
+     ],
+     "audience": "both"
     },
     {
      "name": "Sora",
@@ -687,7 +740,8 @@
      "url_check": "bot-blocked (403), known official domain",
      "tags": [
       "text to video"
-     ]
+     ],
+     "audience": "consumer"
     },
     {
      "name": "Synthesia",
@@ -700,7 +754,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Pika",
@@ -713,7 +768,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Hailuo AI (MiniMax)",
@@ -726,7 +782,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Higgsfield",
@@ -739,7 +796,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "PixVerse",
@@ -752,7 +810,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Vidu",
@@ -765,7 +824,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Hedra",
@@ -778,7 +838,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Captions",
@@ -791,7 +852,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "OpusClip",
@@ -804,7 +866,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Descript (video)",
@@ -817,7 +880,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "CapCut",
@@ -830,7 +894,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Invideo AI",
@@ -843,7 +908,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Colossyan",
@@ -856,7 +922,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "D-ID",
@@ -869,7 +936,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Wan (Alibaba)",
@@ -882,7 +950,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "LTX Studio",
@@ -895,7 +964,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Veed",
@@ -908,7 +978,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Topaz Video",
@@ -921,7 +992,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Wonder Studio (Autodesk Flow Studio)",
@@ -934,7 +1006,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "audience": "consumer"
     },
     {
      "name": "Vozo",
@@ -947,7 +1020,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "ReelMimic",
@@ -960,7 +1034,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     }
    ]
   },
@@ -980,7 +1055,8 @@
      "tags": [
       "automation",
       "self-hosted"
-     ]
+     ],
+     "audience": "business"
     },
     {
      "name": "LangGraph",
@@ -989,7 +1065,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "CrewAI",
@@ -998,7 +1075,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Relevance AI",
@@ -1007,7 +1085,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Gumloop",
@@ -1016,7 +1095,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "OpenAI Agents SDK",
@@ -1029,7 +1109,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Claude Agent SDK",
@@ -1042,7 +1123,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Google ADK",
@@ -1055,7 +1137,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Microsoft Agent Framework",
@@ -1068,7 +1151,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "LlamaIndex",
@@ -1081,7 +1165,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Pydantic AI",
@@ -1094,7 +1179,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Mastra",
@@ -1107,7 +1193,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Dify",
@@ -1120,7 +1207,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Flowise",
@@ -1133,7 +1221,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Langflow",
@@ -1146,7 +1235,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Lindy",
@@ -1159,7 +1249,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Botpress",
@@ -1172,7 +1263,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Voiceflow",
@@ -1185,7 +1277,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Vapi",
@@ -1198,7 +1291,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Agno",
@@ -1211,7 +1305,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Monid",
@@ -1224,7 +1319,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "agent-memory",
@@ -1237,7 +1333,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Reef",
@@ -1250,7 +1347,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     }
    ]
   },
@@ -1266,7 +1364,8 @@
      "pricing": "paid",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "audience": "consumer"
     },
     {
      "name": "Ideogram",
@@ -1279,7 +1378,8 @@
      "tags": [
       "text in images",
       "logo"
-     ]
+     ],
+     "audience": "consumer"
     },
     {
      "name": "Black Forest Labs (FLUX)",
@@ -1288,7 +1388,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Recraft",
@@ -1302,7 +1403,8 @@
       "vector",
       "icons",
       "logo"
-     ]
+     ],
+     "audience": "both"
     },
     {
      "name": "Krea",
@@ -1311,7 +1413,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "GPT Image (ChatGPT)",
@@ -1324,7 +1427,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Google Gemini (Nano Banana)",
@@ -1337,7 +1441,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Adobe Firefly",
@@ -1350,7 +1455,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Leonardo.Ai",
@@ -1363,7 +1469,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "audience": "consumer"
     },
     {
      "name": "Stability AI",
@@ -1376,7 +1483,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Canva AI",
@@ -1389,7 +1497,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Freepik AI",
@@ -1402,7 +1511,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "audience": "both"
     },
     {
      "name": "Magnific",
@@ -1415,7 +1525,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Photoroom",
@@ -1428,7 +1539,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Seedream (ByteDance)",
@@ -1441,7 +1553,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "ComfyUI",
@@ -1454,7 +1567,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Anatomy",
@@ -1467,7 +1581,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "logo-design-skill",
@@ -1480,7 +1595,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Goldie",
@@ -1493,7 +1609,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     }
    ]
   },
@@ -1509,7 +1626,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "audience": "both"
     },
     {
      "name": "ChatGPT",
@@ -1518,7 +1636,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Grammarly",
@@ -1531,7 +1650,8 @@
      "tags": [
       "grammar",
       "proofreading"
-     ]
+     ],
+     "audience": "both"
     },
     {
      "name": "Sudowrite",
@@ -1540,7 +1660,8 @@
      "pricing": "paid",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Jasper",
@@ -1549,7 +1670,8 @@
      "pricing": "paid",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Google Gemini",
@@ -1562,7 +1684,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Microsoft Copilot",
@@ -1575,7 +1698,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Grok",
@@ -1587,7 +1711,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "QuillBot",
@@ -1600,7 +1725,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "audience": "both"
     },
     {
      "name": "Wordtune",
@@ -1612,7 +1738,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Copy.ai",
@@ -1625,7 +1752,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Writer",
@@ -1638,7 +1766,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Hemingway Editor",
@@ -1651,7 +1780,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "ProWritingAid",
@@ -1664,7 +1794,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "NovelAI",
@@ -1677,7 +1808,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Lex",
@@ -1689,7 +1821,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "DeepL Write",
@@ -1702,7 +1835,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Rytr",
@@ -1714,7 +1848,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Typefully",
@@ -1727,7 +1862,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Sepia",
@@ -1740,7 +1876,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Easel",
@@ -1753,7 +1890,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     }
    ]
   },
@@ -1769,7 +1907,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "audience": "both"
     },
     {
      "name": "NotebookLM",
@@ -1782,7 +1921,8 @@
      "tags": [
       "podcast",
       "audio overview"
-     ]
+     ],
+     "audience": "both"
     },
     {
      "name": "Elicit",
@@ -1791,7 +1931,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Consensus",
@@ -1800,7 +1941,8 @@
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "ChatGPT Deep Research",
@@ -1813,7 +1955,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Gemini Deep Research",
@@ -1826,7 +1969,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Google AI Mode",
@@ -1839,7 +1983,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Kagi",
@@ -1852,7 +1997,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "You.com",
@@ -1865,7 +2011,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Semantic Scholar",
@@ -1878,7 +2025,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Scite",
@@ -1891,7 +2039,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "SciSpace",
@@ -1904,7 +2053,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Undermind",
@@ -1917,7 +2067,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Exa",
@@ -1930,7 +2081,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Tavily",
@@ -1943,7 +2095,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Felo",
@@ -1956,7 +2109,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Liner",
@@ -1969,7 +2123,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Connected Papers",
@@ -1982,7 +2137,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Research Rabbit",
@@ -1995,7 +2151,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Answer me with HTML",
@@ -2008,7 +2165,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "geo-sleuth",
@@ -2021,7 +2179,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     }
    ]
   },
@@ -2042,7 +2201,8 @@
       "text to speech",
       "voice cloning",
       "dubbing"
-     ]
+     ],
+     "audience": "both"
     },
     {
      "name": "Suno",
@@ -2054,7 +2214,8 @@
      "url_check": "200 OK 2026-10-15",
      "tags": [
       "music"
-     ]
+     ],
+     "audience": "consumer"
     },
     {
      "name": "Udio",
@@ -2066,7 +2227,8 @@
      "url_check": "200 OK 2026-10-15",
      "tags": [
       "music"
-     ]
+     ],
+     "audience": "consumer"
     },
     {
      "name": "Descript",
@@ -2081,7 +2243,8 @@
       "podcast",
       "transcription",
       "screen recording"
-     ]
+     ],
+     "audience": "both"
     },
     {
      "name": "Wispr Flow",
@@ -2094,7 +2257,8 @@
      "tags": [
       "dictation",
       "speech to text"
-     ]
+     ],
+     "audience": "both"
     },
     {
      "name": "OpenAI Whisper",
@@ -2107,7 +2271,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Otter.ai",
@@ -2120,7 +2285,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Speechify",
@@ -2133,7 +2299,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Murf",
@@ -2146,7 +2313,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Cartesia",
@@ -2159,7 +2327,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Deepgram",
@@ -2172,7 +2341,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "AssemblyAI",
@@ -2185,7 +2355,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Resemble AI",
@@ -2198,7 +2369,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Adobe Podcast",
@@ -2211,7 +2383,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Krisp",
@@ -2224,7 +2397,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Riverside",
@@ -2237,7 +2411,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Hume AI",
@@ -2250,7 +2425,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "LALAL.AI",
@@ -2263,7 +2439,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "Superwhisper",
@@ -2276,7 +2453,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "AIVA",
@@ -2289,7 +2467,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     },
     {
      "name": "VoiceMem",
@@ -2302,7 +2481,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
     }
    ]
   },
@@ -2322,7 +2502,8 @@
      "tags": [
       "automation",
       "integrations"
-     ]
+     ],
+     "audience": "business"
     },
     {
      "name": "Make",
@@ -2335,7 +2516,8 @@
      "tags": [
       "automation",
       "integrations"
-     ]
+     ],
+     "audience": "business"
     },
     {
      "name": "Notion AI",
@@ -2344,7 +2526,8 @@
      "pricing": "paid",
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Gamma",
@@ -2357,7 +2540,8 @@
      "tags": [
       "presentations",
       "slides"
-     ]
+     ],
+     "audience": "both"
     },
     {
      "name": "Microsoft 365 Copilot",
@@ -2370,7 +2554,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Gemini for Google Workspace",
@@ -2383,7 +2568,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Granola",
@@ -2396,7 +2582,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Fireflies.ai",
@@ -2409,7 +2596,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Fathom",
@@ -2422,7 +2610,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Motion",
@@ -2435,7 +2624,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Reclaim.ai",
@@ -2448,7 +2638,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Superhuman",
@@ -2460,7 +2651,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "ClickUp",
@@ -2472,7 +2664,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Raycast",
@@ -2485,7 +2678,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Mem",
@@ -2497,7 +2691,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Beautiful.ai",
@@ -2509,7 +2704,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Airtable",
@@ -2522,7 +2718,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "Manus",
@@ -2535,7 +2732,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "ChatGPT Agent",
@@ -2548,7 +2746,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "both"
     },
     {
      "name": "Perplexity Comet",
@@ -2561,7 +2760,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "bot-blocked (403), known official domain"
+     "url_check": "bot-blocked (403), known official domain",
+     "audience": "consumer"
     },
     {
      "name": "Zapier Agents",
@@ -2574,7 +2774,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     },
     {
      "name": "coucou",
@@ -2587,7 +2788,8 @@
      ],
      "affiliate_url": "",
      "featured": false,
-     "url_check": "200 OK 2026-10-15"
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business"
     }
    ]
   }

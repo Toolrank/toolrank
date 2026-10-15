@@ -8,256 +8,256 @@ Last updated 2026-10-15. Source: https://toolrank.io/. Editorial ranking; positi
 Describe an app in plain English, get a working app.
 Page: https://toolrank.io/best/vibe-coding/
 
-1. Lovable (freemium): Prompt-to-full-stack web app builder aimed at non-developers. https://lovable.dev
-2. Bolt.new (freemium): Builds and runs full-stack apps in the browser from a prompt. https://bolt.new
-3. v0 (freemium): Vercel's generator for React/Next.js UIs and apps, deploys to Vercel. https://v0.app
-4. Replit (freemium): Replit Agent builds, hosts and deploys apps from one cloud workspace. https://replit.com
-5. Base44 (freemium): Prompt-to-app builder with built-in database, auth and hosting; owned by Wix. https://base44.com
-6. Google AI Studio (Build) (free): Google's AI Studio builds and deploys Gemini-powered apps from a prompt. https://aistudio.google.com
-7. Firebase Studio (free): Google's cloud workspace for prototyping full-stack apps with Gemini. https://firebase.studio
-8. Create.xyz (Anything) (freemium): Prompt-to-app builder for web and mobile apps. https://www.createanything.com
-9. Rork (freemium): Builds native mobile apps (React Native) from a prompt. https://rork.com
-10. Softgen (paid): AI web app builder producing Next.js apps with Firebase/Supabase. https://softgen.ai
-11. Tempo (freemium): Visual React editor with AI that generates and edits code. https://www.tempo.new
-12. Same (freemium): Clones or builds web apps from a prompt or URL. https://same.new
-13. Macaly (freemium): Prompt-to-website and app builder for non-developers. https://www.macaly.com
-14. Figma Make (freemium): Figma's prompt-to-app feature that turns designs and prompts into working prototypes. https://www.figma.com/make/
-15. Bubble (freemium): Established no-code platform with an AI app generator. https://bubble.io
-16. Glide (freemium): No-code business apps from spreadsheets, with AI features. https://www.glideapps.com
-17. Webflow (freemium): Visual website builder with AI site and page generation. https://webflow.com
-18. Framer (freemium): Design-first website builder with AI page generation. https://www.framer.com
-19. Dyad (free): Free, local, open-source app builder; bring your own model keys. https://www.dyad.sh
-20. vibe-wise (free): Claude Code/Codex plugin that teaches you to build while AI writes the code. New open-source launch on GitHub. https://github.com/nykooi1/vibe-wise
-21. scroll-craft (free): Agent skill for building premium scroll-driven websites. New open-source launch on GitHub. https://github.com/nateherkai/scroll-craft
-22. shadcn lint (free): Agent-first linter for Tailwind design systems. New open-source launch on GitHub. https://github.com/shadcn-ui/lint
+1. Lovable (freemium; audience: consumer): Prompt-to-full-stack web app builder aimed at non-developers. https://lovable.dev
+2. Bolt.new (freemium; audience: consumer): Builds and runs full-stack apps in the browser from a prompt. https://bolt.new
+3. v0 (freemium; audience: consumer): Vercel's generator for React/Next.js UIs and apps, deploys to Vercel. https://v0.app
+4. Replit (freemium; audience: both): Replit Agent builds, hosts and deploys apps from one cloud workspace. https://replit.com
+5. Base44 (freemium; audience: both): Prompt-to-app builder with built-in database, auth and hosting; owned by Wix. https://base44.com
+6. Google AI Studio (Build) (free; audience: both): Google's AI Studio builds and deploys Gemini-powered apps from a prompt. https://aistudio.google.com
+7. Firebase Studio (free; audience: both): Google's cloud workspace for prototyping full-stack apps with Gemini. https://firebase.studio
+8. Create.xyz (Anything) (freemium; audience: consumer): Prompt-to-app builder for web and mobile apps. https://www.createanything.com
+9. Rork (freemium; audience: consumer): Builds native mobile apps (React Native) from a prompt. https://rork.com
+10. Softgen (paid; audience: consumer): AI web app builder producing Next.js apps with Firebase/Supabase. https://softgen.ai
+11. Tempo (freemium; audience: consumer): Visual React editor with AI that generates and edits code. https://www.tempo.new
+12. Same (freemium; audience: consumer): Clones or builds web apps from a prompt or URL. https://same.new
+13. Macaly (freemium; audience: consumer): Prompt-to-website and app builder for non-developers. https://www.macaly.com
+14. Figma Make (freemium; audience: both): Figma's prompt-to-app feature that turns designs and prompts into working prototypes. https://www.figma.com/make/
+15. Bubble (freemium; audience: both): Established no-code platform with an AI app generator. https://bubble.io
+16. Glide (freemium; audience: both): No-code business apps from spreadsheets, with AI features. https://www.glideapps.com
+17. Webflow (freemium; audience: both): Visual website builder with AI site and page generation. https://webflow.com
+18. Framer (freemium; audience: both): Design-first website builder with AI page generation. https://www.framer.com
+19. Dyad (free; audience: consumer): Free, local, open-source app builder; bring your own model keys. https://www.dyad.sh
+20. vibe-wise (free; audience: consumer): Claude Code/Codex plugin that teaches you to build while AI writes the code. New open-source launch on GitHub. https://github.com/nykooi1/vibe-wise
+21. scroll-craft (free; audience: consumer): Agent skill for building premium scroll-driven websites. New open-source launch on GitHub. https://github.com/nateherkai/scroll-craft
+22. shadcn lint (free; audience: consumer): Agent-first linter for Tailwind design systems. New open-source launch on GitHub. https://github.com/shadcn-ui/lint
 
 ## Best coding assistants
 
 AI pair programmers for working developers.
 Page: https://toolrank.io/best/coding-assistants/
 
-1. Cursor (freemium): AI-native code editor with strong agent mode and codebase context. https://www.cursor.com
-2. Claude Code (paid): Anthropic's terminal-based agentic coding tool. https://www.anthropic.com/claude-code
-3. GitHub Copilot (freemium): Most widely integrated assistant across IDEs and GitHub. https://github.com/features/copilot
-4. OpenAI Codex (paid): OpenAI's coding agent across CLI, IDE and cloud. https://openai.com/codex
-5. Windsurf (freemium): Agentic IDE alternative to Cursor. https://windsurf.com
-6. Gemini CLI (free): Google's open-source terminal coding agent powered by Gemini. https://github.com/google-gemini/gemini-cli
-7. JetBrains AI (Junie) (paid): JetBrains' coding agent inside IntelliJ-based IDEs. https://junie.jetbrains.com/
-8. Cline (free): Open-source autonomous coding agent for VS Code; bring your own model. https://cline.bot
-9. Kilo Code (freemium): Open-source coding agent for VS Code and JetBrains. https://kilo.ai
-10. Aider (free): Open-source terminal pair programmer that commits to git. https://aider.chat
-11. Amp (freemium): Sourcegraph-born agentic coding tool for terminal and editors. https://ampcode.com
-12. Zed (freemium): Fast open-source code editor with built-in AI agent. https://zed.dev
-13. Amazon Q Developer (freemium): AWS coding assistant for IDEs and CLI. https://aws.amazon.com/q/developer/
-14. Kiro (freemium): AWS's spec-driven agentic IDE. https://kiro.dev
-15. Augment Code (paid): Coding agent built for large codebases with deep context. https://www.augmentcode.com
-16. Devin (paid): Cognition's autonomous software engineering agent. https://devin.ai
-17. Factory (paid): Droids: coding agents for terminal, IDE and CI. https://factory.com
-18. Warp (freemium): Agentic terminal and development environment. https://www.warp.dev
-19. OpenCode (free): Open-source terminal coding agent supporting many models. https://opencode.ai
-20. Continue (freemium): Open-source assistants and checks for IDE and CI. https://www.continue.dev
-21. CodeRabbit (freemium): AI code reviews on pull requests. https://www.coderabbit.ai
-22. Qodo (freemium): AI code review and test generation. https://www.qodo.ai
-23. Magpie (freemium): Menu-bar app to run any coding agent (Codex, Claude Code) on any model. New open-source launch on GitHub. https://usemagpie.ai
-24. Mono (monocode) (freemium): A GUI for your coding agents. New open-source launch on GitHub. https://usemono.dev
-25. OmniRush (freemium): Desktop coding agent with free access to frontier models. New open-source launch on GitHub. https://omnirush.ai
-26. jevgrep (free): CLI for coding agents to find code by asking what it does. New open-source launch on GitHub. https://github.com/dzhng/jevgrep
+1. Cursor (freemium; audience: business): AI-native code editor with strong agent mode and codebase context. https://www.cursor.com
+2. Claude Code (paid; audience: business): Anthropic's terminal-based agentic coding tool. https://www.anthropic.com/claude-code
+3. GitHub Copilot (freemium; audience: business): Most widely integrated assistant across IDEs and GitHub. https://github.com/features/copilot
+4. OpenAI Codex (paid; audience: business): OpenAI's coding agent across CLI, IDE and cloud. https://openai.com/codex
+5. Windsurf (freemium; audience: business): Agentic IDE alternative to Cursor. https://windsurf.com
+6. Gemini CLI (free; audience: business): Google's open-source terminal coding agent powered by Gemini. https://github.com/google-gemini/gemini-cli
+7. JetBrains AI (Junie) (paid; audience: business): JetBrains' coding agent inside IntelliJ-based IDEs. https://junie.jetbrains.com/
+8. Cline (free; audience: business): Open-source autonomous coding agent for VS Code; bring your own model. https://cline.bot
+9. Kilo Code (freemium; audience: business): Open-source coding agent for VS Code and JetBrains. https://kilo.ai
+10. Aider (free; audience: business): Open-source terminal pair programmer that commits to git. https://aider.chat
+11. Amp (freemium; audience: business): Sourcegraph-born agentic coding tool for terminal and editors. https://ampcode.com
+12. Zed (freemium; audience: business): Fast open-source code editor with built-in AI agent. https://zed.dev
+13. Amazon Q Developer (freemium; audience: business): AWS coding assistant for IDEs and CLI. https://aws.amazon.com/q/developer/
+14. Kiro (freemium; audience: business): AWS's spec-driven agentic IDE. https://kiro.dev
+15. Augment Code (paid; audience: business): Coding agent built for large codebases with deep context. https://www.augmentcode.com
+16. Devin (paid; audience: business): Cognition's autonomous software engineering agent. https://devin.ai
+17. Factory (paid; audience: business): Droids: coding agents for terminal, IDE and CI. https://factory.com
+18. Warp (freemium; audience: business): Agentic terminal and development environment. https://www.warp.dev
+19. OpenCode (free; audience: business): Open-source terminal coding agent supporting many models. https://opencode.ai
+20. Continue (freemium; audience: business): Open-source assistants and checks for IDE and CI. https://www.continue.dev
+21. CodeRabbit (freemium; audience: business): AI code reviews on pull requests. https://www.coderabbit.ai
+22. Qodo (freemium; audience: business): AI code review and test generation. https://www.qodo.ai
+23. Magpie (freemium; audience: business): Menu-bar app to run any coding agent (Codex, Claude Code) on any model. New open-source launch on GitHub. https://usemagpie.ai
+24. Mono (monocode) (freemium; audience: business): A GUI for your coding agents. New open-source launch on GitHub. https://usemono.dev
+25. OmniRush (freemium; audience: business): Desktop coding agent with free access to frontier models. New open-source launch on GitHub. https://omnirush.ai
+26. jevgrep (free; audience: business): CLI for coding agents to find code by asking what it does. New open-source launch on GitHub. https://github.com/dzhng/jevgrep
 
 ## Best for video
 
 Generate and edit video with AI.
 Page: https://toolrank.io/best/video/
 
-1. Runway (freemium): Pro-grade generative video models and editing tools. https://runwayml.com
-2. Google Veo (paid): Google DeepMind's video model with native audio. https://deepmind.google/models/veo/
-3. Kling AI (freemium): High-quality text/image-to-video from Kuaishou. https://klingai.com
-4. Luma AI (freemium): Dream Machine video generation, fast and cinematic. https://lumalabs.ai
-5. HeyGen (freemium): AI avatar and talking-head video, translation and dubbing. https://www.heygen.com
-6. Sora (freemium): OpenAI's video generation model and app. https://openai.com/sora
-7. Synthesia (freemium): AI avatar video platform for training and corporate videos in 140+ languages. https://www.synthesia.io
-8. Pika (freemium): Text- and image-to-video generator with effects for short social clips. https://pika.art
-9. Hailuo AI (MiniMax) (freemium): MiniMax's text- and image-to-video generator. https://hailuoai.video
-10. Higgsfield (freemium): Video generation with cinematic camera-motion presets, hosting several models. https://higgsfield.ai
-11. PixVerse (freemium): Text- and image-to-video generator with templates for social video. https://pixverse.ai
-12. Vidu (freemium): Shengshu's text- and image-to-video model with reference-to-video. https://www.vidu.com
-13. Hedra (freemium): Generates talking-character videos from an image and audio. https://www.hedra.com
-14. Captions (freemium): Mobile-first app for AI captions, editing and talking-head video. https://www.captions.ai
-15. OpusClip (freemium): Turns long videos into short vertical clips automatically. https://www.opus.pro
-16. Descript (video) (freemium): Edit video by editing its transcript. https://www.descript.com
-17. CapCut (freemium): ByteDance's video editor with AI captions, effects and generation. https://www.capcut.com
-18. Invideo AI (freemium): Generates full videos with script, stock media and voiceover from a prompt. https://invideo.io
-19. Colossyan (freemium): AI avatar video creator focused on workplace learning. https://www.colossyan.com
-20. D-ID (freemium): Talking-avatar video and real-time streaming avatars from a photo. https://www.d-id.com
-21. Wan (Alibaba) (freemium): Alibaba's Wan video models, with open weights and a hosted generator. https://wan.video
-22. LTX Studio (freemium): Lightricks' storyboard-to-video production tool built on LTX models. https://ltx.io/studio
-23. Veed (freemium): Browser video editor with AI subtitles, avatars and clean-up tools. https://www.veed.io
-24. Topaz Video (paid): Desktop AI upscaling, denoising and frame interpolation for video. https://www.topazlabs.com/topaz-video
-25. Wonder Studio (Autodesk Flow Studio) (freemium): Autodesk tool that replaces actors with CG characters from live footage. https://www.autodesk.com/products/flow-studio/overview
-26. Vozo (freemium): AI video translation, dubbing and lip sync. https://www.vozo.ai
-27. ReelMimic (free): Show it a video you love; an AI crew makes a new one in the same style. New open-source launch on GitHub. https://github.com/edenfunf/reelmimic
+1. Runway (freemium; audience: consumer): Pro-grade generative video models and editing tools. https://runwayml.com
+2. Google Veo (paid; audience: consumer): Google DeepMind's video model with native audio. https://deepmind.google/models/veo/
+3. Kling AI (freemium; audience: consumer): High-quality text/image-to-video from Kuaishou. https://klingai.com
+4. Luma AI (freemium; audience: consumer): Dream Machine video generation, fast and cinematic. https://lumalabs.ai
+5. HeyGen (freemium; audience: both): AI avatar and talking-head video, translation and dubbing. https://www.heygen.com
+6. Sora (freemium; audience: consumer): OpenAI's video generation model and app. https://openai.com/sora
+7. Synthesia (freemium; audience: business): AI avatar video platform for training and corporate videos in 140+ languages. https://www.synthesia.io
+8. Pika (freemium; audience: consumer): Text- and image-to-video generator with effects for short social clips. https://pika.art
+9. Hailuo AI (MiniMax) (freemium; audience: consumer): MiniMax's text- and image-to-video generator. https://hailuoai.video
+10. Higgsfield (freemium; audience: consumer): Video generation with cinematic camera-motion presets, hosting several models. https://higgsfield.ai
+11. PixVerse (freemium; audience: consumer): Text- and image-to-video generator with templates for social video. https://pixverse.ai
+12. Vidu (freemium; audience: consumer): Shengshu's text- and image-to-video model with reference-to-video. https://www.vidu.com
+13. Hedra (freemium; audience: consumer): Generates talking-character videos from an image and audio. https://www.hedra.com
+14. Captions (freemium; audience: both): Mobile-first app for AI captions, editing and talking-head video. https://www.captions.ai
+15. OpusClip (freemium; audience: both): Turns long videos into short vertical clips automatically. https://www.opus.pro
+16. Descript (video) (freemium; audience: both): Edit video by editing its transcript. https://www.descript.com
+17. CapCut (freemium; audience: consumer): ByteDance's video editor with AI captions, effects and generation. https://www.capcut.com
+18. Invideo AI (freemium; audience: both): Generates full videos with script, stock media and voiceover from a prompt. https://invideo.io
+19. Colossyan (freemium; audience: business): AI avatar video creator focused on workplace learning. https://www.colossyan.com
+20. D-ID (freemium; audience: consumer): Talking-avatar video and real-time streaming avatars from a photo. https://www.d-id.com
+21. Wan (Alibaba) (freemium; audience: business): Alibaba's Wan video models, with open weights and a hosted generator. https://wan.video
+22. LTX Studio (freemium; audience: both): Lightricks' storyboard-to-video production tool built on LTX models. https://ltx.io/studio
+23. Veed (freemium; audience: both): Browser video editor with AI subtitles, avatars and clean-up tools. https://www.veed.io
+24. Topaz Video (paid; audience: consumer): Desktop AI upscaling, denoising and frame interpolation for video. https://www.topazlabs.com/topaz-video
+25. Wonder Studio (Autodesk Flow Studio) (freemium; audience: consumer): Autodesk tool that replaces actors with CG characters from live footage. https://www.autodesk.com/products/flow-studio/overview
+26. Vozo (freemium; audience: both): AI video translation, dubbing and lip sync. https://www.vozo.ai
+27. ReelMimic (free; audience: consumer): Show it a video you love; an AI crew makes a new one in the same style. New open-source launch on GitHub. https://github.com/edenfunf/reelmimic
 
 ## Best agent builder
 
 Build AI agents and multi-step workflows.
 Page: https://toolrank.io/best/agent-builders/
 
-1. n8n (freemium): Fair-code workflow automation with AI agent nodes; self-hostable. https://n8n.io
-2. LangGraph (freemium): Developer framework for stateful, controllable agents. https://www.langchain.com/langgraph
-3. CrewAI (freemium): Multi-agent orchestration framework plus hosted platform. https://www.crewai.com
-4. Relevance AI (freemium): No-code platform for building AI agent teams. https://www.relevanceai.com
-5. Gumloop (freemium): Drag-and-drop AI automation and agent builder. https://www.gumloop.com
-6. OpenAI Agents SDK (free): OpenAI's lightweight framework for multi-agent workflows. https://openai.github.io/openai-agents-python/
-7. Claude Agent SDK (free): Anthropic's SDK for building agents on Claude Code's harness. https://code.claude.com/docs/en/agent-sdk/overview
-8. Google ADK (free): Google's open-source Agent Development Kit. https://adk.dev/
-9. Microsoft Agent Framework (free): Microsoft's open-source successor to AutoGen and Semantic Kernel agents. https://github.com/microsoft/agent-framework
-10. LlamaIndex (freemium): Framework and cloud for agents over your documents. https://www.llamaindex.ai
-11. Pydantic AI (free): Type-safe Python agent framework from the Pydantic team. https://pydantic.dev/docs/ai/overview/
-12. Mastra (free): Open-source TypeScript agent framework. https://mastra.ai
-13. Dify (freemium): Open-source platform for building LLM apps and agent workflows visually. https://dify.ai
-14. Flowise (free): Open-source drag-and-drop builder for LLM agents. https://flowiseai.com
-15. Langflow (free): Open-source visual builder for agents and RAG. https://www.langflow.org
-16. Lindy (freemium): No-code AI agents for business tasks like email and scheduling. https://www.lindy.ai
-17. Botpress (freemium): Platform for building AI chat agents. https://botpress.com
-18. Voiceflow (freemium): Platform to design and deploy chat and voice agents. https://www.voiceflow.com
-19. Vapi (paid): Developer platform for voice AI agents. https://vapi.ai
-20. Agno (free): Open-source Python framework and runtime for multi-agent systems. https://www.agno.com
-21. Monid (freemium): OpenRouter for agent tools. New open-source launch on GitHub. https://monid.ai
-22. agent-memory (free): Long-term memory runtime for agents with plain Markdown as source of truth. New open-source launch on GitHub. https://github.com/tigerless-labs/agent-memory
-23. Reef (freemium): Infrastructure for continually self-improving agents. New open-source launch on GitHub. https://reefinfra.ai
+1. n8n (freemium; audience: business): Fair-code workflow automation with AI agent nodes; self-hostable. https://n8n.io
+2. LangGraph (freemium; audience: business): Developer framework for stateful, controllable agents. https://www.langchain.com/langgraph
+3. CrewAI (freemium; audience: business): Multi-agent orchestration framework plus hosted platform. https://www.crewai.com
+4. Relevance AI (freemium; audience: business): No-code platform for building AI agent teams. https://www.relevanceai.com
+5. Gumloop (freemium; audience: business): Drag-and-drop AI automation and agent builder. https://www.gumloop.com
+6. OpenAI Agents SDK (free; audience: business): OpenAI's lightweight framework for multi-agent workflows. https://openai.github.io/openai-agents-python/
+7. Claude Agent SDK (free; audience: business): Anthropic's SDK for building agents on Claude Code's harness. https://code.claude.com/docs/en/agent-sdk/overview
+8. Google ADK (free; audience: business): Google's open-source Agent Development Kit. https://adk.dev/
+9. Microsoft Agent Framework (free; audience: business): Microsoft's open-source successor to AutoGen and Semantic Kernel agents. https://github.com/microsoft/agent-framework
+10. LlamaIndex (freemium; audience: business): Framework and cloud for agents over your documents. https://www.llamaindex.ai
+11. Pydantic AI (free; audience: business): Type-safe Python agent framework from the Pydantic team. https://pydantic.dev/docs/ai/overview/
+12. Mastra (free; audience: business): Open-source TypeScript agent framework. https://mastra.ai
+13. Dify (freemium; audience: business): Open-source platform for building LLM apps and agent workflows visually. https://dify.ai
+14. Flowise (free; audience: business): Open-source drag-and-drop builder for LLM agents. https://flowiseai.com
+15. Langflow (free; audience: business): Open-source visual builder for agents and RAG. https://www.langflow.org
+16. Lindy (freemium; audience: both): No-code AI agents for business tasks like email and scheduling. https://www.lindy.ai
+17. Botpress (freemium; audience: business): Platform for building AI chat agents. https://botpress.com
+18. Voiceflow (freemium; audience: business): Platform to design and deploy chat and voice agents. https://www.voiceflow.com
+19. Vapi (paid; audience: business): Developer platform for voice AI agents. https://vapi.ai
+20. Agno (free; audience: business): Open-source Python framework and runtime for multi-agent systems. https://www.agno.com
+21. Monid (freemium; audience: business): OpenRouter for agent tools. New open-source launch on GitHub. https://monid.ai
+22. agent-memory (free; audience: business): Long-term memory runtime for agents with plain Markdown as source of truth. New open-source launch on GitHub. https://github.com/tigerless-labs/agent-memory
+23. Reef (freemium; audience: business): Infrastructure for continually self-improving agents. New open-source launch on GitHub. https://reefinfra.ai
 
 ## Best for image generation
 
 Create and edit images from prompts.
 Page: https://toolrank.io/best/image/
 
-1. Midjourney (paid): Benchmark for aesthetic, artistic image quality. https://www.midjourney.com
-2. Ideogram (freemium): Standout at legible text inside images. https://ideogram.ai
-3. Black Forest Labs (FLUX) (freemium): FLUX models: top open and API image generation. https://bfl.ai
-4. Recraft (freemium): Design-focused: vectors, icons, brand-consistent styles. https://www.recraft.ai
-5. Krea (freemium): Real-time generation and access to many models in one place. https://www.krea.ai
-6. GPT Image (ChatGPT) (freemium): OpenAI's image generation and editing inside ChatGPT. https://chatgpt.com
-7. Google Gemini (Nano Banana) (freemium): Gemini's image generation and conversational editing. https://gemini.google.com
-8. Adobe Firefly (freemium): Adobe's generative image tools, trained for commercial safety. https://firefly.adobe.com
-9. Leonardo.Ai (freemium): Image and video generation platform with fine-tuned models; owned by Canva. https://leonardo.ai
-10. Stability AI (freemium): Maker of Stable Diffusion open image models. https://stability.ai
-11. Canva AI (freemium): Canva's design platform with built-in AI image generation. https://www.canva.com
-12. Freepik AI (freemium): Image and video generation suite hosting many models. https://www.freepik.com/ai
-13. Magnific (paid): AI image upscaler and enhancer. https://www.magnific.com
-14. Photoroom (freemium): AI background removal and product photo editing. https://www.photoroom.com
-15. Seedream (ByteDance) (freemium): ByteDance Seed's image generation and editing model. https://seed.bytedance.com/en/seedream4_0
-16. ComfyUI (free): Open-source node-based interface for running image and video models. https://www.comfy.org
-17. Anatomy (freemium): Agent skill that creates detailed interactive isometric illustrations of machines. New open-source launch on GitHub. https://skills.wheresryan.sh/anatomy
-18. logo-design-skill (free): Logo-design skill for Claude, Gemini CLI and Codex with SVG output. New open-source launch on GitHub. https://github.com/kaankiziltug/logo-design-skill
-19. Goldie (free): Agentic app store previews and screenshots. New open-source launch on GitHub. https://github.com/software-mansion-labs/goldie
+1. Midjourney (paid; audience: consumer): Benchmark for aesthetic, artistic image quality. https://www.midjourney.com
+2. Ideogram (freemium; audience: consumer): Standout at legible text inside images. https://ideogram.ai
+3. Black Forest Labs (FLUX) (freemium; audience: both): FLUX models: top open and API image generation. https://bfl.ai
+4. Recraft (freemium; audience: both): Design-focused: vectors, icons, brand-consistent styles. https://www.recraft.ai
+5. Krea (freemium; audience: consumer): Real-time generation and access to many models in one place. https://www.krea.ai
+6. GPT Image (ChatGPT) (freemium; audience: consumer): OpenAI's image generation and editing inside ChatGPT. https://chatgpt.com
+7. Google Gemini (Nano Banana) (freemium; audience: consumer): Gemini's image generation and conversational editing. https://gemini.google.com
+8. Adobe Firefly (freemium; audience: both): Adobe's generative image tools, trained for commercial safety. https://firefly.adobe.com
+9. Leonardo.Ai (freemium; audience: consumer): Image and video generation platform with fine-tuned models; owned by Canva. https://leonardo.ai
+10. Stability AI (freemium; audience: both): Maker of Stable Diffusion open image models. https://stability.ai
+11. Canva AI (freemium; audience: both): Canva's design platform with built-in AI image generation. https://www.canva.com
+12. Freepik AI (freemium; audience: both): Image and video generation suite hosting many models. https://www.freepik.com/ai
+13. Magnific (paid; audience: consumer): AI image upscaler and enhancer. https://www.magnific.com
+14. Photoroom (freemium; audience: both): AI background removal and product photo editing. https://www.photoroom.com
+15. Seedream (ByteDance) (freemium; audience: consumer): ByteDance Seed's image generation and editing model. https://seed.bytedance.com/en/seedream4_0
+16. ComfyUI (free; audience: consumer): Open-source node-based interface for running image and video models. https://www.comfy.org
+17. Anatomy (freemium; audience: consumer): Agent skill that creates detailed interactive isometric illustrations of machines. New open-source launch on GitHub. https://skills.wheresryan.sh/anatomy
+18. logo-design-skill (free; audience: consumer): Logo-design skill for Claude, Gemini CLI and Codex with SVG output. New open-source launch on GitHub. https://github.com/kaankiziltug/logo-design-skill
+19. Goldie (free; audience: consumer): Agentic app store previews and screenshots. New open-source launch on GitHub. https://github.com/software-mansion-labs/goldie
 
 ## Best for writing
 
 Drafting, editing and long-form writing.
 Page: https://toolrank.io/best/writing/
 
-1. Claude (freemium): Strong long-form writing quality and natural tone. https://claude.ai
-2. ChatGPT (freemium): Most versatile general assistant for drafting. https://chatgpt.com
-3. Grammarly (freemium): Editing and tone help everywhere you type. https://www.grammarly.com
-4. Sudowrite (paid): Purpose-built for fiction writers. https://sudowrite.com
-5. Jasper (paid): Marketing content with brand voice controls for teams. https://www.jasper.ai
-6. Google Gemini (freemium): Google's assistant for drafting and editing, integrated with Workspace. https://gemini.google.com
-7. Microsoft Copilot (freemium): Microsoft's assistant, also built into Word and Outlook. https://copilot.microsoft.com
-8. Grok (freemium): xAI's assistant with real-time X data. https://grok.com
-9. QuillBot (freemium): Paraphrasing, grammar and summarising tool. https://quillbot.com
-10. Wordtune (freemium): Rewrites sentences for tone and clarity. https://www.wordtune.com
-11. Copy.ai (freemium): Go-to-market AI platform for sales and marketing content. https://www.copy.ai
-12. Writer (paid): Enterprise generative AI platform with brand-governed writing. https://writer.com
-13. Hemingway Editor (freemium): Readability editor with AI rewrite suggestions. https://hemingwayapp.com
-14. ProWritingAid (freemium): Grammar and style checker aimed at fiction writers. https://prowritingaid.com
-15. NovelAI (paid): AI-assisted fiction writing and storytelling. https://novelai.net
-16. Lex (freemium): Minimal word processor with built-in AI. https://lex.page
-17. DeepL Write (freemium): DeepL's AI writing and rephrasing assistant. https://www.deepl.com/write
-18. Rytr (freemium): Low-cost AI writer for short-form copy. https://rytr.me
-19. Typefully (freemium): Write and schedule social posts with AI assistance. https://typefully.com
-20. Sepia (free): De-AI writing skill for 77+ Agent Skills-compatible agents. New open-source launch on GitHub. https://github.com/Nanako0129/sepia
-21. Easel (free): Open-source social media agent: find trends, create content, publish everywhere. New open-source launch on GitHub. https://github.com/ZJU-REAL/Easel
+1. Claude (freemium; audience: both): Strong long-form writing quality and natural tone. https://claude.ai
+2. ChatGPT (freemium; audience: both): Most versatile general assistant for drafting. https://chatgpt.com
+3. Grammarly (freemium; audience: both): Editing and tone help everywhere you type. https://www.grammarly.com
+4. Sudowrite (paid; audience: consumer): Purpose-built for fiction writers. https://sudowrite.com
+5. Jasper (paid; audience: business): Marketing content with brand voice controls for teams. https://www.jasper.ai
+6. Google Gemini (freemium; audience: both): Google's assistant for drafting and editing, integrated with Workspace. https://gemini.google.com
+7. Microsoft Copilot (freemium; audience: both): Microsoft's assistant, also built into Word and Outlook. https://copilot.microsoft.com
+8. Grok (freemium; audience: consumer): xAI's assistant with real-time X data. https://grok.com
+9. QuillBot (freemium; audience: both): Paraphrasing, grammar and summarising tool. https://quillbot.com
+10. Wordtune (freemium; audience: consumer): Rewrites sentences for tone and clarity. https://www.wordtune.com
+11. Copy.ai (freemium; audience: business): Go-to-market AI platform for sales and marketing content. https://www.copy.ai
+12. Writer (paid; audience: business): Enterprise generative AI platform with brand-governed writing. https://writer.com
+13. Hemingway Editor (freemium; audience: consumer): Readability editor with AI rewrite suggestions. https://hemingwayapp.com
+14. ProWritingAid (freemium; audience: consumer): Grammar and style checker aimed at fiction writers. https://prowritingaid.com
+15. NovelAI (paid; audience: consumer): AI-assisted fiction writing and storytelling. https://novelai.net
+16. Lex (freemium; audience: consumer): Minimal word processor with built-in AI. https://lex.page
+17. DeepL Write (freemium; audience: both): DeepL's AI writing and rephrasing assistant. https://www.deepl.com/write
+18. Rytr (freemium; audience: consumer): Low-cost AI writer for short-form copy. https://rytr.me
+19. Typefully (freemium; audience: both): Write and schedule social posts with AI assistance. https://typefully.com
+20. Sepia (free; audience: consumer): De-AI writing skill for 77+ Agent Skills-compatible agents. New open-source launch on GitHub. https://github.com/Nanako0129/sepia
+21. Easel (free; audience: consumer): Open-source social media agent: find trends, create content, publish everywhere. New open-source launch on GitHub. https://github.com/ZJU-REAL/Easel
 
 ## Best for research & search
 
 Answer engines and research assistants.
 Page: https://toolrank.io/best/research/
 
-1. Perplexity (freemium): Cited answer engine for fast web research. https://www.perplexity.ai
-2. NotebookLM (freemium): Grounded Q&A and audio overviews over your own sources. https://notebooklm.google
-3. Elicit (freemium): Searches and extracts data from academic papers. https://elicit.com
-4. Consensus (freemium): Evidence-based answers from peer-reviewed research. https://consensus.app
-5. ChatGPT Deep Research (freemium): ChatGPT's agentic multi-step web research reports. https://chatgpt.com
-6. Gemini Deep Research (freemium): Gemini's multi-step research reports from the web. https://gemini.google.com
-7. Google AI Mode (free): Google Search's conversational AI answer mode. https://www.google.com/search?udm=50
-8. Kagi (paid): Ad-free paid search engine with AI Assistant. https://kagi.com
-9. You.com (freemium): AI search and research agents. https://you.com
-10. Semantic Scholar (free): Free AI-powered academic paper search from Ai2. https://www.semanticscholar.org
-11. Scite (paid): Shows how papers are cited: supporting or contrasting. https://scite.ai
-12. SciSpace (freemium): AI research assistant for reading and searching papers. https://scispace.com
-13. Undermind (freemium): Deep academic literature search agent. https://www.undermind.ai
-14. Exa (freemium): Search engine and API built for AI and agents. https://exa.ai
-15. Tavily (freemium): Web search API for AI agents. https://www.tavily.com
-16. Felo (freemium): Multilingual AI search engine. https://felo.ai
-17. Liner (freemium): AI research assistant with cited sources. https://liner.com
-18. Connected Papers (freemium): Visual graph of related academic papers. https://www.connectedpapers.com
-19. Research Rabbit (freemium): Literature discovery and citation mapping. https://www.researchrabbit.ai
-20. Answer me with HTML (freemium): Agent skill that answers hard questions as a readable one-page HTML. New open-source launch on GitHub. https://answer-me-with-html.com/
-21. geo-sleuth (free): Agent skill that geolocates photos using OSM, elevation skylines and satellite imagery. New open-source launch on GitHub. https://github.com/Oldcircle/geo-sleuth
+1. Perplexity (freemium; audience: both): Cited answer engine for fast web research. https://www.perplexity.ai
+2. NotebookLM (freemium; audience: both): Grounded Q&A and audio overviews over your own sources. https://notebooklm.google
+3. Elicit (freemium; audience: both): Searches and extracts data from academic papers. https://elicit.com
+4. Consensus (freemium; audience: both): Evidence-based answers from peer-reviewed research. https://consensus.app
+5. ChatGPT Deep Research (freemium; audience: consumer): ChatGPT's agentic multi-step web research reports. https://chatgpt.com
+6. Gemini Deep Research (freemium; audience: consumer): Gemini's multi-step research reports from the web. https://gemini.google.com
+7. Google AI Mode (free; audience: consumer): Google Search's conversational AI answer mode. https://www.google.com/search?udm=50
+8. Kagi (paid; audience: consumer): Ad-free paid search engine with AI Assistant. https://kagi.com
+9. You.com (freemium; audience: both): AI search and research agents. https://you.com
+10. Semantic Scholar (free; audience: consumer): Free AI-powered academic paper search from Ai2. https://www.semanticscholar.org
+11. Scite (paid; audience: consumer): Shows how papers are cited: supporting or contrasting. https://scite.ai
+12. SciSpace (freemium; audience: consumer): AI research assistant for reading and searching papers. https://scispace.com
+13. Undermind (freemium; audience: consumer): Deep academic literature search agent. https://www.undermind.ai
+14. Exa (freemium; audience: business): Search engine and API built for AI and agents. https://exa.ai
+15. Tavily (freemium; audience: business): Web search API for AI agents. https://www.tavily.com
+16. Felo (freemium; audience: consumer): Multilingual AI search engine. https://felo.ai
+17. Liner (freemium; audience: consumer): AI research assistant with cited sources. https://liner.com
+18. Connected Papers (freemium; audience: consumer): Visual graph of related academic papers. https://www.connectedpapers.com
+19. Research Rabbit (freemium; audience: consumer): Literature discovery and citation mapping. https://www.researchrabbit.ai
+20. Answer me with HTML (freemium; audience: consumer): Agent skill that answers hard questions as a readable one-page HTML. New open-source launch on GitHub. https://answer-me-with-html.com/
+21. geo-sleuth (free; audience: consumer): Agent skill that geolocates photos using OSM, elevation skylines and satellite imagery. New open-source launch on GitHub. https://github.com/Oldcircle/geo-sleuth
 
 ## Best for voice & audio
 
 Speech, voice cloning, music and audio editing.
 Page: https://toolrank.io/best/voice-audio/
 
-1. ElevenLabs (freemium): Leading realistic TTS, voice cloning and dubbing. https://elevenlabs.io
-2. Suno (freemium): Full songs with vocals from a text prompt. https://suno.com
-3. Udio (freemium): AI music generation alternative to Suno. https://www.udio.com
-4. Descript (freemium): Edit audio/video by editing the transcript. https://www.descript.com
-5. Wispr Flow (freemium): Voice dictation that works across apps. https://wisprflow.ai
-6. OpenAI Whisper (free): OpenAI's open-source speech recognition model. https://github.com/openai/whisper
-7. Otter.ai (freemium): Meeting transcription and AI notes. https://otter.ai
-8. Speechify (freemium): Text-to-speech reader for documents and web pages. https://speechify.com
-9. Murf (freemium): Studio voiceovers with AI voices. https://murf.ai
-10. Cartesia (freemium): Low-latency text-to-speech API for real-time voice. https://cartesia.ai
-11. Deepgram (freemium): Speech-to-text and voice agent API. https://deepgram.com
-12. AssemblyAI (freemium): Speech-to-text and audio intelligence API. https://www.assemblyai.com
-13. Resemble AI (paid): Voice cloning and deepfake detection. https://www.resemble.ai
-14. Adobe Podcast (freemium): Enhance Speech cleans up recorded voice audio. https://podcast.adobe.com
-15. Krisp (freemium): Noise cancellation and meeting notes. https://krisp.ai
-16. Riverside (freemium): Remote podcast and video recording with AI editing. https://riverside.com
-17. Hume AI (freemium): Expressive, emotion-aware voice AI. https://www.hume.ai
-18. LALAL.AI (freemium): Stem splitting: vocals and instrument separation. https://www.lalal.ai
-19. Superwhisper (freemium): Mac/iOS voice dictation with local and cloud models. https://superwhisper.com
-20. AIVA (freemium): AI music composition for soundtracks. https://www.aiva.ai
-21. VoiceMem (free): Universal memory infrastructure for next-gen voice agents. New open-source launch on GitHub. https://github.com/xzf-thu/VoiceMem
+1. ElevenLabs (freemium; audience: both): Leading realistic TTS, voice cloning and dubbing. https://elevenlabs.io
+2. Suno (freemium; audience: consumer): Full songs with vocals from a text prompt. https://suno.com
+3. Udio (freemium; audience: consumer): AI music generation alternative to Suno. https://www.udio.com
+4. Descript (freemium; audience: both): Edit audio/video by editing the transcript. https://www.descript.com
+5. Wispr Flow (freemium; audience: both): Voice dictation that works across apps. https://wisprflow.ai
+6. OpenAI Whisper (free; audience: consumer): OpenAI's open-source speech recognition model. https://github.com/openai/whisper
+7. Otter.ai (freemium; audience: both): Meeting transcription and AI notes. https://otter.ai
+8. Speechify (freemium; audience: consumer): Text-to-speech reader for documents and web pages. https://speechify.com
+9. Murf (freemium; audience: both): Studio voiceovers with AI voices. https://murf.ai
+10. Cartesia (freemium; audience: business): Low-latency text-to-speech API for real-time voice. https://cartesia.ai
+11. Deepgram (freemium; audience: business): Speech-to-text and voice agent API. https://deepgram.com
+12. AssemblyAI (freemium; audience: business): Speech-to-text and audio intelligence API. https://www.assemblyai.com
+13. Resemble AI (paid; audience: business): Voice cloning and deepfake detection. https://www.resemble.ai
+14. Adobe Podcast (freemium; audience: consumer): Enhance Speech cleans up recorded voice audio. https://podcast.adobe.com
+15. Krisp (freemium; audience: both): Noise cancellation and meeting notes. https://krisp.ai
+16. Riverside (freemium; audience: both): Remote podcast and video recording with AI editing. https://riverside.com
+17. Hume AI (freemium; audience: business): Expressive, emotion-aware voice AI. https://www.hume.ai
+18. LALAL.AI (freemium; audience: consumer): Stem splitting: vocals and instrument separation. https://www.lalal.ai
+19. Superwhisper (freemium; audience: consumer): Mac/iOS voice dictation with local and cloud models. https://superwhisper.com
+20. AIVA (freemium; audience: consumer): AI music composition for soundtracks. https://www.aiva.ai
+21. VoiceMem (free; audience: consumer): Universal memory infrastructure for next-gen voice agents. New open-source launch on GitHub. https://github.com/xzf-thu/VoiceMem
 
 ## Best for productivity & automation
 
 Automate work and get more done.
 Page: https://toolrank.io/best/productivity/
 
-1. Zapier (freemium): Huge app catalogue with AI steps and agents. https://zapier.com
-2. Make (freemium): Visual automation scenarios with AI modules. https://www.make.com
-3. Notion AI (paid): AI built into docs, wikis and notes. https://www.notion.com/product/ai
-4. Gamma (freemium): Generates presentations, docs and sites from a prompt. https://gamma.app
-5. Microsoft 365 Copilot (paid): AI across Word, Excel, Outlook and Teams. https://www.microsoft.com/en-us/microsoft-365/copilot
-6. Gemini for Google Workspace (paid): Gemini inside Gmail, Docs, Sheets and Meet. https://workspace.google.com/solutions/ai/
-7. Granola (freemium): AI notepad that enhances your meeting notes without a bot. https://www.granola.ai
-8. Fireflies.ai (freemium): Meeting recorder, transcription and summaries. https://fireflies.ai
-9. Fathom (freemium): Free AI meeting notetaker for Zoom, Meet and Teams. https://www.fathom.ai
-10. Motion (paid): AI calendar and task scheduling. https://www.usemotion.com
-11. Reclaim.ai (freemium): AI time-blocking for calendars. https://reclaim.ai
-12. Superhuman (paid): Fast email client with AI writing and triage. https://superhuman.com
-13. ClickUp (freemium): Project management with ClickUp Brain AI. https://clickup.com
-14. Raycast (freemium): Mac launcher with built-in AI chat and commands. https://www.raycast.com
-15. Mem (freemium): AI-organised note-taking. https://get.mem.ai
-16. Beautiful.ai (paid): AI presentation software with smart templates. https://www.beautiful.ai
-17. Airtable (freemium): Database-app platform with built-in AI fields and agents. https://www.airtable.com
-18. Manus (freemium): General-purpose autonomous agent for research and tasks. https://manus.im
-19. ChatGPT Agent (paid): ChatGPT's agent mode that browses and completes tasks. https://chatgpt.com
-20. Perplexity Comet (free): Perplexity's AI browser that can act on pages. https://www.perplexity.ai/comet
-21. Zapier Agents (freemium): Zapier's no-code AI agents across 8,000 apps. https://zapier.com/agents
-22. coucou (freemium): Tiny Mac-notch/iPhone companion that keeps an eye on your AI coding agents. New open-source launch on GitHub. https://louis-cfm.github.io/coucou/
+1. Zapier (freemium; audience: business): Huge app catalogue with AI steps and agents. https://zapier.com
+2. Make (freemium; audience: business): Visual automation scenarios with AI modules. https://www.make.com
+3. Notion AI (paid; audience: both): AI built into docs, wikis and notes. https://www.notion.com/product/ai
+4. Gamma (freemium; audience: both): Generates presentations, docs and sites from a prompt. https://gamma.app
+5. Microsoft 365 Copilot (paid; audience: business): AI across Word, Excel, Outlook and Teams. https://www.microsoft.com/en-us/microsoft-365/copilot
+6. Gemini for Google Workspace (paid; audience: business): Gemini inside Gmail, Docs, Sheets and Meet. https://workspace.google.com/solutions/ai/
+7. Granola (freemium; audience: both): AI notepad that enhances your meeting notes without a bot. https://www.granola.ai
+8. Fireflies.ai (freemium; audience: business): Meeting recorder, transcription and summaries. https://fireflies.ai
+9. Fathom (freemium; audience: business): Free AI meeting notetaker for Zoom, Meet and Teams. https://www.fathom.ai
+10. Motion (paid; audience: both): AI calendar and task scheduling. https://www.usemotion.com
+11. Reclaim.ai (freemium; audience: both): AI time-blocking for calendars. https://reclaim.ai
+12. Superhuman (paid; audience: business): Fast email client with AI writing and triage. https://superhuman.com
+13. ClickUp (freemium; audience: business): Project management with ClickUp Brain AI. https://clickup.com
+14. Raycast (freemium; audience: both): Mac launcher with built-in AI chat and commands. https://www.raycast.com
+15. Mem (freemium; audience: both): AI-organised note-taking. https://get.mem.ai
+16. Beautiful.ai (paid; audience: both): AI presentation software with smart templates. https://www.beautiful.ai
+17. Airtable (freemium; audience: business): Database-app platform with built-in AI fields and agents. https://www.airtable.com
+18. Manus (freemium; audience: both): General-purpose autonomous agent for research and tasks. https://manus.im
+19. ChatGPT Agent (paid; audience: both): ChatGPT's agent mode that browses and completes tasks. https://chatgpt.com
+20. Perplexity Comet (free; audience: consumer): Perplexity's AI browser that can act on pages. https://www.perplexity.ai/comet
+21. Zapier Agents (freemium; audience: business): Zapier's no-code AI agents across 8,000 apps. https://zapier.com/agents
+22. coucou (freemium; audience: business): Tiny Mac-notch/iPhone companion that keeps an eye on your AI coding agents. New open-source launch on GitHub. https://louis-cfm.github.io/coucou/
 
 ## New this week (as of 2026-10-15)
 

@@ -1,0 +1,60 @@
+name: Leave a review
+description: Review an AI tool listed on ToolRank. Reviews are public and shown on toolrank.io after a quick moderation check.
+title: "Review: "
+labels: ["review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping builders and businesses pick the right AI tool. Please review tools you have actually used.
+        Reviews appear on toolrank.io once a maintainer adds the `approved` label. Your GitHub username is shown with your review.
+  - type: input
+    id: tool_name
+    attributes:
+      label: Tool name
+      description: As listed on toolrank.io (e.g. Cursor, Runway, ElevenLabs)
+    validations:
+      required: true
+  - type: dropdown
+    id: rating
+    attributes:
+      label: Rating
+      options:
+        - "5 - Excellent"
+        - "4 - Good"
+        - "3 - Okay"
+        - "2 - Poor"
+        - "1 - Bad"
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Who you are
+      options:
+        - User
+        - Developer
+        - Business
+    validations:
+      required: true
+  - type: textarea
+    id: review
+    attributes:
+      label: Review
+      description: What is good, what is not, and who it is for.
+    validations:
+      required: true
+  - type: input
+    id: use_case
+    attributes:
+      label: Use case
+      description: What you use it for (e.g. "short social videos", "code review for a 5-person team")
+    validations:
+      required: true
+  - type: checkboxes
+    id: honest
+    attributes:
+      label: Honesty
+      options:
+        - label: I have used this tool, and I am not reviewing my own product or a direct competitor's.
+          required: true
