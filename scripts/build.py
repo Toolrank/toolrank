@@ -276,9 +276,14 @@ NAV = (f'<header class="top"><div class="bar">{LOGO}<nav aria-label="Main"><a hr
        '<nav id="mmenu" class="mmenu" aria-label="Mobile" hidden>' + "".join(f'<a href="{h}">{l}</a>' for h, l in MENU) + '</nav>'
        '<script>(function(){var b=document.querySelector(".hb"),m=document.getElementById("mmenu");if(!b)return;function s(o){b.setAttribute("aria-expanded",o);b.setAttribute("aria-label",o?"Close menu":"Open menu");m.hidden=!o;document.documentElement.classList.toggle("mopen",o)}'
        'b.onclick=function(){s(m.hidden)};m.addEventListener("click",function(e){if(e.target.closest("a"))s(false)});addEventListener("keydown",function(e){if(e.key==="Escape"&&!m.hidden){s(false);b.focus()}})})()</script></header>')
+NL_URL = "https://tools-newsletter-8ee4fe.beehiiv.com/subscribe"
+def NL(cls="", hid="nl"):
+    return (f'<form class="nl {cls}" action="{NL_URL}" method="get" target="_blank" rel="noopener" onsubmit="var e=this.email.value.trim();window.open(\'{NL_URL}\'+(e?\'?email=\'+encodeURIComponent(e):\'\'),\'_blank\',\'noopener\');return false">'
+            f'<div class="nlt"><h2 id="{hid}-h">Get the weekly ToolRank brief</h2><p>New AI tools, verified price changes and fresh comparisons. One email a week. Unsubscribe anytime.</p></div>'
+            f'<div class="nlf"><label class="sr" for="{hid}-e">Email address</label><input id="{hid}-e" name="email" type="email" required autocomplete="email" placeholder="you@example.com" aria-labelledby="{hid}-h"><button type="submit" class="btn">Subscribe</button></div></form>')
 def FOOT_():
     cl = "".join(f'<a href="/best/{c["id"]}/">{E(c["title"])}</a>' for c in D["categories"])
-    return (f'<footer class="foot"><div class="wrap"><div class="fg"><div class="fl">{LOGO}<p class="muted">Confused by AI? We&rsquo;ll find the right tool for you. Editorial rankings, updated <time datetime="{UPD}">{UPD}</time>.</p></div>'
+    return (f'<footer class="foot"><div class="wrap">{NL("nl-foot", "nlf")}<div class="fg"><div class="fl">{LOGO}<p class="muted">Confused by AI? We&rsquo;ll find the right tool for you. Editorial rankings, updated <time datetime="{UPD}">{UPD}</time>.</p></div>'
             f'<nav class="fc2" aria-label="Categories">{cl}</nav><nav class="fc2" aria-label="ToolRank"><a href="/methodology/">How we rank</a><a href="/compare/">Compare tools</a><a href="/claim/">Claim your listing</a><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/llms.txt">llms.txt</a></nav></div>'
             f'<p class="si-tag small">ToolRank · Super Intelligence, ranked.</p><p class="muted small">© {UPD[:4]} ToolRank. Some links may become affiliate links; featured placements are labelled. Reviews are user-submitted via GitHub and moderated; they never change the editorial rank.</p></div></footer>')
 FOOT = FOOT_()
@@ -492,6 +497,7 @@ def home(cats):
 {new_html()}
 <section class="sec"><div class="wrap"><div class="cta big"><div><h2>Using AI tools? Leave a review.</h2><p>Help builders and businesses pick the right AI tool.</p></div><a class="btn" href="{E(REVIEW_NEW)}" target="_blank" rel="noopener">Leave a Review</a></div></div></section></div>
 <div id="makerspane" class="pane" hidden>{makers_html()}</div>
+<section class="sec"><div class="wrap">{NL("nl-home", "nlh")}</div></section>
 <script src="/assets/app.js"></script>"""
     ild = [ORG, SITE] + [{"@type": "ItemList", "name": "Best AI tools: " + c["title"], "url": f"{BASE}/best/{c['id']}/",
                            "itemListElement": [{"@type": "ListItem", "position": i, "name": t["name"], "url": t["url"]} for i, t in enumerate(c["tools"], 1)]} for c in cats]
@@ -591,7 +597,7 @@ def profile_page(c, i, t):
 <aside class="pside"><div class="card"><h3>Quick facts</h3><dl class="evd"><dt>Starts at</dt><dd>{ev(p.get('starting_price'))}</dd><dt>Free plan</dt><dd>{yn(free_plan(t))}</dd><dt>Verified</dt><dd>{E(fmt_date(t['last_verified'])) if v else NV}</dd></dl>
 <a class="btn" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit site →</a>{DISCLOSE}</div>
 <div class="card"><h3>Related comparisons</h3><ul class="rlist">{relh}</ul></div>
-<div class="card"><h3>Is this your tool?</h3><p>Correct facts, add a demo or pricing link. Free.</p><a href="{E(claim)}" target="_blank" rel="noopener">Claim it free →</a> <a class="muted small" href="/claim/">How claiming works</a></div></aside></div></main>"""
+<div class="card"><h3>Is this your tool?</h3><p>Correct facts, add a demo or pricing link. Free.</p><a href="{E(claim)}" target="_blank" rel="noopener">Claim it free →</a> <a class="muted small" href="/claim/">How claiming works</a></div>{NL("nl-compact", "nlc")}</aside></div></main>"""
     title = f"{t['name']} review, pricing & limitations ({UPD[:4]}) | ToolRank"
     desc = (t.get("why_rank") or t["verdict"]) + (f" Starts at {p['starting_price']}." if p.get("starting_price") else "") + f" Ranked #{i} in {c['title']} on ToolRank."
     return doc(head(title, desc[:300], path, ld, "article"), body)
@@ -652,7 +658,7 @@ def cmp_page(key, ids):
 <h2>Starting price</h2><div class="bars">{bars}</div><p class="muted small">Lowest paid plan shown on each vendor&rsquo;s pricing page, checked {fmt_date(CHECK_DATE)}. Currencies as listed.</p>
 <p><a class="btn ghost" href="{E(cmp_url(*ts))}">Open in the interactive comparer →</a></p><p class="small">Full profiles: {profs}</p>
 {faqh}
-<h2>Sources</h2><ul class="srcs">{srcs}</ul>{relh}{DISCLOSE}</div></section></main>"""
+<h2>Sources</h2><ul class="srcs">{srcs}</ul>{relh}{DISCLOSE}{NL("nl-compact", "nlc")}</div></section></main>"""
     ht = f"{title} ({UPD[:4]}): pricing, limits, which to pick | ToolRank"
     desc = f"{title} compared from vendor pages checked {fmt_date(CHECK_DATE)}: pricing, free tiers, limits, platforms and who should pick which."
     return doc(head(ht, desc, path, ld), body)
