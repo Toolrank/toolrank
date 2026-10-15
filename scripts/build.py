@@ -161,7 +161,7 @@ def trending_html():
     return (f'<!--TREND--><section id="trending" class="wrap"><h2>🔥 Trending this week</h2><p class="muted small">Real public signals, refreshed daily{" (last update " + E(T["fetched"]) + ")" if T.get("fetched") else ""}. Not paid, not editorial rank.</p>'
             f'<div class="grid"><article class="card"><h3>GitHub stars gained</h3><span class="tag">Source: GitHub API, {base}</span>{sb}</article>'
             f'<article class="card"><h3>Hacker News buzz</h3><p class="muted small">Stories linking to a ranked tool, by points.</p><span class="tag">Source: HN Algolia API, last 7 days</span>{hb}</article>'
-            f'<article class="card"><h3>ToolRank visitor trends</h3><span class="tag">Coming soon</span><p class="muted">ToolRank visitor trends coming soon: most-clicked tools from privacy-friendly, cookieless analytics.</p></article></div></section><!--/TREND-->')
+            f'<article class="card"><h3>Visitor trends</h3><span class="tag">Source: GoatCounter (cookieless)</span><p class="muted">Visitor trends: collecting data, most-clicked tools board coming soon.</p></article></div></section><!--/TREND-->')
 
 def short(c): return re.sub(r"^Best (for )?", "", c["title"])
 def link(t): return t.get("affiliate_url") or t["url"]
@@ -337,6 +337,16 @@ def main():
     F.append(f"\n## New this week (as of {N['updated']})\n")
     F += [f"- {n['date']} {n['title']} ({n['type']}): {n['summary']} {n['url']}" for n in sorted(N["items"], key=lambda n: n["date"], reverse=True)]
     (ROOT/"llms-full.txt").write_text("\n".join(F) + "\n")
+    GC = ('<!--GC--><script data-goatcounter="https://toolrank.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>'
+          '<script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a.go");if(!a||!/^Visit /.test(a.textContent)||!window.goatcounter||!goatcounter.count)return;'
+          'var n=a.textContent.replace(/^Visit\\s+|\\s*\u2192\\s*$/g,"").trim(),s=n.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");'
+          'goatcounter.count({path:"click/"+s,title:n,event:true})});</script><!--/GC-->')
+    PRIV = '<!--PRIV--><p class="small">Privacy: cookieless, privacy-friendly analytics via <a href="https://www.goatcounter.com" rel="noopener" target="_blank">GoatCounter</a>. No cookies, no personal data, no tracking across sites.</p><!--/PRIV-->'
+    for h in ROOT.rglob("*.html"):
+        if "shots" in h.parts: continue
+        s = h.read_text(); n = re.sub(r"<!--GC-->.*?<!--/GC-->", "", s, flags=re.S); n = re.sub(r"<!--PRIV-->.*?<!--/PRIV-->", "", n, flags=re.S)
+        n = n.replace("</footer>", PRIV + "</footer>", 1).replace("</body>", GC + "</body>", 1)
+        if n != s: h.write_text(n)
     import hashlib
     V = {a: hashlib.sha1((ROOT/"assets"/a).read_bytes()).hexdigest()[:8] for a in ("app.js", "style.css")}
     for h in ROOT.rglob("*.html"):

@@ -43,6 +43,6 @@ fetch("data/tools.json",{cache:"no-cache"}).then(r=>r.json()).then(async d=>{awa
  $("#chips").onclick=e=>{const id=e.target.dataset.id;if(id==null)return;$("#cat").value=sel===id?"":id;render()};
  const uq=new URLSearchParams(location.search).get("q");if(uq)$("#q").value=uq;
  ["q","cat","price"].forEach(i=>$("#"+i).oninput=render);
- $("#sf").onsubmit=e=>{e.preventDefault();if(tab==="makers")setTab("you",true);render();$("#q").blur();$("#cats").scrollIntoView({behavior:"smooth",block:"start"})};render()});
+ $("#sf").onsubmit=e=>{e.preventDefault();const term=$("#q").value.trim().toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40);if(term&&window.goatcounter&&goatcounter.count)goatcounter.count({path:"search/"+term,title:"Search: "+term,event:true});if(tab==="makers")setTab("you",true);render();$("#q").blur();$("#cats").scrollIntoView({behavior:"smooth",block:"start"})};render()});
 fetch("data/new-this-week.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{$("#newlist").innerHTML=d.items.sort((a,b)=>b.date.localeCompare(a.date)).map(n=>`<article class="card"><span class="date">${esc(n.date)} · ${esc(n.type)}</span><h3>${esc(n.title)}</h3><p>${esc(n.summary)}</p><a class="go" href="${esc(n.url)}" target="_blank" rel="noopener">Read: ${esc(n.title)} →</a></article>`).join("")});
 $("#nl").onsubmit=e=>{e.preventDefault();$("#nlmsg").textContent="Thanks! (placeholder — no signup was sent)"};
