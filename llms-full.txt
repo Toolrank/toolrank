@@ -1,6 +1,6 @@
 # ToolRank: full rankings
 
-Last updated 2026-10-15. Source: https://toolrank.io/. Editorial ranking; position 1 = top pick. Pricing labels: free / freemium / paid (as listed; verify with vendor).
+Last updated 2026-10-16. Source: https://toolrank.io/. Editorial ranking; position 1 = top pick. Pricing labels: free / freemium / paid (as listed; verify with vendor).
 
 
 ## AI Assistants
@@ -21,36 +21,36 @@ Build apps from a prompt, or code faster with AI pair programmers and agents.
 Page: https://toolrank.io/best/coding/
 
 1. Cursor (freemium; audience: business): AI-native code editor with strong agent mode and codebase context. https://www.cursor.com
-2. Lovable (freemium; audience: consumer): Prompt-to-full-stack web app builder aimed at non-developers. https://lovable.dev
-3. Claude Code (paid; audience: business): Anthropic's terminal-based agentic coding tool. https://www.anthropic.com/claude-code
-4. Bolt.new (freemium; audience: consumer): Builds and runs full-stack apps in the browser from a prompt. https://bolt.new
-5. GitHub Copilot (freemium; audience: business): Most widely integrated assistant across IDEs and GitHub. https://github.com/features/copilot
-6. v0 (freemium; audience: consumer): Vercel's generator for React/Next.js UIs and apps, deploys to Vercel. https://v0.app
+2. Claude Code (paid; audience: business): Anthropic's terminal-based agentic coding tool. https://www.anthropic.com/claude-code
+3. GitHub Copilot (freemium; audience: business): Most widely integrated assistant across IDEs and GitHub. https://github.com/features/copilot
+4. Lovable (freemium; audience: consumer): Prompt-to-full-stack web app builder aimed at non-developers. https://lovable.dev
+5. Bolt.new (freemium; audience: consumer): Builds and runs full-stack apps in the browser from a prompt. https://bolt.new
+6. Windsurf (freemium; audience: business): Agentic IDE from Cognition, renamed Devin Desktop in June 2026. https://windsurf.com
 7. OpenAI Codex (paid; audience: business): OpenAI's coding agent across CLI, IDE and cloud. https://openai.com/codex
-8. Replit (freemium; audience: both): Replit Agent builds, hosts and deploys apps from one cloud workspace. https://replit.com
-9. Windsurf (freemium; audience: business): Agentic IDE alternative to Cursor. https://windsurf.com
-10. Base44 (freemium; audience: both): Prompt-to-app builder with built-in database, auth and hosting; owned by Wix. https://base44.com
-11. Gemini CLI (free; audience: business): Google's open-source terminal coding agent powered by Gemini. https://github.com/google-gemini/gemini-cli
-12. Google AI Studio (Build) (free; audience: both): Google's AI Studio builds and deploys Gemini-powered apps from a prompt. https://aistudio.google.com
-13. JetBrains AI (Junie) (paid; audience: business): JetBrains' coding agent inside IntelliJ-based IDEs. https://junie.jetbrains.com/
-14. Firebase Studio (free; audience: both): Google's cloud workspace for prototyping full-stack apps with Gemini. https://firebase.studio
-15. Cline (free; audience: business): Open-source autonomous coding agent for VS Code; bring your own model. https://cline.bot
-16. Create.xyz (Anything) (freemium; audience: consumer): Prompt-to-app builder for web and mobile apps. https://www.createanything.com
-17. Kilo Code (freemium; audience: business): Open-source coding agent for VS Code and JetBrains. https://kilo.ai
-18. Rork (freemium; audience: consumer): Builds native mobile apps (React Native) from a prompt. https://rork.com
-19. Aider (free; audience: business): Open-source terminal pair programmer that commits to git. https://aider.chat
-20. Softgen (paid; audience: consumer): AI web app builder producing Next.js apps with Firebase/Supabase. https://softgen.ai
-21. Amp (freemium; audience: business): Sourcegraph-born agentic coding tool for terminal and editors. https://ampcode.com
-22. Tempo (freemium; audience: consumer): Visual React editor with AI that generates and edits code. https://www.tempo.new
-23. Zed (freemium; audience: business): Fast open-source code editor with built-in AI agent. https://zed.dev
-24. Same (freemium; audience: consumer): Clones or builds web apps from a prompt or URL. https://same.new
-25. Amazon Q Developer (freemium; audience: business): AWS coding assistant for IDEs and CLI. https://aws.amazon.com/q/developer/
-26. Macaly (freemium; audience: consumer): Prompt-to-website and app builder for non-developers. https://www.macaly.com
-27. Kiro (freemium; audience: business): AWS's spec-driven agentic IDE. https://kiro.dev
-28. Figma Make (freemium; audience: both): Figma's prompt-to-app feature that turns designs and prompts into working prototypes. https://www.figma.com/make/
-29. Augment Code (paid; audience: business): Coding agent built for large codebases with deep context. https://www.augmentcode.com
-30. Bubble (freemium; audience: both): Established no-code platform with an AI app generator. https://bubble.io
-31. Devin (paid; audience: business): Cognition's autonomous software engineering agent. https://devin.ai
+8. v0 (freemium; audience: consumer): Vercel's generator for React/Next.js UIs and apps, deploys to Vercel. https://v0.app
+9. Replit (freemium; audience: both): Replit Agent builds, hosts and deploys apps from one cloud workspace. https://replit.com
+10. Cline (free; audience: business): Open-source autonomous coding agent for VS Code; bring your own model. https://cline.bot
+11. Devin (paid; audience: business): Cognition's autonomous software engineering agent, now on the same plans as Devin Desktop. https://devin.ai
+12. Kiro (freemium; audience: business): AWS's spec-driven agentic IDE and CLI, the successor to Amazon Q Developer. https://kiro.dev
+13. Zed (freemium; audience: business): Fast open-source code editor with built-in AI agent and edit predictions. https://zed.dev
+14. Amp (freemium; audience: business): Agentic coding tool for terminal and editors, spun out of Sourcegraph in 2025. https://ampcode.com
+15. OpenHands (free; audience: business): Open-source, model-agnostic autonomous coding agent with a free cloud tier. https://www.openhands.dev
+16. Aider (free; audience: business): Open-source terminal pair programmer that commits to git. https://aider.chat
+17. JetBrains AI (Junie) (paid; audience: business): JetBrains' AI in IntelliJ-based IDEs; Junie is now part of JetBrains Air. https://junie.jetbrains.com/
+18. Gemini CLI (free; audience: business): Google's open-source terminal coding agent powered by Gemini. https://github.com/google-gemini/gemini-cli
+19. Base44 (freemium; audience: both): Prompt-to-app builder with built-in database, auth and hosting; owned by Wix. https://base44.com
+20. Google AI Studio (Build) (free; audience: both): Google's AI Studio builds and deploys Gemini-powered apps from a prompt. https://aistudio.google.com
+21. Firebase Studio (free; audience: both): Google's cloud workspace for prototyping full-stack apps with Gemini. https://firebase.studio
+22. Create.xyz (Anything) (freemium; audience: consumer): Prompt-to-app builder for web and mobile apps. https://www.createanything.com
+23. Kilo Code (freemium; audience: business): Open-source coding agent for VS Code and JetBrains. https://kilo.ai
+24. Rork (freemium; audience: consumer): Builds native mobile apps (React Native) from a prompt. https://rork.com
+25. Softgen (paid; audience: consumer): AI web app builder producing Next.js apps with Firebase/Supabase. https://softgen.ai
+26. Tempo (freemium; audience: consumer): Visual React editor with AI that generates and edits code. https://www.tempo.new
+27. Same (freemium; audience: consumer): Clones or builds web apps from a prompt or URL. https://same.new
+28. Macaly (freemium; audience: consumer): Prompt-to-website and app builder for non-developers. https://www.macaly.com
+29. Figma Make (freemium; audience: both): Figma's prompt-to-app feature that turns designs and prompts into working prototypes. https://www.figma.com/make/
+30. Augment Code (paid; audience: business): Coding agent built for large codebases with deep context. https://www.augmentcode.com
+31. Bubble (freemium; audience: both): Established no-code platform with an AI app generator. https://bubble.io
 32. Webflow (freemium; audience: both): Visual website builder with AI site and page generation. https://webflow.com
 33. Factory (paid; audience: business): Droids: coding agents for terminal, IDE and CI. https://factory.com
 34. Framer (freemium; audience: both): Design-first website builder with AI page generation. https://www.framer.com
@@ -58,16 +58,21 @@ Page: https://toolrank.io/best/coding/
 36. Dyad (free; audience: consumer): Free, local, open-source app builder; bring your own model keys. https://www.dyad.sh
 37. OpenCode (free; audience: business): Open-source terminal coding agent supporting many models. https://opencode.ai
 38. vibe-wise (free; audience: consumer): Claude Code/Codex plugin that teaches you to build while AI writes the code. New open-source launch on GitHub. https://github.com/nykooi1/vibe-wise
-39. Continue (freemium; audience: business): Open-source assistants and checks for IDE and CI. https://www.continue.dev
-40. scroll-craft (free; audience: consumer): Agent skill for building premium scroll-driven websites. New open-source launch on GitHub. https://github.com/nateherkai/scroll-craft
-41. CodeRabbit (freemium; audience: business): AI code reviews on pull requests. https://www.coderabbit.ai
-42. shadcn lint (free; audience: consumer): Agent-first linter for Tailwind design systems. New open-source launch on GitHub. https://github.com/shadcn-ui/lint
-43. Qodo (freemium; audience: business): AI code review and test generation. https://www.qodo.ai
-44. Magpie (freemium; audience: business): Menu-bar app to run any coding agent (Codex, Claude Code) on any model. New open-source launch on GitHub. https://usemagpie.ai
-45. Mono (monocode) (freemium; audience: business): A GUI for your coding agents. New open-source launch on GitHub. https://usemono.dev
-46. OmniRush (freemium; audience: business): Desktop coding agent with free access to frontier models. New open-source launch on GitHub. https://omnirush.ai
-47. jevgrep (free; audience: business): CLI for coding agents to find code by asking what it does. New open-source launch on GitHub. https://github.com/dzhng/jevgrep
-48. coucou (freemium; audience: business): Tiny Mac-notch/iPhone companion that keeps an eye on your AI coding agents. New open-source launch on GitHub. https://louis-cfm.github.io/coucou/
+39. scroll-craft (free; audience: consumer): Agent skill for building premium scroll-driven websites. New open-source launch on GitHub. https://github.com/nateherkai/scroll-craft
+40. CodeRabbit (freemium; audience: business): AI code reviews on pull requests. https://www.coderabbit.ai
+41. shadcn lint (free; audience: consumer): Agent-first linter for Tailwind design systems. New open-source launch on GitHub. https://github.com/shadcn-ui/lint
+42. Qodo (freemium; audience: business): AI code review and test generation. https://www.qodo.ai
+43. Magpie (freemium; audience: business): Menu-bar app to run any coding agent (Codex, Claude Code) on any model. New open-source launch on GitHub. https://usemagpie.ai
+44. Mono (monocode) (freemium; audience: business): A GUI for your coding agents. New open-source launch on GitHub. https://usemono.dev
+45. OmniRush (freemium; audience: business): Desktop coding agent with free access to frontier models. New open-source launch on GitHub. https://omnirush.ai
+46. jevgrep (free; audience: business): CLI for coding agents to find code by asking what it does. New open-source launch on GitHub. https://github.com/dzhng/jevgrep
+47. coucou (freemium; audience: business): Tiny Mac-notch/iPhone companion that keeps an eye on your AI coding agents. New open-source launch on GitHub. https://louis-cfm.github.io/coucou/
+48. Tabnine (paid; audience: business): Privacy-focused AI code assistant, acquired by Tricentis in 2026. https://www.tabnine.com
+49. Cody (Sourcegraph) (paid; audience: business): Sourcegraph's AI coding assistant; Free and Pro discontinued in 2025, Enterprise only. https://sourcegraph.com/docs/cody
+50. Amazon Q Developer (freemium; audience: business): AWS coding assistant, closed to new sign-ups since May 2026 and being replaced by Kiro. https://aws.amazon.com/q/developer/
+51. Codeium (freemium; audience: business): Former name of Windsurf; codeium.com now redirects to Devin Desktop. https://codeium.com
+52. Continue (free; audience: business): Open-source coding agent, acquired by Cursor in 2026; no longer maintained. https://www.continue.dev
+53. Roo Code (free; audience: business): Open-source VS Code coding agent; shut down 15 May 2026. https://github.com/RooCodeInc/Roo-Code
 
 ## Image & Design
 
@@ -362,6 +367,34 @@ Page: https://toolrank.io/best/gaming/
 5. Inworld AI (freemium; audience: business): Real-time AI voice and character engine for games and apps. https://inworld.ai
 6. Layer (paid; audience: business): AI creative platform for game studios to produce art at scale. https://www.layer.ai
 7. AI Dungeon (freemium; audience: consumer): Free AI text adventure game where the story responds to anything you type. https://aidungeon.com
+
+## Comparisons (facts checked 16 Oct 2026)
+
+- Cursor vs Claude Code: https://toolrank.io/compare/cursor-vs-claude-code/ | Pick Cursor if you want an AI-first editor: a desktop app with agents, cloud automations and code review, and a free tier to try it. Pick Claude Code if you live in the terminal and want an agent that works across your repo. It has no free tier of its own and comes with a paid Claude plan (Pro from $17/month billed annually). Many developers use both: Cursor for editing, Claude Code for long agentic tasks.
+- Cursor vs GitHub Copilot: https://toolrank.io/compare/cursor-vs-github-copilot/ | Pick GitHub Copilot if you want to keep your current editor. It plugs into VS Code, Visual Studio, JetBrains, Eclipse and Xcode, plus GitHub.com itself, and Pro is $10/month. Pick Cursor if you're happy to switch editors for an AI-native one, where agents, cloud automations and Bugbot review are part of the app rather than a plugin. Cursor's $8 Plus plan is cheaper on paper but limited to Grok models. To use third-party models you need Premium ($30), and that usage is billed at API prices on top.
+- Cursor vs Windsurf: https://toolrank.io/compare/cursor-vs-windsurf/ | Important first: Windsurf is now Devin Desktop. Cognition renamed it on 2 Jun 2026, and windsurf.com/pricing now redirects to Devin's pricing. Pick Cursor if you want a polished single-editor experience with plans from $8/month. Pick Windsurf/Devin Desktop if you want one screen to run many agents, both Devin's and third-party ones like Codex and Claude Agent via ACP. Its free plan includes unlimited Tab completions, and Pro is $20/month. On both, heavy use of frontier models ends up billed at API prices, so compare your usage, not the sticker price.
+- Claude Code vs GitHub Copilot: https://toolrank.io/compare/claude-code-vs-github-copilot/ | Pick GitHub Copilot if you want help inside the editor you already use, a real free plan, and agents and code review tied to GitHub pull requests. Pro is $10/month. Pick Claude Code if you want a terminal agent that reads and changes your whole repo in long, multi-step runs. It costs more to start, since it comes with Claude Pro ($17/month annual), but you also get the full Claude app. Copilot suits teams standardising on GitHub. Claude Code suits developers who delegate bigger tasks from the command line.
+- Claude Code vs Windsurf: https://toolrank.io/compare/claude-code-vs-windsurf/ | Windsurf has been renamed Devin Desktop (June 2026), so this is really Claude Code against Cognition's agent IDE. Pick Claude Code if you want Anthropic's agent in your terminal, bundled with a Claude subscription. Pick Windsurf/Devin Desktop if you want a graphical IDE with a free plan that can also host Claude Agent itself through ACP, next to Devin and Codex, in one Kanban view. Using Claude Agent inside Devin Desktop doesn't make the costs go away: model usage still comes from somewhere.
+- Windsurf vs GitHub Copilot: https://toolrank.io/compare/windsurf-vs-github-copilot/ | Pick GitHub Copilot if you want to stay in VS Code, JetBrains, Visual Studio or Xcode and keep everything on GitHub. It's $10/month for Pro and runs in more editors than anything else here. Pick Windsurf, now Devin Desktop, if you'll switch to a dedicated agent IDE in exchange for running multiple local and cloud agents (Devin Cloud on Pro, $20/month) from one board. For teams, Copilot's seat model is simpler. Devin Desktop Teams has an $80/month minimum plus $40 per full seat.
+- Cursor vs Continue.dev: https://toolrank.io/compare/cursor-vs-continue-dev/ | This matchup has a twist: Cursor acquired Continue in 2026. Continue's GitHub repo is now read-only and 2.0.0 was its final release. Pick Cursor if you want a maintained product with ongoing updates. Continue's open-source extension still runs with your own model keys or local models, so it's only worth considering if you need a frozen, self-run setup and accept that nothing will be fixed. If you liked Continue's bring-your-own-model approach, Cline is the closest maintained alternative on ToolRank.
+- Cursor vs Cody (Sourcegraph): https://toolrank.io/compare/cursor-vs-cody/ | For individuals this isn't a real choice any more. Sourcegraph stopped new Cody Free and Pro sign-ups in June 2025 and discontinued those plans, and its successor product Amp spun out as a separate company in December 2025. Pick Cursor if you're an individual or small team. Pick Cody only if your company already runs Sourcegraph Enterprise (from a $16K annual minimum) and wants AI grounded in Sourcegraph's code search across very large codebases.
+- Claude Code vs Aider: https://toolrank.io/compare/claude-code-vs-aider/ | Both live in the terminal, so the difference is the business model. Aider is free and open source (Apache-2.0). You plug in any model, including DeepSeek or a local one, and pay only your provider. Every change is a git commit you can undo. Claude Code is Anthropic's own agent, bundled into Claude plans from $17/month, built for longer autonomous runs across a repo. Pick Aider for cost control and model freedom. Pick Claude Code if you already pay for Claude and want the most capable agent from that vendor without wiring up API keys.
+- Cursor vs Replit Agent: https://toolrank.io/compare/cursor-vs-replit-agent/ | These solve different problems. Replit Agent lives in the browser: describe an app and it builds, adds a database and deploys it, with no local setup. Core is $20/month ($18 annual) and includes $20 of model credit. Cursor is a desktop editor for working in your own repo, with agents, code review and plans from $8/month. Founders and non-specialists shipping a hosted app should start with Replit. Developers maintaining real codebases with their own tooling should pick Cursor.
+- Claude Code vs Devin: https://toolrank.io/compare/claude-code-vs-devin/ | Pick Claude Code if you want to stay in the loop: it runs in your terminal on your machine, you watch it work, and you steer it. Pick Devin if you want to hand off tickets entirely. It runs in the cloud, takes tasks from Slack, Linear or Jira, and comes back with PRs on GitHub, GitLab or Bitbucket. Devin's self-serve plans now start free, but cloud agents need Pro ($20/month). Claude Code starts at $17/month (annual) through Claude Pro.
+- Cursor vs Bolt.new: https://toolrank.io/compare/cursor-vs-bolt-new/ | Pick Bolt.new if you want an app running in your browser in minutes from a prompt, with no install and no repo. Its free plan gives 300K tokens a day (1M a month) and Pro is $25/month. Pick Cursor if you're a developer working on an existing codebase, or you want full control over files, git and deployment. A common path is to prototype in Bolt, then move the code into Cursor once it needs real engineering.
+- Cursor vs Lovable: https://toolrank.io/compare/cursor-vs-lovable/ | Pick Lovable if you're a founder, designer or non-developer who wants to chat an app into existence and host it on Lovable Cloud. The free plan gives 5 build credits a day, capped at 30 a month. Pick Cursor if you write code and want an AI editor and agents working in your own repo. Lovable's paid prices didn't render in the page text we fetched, so check its pricing page directly. Cursor's start at $8/month.
+- Windsurf vs Continue.dev: https://toolrank.io/compare/windsurf-vs-continue-dev/ | Neither product exists under its old name. Windsurf is now Devin Desktop (Cognition, June 2026), and Continue was acquired by Cursor, with its repo read-only after a final 2.0.0 release. If you want something maintained, the real choice is Devin Desktop (free plan, Pro $20/month) or another live tool. Keep running Continue's open-source extension only if you need a self-run, bring-your-own-model setup and can live without updates.
+- GitHub Copilot vs Continue.dev: https://toolrank.io/compare/github-copilot-vs-continue-dev/ | Continue was long the open-source answer to Copilot, but Continue has been acquired by Cursor and is no longer maintained. Pick GitHub Copilot if you want a supported assistant in VS Code, JetBrains and more, with a free plan and Pro at $10/month. Only stay on Continue's final open-source release if you specifically need local models or full control and accept frozen software. If open source matters to you, compare Copilot with Cline instead.
+- Cursor vs Zed AI: https://toolrank.io/compare/cursor-vs-zed-ai/ | Pick Zed if speed comes first: it's a fast native open-source editor that stays free forever when you bring your own API keys or external agents like Claude Agent and Codex CLI. Pro is $10/month with unlimited edit predictions and $5 of tokens. Pick Cursor if you want the deepest built-in agent features, like cloud agents, automations and Bugbot code review, and don't mind a VS Code-style editor. Zed bills hosted usage at API list price plus 10%. Cursor bills third-party models at API list price on Premium.
+- Claude Code vs Amazon Q Developer: https://toolrank.io/compare/claude-code-vs-amazon-q-developer/ | Amazon Q Developer is being retired. AWS closed new sign-ups on 15 May 2026, the Q CLI became Kiro CLI, and IDE plugins and paid subscriptions reach end of support on 30 Apr 2027. New users can't choose it. Pick Claude Code for a terminal agent from Anthropic, from $17/month. If you're tied to AWS, compare Claude Code with Kiro, AWS's successor, which also offers Claude models and has a free tier.
+- Cursor vs Tabnine: https://toolrank.io/compare/cursor-vs-tabnine/ | Pick Cursor if you're an individual or a team wanting a self-serve AI editor today, with a free plan and paid plans from $8/month. Tabnine was acquired by Tricentis in 2026, and tabnine.com now redirects to Tricentis, so we couldn't re-verify its current plans. Its historical strength is private, on-prem and air-gapped deployment for enterprises. If that's your requirement, contact Tricentis directly. Otherwise Cursor is the straightforward choice.
+- Claude Code vs Codeium: https://toolrank.io/compare/claude-code-vs-codeium/ | Codeium no longer exists as a brand. It became Windsurf, and Windsurf became Devin Desktop in June 2026. codeium.com now redirects to Devin Desktop. So the real comparison is Claude Code against Devin Desktop. Pick Claude Code for Anthropic's terminal agent with a Claude plan (from $17/month). Pick Devin Desktop if you want a free IDE with unlimited Tab completions and an agent board, with Pro at $20/month.
+- Windsurf vs Cody (Sourcegraph): https://toolrank.io/compare/windsurf-vs-cody/ | Both have changed a lot. Windsurf is now Devin Desktop, and Cody is enterprise-only after Sourcegraph discontinued Free and Pro in 2025. For an individual or small team, Devin Desktop is the only one of the two you can sign up for: Free, or Pro at $20/month. Cody makes sense only inside an existing Sourcegraph Enterprise deployment (from $16K/year), where its value is code-search context across huge monorepos.
+- Cursor vs Roo Code: https://toolrank.io/compare/cursor-vs-roo-code/ | Roo Code shut down on 15 May 2026 and its GitHub repo is archived, so pick Cursor if you want a maintained AI editor. If you used Roo for its open-source, bring-your-own-model agent in VS Code, the Roo team itself points to Cline (the project Roo was forked from) or the community fork ZooCode. Kilo Code is another Roo-lineage option listed on ToolRank.
+- Claude Code vs Cline: https://toolrank.io/compare/claude-code-vs-cline/ | Pick Cline if you want the agent free and open source, inside VS Code (or the CLI), with any model from Anthropic, OpenAI, Gemini, OpenRouter, Bedrock and more. You pay only for inference, at cost or with your own keys. Pick Claude Code if you'd rather pay one Claude subscription (from $17/month) than per-token bills, and you're happy in the terminal. Heavy users often find a subscription more predictable than paying per token. Light users usually spend less with Cline.
+- Cursor vs OpenHands: https://toolrank.io/compare/cursor-vs-openhands/ | Pick OpenHands if you want an autonomous agent you can run locally for free, self-host, or audit line by line. It's MIT-licensed and model-agnostic, with a free cloud tier capped at 10 conversations a day. Pick Cursor if you want an editor first, where you code alongside agents with completions, review and cloud agents in one polished app. Teams with strict data rules lean towards OpenHands' self-hosting. Individual developers usually get more done day to day in Cursor.
+- GitHub Copilot vs Amazon Q Developer: https://toolrank.io/compare/github-copilot-vs-amazon-q-developer/ | New users can only pick one of these: AWS stopped new Amazon Q Developer sign-ups on 15 May 2026, and plugins and paid subscriptions end on 30 Apr 2027. Pick GitHub Copilot for a supported assistant across VS Code, JetBrains, Visual Studio, Eclipse and Xcode, with a free plan and Pro at $10/month. Existing Q customers with Java or .NET upgrades in flight should finish them before the cutoff and plan a move. AWS's own path is Kiro.
+- Cursor vs JetBrains AI Assistant: https://toolrank.io/compare/cursor-vs-jetbrains-ai-assistant/ | Pick JetBrains AI if IntelliJ IDEA, PyCharm, WebStorm or another JetBrains IDE is home. AI Pro is $10/month on personal pricing, and JetBrains Air now runs Junie alongside Claude Agent, Codex and Copilot, with your own keys if you like. Pick Cursor if you're on VS Code or don't mind switching, and want an editor built around AI from the ground up. The deciding factor is usually your IDE: JetBrains users rarely want to give up its refactoring and inspections.
 
 ## New this week (as of 2026-10-15)
 

@@ -474,7 +474,7 @@ def new_html():
             + "".join(one(n) for n in its) + '</div></div></section>')
 
 def FRESH():
-    return '<p class="fresh"><span class="fl0">Fresh comparisons:</span>' + ''.join(f'<a class="chip" href="/compare/{k}/">{E(cmp_title(ids))}</a>' for k, ids in COMPARES) + '<a class="btn" href="/compare/">Compare any tools →</a><a href="/methodology/">How we rank →</a></p>'
+    return '<p class="fresh"><span class="fl0">Fresh comparisons:</span>' + ''.join(f'<a class="chip" href="/compare/{k}/">{E(cmp_title(ids))}</a>' for k, ids in COMPARES[:6]) + '<a class="btn" href="/compare/">All comparisons →</a><a href="/methodology/">How we rank →</a></p>'
 def home(cats):
     tiles = "".join(tile(c) for c in cats)
     body = f"""<section class="hero home"><div class="wrap hw">
@@ -521,8 +521,11 @@ def price_num(s):
     return float(m.group(1).replace(",", "")) if m else None
 def prof(t): return f"/tools/{slug(t['name'])}/"
 def cmp_url(*ts): return "/compare/?tools=" + ",".join(slug(t["name"]) for t in ts)
-COMPARES = [("cursor-vs-claude-code", ["cursor", "claude-code"]), ("lovable-vs-bolt-new", ["lovable", "bolt-new"]), ("make-vs-n8n-vs-zapier", ["make", "n8n", "zapier"])]
-def cmp_title(ids): return " vs ".join(TOOLS[i]["name"] for i in ids)
+CJ = json.loads((ROOT/"data/comparisons.json").read_text())["comparisons"]  # editorial comparison pages (pick + FAQ per page)
+CMP = {c["key"]: c for c in CJ}
+COMPARES = [(c["key"], c["ids"]) for c in CJ] + [(k, i) for k, i in (("lovable-vs-bolt-new", ["lovable", "bolt-new"]), ("make-vs-n8n-vs-zapier", ["make", "n8n", "zapier"])) if k not in CMP]
+CTITLE = {tuple(c["ids"]): c["title"] for c in CJ}
+def cmp_title(ids): return CTITLE.get(tuple(ids)) or " vs ".join(TOOLS[i]["name"] for i in ids)
 METH_LINK = '<a href="/methodology/">How we rank →</a>'
 DISCLOSE = '<p class="muted small disc">Some links may be affiliate links. They never affect rank.</p>'
 
@@ -558,7 +561,7 @@ def profile_page(c, i, t):
     srcs = f'<ul class="srcs">{srcs}</ul>' if srcs else f'<p>{NV}. No vendor sources recorded yet.</p>'
     plats = t.get("platforms") or []; ints = t.get("integrations") or []
     chips = lambda xs: "".join(f'<span class="chip">{E(x)}</span>' for x in xs) if xs else NV
-    rel_c = [(k, ids) for k, ids in COMPARES if s in ids]
+    rel_c = [(k, ids) for k, ids in COMPARES if s in ids][:8]
     peers = [x for x in c["tools"][:4] if x is not t and not any(slug(x["name"]) in ids for _, ids in rel_c)][:3]
     relh = "".join(f'<li><a href="/compare/{k}/">{E(cmp_title(ids))}</a></li>' for k, ids in rel_c) + "".join(f'<li><a href="{E(cmp_url(t, x))}">{E(t["name"])} vs {E(x["name"])}</a> <span class="muted small">(interactive)</span></li>' for x in peers)
     rs = [r for r in RB.get(s, []) if r["listed"]]; n, a = rstat(t)
@@ -626,25 +629,40 @@ def cmp_page(key, ids):
     tbl = (f'<div class="tbl mx"><table class="cmp"><thead><tr><th></th>{hdr}</tr></thead><tbody>' + row("Starting price", lambda t: ev(PD(t).get("starting_price"))) +
            row("Pricing model", lambda t: ev(PD(t).get("model"))) + row("Free tier", lambda t: E(PD(t)["free_tier"]) if PD(t).get("free_tier") else ('<span class="no">✕ None listed</span>' if free_plan(t) == "no" else NV)) + row("Best for", lambda t: ev(t.get("best_for"))) +
            row("Main limitation", lambda t: ev(t.get("main_limitation"))) + row("Key plans &amp; features", feats) +
-           row("Platforms", lambda t: E(", ".join(t.get("platforms") or [])) or NV) + row("Integrations", lambda t: E(", ".join(t.get("integrations") or [])) or NV) +
+           row("Platforms", lambda t: E(", ".join(t.get("platforms") or [])) or NV) + row("Integrations", lambda t: E(", ".join(t.get("integrations") or [])) or NV) + row("Model / provider", lambda t: ev(t.get("model_provider"))) +
            row("Last checked", lambda t: E(fmt_date(t.get("last_verified"))) if verified(t) else NV) + row("", lambda t: f'<a class="go" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit {E(t["name"])} →</a>') + '</tbody></table></div>')
     nums = [(t, price_num(PD(t).get("starting_price"))) for t in ts]; mx = max([n for _, n in nums if n] or [1])
     bars = "".join(f'<div class="pbar"><span class="bl">{E(t["name"])}</span><span class="bt"><i class="c{k}" style="width:{max(4, n / mx * 100):.0f}%"></i></span><span class="bv">{E(PD(t)["starting_price"])}</span></div>' if n else
                    f'<div class="pbar"><span class="bl">{E(t["name"])}</span><span class="bt"></span><span class="bv">{NV}</span></div>' for k, (t, n) in enumerate(nums))
     srcs = "".join(f'<li>{E(t["name"])}: <a href="{E(x["url"])}" target="_blank" rel="noopener nofollow">{E(x["label"])}</a> <span class="muted small">checked {fmt_date(x["checked"])}</span></li>' for t in ts for x in t.get("sources", []))
-    ld = [ORG, SITE, {"@type": "WebPage", "name": title, "url": BASE+path, "about": [{"@type": "SoftwareApplication", "name": t["name"], "url": t["url"]} for t in ts]}]
+    cj = CMP.get(key, {}); faq = cj.get("faq", [])
+    ld = [ORG, SITE, {"@type": "WebPage", "name": title, "url": BASE+path, "dateModified": CHECK_DATE, "about": [{"@type": "SoftwareApplication", "name": t["name"], "url": t["url"]} for t in ts]},
+          {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ToolRank", "item": BASE+"/"}, {"@type": "ListItem", "position": 2, "name": "Compare", "item": BASE+"/compare/"}, {"@type": "ListItem", "position": 3, "name": title, "item": BASE+path}]}]
+    if faq: ld.append({"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})
+    faqh = ('<h2 id="faq">FAQ</h2><div class="faq">' + "".join(f'<details class="card"><summary><b>{E(q)}</b></summary><p>{E(a)}</p></details>' for q, a in faq) + '</div>') if faq else ""
+    relc = [(k, i) for k, i in COMPARES if k != key and set(i) & set(ids)]
+    relc = sorted(relc, key=lambda x: -len(set(x[1]) & set(ids)))[:8]
+    relh = ('<h2>Related comparisons</h2><ul class="rlist">' + "".join(f'<li><a href="/compare/{k}/">{E(cmp_title(i))}</a></li>' for k, i in relc) + '<li><a href="/compare/">All comparisons →</a></li></ul>')
+    profs = " · ".join(f'<a href="{prof(t)}">{E(t["name"])} profile</a>' for t in ts)
     body = f"""<main><section class="hero sub"><div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">ToolRank</a> › <a href="/compare/">Compare</a></nav><h1>{E(title)}</h1>
 <p class="muted small">Updated {fmt_date(CHECK_DATE)} · Facts from vendor pages · {METH_LINK}</p></div></section>
-<section class="sec"><div class="wrap"><div class="card pick"><h2>Who should pick which</h2><p>{PICK[key]}</p></div>
+<section class="sec"><div class="wrap"><div class="card pick"><h2>Who should pick which</h2><p>{cj["pick"] if cj else PICK[key]}</p></div>
 <h2>Side by side</h2>{tbl}<p class="muted small">Prices as listed by each vendor on the check date, before tax. Plans and limits change; follow the sources below.</p>
-<h2>Starting price</h2><div class="bars">{bars}</div><p class="muted small">Lowest paid plan shown on each vendor&rsquo;s pricing page. Currencies as listed.</p>
-<p><a class="btn ghost" href="{E(cmp_url(*ts))}">Open in the interactive comparer →</a></p>
-<h2>Sources</h2><ul class="srcs">{srcs}</ul>{DISCLOSE}</div></section></main>"""
-    return doc(head(f"{title}: pricing, free tier & limits compared ({UPD[:4]}) | ToolRank", f"{title} compared from vendor pricing pages checked {fmt_date(CHECK_DATE)}: starting prices, free tiers, best for and main limitations.", path, ld), body)
+<h2>Starting price</h2><div class="bars">{bars}</div><p class="muted small">Lowest paid plan shown on each vendor&rsquo;s pricing page, checked {fmt_date(CHECK_DATE)}. Currencies as listed.</p>
+<p><a class="btn ghost" href="{E(cmp_url(*ts))}">Open in the interactive comparer →</a></p><p class="small">Full profiles: {profs}</p>
+{faqh}
+<h2>Sources</h2><ul class="srcs">{srcs}</ul>{relh}{DISCLOSE}</div></section></main>"""
+    ht = f"{title} ({UPD[:4]}): pricing, limits, which to pick | ToolRank"
+    desc = f"{title} compared from vendor pages checked {fmt_date(CHECK_DATE)}: pricing, free tiers, limits, platforms and who should pick which."
+    return doc(head(ht, desc, path, ld), body)
 
 def compare_ui_page():
     cats = "".join(f'<option value="{c["id"]}">{E(c["title"])}</option>' for c in D["categories"])
-    presets = "".join(f'<a class="chip" href="/compare/{k}/">{E(cmp_title(ids))}</a>' for k, ids in COMPARES)
+    presets = "".join(f'<a class="chip" href="/compare/{k}/">{E(cmp_title(ids))}</a>' for k, ids in COMPARES[:6]) + '<a class="chip" href="#all">All comparisons ↓</a>'
+    groups = {}
+    for k, ids in COMPARES: groups.setdefault(TOOLS[ids[0]]["name"], []).append((k, ids))
+    hub = "".join(f'<div class="card"><h3>{E(g)}</h3><ul class="rlist">' + "".join(f'<li><a href="/compare/{k}/">{E(cmp_title(ids))}</a></li>' for k, ids in xs) + '</ul></div>' for g, xs in groups.items())
+    hub = f'<section class="sec" id="all"><div class="wrap"><h2>All comparisons ({len(COMPARES)})</h2><p class="muted">Head-to-head pages with pricing checked against vendor pages, who-should-pick-which advice and FAQs.</p><div class="grid">{hub}</div></div></section>'
     body = f"""<main class="cmpui"><section class="hero sub"><div class="wrap"><h1>Compare AI tools</h1><p class="lead">Pick up to 4 tools. Every fact comes from vendor pages; gaps say &ldquo;Not yet verified&rdquo;.</p><div class="chips">{presets}<a class="chip" href="/methodology/">How we rank →</a></div></div></section>
 <div class="wrap cwrap"><aside class="cside" aria-label="Filters"><h2 class="sh3">Filters</h2>
 <label>Category<select id="fcat"><option value="">All categories</option>{cats}</select></label>
@@ -653,10 +671,10 @@ def compare_ui_page():
 <fieldset><legend>Platforms</legend><div id="fplat"></div></fieldset>
 <label class="ck"><input type="checkbox" id="fver"> Verified only</label>
 <div class="picker"><label for="fq">Add a tool</label><input id="fq" type="search" placeholder="Search tools…" autocomplete="off"><ul id="fres" role="listbox"></ul></div></aside>
-<section class="cmain" aria-live="polite"><div id="ccards" class="ccards"></div><div id="cmatrix"></div><p class="muted small">Ratings are from moderated user reviews. Some links may be affiliate links. They never affect rank.</p></section></div></main>
+<section class="cmain" aria-live="polite"><div id="ccards" class="ccards"></div><div id="cmatrix"></div><p class="muted small">Ratings are from moderated user reviews. Some links may be affiliate links. They never affect rank.</p></section></div>{hub}</main>
 <dialog id="pick" class="pick-d" aria-labelledby="pickh"><div class="pin"><div class="phd"><h2 id="pickh" class="sh3">Add a tool</h2><button type="button" id="pclose" class="pcl" aria-label="Close">×</button></div><input id="pq" type="search" placeholder="Search tools or categories…" autocomplete="off" aria-label="Search tools" autofocus><div class="pbody"><div id="pres"></div><div id="ppop"></div></div></div></dialog>
 <script src="/assets/compare.js" defer></script>"""
-    return doc(head("Compare AI tools side by side: pricing, free tiers, limits | ToolRank", "Interactive comparison of AI tools: starting price, free tier limits, platforms, integrations, best for and main limitation, from vendor pages.", "/compare/", [ORG, SITE]), body)
+    return doc(head("Compare AI tools side by side: pricing, free tiers, limits | ToolRank", "Interactive comparison of AI tools: starting price, free tier limits, platforms, integrations, best for and main limitation, from vendor pages.", "/compare/", [ORG, SITE, {"@type": "ItemList", "name": "AI tool comparisons", "itemListElement": [{"@type": "ListItem", "position": n, "name": cmp_title(ids), "url": f"{BASE}/compare/{k}/"} for n, (k, ids) in enumerate(COMPARES, 1)]}]), body)
 
 COMPARE_JS = r"""(()=>{const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const slug=n=>n.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");const NV='<span class="nv">Not yet verified</span>';
@@ -817,6 +835,8 @@ def main():
     for c in cats:
         F.append(f"\n## {c['title']}\n\n{c['blurb']}\nPage: {BASE}/best/{c['id']}/\n")
         F += [f"{i}. {t['name']} ({t['pricing']}; audience: {t.get('audience','')}){' [Featured]' if t.get('featured') else ''}{f' [user rating {rstat(t)[1]}/5 from {rstat(t)[0]} review(s)]' if rstat(t)[0] else ''}: {t['verdict']} {t['url']}" for i, t in enumerate(c["tools"], 1)]
+    F.append(f"\n## Comparisons (facts checked {fmt_date(CHECK_DATE)})\n")
+    F += [f"- {cmp_title(c['ids'])}: {BASE}/compare/{c['key']}/ | " + re.sub(r"<[^>]+>", "", c["pick"]) for c in CJ]
     F.append(f"\n## New this week (as of {N['updated']})\n")
     F += [f"- {n['date']} {n['title']} ({n['type']}): {n['summary']} {n['url']}" for n in sorted(N["items"], key=lambda n: n["date"], reverse=True)]
     (ROOT/"llms-full.txt").write_text("\n".join(F) + "\n")
