@@ -276,7 +276,7 @@ NAV = (f'<header class="top"><div class="bar">{LOGO}<nav aria-label="Main"><a hr
        '<nav id="mmenu" class="mmenu" aria-label="Mobile" hidden>' + "".join(f'<a href="{h}">{l}</a>' for h, l in MENU) + '</nav>'
        '<script>(function(){var b=document.querySelector(".hb"),m=document.getElementById("mmenu");if(!b)return;function s(o){b.setAttribute("aria-expanded",o);b.setAttribute("aria-label",o?"Close menu":"Open menu");m.hidden=!o;document.documentElement.classList.toggle("mopen",o)}'
        'b.onclick=function(){s(m.hidden)};m.addEventListener("click",function(e){if(e.target.closest("a"))s(false)});addEventListener("keydown",function(e){if(e.key==="Escape"&&!m.hidden){s(false);b.focus()}})})()</script></header>')
-NL_URL = "https://tools-newsletter-8ee4fe.beehiiv.com/subscribe"
+NL_URL = "https://toolrank.beehiiv.com/subscribe"
 def NL(cls="", hid="nl"):
     return (f'<div class="nl {cls}"><div class="nlt"><h2 id="{hid}-h">Get the weekly ToolRank brief</h2><p>New AI tools, verified price changes and fresh comparisons. One email a week. Unsubscribe anytime.</p></div>'
             f'<div class="nlf"><a class="btn" href="{NL_URL}" target="_blank" rel="noopener" aria-describedby="{hid}-h">Subscribe free</a></div></div>')
