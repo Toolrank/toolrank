@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "categories": [
   {
    "id": "ai-assistants",
@@ -413,59 +413,6 @@
      }
     },
     {
-     "name": "Lovable",
-     "url": "https://lovable.dev",
-     "verdict": "Prompt-to-full-stack web app builder aimed at non-developers.",
-     "pricing": "freemium",
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "bot-blocked (403), known official domain",
-     "audience": "consumer",
-     "job": "Build web apps and sites by chatting with an AI engineer",
-     "why_rank": "Turns plain-language prompts into working web apps, with hosting via Lovable Cloud and a free daily allowance.",
-     "main_limitation": "Everything runs on credits: the free plan is 5 build credits a day (max 30 a month), and plan credits expire.",
-     "best_for": "Non-developers and founders prototyping web apps fast",
-     "avoid_if": "You need predictable flat costs for heavy iteration",
-     "platforms": [
-      "Web"
-     ],
-     "integrations": [
-      "Lovable Cloud"
-     ],
-     "model_provider": "",
-     "sources": [
-      {
-       "url": "https://lovable.dev/pricing",
-       "label": "Lovable pricing and FAQ",
-       "checked": "2026-10-16"
-      }
-     ],
-     "last_verified": "2026-10-16",
-     "pricing_detail": {
-      "model": "freemium",
-      "starting_price": "",
-      "free_tier": "5 build credits/day (up to 30/month) plus 20 Cloud credits/month",
-      "tiers": [
-       {
-        "name": "Free",
-        "price": "$0",
-        "notes": ""
-       },
-       {
-        "name": "Pro",
-        "price": "price not shown in fetched page text",
-        "notes": ""
-       },
-       {
-        "name": "Business",
-        "price": "price not shown in fetched page text",
-        "notes": ""
-       }
-      ],
-      "notes": "Monthly plan credits expire two months after issue. Paid prices render client-side and were not verified."
-     }
-    },
-    {
      "name": "Claude Code",
      "url": "https://www.anthropic.com/claude-code",
      "verdict": "Anthropic's terminal-based agentic coding tool.",
@@ -519,57 +466,6 @@
        }
       ],
       "notes": "Pricing per Claude pricing page (Claude Code is included in plans)."
-     }
-    },
-    {
-     "name": "Bolt.new",
-     "url": "https://bolt.new",
-     "verdict": "Builds and runs full-stack apps in the browser from a prompt.",
-     "pricing": "freemium",
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "consumer",
-     "job": "Prompt, run and deploy full-stack web apps in the browser",
-     "why_rank": "Generous token-based free tier and simple Pro/Teams pricing for in-browser app building.",
-     "main_limitation": "Free plan: 300K tokens/day, 1M tokens/month, and Bolt branding on sites.",
-     "best_for": "Quick full-stack prototypes and small business apps",
-     "avoid_if": "You'll burn through tokens on large projects without budget for upgrades",
-     "platforms": [
-      "Web"
-     ],
-     "integrations": [],
-     "model_provider": "",
-     "sources": [
-      {
-       "url": "https://bolt.new/pricing",
-       "label": "Bolt pricing",
-       "checked": "2026-10-16"
-      }
-     ],
-     "last_verified": "2026-10-16",
-     "pricing_detail": {
-      "model": "freemium",
-      "starting_price": "$25/month (Pro, billed monthly)",
-      "free_tier": "300K tokens/day, 1M tokens/month, Bolt branding, 10MB uploads, unlimited databases",
-      "tiers": [
-       {
-        "name": "Free",
-        "price": "$0",
-        "notes": ""
-       },
-       {
-        "name": "Pro",
-        "price": "$25/month",
-        "notes": "No daily limit, from 10M tokens/month, no branding"
-       },
-       {
-        "name": "Teams",
-        "price": "$30/member/month",
-        "notes": "Centralized billing"
-       }
-      ],
-      "notes": "Up to 28% saved with yearly billing."
      }
     },
     {
@@ -639,14 +535,183 @@
      }
     },
     {
-     "name": "v0",
-     "url": "https://v0.app",
-     "verdict": "Vercel's generator for React/Next.js UIs and apps, deploys to Vercel.",
+     "name": "Lovable",
+     "url": "https://lovable.dev",
+     "verdict": "Prompt-to-full-stack web app builder aimed at non-developers.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "bot-blocked (403), known official domain",
+     "audience": "consumer",
+     "job": "Build web apps and sites by chatting with an AI engineer",
+     "why_rank": "Turns plain-language prompts into working web apps, with hosting via Lovable Cloud and a free daily allowance.",
+     "main_limitation": "Everything runs on credits: the free plan is 5 build credits a day (max 30 a month), and plan credits expire.",
+     "best_for": "Non-developers and founders prototyping web apps fast",
+     "avoid_if": "You need predictable flat costs for heavy iteration",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Lovable Cloud"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://lovable.dev/pricing",
+       "label": "Lovable pricing and FAQ",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "5 build credits/day (up to 30/month) plus 20 Cloud credits/month",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "price not shown in fetched page text",
+        "notes": ""
+       },
+       {
+        "name": "Business",
+        "price": "price not shown in fetched page text",
+        "notes": ""
+       }
+      ],
+      "notes": "Monthly plan credits expire two months after issue. Paid prices render client-side and were not verified."
+     }
+    },
+    {
+     "name": "Bolt.new",
+     "url": "https://bolt.new",
+     "verdict": "Builds and runs full-stack apps in the browser from a prompt.",
      "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "Prompt, run and deploy full-stack web apps in the browser",
+     "why_rank": "Generous token-based free tier and simple Pro/Teams pricing for in-browser app building.",
+     "main_limitation": "Free plan: 300K tokens/day, 1M tokens/month, and Bolt branding on sites.",
+     "best_for": "Quick full-stack prototypes and small business apps",
+     "avoid_if": "You'll burn through tokens on large projects without budget for upgrades",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://bolt.new/pricing",
+       "label": "Bolt pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$25/month (Pro, billed monthly)",
+      "free_tier": "300K tokens/day, 1M tokens/month, Bolt branding, 10MB uploads, unlimited databases",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$25/month",
+        "notes": "No daily limit, from 10M tokens/month, no branding"
+       },
+       {
+        "name": "Teams",
+        "price": "$30/member/month",
+        "notes": "Centralized billing"
+       }
+      ],
+      "notes": "Up to 28% saved with yearly billing."
+     }
+    },
+    {
+     "name": "Windsurf",
+     "url": "https://windsurf.com",
+     "verdict": "Agentic IDE from Cognition, renamed Devin Desktop in June 2026.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "tags": [
+      "ide",
+      "code editor"
+     ],
+     "audience": "business",
+     "job": "AI IDE with local and cloud agents. Windsurf was renamed Devin Desktop on 2 Jun 2026",
+     "why_rank": "Full agentic IDE with a free plan and unlimited Tab completions. Since June 2026 it ships as Devin Desktop, with a Kanban-style Agent Command Center that runs Devin and third-party ACP agents.",
+     "main_limitation": "The product has been rebranded and reworked: Windsurf is now Devin Desktop and the Cascade agent was replaced. Paid usage is a daily and weekly quota, and anything over it is billed at model API prices.",
+     "best_for": "Developers who want a VS Code-style IDE that manages several local and cloud agents from one screen",
+     "avoid_if": "You want a stable, unchanging product, or a flat price with no usage overages",
+     "platforms": [
+      "Desktop (macOS, Windows, Linux)",
+      "Cloud agents (Devin Cloud)"
+     ],
+     "integrations": [
+      "Agent Client Protocol (Codex, Claude Agent, OpenCode)",
+      "OpenAI, Anthropic, Google models",
+      "GitHub, GitLab, Bitbucket"
+     ],
+     "model_provider": "Multi-provider: OpenAI, Anthropic, Google and others, plus Cognition's own SWE models",
+     "sources": [
+      {
+       "url": "https://devin.ai/pricing",
+       "label": "Devin / Devin Desktop pricing (windsurf.com/pricing redirects here)",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://devin.ai/blog/windsurf-is-now-devin-desktop",
+       "label": "Cognition: Windsurf is now Devin Desktop (2 Jun 2026)",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$20/month (Pro)",
+      "free_tier": "Light agent quota, limited models, unlimited inline edits and Tab completions",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "Light agent quota, limited models, unlimited inline edits and Tab completions"
+       },
+       {
+        "name": "Pro",
+        "price": "$20/month",
+        "notes": "Higher quotas, frontier models, Devin Cloud agents, extra usage at API pricing"
+       },
+       {
+        "name": "Max",
+        "price": "$200/month",
+        "notes": "Significantly higher quotas"
+       },
+       {
+        "name": "Teams",
+        "price": "$80/month minimum + $40 per full seat",
+        "notes": "Up to 200 users, admin dashboard"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "SSO, VPC deployment"
+       }
+      ],
+      "notes": "Windsurf and Devin now share one pricing page. Existing Windsurf Pro subscribers keep $15/month (per the vendor). Usage over quota is billed at API list prices."
+     },
+     "last_verified": "2026-10-16"
     },
     {
      "name": "OpenAI Codex",
@@ -659,6 +724,16 @@
      "audience": "business"
     },
     {
+     "name": "v0",
+     "url": "https://v0.app",
+     "verdict": "Vercel's generator for React/Next.js UIs and apps, deploys to Vercel.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "audience": "consumer"
+    },
+    {
      "name": "Replit",
      "url": "https://replit.com",
      "verdict": "Replit Agent builds, hosts and deploys apps from one cloud workspace.",
@@ -666,20 +741,576 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "Cloud workspace where Replit Agent builds, hosts and deploys apps from prompts",
+     "why_rank": "Replit Agent covers the whole loop in a browser: prompt, build, database, deploy, share. Paid plans include model credit.",
+     "main_limitation": "Paid plans start at $20/month and heavier agent use draws on credits. We couldn't confirm a free plan's limits from the pricing page.",
+     "best_for": "Founders and builders who want an agent to build and host an app without local setup",
+     "avoid_if": "You want to work in your own local repo and editor",
+     "platforms": [
+      "Web",
+      "Mobile"
+     ],
+     "integrations": [
+      "Built-in databases",
+      "Deployments",
+      "AI integrations"
+     ],
+     "model_provider": "Not yet verified",
+     "sources": [
+      {
+       "url": "https://replit.com/pricing",
+       "label": "Replit pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "",
+      "starting_price": "$20/month (Core; $18/month billed annually)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Core",
+        "price": "$20/month ($18 annual)",
+        "notes": "$20 toward powerful models, Plan mode, unlimited workspaces"
+       },
+       {
+        "name": "Pro",
+        "price": "$100/month ($90 annual)",
+        "notes": "10 parallel agents, $100 toward models, up to 15 collaborators"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "SSO/SAML, single-tenant"
+       }
+      ],
+      "notes": "Prices subject to tax. Free plan details were not shown on the pricing page we fetched."
+     },
+     "last_verified": "2026-10-16"
     },
     {
-     "name": "Windsurf",
-     "url": "https://windsurf.com",
-     "verdict": "Agentic IDE alternative to Cursor.",
-     "pricing": "freemium",
+     "name": "Cline",
+     "url": "https://cline.bot",
+     "verdict": "Open-source autonomous coding agent for VS Code; bring your own model.",
+     "pricing": "free",
+     "tags": [
+      "vs code",
+      "open source"
+     ],
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
+     "audience": "business",
+     "job": "Open-source autonomous coding agent for VS Code, JetBrains and CLI",
+     "why_rank": "Free, open-source (Apache-2.0) agent with no subscription or seat fees: you pay for inference only, at cost or with your own keys, from many providers.",
+     "main_limitation": "Costs scale directly with tokens, so long agent runs on frontier models get expensive. The JetBrains extension is listed under Enterprise.",
+     "best_for": "Developers who want a transparent, model-agnostic agent in VS Code and control over spend",
+     "avoid_if": "You want one flat monthly price",
+     "platforms": [
+      "VS Code",
+      "CLI",
+      "JetBrains (Enterprise)"
+     ],
+     "integrations": [
+      "MCP Marketplace",
+      "Anthropic, OpenAI, Gemini, OpenRouter, Bedrock, Vertex and more"
+     ],
+     "model_provider": "Bring your own key or Cline provider (at cost)",
+     "sources": [
+      {
+       "url": "https://cline.bot/pricing",
+       "label": "Cline pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Free for individuals: pay only for AI inference (BYOK or at cost)",
+      "tiers": [
+       {
+        "name": "Open Source",
+        "price": "Free",
+        "notes": "VS Code, CLI, MCP"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "SSO, SLA, JetBrains, RBAC"
+       }
+      ],
+      "notes": ""
+     },
+     "last_verified": "2026-10-16"
+    },
+    {
+     "name": "Devin",
+     "url": "https://devin.ai",
+     "verdict": "Cognition's autonomous software engineering agent, now on the same plans as Devin Desktop.",
+     "pricing": "paid",
+     "tags": [
+      "autonomous",
+      "agent"
+     ],
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business",
+     "job": "Autonomous AI software engineer that takes tasks and opens pull requests in the cloud",
+     "why_rank": "Delegates whole tickets to a cloud agent that plans, writes code and opens PRs. It connects to Slack, Linear, Jira and your git host, and since 2026 the self-serve plans start free.",
+     "main_limitation": "Cloud agents (Devin Cloud) need Pro ($20/month) or above, and heavy use draws down quota that is topped up at API prices. You still have to review every PR it opens.",
+     "best_for": "Teams that want to hand well-scoped tickets to an agent and review the PRs",
+     "avoid_if": "You want to stay hands-on in your editor, or you can't give an agent repo access",
+     "platforms": [
+      "Web",
+      "Desktop (Devin Desktop)",
+      "CLI",
+      "Slack/Teams"
+     ],
+     "integrations": [
+      "Slack and Teams",
+      "Linear and Jira",
+      "GitHub, GitLab, Bitbucket",
+      "Devin API"
+     ],
+     "model_provider": "Cognition SWE models plus OpenAI, Anthropic and Google models",
+     "sources": [
+      {
+       "url": "https://devin.ai/pricing",
+       "label": "Devin pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$20/month (Pro)",
+      "free_tier": "Free plan: light quota, limited models (no cloud agents)",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "Light agent quota, limited models, unlimited inline edits and Tab completions"
+       },
+       {
+        "name": "Pro",
+        "price": "$20/month",
+        "notes": "Higher quotas, frontier models, Devin Cloud agents, extra usage at API pricing"
+       },
+       {
+        "name": "Max",
+        "price": "$200/month",
+        "notes": "Significantly higher quotas"
+       },
+       {
+        "name": "Teams",
+        "price": "$80/month minimum + $40 per full seat",
+        "notes": "Up to 200 users, admin dashboard"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "SSO, VPC deployment"
+       }
+      ],
+      "notes": "Devin and Devin Desktop (formerly Windsurf) share one set of plans."
+     },
+     "last_verified": "2026-10-16"
+    },
+    {
+     "name": "Kiro",
+     "url": "https://kiro.dev",
+     "verdict": "AWS's spec-driven agentic IDE and CLI, the successor to Amazon Q Developer.",
+     "pricing": "freemium",
      "tags": [
       "ide",
-      "code editor"
+      "specs"
      ],
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business",
+     "job": "Spec-driven agentic IDE, CLI and web agent from AWS",
+     "why_rank": "AWS's main coding product: spec-driven development, hooks and steering in a VS Code-based IDE plus CLI. It has a perpetual free tier, and it's the official successor to Amazon Q Developer.",
+     "main_limitation": "Everything is metered in credits that vary by model, and unused monthly credits don't roll over. There are no native Visual Studio or Eclipse plugins.",
+     "best_for": "Teams on AWS that want structured, spec-first agent work",
+     "avoid_if": "You want unmetered use or a plugin for Visual Studio/Eclipse",
+     "platforms": [
+      "Desktop IDE (VS Code-based)",
+      "CLI",
+      "Web"
+     ],
+     "integrations": [
+      "MCP",
+      "AWS IAM Identity Center",
+      "ACP-compatible IDEs"
+     ],
+     "model_provider": "Auto router plus Anthropic Claude, OpenAI GPT and open-weight models",
+     "sources": [
+      {
+       "url": "https://kiro.dev/pricing/",
+       "label": "Kiro pricing",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://kiro.dev/docs/upgrade-guides/migrating-from-q-developer/",
+       "label": "Kiro: migrating from Q Developer",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$20/user/month (Pro)",
+      "free_tier": "Perpetual free tier: 50 credits, Claude Sonnet 4.5 and open-weight models, rate-limited",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "50 credits"
+       },
+       {
+        "name": "Pro",
+        "price": "$20/user/month",
+        "notes": ""
+       },
+       {
+        "name": "Pro+",
+        "price": "$40/user/month",
+        "notes": ""
+       },
+       {
+        "name": "Pro Max",
+        "price": "$100/user/month",
+        "notes": ""
+       },
+       {
+        "name": "Power",
+        "price": "$200/user/month",
+        "notes": ""
+       }
+      ],
+      "notes": "Add-on credits $0.04 each. GovCloud pricing about 20% higher."
+     },
+     "last_verified": "2026-10-16"
+    },
+    {
+     "name": "Zed",
+     "url": "https://zed.dev",
+     "verdict": "Fast open-source code editor with built-in AI agent and edit predictions.",
+     "pricing": "freemium",
+     "tags": [
+      "code editor",
+      "open source"
+     ],
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business",
+     "job": "Fast open-source code editor with an AI agent, edit predictions and external agents",
+     "why_rank": "A very fast native editor that's free forever with your own keys or external agents like Claude Agent and Codex CLI. Pro is a low $10/month.",
+     "main_limitation": "Hosted AI beyond Pro's $5 of included tokens is billed at API list price plus 10%. SSO/SAML isn't available yet on Business.",
+     "best_for": "Developers who want a fast native editor and a choice of AI (Zed-hosted, own keys or external agents)",
+     "avoid_if": "You depend on the VS Code or JetBrains extension ecosystems",
+     "platforms": [
+      "Desktop (macOS, Linux, Windows)"
+     ],
+     "integrations": [
+      "Claude Agent, Codex CLI and other external agents",
+      "Anthropic, OpenAI, Google, Ollama, Bedrock, OpenRouter and more",
+      "GitHub Copilot"
+     ],
+     "model_provider": "Zed-hosted models (Pro) or bring your own provider",
+     "sources": [
+      {
+       "url": "https://zed.dev/pricing",
+       "label": "Zed pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$10/month (Pro)",
+      "free_tier": "Personal: free forever, unlimited with your own API keys or external agents",
+      "tiers": [
+       {
+        "name": "Personal",
+        "price": "$0",
+        "notes": "Own keys or external agents"
+       },
+       {
+        "name": "Pro",
+        "price": "$10/month",
+        "notes": "Unlimited edit predictions, $5 tokens included, 14-day trial"
+       },
+       {
+        "name": "Business",
+        "price": "$30/seat/month",
+        "notes": "Org AI policies, data governance, RBAC"
+       }
+      ],
+      "notes": "Hosted usage beyond included credit is billed at API list price +10%."
+     },
+     "last_verified": "2026-10-16"
+    },
+    {
+     "name": "Amp",
+     "url": "https://ampcode.com",
+     "verdict": "Agentic coding tool for terminal and editors, spun out of Sourcegraph in 2025.",
+     "pricing": "freemium",
+     "tags": [
+      "agent",
+      "cli"
+     ],
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business",
+     "job": "Agentic coding tool for terminal and editors; successor path for Cody Free/Pro users",
+     "why_rank": "A frontier coding agent that is free to start with your own keys or subscriptions, and has no Amp token fees on BYOK. It became an independent company after spinning out of Sourcegraph in Dec 2025.",
+     "main_limitation": "Cloud 'orb' runtime is pay-as-you-go on the free tier, and the pricing model is unusual, so read the orb-minute details.",
+     "best_for": "Developers who want a cutting-edge agent and to reuse existing ChatGPT/Claude subscriptions",
+     "avoid_if": "You need a conventional IDE assistant with autocomplete",
+     "platforms": [
+      "CLI",
+      "Editors"
+     ],
+     "integrations": [
+      "BYOK / ChatGPT and Claude subscriptions",
+      "SAML/OIDC SSO (Teams)"
+     ],
+     "model_provider": "Bring your own keys or subscriptions",
+     "sources": [
+      {
+       "url": "https://ampcode.com/pricing",
+       "label": "Amp pricing",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://ampcode.com/news/amp-frontier-corporation",
+       "label": "Amp: spinning out of Sourcegraph",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$20/month (Individual)",
+      "free_tier": "Hobby: free, all features, BYOK, pay-as-you-go orb runtime",
+      "tiers": [
+       {
+        "name": "Hobby",
+        "price": "Free",
+        "notes": "Pay-as-you-go orbs or own runners"
+       },
+       {
+        "name": "Individual",
+        "price": "$20/month",
+        "notes": "45,000 orb minutes"
+       },
+       {
+        "name": "Teams",
+        "price": "No extra charge",
+        "notes": "Shared billing, SSO"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": ""
+     },
+     "last_verified": "2026-10-16"
+    },
+    {
+     "name": "OpenHands",
+     "url": "https://www.openhands.dev",
+     "verdict": "Open-source, model-agnostic autonomous coding agent with a free cloud tier.",
+     "pricing": "free",
+     "affiliate_url": "",
+     "featured": false,
+     "tags": [
+      "agent",
+      "open source"
+     ],
+     "audience": "business",
+     "job": "Open-source autonomous coding agent you can run locally, in OpenHands Cloud or self-hosted",
+     "why_rank": "MIT-licensed, model-agnostic agent with a web GUI, CLI and SDK. It runs free locally with unlimited conversations, there's a free cloud Individual tier, and the GitHub community is large (about 91K stars).",
+     "main_limitation": "The free cloud tier caps you at 10 conversations a day, and you pay your own LLM costs (BYOK, or OpenHands' provider at cost).",
+     "best_for": "Teams that want an autonomous agent they can self-host and audit",
+     "avoid_if": "You want an inline autocomplete assistant inside your editor",
+     "platforms": [
+      "Web GUI",
+      "CLI",
+      "Terminal UI",
+      "Cloud",
+      "Self-hosted"
+     ],
+     "integrations": [
+      "GitHub, GitLab, Bitbucket",
+      "Jira",
+      "Slack",
+      "MCP"
+     ],
+     "model_provider": "Model-agnostic: bring your own key or OpenHands provider at cost",
+     "last_verified": "2026-10-16",
+     "sources": [
+      {
+       "url": "https://www.openhands.dev/pricing",
+       "label": "OpenHands pricing",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://github.com/OpenHands/OpenHands",
+       "label": "OpenHands GitHub (MIT)",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source: free, unlimited local use. Cloud Individual: free, 10 conversations/day, BYOK or at-cost models",
+      "tiers": [
+       {
+        "name": "Local (open source)",
+        "price": "Free",
+        "notes": "Unlimited conversations"
+       },
+       {
+        "name": "Cloud Individual",
+        "price": "Free",
+        "notes": "10 conversations/day"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "SaaS or self-hosted in your VPC, SSO"
+       }
+      ],
+      "notes": ""
+     }
+    },
+    {
+     "name": "Aider",
+     "url": "https://aider.chat",
+     "verdict": "Open-source terminal pair programmer that commits to git.",
+     "pricing": "free",
+     "tags": [
+      "cli",
+      "open source"
+     ],
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business",
+     "job": "Open-source AI pair programmer in your terminal that edits files and commits to git",
+     "why_rank": "Free and open source (Apache-2.0). Works with almost any LLM, including local ones, maps your whole codebase and commits each change to git so it's easy to undo.",
+     "main_limitation": "You bring and pay for your own model API, and there's no GUI. The GitHub repo had its last push on 22 May 2026, so check the release cadence before you rely on it.",
+     "best_for": "Terminal users who want a free, model-agnostic pair programmer with clean git history",
+     "avoid_if": "You want a polished IDE, a hosted service, or one bundled subscription",
+     "platforms": [
+      "Terminal (CLI)",
+      "Works alongside any editor"
+     ],
+     "integrations": [
+      "Git",
+      "OpenAI, Anthropic, DeepSeek and most LLM APIs",
+      "Local models"
+     ],
+     "model_provider": "Bring your own (Claude, DeepSeek, OpenAI, local models and more)",
+     "sources": [
+      {
+       "url": "https://aider.chat/",
+       "label": "Aider homepage",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://github.com/Aider-AI/aider",
+       "label": "Aider GitHub repository",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Free, open source: you pay only your LLM provider",
+      "tiers": [],
+      "notes": "No Aider subscription. Model costs depend on your provider."
+     },
+     "last_verified": "2026-10-16"
+    },
+    {
+     "name": "JetBrains AI (Junie)",
+     "url": "https://junie.jetbrains.com/",
+     "verdict": "JetBrains' AI in IntelliJ-based IDEs; Junie is now part of JetBrains Air.",
+     "pricing": "paid",
+     "tags": [
+      "ide",
+      "agent"
+     ],
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business",
+     "job": "AI assistant and Junie coding agent in JetBrains IDEs, now organised under JetBrains Air",
+     "why_rank": "Built into IntelliJ IDEA, PyCharm and the other JetBrains IDEs. JetBrains Air runs Junie, Claude Agent, Codex and other agents, and lets you bring your own keys.",
+     "main_limitation": "The product line is in flux: Junie is now part of JetBrains Air and cloud runs are rolling out gradually. We could not verify free-tier limits.",
+     "best_for": "Developers already living in JetBrains IDEs",
+     "avoid_if": "You don't use JetBrains IDEs",
+     "platforms": [
+      "JetBrains IDEs",
+      "Web",
+      "CLI",
+      "Mobile"
+     ],
+     "integrations": [
+      "Claude Agent, Codex, Copilot, OpenCode via ACP",
+      "Bring your own keys (Bedrock, OpenAI, Anthropic)"
+     ],
+     "model_provider": "Multi-provider via JetBrains AI, or bring your own keys",
+     "sources": [
+      {
+       "url": "https://www.jetbrains.com/store/ai/",
+       "label": "JetBrains AI plans & pricing",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://www.jetbrains.com/air/",
+       "label": "JetBrains Air (Junie is now part of Air)",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "",
+      "starting_price": "$10/month (AI Pro, personal)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "AI Pro",
+        "price": "$10/month ($100/year)",
+        "notes": "Personal pricing"
+       },
+       {
+        "name": "AI Ultimate",
+        "price": "$30/month ($300/year)",
+        "notes": "Personal pricing"
+       }
+      ],
+      "notes": "Personal prices from the JetBrains store. Business pricing and free tier not verified."
+     },
+     "last_verified": "2026-10-16"
+    },
+    {
+     "name": "Gemini CLI",
+     "url": "https://github.com/google-gemini/gemini-cli",
+     "verdict": "Google's open-source terminal coding agent powered by Gemini.",
+     "pricing": "free",
+     "tags": [
+      "cli",
+      "open source"
+     ],
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
      "audience": "business"
     },
     {
@@ -697,20 +1328,6 @@
      "audience": "both"
     },
     {
-     "name": "Gemini CLI",
-     "url": "https://github.com/google-gemini/gemini-cli",
-     "verdict": "Google's open-source terminal coding agent powered by Gemini.",
-     "pricing": "free",
-     "tags": [
-      "cli",
-      "open source"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "business"
-    },
-    {
      "name": "Google AI Studio (Build)",
      "url": "https://aistudio.google.com",
      "verdict": "Google's AI Studio builds and deploys Gemini-powered apps from a prompt.",
@@ -725,20 +1342,6 @@
      "audience": "both"
     },
     {
-     "name": "JetBrains AI (Junie)",
-     "url": "https://junie.jetbrains.com/",
-     "verdict": "JetBrains' coding agent inside IntelliJ-based IDEs.",
-     "pricing": "paid",
-     "tags": [
-      "ide",
-      "agent"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "business"
-    },
-    {
      "name": "Firebase Studio",
      "url": "https://firebase.studio",
      "verdict": "Google's cloud workspace for prototyping full-stack apps with Gemini.",
@@ -751,20 +1354,6 @@
      "featured": false,
      "url_check": "200 OK 2026-10-15",
      "audience": "both"
-    },
-    {
-     "name": "Cline",
-     "url": "https://cline.bot",
-     "verdict": "Open-source autonomous coding agent for VS Code; bring your own model.",
-     "pricing": "free",
-     "tags": [
-      "vs code",
-      "open source"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "business"
     },
     {
      "name": "Create.xyz (Anything)",
@@ -809,20 +1398,6 @@
      "audience": "consumer"
     },
     {
-     "name": "Aider",
-     "url": "https://aider.chat",
-     "verdict": "Open-source terminal pair programmer that commits to git.",
-     "pricing": "free",
-     "tags": [
-      "cli",
-      "open source"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "business"
-    },
-    {
      "name": "Softgen",
      "url": "https://softgen.ai",
      "verdict": "AI web app builder producing Next.js apps with Firebase/Supabase.",
@@ -835,20 +1410,6 @@
      "featured": false,
      "url_check": "200 OK 2026-10-15",
      "audience": "consumer"
-    },
-    {
-     "name": "Amp",
-     "url": "https://ampcode.com",
-     "verdict": "Sourcegraph-born agentic coding tool for terminal and editors.",
-     "pricing": "freemium",
-     "tags": [
-      "agent",
-      "cli"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "business"
     },
     {
      "name": "Tempo",
@@ -865,20 +1426,6 @@
      "audience": "consumer"
     },
     {
-     "name": "Zed",
-     "url": "https://zed.dev",
-     "verdict": "Fast open-source code editor with built-in AI agent.",
-     "pricing": "freemium",
-     "tags": [
-      "code editor",
-      "open source"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "business"
-    },
-    {
      "name": "Same",
      "url": "https://same.new",
      "verdict": "Clones or builds web apps from a prompt or URL.",
@@ -893,20 +1440,6 @@
      "audience": "consumer"
     },
     {
-     "name": "Amazon Q Developer",
-     "url": "https://aws.amazon.com/q/developer/",
-     "verdict": "AWS coding assistant for IDEs and CLI.",
-     "pricing": "freemium",
-     "tags": [
-      "aws",
-      "ide"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "business"
-    },
-    {
      "name": "Macaly",
      "url": "https://www.macaly.com",
      "verdict": "Prompt-to-website and app builder for non-developers.",
@@ -919,20 +1452,6 @@
      "featured": false,
      "url_check": "200 OK 2026-10-15",
      "audience": "consumer"
-    },
-    {
-     "name": "Kiro",
-     "url": "https://kiro.dev",
-     "verdict": "AWS's spec-driven agentic IDE.",
-     "pricing": "freemium",
-     "tags": [
-      "ide",
-      "specs"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "business"
     },
     {
      "name": "Figma Make",
@@ -975,20 +1494,6 @@
      "featured": false,
      "url_check": "200 OK 2026-10-15",
      "audience": "both"
-    },
-    {
-     "name": "Devin",
-     "url": "https://devin.ai",
-     "verdict": "Cognition's autonomous software engineering agent.",
-     "pricing": "paid",
-     "tags": [
-      "autonomous",
-      "agent"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "business"
     },
     {
      "name": "Webflow",
@@ -1087,20 +1592,6 @@
      "featured": false,
      "url_check": "200 OK 2026-10-15",
      "audience": "consumer"
-    },
-    {
-     "name": "Continue",
-     "url": "https://www.continue.dev",
-     "verdict": "Open-source assistants and checks for IDE and CI.",
-     "pricing": "freemium",
-     "tags": [
-      "open source",
-      "ide"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "business"
     },
     {
      "name": "scroll-craft",
@@ -1227,6 +1718,319 @@
      "featured": false,
      "url_check": "200 OK 2026-10-15",
      "audience": "business"
+    },
+    {
+     "name": "Tabnine",
+     "url": "https://www.tabnine.com",
+     "verdict": "Privacy-focused AI code assistant, acquired by Tricentis in 2026.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "tags": [
+      "code completion",
+      "enterprise"
+     ],
+     "audience": "business",
+     "job": "Enterprise AI code assistant with private and on-prem deployment. Now part of Tricentis",
+     "why_rank": "Long-standing assistant known for private, on-prem and air-gapped deployment. It was acquired by Tricentis, and tabnine.com now redirects to Tricentis, so we couldn't re-verify current plans.",
+     "main_limitation": "Product direction is uncertain after the Tricentis acquisition, and we couldn't load current pricing from the vendor site because it redirects.",
+     "best_for": "Enterprises that need self-hosted or air-gapped AI coding",
+     "avoid_if": "You're an individual developer looking for a self-serve plan",
+     "platforms": [],
+     "integrations": [],
+     "model_provider": "Not yet verified",
+     "last_verified": "2026-10-16",
+     "sources": [
+      {
+       "url": "https://www.tabnine.com/pricing/",
+       "label": "tabnine.com (redirects to Tricentis: 'Tabnine is now part of Tricentis')",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [],
+      "notes": ""
+     }
+    },
+    {
+     "name": "Cody (Sourcegraph)",
+     "url": "https://sourcegraph.com/docs/cody",
+     "verdict": "Sourcegraph's AI coding assistant; Free and Pro discontinued in 2025, Enterprise only.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "tags": [
+      "ide",
+      "code search"
+     ],
+     "audience": "business",
+     "job": "AI coding assistant with Sourcegraph code-search context. Now enterprise-only",
+     "why_rank": "Ranked low for most readers: Cody Free and Pro closed to new sign-ups in June 2025 and were discontinued. It survives only inside Sourcegraph Enterprise, where its strength is whole-codebase context.",
+     "main_limitation": "Individuals can't buy it any more. Sourcegraph Enterprise starts at a $16K minimum annual contract, and its pricing page now leads with Deep Search and code search, not Cody.",
+     "best_for": "Large organisations already on Sourcegraph Enterprise",
+     "avoid_if": "You're an individual or small team. Sourcegraph pointed Cody Free/Pro users to Amp",
+     "platforms": [
+      "VS Code",
+      "JetBrains",
+      "Visual Studio (experimental)",
+      "Web",
+      "CLI"
+     ],
+     "integrations": [
+      "Sourcegraph Code Search"
+     ],
+     "model_provider": "Multiple LLMs via Sourcegraph",
+     "last_verified": "2026-10-16",
+     "sources": [
+      {
+       "url": "https://sourcegraph.com/blog/changes-to-cody-free-pro-and-enterprise-starter-plans",
+       "label": "Sourcegraph: changes to Cody Free, Pro and Enterprise Starter",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://sourcegraph.com/docs/cody",
+       "label": "Cody docs",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://sourcegraph.com/pricing",
+       "label": "Sourcegraph pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$16K/year minimum (Sourcegraph Enterprise)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Enterprise",
+        "price": "From $16K/year minimum",
+        "notes": "Includes AI credits; scales with team size"
+       }
+      ],
+      "notes": "Cody Free and Pro are discontinued."
+     }
+    },
+    {
+     "name": "Amazon Q Developer",
+     "url": "https://aws.amazon.com/q/developer/",
+     "verdict": "AWS coding assistant, closed to new sign-ups since May 2026 and being replaced by Kiro.",
+     "pricing": "freemium",
+     "tags": [
+      "aws",
+      "ide"
+     ],
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business",
+     "job": "AWS coding assistant for IDEs and CLI. Being retired in favour of Kiro",
+     "why_rank": "Ranked low because AWS is retiring it. New sign-ups closed on 15 May 2026, the CLI became Kiro CLI, and IDE plugins and paid subscriptions reach end of support on 30 Apr 2027.",
+     "main_limitation": "New users can't sign up. Existing users have until 30 Apr 2027, and the latest models are only available in Kiro.",
+     "best_for": "Existing AWS customers finishing Java/.NET transformations before the cutoff",
+     "avoid_if": "You're starting fresh. AWS points new users to Kiro",
+     "platforms": [
+      "VS Code",
+      "JetBrains",
+      "Visual Studio",
+      "Eclipse",
+      "CLI (now Kiro CLI)",
+      "AWS Console"
+     ],
+     "integrations": [
+      "AWS",
+      "MCP",
+      "Java and .NET transformation"
+     ],
+     "model_provider": "Anthropic Claude models via AWS",
+     "sources": [
+      {
+       "url": "https://aws.amazon.com/q/developer/pricing/",
+       "label": "Amazon Q Developer pricing",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://aws.amazon.com/blogs/devops/amazon-q-developer-end-of-support-announcement/",
+       "label": "AWS: Amazon Q Developer end-of-support announcement",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$19/user/month (Pro, existing customers)",
+      "free_tier": "50 agentic requests/month (existing accounts only; new sign-ups closed 15 May 2026)",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "50 agentic requests/month, 1,000 LOC/month transformation"
+       },
+       {
+        "name": "Pro",
+        "price": "$19/user/month",
+        "notes": "Higher limits, 4,000 LOC/month pooled, admin dashboard"
+       }
+      ],
+      "notes": "No new accounts or subscriptions since 15 May 2026. End of support 30 Apr 2027."
+     },
+     "last_verified": "2026-10-16"
+    },
+    {
+     "name": "Codeium",
+     "url": "https://codeium.com",
+     "verdict": "Former name of Windsurf; codeium.com now redirects to Devin Desktop.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "tags": [
+      "ide",
+      "autocomplete"
+     ],
+     "audience": "business",
+     "job": "Former brand of the Windsurf editor and extensions, now Devin Desktop by Cognition",
+     "why_rank": "Listed so people searching for the old name land somewhere accurate. Codeium became Windsurf, Windsurf became Devin Desktop (June 2026), and codeium.com now redirects to Devin Desktop.",
+     "main_limitation": "There's no separate 'Codeium' product to buy any more. Plans and features are Devin Desktop's.",
+     "best_for": "Former Codeium users checking where their tool went",
+     "avoid_if": "You're looking for a product still sold as Codeium",
+     "platforms": [
+      "Desktop (as Devin Desktop)"
+     ],
+     "integrations": [],
+     "model_provider": "See Devin Desktop (multi-provider)",
+     "last_verified": "2026-10-16",
+     "sources": [
+      {
+       "url": "https://codeium.com",
+       "label": "codeium.com (redirects to devin.ai/desktop)",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://devin.ai/pricing",
+       "label": "Devin / Devin Desktop pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$20/month (Devin Desktop Pro)",
+      "free_tier": "Devin Desktop Free: light agent quota, unlimited Tab completions",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "Light agent quota, limited models, unlimited inline edits and Tab completions"
+       },
+       {
+        "name": "Pro",
+        "price": "$20/month",
+        "notes": "Higher quotas, frontier models, Devin Cloud agents, extra usage at API pricing"
+       },
+       {
+        "name": "Max",
+        "price": "$200/month",
+        "notes": "Significantly higher quotas"
+       }
+      ],
+      "notes": "Prices are Devin Desktop's. Codeium is not sold under that name."
+     }
+    },
+    {
+     "name": "Continue",
+     "url": "https://www.continue.dev",
+     "verdict": "Open-source coding agent, acquired by Cursor in 2026; no longer maintained.",
+     "pricing": "free",
+     "tags": [
+      "open source",
+      "ide"
+     ],
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15",
+     "audience": "business",
+     "job": "Open-source coding agent for VS Code, JetBrains and CLI. Discontinued after Cursor acquired it",
+     "why_rank": "Ranked low because it is discontinued. Continue was acquired by Cursor, its repo is read-only, and 2.0.0 was the last release. The open-source extension still runs with your own keys or local models.",
+     "main_limitation": "Discontinued: no further updates or fixes and the hosted services are gone. Treat it as frozen software.",
+     "best_for": "Existing users who want a frozen, self-run open-source assistant with their own models",
+     "avoid_if": "You need a maintained tool. Look at Cline, or at Cursor, which acquired Continue",
+     "platforms": [
+      "VS Code",
+      "JetBrains",
+      "CLI"
+     ],
+     "integrations": [
+      "Bring your own model keys",
+      "Local models"
+     ],
+     "model_provider": "Bring your own (any provider or local model)",
+     "sources": [
+      {
+       "url": "https://continue.dev/",
+       "label": "continue.dev: Continue was acquired by Cursor",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://github.com/continuedev/continue",
+       "label": "Continue GitHub README (read-only, final 2.0.0 release)",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open-source extension (Apache-2.0), self-run with your own model keys",
+      "tiers": [],
+      "notes": "No paid plans are on sale. The open-source code remains available."
+     },
+     "last_verified": "2026-10-16"
+    },
+    {
+     "name": "Roo Code",
+     "url": "https://github.com/RooCodeInc/Roo-Code",
+     "verdict": "Open-source VS Code coding agent; shut down 15 May 2026.",
+     "pricing": "free",
+     "affiliate_url": "",
+     "featured": false,
+     "tags": [
+      "vs code",
+      "agent"
+     ],
+     "audience": "business",
+     "job": "Open-source AI coding agent for VS Code (a Cline fork). Shut down 15 May 2026",
+     "why_rank": "Ranked last because it's discontinued: the extension shut down on 15 May 2026 and the GitHub repo is archived. The project itself points users to Cline or the community fork ZooCode.",
+     "main_limitation": "Shut down: no updates, no support, archived repository.",
+     "best_for": "Nobody new. Existing users should migrate",
+     "avoid_if": "You need any ongoing support. Use Cline instead",
+     "platforms": [
+      "VS Code"
+     ],
+     "integrations": [
+      "Bring your own model keys"
+     ],
+     "model_provider": "Bring your own",
+     "last_verified": "2026-10-16",
+     "sources": [
+      {
+       "url": "https://github.com/RooCodeInc/Roo-Code",
+       "label": "Roo Code GitHub (archived; 'shut down on May 15th')",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://roocodeinc.github.io/Roo-Code/",
+       "label": "Roo Code docs shutdown notice",
+       "checked": "2026-10-16"
+      }
+     ],
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Was free and open source (Apache-2.0); no longer maintained",
+      "tiers": [],
+      "notes": "Discontinued 15 May 2026."
+     }
     }
    ]
   },
