@@ -121,3 +121,6 @@ body>section.hero:not(.home):not(.sub):not(.cathero){padding-top:56px}
 .fm{display:flex;align-items:center;gap:12px;margin-bottom:12px}.fm .eyebrow{margin:0}.fm .lg{width:40px;height:40px}
 .stats{gap:6px 22px}.stats span+span::before{content:none}
 @media(max-width:600px){.ph{align-items:flex-start}.ph img{display:none}.panel{padding:16px;border-radius:22px}.card{padding:16px}}
+.how{margin:18px 0 0}.subh{font-size:16px;margin:26px 0 0;color:var(--mut)}
+.nw{position:relative;cursor:pointer}.nw .cl{color:#fff}.nw .cl::after{content:"";position:absolute;inset:0;border-radius:20px}.nw:hover{border-color:var(--acc);transform:translateY(-2px)}.nw:hover .more{color:#fff}
+.own{font-size:13px;color:var(--mut);margin-top:-6px}.nw .more{color:var(--acc2)}

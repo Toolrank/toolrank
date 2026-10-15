@@ -433,24 +433,39 @@ def trending_html():
         rows.append(f'<li><span class="n">{i}</span>{logo_html(t, 28) if t else ""}<div class="ri"><a class="rn" href="{page_ or E(x["top_url"])}">{E(x["tool"])}</a><span class="muted small">{E(x["top_title"] or "")}</span></div>'
                     f'<span class="up">{x["points"]} pts</span><span class="ra">{f"<a class=\"go\" href=\"{E(link(t))}\" target=\"_blank\" rel=\"{rel(t)}\">Visit {E(x["tool"])} →</a>" if t else ""}<a class="hnl" href="{E(x["top_url"])}" target="_blank" rel="noopener nofollow">HN ↗</a></span></li>')
     if not hn: big = ['<p class="muted">No Hacker News stories linking to ranked tools in the last 7 days.</p>']
+    extra = []
     if T.get("stars"):
-        sb = '<ol class="tl">' + "".join(f'<li><a href="{E(x["url"])}" target="_blank" rel="noopener">{E(x["tool"])}</a> <span class="up">+{x["gained"]:,}★</span></li>' for x in T["stars"]) + '</ol>'
-    elif T.get("stars_baseline"): sb = '<p class="muted small">No tracked repo gained stars in this window.</p>'
-    else: sb = f'<p class="muted small">Tracking {T.get("repos_tracked", 0)} GitHub repos. Star gains appear after the next daily snapshot.</p>'
-    cb = ('<ol class="tl">' + "".join(f'<li><a href="/reviews.html#{x["slug"]}">{E(x["tool"])}</a> <span class="up">{x["count"]:,}</span></li>' for x in CL["top"]) + '</ol>') if CL and CL.get("top") else '<p class="muted small">Collecting clicks, check back soon.</p>'
+        extra.append(("GitHub stars gained", [(x["tool"], x["url"], f'+{x["gained"]:,}★', TOOLS.get(slug(x["tool"]))) for x in T["stars"]]))
+    if CL and CL.get("top"):
+        extra.append(("Most clicked on ToolRank", [(x["tool"], None, f'{x["count"]:,} clicks', TOOLS.get(x["slug"])) for x in CL["top"]]))
+    def xrows(items):
+        out = []
+        for i, (name, url, val, t) in enumerate(items, 1):
+            page_, _ = tl(name); href = page_ or url or "/reviews.html"
+            out.append(f'<li><span class="n">{i}</span>{logo_html(t, 28) if t else ""}<div class="ri"><a class="rn" href="{E(href)}">{E(name)}</a></div><span class="up">{E(val)}</span>'
+                       f'<span class="ra">{f"<a class=\"go\" href=\"{E(link(t))}\" target=\"_blank\" rel=\"{rel(t)}\">Visit {E(name)} →</a>" if t else ""}</span></li>')
+        return "".join(out)
+    ex = "".join(f'<h3 class="subh">{E(h)}</h3><ol class="trows">{xrows(it)}</ol>' for h, it in extra)
     upd = f' Last update {E(T["fetched"])}.' if T.get("fetched") else ""
     return (f'<section class="sec" id="trending"><div class="wrap"><div class="sh"><p class="eyebrow">Trending this week</p><h2 class="big">What people are talking about.</h2>'
             f'<p class="muted">Real public signals, refreshed daily. Not paid, not editorial rank.{upd}</p></div><div class="fcards">{"".join(big)}</div>'
-            + (f'<ol class="trows">{"".join(rows)}</ol>' if rows else "") +
-            f'<div class="sigs"><div class="sig"><h3>GitHub stars gained</h3><span class="tag">GitHub API · {"since " + T["stars_baseline"] if T.get("stars_baseline") else "last 7 days"}</span>{sb}</div>'
-            f'<div class="sig"><h3>Most clicked on ToolRank</h3><span class="tag">GoatCounter · cookieless · 7 days</span>{cb}</div>'
-            f'<div class="sig"><h3>Hacker News buzz</h3><span class="tag">HN Algolia API · 7 days</span><p class="muted small">Stories linking to a ranked tool, ranked by points.</p></div></div></div></section>')
+            + (f'<ol class="trows">{"".join(rows)}</ol>' if rows else "") + ex +
+            '<p class="muted small how">How we rank: Hacker News buzz, GitHub stars gained and clicks on ToolRank over the last 7 days.</p></div></section>')
+
+ACR = {"ai", "ui", "api", "cad", "llm", "mcp", "cli", "sdk", "gpt", "ml", "rag", "pdf", "ios", "3d", "tts", "ocr"}
+def pretty_repo(r):
+    ws = re.split(r"[-_.\s]+", r)
+    return " ".join(w.upper() if w.lower() in ACR else (w.lower() if i and w.lower() in ("to", "of", "and", "for", "in", "on", "the", "a") else w[:1].upper() + w[1:]) for i, w in enumerate(ws) if w)
 
 def new_html():
     its = sorted(N["items"], key=lambda n: n["date"], reverse=True)[:8]
+    def one(n):
+        m = re.match(r"^([\w.-]+)/([\w.-]+)$", n["title"].strip()) if n.get("type") == "github" else None
+        title, sub = (pretty_repo(m.group(2)), f'<span class="own">by {E(m.group(1))} on GitHub</span>') if m else (n["title"], "")
+        return (f'<article class="card nw"><span class="date">{E(n["date"])} · {E(n["type"])}</span><h3><a class="cl" href="{E(n["url"])}" target="_blank" rel="noopener">{E(title)}</a></h3>{sub}'
+                f'<p>{E(n["summary"])}</p><span class="more" aria-hidden="true">Read more →</span></article>')
     return (f'<section class="sec" id="new"><div class="wrap"><div class="sh"><p class="eyebrow">New this week</p><h2 class="big">Fresh launches.</h2></div><div class="hs">'
-            + "".join(f'<article class="card nw"><span class="date">{E(n["date"])} · {E(n["type"])}</span><h3>{E(n["title"])}</h3><p>{E(n["summary"])}</p><a class="more" href="{E(n["url"])}" target="_blank" rel="noopener">Read more →</a></article>' for n in its)
-            + '</div></div></section>')
+            + "".join(one(n) for n in its) + '</div></div></section>')
 
 def home(cats):
     tiles = "".join(tile(c) for c in cats)
