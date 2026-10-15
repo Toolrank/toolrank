@@ -654,6 +654,7 @@ def compare_ui_page():
 <label class="ck"><input type="checkbox" id="fver"> Verified only</label>
 <div class="picker"><label for="fq">Add a tool</label><input id="fq" type="search" placeholder="Search tools…" autocomplete="off"><ul id="fres" role="listbox"></ul></div></aside>
 <section class="cmain" aria-live="polite"><div id="ccards" class="ccards"></div><div id="cmatrix"></div><p class="muted small">Ratings are from moderated user reviews. Some links may be affiliate links. They never affect rank.</p></section></div></main>
+<dialog id="pick" class="pick-d" aria-labelledby="pickh"><div class="pin"><div class="phd"><h2 id="pickh" class="sh3">Add a tool</h2><button type="button" id="pclose" class="pcl" aria-label="Close">×</button></div><input id="pq" type="search" placeholder="Search tools or categories…" autocomplete="off" aria-label="Search tools" autofocus><div class="pbody"><div id="pres"></div><div id="ppop"></div></div></div></dialog>
 <script src="/assets/compare.js" defer></script>"""
     return doc(head("Compare AI tools side by side: pricing, free tiers, limits | ToolRank", "Interactive comparison of AI tools: starting price, free tier limits, platforms, integrations, best for and main limitation, from vendor pages.", "/compare/", [ORG, SITE]), body)
 
@@ -667,7 +668,7 @@ const freeP=t=>P(t).free_tier?"yes":(t.last_verified&&P(t).model==="paid"?"no":n
 const trial=t=>/trial/i.test((P(t).free_tier||"")+" "+(P(t).notes||""));
 const yn=v=>v==="yes"?'<span class="yes">✓ Yes</span>':v==="no"?'<span class="no">✕ No</span>':NV;
 const nv=v=>v?esc(v):NV;
-function url(){const u=new URL(location);sel.length?u.searchParams.set("tools",sel.join(",")):u.searchParams.delete("tools");history.replaceState(null,"",u)}
+function url(){history.replaceState(null,"",location.pathname+(sel.length?"?tools="+sel.join(","):"")+location.hash)}
 function filt(){const c=$("#fcat").value,f=$("#ffree").checked,tr=$("#ftrial").checked,v=$("#fver").checked,mx=+$("#fprice").value,pl=[...document.querySelectorAll("#fplat input:checked")].map(x=>x.value),q=$("#fq").value.toLowerCase().trim();
  return T.filter(t=>(!c||t.cat===c)&&(!f||freeP(t)==="yes")&&(!tr||trial(t))&&(!v||t.last_verified)&&(mx>=100||(pn(P(t).starting_price)??(freeP(t)==="yes"?0:1e9))<=mx)&&(!pl.length||pl.some(p=>(t.platforms||[]).includes(p)))&&(!q||t.name.toLowerCase().includes(q)))}
 function list(){const r=filt().filter(t=>!sel.includes(t.s)).slice(0,40);$("#fres").innerHTML=r.map(t=>`<li><button type="button" data-add="${t.s}"><img src="https://www.google.com/s2/favicons?domain=${esc(dom(t.url))}&amp;sz=32" alt="" width="18" height="18">${esc(t.name)}<span class="muted small">${esc(t.ct)}</span>${t.last_verified?'<span class="vb">verified</span>':""}</button></li>`).join("")||'<li class="muted small">No tools match these filters.</li>'}
@@ -675,20 +676,28 @@ function rating(t){const rs=RV[t.s]||[];if(!rs.length)return'<span class="muted 
 function render(){const ts=sel.map(s=>T.find(t=>t.s===s)).filter(Boolean);
  $("#ccards").innerHTML=ts.map((t,k)=>`<article class="ccard c${k}"><div class="cg"><span class="lg" data-l="${esc(t.name[0])}"><img src="https://www.google.com/s2/favicons?domain=${esc(dom(t.url))}&amp;sz=64" alt="" width="40" height="40" onerror="this.remove()"></span><button type="button" class="rm" data-rm="${t.s}" aria-label="Remove ${esc(t.name)}">×</button></div>
  <div class="cb"><h3><a href="/tools/${t.s}/">${esc(t.name)}</a></h3><p class="muted small">#${t.r} in ${esc(t.ct)}</p><div>${rating(t)}</div><dl class="evd"><dt>Starts at</dt><dd>${nv(P(t).starting_price)}</dd><dt>Free plan</dt><dd>${yn(freeP(t))}</dd><dt>Best for</dt><dd>${nv(t.best_for)}</dd><dt>Main limitation</dt><dd>${nv(t.main_limitation)}</dd><dt>Last verified</dt><dd>${t.last_verified?fd(t.last_verified):NV}</dd></dl>
- <a class="btn sm" href="${esc(t.affiliate_url||t.url)}" target="_blank" rel="noopener${t.affiliate_url?" sponsored":""}">Visit site →</a></div></article>`).join("")+(ts.length<4?`<div class="ccard add"><p>Add ${ts.length?"another":"a"} tool</p><p class="muted small">Use the search in the filters${innerWidth<900?" below":""} to add up to 4.</p><button type="button" class="btn ghost sm" id="addf">Search tools</button></div>`:"");
- const a=$("#addf");if(a)a.onclick=()=>{$("#fq").focus();$("#fq").scrollIntoView({block:"center"})};
+ <a class="btn sm" href="${esc(t.affiliate_url||t.url)}" target="_blank" rel="noopener${t.affiliate_url?" sponsored":""}">Visit site →</a></div></article>`).join("")+(ts.length<4?`<button type="button" class="ccard add" id="addf" aria-haspopup="dialog"><span class="plus" aria-hidden="true">+</span><span class="al">Add tool</span><span class="muted small">${4-ts.length} slot${4-ts.length>1?"s":""} left</span></button>`:"");
+ const a=$("#addf");if(a)a.onclick=openPick;
  const rows=[["Pricing model",t=>nv(P(t).model)],["Starting price",t=>nv(P(t).starting_price)],["Free tier",t=>freeP(t)==="yes"?'<span class="yes">✓</span> '+esc(P(t).free_tier):freeP(t)==="no"?'<span class="no">✕ None listed</span>':NV],["Free trial",t=>trial(t)?'<span class="yes">✓ Yes</span>':(t.last_verified?'<span class="no">✕ Not listed</span>':NV)],
   ["Platforms",t=>(t.platforms||[]).length?esc(t.platforms.join(", ")):NV],["Integrations",t=>(t.integrations||[]).length?esc(t.integrations.join(", ")):NV],["Model / provider",t=>nv(t.model_provider)],["Best for",t=>nv(t.best_for)],["Avoid if",t=>nv(t.avoid_if)],["Last verified",t=>t.last_verified?fd(t.last_verified):NV],["Sources",t=>(t.sources||[]).length?t.sources.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener nofollow">${esc(x.label)}</a>`).join("<br>"):NV]];
  $("#cmatrix").innerHTML=ts.length?`<h2>Feature matrix</h2><div class="tbl mx"><table class="cmp"><thead><tr><th>Feature</th>${ts.map((t,k)=>`<th class="c${k}">${esc(t.name)}</th>`).join("")}</tr></thead><tbody>${rows.map(([l,f])=>`<tr><th scope="row">${l}</th>${ts.map(t=>`<td>${f(t)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`:'<p class="muted">Pick tools to compare, or start with a preset above.</p>';
  url();list()}
-document.addEventListener("click",e=>{const a=e.target.closest("[data-add]"),r=e.target.closest("[data-rm]");if(a&&sel.length<4){sel.push(a.dataset.add);render()}else if(a){alert("You can compare up to 4 tools. Remove one first.")}if(r){sel=sel.filter(s=>s!==r.dataset.rm);render()}});
+const logo=t=>`<img src="https://www.google.com/s2/favicons?domain=${esc(dom(t.url))}&amp;sz=64" alt="" width="28" height="28" loading="lazy">`;
+const prow=t=>`<li><button type="button" data-add="${t.s}" class="pr">${logo(t)}<span class="pn">${esc(t.name)}<span class="muted small">${esc(t.ct)} · #${t.r}</span></span>${t.last_verified?'<span class="vb">verified</span>':""}</button></li>`;
+function pickList(){const q=$("#pq").value.toLowerCase().trim(),av=T.filter(t=>!sel.includes(t.s));
+ const c0=T.find(t=>t.s===sel[0]),cat=c0?c0.cat:"coding",ct=c0?c0.ct:"Coding & App Building";
+ $("#ppop").innerHTML=q?"":`<h3 class="ph3">Popular in ${esc(ct)}</h3><ul class="plist">${av.filter(t=>t.cat===cat).slice(0,6).map(prow).join("")}</ul>`;
+ const r=q?av.filter(t=>t.name.toLowerCase().includes(q)||t.ct.toLowerCase().includes(q)).slice(0,30):[];
+ $("#pres").innerHTML=q?(r.length?`<h3 class="ph3">Results</h3><ul class="plist">${r.map(prow).join("")}</ul>`:'<p class="muted">No tools match.</p>'):""}
+function openPick(){const d=$("#pick");$("#pq").value="";pickList();d.showModal();$("#pq").focus()}
+document.addEventListener("click",e=>{const a=e.target.closest("[data-add]"),r=e.target.closest("[data-rm]");if(a&&sel.length<4){sel.push(a.dataset.add);const d=$("#pick");if(d.open)d.close();render();const n=$("#addf");if(n)n.focus()}else if(a){alert("You can compare up to 4 tools. Remove one first.")}if(r){sel=sel.filter(s=>s!==r.dataset.rm);render()}});
 Promise.all([fetch("/data/tools.json").then(r=>r.json()),fetch("/data/reviews.json").then(r=>r.json()).catch(()=>({reviews:[]}))]).then(([d,rv])=>{
  d.categories.forEach(c=>c.tools.forEach((t,i)=>T.push({...t,s:slug(t.name),cat:c.id,ct:c.title,r:i+1})));
  (rv.reviews||[]).filter(r=>r.listed).forEach(r=>(RV[r.tool_slug]=RV[r.tool_slug]||[]).push(r));
  const pls=[...new Set(T.flatMap(t=>t.platforms||[]))].sort();$("#fplat").innerHTML=pls.map(p=>`<label class="ck"><input type="checkbox" value="${esc(p)}"> ${esc(p)}</label>`).join("");
  const q=new URLSearchParams(location.search).get("tools");sel=(q?q.split(","):["cursor","claude-code"]).filter(s=>T.some(t=>t.s===s)).filter((s,i,a)=>a.indexOf(s)===i).slice(0,4);
  const c0=T.find(t=>t.s===sel[0]);if(c0&&q&&sel.length===1)$("#fcat").value=c0.cat;
- ["#fcat","#ffree","#ftrial","#fver","#fprice","#fq"].forEach(s=>$(s).addEventListener("input",()=>{if(s==="#fprice"){const v=+$(s).value;$("#fpv").textContent=v>=100?"Any":"$"+v}list()}));$("#fplat").addEventListener("change",list);render()})})();
+ ["#fcat","#ffree","#ftrial","#fver","#fprice","#fq"].forEach(s=>$(s).addEventListener("input",()=>{if(s==="#fprice"){const v=+$(s).value;$("#fpv").textContent=v>=100?"Any":"$"+v}list()}));$("#fplat").addEventListener("change",list);$("#pq").addEventListener("input",pickList);$("#pclose").onclick=()=>$("#pick").close();$("#pick").addEventListener("click",e=>{if(e.target.id==="pick")$("#pick").close()});render()})})();
 """
 
 EV_CSS = """
@@ -726,7 +735,13 @@ a.tl{color:inherit}a.tl:hover{color:var(--acc2)}.updl{margin:10px 0 0;font-size:
 .ccard .cg{height:74px;position:relative;padding:16px}.ccard.c0 .cg{background:linear-gradient(135deg,#7c5cff,#c04cf0)}.ccard.c1 .cg{background:linear-gradient(135deg,#3b82f6,#7c5cff)}.ccard.c2 .cg{background:linear-gradient(135deg,#0891b2,#22d3ee)}.ccard.c3 .cg{background:linear-gradient(135deg,#c04cf0,#ff6b9a)}
 .ccard .cg .lg{position:absolute;bottom:-22px;left:16px;width:52px;height:52px;border:3px solid var(--card)}.ccard .rm{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:50%;border:0;background:#0006;color:#fff;font-size:18px;cursor:pointer}
 .ccard .cb{padding:30px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}.ccard h3{margin:0}.ccard h3 a{color:#fff}.ccard .btn{margin-top:auto}.ccard .evd{font-size:13px}
-.ccard.add{align-items:center;justify-content:center;text-align:center;padding:24px;border-style:dashed;gap:8px}.btn.sm{padding:9px 16px;font-size:14px}
+.ccard.add{align-items:center;justify-content:center;text-align:center;padding:24px;gap:10px;cursor:pointer;color:var(--txt);font:inherit;min-height:300px;border:3px dashed var(--bg);background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(135deg,#7c5cff,#c04cf0,#22d3ee) border-box;transition:transform .2s}.ccard.add:hover,.ccard.add:focus-visible{transform:translateY(-3px)}
+.plus{width:64px;height:64px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font:300 44px/1 Inter;color:#fff;box-shadow:0 8px 28px #7c5cff66}.al{font:800 19px var(--hf)}
+.pick-d{border:1px solid var(--line);border-radius:22px;background:var(--card);color:var(--txt);padding:0;width:min(520px,94vw);max-height:80vh}.pick-d::backdrop{background:#000a;backdrop-filter:blur(4px)}.pin{display:flex;flex-direction:column;gap:12px;padding:18px;max-height:80vh;box-sizing:border-box}
+.phd{display:flex;align-items:center;justify-content:space-between}.pcl{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#ffffff0a;color:#fff;font-size:22px;cursor:pointer}
+#pq{background:var(--bg2);border:1px solid var(--line);color:var(--txt);border-radius:12px;padding:12px 14px;font:500 16px Inter}#pq:focus{outline:2px solid var(--acc);border-color:transparent}.pbody{overflow:auto}
+.ph3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin:6px 0}.plist{list-style:none;margin:0 0 8px;padding:0}.pr{display:flex;align-items:center;gap:12px;width:100%;background:none;border:0;border-radius:12px;padding:10px 8px;color:var(--txt);font:600 15px Inter;text-align:left;cursor:pointer}.pr:hover,.pr:focus-visible{background:#ffffff0d}.pr img{border-radius:6px;background:#fff}.pn{display:flex;flex-direction:column;flex:1}.pn .muted{font-weight:500}
+@media(max-width:760px){.pick-d{width:100vw;max-width:100vw;margin:auto 0 0;border-radius:22px 22px 0 0;max-height:85vh}.ccard.add{min-height:240px}}.btn.sm{padding:9px 16px;font-size:14px}
 .cwrap>*{min-width:0}.mx th[scope=row]{position:sticky;left:0;background:var(--card);z-index:1}.mx table{min-width:640px}
 @media(max-width:900px){.pgrid{grid-template-columns:1fr}.pside{position:static}.psec.bf{grid-template-columns:1fr}.cwrap{grid-template-columns:1fr}.cside{position:static;max-height:none;order:2}
 .ccards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}.ccard{flex:0 0 82%;scroll-snap-align:start}.pbar{grid-template-columns:90px 1fr;}.pbar .bv{grid-column:1/-1;font-size:13px;color:var(--mut)}}
