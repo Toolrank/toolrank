@@ -259,6 +259,7 @@ def logo_html(t, size=40):
             f'alt="" width="{size}" height="{size}" loading="lazy" decoding="async" onerror="this.remove()"></span>')
 def tool_card(t, i, h="h3"):
     return (f'<article class="card tool" id="{slug(t["name"])}"><div class="th">{logo_html(t)}<div class="tt"><{h}><span class="rank">#{i}</span>{E(t["name"])}</{h}>'
+            f'{"<span class=\"sipick\" title=\"ToolRank Super Intelligence pick: our top choice for this use case\">SI Pick</span>" if i == 1 else ""}'
             f'<div class="tm"><span class="tag {t["pricing"]}">{t["pricing"]}</span>{"<span class=\"tag feat\">Featured</span>" if t.get("featured") else ""}</div></div></div>'
             f'<p>{E(t["verdict"])}</p>{rv_line(t)}<a class="go" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit {E(t["name"])} →</a></article>')
 def cards(c, h="h3"): return "".join(tool_card(t, i, h) for i, t in enumerate(c["tools"], 1))
@@ -274,7 +275,7 @@ def FOOT_():
     cl = "".join(f'<a href="/best/{c["id"]}/">{E(c["title"])}</a>' for c in D["categories"])
     return (f'<footer class="foot"><div class="wrap"><div class="fg"><div class="fl">{LOGO}<p class="muted">Confused by AI? We&rsquo;ll find the right tool for you. Editorial rankings, updated <time datetime="{UPD}">{UPD}</time>.</p></div>'
             f'<nav class="fc2" aria-label="Categories">{cl}</nav><nav class="fc2" aria-label="ToolRank"><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/llms.txt">llms.txt</a></nav></div>'
-            f'<p class="muted small">© {UPD[:4]} ToolRank. Some links may become affiliate links; featured placements are labelled. Reviews are user-submitted via GitHub and moderated; they never change the editorial rank.</p></div></footer>')
+            f'<p class="si-tag small">ToolRank · Super Intelligence, ranked.</p><p class="muted small">© {UPD[:4]} ToolRank. Some links may become affiliate links; featured placements are labelled. Reviews are user-submitted via GitHub and moderated; they never change the editorial rank.</p></div></footer>')
 FOOT = FOOT_()
 def head(title, desc, path, ld, otype="website"):
     url = BASE + path
@@ -471,6 +472,7 @@ def home(cats):
     tiles = "".join(tile(c) for c in cats)
     body = f"""<section class="hero home"><div class="wrap hw">
 <div class="seg" role="tablist" aria-label="Audience"><span class="ind" aria-hidden="true"></span><button type="button" role="tab" data-tab="you" aria-selected="true">For You</button><button type="button" role="tab" data-tab="business" aria-selected="false">For Business</button><button type="button" role="tab" data-tab="makers" aria-selected="false">For Makers</button></div>
+<p class="si-eyebrow"><span>Super Intelligence, ranked.</span></p>
 <h1>Confused by AI? <span class="gt">We&rsquo;ll find the right tool for you.</span></h1>
 <p class="lead" id="tagline">Hand-picked, editorially ranked AI tools across {len(cats)} categories. No fluff.</p>
 <form class="search" id="sf" role="search" action="/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" name="q" type="search" enterkeyhint="search" placeholder="What do you want to do? e.g. edit video" aria-label="Search tools" autocomplete="off"><select id="price" aria-label="Pricing"><option value="">Any price</option><option value="free">Free tier</option><option value="paid">Paid</option></select><button type="submit" class="btn">Search</button></form>

@@ -124,3 +124,7 @@ body>section.hero:not(.home):not(.sub):not(.cathero){padding-top:56px}
 .how{margin:18px 0 0}.subh{font-size:16px;margin:26px 0 0;color:var(--mut)}
 .nw{position:relative;cursor:pointer}.nw .cl{color:#fff}.nw .cl::after{content:"";position:absolute;inset:0;border-radius:20px}.nw:hover{border-color:var(--acc);transform:translateY(-2px)}.nw:hover .more{color:#fff}
 .own{font-size:13px;color:var(--mut);margin-top:-6px}.nw .more{color:var(--acc2)}
+/* SI brand touch */
+.si-eyebrow{margin:0 0 .9rem}.si-eyebrow span{display:inline-block;padding:.32rem .8rem;border:1px solid rgba(192,76,240,.45);border-radius:999px;background:rgba(124,92,255,.08);font:700 .72rem/1 Sora,sans-serif;letter-spacing:.14em;text-transform:uppercase;background-image:linear-gradient(90deg,#7c5cff,#c04cf0,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sipick{display:inline-block;margin-top:.3rem;padding:.18rem .5rem;border-radius:999px;font:700 .66rem/1.2 Sora,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:linear-gradient(90deg,#7c5cff,#c04cf0,#22d3ee);cursor:help;width:max-content}
+.si-tag{margin:.2rem 0;font-weight:600;background:linear-gradient(90deg,#7c5cff,#c04cf0,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent;width:max-content;max-width:100%}
