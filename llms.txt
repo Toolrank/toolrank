@@ -1,0 +1,20 @@
+# ToolRank
+
+> Editorial rankings of AI tools by use case. Last updated 2026-10-15. Rankings are editorial; featured placements are labelled and paid.
+
+## Categories
+
+- [Best for vibe coding](https://toolrank.io/best/vibe-coding/): Describe an app in plain English, get a working app. #1: Lovable.
+- [Best coding assistants](https://toolrank.io/best/coding-assistants/): AI pair programmers for working developers. #1: Cursor.
+- [Best for video](https://toolrank.io/best/video/): Generate and edit video with AI. #1: Runway.
+- [Best agent builder](https://toolrank.io/best/agent-builders/): Build AI agents and multi-step workflows. #1: n8n.
+- [Best for image generation](https://toolrank.io/best/image/): Create and edit images from prompts. #1: Midjourney.
+- [Best for writing](https://toolrank.io/best/writing/): Drafting, editing and long-form writing. #1: Claude.
+- [Best for research & search](https://toolrank.io/best/research/): Answer engines and research assistants. #1: Perplexity.
+- [Best for voice & audio](https://toolrank.io/best/voice-audio/): Speech, voice cloning, music and audio editing. #1: ElevenLabs.
+- [Best for productivity & automation](https://toolrank.io/best/productivity/): Automate work and get more done. #1: Zapier.
+
+## Optional
+
+- [Full rankings](https://toolrank.io/llms-full.txt)
+- [Get featured](https://toolrank.io/featured.html)

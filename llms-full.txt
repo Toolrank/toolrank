@@ -1,0 +1,112 @@
+# ToolRank: full rankings
+
+Last updated 2026-10-15. Source: https://toolrank.io/. Editorial ranking; position 1 = top pick. Pricing labels: free / freemium / paid (as listed; verify with vendor).
+
+
+## Best for vibe coding
+
+Describe an app in plain English, get a working app.
+Page: https://toolrank.io/best/vibe-coding/
+
+1. Lovable (freemium): Prompt-to-full-stack web app builder aimed at non-developers. https://lovable.dev
+2. Bolt.new (freemium): Builds and runs full-stack apps in the browser from a prompt. https://bolt.new
+3. v0 (freemium): Vercel's generator for React/Next.js UIs and apps, deploys to Vercel. https://v0.app
+4. Replit (freemium): Replit Agent builds, hosts and deploys apps from one cloud workspace. https://replit.com
+
+## Best coding assistants
+
+AI pair programmers for working developers.
+Page: https://toolrank.io/best/coding-assistants/
+
+1. Cursor (freemium): AI-native code editor with strong agent mode and codebase context. https://www.cursor.com
+2. Claude Code (paid): Anthropic's terminal-based agentic coding tool. https://www.anthropic.com/claude-code
+3. GitHub Copilot (freemium): Most widely integrated assistant across IDEs and GitHub. https://github.com/features/copilot
+4. OpenAI Codex (paid): OpenAI's coding agent across CLI, IDE and cloud. https://openai.com/codex
+5. Windsurf (freemium): Agentic IDE alternative to Cursor. https://windsurf.com
+
+## Best for video
+
+Generate and edit video with AI.
+Page: https://toolrank.io/best/video/
+
+1. Runway (freemium): Pro-grade generative video models and editing tools. https://runwayml.com
+2. Google Veo (paid): Google DeepMind's video model with native audio. https://deepmind.google/models/veo/
+3. Kling AI (freemium): High-quality text/image-to-video from Kuaishou. https://klingai.com
+4. Luma AI (freemium): Dream Machine video generation, fast and cinematic. https://lumalabs.ai
+5. HeyGen (freemium): AI avatar and talking-head video, translation and dubbing. https://www.heygen.com
+6. Sora (freemium): OpenAI's video generation model and app. https://openai.com/sora
+
+## Best agent builder
+
+Build AI agents and multi-step workflows.
+Page: https://toolrank.io/best/agent-builders/
+
+1. n8n (freemium): Fair-code workflow automation with AI agent nodes; self-hostable. https://n8n.io
+2. LangGraph (freemium): Developer framework for stateful, controllable agents. https://www.langchain.com/langgraph
+3. CrewAI (freemium): Multi-agent orchestration framework plus hosted platform. https://www.crewai.com
+4. Relevance AI (freemium): No-code platform for building AI agent teams. https://www.relevanceai.com
+5. Gumloop (freemium): Drag-and-drop AI automation and agent builder. https://www.gumloop.com
+
+## Best for image generation
+
+Create and edit images from prompts.
+Page: https://toolrank.io/best/image/
+
+1. Midjourney (paid): Benchmark for aesthetic, artistic image quality. https://www.midjourney.com
+2. Ideogram (freemium): Standout at legible text inside images. https://ideogram.ai
+3. Black Forest Labs (FLUX) (freemium): FLUX models: top open and API image generation. https://bfl.ai
+4. Recraft (freemium): Design-focused: vectors, icons, brand-consistent styles. https://www.recraft.ai
+5. Krea (freemium): Real-time generation and access to many models in one place. https://www.krea.ai
+
+## Best for writing
+
+Drafting, editing and long-form writing.
+Page: https://toolrank.io/best/writing/
+
+1. Claude (freemium): Strong long-form writing quality and natural tone. https://claude.ai
+2. ChatGPT (freemium): Most versatile general assistant for drafting. https://chatgpt.com
+3. Grammarly (freemium): Editing and tone help everywhere you type. https://www.grammarly.com
+4. Sudowrite (paid): Purpose-built for fiction writers. https://sudowrite.com
+5. Jasper (paid): Marketing content with brand voice controls for teams. https://www.jasper.ai
+
+## Best for research & search
+
+Answer engines and research assistants.
+Page: https://toolrank.io/best/research/
+
+1. Perplexity (freemium): Cited answer engine for fast web research. https://www.perplexity.ai
+2. NotebookLM (freemium): Grounded Q&A and audio overviews over your own sources. https://notebooklm.google
+3. Elicit (freemium): Searches and extracts data from academic papers. https://elicit.com
+4. Consensus (freemium): Evidence-based answers from peer-reviewed research. https://consensus.app
+
+## Best for voice & audio
+
+Speech, voice cloning, music and audio editing.
+Page: https://toolrank.io/best/voice-audio/
+
+1. ElevenLabs (freemium): Leading realistic TTS, voice cloning and dubbing. https://elevenlabs.io
+2. Suno (freemium): Full songs with vocals from a text prompt. https://suno.com
+3. Udio (freemium): AI music generation alternative to Suno. https://www.udio.com
+4. Descript (freemium): Edit audio/video by editing the transcript. https://www.descript.com
+5. Wispr Flow (freemium): Voice dictation that works across apps. https://wisprflow.ai
+
+## Best for productivity & automation
+
+Automate work and get more done.
+Page: https://toolrank.io/best/productivity/
+
+1. Zapier (freemium): Huge app catalogue with AI steps and agents. https://zapier.com
+2. Make (freemium): Visual automation scenarios with AI modules. https://www.make.com
+3. Notion AI (paid): AI built into docs, wikis and notes. https://www.notion.com/product/ai
+4. Gamma (freemium): Generates presentations, docs and sites from a prompt. https://gamma.app
+
+## New this week (as of 2026-10-15)
+
+- 2026-10-15 morluto/rea (github): GitHub weekly trending: reverse-engineer apps down to native binaries with agents. https://github.com/morluto/rea
+- 2026-10-15 heygen-com/hyperframes (github): GitHub weekly trending: write HTML, render video, built for agents. https://github.com/heygen-com/hyperframes
+- 2026-10-15 thedotmack/claude-mem (github): GitHub weekly trending: persistent cross-session memory for coding agents. https://github.com/thedotmack/claude-mem
+- 2026-10-15 earthtojake/text-to-cad (github): GitHub weekly trending: gives agents CAD capabilities. https://github.com/earthtojake/text-to-cad
+- 2026-10-13 Gemini 4 Argon (model): Google's new frontier model, available via Gemini API, AI Studio and the Gemini app (Pro/Ultra). Intro price $2/$10 per 1M tokens until Nov 30. https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/
+- 2026-10-07 GPT-6 with Intelligent UI (model): OpenAI rolls out GPT-6 with Intelligent UI to ChatGPT, paid tiers first, then Free and Go. https://openai.com/index/gpt-6-for-everyone/
+- 2026-10-07 Claude Haiku 5.5 (model): Anthropic's cheapest, fastest small model, on Claude Platform, AWS, Google Cloud and Azure. https://www.anthropic.com/claude-haiku-5-5
+- 2026-10-06 Mistral Large 4 (preview) (model): Public preview API of Mistral's open-weight frontier model; weights promised by end of October. https://mistral.ai/news/mistral-large-4/

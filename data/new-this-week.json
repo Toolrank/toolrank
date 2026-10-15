@@ -1,0 +1,62 @@
+{
+ "updated": "2026-10-15",
+ "note": "GitHub items dated by trending snapshot date, not repo creation date.",
+ "items": [
+  {
+   "date": "2026-10-13",
+   "title": "Gemini 4 Argon",
+   "summary": "Google's new frontier model, available via Gemini API, AI Studio and the Gemini app (Pro/Ultra). Intro price $2/$10 per 1M tokens until Nov 30.",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-07",
+   "title": "GPT-6 with Intelligent UI",
+   "summary": "OpenAI rolls out GPT-6 with Intelligent UI to ChatGPT, paid tiers first, then Free and Go.",
+   "url": "https://openai.com/index/gpt-6-for-everyone/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-07",
+   "title": "Claude Haiku 5.5",
+   "summary": "Anthropic's cheapest, fastest small model, on Claude Platform, AWS, Google Cloud and Azure.",
+   "url": "https://www.anthropic.com/claude-haiku-5-5",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-06",
+   "title": "Mistral Large 4 (preview)",
+   "summary": "Public preview API of Mistral's open-weight frontier model; weights promised by end of October.",
+   "url": "https://mistral.ai/news/mistral-large-4/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "morluto/rea",
+   "summary": "GitHub weekly trending: reverse-engineer apps down to native binaries with agents.",
+   "url": "https://github.com/morluto/rea",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "heygen-com/hyperframes",
+   "summary": "GitHub weekly trending: write HTML, render video, built for agents.",
+   "url": "https://github.com/heygen-com/hyperframes",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "thedotmack/claude-mem",
+   "summary": "GitHub weekly trending: persistent cross-session memory for coding agents.",
+   "url": "https://github.com/thedotmack/claude-mem",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "earthtojake/text-to-cad",
+   "summary": "GitHub weekly trending: gives agents CAD capabilities.",
+   "url": "https://github.com/earthtojake/text-to-cad",
+   "type": "github"
+  }
+ ]
+}

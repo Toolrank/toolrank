@@ -1,0 +1,455 @@
+{
+ "updated": "2026-10-15",
+ "categories": [
+  {
+   "id": "vibe-coding",
+   "title": "Best for vibe coding",
+   "blurb": "Describe an app in plain English, get a working app.",
+   "tools": [
+    {
+     "name": "Lovable",
+     "url": "https://lovable.dev",
+     "verdict": "Prompt-to-full-stack web app builder aimed at non-developers.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "bot-blocked (403), known official domain"
+    },
+    {
+     "name": "Bolt.new",
+     "url": "https://bolt.new",
+     "verdict": "Builds and runs full-stack apps in the browser from a prompt.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "v0",
+     "url": "https://v0.app",
+     "verdict": "Vercel's generator for React/Next.js UIs and apps, deploys to Vercel.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Replit",
+     "url": "https://replit.com",
+     "verdict": "Replit Agent builds, hosts and deploys apps from one cloud workspace.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "coding-assistants",
+   "title": "Best coding assistants",
+   "blurb": "AI pair programmers for working developers.",
+   "tools": [
+    {
+     "name": "Cursor",
+     "url": "https://www.cursor.com",
+     "verdict": "AI-native code editor with strong agent mode and codebase context.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Claude Code",
+     "url": "https://www.anthropic.com/claude-code",
+     "verdict": "Anthropic's terminal-based agentic coding tool.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "GitHub Copilot",
+     "url": "https://github.com/features/copilot",
+     "verdict": "Most widely integrated assistant across IDEs and GitHub.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "OpenAI Codex",
+     "url": "https://openai.com/codex",
+     "verdict": "OpenAI's coding agent across CLI, IDE and cloud.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "bot-blocked (403), known official domain"
+    },
+    {
+     "name": "Windsurf",
+     "url": "https://windsurf.com",
+     "verdict": "Agentic IDE alternative to Cursor.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "video",
+   "title": "Best for video",
+   "blurb": "Generate and edit video with AI.",
+   "tools": [
+    {
+     "name": "Runway",
+     "url": "https://runwayml.com",
+     "verdict": "Pro-grade generative video models and editing tools.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Google Veo",
+     "url": "https://deepmind.google/models/veo/",
+     "verdict": "Google DeepMind's video model with native audio.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Kling AI",
+     "url": "https://klingai.com",
+     "verdict": "High-quality text/image-to-video from Kuaishou.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Luma AI",
+     "url": "https://lumalabs.ai",
+     "verdict": "Dream Machine video generation, fast and cinematic.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "HeyGen",
+     "url": "https://www.heygen.com",
+     "verdict": "AI avatar and talking-head video, translation and dubbing.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Sora",
+     "url": "https://openai.com/sora",
+     "verdict": "OpenAI's video generation model and app.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "bot-blocked (403), known official domain"
+    }
+   ]
+  },
+  {
+   "id": "agent-builders",
+   "title": "Best agent builder",
+   "blurb": "Build AI agents and multi-step workflows.",
+   "tools": [
+    {
+     "name": "n8n",
+     "url": "https://n8n.io",
+     "verdict": "Fair-code workflow automation with AI agent nodes; self-hostable.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "LangGraph",
+     "url": "https://www.langchain.com/langgraph",
+     "verdict": "Developer framework for stateful, controllable agents.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "CrewAI",
+     "url": "https://www.crewai.com",
+     "verdict": "Multi-agent orchestration framework plus hosted platform.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Relevance AI",
+     "url": "https://www.relevanceai.com",
+     "verdict": "No-code platform for building AI agent teams.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Gumloop",
+     "url": "https://www.gumloop.com",
+     "verdict": "Drag-and-drop AI automation and agent builder.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "image",
+   "title": "Best for image generation",
+   "blurb": "Create and edit images from prompts.",
+   "tools": [
+    {
+     "name": "Midjourney",
+     "url": "https://www.midjourney.com",
+     "verdict": "Benchmark for aesthetic, artistic image quality.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "bot-blocked (403), known official domain"
+    },
+    {
+     "name": "Ideogram",
+     "url": "https://ideogram.ai",
+     "verdict": "Standout at legible text inside images.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "bot-blocked (403), known official domain"
+    },
+    {
+     "name": "Black Forest Labs (FLUX)",
+     "url": "https://bfl.ai",
+     "verdict": "FLUX models: top open and API image generation.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Recraft",
+     "url": "https://www.recraft.ai",
+     "verdict": "Design-focused: vectors, icons, brand-consistent styles.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Krea",
+     "url": "https://www.krea.ai",
+     "verdict": "Real-time generation and access to many models in one place.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "writing",
+   "title": "Best for writing",
+   "blurb": "Drafting, editing and long-form writing.",
+   "tools": [
+    {
+     "name": "Claude",
+     "url": "https://claude.ai",
+     "verdict": "Strong long-form writing quality and natural tone.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "bot-blocked (403), known official domain"
+    },
+    {
+     "name": "ChatGPT",
+     "url": "https://chatgpt.com",
+     "verdict": "Most versatile general assistant for drafting.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Grammarly",
+     "url": "https://www.grammarly.com",
+     "verdict": "Editing and tone help everywhere you type.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Sudowrite",
+     "url": "https://sudowrite.com",
+     "verdict": "Purpose-built for fiction writers.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Jasper",
+     "url": "https://www.jasper.ai",
+     "verdict": "Marketing content with brand voice controls for teams.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "title": "Best for research & search",
+   "blurb": "Answer engines and research assistants.",
+   "tools": [
+    {
+     "name": "Perplexity",
+     "url": "https://www.perplexity.ai",
+     "verdict": "Cited answer engine for fast web research.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "bot-blocked (403), known official domain"
+    },
+    {
+     "name": "NotebookLM",
+     "url": "https://notebooklm.google",
+     "verdict": "Grounded Q&A and audio overviews over your own sources.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Elicit",
+     "url": "https://elicit.com",
+     "verdict": "Searches and extracts data from academic papers.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Consensus",
+     "url": "https://consensus.app",
+     "verdict": "Evidence-based answers from peer-reviewed research.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "voice-audio",
+   "title": "Best for voice & audio",
+   "blurb": "Speech, voice cloning, music and audio editing.",
+   "tools": [
+    {
+     "name": "ElevenLabs",
+     "url": "https://elevenlabs.io",
+     "verdict": "Leading realistic TTS, voice cloning and dubbing.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Suno",
+     "url": "https://suno.com",
+     "verdict": "Full songs with vocals from a text prompt.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Udio",
+     "url": "https://www.udio.com",
+     "verdict": "AI music generation alternative to Suno.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Descript",
+     "url": "https://www.descript.com",
+     "verdict": "Edit audio/video by editing the transcript.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Wispr Flow",
+     "url": "https://wisprflow.ai",
+     "verdict": "Voice dictation that works across apps.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "productivity",
+   "title": "Best for productivity & automation",
+   "blurb": "Automate work and get more done.",
+   "tools": [
+    {
+     "name": "Zapier",
+     "url": "https://zapier.com",
+     "verdict": "Huge app catalogue with AI steps and agents.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Make",
+     "url": "https://www.make.com",
+     "verdict": "Visual automation scenarios with AI modules.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Notion AI",
+     "url": "https://www.notion.com/product/ai",
+     "verdict": "AI built into docs, wikis and notes.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-15"
+    },
+    {
+     "name": "Gamma",
+     "url": "https://gamma.app",
+     "verdict": "Generates presentations, docs and sites from a prompt.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "bot-blocked (403), known official domain"
+    }
+   ]
+  }
+ ]
+}
