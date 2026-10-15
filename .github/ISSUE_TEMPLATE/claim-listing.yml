@@ -1,0 +1,43 @@
+name: Claim your listing (free)
+description: Vendors can claim their ToolRank listing to correct facts and add demo and pricing links. Free; never changes rank.
+title: "Claim: "
+labels: ["claim"]
+body:
+  - type: markdown
+    attributes:
+      value: "Claiming is free. We verify every correction against your own pricing or docs pages before publishing. Rankings are editorial and never change because of a claim. See https://toolrank.io/methodology/"
+  - type: input
+    id: tool
+    attributes:
+      label: Tool
+      description: Tool name as listed on ToolRank
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Your role
+      placeholder: e.g. Founder, Head of Marketing
+    validations:
+      required: true
+  - type: input
+    id: domain
+    attributes:
+      label: Work email domain
+      description: The domain of your work email (e.g. example.com). Don't post your full address; we'll contact you to confirm.
+    validations:
+      required: true
+  - type: textarea
+    id: corrections
+    attributes:
+      label: Corrections
+      description: What's wrong or out of date? Link to the official page that shows the correct fact.
+  - type: input
+    id: demo
+    attributes:
+      label: Demo link
+  - type: input
+    id: pricing
+    attributes:
+      label: Pricing link
+      description: Your official pricing page

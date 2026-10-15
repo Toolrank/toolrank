@@ -14,7 +14,55 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "General AI chat for writing, questions, analysis and file work",
+     "why_rank": "The broadest general assistant: a usable free plan, apps on every major platform and a ladder of paid plans for heavier use.",
+     "main_limitation": "The free plan gets only the lighter model and limited uploads; top models need Plus or Pro.",
+     "best_for": "Everyday drafting, Q&A and file analysis across web and mobile",
+     "avoid_if": "You need guaranteed access to the strongest models without paying",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [],
+     "model_provider": "OpenAI",
+     "sources": [
+      {
+       "url": "https://chatgpt.com/pricing",
+       "label": "ChatGPT pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free plan: unlimited* everyday text chats, limited messages with uploads (vendor footnotes apply)",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": ""
+       },
+       {
+        "name": "Go",
+        "price": "paid; price not shown in fetched page text",
+        "notes": "More messages, tools and uploads"
+       },
+       {
+        "name": "Plus",
+        "price": "paid; price not shown in fetched page text",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "paid; price not shown in fetched page text",
+        "notes": "Expanded model access"
+       }
+      ],
+      "notes": "Plan names and features verified on the pricing page; paid prices render client-side and could not be read, so they are left unverified."
+     }
     },
     {
      "name": "Claude",
@@ -24,7 +72,65 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "bot-blocked (403), known official domain",
-     "audience": "both"
+     "audience": "both",
+     "job": "AI assistant for writing, analysis, coding and long documents",
+     "why_rank": "Strong writing quality with a clear free tier and transparent paid plans for individuals and teams.",
+     "main_limitation": "Usage is capped by weekly/session limits; heavier users need Max (from $100/month).",
+     "best_for": "Long-form writing, analysis and research with documents",
+     "avoid_if": "You need unlimited heavy usage on a low budget",
+     "platforms": [
+      "Web",
+      "Desktop",
+      "Mobile"
+     ],
+     "integrations": [],
+     "model_provider": "Anthropic",
+     "sources": [
+      {
+       "url": "https://claude.com/pricing",
+       "label": "Claude pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$17/month (Pro, billed annually; $20 monthly)",
+      "free_tier": "Free: chat on web, desktop and mobile, with usage limits",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$17/month annual or $20 monthly",
+        "notes": "More usage"
+       },
+       {
+        "name": "Max",
+        "price": "From $100/month",
+        "notes": "Higher usage, priority access, $100-$200/month API credits"
+       },
+       {
+        "name": "Team standard seat",
+        "price": "$20/seat/month annual, $25 monthly",
+        "notes": ""
+       },
+       {
+        "name": "Team premium seat",
+        "price": "$100/seat/month annual, $125 monthly",
+        "notes": "Includes Claude Code"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Seat price + usage at API rates",
+        "notes": "US$20/seat/month billed annually, 20 seat minimum"
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "Google Gemini",
@@ -38,7 +144,61 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "Google's AI assistant for everyday tasks, with Google app integration",
+     "why_rank": "Low-cost entry tier and deep ties to Google storage, Search and creative tools.",
+     "main_limitation": "Higher usage limits and the top model sit behind AI Pro ($19.99/month) or Ultra ($99.99+/month).",
+     "best_for": "People already in Google's ecosystem (Gmail, Drive, Photos)",
+     "avoid_if": "You don't use Google services and want a standalone assistant",
+     "platforms": [
+      "Web",
+      "Android",
+      "iOS"
+     ],
+     "integrations": [
+      "Gmail",
+      "Google Drive",
+      "Google Photos",
+      "Google Search",
+      "YouTube"
+     ],
+     "model_provider": "Google",
+     "sources": [
+      {
+       "url": "https://gemini.google/subscriptions/",
+       "label": "Google AI plans",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$4.99/month",
+      "free_tier": "$0/month with a Google Account (Flash model, base usage limits)",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": ""
+       },
+       {
+        "name": "Lower paid tier",
+        "price": "$4.99/month",
+        "notes": "2x Free usage, 200 Google Flow credits"
+       },
+       {
+        "name": "AI Pro",
+        "price": "$19.99/month",
+        "notes": "4x usage, 1,000 Flow credits, 5 TB storage"
+       },
+       {
+        "name": "Ultra",
+        "price": "$99.99 or $199.99/month",
+        "notes": "5x / 20x AI Pro usage, 20 TB+ storage"
+       }
+      ],
+      "notes": "US prices shown on the subscriptions page."
+     }
     },
     {
      "name": "Microsoft Copilot",
@@ -52,7 +212,55 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "Microsoft's AI assistant for consumers and Microsoft 365 users",
+     "why_rank": "Built into Microsoft's apps and available free for consumers, with business plans bundled with Microsoft 365.",
+     "main_limitation": "Business Copilot pricing is per user and tied to Microsoft 365 annual subscriptions.",
+     "best_for": "People and teams living in Word, Excel, Outlook and Teams",
+     "avoid_if": "You don't use Microsoft 365",
+     "platforms": [
+      "Web",
+      "Windows"
+     ],
+     "integrations": [
+      "Microsoft 365",
+      "Teams",
+      "Outlook",
+      "Word",
+      "Excel"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.microsoft.com/en-us/microsoft-365/copilot/pricing",
+       "label": "Microsoft 365 Copilot pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$18/user/month (Copilot Business, paid yearly)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Microsoft 365 Copilot Business",
+        "price": "$18/user/month paid yearly (shown as reduced from $21)",
+        "notes": ""
+       },
+       {
+        "name": "Business Standard with Copilot",
+        "price": "$23.50/user/month paid yearly",
+        "notes": ""
+       },
+       {
+        "name": "Business Premium with Copilot",
+        "price": "$32/user/month paid yearly; $38.40 monthly",
+        "notes": ""
+       }
+      ],
+      "notes": "Business pricing from Microsoft's Copilot pricing page; consumer free tier limits not verified."
+     }
     },
     {
      "name": "Grok",
@@ -65,7 +273,45 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "xAI's assistant with chat, voice, image/video generation and real-time X data",
+     "why_rank": "Fast-moving assistant bundled with X plans and Cursor, with image and video generation built in.",
+     "main_limitation": "Best models and longer conversations need SuperGrok or higher; prices were not readable on the plans page.",
+     "best_for": "X users who want real-time context plus image/video generation",
+     "avoid_if": "You want a clearly documented free usage allowance",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "X"
+     ],
+     "model_provider": "xAI",
+     "sources": [
+      {
+       "url": "https://grok.com/plans",
+       "label": "Grok plans",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "SuperGrok",
+        "price": "price not shown in fetched page text",
+        "notes": "5x longer conversations, Expert mode, HD 720p 30s video"
+       },
+       {
+        "name": "SuperGrok Heavy",
+        "price": "price not shown in fetched page text",
+        "notes": "Highest usage, includes X Premium+"
+       }
+      ],
+      "notes": "Plan names and features from grok.com/plans; prices not verifiable from the fetched page."
+     }
     },
     {
      "name": "Le Chat (Mistral)",
@@ -96,7 +342,75 @@
       "ide",
       "code editor"
      ],
-     "audience": "business"
+     "audience": "business",
+     "job": "AI code editor and agent for writing, editing and reviewing code",
+     "why_rank": "A full AI-native editor with agents, cloud automations and code review, and a free tier to start.",
+     "main_limitation": "Free plan has limited agent and chat requests; third-party model usage is billed separately from plan prices.",
+     "best_for": "Developers who want an AI-first editor with agents and code review",
+     "avoid_if": "You want flat pricing that includes third-party models",
+     "platforms": [
+      "Desktop",
+      "CLI",
+      "Mobile",
+      "Cloud agents"
+     ],
+     "integrations": [
+      "Grok models",
+      "Third-party models (billed by usage)",
+      "Bugbot code review"
+     ],
+     "model_provider": "Grok models; third-party models on higher plans (billed by usage)",
+     "sources": [
+      {
+       "url": "https://cursor.com/pricing",
+       "label": "Cursor pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$8/month (Plus)",
+      "free_tier": "Free: limited agent requests and limited chat requests",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": ""
+       },
+       {
+        "name": "Plus",
+        "price": "$8/month",
+        "notes": "Shared AI usage pool, Grok models only"
+       },
+       {
+        "name": "Premium",
+        "price": "$30/month",
+        "notes": "4x Plus usage, cloud agents, Bugbot code reviews, third-party models at API list price"
+       },
+       {
+        "name": "Super",
+        "price": "$100/month",
+        "notes": "15x Plus usage"
+       },
+       {
+        "name": "Ultra",
+        "price": "$200/month",
+        "notes": "50x Plus usage"
+       },
+       {
+        "name": "Teams",
+        "price": "$30+/user/month",
+        "notes": "Pooled usage"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": "Prices exclude taxes. Third-party model usage is not included in monthly prices."
+     }
     },
     {
      "name": "Lovable",
@@ -106,7 +420,50 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "bot-blocked (403), known official domain",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "Build web apps and sites by chatting with an AI engineer",
+     "why_rank": "Turns plain-language prompts into working web apps, with hosting via Lovable Cloud and a free daily allowance.",
+     "main_limitation": "Everything runs on credits: the free plan is 5 build credits a day (max 30 a month), and plan credits expire.",
+     "best_for": "Non-developers and founders prototyping web apps fast",
+     "avoid_if": "You need predictable flat costs for heavy iteration",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Lovable Cloud"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://lovable.dev/pricing",
+       "label": "Lovable pricing and FAQ",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "5 build credits/day (up to 30/month) plus 20 Cloud credits/month",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "price not shown in fetched page text",
+        "notes": ""
+       },
+       {
+        "name": "Business",
+        "price": "price not shown in fetched page text",
+        "notes": ""
+       }
+      ],
+      "notes": "Monthly plan credits expire two months after issue. Paid prices render client-side and were not verified."
+     }
     },
     {
      "name": "Claude Code",
@@ -116,7 +473,53 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "Agentic coding tool that works in your terminal and codebase",
+     "why_rank": "Anthropic's agentic coder runs in your terminal and repo, included with Claude paid plans.",
+     "main_limitation": "No standalone free tier: usage comes from a paid Claude plan (Pro, Max, Team) or API usage.",
+     "best_for": "Developers who prefer terminal-driven agents working across a repo",
+     "avoid_if": "You want a free tool or a graphical editor experience",
+     "platforms": [
+      "Terminal (CLI)"
+     ],
+     "integrations": [],
+     "model_provider": "Anthropic",
+     "sources": [
+      {
+       "url": "https://code.claude.com/docs/en/overview",
+       "label": "Claude Code docs",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://claude.com/pricing",
+       "label": "Claude pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$17/month (via Claude Pro, billed annually)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Claude Pro",
+        "price": "$17/month annual or $20 monthly",
+        "notes": ""
+       },
+       {
+        "name": "Claude Max",
+        "price": "From $100/month",
+        "notes": ""
+       },
+       {
+        "name": "Team premium seat",
+        "price": "$100/seat/month annual",
+        "notes": "Includes Claude Code and Claude Cowork"
+       }
+      ],
+      "notes": "Pricing per Claude pricing page (Claude Code is included in plans)."
+     }
     },
     {
      "name": "Bolt.new",
@@ -126,7 +529,48 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "Prompt, run and deploy full-stack web apps in the browser",
+     "why_rank": "Generous token-based free tier and simple Pro/Teams pricing for in-browser app building.",
+     "main_limitation": "Free plan: 300K tokens/day, 1M tokens/month, and Bolt branding on sites.",
+     "best_for": "Quick full-stack prototypes and small business apps",
+     "avoid_if": "You'll burn through tokens on large projects without budget for upgrades",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://bolt.new/pricing",
+       "label": "Bolt pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$25/month (Pro, billed monthly)",
+      "free_tier": "300K tokens/day, 1M tokens/month, Bolt branding, 10MB uploads, unlimited databases",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$25/month",
+        "notes": "No daily limit, from 10M tokens/month, no branding"
+       },
+       {
+        "name": "Teams",
+        "price": "$30/member/month",
+        "notes": "Centralized billing"
+       }
+      ],
+      "notes": "Up to 28% saved with yearly billing."
+     }
     },
     {
      "name": "GitHub Copilot",
@@ -136,7 +580,63 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "AI pair programmer and coding agent inside GitHub and your IDE",
+     "why_rank": "Works in most major editors and in GitHub itself, from a free plan up to cloud agents and code review.",
+     "main_limitation": "Free plan has limited chat and agent usage and no code review or cloud agent.",
+     "best_for": "Teams already on GitHub who want AI in their existing IDE",
+     "avoid_if": "You want an AI-native editor rather than a plugin",
+     "platforms": [
+      "VS Code",
+      "Visual Studio",
+      "JetBrains",
+      "Eclipse",
+      "Xcode",
+      "CLI",
+      "GitHub.com",
+      "GitHub Mobile"
+     ],
+     "integrations": [
+      "MCP servers",
+      "GitHub pull requests"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://github.com/features/copilot/plans",
+       "label": "GitHub Copilot plans",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$10/month (Pro)",
+      "free_tier": "Limited chat and agent usage; no code review or cloud agent",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$10/month",
+        "notes": ""
+       },
+       {
+        "name": "Pro+",
+        "price": "$39/month",
+        "notes": ""
+       },
+       {
+        "name": "Max",
+        "price": "$100/month",
+        "notes": ""
+       }
+      ],
+      "notes": "Plans include GitHub AI Credits; extra usage via credits."
+     }
     },
     {
      "name": "v0",
@@ -743,7 +1243,56 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "bot-blocked (403), known official domain",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "High-quality AI image (and video) generation",
+     "why_rank": "Consistently strong image aesthetics with simple GPU-time based plans and commercial use rights.",
+     "main_limitation": "No free plan listed; usage is metered by Fast GPU hours.",
+     "best_for": "Artists and marketers who want striking, stylised images",
+     "avoid_if": "You need a free tier or precise text in images",
+     "platforms": [
+      "Web",
+      "Discord"
+     ],
+     "integrations": [
+      "Discord"
+     ],
+     "model_provider": "Midjourney (own models)",
+     "sources": [
+      {
+       "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+       "label": "Midjourney plan comparison",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$10/month ($8/month billed annually)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "$10/month",
+        "notes": "3.3 Fast GPU hr/month"
+       },
+       {
+        "name": "Standard",
+        "price": "$30/month",
+        "notes": "15 hr Fast, unlimited Relax images"
+       },
+       {
+        "name": "Pro",
+        "price": "$60/month",
+        "notes": "30 hr Fast, Stealth Mode"
+       },
+       {
+        "name": "Mega",
+        "price": "$120/month",
+        "notes": "60 hr Fast"
+       }
+      ],
+      "notes": "Annual: $96/$288/$576/$1,152 per year. Extra GPU time $4/hr."
+     }
     },
     {
      "name": "Ideogram",
@@ -757,7 +1306,55 @@
       "text in images",
       "logo"
      ],
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "AI image generation with strong text rendering",
+     "why_rank": "Credit-based plans with unlimited slow generations and character consistency.",
+     "main_limitation": "Priority credits are capped per plan; free tier limits were not shown on the pricing page.",
+     "best_for": "Posters, logos and graphics where legible text matters",
+     "avoid_if": "You need video-first workflows",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "model_provider": "Ideogram (own models)",
+     "sources": [
+      {
+       "url": "https://ideogram.ai/pricing",
+       "label": "Ideogram pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$15/month (Plus, billed annually; $20 monthly)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Plus",
+        "price": "$15/month annual ($20 monthly)",
+        "notes": "2,400 priority credits/month"
+       },
+       {
+        "name": "Pro",
+        "price": "$42/month annual ($60 monthly)",
+        "notes": "7,500 priority credits/month"
+       },
+       {
+        "name": "Team",
+        "price": "$20/user/month annual ($30 monthly)",
+        "notes": "3,600 credits/user/month"
+       },
+       {
+        "name": "Pay as you go",
+        "price": "1¢ per credit",
+        "notes": ""
+       }
+      ],
+      "notes": "API billed separately."
+     }
     },
     {
      "name": "Black Forest Labs (FLUX)",
@@ -767,7 +1364,34 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "FLUX image models via API for developers",
+     "why_rank": "Per-image API pricing makes FLUX models easy to build into products.",
+     "main_limitation": "Developer-oriented: priced per image via API rather than a consumer app plan.",
+     "best_for": "Developers embedding image generation in products",
+     "avoid_if": "You want a no-code consumer app",
+     "platforms": [
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "model_provider": "Black Forest Labs (FLUX)",
+     "sources": [
+      {
+       "url": "https://bfl.ai/pricing",
+       "label": "BFL pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "from $0.048/image (example rate on pricing calculator)",
+      "free_tier": "",
+      "tiers": [],
+      "notes": "Rate varies by model; enterprise available."
+     }
     },
     {
      "name": "Recraft",
@@ -782,7 +1406,56 @@
       "icons",
       "logo"
      ],
-     "audience": "both"
+     "audience": "both",
+     "job": "AI image and vector/brand graphics generation",
+     "why_rank": "Low-cost plans with multiple models and design-focused output.",
+     "main_limitation": "Free plan is personal use only with limited credits.",
+     "best_for": "Designers making brand-consistent graphics and vectors",
+     "avoid_if": "You need commercial use on a free plan",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "model_provider": "Recraft plus third-party models (e.g. Nano Banana, Seedream)",
+     "sources": [
+      {
+       "url": "https://www.recraft.ai/pricing",
+       "label": "Recraft pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$10/month (Basic, billed annually)",
+      "free_tier": "Limited free credits, personal use only",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Basic",
+        "price": "$10/month billed annually ($120)",
+        "notes": "1,000 credits/month"
+       },
+       {
+        "name": "Pro",
+        "price": "$16/month billed annually ($192)",
+        "notes": "2,000+ credits/month, video"
+       },
+       {
+        "name": "Teams",
+        "price": "$18/seat/month billed annually",
+        "notes": "2,000 credits/seat"
+       }
+      ],
+      "notes": "Subscription credits don't roll over; top-up credits never expire."
+     }
     },
     {
      "name": "Krea",
@@ -792,7 +1465,61 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "Multi-model AI image and video generation studio",
+     "why_rank": "Access to many image/video models plus an agent, with a daily free allowance.",
+     "main_limitation": "Free plan is 100 units/day; heavy video use needs higher tiers.",
+     "best_for": "Creators who want many models in one place",
+     "avoid_if": "You only need one model and want the cheapest route",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "model_provider": "Krea plus third-party models (e.g. Nano Banana 2, Seedance 2.0)",
+     "sources": [
+      {
+       "url": "https://www.krea.ai/pricing",
+       "label": "Krea pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$9/month ($5 billed annually)",
+      "free_tier": "100 units/day",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "100 units/day"
+       },
+       {
+        "name": "Basic",
+        "price": "$9/month ($5 annual)",
+        "notes": "5,000 units/month"
+       },
+       {
+        "name": "Pro",
+        "price": "$35/month ($21 annual)",
+        "notes": "20,000 units/month"
+       },
+       {
+        "name": "Max",
+        "price": "$105/month ($63 annual)",
+        "notes": "60,000 units/month"
+       },
+       {
+        "name": "Business",
+        "price": "$200/month ($160 annual)",
+        "notes": "80k units/month"
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "GPT Image (ChatGPT)",
@@ -1009,7 +1736,57 @@
       "video editing",
       "video generation"
      ],
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "AI video generation and editing",
+     "why_rank": "Leading video models with clear credit-based plans and mobile apps.",
+     "main_limitation": "Free plan is 125 one-time credits; video seconds per plan are limited.",
+     "best_for": "Creators and studios producing AI video",
+     "avoid_if": "You need long-form video on a small budget",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [
+      "Runway MCP"
+     ],
+     "model_provider": "Runway (Gen-4.5)",
+     "sources": [
+      {
+       "url": "https://runwayml.com/pricing",
+       "label": "Runway pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$12/month (Standard, billed annually; $15 monthly)",
+      "free_tier": "125 one-time credits, 5GB storage",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "125 one-time credits"
+       },
+       {
+        "name": "Standard",
+        "price": "$12/month annual ($15 monthly)",
+        "notes": "625 credits/month"
+       },
+       {
+        "name": "Pro",
+        "price": "$28/month annual ($35 monthly)",
+        "notes": "2,250 credits/month"
+       },
+       {
+        "name": "Max",
+        "price": "$76/month annual ($95 monthly)",
+        "notes": "9,500 credits/month"
+       }
+      ],
+      "notes": "625 credits = 52s of Gen-4.5 per vendor."
+     }
     },
     {
      "name": "Google Veo",
@@ -1046,7 +1823,48 @@
      "tags": [
       "text to video"
      ],
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "AI video and image generation with Luma agents",
+     "why_rank": "High-end video models plus third-party models and agents in one plan.",
+     "main_limitation": "No free plan listed; entry plan is $30/month.",
+     "best_for": "Video creators who want high quality and agent workflows",
+     "avoid_if": "You want to try for free",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "Luma (Ray models) plus third-party",
+     "sources": [
+      {
+       "url": "https://lumalabs.ai/pricing",
+       "label": "Luma pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$30/month (Plus)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Plus",
+        "price": "$30/month ($300/yr)",
+        "notes": "10,000 credits"
+       },
+       {
+        "name": "Pro",
+        "price": "$90/month ($900/yr)",
+        "notes": "40,000 credits"
+       },
+       {
+        "name": "Ultra",
+        "price": "$300/month ($3,000/yr)",
+        "notes": "150,000 credits"
+       }
+      ],
+      "notes": "Business and Enterprise plans available."
+     }
     },
     {
      "name": "HeyGen",
@@ -1061,7 +1879,48 @@
       "translation",
       "dubbing"
      ],
-     "audience": "both"
+     "audience": "both",
+     "job": "AI avatar videos, translation and voice cloning",
+     "why_rank": "Fastest path to presenter-style avatar videos, with a free tier to test.",
+     "main_limitation": "Free plan: 3 videos/month up to 1 minute.",
+     "best_for": "Marketers and trainers producing avatar explainer videos",
+     "avoid_if": "You need cinematic generative video",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.heygen.com/pricing",
+       "label": "HeyGen pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$29/month (Creator)",
+      "free_tier": "3 videos/month, up to 1 min each",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Creator",
+        "price": "$29/month",
+        "notes": "600 credits, videos up to 30 min"
+       },
+       {
+        "name": "Pro",
+        "price": "$49/month",
+        "notes": "1,000 credits, 4K"
+       }
+      ],
+      "notes": "Business plans also offered."
+     }
     },
     {
      "name": "Sora",
@@ -1389,7 +2248,46 @@
       "grammar",
       "proofreading"
      ],
-     "audience": "both"
+     "audience": "both",
+     "job": "Grammar, spelling and tone help everywhere you write",
+     "why_rank": "Works across apps with a solid free tier and a modest Pro plan.",
+     "main_limitation": "Free tier is spelling/grammar; full-sentence rewrites and tone need Pro.",
+     "best_for": "Anyone writing emails and docs who wants clean, correct text",
+     "avoid_if": "You need long-form creative generation",
+     "platforms": [],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.grammarly.com/plans",
+       "label": "Grammarly plans",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$12/month (Pro)",
+      "free_tier": "Spelling and grammar corrections",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$12/month",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": ""
+       }
+      ],
+      "notes": "Free trial available for Pro."
+     }
     },
     {
      "name": "Sudowrite",
@@ -1399,7 +2297,48 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "AI writing partner for fiction authors",
+     "why_rank": "Fiction-specific models (Muse, Ballad) plus 30+ models with rollover credits.",
+     "main_limitation": "No permanent free plan shown; free trial only.",
+     "best_for": "Novelists and screenwriters",
+     "avoid_if": "You write business copy rather than fiction",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "Sudowrite Muse and Ballad plus 30+ third-party models",
+     "sources": [
+      {
+       "url": "https://sudowrite.com/pricing",
+       "label": "Sudowrite pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$10/month",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Hobby & Student",
+        "price": "$10/month",
+        "notes": "225,000 credits"
+       },
+       {
+        "name": "Professional",
+        "price": "$22/month",
+        "notes": "1,000,000 credits"
+       },
+       {
+        "name": "Max",
+        "price": "$44/month",
+        "notes": "2,000,000 credits"
+       }
+      ],
+      "notes": "Free trial, no card. Unused credits roll over 12 months (higher tiers)."
+     }
     },
     {
      "name": "QuillBot",
@@ -1413,7 +2352,41 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "bot-blocked (403), known official domain",
-     "audience": "both"
+     "audience": "both",
+     "job": "Paraphrasing, grammar checking and rewriting",
+     "why_rank": "Cheap Premium plan and a useful free paraphraser for students.",
+     "main_limitation": "Free plan limits paraphrasing modes; full access needs Premium.",
+     "best_for": "Students and non-native writers rewording text",
+     "avoid_if": "You need original long-form writing",
+     "platforms": [],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://quillbot.com/premium",
+       "label": "QuillBot Premium",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$8.33/month (billed annually)",
+      "free_tier": "Basic grammar fixes and limited paraphrasing",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Premium",
+        "price": "$8.33/month billed annually",
+        "notes": "Unlimited paraphrase modes"
+       }
+      ],
+      "notes": "58% off when paying annually per vendor."
+     }
     },
     {
      "name": "Wordtune",
@@ -1426,7 +2399,46 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "AI rewriting suggestions for clearer sentences",
+     "why_rank": "Low-cost rewriting with a free daily allowance.",
+     "main_limitation": "Free: 10 rewrites/day; Advanced is still daily-limited.",
+     "best_for": "Polishing emails and short-form text",
+     "avoid_if": "You need unlimited rewrites for free",
+     "platforms": [],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.wordtune.com/plans",
+       "label": "Wordtune plans",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$4.89/month (Advanced, billed annually)",
+      "free_tier": "10 rewrites/day, 3 per month for some features",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Advanced",
+        "price": "$4.89/month annual ($6.99 list)",
+        "notes": "30 per day"
+       },
+       {
+        "name": "Unlimited",
+        "price": "$6.99/month annual ($9.99 list)",
+        "notes": ""
+       }
+      ],
+      "notes": "3-day free trial needs payment details."
+     }
     },
     {
      "name": "Hemingway Editor",
@@ -1544,7 +2556,66 @@
       "voice cloning",
       "dubbing"
      ],
-     "audience": "both"
+     "audience": "both",
+     "job": "AI voice generation, voice cloning, dubbing and speech-to-text",
+     "why_rank": "Top-tier voice quality with a free tier and a cheap Starter plan that adds commercial rights.",
+     "main_limitation": "Free plan (10k credits/month) has no commercial license; cloning and higher quality need paid tiers.",
+     "best_for": "Creators and developers needing realistic voiceovers or voice agents",
+     "avoid_if": "You need commercial audio for free",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "model_provider": "ElevenLabs (own models)",
+     "sources": [
+      {
+       "url": "https://elevenlabs.io/pricing",
+       "label": "ElevenLabs pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$6/month (Starter)",
+      "free_tier": "10k credits/month, 3 Studio projects, no commercial license",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "10k credits"
+       },
+       {
+        "name": "Starter",
+        "price": "$6/month",
+        "notes": "30k credits, commercial license, instant cloning"
+       },
+       {
+        "name": "Creator",
+        "price": "$22/month",
+        "notes": "121k credits, professional cloning"
+       },
+       {
+        "name": "Pro",
+        "price": "$99/month",
+        "notes": "600k credits"
+       },
+       {
+        "name": "Scale",
+        "price": "$299/month",
+        "notes": "1.8M credits, 3 seats"
+       },
+       {
+        "name": "Business",
+        "price": "$990/month",
+        "notes": "6M credits, 10 seats"
+       }
+      ],
+      "notes": "Prices exclude taxes; first-month promos were running on check date."
+     }
     },
     {
      "name": "Suno",
@@ -1557,7 +2628,48 @@
      "tags": [
       "music"
      ],
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "Generate full songs with vocals from a prompt",
+     "why_rank": "The most capable consumer song generator, with a daily free allowance.",
+     "main_limitation": "Free plan: 50 credits/day, free models only, no commercial use rights.",
+     "best_for": "Musicians and creators sketching complete songs",
+     "avoid_if": "You need commercial rights without paying",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "Suno (own models)",
+     "sources": [
+      {
+       "url": "https://suno.com/pricing",
+       "label": "Suno pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$8/month (Pro, billed yearly)",
+      "free_tier": "50 credits/day, free models, standard features",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$8/month (billed yearly)",
+        "notes": "2,500 credits/month, 20 downloads, commercial use"
+       },
+       {
+        "name": "Premier",
+        "price": "$24/month (billed yearly)",
+        "notes": "10,000 credits/month, Suno Studio"
+       }
+      ],
+      "notes": "Monthly billing costs more (yearly saves 20%)."
+     }
     },
     {
      "name": "Udio",
@@ -1570,7 +2682,48 @@
      "tags": [
       "music"
      ],
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "AI music generation and editing",
+     "why_rank": "Solid music generator with editing tools and a no-card free tier.",
+     "main_limitation": "Free: 10 credits/day and 100/month, no rollovers.",
+     "best_for": "Experimenting with AI music styles and edits",
+     "avoid_if": "You need large monthly volumes cheaply",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "Udio (own models)",
+     "sources": [
+      {
+       "url": "https://www.udio.com/pricing",
+       "label": "Udio pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$8/month (Standard, billed annually; $10 monthly)",
+      "free_tier": "10 credits/day, 100/month, no rollovers",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Standard",
+        "price": "$8/month annual ($10 monthly)",
+        "notes": "2,400 credits/month"
+       },
+       {
+        "name": "Pro",
+        "price": "$24/month annual ($30 monthly)",
+        "notes": "6,000 credits/month"
+       }
+      ],
+      "notes": "Extra credits: 100 for $3, 1,000 for $25."
+     }
     },
     {
      "name": "Descript",
@@ -1586,7 +2739,51 @@
       "transcription",
       "screen recording"
      ],
-     "audience": "both"
+     "audience": "both",
+     "job": "Edit video and podcasts by editing text, with an AI co-editor",
+     "why_rank": "Text-based editing plus the Underlord AI co-editor makes audio/video editing fast.",
+     "main_limitation": "Media hours and AI credits are capped per plan.",
+     "best_for": "Podcasters and video creators editing talking content",
+     "avoid_if": "You need frame-level pro VFX editing",
+     "platforms": [],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.descript.com/pricing",
+       "label": "Descript pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Entry paid tier",
+        "price": "price not shown in fetched page text",
+        "notes": "10 media hours, 400 AI credits/month, 1080p"
+       },
+       {
+        "name": "Creator",
+        "price": "$35/person/month",
+        "notes": "30 media hours, 800 AI credits, 4K"
+       },
+       {
+        "name": "Business",
+        "price": "$65/person/month",
+        "notes": "40 media hours, 1,500 AI credits"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": "Free to start per vendor; free plan limits not shown in fetched text."
+     }
     },
     {
      "name": "Wispr Flow",
@@ -1600,7 +2797,56 @@
       "dictation",
       "speech to text"
      ],
-     "audience": "both"
+     "audience": "both",
+     "job": "Voice dictation that types anywhere on your devices",
+     "why_rank": "Free on Mac, Windows, iPhone and Android, with unlimited dictation on Pro.",
+     "main_limitation": "Free plan has a dictation cap; unlimited dictation needs Pro.",
+     "best_for": "Anyone who'd rather talk than type",
+     "avoid_if": "You only need occasional built-in OS dictation",
+     "platforms": [
+      "Mac",
+      "Windows",
+      "iPhone",
+      "Android"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://wisprflow.ai/pricing",
+       "label": "Wispr Flow pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$12/user/month (Pro, annual; $15 monthly)",
+      "free_tier": "Free on Mac, Windows, iPhone and Android (limited dictations)",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$12/user/month annual ($15 monthly)",
+        "notes": "Unlimited dictations"
+       },
+       {
+        "name": "Growth",
+        "price": "$18/user/month annual ($23 monthly)",
+        "notes": ""
+       },
+       {
+        "name": "Higher tier",
+        "price": "$26/user/month annual ($33 monthly)",
+        "notes": "SCIM, SLA support"
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "OpenAI Whisper",
@@ -1845,7 +3091,61 @@
       "automation",
       "integrations"
      ],
-     "audience": "business"
+     "audience": "business",
+     "job": "Connect apps and automate workflows with AI steps",
+     "why_rank": "The largest app ecosystem with a free forever plan and simple task-based pricing.",
+     "main_limitation": "Free plan is 100 tasks/month; costs scale with task volume.",
+     "best_for": "Non-technical teams automating across many SaaS apps",
+     "avoid_if": "You run very high volumes and want self-hosting",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "9,000+ apps (per Zapier Agents page)",
+      "Zapier MCP"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://zapier.com/pricing",
+       "label": "Zapier pricing",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://zapier.com/agents",
+       "label": "Zapier Agents",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$19.99/month (Professional)",
+      "free_tier": "100 tasks/month; Zaps, Tables and Forms included",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "100 tasks/month"
+       },
+       {
+        "name": "Professional",
+        "price": "from $19.99/month",
+        "notes": "Multi-step Zaps"
+       },
+       {
+        "name": "Team",
+        "price": "from $69/month",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": ""
+       }
+      ],
+      "notes": "Price depends on selected task tier."
+     }
     },
     {
      "name": "n8n",
@@ -1859,7 +3159,53 @@
       "automation",
       "self-hosted"
      ],
-     "audience": "business"
+     "audience": "business",
+     "job": "Workflow automation and AI agents, cloud or self-hosted",
+     "why_rank": "Developer-friendly automation with unlimited steps per execution and a self-host option.",
+     "main_limitation": "Cloud plans count workflow executions (2.5K/month on Starter); steeper learning curve.",
+     "best_for": "Technical teams building complex workflows and AI agents",
+     "avoid_if": "You want the simplest no-code setup",
+     "platforms": [
+      "Cloud",
+      "Self-hosted"
+     ],
+     "integrations": [
+      "All integrations (nodes)",
+      "MCP",
+      "AI nodes"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://n8n.io/pricing/",
+       "label": "n8n pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "€20/month (Starter, billed annually)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Starter",
+        "price": "€20/month annual",
+        "notes": "2.5K executions, 5 concurrent"
+       },
+       {
+        "name": "Pro",
+        "price": "€50/month annual",
+        "notes": "10K executions, up to 50 concurrent"
+       },
+       {
+        "name": "Business",
+        "price": "€667/month annual",
+        "notes": "40K executions, self-hosted"
+       }
+      ],
+      "notes": "Executions include unlimited steps. Free trial of n8n Cloud, no credit card required."
+     }
     },
     {
      "name": "Make",
@@ -1873,7 +3219,34 @@
       "automation",
       "integrations"
      ],
-     "audience": "business"
+     "audience": "business",
+     "job": "Visual workflow automation across apps",
+     "why_rank": "A visual scenario builder with thousands of app integrations and a free plan.",
+     "main_limitation": "Credit-based billing: each module action consumes credits, and scenarios stop when credits run out.",
+     "best_for": "Ops teams who want visual, branching automations",
+     "avoid_if": "You want flat unlimited runs",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "3,000+ native apps"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.make.com/en/pricing",
+       "label": "Make pricing and FAQ",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "1,000 credits/month, 1 MB data storage, 1 data store",
+      "tiers": [],
+      "notes": "Paid plan prices did not render in fetched page text; credits replaced operations as of Aug 27 per vendor FAQ."
+     }
     },
     {
      "name": "Zapier Agents",
@@ -1887,7 +3260,34 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "Build AI agents that act across your business apps",
+     "why_rank": "Agents that can use Zapier's app connections, with a free start.",
+     "main_limitation": "Pricing and usage limits for Agents were not shown on the fetched page.",
+     "best_for": "Teams already on Zapier who want agents",
+     "avoid_if": "You need a code-first agent framework",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "9,000+ apps via Zapier"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://zapier.com/agents",
+       "label": "Zapier Agents",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [],
+      "notes": "'Get started free' shown; limits unverified."
+     }
     },
     {
      "name": "Manus",
@@ -1901,7 +3301,48 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "General AI agent that researches and builds websites for you",
+     "why_rank": "Autonomous agent for research and site building with daily refresh credits.",
+     "main_limitation": "Credit-based usage; prices did not render in fetched page text.",
+     "best_for": "Delegating multi-step research and web tasks",
+     "avoid_if": "You need predictable per-task cost",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://manus.im/pricing",
+       "label": "Manus pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Tier 1",
+        "price": "price not shown",
+        "notes": "4,000 credits/month + 300 refresh credits daily"
+       },
+       {
+        "name": "Tier 2",
+        "price": "price not shown",
+        "notes": "8,000 credits/month"
+       },
+       {
+        "name": "Tier 3",
+        "price": "price not shown",
+        "notes": "40,000 credits/month"
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "ChatGPT Agent",
@@ -2238,7 +3679,53 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "bot-blocked (403), known official domain",
-     "audience": "both"
+     "audience": "both",
+     "job": "AI answer engine with cited web research",
+     "why_rank": "Cited answers across top models with deep research, free to start.",
+     "main_limitation": "Deep research, top models and higher limits need Pro ($17/month annual) or Max.",
+     "best_for": "Fast researched answers with sources",
+     "avoid_if": "You need long creative writing rather than research",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "Multiple (Perplexity orchestrates top models)",
+     "sources": [
+      {
+       "url": "https://www.perplexity.ai/pro",
+       "label": "Perplexity plans",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$17/month (Pro, billed annually)",
+      "free_tier": "Free sign-up; limits not specified on page",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$17/month billed annually",
+        "notes": "Deep research, top models, 4,000 bonus credits"
+       },
+       {
+        "name": "Max",
+        "price": "$167/month billed annually",
+        "notes": "Maximum Computer usage, 10,000 monthly credits"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": ""
+       }
+      ],
+      "notes": "Limited-time Computer credit bonuses were shown on check date."
+     }
     },
     {
      "name": "NotebookLM",
@@ -2252,7 +3739,61 @@
       "podcast",
       "audio overview"
      ],
-     "audience": "both"
+     "audience": "both",
+     "job": "Source-grounded research notebook: chat with your documents, generate audio overviews and study aids",
+     "why_rank": "Answers grounded in your own sources, free for personal use, with Audio and Video Overviews.",
+     "main_limitation": "Free plan: standard limits and up to 50 sources per notebook; more needs a Google AI plan.",
+     "best_for": "Students and researchers working from their own documents",
+     "avoid_if": "You need open web search as the main source",
+     "platforms": [
+      "Web",
+      "Mobile"
+     ],
+     "integrations": [
+      "Google Workspace (business/education)"
+     ],
+     "model_provider": "Google (Gemini)",
+     "sources": [
+      {
+       "url": "https://notebooklm.google/plans",
+       "label": "Gemini Notebook (NotebookLM) plans",
+       "checked": "2026-10-16"
+      },
+      {
+       "url": "https://gemini.google/subscriptions/",
+       "label": "Google AI plans",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "Included in Google AI Plus (see Google AI plans)",
+      "free_tier": "Standard chat/generation limits, up to 50 sources per notebook",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "50 sources/notebook"
+       },
+       {
+        "name": "In Google AI Plus",
+        "price": "see Google AI plans",
+        "notes": "2x limits, 100 sources"
+       },
+       {
+        "name": "In Google AI Pro",
+        "price": "$19.99/month (Google AI Pro)",
+        "notes": "4x limits, 300 sources"
+       },
+       {
+        "name": "In Google AI Ultra",
+        "price": "from $99.99/month",
+        "notes": "5-20x Pro limits, 600 sources"
+       }
+      ],
+      "notes": "NotebookLM was renamed Gemini Notebook in July 2026 per vendor FAQ."
+     }
     },
     {
      "name": "Elicit",
@@ -2262,7 +3803,56 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "AI research assistant for finding and analysing academic papers",
+     "why_rank": "Purpose-built for literature review, with systematic review workflows and Zotero import.",
+     "main_limitation": "Free plan has limited Research Agent and Reports usage; systematic reviews need Pro.",
+     "best_for": "Researchers doing literature and systematic reviews",
+     "avoid_if": "You need general web search",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Zotero",
+      "Export: RIS, CSV, BIB, PDF, DOCX"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://elicit.com/pricing",
+       "label": "Elicit pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$11/user/month (Plus, billed annually)",
+      "free_tier": "Limited Research Agent and Reports usage, Zotero import",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "Free",
+        "notes": ""
+       },
+       {
+        "name": "Plus",
+        "price": "$11/user/month billed $132/yr",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$39/user/month billed $468/yr",
+        "notes": "Systematic review workflow, 5x usage"
+       },
+       {
+        "name": "Scale",
+        "price": "$89/user/month billed $1,068/yr",
+        "notes": "9x usage"
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "Consensus",
@@ -2272,7 +3862,52 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "AI search engine over peer-reviewed research",
+     "why_rank": "Cited answers grounded in peer-reviewed papers with a usable free tier.",
+     "main_limitation": "Free: 10 Pro messages and up to 3 Deep reviews per month.",
+     "best_for": "Students and clinicians checking what research says",
+     "avoid_if": "You need non-academic sources",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "API",
+      "MCP"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://consensus.app/pricing/",
+       "label": "Consensus pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$12/month (Pro, billed annually $144)",
+      "free_tier": "Basic paper search, 10 Pro messages/month, up to 3 Deep reviews/month",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$12/month ($144/yr)",
+        "notes": "Unlimited Pro messages, 15 Deep reviews, 500 API/MCP uses"
+       },
+       {
+        "name": "Deep",
+        "price": "$45/month ($540/yr)",
+        "notes": "200 Deep reviews/month"
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "Notion AI",
@@ -2282,7 +3917,55 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "AI writing, search and agents inside Notion workspaces",
+     "why_rank": "AI built into the docs and databases teams already use, with custom agents on Business.",
+     "main_limitation": "Free and Plus only include an AI trial; full AI needs Business ($20/member/month).",
+     "best_for": "Teams whose knowledge already lives in Notion",
+     "avoid_if": "You don't use Notion",
+     "platforms": [
+      "Web",
+      "Desktop",
+      "Mobile"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.notion.com/pricing",
+       "label": "Notion pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$20/member/month (Business, includes Notion AI)",
+      "free_tier": "Free plan includes a trial of Notion AI only",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Plus",
+        "price": "$10/member/month",
+        "notes": "AI trial"
+       },
+       {
+        "name": "Business",
+        "price": "$20/member/month",
+        "notes": "Notion AI, Custom Agents"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": ""
+       }
+      ],
+      "notes": "Custom Agents: free to try, then $10 per 1,000 monthly credits (per page)."
+     }
     },
     {
      "name": "Gamma",
@@ -2633,7 +4316,43 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "On-brand AI content for marketing teams",
+     "why_rank": "Marketing-focused AI with brand controls and team governance.",
+     "main_limitation": "No free plan; 7-day trial then $59/month (annual).",
+     "best_for": "Marketing teams producing on-brand content at scale",
+     "avoid_if": "You're an individual on a budget",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.jasper.ai/pricing",
+       "label": "Jasper pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$59/month billed yearly ($69 monthly)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Pro",
+        "price": "$59/month yearly or $69 monthly",
+        "notes": "1 seat"
+       },
+       {
+        "name": "Business",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": "7-day free trial."
+     }
     },
     {
      "name": "Copy.ai",
@@ -2647,7 +4366,53 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "AI workflows for sales and marketing content",
+     "why_rank": "Combines chat with go-to-market workflows for teams.",
+     "main_limitation": "Team tiers are expensive ($1,000+/month) once you need workflow credits.",
+     "best_for": "GTM teams automating content workflows",
+     "avoid_if": "You just need occasional copywriting",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.copy.ai/prices",
+       "label": "Copy.ai pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$24/month (billed annually; $29 monthly)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Self-serve",
+        "price": "$24/month annual ($29 monthly)",
+        "notes": ""
+       },
+       {
+        "name": "75 seats",
+        "price": "$1,000/month",
+        "notes": "20K workflow credits/month"
+       },
+       {
+        "name": "150 seats",
+        "price": "$2,000/month",
+        "notes": "45K credits"
+       },
+       {
+        "name": "200 seats",
+        "price": "$3,000/month",
+        "notes": "75K credits"
+       }
+      ],
+      "notes": "'Try for free' offered; free limits not shown."
+     }
     },
     {
      "name": "Typefully",
@@ -2661,7 +4426,51 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "Write, schedule and analyse social posts (X and more)",
+     "why_rank": "Clean writing and scheduling for threads with a free plan and an API.",
+     "main_limitation": "Free: 1 social set, 1 user, 10 posts/month.",
+     "best_for": "Creators growing on X and LinkedIn",
+     "avoid_if": "You need a full social media suite",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "X",
+      "API"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://typefully.com/pricing",
+       "label": "Typefully pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "1 social set, 1 user, 10 posts/month",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Creator",
+        "price": "annual billing only; price not in fetched text",
+        "notes": ""
+       },
+       {
+        "name": "Business",
+        "price": "per social set, billed yearly; price not in fetched text",
+        "notes": ""
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "Easel",
@@ -2726,7 +4535,58 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "AI assistant across Word, Excel, Outlook and Teams for businesses",
+     "why_rank": "Copilot works directly inside the Microsoft 365 apps most businesses already use.",
+     "main_limitation": "Per-user, annual-commitment pricing on top of Microsoft 365.",
+     "best_for": "Microsoft 365 organisations",
+     "avoid_if": "Your team runs on Google Workspace",
+     "platforms": [
+      "Windows",
+      "Mac",
+      "Web",
+      "Mobile"
+     ],
+     "integrations": [
+      "Word",
+      "Excel",
+      "Outlook",
+      "Teams",
+      "Loop",
+      "Planner"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.microsoft.com/en-us/microsoft-365/copilot/business",
+       "label": "Microsoft 365 Copilot business",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$18/user/month paid yearly (Copilot Business)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Copilot Business",
+        "price": "$18/user/month paid yearly",
+        "notes": ""
+       },
+       {
+        "name": "Business Standard with Copilot",
+        "price": "$23.50/user/month paid yearly",
+        "notes": ""
+       },
+       {
+        "name": "Business Premium with Copilot",
+        "price": "$32/user/month paid yearly",
+        "notes": ""
+       }
+      ],
+      "notes": "Free trial available."
+     }
     },
     {
      "name": "Gemini for Google Workspace",
@@ -2740,7 +4600,54 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "Gemini AI inside Gmail, Docs, Sheets and Meet",
+     "why_rank": "AI inside the Google Workspace apps teams use daily.",
+     "main_limitation": "Priced per user per month as part of Workspace plans (max 300 users on Starter-Plus).",
+     "best_for": "Teams on Google Workspace",
+     "avoid_if": "You're a Microsoft 365 shop",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Gmail",
+      "Docs",
+      "Sheets",
+      "Meet",
+      "Drive"
+     ],
+     "model_provider": "Google",
+     "sources": [
+      {
+       "url": "https://workspace.google.com/pricing",
+       "label": "Google Workspace pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$7/user/month (Business Starter; promo $3.50 shown)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Business Starter",
+        "price": "$7/user/month",
+        "notes": ""
+       },
+       {
+        "name": "Business Standard",
+        "price": "$14/user/month",
+        "notes": ""
+       },
+       {
+        "name": "Business Plus",
+        "price": "$22/user/month",
+        "notes": ""
+       }
+      ],
+      "notes": "Promotional discounts shown on check date; prices exclude tax. Gemini features per plan not itemised in fetched text."
+     }
     },
     {
      "name": "Airtable",
@@ -2754,7 +4661,32 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "Build apps and databases with AI on top of your data",
+     "why_rank": "Flexible database apps with AI and a free plan for small teams.",
+     "main_limitation": "Paid plans charged per seat; detailed prices not readable in fetched page.",
+     "best_for": "Teams building custom ops tools on structured data",
+     "avoid_if": "You need a simple spreadsheet",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.airtable.com/pricing",
+       "label": "Airtable pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free plan available (per vendor FAQ)",
+      "tiers": [],
+      "notes": "Per-seat pricing; amounts not verifiable from fetched text."
+     }
     },
     {
      "name": "ClickUp",
@@ -2767,7 +4699,56 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "Project management with AI and automations",
+     "why_rank": "All-in-one work hub with a free forever plan and low entry price.",
+     "main_limitation": "Free plan: 60MB storage; automations limited per tier.",
+     "best_for": "Teams consolidating tasks, docs and goals",
+     "avoid_if": "You want a minimal, simple task app",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Webhooks",
+      "Enterprise API"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://clickup.com/pricing",
+       "label": "ClickUp pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$7/user/month (Unlimited, billed yearly; $10 monthly)",
+      "free_tier": "Free Forever: 60MB storage, unlimited tasks and members",
+      "tiers": [
+       {
+        "name": "Free Forever",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Unlimited",
+        "price": "$7/user/month yearly ($10 monthly)",
+        "notes": ""
+       },
+       {
+        "name": "Business",
+        "price": "$12/user/month yearly ($19 monthly)",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": ""
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "Fireflies.ai",
@@ -2781,7 +4762,57 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "AI meeting notes, transcription and summaries",
+     "why_rank": "Unlimited transcription even on the free plan, across Zoom, Meet and Teams.",
+     "main_limitation": "Free plan: limited AI summaries and 400 mins storage per team.",
+     "best_for": "Teams that want searchable meeting notes",
+     "avoid_if": "You rarely have meetings",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Zoom",
+      "Google Meet",
+      "Microsoft Teams"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://fireflies.ai/pricing",
+       "label": "Fireflies pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$10/seat/month (Pro, billed annually; $18 monthly)",
+      "free_tier": "Unlimited transcription, limited AI summaries, 400 mins storage/team, 20 AI credits",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$10/seat/month annual ($18 monthly)",
+        "notes": ""
+       },
+       {
+        "name": "Business",
+        "price": "$19/seat/month annual ($29 monthly)",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "$39/seat/month, annual only",
+        "notes": ""
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "Fathom",
@@ -2853,7 +4884,43 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "AI phone answering for restaurants that turns calls into reservations",
+     "why_rank": "Restaurant-specific voice AI with clear per-location pricing.",
+     "main_limitation": "From $399 per location per month.",
+     "best_for": "Busy restaurants missing calls",
+     "avoid_if": "You're a small venue with few calls",
+     "platforms": [
+      "Phone"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.slang.ai/pricing",
+       "label": "Slang.ai pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$399/location/month (Core)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Core",
+        "price": "from $399/location",
+        "notes": ""
+       },
+       {
+        "name": "Higher tier",
+        "price": "from $599/location",
+        "notes": "Smarter routing, missed-call capture"
+       }
+      ],
+      "notes": "Shown as 'starting at' per location."
+     }
     },
     {
      "name": "Loman",
@@ -2863,7 +4930,46 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "AI phone agent for restaurant ordering and reservations",
+     "why_rank": "Restaurant voice AI with POS integration and no per-minute fees.",
+     "main_limitation": "Pricing only on request.",
+     "best_for": "Restaurants wanting phone ordering automated",
+     "avoid_if": "You need public, self-serve pricing",
+     "platforms": [
+      "Phone"
+     ],
+     "integrations": [
+      "POS",
+      "Reservation systems"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://loman.ai/pricing",
+       "label": "Loman pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Starter",
+        "price": "On request",
+        "notes": ""
+       },
+       {
+        "name": "Premium",
+        "price": "On request",
+        "notes": "Ordering, reservations, POS"
+       }
+      ],
+      "notes": "Vendor says no per-minute fees."
+     }
     },
     {
      "name": "ConverseNow",
@@ -2883,7 +4989,45 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "Restaurant website, online ordering and marketing platform",
+     "why_rank": "Commission-light direct ordering with two simple pricing options.",
+     "main_limitation": "Flexible plan adds a 5% restaurant fee per order.",
+     "best_for": "Independent restaurants growing direct online sales",
+     "avoid_if": "You only need a basic menu site",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "POS"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.owner.com/pricing",
+       "label": "Owner.com pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$249/month + 5% per order",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Flexible",
+        "price": "$249/month + 5% restaurant fee per order",
+        "notes": ""
+       },
+       {
+        "name": "Flat Rate",
+        "price": "$499/month, no restaurant fees",
+        "notes": ""
+       }
+      ],
+      "notes": "Multi-location rates available."
+     }
     },
     {
      "name": "Popmenu",
@@ -2893,7 +5037,43 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "bot-blocked (403/429), known official domain, verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "Restaurant website, marketing and AI phone answering",
+     "why_rank": "Restaurant marketing suite with AI emails/texts and an AI phone add-on.",
+     "main_limitation": "AI phone answering and ordering are add-ons to the base plans.",
+     "best_for": "Restaurants wanting website plus automated marketing",
+     "avoid_if": "You only need phone automation",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://get.popmenu.com/pricing",
+       "label": "Popmenu pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$159/month (Starter, prepaid annually; $179 monthly)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Starter",
+        "price": "$159/month annual ($179 monthly)",
+        "notes": ""
+       },
+       {
+        "name": "Essentials",
+        "price": "$269/month annual ($299 monthly)",
+        "notes": ""
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "Toast (ToastIQ)",
@@ -2950,7 +5130,32 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "Free AI trip planner that builds custom itineraries",
+     "why_rank": "Fully free itinerary planner that adapts to interests and budget.",
+     "main_limitation": "Vendor says free 'at least for now'; no booking.",
+     "best_for": "Quick free itinerary drafts",
+     "avoid_if": "You want booking and price tracking in one place",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://wonderplan.ai",
+       "label": "Wonderplan FAQ",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "Free",
+      "free_tier": "Free planning tool (per vendor FAQ)",
+      "tiers": [],
+      "notes": ""
+     }
     },
     {
      "name": "Canary Technologies",
@@ -2970,7 +5175,48 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "AI guest communication for hotels",
+     "why_rank": "Hotel-specific AI messaging with public tiered pricing.",
+     "main_limitation": "Priced by number of rooms plus setup fees per 5 properties.",
+     "best_for": "Hotels automating guest messaging",
+     "avoid_if": "You run a single short-term rental",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.hijiffy.com/plans-and-pricing",
+       "label": "HiJiffy pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "from €99 / $109 / £99 per month",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Basic (booking phase)",
+        "price": "from €99/month",
+        "notes": "+ setup fee per 5 properties"
+       },
+       {
+        "name": "Booking phase plus",
+        "price": "from €159/month",
+        "notes": ""
+       },
+       {
+        "name": "Full Customer Journey",
+        "price": "from €319/month",
+        "notes": ""
+       }
+      ],
+      "notes": "Based on number of rooms."
+     }
     },
     {
      "name": "Asksuite",
@@ -3077,7 +5323,57 @@
       "defi",
       "cryptocurrency"
      ],
-     "audience": "both"
+     "audience": "both",
+     "job": "Query and visualise onchain crypto data with SQL",
+     "why_rank": "The standard for public onchain dashboards with a free view tier.",
+     "main_limitation": "Free plan is view-only; running queries needs a paid plan ($65/month).",
+     "best_for": "Crypto analysts building SQL dashboards",
+     "avoid_if": "You don't write SQL",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "API",
+      "CSV export"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://dune.com/pricing",
+       "label": "Dune pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$65/month (Analyst)",
+      "free_tier": "View-only access; view and copy any dashboard or query",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Analyst",
+        "price": "$65/month",
+        "notes": "3 seats, 4,000 credits"
+       },
+       {
+        "name": "Plus",
+        "price": "$349/month",
+        "notes": "10 seats, 25,000 credits"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": "Yearly saves 15%."
+     }
     },
     {
      "name": "Kaito",
@@ -3507,7 +5803,50 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "AI tutor and teaching assistant from Khan Academy",
+     "why_rank": "Tutoring tied to Khan Academy content, free for teachers and cheap for learners.",
+     "main_limitation": "Learner and family access is paid ($4/month).",
+     "best_for": "Students wanting guided tutoring; teachers wanting free planning help",
+     "avoid_if": "You need subjects beyond Khan Academy's content library",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Khan Academy"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.khanmigo.ai/pricing",
+       "label": "Khanmigo pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$4/month ($44/year)",
+      "free_tier": "Free for teachers",
+      "tiers": [
+       {
+        "name": "Teachers",
+        "price": "Free",
+        "notes": ""
+       },
+       {
+        "name": "Learners",
+        "price": "$4/month or $44/year",
+        "notes": ""
+       },
+       {
+        "name": "Families",
+        "price": "$4/month or $44/year",
+        "notes": ""
+       }
+      ],
+      "notes": "Sales tax not included."
+     }
     },
     {
      "name": "Duolingo",
@@ -3517,7 +5856,50 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "Gamified language learning with AI features",
+     "why_rank": "The most popular way to learn languages, with 100+ courses and a strong free tier.",
+     "main_limitation": "Free plan has limited hearts and ads; Super removes them.",
+     "best_for": "Casual daily language practice",
+     "avoid_if": "You need intensive conversation practice with a tutor",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.duolingo.com/super",
+       "label": "Duolingo Super",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free learning content with ads and limited hearts",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Super",
+        "price": "price not shown",
+        "notes": "1-week free trial, no ads, unlimited hearts"
+       },
+       {
+        "name": "Super Family",
+        "price": "price not shown",
+        "notes": "Up to 6 accounts"
+       }
+      ],
+      "notes": "Super prices not shown on fetched page."
+     }
     },
     {
      "name": "Speak",
@@ -3547,7 +5929,48 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "AI tools for teachers and students",
+     "why_rank": "Free forever for individual teachers, with school-safe privacy features.",
+     "main_limitation": "Advanced features need Plus; district oversight needs Enterprise pricing.",
+     "best_for": "Teachers planning lessons and differentiating materials",
+     "avoid_if": "You're a self-learner rather than an educator",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.magicschool.ai/pricing",
+       "label": "MagicSchool pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$8.33/user/month (Plus, billed annually; $12.99 monthly)",
+      "free_tier": "Forever free for individual teachers",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Plus",
+        "price": "$8.33/user/month annual ($12.99 monthly)",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "Brisk Teaching",
@@ -3594,7 +6017,44 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "Smart ring for sleep, readiness and health tracking",
+     "why_rank": "Comfortable 24/7 health tracking with a low monthly membership.",
+     "main_limitation": "Ring purchase plus a required membership ($5.99/month US) for full insights.",
+     "best_for": "Sleep and recovery tracking without a wrist device",
+     "avoid_if": "You don't want an ongoing subscription",
+     "platforms": [
+      "iOS",
+      "Android"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://ouraring.com/membership",
+       "label": "Oura membership",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$5.99/month membership (plus ring)",
+      "free_tier": "First month free for new members",
+      "tiers": [
+       {
+        "name": "Membership (US)",
+        "price": "$5.99/month or $69.99/year before tax",
+        "notes": ""
+       },
+       {
+        "name": "Membership (AU)",
+        "price": "A$9.99/month or A$109.99/year",
+        "notes": ""
+       }
+      ],
+      "notes": "HSA/FSA eligible in the US."
+     }
     },
     {
      "name": "WHOOP",
@@ -3604,7 +6064,49 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "bot-blocked (403/429), known official domain, verified 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "Wearable with AI coaching for strain, recovery and sleep",
+     "why_rank": "Membership-based recovery tracking with the device included.",
+     "main_limitation": "Annual membership required (from $199/year).",
+     "best_for": "Athletes optimising training load and recovery",
+     "avoid_if": "You want a one-off hardware purchase with no subscription",
+     "platforms": [
+      "iOS",
+      "Android"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.whoop.com/us/en/membership/",
+       "label": "WHOOP membership",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$199/year (One)",
+      "free_tier": "1-month free trial",
+      "tiers": [
+       {
+        "name": "One",
+        "price": "$199/year",
+        "notes": ""
+       },
+       {
+        "name": "Peak",
+        "price": "$239/year",
+        "notes": ""
+       },
+       {
+        "name": "Life",
+        "price": "$359/year",
+        "notes": "Includes MG device"
+       }
+      ],
+      "notes": "Device included with membership."
+     }
     },
     {
      "name": "Ada",
@@ -3641,7 +6143,32 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "job": "Make browser games by describing them to an AI",
+     "why_rank": "Fastest prompt-to-playable game builder, free to start with no card.",
+     "main_limitation": "Credit-based; premium model edits cost ~20,000 credits each.",
+     "best_for": "Hobbyists and educators prototyping games",
+     "avoid_if": "You're building a commercial engine-based game",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://rosebud.ai/pricing",
+       "label": "Rosebud AI pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "8,000 starting credits, no card; refills in eligible regions",
+      "tiers": [],
+      "notes": "Paid plans add credits, private projects, commercial rights and code export (prices not in fetched text)."
+     }
     },
     {
      "name": "Scenario",
@@ -3651,7 +6178,48 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "Generate consistent game art with custom-trained models",
+     "why_rank": "Game-focused image generation with custom models and 50 free daily credits.",
+     "main_limitation": "Free usage is 50 daily credits; custom model training needs Pro.",
+     "best_for": "Game studios needing style-consistent assets",
+     "avoid_if": "You need general marketing images",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.scenario.com/pricing",
+       "label": "Scenario pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$15/month (Starter)",
+      "free_tier": "50 free daily credits, no card",
+      "tiers": [
+       {
+        "name": "Starter",
+        "price": "$15/month",
+        "notes": "1,500 credits"
+       },
+       {
+        "name": "Pro",
+        "price": "$45/month",
+        "notes": "5,000 credits"
+       },
+       {
+        "name": "Max",
+        "price": "$75/month",
+        "notes": "10,000 credits"
+       }
+      ],
+      "notes": "Annual billing saves 33% per vendor; displayed price toggle may reflect annual."
+     }
     },
     {
      "name": "Ludo.ai",
@@ -3661,7 +6229,53 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "Game ideation, market research and asset generation",
+     "why_rank": "Covers research, assets and prototypes for game developers in one tool.",
+     "main_limitation": "Credit-based asset generation; API/MCP/CLI always use credits.",
+     "best_for": "Indie developers researching and prototyping game ideas",
+     "avoid_if": "You only need a single asset type",
+     "platforms": [
+      "Web",
+      "API",
+      "CLI"
+     ],
+     "integrations": [
+      "API",
+      "MCP"
+     ],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://ludo.ai/pricing",
+       "label": "Ludo.ai pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$15/month paid annually",
+      "free_tier": "Free trial",
+      "tiers": [
+       {
+        "name": "Indie",
+        "price": "$15/month paid annually",
+        "notes": "3,000 credits/year"
+       },
+       {
+        "name": "Pro",
+        "price": "$35/month paid annually",
+        "notes": "12,000 credits/year"
+       },
+       {
+        "name": "Studio",
+        "price": "$300/month paid annually",
+        "notes": "120,000 credits/year"
+       }
+      ],
+      "notes": ""
+     }
     },
     {
      "name": "Meshy",
@@ -3671,7 +6285,43 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "job": "Generate 3D models from text or images",
+     "why_rank": "Quick text/image-to-3D with auto-rigging and a no-card free tier.",
+     "main_limitation": "Free plan: 100 credits/month and 1 concurrent task.",
+     "best_for": "Game devs and 3D printers needing quick models",
+     "avoid_if": "You need production-grade hand-modelled topology",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "model_provider": "",
+     "sources": [
+      {
+       "url": "https://www.meshy.ai/pricing",
+       "label": "Meshy pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$20/month (Pro, billed monthly)",
+      "free_tier": "100 credits/month, 1 concurrent task",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$20/month",
+        "notes": "First month $10 promo"
+       }
+      ],
+      "notes": "Studio and Enterprise plans also listed."
+     }
     },
     {
      "name": "Inworld AI",
@@ -3681,7 +6331,45 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "job": "Voice AI (TTS, STT) and LLM inference for interactive characters and apps",
+     "why_rank": "Low-cost voice and LLM APIs with pay-as-you-go entry.",
+     "main_limitation": "Developer API product; no consumer app.",
+     "best_for": "Developers building voice-driven games and apps",
+     "avoid_if": "You want a no-code tool",
+     "platforms": [
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "model_provider": "Inworld TTS plus open LLMs",
+     "sources": [
+      {
+       "url": "https://inworld.ai/pricing",
+       "label": "Inworld pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$25/month (Creator)",
+      "free_tier": "On-Demand: $0 pay as you go, up to 70 min TTS included",
+      "tiers": [
+       {
+        "name": "On-Demand",
+        "price": "$0 + usage",
+        "notes": "TTS-2 $25/1M chars"
+       },
+       {
+        "name": "Creator",
+        "price": "$25/month",
+        "notes": "TTS-2 $20/1M chars"
+       }
+      ],
+      "notes": "Higher tiers offer volume discounts."
+     }
     },
     {
      "name": "Layer",

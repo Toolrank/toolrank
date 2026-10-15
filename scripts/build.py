@@ -270,11 +270,11 @@ def rel(t): return "noopener" + (" sponsored" if t.get("affiliate_url") else "")
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
          '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Sora:wght@600;700;800&amp;display=swap">')
 NAV = (f'<header class="top"><div class="bar">{LOGO}<nav aria-label="Main"><a href="/#browse">Categories</a><a href="/#trending">Trending</a>'
-       f'<a href="/reviews.html">Reviews</a><a href="/services.html" class="hm">For makers</a><a class="btn sm" href="/submit.html">Submit a tool</a></nav></div></header>')
+       f'<a href="/compare/">Compare</a><a href="/reviews.html">Reviews</a><a href="/services.html" class="hm">For makers</a><a class="btn sm" href="/submit.html">Submit a tool</a></nav></div></header>')
 def FOOT_():
     cl = "".join(f'<a href="/best/{c["id"]}/">{E(c["title"])}</a>' for c in D["categories"])
     return (f'<footer class="foot"><div class="wrap"><div class="fg"><div class="fl">{LOGO}<p class="muted">Confused by AI? We&rsquo;ll find the right tool for you. Editorial rankings, updated <time datetime="{UPD}">{UPD}</time>.</p></div>'
-            f'<nav class="fc2" aria-label="Categories">{cl}</nav><nav class="fc2" aria-label="ToolRank"><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/llms.txt">llms.txt</a></nav></div>'
+            f'<nav class="fc2" aria-label="Categories">{cl}</nav><nav class="fc2" aria-label="ToolRank"><a href="/methodology/">How we rank</a><a href="/compare/">Compare tools</a><a href="/claim/">Claim your listing</a><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/llms.txt">llms.txt</a></nav></div>'
             f'<p class="si-tag small">ToolRank · Super Intelligence, ranked.</p><p class="muted small">© {UPD[:4]} ToolRank. Some links may become affiliate links; featured placements are labelled. Reviews are user-submitted via GitHub and moderated; they never change the editorial rank.</p></div></footer>')
 FOOT = FOOT_()
 def head(title, desc, path, ld, otype="website"):
@@ -287,7 +287,7 @@ def head(title, desc, path, ld, otype="website"):
 <script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@graph": ld}, ensure_ascii=False)}</script><!--/SEO-->"""
 def doc(headblock, body, extra_head=""):
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n{headblock}{FONTS}'
-            f'<link rel="stylesheet" href="/assets/style.css">{extra_head}</head><body>\n{NAV}\n{body}\n{FOOT}</body></html>\n')
+            f'<link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/ev.css">{extra_head}</head><body>\n{NAV}\n{body}\n{FOOT}</body></html>\n')
 
 def tool_ld(t, c, i):
     o = {"@type": "SoftwareApplication", "name": t["name"], "url": t["url"], "description": t["verdict"], "applicationCategory": "AI tool: " + c["title"]}
@@ -319,9 +319,9 @@ def page(c):
           {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": a, "acceptedAnswer": {"@type": "Answer", "text": b}} for a, b in fq]}]
     others = "".join(tile(o, "tile sm") for o in D["categories"] if o is not c)
     body = f"""<main><article><section class="hero cathero"><div class="wrap ch"><div><nav class="crumb" aria-label="Breadcrumb"><a href="/">ToolRank</a> › <a href="/#browse">Categories</a></nav>
-<h1>{E(c['title'])}</h1><p class="lead">{E(c['blurb'])}</p><p class="muted small">{len(c['tools'])} tools · Editorial ranking · Updated <time datetime="{UPD}">{UPD}</time></p></div>
+<h1>{E(c['title'])}</h1><p class="lead">{E(c['blurb'])}</p><p class="muted small">{len(c['tools'])} tools · Editorial ranking</p><p class="updl">Updated {fmt_date(CHECK_DATE)} · Rankings are editorial, never paid. <a href="/methodology/">How we rank →</a></p></div>
 <img class="chart" src="/assets/cat/{c['id']}.svg" alt="" width="400" height="400"></div></section>
-<section class="sec"><div class="wrap"><h2>The ranking</h2><div class="tgrid">{cards(c)}</div></div></section>
+<section class="sec"><div class="wrap"><h2>The ranking</h2><div class="tgrid">{"".join(ev_card(t, i, c) for i, t in enumerate(c["tools"], 1))}</div></div></section>
 {cat_reviews(c)}<section class="sec faq"><div class="wrap"><h2>FAQ</h2>{''.join(f'<details><summary><h3>{E(a)}</h3></summary><p>{E(b)}</p></details>' for a, b in fq)}</div></section>
 </article><section class="sec"><div class="wrap"><h2>More categories</h2><div class="tiles">{others}</div></div></section></main>"""
     return doc(head(title, desc, path, ld), body)
@@ -468,6 +468,8 @@ def new_html():
     return (f'<section class="sec" id="new"><div class="wrap"><div class="sh"><p class="eyebrow">New this week</p><h2 class="big">Fresh launches.</h2></div><div class="hs">'
             + "".join(one(n) for n in its) + '</div></div></section>')
 
+def FRESH():
+    return '<p class="fresh"><span class="fl0">Fresh comparisons:</span>' + ''.join(f'<a class="chip" href="/compare/{k}/">{E(cmp_title(ids))}</a>' for k, ids in COMPARES) + '<a href="/methodology/">How we rank →</a></p>'
 def home(cats):
     tiles = "".join(tile(c) for c in cats)
     body = f"""<section class="hero home"><div class="wrap hw">
@@ -476,7 +478,7 @@ def home(cats):
 <h1>Confused by AI? <span class="gt">We&rsquo;ll find the right tool for you.</span></h1>
 <p class="lead" id="tagline">Hand-picked, editorially ranked AI tools across {len(cats)} categories. No fluff.</p>
 <form class="search" id="sf" role="search" action="/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" name="q" type="search" enterkeyhint="search" placeholder="What do you want to do? e.g. edit video" aria-label="Search tools" autocomplete="off"><select id="price" aria-label="Pricing"><option value="">Any price</option><option value="free">Free tier</option><option value="paid">Paid</option></select><button type="submit" class="btn">Search</button></form>
-{stats_html()}</div></section>
+{stats_html()}{FRESH()}</div></section>
 <div id="dirwrap" class="pane"><section class="sec" id="results" hidden aria-live="polite"><div class="wrap"><div class="sh row"><h2 id="rtitle">Results</h2><button type="button" class="btn ghost sm" id="rclear">Clear</button></div><div class="tgrid" id="rgrid"></div></div></section>
 <section class="sec" id="browse"><div class="wrap"><div class="sh"><p class="eyebrow">Browse</p><h2 class="big">Start with what you want to do.</h2><p class="muted" id="tabnote">Tap a category to see the ranked tools.</p></div>
 <div class="tiles" id="tiles">{tiles}</div></div></section>
@@ -489,6 +491,234 @@ def home(cats):
                            "itemListElement": [{"@type": "ListItem", "position": i, "name": t["name"], "url": t["url"]} for i, t in enumerate(c["tools"], 1)]} for c in cats]
     return doc(head("ToolRank: the best AI tools ranked by use case (" + UPD[:4] + ")",
                     f"Confused by AI? Editorial rankings of {NT} AI tools across {len(cats)} categories: " + ", ".join(c["title"] for c in cats) + f". Updated {UPD}.", "/", ild), body)
+
+# ================= Evidence layer (profiles, methodology, comparisons, claim) =================
+CHECK_DATE = "2026-10-16"
+def fmt_date(s):
+    try: return dt.date.fromisoformat(s).strftime("%-d %b %Y")
+    except Exception: return s or ""
+NV = '<span class="nv">Not yet verified</span>'
+ALLT = [(c, i, t) for c in D["categories"] for i, t in enumerate(c["tools"], 1)]
+def PD(t): return t.get("pricing_detail") or {}
+def verified(t): return bool(t.get("last_verified"))
+def ev(x): return E(x) if x else NV
+def free_plan(t):
+    p = PD(t)
+    if p.get("free_tier"): return "yes"
+    if verified(t) and p.get("model") == "paid": return "no"
+    return None
+def free_trial(t):
+    p = PD(t); s = (p.get("free_tier", "") + " " + p.get("notes", "")).lower()
+    return "trial" in s
+def yn(v): return {"yes": '<span class="yes">✓ Yes</span>', "no": '<span class="no">✕ No</span>'}.get(v, NV)
+def price_num(s):
+    m = re.search(r"[$€£]\s?([0-9][0-9,]*(?:\.[0-9]+)?)", s or "")
+    return float(m.group(1).replace(",", "")) if m else None
+def prof(t): return f"/tools/{slug(t['name'])}/"
+def cmp_url(*ts): return "/compare/?tools=" + ",".join(slug(t["name"]) for t in ts)
+COMPARES = [("cursor-vs-claude-code", ["cursor", "claude-code"]), ("lovable-vs-bolt-new", ["lovable", "bolt-new"]), ("make-vs-n8n-vs-zapier", ["make", "n8n", "zapier"])]
+def cmp_title(ids): return " vs ".join(TOOLS[i]["name"] for i in ids)
+METH_LINK = '<a href="/methodology/">How we rank →</a>'
+DISCLOSE = '<p class="muted small disc">Some links may be affiliate links. They never affect rank.</p>'
+
+def ev_card(t, i, c):
+    """Ranking-page card with the evidence summary."""
+    p = PD(t); s = slug(t["name"]); v = verified(t)
+    sp = E(p["starting_price"]) if p.get("starting_price") else (("Free" if p.get("model") == "free" else NV) if v else NV)
+    rows = (f'<dl class="evd"><dt>Why ranked</dt><dd>{ev(t.get("why_rank"))}</dd>'
+            f'<dt>Starts at</dt><dd>{sp}{f" · <span class=\"tag {E(p.get("model",""))}\">{E(p.get("model",""))}</span>" if p.get("model") else ""}</dd>'
+            f'<dt>Free plan</dt><dd>{yn(free_plan(t))}</dd><dt>Best for</dt><dd>{ev(t.get("best_for"))}</dd><dt>Avoid if</dt><dd>{ev(t.get("avoid_if"))}</dd>'
+            f'<dt>Verified</dt><dd>{E(fmt_date(t["last_verified"])) if v else NV}</dd></dl>')
+    return (f'<article class="card tool" id="{s}"><div class="th">{logo_html(t)}<div class="tt"><h3><span class="rank">#{i}</span><a class="tl" href="{prof(t)}">{E(t["name"])}</a></h3>'
+            f'{"<span class=\"sipick\" title=\"ToolRank Super Intelligence pick: our top choice for this use case\">SI Pick</span>" if i == 1 else ""}'
+            f'<div class="tm"><span class="tag {t["pricing"]}">{t["pricing"]}</span>{"<span class=\"tag feat\">Featured</span>" if t.get("featured") else ""}</div></div></div>'
+            f'<p>{E(t["verdict"])}</p>{rows if i <= 5 else ""}{rv_line(t)}'
+            f'<div class="acts"><a href="{prof(t)}">Profile</a><a href="{E(cmp_url(t))}">Compare</a><a class="go" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit {E(t["name"])} →</a></div></article>')
+
+def pricing_table(t):
+    p = PD(t)
+    if not p.get("tiers") and not p.get("free_tier") and not p.get("starting_price"):
+        return f'<p>{NV}. We haven&rsquo;t confirmed this tool&rsquo;s pricing against the vendor&rsquo;s own page yet, so we show nothing rather than guess.</p>'
+    rows = f'<tr><th scope="row">Pricing model</th><td>{ev(p.get("model"))}</td></tr><tr><th scope="row">Starting price</th><td>{ev(p.get("starting_price"))}</td></tr>'
+    rows += f'<tr><th scope="row">Free tier</th><td>{ev(p.get("free_tier")) if p.get("free_tier") or not verified(t) else ("None listed" if p.get("model")=="paid" else NV)}</td></tr>'
+    tiers = "".join(f'<tr><td>{E(x["name"])}</td><td>{E(x["price"])}</td><td>{E(x.get("notes",""))}</td></tr>' for x in p.get("tiers", []))
+    return (f'<div class="tbl"><table><tbody>{rows}</tbody></table></div>' +
+            (f'<div class="tbl"><table><thead><tr><th>Plan</th><th>Price</th><th>Includes</th></tr></thead><tbody>{tiers}</tbody></table></div>' if tiers else "") +
+            (f'<p class="muted small">Notes: {E(p["notes"])}</p>' if p.get("notes") else "") +
+            f'<p class="muted small">Prices as shown on the vendor&rsquo;s pricing page on {fmt_date(t.get("last_verified"))}, USD unless stated. Vendors change prices; check before you buy.</p>')
+
+def profile_page(c, i, t):
+    s = slug(t["name"]); path = prof(t); v = verified(t); p = PD(t)
+    srcs = "".join(f'<li><a href="{E(x["url"])}" target="_blank" rel="noopener nofollow">{E(x["label"])}</a> <span class="muted small">checked {fmt_date(x["checked"])}</span></li>' for x in t.get("sources", []))
+    srcs = f'<ul class="srcs">{srcs}</ul>' if srcs else f'<p>{NV}. No vendor sources recorded yet.</p>'
+    plats = t.get("platforms") or []; ints = t.get("integrations") or []
+    chips = lambda xs: "".join(f'<span class="chip">{E(x)}</span>' for x in xs) if xs else NV
+    rel_c = [(k, ids) for k, ids in COMPARES if s in ids]
+    peers = [x for x in c["tools"][:4] if x is not t and not any(slug(x["name"]) in ids for _, ids in rel_c)][:3]
+    relh = "".join(f'<li><a href="/compare/{k}/">{E(cmp_title(ids))}</a></li>' for k, ids in rel_c) + "".join(f'<li><a href="{E(cmp_url(t, x))}">{E(t["name"])} vs {E(x["name"])}</a> <span class="muted small">(interactive)</span></li>' for x in peers)
+    rs = [r for r in RB.get(s, []) if r["listed"]]; n, a = rstat(t)
+    revs = (f'<div class="grid">{"".join(review_html(r) for r in rs)}</div>' if rs else '<p class="muted">No reviews yet.</p>') + \
+           f'<p><a class="btn ghost" href="{E(review_url(t["name"]))}" target="_blank" rel="noopener">{"Write a review" if n else "Be the first to review"}</a></p>'
+    claim = f"https://github.com/{REPO}/issues/new?template=claim-listing.yml&tool=" + urllib.parse.quote(t["name"])
+    o = {"@type": "SoftwareApplication", "name": t["name"], "url": t["url"], "description": t.get("why_rank") or t["verdict"], "applicationCategory": "AI tool: " + c["title"]}
+    if t.get("platforms"): o["operatingSystem"] = ", ".join(t["platforms"])
+    if p.get("free_tier"): o["offers"] = {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free tier: " + p["free_tier"]}
+    if n: o["aggregateRating"] = {"@type": "AggregateRating", "ratingValue": a, "reviewCount": n, "bestRating": 5, "worstRating": 1}
+    ld = [ORG, SITE, o, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ToolRank", "item": BASE+"/"},
+          {"@type": "ListItem", "position": 2, "name": c["title"], "item": f"{BASE}/best/{c['id']}/"}, {"@type": "ListItem", "position": 3, "name": t["name"], "item": BASE+path}]}]
+    body = f"""<main class="prof"><section class="hero sub phero"><div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">ToolRank</a> › <a href="/best/{c['id']}/">{E(c['title'])}</a></nav>
+<div class="pt">{logo_html(t, 56)}<div><h1>{E(t['name'])}</h1><p class="lead">{E(t.get('job') or t['verdict'])}</p></div></div>
+<p class="pmeta"><span class="rankpill">#{i} in {E(c['title'])}</span>{'<span class="sipick">SI Pick</span>' if i == 1 else ''}<span class="tag {t['pricing']}">{t['pricing']}</span><span class="muted small">Last verified: {E(fmt_date(t['last_verified'])) if v else NV}</span></p>
+<p class="pacts"><a class="btn" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit {E(t['name'])} site →</a> <a class="btn ghost" href="{E(cmp_url(t))}">Compare</a></p>{DISCLOSE}</div></section>
+<div class="wrap pgrid"><div>
+<section class="psec"><h2>Why it&rsquo;s ranked here</h2><p>{ev(t.get('why_rank'))}</p><p class="muted small">Editorial verdict: {E(t['verdict'])} {METH_LINK}</p></section>
+<section class="psec warn"><h2>Main limitation</h2><p>{ev(t.get('main_limitation'))}</p></section>
+<section class="psec"><h2>Pricing</h2>{pricing_table(t)}</section>
+<section class="psec bf"><div><h2>Best for</h2><p>{ev(t.get('best_for'))}</p></div><div><h2>Avoid if</h2><p>{ev(t.get('avoid_if'))}</p></div></section>
+<section class="psec"><h2>Platforms &amp; integrations</h2><p class="muted small">Platforms</p><div class="chips">{chips(plats)}</div><p class="muted small">Integrations</p><div class="chips">{chips(ints)}</div>
+<p class="muted small">Model / provider: {ev(t.get('model_provider'))}</p></section>
+<section class="psec"><h2>Evidence &amp; sources</h2>{srcs}<p class="muted small">Every fact on this page comes from the sources above. Anything we could not confirm says &ldquo;Not yet verified&rdquo;.</p></section>
+<section class="psec" id="reviews"><h2>Reviews</h2>{revs}</section></div>
+<aside class="pside"><div class="card"><h3>Quick facts</h3><dl class="evd"><dt>Starts at</dt><dd>{ev(p.get('starting_price'))}</dd><dt>Free plan</dt><dd>{yn(free_plan(t))}</dd><dt>Verified</dt><dd>{E(fmt_date(t['last_verified'])) if v else NV}</dd></dl>
+<a class="btn" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit site →</a>{DISCLOSE}</div>
+<div class="card"><h3>Related comparisons</h3><ul class="rlist">{relh}</ul></div>
+<div class="card"><h3>Is this your tool?</h3><p>Correct facts, add a demo or pricing link. Free.</p><a href="{E(claim)}" target="_blank" rel="noopener">Claim it free →</a> <a class="muted small" href="/claim/">How claiming works</a></div></aside></div></main>"""
+    title = f"{t['name']} review, pricing & limitations ({UPD[:4]}) | ToolRank"
+    desc = (t.get("why_rank") or t["verdict"]) + (f" Starts at {p['starting_price']}." if p.get("starting_price") else "") + f" Ranked #{i} in {c['title']} on ToolRank."
+    return doc(head(title, desc[:300], path, ld, "article"), body)
+
+def methodology_page():
+    body = f"""<main><section class="hero sub"><div class="wrap"><h1>How we rank</h1><p class="lead">Rankings on ToolRank are editorial. They are not votes, and they are never paid for.</p></div></section>
+<section class="sec"><div class="wrap prose">
+<h2>What we look at</h2><p>For every category we ask one question: which tool does the core job best for most people? We weigh:</p>
+<ol><li><b>Capability on the core job.</b> Does it actually do the thing the category is about, and do it well?</li><li><b>Reliability.</b> Does it work consistently, without surprises?</li><li><b>Pricing and value.</b> What does it cost to get real use out of it, and is there a usable free tier?</li><li><b>Speed of improvement.</b> Is the product shipping meaningful updates?</li><li><b>Docs and support.</b> Can you get unstuck?</li><li><b>Known limitations.</b> Every tool has one. We name the main one on its profile.</li></ol>
+<p><b>Capability and reliability are weighted higher than popularity.</b> A famous tool can rank below a smaller one that does the job better.</p>
+<h2>Money never changes rank</h2><p>Sponsored or featured placements never affect rank, and they are always labelled. Some outbound links may become affiliate links; they never affect rank either. User reviews are shown alongside rankings but don&rsquo;t move them.</p>
+<h2>Evidence, not guesses</h2><p>Pricing, free tier limits, platforms, integrations and limitations come from the vendor&rsquo;s own pricing and docs pages. Each profile lists its sources and the date we checked them. If we can&rsquo;t confirm a fact, we show &ldquo;Not yet verified&rdquo; instead of guessing.</p>
+<h2>How often we re-check</h2><p>We re-check the top five tools in every category at least monthly, and any tool when a vendor or reader reports a change. The &ldquo;Last verified&rdquo; date on each profile tells you when we last looked.</p>
+<h2>Vendors: correcting facts</h2><p>If something about your tool is wrong or out of date, <a href="/claim/">claim your listing</a> (free) and send the correction with a link to your pricing or docs page. We verify and update; corrections never buy a higher rank.</p>
+<p class="muted small">Last updated {fmt_date(CHECK_DATE)}.</p></div></section></main>"""
+    return doc(head("How ToolRank ranks AI tools: methodology | ToolRank", "Editorial, evidence-based rankings: capability and reliability over popularity, sources and check dates on every profile, sponsorships never affect rank.", "/methodology/", [ORG, SITE]), body)
+
+def claim_page():
+    url = f"https://github.com/{REPO}/issues/new?template=claim-listing.yml"
+    body = f"""<main><section class="hero sub"><div class="wrap"><h1>Claim your listing</h1><p class="lead">Free for every tool on ToolRank.</p><p><a class="btn" href="{url}" target="_blank" rel="noopener">Claim your listing on GitHub →</a></p></div></section>
+<section class="sec"><div class="wrap prose"><h2>What claiming lets you do</h2><ul><li>Correct facts on your profile: pricing, free tier limits, platforms, integrations.</li><li>Add a demo link and a link to your official pricing page.</li><li>Tell us when something changes so we re-verify sooner.</li></ul>
+<h2>How it works</h2><ol><li>Open the claim form (a public GitHub issue, free GitHub account needed).</li><li>Tell us the tool, your role and your work email domain so we can confirm you work there.</li><li>Add corrections with links to your own pricing or docs pages. We check every fact against those pages before publishing.</li></ol>
+<p>Claiming is free and never changes your rank. See <a href="/methodology/">how we rank</a>.</p><p class="muted">Vendor Pro analytics coming soon.</p></div></section></main>"""
+    return doc(head("Claim your AI tool listing (free) | ToolRank", "Vendors can claim their ToolRank listing for free to correct facts and add demo and pricing links. Claiming never changes rank.", "/claim/", [ORG, SITE]), body)
+
+PICK = {
+ "cursor-vs-claude-code": "Pick <b>Cursor</b> if you want an AI-first editor: a desktop app with agents, cloud automations and code review, and a free tier to try it. Pick <b>Claude Code</b> if you live in the terminal and want an agent that works across your repo; it has no free tier of its own and comes with a paid Claude plan (Pro from $17/month billed annually). Many developers use both: Cursor for editing, Claude Code for long agentic tasks.",
+ "lovable-vs-bolt-new": "Pick <b>Lovable</b> if you want to describe an app in plain language and get a hosted web app with Lovable Cloud; its free plan gives 5 build credits a day. Pick <b>Bolt.new</b> if you want a bigger free allowance measured in tokens (300K a day, 1M a month) and clear pricing from $25/month. Both are browser-based; neither needs you to install anything.",
+ "make-vs-n8n-vs-zapier": "Pick <b>Zapier</b> if you want the easiest setup and the biggest app catalogue; the free plan gives 100 tasks a month. Pick <b>Make</b> if you like building visual, branching scenarios; its free plan gives 1,000 credits a month. Pick <b>n8n</b> if you're technical, want unlimited steps per execution or the option to self-host; cloud plans start at €20/month billed annually.",
+}
+def cmp_page(key, ids):
+    ts = [TOOLS[i] for i in ids]; title = cmp_title(ids); path = f"/compare/{key}/"
+    cols = len(ts); hdr = "".join(f'<th scope="col" class="c{k}"><a href="{prof(t)}">{E(t["name"])}</a></th>' for k, t in enumerate(ts))
+    def row(lbl, f): return f'<tr><th scope="row">{lbl}</th>' + "".join(f"<td>{f(t)}</td>" for t in ts) + "</tr>"
+    feats = lambda t: "<ul>" + "".join(f'<li>{E(x["name"])}: {E(x.get("notes") or x["price"])}</li>' for x in PD(t).get("tiers", [])[:3]) + "</ul>" if PD(t).get("tiers") else NV
+    tbl = (f'<div class="tbl mx"><table class="cmp"><thead><tr><th></th>{hdr}</tr></thead><tbody>' + row("Starting price", lambda t: ev(PD(t).get("starting_price"))) +
+           row("Pricing model", lambda t: ev(PD(t).get("model"))) + row("Free tier", lambda t: E(PD(t)["free_tier"]) if PD(t).get("free_tier") else ('<span class="no">✕ None listed</span>' if free_plan(t) == "no" else NV)) + row("Best for", lambda t: ev(t.get("best_for"))) +
+           row("Main limitation", lambda t: ev(t.get("main_limitation"))) + row("Key plans &amp; features", feats) +
+           row("Platforms", lambda t: E(", ".join(t.get("platforms") or [])) or NV) + row("Integrations", lambda t: E(", ".join(t.get("integrations") or [])) or NV) +
+           row("Last checked", lambda t: E(fmt_date(t.get("last_verified"))) if verified(t) else NV) + row("", lambda t: f'<a class="go" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit {E(t["name"])} →</a>') + '</tbody></table></div>')
+    nums = [(t, price_num(PD(t).get("starting_price"))) for t in ts]; mx = max([n for _, n in nums if n] or [1])
+    bars = "".join(f'<div class="pbar"><span class="bl">{E(t["name"])}</span><span class="bt"><i class="c{k}" style="width:{max(4, n / mx * 100):.0f}%"></i></span><span class="bv">{E(PD(t)["starting_price"])}</span></div>' if n else
+                   f'<div class="pbar"><span class="bl">{E(t["name"])}</span><span class="bt"></span><span class="bv">{NV}</span></div>' for k, (t, n) in enumerate(nums))
+    srcs = "".join(f'<li>{E(t["name"])}: <a href="{E(x["url"])}" target="_blank" rel="noopener nofollow">{E(x["label"])}</a> <span class="muted small">checked {fmt_date(x["checked"])}</span></li>' for t in ts for x in t.get("sources", []))
+    ld = [ORG, SITE, {"@type": "WebPage", "name": title, "url": BASE+path, "about": [{"@type": "SoftwareApplication", "name": t["name"], "url": t["url"]} for t in ts]}]
+    body = f"""<main><section class="hero sub"><div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">ToolRank</a> › <a href="/compare/">Compare</a></nav><h1>{E(title)}</h1>
+<p class="muted small">Updated {fmt_date(CHECK_DATE)} · Facts from vendor pages · {METH_LINK}</p></div></section>
+<section class="sec"><div class="wrap"><div class="card pick"><h2>Who should pick which</h2><p>{PICK[key]}</p></div>
+<h2>Side by side</h2>{tbl}<p class="muted small">Prices as listed by each vendor on the check date, before tax. Plans and limits change; follow the sources below.</p>
+<h2>Starting price</h2><div class="bars">{bars}</div><p class="muted small">Lowest paid plan shown on each vendor&rsquo;s pricing page. Currencies as listed.</p>
+<p><a class="btn ghost" href="{E(cmp_url(*ts))}">Open in the interactive comparer →</a></p>
+<h2>Sources</h2><ul class="srcs">{srcs}</ul>{DISCLOSE}</div></section></main>"""
+    return doc(head(f"{title}: pricing, free tier & limits compared ({UPD[:4]}) | ToolRank", f"{title} compared from vendor pricing pages checked {fmt_date(CHECK_DATE)}: starting prices, free tiers, best for and main limitations.", path, ld), body)
+
+def compare_ui_page():
+    cats = "".join(f'<option value="{c["id"]}">{E(c["title"])}</option>' for c in D["categories"])
+    presets = "".join(f'<a class="chip" href="/compare/{k}/">{E(cmp_title(ids))}</a>' for k, ids in COMPARES)
+    body = f"""<main class="cmpui"><section class="hero sub"><div class="wrap"><h1>Compare AI tools</h1><p class="lead">Pick up to 4 tools. Every fact comes from vendor pages; gaps say &ldquo;Not yet verified&rdquo;.</p><div class="chips">{presets}<a class="chip" href="/methodology/">How we rank →</a></div></div></section>
+<div class="wrap cwrap"><aside class="cside" aria-label="Filters"><h2 class="sh3">Filters</h2>
+<label>Category<select id="fcat"><option value="">All categories</option>{cats}</select></label>
+<label class="ck"><input type="checkbox" id="ffree"> Free plan</label><label class="ck"><input type="checkbox" id="ftrial"> Free trial</label>
+<label>Max starting price: <b id="fpv">Any</b><input type="range" id="fprice" min="0" max="100" step="5" value="100"></label>
+<fieldset><legend>Platforms</legend><div id="fplat"></div></fieldset>
+<label class="ck"><input type="checkbox" id="fver"> Verified only</label>
+<div class="picker"><label for="fq">Add a tool</label><input id="fq" type="search" placeholder="Search tools…" autocomplete="off"><ul id="fres" role="listbox"></ul></div></aside>
+<section class="cmain" aria-live="polite"><div id="ccards" class="ccards"></div><div id="cmatrix"></div><p class="muted small">Ratings are from moderated user reviews. Some links may be affiliate links. They never affect rank.</p></section></div></main>
+<script src="/assets/compare.js" defer></script>"""
+    return doc(head("Compare AI tools side by side: pricing, free tiers, limits | ToolRank", "Interactive comparison of AI tools: starting price, free tier limits, platforms, integrations, best for and main limitation, from vendor pages.", "/compare/", [ORG, SITE]), body)
+
+COMPARE_JS = r"""(()=>{const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const slug=n=>n.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");const NV='<span class="nv">Not yet verified</span>';
+const dom=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch(e){return""}};
+const fd=s=>{if(!s)return"";const d=new Date(s+"T00:00:00");return d.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"})};
+const pn=s=>{const m=/[$€£]\s?([0-9][0-9,]*(?:\.[0-9]+)?)/.exec(s||"");return m?parseFloat(m[1].replace(/,/g,"")):null};
+let T=[],RV={},sel=[];const P=t=>t.pricing_detail||{};
+const freeP=t=>P(t).free_tier?"yes":(t.last_verified&&P(t).model==="paid"?"no":null);
+const trial=t=>/trial/i.test((P(t).free_tier||"")+" "+(P(t).notes||""));
+const yn=v=>v==="yes"?'<span class="yes">✓ Yes</span>':v==="no"?'<span class="no">✕ No</span>':NV;
+const nv=v=>v?esc(v):NV;
+function url(){const u=new URL(location);sel.length?u.searchParams.set("tools",sel.join(",")):u.searchParams.delete("tools");history.replaceState(null,"",u)}
+function filt(){const c=$("#fcat").value,f=$("#ffree").checked,tr=$("#ftrial").checked,v=$("#fver").checked,mx=+$("#fprice").value,pl=[...document.querySelectorAll("#fplat input:checked")].map(x=>x.value),q=$("#fq").value.toLowerCase().trim();
+ return T.filter(t=>(!c||t.cat===c)&&(!f||freeP(t)==="yes")&&(!tr||trial(t))&&(!v||t.last_verified)&&(mx>=100||(pn(P(t).starting_price)??(freeP(t)==="yes"?0:1e9))<=mx)&&(!pl.length||pl.some(p=>(t.platforms||[]).includes(p)))&&(!q||t.name.toLowerCase().includes(q)))}
+function list(){const r=filt().filter(t=>!sel.includes(t.s)).slice(0,40);$("#fres").innerHTML=r.map(t=>`<li><button type="button" data-add="${t.s}"><img src="https://www.google.com/s2/favicons?domain=${esc(dom(t.url))}&amp;sz=32" alt="" width="18" height="18">${esc(t.name)}<span class="muted small">${esc(t.ct)}</span>${t.last_verified?'<span class="vb">verified</span>':""}</button></li>`).join("")||'<li class="muted small">No tools match these filters.</li>'}
+function rating(t){const rs=RV[t.s]||[];if(!rs.length)return'<span class="muted small">No reviews yet</span>';const a=Math.round(rs.reduce((x,r)=>x+r.rating,0)/rs.length*10)/10;return`<span class="st">★ ${a}</span> <span class="muted small">${rs.length} review${rs.length>1?"s":""}</span>`}
+function render(){const ts=sel.map(s=>T.find(t=>t.s===s)).filter(Boolean);
+ $("#ccards").innerHTML=ts.map((t,k)=>`<article class="ccard c${k}"><div class="cg"><span class="lg" data-l="${esc(t.name[0])}"><img src="https://www.google.com/s2/favicons?domain=${esc(dom(t.url))}&amp;sz=64" alt="" width="40" height="40" onerror="this.remove()"></span><button type="button" class="rm" data-rm="${t.s}" aria-label="Remove ${esc(t.name)}">×</button></div>
+ <div class="cb"><h3><a href="/tools/${t.s}/">${esc(t.name)}</a></h3><p class="muted small">#${t.r} in ${esc(t.ct)}</p><div>${rating(t)}</div><dl class="evd"><dt>Starts at</dt><dd>${nv(P(t).starting_price)}</dd><dt>Free plan</dt><dd>${yn(freeP(t))}</dd><dt>Best for</dt><dd>${nv(t.best_for)}</dd><dt>Main limitation</dt><dd>${nv(t.main_limitation)}</dd><dt>Last verified</dt><dd>${t.last_verified?fd(t.last_verified):NV}</dd></dl>
+ <a class="btn sm" href="${esc(t.affiliate_url||t.url)}" target="_blank" rel="noopener${t.affiliate_url?" sponsored":""}">Visit site →</a></div></article>`).join("")+(ts.length<4?`<div class="ccard add"><p>Add ${ts.length?"another":"a"} tool</p><p class="muted small">Use the search in the filters${innerWidth<900?" below":""} to add up to 4.</p><button type="button" class="btn ghost sm" id="addf">Search tools</button></div>`:"");
+ const a=$("#addf");if(a)a.onclick=()=>{$("#fq").focus();$("#fq").scrollIntoView({block:"center"})};
+ const rows=[["Pricing model",t=>nv(P(t).model)],["Starting price",t=>nv(P(t).starting_price)],["Free tier",t=>freeP(t)==="yes"?'<span class="yes">✓</span> '+esc(P(t).free_tier):freeP(t)==="no"?'<span class="no">✕ None listed</span>':NV],["Free trial",t=>trial(t)?'<span class="yes">✓ Yes</span>':(t.last_verified?'<span class="no">✕ Not listed</span>':NV)],
+  ["Platforms",t=>(t.platforms||[]).length?esc(t.platforms.join(", ")):NV],["Integrations",t=>(t.integrations||[]).length?esc(t.integrations.join(", ")):NV],["Model / provider",t=>nv(t.model_provider)],["Best for",t=>nv(t.best_for)],["Avoid if",t=>nv(t.avoid_if)],["Last verified",t=>t.last_verified?fd(t.last_verified):NV],["Sources",t=>(t.sources||[]).length?t.sources.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener nofollow">${esc(x.label)}</a>`).join("<br>"):NV]];
+ $("#cmatrix").innerHTML=ts.length?`<h2>Feature matrix</h2><div class="tbl mx"><table class="cmp"><thead><tr><th>Feature</th>${ts.map((t,k)=>`<th class="c${k}">${esc(t.name)}</th>`).join("")}</tr></thead><tbody>${rows.map(([l,f])=>`<tr><th scope="row">${l}</th>${ts.map(t=>`<td>${f(t)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`:'<p class="muted">Pick tools to compare, or start with a preset above.</p>';
+ url();list()}
+document.addEventListener("click",e=>{const a=e.target.closest("[data-add]"),r=e.target.closest("[data-rm]");if(a&&sel.length<4){sel.push(a.dataset.add);render()}else if(a){alert("You can compare up to 4 tools. Remove one first.")}if(r){sel=sel.filter(s=>s!==r.dataset.rm);render()}});
+Promise.all([fetch("/data/tools.json").then(r=>r.json()),fetch("/data/reviews.json").then(r=>r.json()).catch(()=>({reviews:[]}))]).then(([d,rv])=>{
+ d.categories.forEach(c=>c.tools.forEach((t,i)=>T.push({...t,s:slug(t.name),cat:c.id,ct:c.title,r:i+1})));
+ (rv.reviews||[]).filter(r=>r.listed).forEach(r=>(RV[r.tool_slug]=RV[r.tool_slug]||[]).push(r));
+ const pls=[...new Set(T.flatMap(t=>t.platforms||[]))].sort();$("#fplat").innerHTML=pls.map(p=>`<label class="ck"><input type="checkbox" value="${esc(p)}"> ${esc(p)}</label>`).join("");
+ const q=new URLSearchParams(location.search).get("tools");sel=(q?q.split(","):["cursor","claude-code"]).filter(s=>T.some(t=>t.s===s)).filter((s,i,a)=>a.indexOf(s)===i).slice(0,4);
+ const c0=T.find(t=>t.s===sel[0]);if(c0&&q&&sel.length===1)$("#fcat").value=c0.cat;
+ ["#fcat","#ffree","#ftrial","#fver","#fprice","#fq"].forEach(s=>$(s).addEventListener("input",()=>{if(s==="#fprice"){const v=+$(s).value;$("#fpv").textContent=v>=100?"Any":"$"+v}list()}));$("#fplat").addEventListener("change",list);render()})})();
+"""
+
+EV_CSS = """
+.nv{color:#fbbf24;font-size:.92em;font-weight:500}.yes{color:#4ade80;font-weight:600}.no{color:#f87171;font-weight:600}
+.evd{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:4px 0;font-size:14px}.evd dt{color:var(--mut);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;padding-top:2px}.evd dd{margin:0;color:#d6dae3}
+.acts{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:auto;font-size:14px}.acts a{color:var(--mut);font-weight:600}.acts a:hover{color:#fff}.acts .go{margin-left:auto;color:var(--acc2)}
+a.tl{color:inherit}a.tl:hover{color:var(--acc2)}.updl{margin:10px 0 0;font-size:14px;color:var(--mut)}
+.prof .phero{text-align:left}.pt{display:flex;gap:18px;align-items:center;margin:14px 0}.pt .lg{width:64px;height:64px;flex:none}.pt h1{font-size:clamp(34px,5vw,54px);font-weight:800;margin:0}.pt .lead{margin:6px 0 0}
+.pmeta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.rankpill{background:#7c5cff26;border:1px solid #7c5cff66;border-radius:99px;padding:4px 12px;font-weight:600;font-size:13.5px}
+.pacts{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 6px}.disc{margin:6px 0 0}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:32px;padding-bottom:60px}.pside{display:flex;flex-direction:column;gap:16px;position:sticky;top:90px;align-self:start}
+.psec{border-bottom:1px solid var(--line);padding:26px 0}.psec h2{font-size:22px}.psec.warn h2::before{content:"⚠ ";color:#fbbf24}.psec.bf{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.tbl{overflow-x:auto;margin:10px 0;border:1px solid var(--line);border-radius:16px}.tbl table{border-collapse:collapse;width:100%;font-size:14.5px}.tbl th,.tbl td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.tbl tr:last-child>*{border-bottom:0}.tbl th[scope=row]{color:var(--mut);font-weight:600;white-space:nowrap}.tbl thead th{background:#ffffff08;font-family:var(--hf)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}.chip{border:1px solid var(--line);border-radius:99px;padding:5px 12px;font-size:13.5px;color:#d6dae3;background:#ffffff06}a.chip:hover{border-color:var(--acc)}
+.srcs{padding-left:18px}.srcs li{margin:6px 0}.rlist{padding-left:18px;margin:0}.rlist li{margin:6px 0}
+.prose{max-width:760px}.prose li{margin:8px 0;color:#c3c8d4}.prose p{color:#c3c8d4}
+.cmp thead th.c0{background:linear-gradient(135deg,#7c5cff,#5b3fd6)}.cmp thead th.c1{background:linear-gradient(135deg,#3b82f6,#5b8cff)}.cmp thead th.c2{background:linear-gradient(135deg,#0891b2,#22d3ee)}.cmp thead th.c3{background:linear-gradient(135deg,#a21caf,#c04cf0)}
+.cmp thead th a,.cmp thead th{color:#fff}.cmp td ul{margin:0;padding-left:16px}.pick{border-color:#7c5cff55;background:linear-gradient(135deg,#7c5cff14,#22d3ee0d);margin-bottom:26px}.pick p{font-size:16.5px;line-height:1.65}
+.bars{display:flex;flex-direction:column;gap:10px;margin:12px 0}.pbar{display:grid;grid-template-columns:130px 1fr minmax(120px,auto);gap:12px;align-items:center;font-size:14px}.bt{height:14px;background:#ffffff0a;border-radius:99px;overflow:hidden}.bt i{display:block;height:100%;border-radius:99px}
+.bt i.c0{background:linear-gradient(90deg,#7c5cff,#a78bfa)}.bt i.c1{background:linear-gradient(90deg,#3b82f6,#5b8cff)}.bt i.c2{background:linear-gradient(90deg,#0891b2,#22d3ee)}.bt i.c3{background:linear-gradient(90deg,#a21caf,#c04cf0)}
+.fresh{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;align-items:center;margin:18px auto 0;font-size:14px}.fresh .fl0{color:var(--mut);font-weight:600}
+.cwrap{display:grid;grid-template-columns:270px minmax(0,1fr);gap:26px;padding-bottom:60px}.cside{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:14px;align-self:start;position:sticky;top:90px;max-height:calc(100vh - 110px);overflow:auto}
+.sh3{font-size:17px;margin:0}.cside label{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--mut);font-weight:600}.cside label.ck{flex-direction:row;align-items:center;gap:8px;color:var(--txt);font-weight:500}
+.cside select,.cside input[type=search]{background:var(--bg2);border:1px solid var(--line);color:var(--txt);border-radius:10px;padding:9px 10px;font:500 14px Inter}.cside input[type=range]{accent-color:#7c5cff}.cside input[type=checkbox]{accent-color:#7c5cff;width:16px;height:16px}
+.cside fieldset{border:0;padding:0;margin:0}.cside legend{font-size:14px;color:var(--mut);font-weight:600;margin-bottom:6px}#fplat{display:grid;grid-template-columns:1fr 1fr;gap:4px}#fplat label{font-size:13px}
+#fres{list-style:none;padding:0;margin:6px 0 0;max-height:280px;overflow:auto}#fres button{display:flex;gap:8px;align-items:center;width:100%;background:none;border:0;border-radius:8px;color:var(--txt);padding:7px 6px;font:500 14px Inter;text-align:left;cursor:pointer}#fres button:hover{background:#ffffff0d}#fres button .muted{margin-left:auto}#fres img{border-radius:4px;background:#fff}.vb{font-size:10.5px;color:#4ade80;border:1px solid #4ade8055;border-radius:99px;padding:1px 6px}
+.ccards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:26px}.ccard{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.ccard .cg{height:74px;position:relative;padding:16px}.ccard.c0 .cg{background:linear-gradient(135deg,#7c5cff,#c04cf0)}.ccard.c1 .cg{background:linear-gradient(135deg,#3b82f6,#7c5cff)}.ccard.c2 .cg{background:linear-gradient(135deg,#0891b2,#22d3ee)}.ccard.c3 .cg{background:linear-gradient(135deg,#c04cf0,#ff6b9a)}
+.ccard .cg .lg{position:absolute;bottom:-22px;left:16px;width:52px;height:52px;border:3px solid var(--card)}.ccard .rm{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:50%;border:0;background:#0006;color:#fff;font-size:18px;cursor:pointer}
+.ccard .cb{padding:30px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}.ccard h3{margin:0}.ccard h3 a{color:#fff}.ccard .btn{margin-top:auto}.ccard .evd{font-size:13px}
+.ccard.add{align-items:center;justify-content:center;text-align:center;padding:24px;border-style:dashed;gap:8px}.btn.sm{padding:9px 16px;font-size:14px}
+.cwrap>*{min-width:0}.mx th[scope=row]{position:sticky;left:0;background:var(--card);z-index:1}.mx table{min-width:640px}
+@media(max-width:900px){.pgrid{grid-template-columns:1fr}.pside{position:static}.psec.bf{grid-template-columns:1fr}.cwrap{grid-template-columns:1fr}.cside{position:static;max-height:none;order:2}
+.ccards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}.ccard{flex:0 0 82%;scroll-snap-align:start}.pbar{grid-template-columns:90px 1fr;}.pbar .bv{grid-column:1/-1;font-size:13px;color:var(--mut)}}
+"""
 
 def patch(fn, block, extra=None):
     p = ROOT/fn; s = p.read_text()
@@ -509,12 +739,19 @@ def main():
         d = ROOT/"best"/c["id"]; d.mkdir(parents=True, exist_ok=True); (d/"index.html").write_text(page(c))
     for o, n in REDIRECTS.items():
         d = ROOT/"best"/o; d.mkdir(parents=True, exist_ok=True); (d/"index.html").write_text(redirect_page(o, n))
+    (ROOT/"assets/ev.css").write_text(EV_CSS); (ROOT/"assets/compare.js").write_text(COMPARE_JS)
+    for c, i, t in ALLT:
+        d = ROOT/"tools"/slug(t["name"]); d.mkdir(parents=True, exist_ok=True); (d/"index.html").write_text(profile_page(c, i, t))
+    for name, fn in (("methodology", methodology_page), ("claim", claim_page), ("compare", compare_ui_page)):
+        (ROOT/name).mkdir(exist_ok=True); (ROOT/name/"index.html").write_text(fn())
+    for k, ids in COMPARES:
+        (ROOT/"compare"/k).mkdir(parents=True, exist_ok=True); (ROOT/"compare"/k/"index.html").write_text(cmp_page(k, ids))
     (ROOT/"reviews.html").write_text(reviews_page()); (ROOT/"services.html").write_text(services_page()); (ROOT/"index.html").write_text(home(cats))
     opts = "".join(f"<option>{E(c['title'])}</option>" for c in cats) + "<option>Other / new category</option>"
     def sub(s): return re.sub(r'(<select name="category"[^>]*>).*?(</select>)', lambda m: m.group(1) + opts + m.group(2), s, flags=re.S)
     patch("featured.html", head("Get your AI tool featured | ToolRank", "Featured placements and newsletter sponsorship on ToolRank. Featured spots are clearly labelled; rankings stay editorial.", "/featured.html", [ORG, SITE]))
     patch("submit.html", head("Submit your AI tool for free | ToolRank", "Submit your AI tool to ToolRank for free. Every submission gets an editorial review; approved tools are listed in the right category.", "/submit.html", [ORG, SITE]), sub)
-    urls = ["/", "/reviews.html", "/services.html", "/submit.html", "/featured.html"] + [f"/best/{c['id']}/" for c in cats]
+    urls = ["/", "/reviews.html", "/services.html", "/submit.html", "/featured.html", "/methodology/", "/claim/", "/compare/"] + [f"/best/{c['id']}/" for c in cats] + [f"/compare/{k}/" for k, _ in COMPARES] + [prof(t) for _, _, t in ALLT]
     (ROOT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{UPD}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Perplexity-User", "Google-Extended", "Googlebot", "Bingbot", "Applebot", "Applebot-Extended"]
@@ -523,7 +760,8 @@ def main():
     L = [f"# ToolRank\n\n> Confused by AI? Editorial rankings of AI tools by use case. Last updated {UPD}. Rankings are editorial; featured placements are labelled. Launch offer: free for the first 100 tools (including featured placement); after that, free listing plus paid options at founding prices.\n\n## Categories\n"]
     L += [f"\nAudiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). {NT} tools ranked across {len(cats)} categories; {len(R)} approved user reviews.\n"]
     L += [f"- [{c['title']}]({BASE}/best/{c['id']}/): {c['blurb']} {len(c['tools'])} tools; #1: {c['tools'][0]['name']}." for c in cats]
-    L += [f"\n## Optional\n\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n- [Services for makers]({BASE}/services.html): free listing and Review Boost; founding prices (coming soon): Verified badge US$2, Featured spot US$5/mo, Launch spotlight US$9/wk, Comparison page US$15, Launch Kit US$19, AI Stack Audit US$29.\n- [Reviews]({BASE}/reviews.html): {len(R)} moderated user review(s) collected so far; leave one via GitHub.\n"]
+    def LLM_EV(): return (f"- [How we rank]({BASE}/methodology/): editorial, evidence-based; sources and check dates on every tool profile at {BASE}/tools/<slug>/.\n- [Compare tools (interactive)]({BASE}/compare/)\n" + "".join(f"- [{cmp_title(ids)}]({BASE}/compare/{k}/)\n" for k, ids in COMPARES) + f"- [Claim your listing (free)]({BASE}/claim/)\n")
+    L += [f"\n## Optional\n\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n- [Services for makers]({BASE}/services.html): free listing and Review Boost; founding prices (coming soon): Verified badge US$2, Featured spot US$5/mo, Launch spotlight US$9/wk, Comparison page US$15, Launch Kit US$19, AI Stack Audit US$29.\n" + LLM_EV() + f"- [Reviews]({BASE}/reviews.html): {len(R)} moderated user review(s) collected so far; leave one via GitHub.\n"]
     (ROOT/"llms.txt").write_text("\n".join(L))
     F = [f"# ToolRank: full rankings\n\nLast updated {UPD}. Source: {BASE}/. Editorial ranking; position 1 = top pick. Pricing labels: free / freemium / paid (as listed; verify with vendor).\n"]
     for c in cats:
@@ -538,13 +776,13 @@ def main():
           'goatcounter.count({path:"click/"+s,title:n,event:true})});</script><!--/GC-->')
     PRIV = '<!--PRIV--><p class="small muted">Privacy: cookieless, privacy-friendly analytics via <a href="https://www.goatcounter.com" rel="noopener" target="_blank">GoatCounter</a>. No cookies, no personal data, no tracking across sites.</p><!--/PRIV-->'
     import hashlib
-    V = {a: hashlib.sha1((ROOT/"assets"/a).read_bytes()).hexdigest()[:8] for a in ("app.js", "style.css", "hero.js")}
+    V = {a: hashlib.sha1((ROOT/"assets"/a).read_bytes()).hexdigest()[:8] for a in ("app.js", "style.css", "hero.js", "ev.css", "compare.js")}
     for h in ROOT.rglob("*.html"):
         if "shots" in h.parts or h.parent.name in REDIRECTS: continue
         s = h.read_text(); n = re.sub(r"<!--GC-->.*?<!--/GC-->", "", s, flags=re.S); n = re.sub(r"<!--PRIV-->.*?<!--/PRIV-->", "", n, flags=re.S)
         n = n.replace('<p class="muted small">©', PRIV + '<p class="muted small">©', 1).replace("</body>", GC + "</body>", 1)
         if 'class="hero' in n and "assets/hero.js" not in n: n = n.replace("</body>", '<script defer src="/assets/hero.js"></script></body>', 1)
-        n = re.sub(r'(assets/(app\.js|style\.css|hero\.js))(\?v=[0-9a-f]+)?"', lambda m: f'{m.group(1)}?v={V[m.group(2)]}"', n)
+        n = re.sub(r'(assets/(app\.js|style\.css|hero\.js|ev\.css|compare\.js))(\?v=[0-9a-f]+)?"', lambda m: f'{m.group(1)}?v={V[m.group(2)]}"', n)
         if n != s: h.write_text(n)
     print(f"cache-bust: app.js?v={V['app.js']} style.css?v={V['style.css']}")
     print(f"built {len(cats)} category pages + {len(REDIRECTS)} redirects, sitemap ({len(urls)} urls), robots, llms.txt, llms-full.txt")

@@ -30,4 +30,10 @@ Audiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and de
 - [Submit a tool (free)](https://toolrank.io/submit.html)
 - [Get featured](https://toolrank.io/featured.html)
 - [Services for makers](https://toolrank.io/services.html): free listing and Review Boost; founding prices (coming soon): Verified badge US$2, Featured spot US$5/mo, Launch spotlight US$9/wk, Comparison page US$15, Launch Kit US$19, AI Stack Audit US$29.
+- [How we rank](https://toolrank.io/methodology/): editorial, evidence-based; sources and check dates on every tool profile at https://toolrank.io/tools/<slug>/.
+- [Compare tools (interactive)](https://toolrank.io/compare/)
+- [Cursor vs Claude Code](https://toolrank.io/compare/cursor-vs-claude-code/)
+- [Lovable vs Bolt.new](https://toolrank.io/compare/lovable-vs-bolt-new/)
+- [Make vs n8n vs Zapier](https://toolrank.io/compare/make-vs-n8n-vs-zapier/)
+- [Claim your listing (free)](https://toolrank.io/claim/)
 - [Reviews](https://toolrank.io/reviews.html): 0 moderated user review(s) collected so far; leave one via GitHub.
