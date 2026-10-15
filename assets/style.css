@@ -140,3 +140,5 @@ body>section.hero:not(.home):not(.sub):not(.cathero){padding-top:56px}
 .nl-foot{margin-bottom:40px}
 .nl-compact{flex-direction:column;align-items:stretch;gap:14px;padding:22px;margin-top:20px}.nl-compact h2{font-size:19px}.nl-compact p{font-size:14px}.nl-compact .nlt,.nl-compact .nlf{flex:none;max-width:none}
 @media(max-width:560px){.nlf{flex-direction:column}.nl .btn{width:100%}}
+body:has(.nl-home) .nl-foot{display:none}
+@media(max-width:560px){.nl input{flex:none;width:100%}}
