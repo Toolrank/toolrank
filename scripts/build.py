@@ -424,14 +424,14 @@ def trending_html():
         page_, t = tl(x["tool"])
         visit = f'<a class="go" href="{E(link(t))}" target="_blank" rel="{rel(t)}">Visit {E(x["tool"])} →</a>' if t else ""
         big.append(f'<article class="fcard"><div class="fv"><img src="/assets/trend/v{i+1}.svg" alt="" width="800" height="450"></div>'
-                   f'<div class="fb"><div class="fm">{logo_html(t, 40) if t else ""}<p class="eyebrow">#{i+1} on Hacker News · {x["points"]} pts · {x["stories"]} stor{"ies" if x["stories"] != 1 else "y"}</p></div>'
+                   f'<div class="fb"><div class="fm">{logo_html(t, 40) if t else ""}<p class="eyebrow">#{i+1} on Hacker News · {x["points"]} upvote{"s" if x["points"] != 1 else ""} · {x["stories"]} stor{"ies" if x["stories"] != 1 else "y"}</p></div>'
                    f'<h3>{f"<a href=\"{page_}\">{E(x["tool"])}</a>" if page_ else E(x["tool"])}</h3><p class="hl">&ldquo;{E(x["top_title"] or "")}&rdquo;</p>'
-                   f'<div class="fa">{visit}<a class="hnl" href="{E(x["top_url"])}" target="_blank" rel="noopener nofollow">HN discussion ↗</a></div></div></article>')
+                   f'<div class="fa">{visit}<a class="hnl" href="{E(x["top_url"])}" target="_blank" title="Read the discussion on Hacker News" rel="noopener nofollow">Discussion ↗</a></div></div></article>')
     rows = []
     for i, x in enumerate(hn[3:], 4):
         page_, t = tl(x["tool"])
         rows.append(f'<li><span class="n">{i}</span>{logo_html(t, 28) if t else ""}<div class="ri"><a class="rn" href="{page_ or E(x["top_url"])}">{E(x["tool"])}</a><span class="muted small">{E(x["top_title"] or "")}</span></div>'
-                    f'<span class="up">{x["points"]} pts</span><span class="ra">{f"<a class=\"go\" href=\"{E(link(t))}\" target=\"_blank\" rel=\"{rel(t)}\">Visit {E(x["tool"])} →</a>" if t else ""}<a class="hnl" href="{E(x["top_url"])}" target="_blank" rel="noopener nofollow">HN ↗</a></span></li>')
+                    f'<span class="up">{x["points"]} upvote{"s" if x["points"] != 1 else ""}</span><span class="ra">{f"<a class=\"go\" href=\"{E(link(t))}\" target=\"_blank\" rel=\"{rel(t)}\">Visit {E(x["tool"])} →</a>" if t else ""}<a class="hnl" href="{E(x["top_url"])}" target="_blank" title="Read the discussion on Hacker News" rel="noopener nofollow">Discussion ↗</a></span></li>')
     if not hn: big = ['<p class="muted">No Hacker News stories linking to ranked tools in the last 7 days.</p>']
     extra = []
     if T.get("stars"):
@@ -447,10 +447,10 @@ def trending_html():
         return "".join(out)
     ex = "".join(f'<h3 class="subh">{E(h)}</h3><ol class="trows">{xrows(it)}</ol>' for h, it in extra)
     upd = f' Last update {E(T["fetched"])}.' if T.get("fetched") else ""
-    return (f'<section class="sec" id="trending"><div class="wrap"><div class="sh"><p class="eyebrow">Trending this week</p><h2 class="big">What people are talking about.</h2>'
+    return (f'<section class="sec" id="trending"><div class="wrap"><div class="sh"><p class="eyebrow">Trending this week</p><h2 class="big">The AI tools people are talking about most.</h2>'
             f'<p class="muted">Real public signals, refreshed daily. Not paid, not editorial rank.{upd}</p></div><div class="fcards">{"".join(big)}</div>'
             + (f'<ol class="trows">{"".join(rows)}</ol>' if rows else "") + ex +
-            '<p class="muted small how">How we rank: Hacker News buzz, GitHub stars gained and clicks on ToolRank over the last 7 days.</p></div></section>')
+            '<p class="muted small how">How we rank: Buzz on Hacker News (tech news site), GitHub stars gained and clicks on ToolRank over the last 7 days.</p></div></section>')
 
 ACR = {"ai", "ui", "api", "cad", "llm", "mcp", "cli", "sdk", "gpt", "ml", "rag", "pdf", "ios", "3d", "tts", "ocr"}
 def pretty_repo(r):
