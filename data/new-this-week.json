@@ -1,34 +1,41 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "note": "GitHub items dated by trending snapshot date, not repo creation date.",
  "items": [
   {
-   "date": "2026-10-13",
-   "title": "Gemini 4 Argon",
-   "summary": "Google's new frontier model, available via Gemini API, AI Studio and the Gemini app (Pro/Ultra). Intro price $2/$10 per 1M tokens until Nov 30.",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+   "date": "2026-10-15",
+   "title": "Muse Spark Open",
+   "summary": "Meta releases the weights for Muse Spark Open, a natively multimodal 816B-parameter (42B active) model with a 1M-token context, built for coding and agentic work. Runs on two M5 Ultra Mac Studios via MLX; Muse Model License.",
+   "url": "https://research.meta.ai/blog/muse-spark-open",
    "type": "model"
   },
   {
-   "date": "2026-10-07",
-   "title": "GPT-6 with Intelligent UI",
-   "summary": "OpenAI rolls out GPT-6 with Intelligent UI to ChatGPT, paid tiers first, then Free and Go.",
-   "url": "https://openai.com/index/gpt-6-for-everyone/",
+   "date": "2026-10-15",
+   "title": "NVIDIA Nemotron 3.5 Super VL",
+   "summary": "NVIDIA's open 120B-parameter multimodal model for always-on agents, available now on Hugging Face, OpenRouter, ModelScope and as NVIDIA NIM. Released alongside Nemotron 3.5 Bolt 74B-A9B for local 24GB systems.",
+   "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
    "type": "model"
   },
   {
-   "date": "2026-10-07",
-   "title": "Claude Haiku 5.5",
-   "summary": "Anthropic's cheapest, fastest small model, on Claude Platform, AWS, Google Cloud and Azure.",
-   "url": "https://www.anthropic.com/claude-haiku-5-5",
+   "date": "2026-10-15",
+   "title": "FLUX 3 Image Klein",
+   "summary": "Black Forest Labs' 5.6B open-weights model for text-to-image, editing and multi-reference generation (up to 10 images), with native 4K and bounding-box control. Runs on 8GB-VRAM GPUs with the INT8 build; also in the BFL API.",
+   "url": "https://bfl.ai/blog/flux-3-image-klein",
    "type": "model"
   },
   {
-   "date": "2026-10-06",
-   "title": "Mistral Large 4 (preview)",
-   "summary": "Public preview API of Mistral's open-weight frontier model; weights promised by end of October.",
-   "url": "https://mistral.ai/news/mistral-large-4/",
+   "date": "2026-10-15",
+   "title": "Mistral Timestral",
+   "summary": "Mistral's first family of time-series foundation models (5M to 209M parameters) for probabilistic, multivariate forecasting. Runs on CPU; Modified MIT licence.",
+   "url": "https://mistral.ai/news/timestral/",
    "type": "model"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "Claude Code Review (GA)",
+   "summary": "Anthropic's Code Review is out of research preview for Claude Team and Enterprise. Reviews run automatically on new PRs, now about 3x faster, with Quick, Standard or Deep levels per repository.",
+   "url": "https://claude.com/resources/articles/code-review-is-now-generally-available",
+   "type": "launch"
   },
   {
    "date": "2026-10-15",
@@ -57,6 +64,27 @@
    "summary": "GitHub weekly trending: gives agents CAD capabilities.",
    "url": "https://github.com/earthtojake/text-to-cad",
    "type": "github"
+  },
+  {
+   "date": "2026-10-14",
+   "title": "Grok Voice 3.0",
+   "summary": "xAI's new speech-to-speech model, with sub-second latency, available today in the Voice Agent API at $0.08/min, the same price as Grok Voice 2.0.",
+   "url": "https://x.ai/news/grok-voice-3",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-13",
+   "title": "Liquid AI LFM2.5-24B-A2B",
+   "summary": "Open-weight 24B reasoning model with just 2B active parameters, built for fast, private agents on-device. 131K context; on Hugging Face and Liquid's Playground.",
+   "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-13",
+   "title": "Gemini 4 Argon",
+   "summary": "Google's new frontier model, available via Gemini API, AI Studio and the Gemini app (Pro/Ultra). Intro price $2/$10 per 1M tokens until Nov 30.",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+   "type": "model"
   }
  ]
 }

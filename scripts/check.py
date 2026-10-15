@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Checks: JSON validity (data + JSON-LD), internal links/assets, outbound URLs.
 Usage: python3 scripts/check.py [--no-external]. Exit 1 on failure.
-Outbound: 2xx/3xx pass; 401/403/429 are WARN (common bot-blocking), other errors FAIL."""
-import json, re, sys, pathlib, urllib.request, urllib.error, concurrent.futures as cf
+Outbound: 2xx/3xx pass; 401/403/429 (common bot-blocking) and favicon-service 404s are WARN, other errors FAIL.
+Preconnect/dns-prefetch hints are skipped; attribute values are HTML-unescaped before checking."""
+import json, re, sys, html, pathlib, urllib.request, urllib.error, concurrent.futures as cf
 ROOT = pathlib.Path(__file__).resolve().parent.parent; BASE = "https://toolrank.io"
 fails, warns = [], []
+FAVICON = "https://www.google.com/s2/favicons?"
 for f in sorted((ROOT/"data").glob("*.json")):
     try: json.loads(f.read_text())
     except Exception as e: fails.append(f"JSON {f.name}: {e}")
@@ -33,7 +35,10 @@ for p in pages:
     if len(re.findall(r"<h1[ >]", s)) != 1: fails.append(f"{r}: expected exactly one h1")
     for img in re.findall(r"<img[^>]*>", s):
         if "alt=" not in img: fails.append(f"{r}: img without alt")
+    hints = set(re.findall(r'<link rel="(?:preconnect|dns-prefetch)" href="([^"]+)"', s))  # connection hints, not fetchable pages
     for h in re.findall(r'(?:href|src)="([^"]+)"', s):
+        h = html.unescape(h)
+        if h in hints: continue
         if h.startswith(("http://", "https://")):
             if not h.startswith(BASE): ext.add(h)
             continue
@@ -62,7 +67,8 @@ if "--no-external" not in sys.argv:
     with cf.ThreadPoolExecutor(12) as x:
         for u, st in sorted(x.map(get, sorted(ext))):
             if isinstance(st, int) and st < 400: continue
-            (warns if st in (401, 403, 429) else fails).append(f"outbound {u}: {st}")
+            soft = st in (401, 403, 429) or (st == 404 and u.startswith(FAVICON))  # favicon 404 = no icon; <img onerror> falls back to the letter badge
+            (warns if soft else fails).append(f"outbound {u}: {st}")
 print(f"pages checked: {len(pages)}, outbound urls: {len(ext)}")
 for w in warns: print("WARN", w)
 for f in fails: print("FAIL", f)
