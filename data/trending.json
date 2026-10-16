@@ -1,10 +1,88 @@
 {
- "fetched": "2026-10-15 09:13 UTC",
- "fetched_ts": 1792055605,
- "stars_baseline": null,
- "repos_tracked": 15,
- "stars": [],
+ "fetched": "2026-10-16 05:43 UTC",
+ "fetched_ts": 1792129382,
+ "stars_baseline": "2026-10-15",
+ "repos_tracked": 16,
+ "stars": [
+  {
+   "tool": "geo-sleuth",
+   "repo": "Oldcircle/geo-sleuth",
+   "gained": 115,
+   "stars": 3008,
+   "url": "https://github.com/Oldcircle/geo-sleuth"
+  },
+  {
+   "tool": "agent-memory",
+   "repo": "tigerless-labs/agent-memory",
+   "gained": 114,
+   "stars": 3822,
+   "url": "https://github.com/tigerless-labs/agent-memory"
+  },
+  {
+   "tool": "OpenAI Whisper",
+   "repo": "openai/whisper",
+   "gained": 108,
+   "stars": 110629,
+   "url": "https://github.com/openai/whisper"
+  },
+  {
+   "tool": "logo-design-skill",
+   "repo": "kaankiziltug/logo-design-skill",
+   "gained": 65,
+   "stars": 3458,
+   "url": "https://github.com/kaankiziltug/logo-design-skill"
+  },
+  {
+   "tool": "scroll-craft",
+   "repo": "nateherkai/scroll-craft",
+   "gained": 58,
+   "stars": 3515,
+   "url": "https://github.com/nateherkai/scroll-craft"
+  },
+  {
+   "tool": "Easel",
+   "repo": "ZJU-REAL/Easel",
+   "gained": 40,
+   "stars": 3685,
+   "url": "https://github.com/ZJU-REAL/Easel"
+  },
+  {
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 39,
+   "stars": 3635,
+   "url": "https://github.com/nykooi1/vibe-wise"
+  },
+  {
+   "tool": "jevgrep",
+   "repo": "dzhng/jevgrep",
+   "gained": 35,
+   "stars": 2727,
+   "url": "https://github.com/dzhng/jevgrep"
+  },
+  {
+   "tool": "ReelMimic",
+   "repo": "edenfunf/reelmimic",
+   "gained": 30,
+   "stars": 3333,
+   "url": "https://github.com/edenfunf/reelmimic"
+  },
+  {
+   "tool": "Gemini CLI",
+   "repo": "google-gemini/gemini-cli",
+   "gained": 15,
+   "stars": 107394,
+   "url": "https://github.com/google-gemini/gemini-cli"
+  }
+ ],
  "hn": [
+  {
+   "tool": "Krea",
+   "stories": 1,
+   "points": 284,
+   "top_title": "Krea 3 – An image model built for editing at scale",
+   "top_url": "https://news.ycombinator.com/item?id=50105648"
+  },
   {
    "tool": "Claude",
    "stories": 4,
@@ -13,11 +91,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50068405"
   },
   {
-   "tool": "Augment Code",
-   "stories": 2,
-   "points": 6,
-   "top_title": "Augment Code's Next Chapter",
-   "top_url": "https://news.ycombinator.com/item?id=50015056"
+   "tool": "Black Forest Labs (FLUX)",
+   "stories": 1,
+   "points": 7,
+   "top_title": "Flux 3 Image Klein",
+   "top_url": "https://news.ycombinator.com/item?id=50105288"
   },
   {
    "tool": "OpenCode",
@@ -25,13 +103,6 @@
    "points": 6,
    "top_title": "Migrating to OpenCode 2.0",
    "top_url": "https://news.ycombinator.com/item?id=50057747"
-  },
-  {
-   "tool": "CodeRabbit",
-   "stories": 1,
-   "points": 5,
-   "top_title": "1M+ monthly code reviews in open-source repos delivered by CodeRabbit",
-   "top_url": "https://news.ycombinator.com/item?id=50007032"
   },
   {
    "tool": "Cursor",
@@ -48,20 +119,6 @@
    "top_url": "https://news.ycombinator.com/item?id=50062703"
   },
   {
-   "tool": "HeyGen",
-   "stories": 1,
-   "points": 4,
-   "top_title": "HeyGen Video 1.0",
-   "top_url": "https://news.ycombinator.com/item?id=50009758"
-  },
-  {
-   "tool": "Exa",
-   "stories": 1,
-   "points": 4,
-   "top_title": "ATLAS: Evaluating Agents on Search-Intensive Tasks",
-   "top_url": "https://news.ycombinator.com/item?id=50008857"
-  },
-  {
    "tool": "Anatomy",
    "stories": 2,
    "points": 3,
@@ -69,11 +126,25 @@
    "top_url": "https://news.ycombinator.com/item?id=50053620"
   },
   {
+   "tool": "Augment Code",
+   "stories": 1,
+   "points": 2,
+   "top_title": "AI Engineering Maturity Model: 5 Stages for Teams",
+   "top_url": "https://news.ycombinator.com/item?id=50042292"
+  },
+  {
    "tool": "Webflow",
    "stories": 1,
    "points": 2,
    "top_title": "Design Systems",
    "top_url": "https://news.ycombinator.com/item?id=50088586"
+  },
+  {
+   "tool": "Synthesia",
+   "stories": 1,
+   "points": 2,
+   "top_title": "Synthesia Launches Syren: Video and Motion Graphics from a Single Prompt",
+   "top_url": "https://news.ycombinator.com/item?id=50022229"
   }
  ]
 }
