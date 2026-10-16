@@ -4,7 +4,7 @@ const dom=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch(e){retur
 const fd=s=>{if(!s)return"";const d=new Date(s+"T00:00:00");return d.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"})};
 const pn=s=>{const m=/[$€£]\s?([0-9][0-9,]*(?:\.[0-9]+)?)/.exec(s||"");return m?parseFloat(m[1].replace(/,/g,"")):null};
 let T=[],RV={},sel=[];const P=t=>t.pricing_detail||{};
-const freeP=t=>P(t).free_tier?"yes":(t.last_verified&&P(t).model==="paid"?"no":null);
+const freeP=t=>P(t).free_tier?"yes":(P(t).free_tier_unverified?null:(t.last_verified&&P(t).model==="paid"?"no":null));
 const trial=t=>/trial/i.test((P(t).free_tier||"")+" "+(P(t).notes||""));
 const yn=v=>v==="yes"?'<span class="yes">✓ Yes</span>':v==="no"?'<span class="no">✕ No</span>':NV;
 const nv=v=>v?esc(v):NV;

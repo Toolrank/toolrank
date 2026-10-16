@@ -7,7 +7,14 @@ Usage: python3 scripts/gen_bestof.py [--limit N]"""
 import json, re, sys, pathlib, html
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 D = json.loads((ROOT/"data/tools.json").read_text()); BO = json.loads((ROOT/"data/best-of.json").read_text())
-DAY = "2026-10-16"; DAYH = "16 Oct 2026"
+import datetime as dt
+def hday(d): return dt.date.fromisoformat(d).strftime("%-d %b %Y")
+def span(ds):
+    """Human date or date range for the check dates of the tools on a page, e.g. 16 Oct 2026 or 16–17 Oct 2026."""
+    ds = sorted(set(ds)); a, b = dt.date.fromisoformat(ds[0]), dt.date.fromisoformat(ds[-1])
+    if a == b: return hday(ds[0])
+    if (a.year, a.month) == (b.year, b.month): return f"{a.day}\u2013{b.day} {b.strftime('%b %Y')}"
+    return f"{hday(ds[0])} \u2013 {hday(ds[-1])}"
 def slug(n): return re.sub(r"[^a-z0-9]+", "-", n.lower()).strip("-")
 CAT = {c["id"]: c for c in D["categories"]}
 NOUN = {"ai-assistants": "AI assistants", "coding": "AI coding tools", "image": "AI image tools", "video": "AI video tools", "writing": "AI writing tools",
@@ -31,6 +38,7 @@ def usd(t):
 def freeness(i, t):
     if i in FREE_OVERRIDE: return FREE_OVERRIDE[i]
     pd = t.get("pricing_detail") or {}; f = (pd.get("free_tier") or "").lower()
+    if pd.get("free_tier_unverified") and not f and pd.get("model") != "free": return "unknown"  # vendor page did not show whether a free plan exists
     if pd.get("model") == "free" or t["pricing"] == "free": return "free"
     if ("trial" in f or "first month free" in f) and not re.search(r"free plan|free forever|free:|basic|starter|lite|hobby|personal|sandbox|\$0|free tier|free for|open source|free to|free version", f): return "trial"
     if f or any(re.match(r"\$?0\b|free", x["price"].lower()) for x in pd.get("tiers", [])): return "yes"
@@ -44,6 +52,7 @@ for c in D["categories"]:
         tiers = pd.get("tiers", []); tn = " ".join(x["name"] + " " + x["price"] + " " + x.get("notes", "") for x in tiers).lower()
         ALL.append(dict(id=i, cat=c["id"], rank=k, t=t, usd=usd(t), free=freeness(i, t), blob=blob, tiers=tiers, tn=tn))
 BYID = {a["id"]: a for a in ALL}
+def andl(xs): return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " and " + xs[-1]
 def low(s):
     s = (s or "").strip().rstrip("."); w = s.split(" ")[0] if s else ""
     return s if (len(w) > 1 and (w.isupper() or any(ch.isupper() for ch in w[1:]))) else s[:1].lower() + s[1:]
@@ -70,6 +79,10 @@ def add(cat, slug_, h1, title, sel, tierfn, angle, crit, needs, order="rank", or
     TOPICS.append(dict(cat=cat, slug=slug_, h1=h1, title=title, ids=ids[:10], tierfn=tierfn, angle=angle, crit=crit, needs=needs, order_note=order_note))
 def incat(c): return [a for a in ALL if a["cat"] == c]
 has = lambda a, *ws: any(w in a["blob"] for w in ws)
+def offers_api(a):
+    """The vendor offers its own API (not just 'works with LLM APIs', an 'API connector' to other services, or a model provider's API key)."""
+    b = re.sub(r"(most |any )?(llm|model|provider) apis?|api connector|gemini api|api keys?|openapi", " ", a["blob"])
+    return bool(re.search(r"\bapi\b", b))
 
 for c in CAT:
     N = NOUN[c]; S = SHORT[c]; pool = incat(c)
@@ -87,7 +100,7 @@ for c in CAT:
         f"These {N} are paid products: no permanent free plan is listed on their pricing pages", "no permanent free plan on the vendor page", "free_tier verified absent")
     add(c, f"{slug(N)}-with-mobile-apps", f"Best {N} with mobile apps", f"Best {S} With Mobile Apps (2026)", [a for a in pool if has(a, "ios", "android", "iphone", "mobile")], cheap_tier_name,
         f"Each of these {N} lists an iOS, Android or mobile app among its platforms", "a mobile app listed on the vendor site", "platforms verified")
-    add(c, f"{slug(N)}-with-an-api", f"Best {N} with an API", f"Best {S} With an API (2026)", [a for a in pool if has(a, "api")], cheap_tier_name,
+    add(c, f"{slug(N)}-with-an-api", f"Best {N} with an API", f"Best {S} With an API (2026)", [a for a in pool if offers_api(a)], cheap_tier_name,
         f"Each of these {N} offers an API, so you can build it into your own product or workflow", "an API listed by the vendor", "platforms/integrations verified")
     add(c, f"{slug(N)}-for-desktop", f"Best {N} with desktop apps", f"Best {S} With Desktop Apps (2026)", [a for a in pool if has(a, "desktop", "mac", "windows", "linux")], cheap_tier_name,
         f"Each of these {N} runs as a desktop app (Mac, Windows or Linux) rather than only in a browser", "a desktop app listed by the vendor", "platforms verified")
@@ -125,6 +138,7 @@ X = [
  ("coding", "ai-coding-tools-with-local-models", "Best AI coding tools that work with local models", "Best AI Coding Tools for Local Models (2026)", [a for a in incat("coding") if re.search(r"local models|ollama", a["blob"])], free_tier_name, "Each of these tools can use locally run models", "local models or Ollama listed by the vendor"),
  ("coding", "ai-coding-tools-for-github", "Best AI coding tools that work with GitHub", "Best AI Coding Tools for GitHub (2026)", [a for a in incat("coding") if "github" in a["blob"]], cheap_tier_name, "Each of these tools lists a GitHub integration", "GitHub listed as an integration"),
  ("coding", "ai-coding-agents-in-slack", "Best AI coding agents you can use from Slack", "Best AI Coding Agents for Slack (2026)", [a for a in incat("coding") if "slack" in a["blob"]], cheap_tier_name, "Each of these coding tools lists Slack among its integrations", "Slack listed by the vendor"),
+ ("automation", "python-ai-agent-frameworks", "Best open-source Python AI agent frameworks", "Best Python AI Agent Frameworks (2026)", [a for a in incat("automation") if "python framework" in a["blob"] and a["free"] in ("yes", "free")], free_tier_name, "Each of these is a code-first agent framework you can install in Python, with a free open-source or free tier to start", "a Python framework listed on the vendor's site or repository"),
  ("ai-assistants", "free-ai-chatbots", "Best free AI chatbots", "Best Free AI Chatbots (2026)", [a for a in incat("ai-assistants") if a["free"] in ("yes", "free")], free_tier_name, "These general assistants have a free plan we confirmed on each vendor's page", "a free plan for a general AI assistant"),
  ("business", "ai-assistants-for-office-suites", "Best AI assistants built into office suites", "Best AI Assistants for Office Suites (2026)", pick("microsoft-365-copilot", "gemini-for-google-workspace", "notion-ai", "clickup"), cheap_tier_name, "These AI assistants live inside a suite of documents, mail or work apps", "AI bundled into a productivity suite plan"),
  ("image", "ai-image-generators-with-api", "Best AI image generators with an API", "Best AI Image Generator APIs (2026)", [a for a in incat("image") if "api" in a["blob"]], cheap_tier_name, "Each of these image generators offers an API", "an API listed by the vendor"),
@@ -144,7 +158,7 @@ X = [
  ("writing", "ai-grammar-checkers", "Best AI grammar checkers and editors", "Best AI Grammar Checkers (2026)", pick("grammarly", "quillbot", "prowritingaid", "wordtune", "deepl-write"), cheap_tier_name, "These tools correct grammar and suggest edits to your writing", "grammar or editing as a core feature"),
  ("education", "ai-tools-for-teachers", "Best AI tools for teachers", "Best AI Tools for Teachers (2026)", pick("khanmigo", "magicschool"), free_tier_name, "AI tools built for teachers", "teacher plans"),
  ("health", "ai-fitness-trackers", "Best AI fitness wearables", "Best AI Fitness Wearables (2026)", pick("oura", "whoop"), cheap_tier_name, "Wearables with AI coaching", "membership pricing"),
- ("hospitality", "ai-tools-for-hotels", "Best AI tools for hotels", "Best AI Tools for Hotels (2026)", pick("hijiffy", "wonderplan"), cheap_tier_name, "Hotel guest messaging AI", "vendor pricing"),
+ ("hospitality", "ai-tools-for-hotels", "Best AI tools for hotels", "Best AI Tools for Hotels (2026)", pick("hijiffy", "canary-technologies", "asksuite", "duetto"), lambda a: a["tiers"][0]["name"] if a["tiers"] else "", "These tools use AI for hotel guest messaging, reservations or room pricing", "hotel-specific AI products with vendor pages we checked"),
  ("voice-audio", "ai-music-generators", "Best AI music generators", "Best AI Music Generators (2026)", pick("suno", "udio"), cheap_tier_name, "AI music generation", "vendor pricing"),
  ("voice-audio", "ai-dictation-apps", "Best AI dictation apps", "Best AI Dictation Apps (2026)", pick("wispr-flow", "superwhisper"), free_tier_name, "AI dictation", "vendor pricing"),
  ("coding", "ai-code-review-tools", "Best AI code review tools", "Best AI Code Review Tools (2026)", pick("coderabbit", "qodo"), cheap_tier_name, "AI pull-request review", "vendor pricing"),
@@ -186,7 +200,7 @@ for T in TOPICS:
     items = [[a["id"], (T["tierfn"](a) or "")] for a in A]
     priced = [a for a in A if a["usd"]]; ch = min(priced, key=lambda a: a["usd"][0]) if priced else None
     frees = [a for a in A if a["free"] in ("yes", "free")]
-    top = A[0]; tt = top["t"]
+    top = A[0]; tt = top["t"]; DAYH = span(a["t"]["last_verified"] for a in A)
     summ = f'{T["angle"]}. ' + f'<b>{html.escape(tt["name"])}</b> comes first: {html.escape(low(tt.get("why_rank") or tt["verdict"]))}. '
     if ch: summ += f'The cheapest verified paid plan here is <b>{html.escape(ch["t"]["name"])}</b> {html.escape(plan_txt(ch, ch["usd"][1]))}. '
     summ += (f'{len(frees)} of the {len(A)} have a free plan we could confirm. ' if frees else f'None of the {len(A)} has a free plan we could confirm. ')
@@ -206,8 +220,8 @@ for T in TOPICS:
     pick_txt = " ".join(picks)
     faq = []
     if ch:
-        faq.append((f"Which of these is cheapest?", f'{ch["t"]["name"]} {plan_txt(ch, ch["usd"][1])} is the lowest paid price we verified on this list ({ch["t"]["sources"][0]["url"]}, checked {DAYH}). Check the vendor page for tax, billing period and usage limits.'))
-    faq.append(("Which of these have a free plan?", ("; ".join(f'{a["t"]["name"]}: {a["t"]["pricing_detail"].get("free_tier") or "free plan listed"}' for a in frees) + ".") if frees else "None of these lists a permanent free plan on its pricing page. Some offer a trial; see the table."))
+        faq.append((f"Which of these is cheapest?", f'{ch["t"]["name"]} {plan_txt(ch, ch["usd"][1])} is the lowest paid price we verified on this list ({ch["t"]["sources"][0]["url"]}, checked {hday(ch["t"]["last_verified"])}). Check the vendor page for tax, billing period and usage limits.'))
+    faq.append(("Which of these have a free plan?", ("; ".join(f'{a["t"]["name"]}: {a["t"]["pricing_detail"].get("free_tier") or "free plan listed"}' for a in frees) + ".") if frees else ("None of these has a free plan we could confirm. " + (f'For {andl([a["t"]["name"] for a in A if a["free"] == "unknown"])} the vendor pages we checked do not say either way, so this is marked Not yet verified; check before you sign up.' if any(a["free"] == "unknown" for a in A) else "None lists a permanent free plan on its pricing page. Some offer a trial; see the table."))))
     faq.append(("How were these tools chosen?", f'They are the tools in ToolRank\'s rankings with {T["crit"]}, confirmed on the vendor\'s own website on {DAYH}. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified.'))
     names = [a["t"]["name"] for a in A]
     title = T["title"] if len(T["title"]) <= 60 else T["title"].replace(" (2026)", "")
@@ -223,6 +237,7 @@ for x in live: plan(x["T"]["cat"], x["T"]["h1"], x["T"]["needs"], x["slug"], "li
 for x in pages[lim:]: plan(x["T"]["cat"], x["T"]["h1"], x["T"]["needs"], x["slug"], "ready (next batch)")
 for T, r in skipped: plan(T["cat"], T["h1"], T["needs"], None, "skipped", r)
 BO["pages"] = list(existing.values()) + [x["page"] for x in live]
+BO["checked"] = max(a["t"]["last_verified"] for a in ALL)
 # previously published pages that are now near-duplicates: redirect to the page that covers them
 red = dict(BO.get("redirects", {})); now = {p["slug"] for p in BO["pages"]}
 for T, r in skipped:

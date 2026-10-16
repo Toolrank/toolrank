@@ -371,7 +371,7 @@ def offers_ld(t):
     """Offers from verified pricing_detail only (free tier and/or the starting paid price as listed by the vendor). Never ratings."""
     if not verified(t): return None
     p = PD(t); out = []; src = next((x["url"] for x in t.get("sources", [])), t["url"])
-    if p.get("free_tier"): out.append({"@type": "Offer", "name": "Free plan", "price": "0", "priceCurrency": "USD", "description": p["free_tier"][:300], "url": src})
+    if p.get("free_tier"): out.append({"@type": "Offer", "name": "Free trial" if trial_only(t) else "Free plan", "price": "0", "priceCurrency": "USD", "description": p["free_tier"][:300], "url": src})
     m = re.search(r"(?<![A-Za-z])([$€£])\s?([0-9][0-9,]*(?:\.[0-9]+)?)", p.get("starting_price") or "")
     if m: out.append({"@type": "Offer", "name": "Starting paid plan", "price": m.group(2).replace(",", ""), "priceCurrency": CUR[m.group(1)], "description": p["starting_price"], "url": src})
     return out or None
@@ -616,9 +616,15 @@ ALLT = [(c, i, t) for c in D["categories"] for i, t in enumerate(c["tools"], 1)]
 def PD(t): return t.get("pricing_detail") or {}
 def verified(t): return bool(t.get("last_verified"))
 def ev(x): return E(x) if x else NV
+TRIAL_ONLY = re.compile(r"free plan|free forever|free:|basic|starter|lite|hobby|personal|sandbox|\$0|free tier|free for|open source|free to|free version")
+def trial_only(t):
+    """free_tier text describes only a trial (no permanent free plan); same rule as scripts/gen_bestof.py."""
+    f = (PD(t).get("free_tier") or "").lower()
+    return bool(f) and ("trial" in f or "first month free" in f) and not TRIAL_ONLY.search(f)
 def free_plan(t):
     p = PD(t)
-    if p.get("free_tier"): return "yes"
+    if p.get("free_tier_unverified") and not p.get("free_tier"): return None  # vendor page did not show whether a free plan exists
+    if p.get("free_tier"): return "no" if trial_only(t) and p.get("model") == "paid" else "yes"
     if verified(t) and p.get("model") == "paid": return "no"
     return None
 def free_trial(t):
@@ -662,7 +668,7 @@ def pricing_table(t):
     if not p.get("tiers") and not p.get("free_tier") and not p.get("starting_price"):
         return f'<p>{NV}. We haven&rsquo;t confirmed this tool&rsquo;s pricing against the vendor&rsquo;s own page yet, so we show nothing rather than guess.</p>'
     rows = f'<tr><th scope="row">Pricing model</th><td>{ev(p.get("model"))}</td></tr><tr><th scope="row">Starting price</th><td>{ev(p.get("starting_price"))}</td></tr>'
-    rows += f'<tr><th scope="row">Free tier</th><td>{ev(p.get("free_tier")) if p.get("free_tier") or not verified(t) else ("None listed" if p.get("model")=="paid" else NV)}</td></tr>'
+    rows += f'<tr><th scope="row">Free tier</th><td>{ev(p.get("free_tier")) if p.get("free_tier") or not verified(t) else ("None listed" if free_plan(t) == "no" else NV)}</td></tr>'
     tiers = "".join(f'<tr><td>{E(x["name"])}</td><td>{E(x["price"])}</td><td>{E(x.get("notes",""))}</td></tr>' for x in p.get("tiers", []))
     return (f'<div class="tbl"><table><tbody>{rows}</tbody></table></div>' +
             (f'<div class="tbl"><table><thead><tr><th>Plan</th><th>Price</th><th>Includes</th></tr></thead><tbody>{tiers}</tbody></table></div>' if tiers else "") +
@@ -717,7 +723,7 @@ def tool_summary(c, i, t):
     s = [f"{nm} is ranked #{i} of {len(c['tools'])} in {c['title']} on ToolRank.", dot(t.get("why_rank") or t["verdict"])]
     if v:
         if p.get("starting_price"): s.append(f"Paid plans start at {p['starting_price']}.")
-        if p.get("free_tier"): s.append(f"Free plan: {dot(p['free_tier'])}")
+        if p.get("free_tier"): s.append(f"{'Free trial' if trial_only(t) else 'Free plan'}: {dot(p['free_tier'])}")
         elif free_plan(t) == "no": s.append("No free plan is listed.")
         if t.get("best_for"): s.append(f"Best for: {dot(t['best_for'])}")
         if t.get("main_limitation"): s.append(f"Main limitation: {dot(t['main_limitation'])}")
@@ -728,7 +734,8 @@ def tool_faqs(c, i, t):
     v = verified(t); p = PD(t); nm = t["name"]; d = fmt_date(t.get("last_verified")); out = []
     if v:
         sp = p.get("starting_price")
-        if p.get("free_tier"): out.append((f"Is {nm} free?", f"Yes. {nm}'s pricing page lists a free plan: {dot(p['free_tier'])} Checked {d}."))
+        if p.get("free_tier") and trial_only(t): out.append((f"Is {nm} free?", f"{nm}'s pricing page lists a free trial rather than a permanent free plan: {dot(p['free_tier'])} Checked {d}."))
+        elif p.get("free_tier"): out.append((f"Is {nm} free?", f"Yes. {nm}'s pricing page lists a free plan: {dot(p['free_tier'])} Checked {d}."))
         elif free_plan(t) == "no": out.append((f"Is {nm} free?", f"No free plan is listed on {nm}'s pricing page (checked {d})." + (f" Paid plans start at {sp}." if sp else "")))
         tiers = [f"{x['name']} ({x['price']})" for x in p.get("tiers", []) if re.search(r"[0-9]", x.get("price", ""))]
         if sp or tiers: out.append((f"How much does {nm} cost?", (f"Paid plans start at {sp}. " if sp else "") + (f"Plans listed: {'; '.join(tiers)}. " if tiers else "") + f"Prices as shown on the vendor's pricing page on {d}; they can change."))
@@ -839,7 +846,7 @@ const dom=u=>{try{return new URL(u).hostname.replace(/^www\./,"")}catch(e){retur
 const fd=s=>{if(!s)return"";const d=new Date(s+"T00:00:00");return d.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"})};
 const pn=s=>{const m=/[$€£]\s?([0-9][0-9,]*(?:\.[0-9]+)?)/.exec(s||"");return m?parseFloat(m[1].replace(/,/g,"")):null};
 let T=[],RV={},sel=[];const P=t=>t.pricing_detail||{};
-const freeP=t=>P(t).free_tier?"yes":(t.last_verified&&P(t).model==="paid"?"no":null);
+const freeP=t=>P(t).free_tier?"yes":(P(t).free_tier_unverified?null:(t.last_verified&&P(t).model==="paid"?"no":null));
 const trial=t=>/trial/i.test((P(t).free_tier||"")+" "+(P(t).notes||""));
 const yn=v=>v==="yes"?'<span class="yes">✓ Yes</span>':v==="no"?'<span class="no">✕ No</span>':NV;
 const nv=v=>v?esc(v):NV;
@@ -1042,7 +1049,7 @@ def main():
         F += [f"{i}. {t['name']} ({t['pricing']}; audience: {t.get('audience','')}){' [Featured]' if t.get('featured') else ''}{f' [user rating {rstat(t)[1]}/5 from {rstat(t)[0]} review(s)]' if rstat(t)[0] else ''}: {t['verdict']} {t['url']}" for i, t in enumerate(c["tools"], 1)]
     F.append(f"\n## Comparisons (facts checked {fmt_date(CHECK_DATE)})\n")
     F += [f"- {cmp_title(c['ids'])}: {BASE}/compare/{c['key']}/ | " + re.sub(r"<[^>]+>", "", c["pick"]) for c in CJ]
-    F.append(f"\n## Best-of guides (facts checked {fmt_date(BO['checked'])})\n")
+    F.append(f"\n## Best-of guides (facts last checked {fmt_date(BO['checked'])})\n")
     F += [f"- {b['h1']}: {BASE}/best-of/{b['slug']}/ | " + re.sub(r"<[^>]+>", "", b["summary"]) for b in BO["pages"]]
     F.append(f"\n## New this week (as of {N['updated']})\n")
     F += [f"- {n['date']} {n['title']} ({n['type']}): {n['summary']} {n['url']}" for n in sorted(N["items"], key=lambda n: n["date"], reverse=True)]
