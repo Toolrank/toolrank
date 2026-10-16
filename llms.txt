@@ -8,6 +8,20 @@
 Audiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). 269 tools ranked across 16 categories; 0 approved user reviews.
 
 - [AI Assistants](https://toolrank.io/best/ai-assistants/): General-purpose AI chat assistants for everyday questions, writing and thinking. 6 tools; #1: ChatGPT.
+
+## Best-of guides (constraints)
+
+- [Best AI coding tools for $20 a month or less](https://toolrank.io/best-of/ai-coding-tools-under-20-a-month/): AI coding tools with a paid plan at $20/month or less, ranked with vendor-verified prices checked 16 Oct 2026: Cursor, Claude Code, GitHub Copilot and more.
+- [Best AI coding tools under $50 a month](https://toolrank.io/best-of/ai-coding-tools-under-50-a-month/): The best AI coding plans priced under $50/month, ranked with vendor pricing checked 16 Oct 2026: Cursor Premium, Copilot Pro+, Kiro Pro+, Bolt Pro and more.
+- [Best free AI coding tools (no subscription)](https://toolrank.io/best-of/free-ai-coding-tools/): AI coding tools you can use with no subscription: Cline, Zed, Amp, OpenHands and Aider, with what you still pay for, checked on vendor pages 16 Oct 2026.
+- [Best AI coding tools for solo developers](https://toolrank.io/best-of/ai-coding-tools-for-solo-developers/): AI coding tools ranked for solo developers on individual plans: Cursor, Claude Code, Copilot, Zed, Cline and Aider, with prices checked 16 Oct 2026.
+- [Best AI coding tools for small teams](https://toolrank.io/best-of/ai-coding-tools-for-small-teams/): AI coding tools ranked for small teams by verified team pricing: Cursor Teams, Devin Desktop Teams, Zed Business, Amp, Bolt Teams. Checked 16 Oct 2026.
+- [Best AI coding agents in 2026](https://toolrank.io/best-of/ai-coding-agents/): The best AI coding agents in 2026, from Claude Code and Devin to Cline, OpenHands, Amp and Kiro, with verified pricing and limits checked 16 Oct 2026.
+- [Best AI pair programmers](https://toolrank.io/best-of/ai-pair-programmers/): The best AI pair programmers for working alongside you in your editor or terminal: Cursor, GitHub Copilot, Zed, JetBrains AI and Aider, verified 16 Oct 2026.
+- [Best AI coding tools for beginners](https://toolrank.io/best-of/ai-coding-tools-for-beginners/): AI coding tools for beginners and non-developers: Lovable, Bolt.new, Replit, GitHub Copilot and Cursor, with free plans and prices verified 16 Oct 2026.
+- [Best AI tools for building full-stack apps](https://toolrank.io/best-of/ai-tools-for-building-full-stack-apps/): AI app builders for full-stack web apps from a prompt: Bolt.new, Lovable, Replit, v0 and Cursor, with pricing and limits from vendor pages, checked 16 Oct 2026.
+- [Best AI coding tools with a free tier](https://toolrank.io/best-of/ai-coding-tools-with-free-tier/): AI coding tools whose free plan includes hosted AI usage: GitHub Copilot, Cursor, Devin Desktop, Kiro, Bolt and Lovable, with limits checked 16 Oct 2026.
+
 - [Coding & App Building](https://toolrank.io/best/coding/): Build apps from a prompt, or code faster with AI pair programmers and agents. 53 tools; #1: Cursor.
 - [Image & Design](https://toolrank.io/best/image/): Create and edit images, graphics and designs from prompts. 19 tools; #1: Midjourney.
 - [Video & Animation](https://toolrank.io/best/video/): Generate, edit, caption and translate video with AI. 27 tools; #1: Runway.

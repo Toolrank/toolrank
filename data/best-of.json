@@ -1,0 +1,554 @@
+{
+ "checked": "2026-10-16",
+ "skipped": [
+  {
+   "n": 33,
+   "topic": "debugging",
+   "reason": "No measured or vendor-verified debugging evidence in tools.json; ranking would require invented capability claims."
+  },
+  {
+   "n": 34,
+   "topic": "refactoring large codebases",
+   "reason": "No verified evidence on large-codebase refactoring performance or context limits; skipped rather than guess."
+  },
+  {
+   "n": 36,
+   "topic": "Python",
+   "reason": "Per-language support/quality not recorded or verified for these tools."
+  },
+  {
+   "n": 37,
+   "topic": "JS/TS",
+   "reason": "Per-language support/quality not recorded or verified for these tools."
+  },
+  {
+   "n": 39,
+   "topic": "offline",
+   "reason": "Offline/local-model operation not verified on vendor pages for the candidate tools."
+  }
+ ],
+ "pages": [
+  {
+   "slug": "ai-coding-tools-under-20-a-month",
+   "n": 26,
+   "h1": "Best AI coding tools for $20 a month or less",
+   "title": "Best AI Coding Tools for $20/Month or Less (2026)",
+   "desc": "AI coding tools with a paid plan at $20/month or less, ranked with vendor-verified prices checked 16 Oct 2026: Cursor, Claude Code, GitHub Copilot and more.",
+   "summary": "If you want the most capable tool for $20 a month or less, start with <b>Cursor</b>. Its Plus plan is $8/month, but it only includes Grok models. <b>Claude Code</b> comes with Claude Pro, at $17/month billed annually or $20 billed monthly. <b>GitHub Copilot Pro</b> ($10/month) is the pick if you want to stay in your current IDE. Zed Pro and JetBrains AI Pro are also $10/month. Devin Desktop (formerly Windsurf), Devin, Kiro, Amp and Replit Core all list a $20 plan. Every price below is from the vendor's own pricing page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "cursor",
+     "Plus"
+    ],
+    [
+     "claude-code",
+     "Claude Pro"
+    ],
+    [
+     "github-copilot",
+     "Pro"
+    ],
+    [
+     "windsurf",
+     "Pro"
+    ],
+    [
+     "replit",
+     "Core"
+    ],
+    [
+     "devin",
+     "Pro"
+    ],
+    [
+     "kiro",
+     "Pro"
+    ],
+    [
+     "zed",
+     "Pro"
+    ],
+    [
+     "amp",
+     "Individual"
+    ],
+    [
+     "jetbrains-ai-junie",
+     "AI Pro"
+    ]
+   ],
+   "pick": "Pick <b>Cursor Plus</b> if price matters most and Grok models are fine for you. Pick <b>Claude Code</b> through Claude Pro if you work in the terminal and want Anthropic's agent. Pick <b>GitHub Copilot Pro</b>, <b>JetBrains AI Pro</b> or <b>Zed Pro</b> ($10 each) if you want to keep your editor: Copilot covers most IDEs, JetBrains AI covers JetBrains IDEs, and Zed is its own fast editor. Pick <b>Devin Desktop</b>, <b>Devin</b>, <b>Kiro</b> or <b>Amp</b> at $20 if you want agent-first workflows, and <b>Replit Core</b> if you want to build and host in the browser with no local setup. Watch for usage limits. Several of these plans bill anything over the included usage at API prices.",
+   "faq": [
+    [
+     "What is the cheapest paid AI coding plan on this list?",
+     "Cursor Plus at $8/month, as listed on cursor.com/pricing on 16 Oct 2026. It only includes Grok models, and third-party models need Premium ($30/month)."
+    ],
+    [
+     "Is Claude Code under $20 a month?",
+     "Claude Code is included in Claude Pro, which is $17/month billed annually or $20 billed monthly (claude.com/pricing, checked 16 Oct 2026). There is no standalone free tier."
+    ],
+    [
+     "Do $20 plans include unlimited usage?",
+     "Not on the plans we checked. Devin Desktop and Devin Pro use quotas, with extra usage billed at API prices. Kiro meters usage in credits. Zed Pro includes $5 of tokens. Read each vendor's limits before you pay."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-coding-tools-under-50-a-month",
+   "n": 27,
+   "h1": "Best AI coding tools under $50 a month",
+   "title": "Best AI Coding Tools Under $50/Month (2026)",
+   "desc": "The best AI coding plans priced under $50/month, ranked with vendor pricing checked 16 Oct 2026: Cursor Premium, Copilot Pro+, Kiro Pro+, Bolt Pro and more.",
+   "summary": "Under $50 a month, <b>Cursor Premium</b> ($30/month) is our top pick. It gets 4x Plus usage, cloud agents, Bugbot reviews and third-party models, though those models are billed at API list price. <b>Claude Code</b> through Claude Pro ($20 monthly) is the terminal pick. Claude Max starts at $100, which is over this cap. <b>GitHub Copilot Pro+</b> is $39/month, <b>Kiro Pro+</b> $40/user/month, <b>JetBrains AI Ultimate</b> $30/month and <b>Bolt Pro</b> $25/month. All prices were checked on vendor pages on 16 Oct 2026.",
+   "items": [
+    [
+     "cursor",
+     "Premium"
+    ],
+    [
+     "claude-code",
+     "Claude Pro"
+    ],
+    [
+     "github-copilot",
+     "Pro+"
+    ],
+    [
+     "bolt-new",
+     "Pro"
+    ],
+    [
+     "windsurf",
+     "Pro"
+    ],
+    [
+     "kiro",
+     "Pro+"
+    ],
+    [
+     "zed",
+     "Pro"
+    ],
+    [
+     "jetbrains-ai-junie",
+     "AI Ultimate"
+    ]
+   ],
+   "pick": "Pick <b>Cursor Premium</b> if you want one AI-native editor with cloud agents and code review and you're happy to pay API prices for third-party models. Pick <b>Copilot Pro+</b> for higher limits without leaving VS Code, JetBrains, Visual Studio, Eclipse or Xcode. Pick <b>JetBrains AI Ultimate</b> if you live in JetBrains IDEs. Pick <b>Kiro Pro+</b> for spec-driven work on AWS. Pick <b>Bolt Pro</b> to build full-stack apps in the browser with no daily token cap. If $20 is your limit, see the $20 list.",
+   "faq": [
+    [
+     "Which plans here are between $20 and $50 a month?",
+     "Bolt Pro ($25), Cursor Premium ($30), JetBrains AI Ultimate ($30), GitHub Copilot Pro+ ($39) and Kiro Pro+ ($40/user), all as listed on vendor pricing pages on 16 Oct 2026."
+    ],
+    [
+     "Is Claude Max under $50?",
+     "No. Claude Max starts at $100/month (claude.com/pricing, checked 16 Oct 2026). Under $50, Claude Code comes through Claude Pro."
+    ],
+    [
+     "Are there extra costs on top of these prices?",
+     "Often, yes. Cursor bills third-party models at API list price. Zed bills hosted usage beyond the included credit at API price plus 10%. Kiro sells add-on credits at $0.04 each. Prices also exclude tax."
+    ]
+   ]
+  },
+  {
+   "slug": "free-ai-coding-tools",
+   "n": 28,
+   "h1": "Best free AI coding tools (no subscription)",
+   "title": "Best Free AI Coding Tools (No Subscription, 2026)",
+   "desc": "AI coding tools you can use with no subscription: Cline, Zed, Amp, OpenHands and Aider, with what you still pay for, checked on vendor pages 16 Oct 2026.",
+   "summary": "For AI coding with no subscription, <b>Cline</b> is our top pick. It's an open-source agent for VS Code and the CLI, and you pay only for model usage, with your own keys or at cost. <b>Zed</b> is free forever with your own API keys or external agents. <b>Amp</b>'s Hobby plan is free with all features and bring-your-own keys. <b>OpenHands</b> is free to run locally, and its cloud tier allows 10 conversations a day. <b>Aider</b> is free, open-source terminal software. The catch: unless you run a local model, you still pay a model provider. If you want usage included at $0, see the free-tier list.",
+   "items": [
+    [
+     "cline",
+     "Open Source"
+    ],
+    [
+     "zed",
+     "Personal"
+    ],
+    [
+     "amp",
+     "Hobby"
+    ],
+    [
+     "openhands",
+     "Local (open source)"
+    ],
+    [
+     "aider",
+     ""
+    ],
+    [
+     "continue",
+     ""
+    ]
+   ],
+   "pick": "Pick <b>Cline</b> if you want an agent inside VS Code and full control of spend. Pick <b>Zed</b> if you want a fast free editor and already have API keys or an external agent. Pick <b>Amp</b> if you want to reuse your ChatGPT or Claude subscriptions in an agent. Pick <b>OpenHands</b> if you want an autonomous agent you can self-host and audit. Pick <b>Aider</b> if you live in the terminal and want clean git commits. <b>Continue</b> is listed last for transparency: it's frozen after Cursor acquired it, so only use it if you accept no updates.",
+   "faq": [
+    [
+     "Are these AI coding tools really free?",
+     "The software is free, but most of them call a paid model API with your key or the vendor's provider at cost. Cline, Aider and OpenHands say this on their own pages. A local model avoids API bills."
+    ],
+    [
+     "Which free tool works inside VS Code?",
+     "Cline runs in VS Code and the CLI. Its JetBrains extension is listed under Enterprise (cline.bot/pricing, checked 16 Oct 2026). Continue also ran in VS Code but is no longer maintained."
+    ],
+    [
+     "What's the difference between this list and the free-tier list?",
+     "This list covers tools with no subscription, where you bring your own model. The free-tier list covers paid products whose free plan includes some hosted usage, such as GitHub Copilot Free or Cursor Free."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-coding-tools-for-solo-developers",
+   "n": 29,
+   "h1": "Best AI coding tools for solo developers",
+   "title": "Best AI Coding Tools for Solo Developers (2026)",
+   "desc": "AI coding tools ranked for solo developers on individual plans: Cursor, Claude Code, Copilot, Zed, Cline and Aider, with prices checked 16 Oct 2026.",
+   "summary": "For solo developers, <b>Cursor</b> is our top pick. It's a complete AI editor with a free tier, and Plus is $8/month. <b>Claude Code</b> (from $17/month annually via Claude Pro) suits terminal-first developers. <b>GitHub Copilot</b> is free to start, Pro is $10, and it works in most IDEs. On a tight budget, <b>Zed</b>, <b>Cline</b> and <b>Aider</b> cost nothing to use with your own model keys. Every price is from the vendor's individual plans, checked 16 Oct 2026.",
+   "items": [
+    [
+     "cursor",
+     "Plus"
+    ],
+    [
+     "claude-code",
+     "Claude Pro"
+    ],
+    [
+     "github-copilot",
+     "Pro"
+    ],
+    [
+     "zed",
+     "Pro"
+    ],
+    [
+     "cline",
+     "Open Source"
+    ],
+    [
+     "aider",
+     ""
+    ]
+   ],
+   "pick": "Pick <b>Cursor</b> if you'll switch editors for the most integrated AI workflow. Pick <b>Claude Code</b> if you want a capable agent working across your repo from the terminal. Pick <b>Copilot</b> if you want to keep VS Code, JetBrains or Xcode and start free. Pick <b>Zed</b> for a fast native editor at $0 or $10. Pick <b>Cline</b> or <b>Aider</b> if you'd rather pay only for the tokens you use than a subscription.",
+   "faq": [
+    [
+     "What's the best free option for a solo developer?",
+     "Copilot Free and Cursor Free include limited hosted usage. Cline, Aider and Zed Personal are free software where you pay your own model costs. All of this is per vendor pages checked 16 Oct 2026."
+    ],
+    [
+     "Do solo developers need a team plan?",
+     "No. Every tool here has an individual plan or free software: Cursor Plus, Claude Pro, Copilot Pro, Zed Pro, or Cline and Aider with your own keys."
+    ],
+    [
+     "Which is best for working in the terminal?",
+     "Claude Code (Anthropic's terminal agent, via a paid Claude plan) and Aider (free, open source, commits to git). Cline also has a CLI."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-coding-tools-for-small-teams",
+   "n": 30,
+   "h1": "Best AI coding tools for small teams",
+   "title": "Best AI Coding Tools for Small Teams (2026)",
+   "desc": "AI coding tools ranked for small teams by verified team pricing: Cursor Teams, Devin Desktop Teams, Zed Business, Amp, Bolt Teams. Checked 16 Oct 2026.",
+   "summary": "For small teams, <b>Cursor Teams</b> ($30+/user/month, pooled usage) is our top pick. <b>GitHub Copilot</b> is the easiest pick if your team is on GitHub, but we haven't verified its business pricing yet. <b>Devin Desktop</b> (formerly Windsurf) Teams costs an $80/month minimum plus $40 per full seat, for up to 200 users. <b>Zed Business</b> is $30/seat. <b>Amp Teams</b> adds shared billing and SSO at no extra charge. <b>Bolt Teams</b> is $30/member. Claude's Team premium seat, which includes Claude Code, is $100/seat/month billed annually. Prices were checked on vendor pages on 16 Oct 2026.",
+   "items": [
+    [
+     "cursor",
+     "Teams"
+    ],
+    [
+     "claude-code",
+     "Team premium seat"
+    ],
+    [
+     "github-copilot",
+     ""
+    ],
+    [
+     "windsurf",
+     "Teams"
+    ],
+    [
+     "devin",
+     "Teams"
+    ],
+    [
+     "zed",
+     "Business"
+    ],
+    [
+     "amp",
+     "Teams"
+    ],
+    [
+     "bolt-new",
+     "Teams"
+    ]
+   ],
+   "pick": "Pick <b>Cursor Teams</b> if your team will standardise on one AI editor with pooled usage. Pick <b>Copilot</b> if you want AI in everyone's current IDE and in GitHub pull requests. Check its business pricing on GitHub's site, because we haven't verified it. Pick <b>Devin</b> or <b>Devin Desktop</b> Teams if you want to hand tickets to cloud agents. Pick <b>Claude</b> Team premium seats if your team is terminal-first. Pick <b>Zed Business</b> for org AI policies in a fast editor, <b>Amp</b> if people bring their own subscriptions, and <b>Bolt Teams</b> for browser-built apps with central billing.",
+   "faq": [
+    [
+     "Which team plan is cheapest per seat?",
+     "Of the team prices we verified, Amp Teams has no extra charge beyond usage, and Cursor Teams ($30+/user), Zed Business ($30/seat) and Bolt Teams ($30/member) list the same headline rate. Devin Desktop Teams has an $80/month minimum. GitHub Copilot business pricing is not yet verified."
+    ],
+    [
+     "Does Claude Code have a team plan?",
+     "Yes. Claude's Team premium seat is $100/seat/month billed annually and includes Claude Code and Claude Cowork (claude.com/pricing, checked 16 Oct 2026)."
+    ],
+    [
+     "Do these team plans include SSO?",
+     "Amp lists SSO on Teams. Devin Desktop lists SSO on Enterprise. Zed says SSO/SAML isn't available yet on Business. For the others, check the vendor's page, because we only record what we verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-coding-agents",
+   "n": 31,
+   "h1": "Best AI coding agents in 2026",
+   "title": "Best AI Coding Agents in 2026: Ranked and Compared",
+   "desc": "The best AI coding agents in 2026, from Claude Code and Devin to Cline, OpenHands, Amp and Kiro, with verified pricing and limits checked 16 Oct 2026.",
+   "summary": "For an agent that works across your repo, <b>Claude Code</b> is our top pick: Anthropic's terminal agent, included with Claude Pro ($17/month annually). <b>Cursor</b> pairs its editor with agents and cloud automations. <b>Devin</b> takes whole tickets in the cloud and opens pull requests, but cloud agents need Pro ($20/month). <b>Cline</b> and <b>OpenHands</b> are open-source agents where you pay only for inference. <b>Amp</b> lets you reuse existing model subscriptions. <b>Kiro</b> is AWS's spec-driven agent with a perpetual free tier. Checked 16 Oct 2026.",
+   "items": [
+    [
+     "claude-code",
+     "Claude Pro"
+    ],
+    [
+     "cursor",
+     "Premium"
+    ],
+    [
+     "github-copilot",
+     "Pro"
+    ],
+    [
+     "devin",
+     "Pro"
+    ],
+    [
+     "cline",
+     "Open Source"
+    ],
+    [
+     "kiro",
+     "Pro"
+    ],
+    [
+     "amp",
+     "Individual"
+    ],
+    [
+     "openhands",
+     "Cloud Individual"
+    ]
+   ],
+   "pick": "Pick <b>Claude Code</b> if you want the agent in your terminal and repo. Pick <b>Cursor</b> if you want agents inside an editor, plus cloud agents on Premium. Pick <b>Copilot</b> if agents should live in GitHub and your IDE. Its free plan has no cloud agent. Pick <b>Devin</b> to delegate scoped tickets and review the PRs. Pick <b>Cline</b> or <b>OpenHands</b> for open-source agents you control, with OpenHands also self-hostable. Pick <b>Kiro</b> for spec-first work on AWS and <b>Amp</b> to reuse ChatGPT or Claude subscriptions.",
+   "faq": [
+    [
+     "Which AI coding agents are open source?",
+     "Cline (Apache-2.0) and OpenHands (MIT), per their GitHub and pricing pages checked 16 Oct 2026. Both are free to run, and you pay for model inference."
+    ],
+    [
+     "Can I try a coding agent for free?",
+     "Yes. Kiro has a perpetual free tier with 50 credits. Devin's Free plan has a light quota but no cloud agents. OpenHands Cloud Individual allows 10 conversations a day. Amp Hobby is free with your own keys. Claude Code has no standalone free tier."
+    ],
+    [
+     "Do I still need to review agent output?",
+     "Yes. Devin's own model is that the agent opens pull requests for you to review, and every tool here can make mistakes. Treat agent changes like a colleague's PR."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-pair-programmers",
+   "n": 32,
+   "h1": "Best AI pair programmers",
+   "title": "Best AI Pair Programmers (2026): Ranked",
+   "desc": "The best AI pair programmers for working alongside you in your editor or terminal: Cursor, GitHub Copilot, Zed, JetBrains AI and Aider, verified 16 Oct 2026.",
+   "summary": "For an AI that works alongside you rather than taking whole tasks, <b>GitHub Copilot</b> is our top pick. It works as a pair programmer inside your IDE and GitHub, it runs in VS Code, Visual Studio, JetBrains, Eclipse and Xcode, it has a free plan, and Pro is $10/month. <b>Cursor</b> is the AI-native editor option, with a free tier and Plus at $8/month. <b>Zed</b> offers edit predictions in a fast editor, free with your own keys or $10 for Pro. <b>JetBrains AI</b> Pro is $10/month for JetBrains users. <b>Aider</b> is a free, open-source pair programmer for the terminal. Checked 16 Oct 2026.",
+   "items": [
+    [
+     "github-copilot",
+     "Pro"
+    ],
+    [
+     "cursor",
+     "Plus"
+    ],
+    [
+     "zed",
+     "Pro"
+    ],
+    [
+     "jetbrains-ai-junie",
+     "AI Pro"
+    ],
+    [
+     "aider",
+     ""
+    ]
+   ],
+   "pick": "Pick <b>Copilot</b> if you want a pair programmer in the IDE you already use. Pick <b>Cursor</b> if you're willing to switch to an editor built around AI. Pick <b>Zed</b> for speed and unlimited edit predictions on Pro. Pick <b>JetBrains AI</b> if your team is on IntelliJ, PyCharm or other JetBrains IDEs. Pick <b>Aider</b> if you pair in the terminal and want every change committed to git.",
+   "faq": [
+    [
+     "Which AI pair programmer works in the most editors?",
+     "GitHub Copilot. GitHub lists VS Code, Visual Studio, JetBrains, Eclipse, Xcode, the CLI, GitHub.com and GitHub Mobile (checked 16 Oct 2026)."
+    ],
+    [
+     "Is there a free AI pair programmer?",
+     "Copilot Free and Cursor Free include limited usage. Zed Personal and Aider are free software where you use your own model keys."
+    ],
+    [
+     "Pair programmer or coding agent: what's the difference?",
+     "A pair programmer suggests and edits as you work. An agent takes a task and carries it out across files, often in the cloud. See our coding agents list for agent-first tools."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-coding-tools-for-beginners",
+   "n": 35,
+   "h1": "Best AI coding tools for beginners",
+   "title": "Best AI Coding Tools for Beginners (2026)",
+   "desc": "AI coding tools for beginners and non-developers: Lovable, Bolt.new, Replit, GitHub Copilot and Cursor, with free plans and prices verified 16 Oct 2026.",
+   "summary": "If you're new to code and want to build something, start with <b>Lovable</b> or <b>Bolt.new</b>. Both turn plain-language prompts into web apps in the browser and have free plans. Lovable gives 5 build credits a day, up to 30 a month. Bolt gives 300K tokens a day and 1M a month. <b>Replit</b> builds, hosts and deploys from one browser workspace, with Core at $20/month. If you want to learn to code in a real editor, <b>GitHub Copilot Free</b> and <b>Cursor Free</b> cost nothing to start. Checked 16 Oct 2026.",
+   "items": [
+    [
+     "lovable",
+     "Free"
+    ],
+    [
+     "bolt-new",
+     "Free"
+    ],
+    [
+     "replit",
+     "Core"
+    ],
+    [
+     "github-copilot",
+     "Free"
+    ],
+    [
+     "cursor",
+     "Free"
+    ]
+   ],
+   "pick": "Pick <b>Lovable</b> if you're a non-developer who wants a working web app from a description. Pick <b>Bolt.new</b> for the same thing with a token-based free tier. Pick <b>Replit</b> if you want building, a database and hosting in one place with nothing to install. Pick <b>Copilot</b> or <b>Cursor</b> once you want to write and understand the code yourself in an editor.",
+   "faq": [
+    [
+     "Can I build an app with AI without knowing how to code?",
+     "Lovable and Bolt.new are built for that: both create web apps from chat prompts in the browser. You'll still need to test what they build, and larger projects use up credits or tokens."
+    ],
+    [
+     "What's free for beginners?",
+     "Lovable Free (5 build credits a day, up to 30 a month), Bolt Free (300K tokens a day, 1M a month), Copilot Free and Cursor Free, all per vendor pages checked 16 Oct 2026. We couldn't confirm Replit's free plan limits."
+    ],
+    [
+     "Should a beginner use an AI code editor?",
+     "If you want to learn programming, yes. Copilot or Cursor in an editor shows you real code. If you only want a finished app, a browser builder like Lovable or Bolt is simpler."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-tools-for-building-full-stack-apps",
+   "n": 38,
+   "h1": "Best AI tools for building full-stack apps",
+   "title": "Best AI Tools for Building Full-Stack Apps (2026)",
+   "desc": "AI app builders for full-stack web apps from a prompt: Bolt.new, Lovable, Replit, v0 and Cursor, with pricing and limits from vendor pages, checked 16 Oct 2026.",
+   "summary": "To go from a prompt to a running full-stack app, <b>Bolt.new</b> is our top pick. It builds, runs and deploys in the browser, has a generous token-based free tier, and Pro is $25/month. <b>Lovable</b> turns chat into web apps with hosting on Lovable Cloud, but we couldn't verify its paid prices. <b>Replit</b> covers prompt, build, database and deploy in one workspace, from $20/month. <b>v0</b> generates React/Next.js apps that deploy to Vercel. <b>Cursor</b> fits developers who want full control in their own repo. Checked 16 Oct 2026.",
+   "items": [
+    [
+     "bolt-new",
+     "Pro"
+    ],
+    [
+     "lovable",
+     "Pro"
+    ],
+    [
+     "replit",
+     "Core"
+    ],
+    [
+     "v0",
+     ""
+    ],
+    [
+     "cursor",
+     "Plus"
+    ]
+   ],
+   "pick": "Pick <b>Bolt.new</b> for quick full-stack prototypes and small business apps with clear pricing. Pick <b>Lovable</b> if you're a non-developer who wants hosting included, but budget for credits. Pick <b>Replit</b> if you want the agent to also host and deploy, and to collaborate (Pro allows up to 15 collaborators). Pick <b>v0</b> if your stack is React/Next.js on Vercel. Pick <b>Cursor</b> if you're a developer building a real codebase you'll maintain.",
+   "faq": [
+    [
+     "Which full-stack app builder has the best free plan?",
+     "On the limits we verified, Bolt Free gives 300K tokens a day and 1M a month, with Bolt branding. Lovable Free gives 5 build credits a day (up to 30 a month) plus 20 Cloud credits. We haven't verified v0's or Replit's free limits."
+    ],
+    [
+     "How much does Lovable cost?",
+     "Not yet verified. Lovable's paid prices render client-side and weren't in the page text we fetched on 16 Oct 2026, so we don't show a number."
+    ],
+    [
+     "Can these tools deploy my app?",
+     "Bolt runs and deploys in the browser. Replit includes deployments. Lovable hosts on Lovable Cloud. v0 deploys to Vercel. With Cursor, you deploy yourself."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-coding-tools-with-free-tier",
+   "n": 40,
+   "h1": "Best AI coding tools with a free tier",
+   "title": "Best AI Coding Tools With a Free Tier (2026)",
+   "desc": "AI coding tools whose free plan includes hosted AI usage: GitHub Copilot, Cursor, Devin Desktop, Kiro, Bolt and Lovable, with limits checked 16 Oct 2026.",
+   "summary": "For a free plan that includes AI usage with no API key, <b>Cursor Free</b> is our top pick, with limited agent and chat requests. <b>GitHub Copilot Free</b> has limited chat and agent usage but no code review or cloud agent. <b>Devin Desktop</b> (formerly Windsurf) Free has a light agent quota and unlimited Tab completions. <b>Kiro</b> gives a perpetual 50 credits. <b>Bolt</b> gives 300K tokens a day. <b>Lovable</b> gives 5 build credits a day. <b>Devin</b> Free has a light quota without cloud agents. All limits were checked on vendor pages on 16 Oct 2026.",
+   "items": [
+    [
+     "cursor",
+     "Free"
+    ],
+    [
+     "github-copilot",
+     "Free"
+    ],
+    [
+     "lovable",
+     "Free"
+    ],
+    [
+     "bolt-new",
+     "Free"
+    ],
+    [
+     "windsurf",
+     "Free"
+    ],
+    [
+     "devin",
+     "Free"
+    ],
+    [
+     "kiro",
+     "Free"
+    ]
+   ],
+   "pick": "Pick <b>Cursor Free</b> to try an AI-native editor. Pick <b>Copilot Free</b> to stay in your IDE. Pick <b>Devin Desktop Free</b> if unlimited Tab completions matter most. Pick <b>Kiro Free</b> to try spec-driven agents. Pick <b>Bolt</b> or <b>Lovable</b> free plans to build web apps in the browser. If you'd rather bring your own model and avoid caps, see the no-subscription list (Cline, Zed, Aider and others).",
+   "faq": [
+    [
+     "Which free tier has unlimited completions?",
+     "Devin Desktop (formerly Windsurf) Free lists unlimited inline edits and Tab completions, with a light agent quota (devin.ai/pricing, checked 16 Oct 2026)."
+    ],
+    [
+     "Does Claude Code have a free tier?",
+     "No. Claude Code needs a paid Claude plan (Pro from $17/month billed annually) or API usage."
+    ],
+    [
+     "Can I keep using a free tier for real work?",
+     "For light use, yes. Every free plan here is capped (requests, credits or tokens), so heavy users will hit the limits. The table shows each cap as the vendor states it."
+    ]
+   ]
+  }
+ ]
+}

@@ -926,6 +926,45 @@ def patch(fn, block, extra=None):
     if extra: s = extra(s)
     p.write_text(s)
 
+BO = json.loads((ROOT/"data/best-of.json").read_text()) if (ROOT/"data/best-of.json").exists() else {"pages": []}
+def tier(t, name): return next((x for x in PD(t).get("tiers", []) if x["name"] == name), None) if name else None
+def bestof_page(b):
+    path = f"/best-of/{b['slug']}/"; ts = [(TOOLS[i], pl) for i, pl in b["items"]]; ids = [i for i, _ in b["items"]]
+    def plan(t, pl):
+        x = tier(t, pl)
+        if x and "not shown" in x["price"]: return f'<b>{E(x["name"])}</b>: {NV}'
+        if x: return f'<b>{E(x["name"])}</b>: {E(x["price"])}' + (f'<br><span class="muted small">{E(x["notes"])}</span>' if x.get("notes") else "")
+        if PD(t).get("model") == "free" and verified(t): return E(PD(t).get("free_tier") or "Free")
+        return NV
+    rows = "".join(f'<tr><td>#{k}</td><th scope="row"><a href="{prof(t)}">{E(t["name"])}</a></th><td>{plan(t, pl)}</td><td>{ev(PD(t).get("starting_price"))}</td>'
+                   f'<td>{E(PD(t)["free_tier"]) if PD(t).get("free_tier") else ("<span class=\"no\">✕ None listed</span>" if free_plan(t) == "no" else NV)}</td><td>{ev(t.get("best_for"))}</td><td>{ev(t.get("main_limitation"))}</td>'
+                   f'<td>{E(fmt_date(t["last_verified"])) if verified(t) else NV}</td></tr>' for k, (t, pl) in enumerate(ts, 1))
+    tbl = ('<div class="tbl mx"><table class="cmp"><thead><tr><th scope="col">Rank</th><th scope="col">Tool</th><th scope="col">Relevant plan</th><th scope="col">Starting price</th><th scope="col">Free plan</th>'
+           f'<th scope="col">Best for</th><th scope="col">Main limitation</th><th scope="col">Last checked</th></tr></thead><tbody>{rows}</tbody></table></div>')
+    short = "".join(f'<li><b><a href="{prof(t)}">{E(t["name"])}</a></b>: {E(t.get("why_rank") or t["verdict"])} <span class="muted small">Plan: {plan(t, pl)}</span></li>' for t, pl in ts)
+    srcs = "".join(f'<li>{E(t["name"])}: <a href="{E(x["url"])}" target="_blank" rel="noopener nofollow">{E(x["label"])}</a> <span class="muted small">checked {fmt_date(x["checked"])}</span></li>' for t, _ in ts for x in t.get("sources", []))
+    srcs = srcs + "".join(f'<li>{E(t["name"])}: {NV}. No vendor source recorded yet.</li>' for t, _ in ts if not t.get("sources"))
+    relc = [(k, i) for k, i in COMPARES if set(i) <= set(ids)][:10]
+    relh = "".join(f'<li><a href="/compare/{k}/">{E(cmp_title(i))}</a></li>' for k, i in relc) + '<li><a href="/compare/">All comparisons →</a></li>'
+    profs = " · ".join(f'<a href="{prof(t)}">{E(t["name"])}</a>' for t, _ in ts)
+    others = "".join(f'<li><a href="/best-of/{o["slug"]}/">{E(o["h1"])}</a></li>' for o in BO["pages"] if o is not b)
+    faq = b["faq"]; plain = lambda s: re.sub(r"<[^>]+>", "", s)
+    ld = [ORG, SITE, {"@type": "WebPage", "name": b["h1"], "url": BASE+path, "dateModified": BO["checked"], "description": b["desc"]},
+          {"@type": "ItemList", "name": b["h1"], "itemListElement": [{"@type": "ListItem", "position": k, "name": t["name"], "url": BASE+prof(t)} for k, (t, _) in enumerate(ts, 1)]},
+          {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
+          {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ToolRank", "item": BASE+"/"}, {"@type": "ListItem", "position": 2, "name": "Coding & App Building", "item": BASE+"/best/coding/"}, {"@type": "ListItem", "position": 3, "name": b["h1"], "item": BASE+path}]}]
+    body = f"""<main><section class="hero sub"><div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">ToolRank</a> › <a href="/best/coding/">Coding &amp; App Building</a></nav><h1>{E(b['h1'])}</h1>
+<p class="muted small">Updated {fmt_date(BO['checked'])} · Prices from vendor pages only · {METH_LINK}</p></div></section>
+<section class="sec"><div class="wrap"><div class="card pick"><h2>The short answer</h2><p>{b['summary']}</p></div>
+<h2>Ranked shortlist</h2><ol class="rlist">{short}</ol><p class="muted small">Order follows ToolRank&rsquo;s editorial ranking in <a href="/best/coding/">Coding &amp; App Building</a>, filtered to tools that fit this page. Anything we couldn&rsquo;t confirm on a vendor page says &ldquo;Not yet verified&rdquo;.</p>
+<h2>Side by side</h2>{tbl}<p class="muted small">Prices as listed by each vendor on the last-checked date, USD, before tax. Plans and limits change, so follow the sources below.</p>
+<div class="card pick"><h2>Who should pick which</h2><p>{b['pick']}</p></div>
+<h2 id="faq">FAQ</h2><div class="faq">{''.join(f'<details class="card"><summary><b>{E(q)}</b></summary><p>{E(a)}</p></details>' for q, a in faq)}</div>
+<h2>Sources</h2><ul class="srcs">{srcs}</ul>
+<h2>Related comparisons</h2><ul class="rlist">{relh}</ul><p class="small">Profiles: {profs}</p>
+<h2>More best-of lists</h2><ul class="rlist">{others}<li><a href="/best/coding/">Full Coding &amp; App Building ranking →</a></li></ul>{DISCLOSE}{NL("nl-compact", "nlc")}</div></section></main>"""
+    return doc(head(b["title"] if b["title"].endswith("ToolRank") else fit_title(b["title"] + " | ToolRank", b["title"]), b["desc"], path, ld), body)
+
 def build_search_index():
     """data/search-index.json: tools, categories and every generated SEO page (/compare/<slug>/, /best/<id>/, /best-of/<slug>/).
     Scans built HTML so pages added by any generator appear on the next rebuild."""
@@ -965,12 +1004,14 @@ def main():
         (ROOT/name).mkdir(exist_ok=True); (ROOT/name/"index.html").write_text(fn())
     for k, ids in COMPARES:
         (ROOT/"compare"/k).mkdir(parents=True, exist_ok=True); (ROOT/"compare"/k/"index.html").write_text(cmp_page(k, ids))
+    for b in BO["pages"]:
+        (ROOT/"best-of"/b["slug"]).mkdir(parents=True, exist_ok=True); (ROOT/"best-of"/b["slug"]/"index.html").write_text(bestof_page(b))
     (ROOT/"reviews.html").write_text(reviews_page()); (ROOT/"services.html").write_text(services_page()); (ROOT/"index.html").write_text(home(cats))
     opts = "".join(f"<option>{E(c['title'])}</option>" for c in cats) + "<option>Other / new category</option>"
     def sub(s): return re.sub(r'(<select name="category"[^>]*>).*?(</select>)', lambda m: m.group(1) + opts + m.group(2), s, flags=re.S)
     patch("featured.html", head("Get your AI tool featured | ToolRank", "Featured placements and newsletter sponsorship on ToolRank. Featured spots are clearly labelled; rankings stay editorial.", "/featured.html", [ORG, SITE]))
     patch("submit.html", head("Submit your AI tool for free | ToolRank", "Submit your AI tool to ToolRank for free. Every submission gets an editorial review; approved tools are listed in the right category.", "/submit.html", [ORG, SITE]), sub)
-    urls = ["/", "/reviews.html", "/services.html", "/submit.html", "/featured.html", "/methodology/", "/claim/", "/compare/", "/about/"] + [f"/best/{c['id']}/" for c in cats] + [f"/compare/{k}/" for k, _ in COMPARES] + [prof(t) for _, _, t in ALLT]
+    urls = ["/", "/reviews.html", "/services.html", "/submit.html", "/featured.html", "/methodology/", "/claim/", "/compare/", "/about/"] + [f"/best/{c['id']}/" for c in cats] + [f"/compare/{k}/" for k, _ in COMPARES] + [f"/best-of/{b['slug']}/" for b in BO["pages"]] + [prof(t) for _, _, t in ALLT]
     (ROOT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{UPD}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Perplexity-User", "Google-Extended", "Googlebot", "Bingbot", "Applebot", "Applebot-Extended"]
@@ -981,6 +1022,7 @@ def main():
     L += [f"- [{c['title']}]({BASE}/best/{c['id']}/): {c['blurb']} {len(c['tools'])} tools; #1: {c['tools'][0]['name']}." for c in cats]
     def LLM_EV(): return (f"- [How we rank]({BASE}/methodology/): editorial, evidence-based; sources and check dates on every tool profile at {BASE}/tools/<slug>/.\n- [Compare tools (interactive)]({BASE}/compare/)\n" + "".join(f"- [{cmp_title(ids)}]({BASE}/compare/{k}/)\n" for k, ids in COMPARES) + f"- [Claim your listing (free)]({BASE}/claim/)\n")
     L += [f"\n## Optional\n\n- [About ToolRank]({BASE}/about/)\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n- [Services for makers]({BASE}/services.html): free listing and Review Boost; founding prices (available now via Stripe checkout): Verified badge US$2, Featured spot US$5/mo, Launch spotlight US$9/wk, Comparison page US$15, Launch Kit US$19, AI Stack Audit US$29.\n" + LLM_EV() + f"- [Reviews]({BASE}/reviews.html): {len(R)} moderated user review(s) collected so far; leave one via GitHub.\n"]
+    L.insert(3, "\n## Best-of guides (constraints)\n\n" + "\n".join(f"- [{b['h1']}]({BASE}/best-of/{b['slug']}/): {b['desc']}" for b in BO["pages"]) + "\n")
     (ROOT/"llms.txt").write_text("\n".join(L))
     F = [f"# ToolRank: full rankings\n\nLast updated {UPD}. Source: {BASE}/. Editorial ranking; position 1 = top pick. Pricing labels: free / freemium / paid (as listed; verify with vendor).\n"]
     for c in cats:
@@ -988,6 +1030,8 @@ def main():
         F += [f"{i}. {t['name']} ({t['pricing']}; audience: {t.get('audience','')}){' [Featured]' if t.get('featured') else ''}{f' [user rating {rstat(t)[1]}/5 from {rstat(t)[0]} review(s)]' if rstat(t)[0] else ''}: {t['verdict']} {t['url']}" for i, t in enumerate(c["tools"], 1)]
     F.append(f"\n## Comparisons (facts checked {fmt_date(CHECK_DATE)})\n")
     F += [f"- {cmp_title(c['ids'])}: {BASE}/compare/{c['key']}/ | " + re.sub(r"<[^>]+>", "", c["pick"]) for c in CJ]
+    F.append(f"\n## Best-of guides (facts checked {fmt_date(BO['checked'])})\n")
+    F += [f"- {b['h1']}: {BASE}/best-of/{b['slug']}/ | " + re.sub(r"<[^>]+>", "", b["summary"]) for b in BO["pages"]]
     F.append(f"\n## New this week (as of {N['updated']})\n")
     F += [f"- {n['date']} {n['title']} ({n['type']}): {n['summary']} {n['url']}" for n in sorted(N["items"], key=lambda n: n["date"], reverse=True)]
     (ROOT/"llms-full.txt").write_text("\n".join(F) + "\n")
