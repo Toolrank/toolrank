@@ -331,7 +331,7 @@ def NL(cls="", hid="nl"):
 def FOOT_():
     cl = "".join(f'<a href="/best/{c["id"]}/">{E(c["title"])}</a>' for c in D["categories"])
     return (f'<footer class="foot"><div class="wrap">{NL("nl-foot", "nlf")}<div class="fg"><div class="fl">{LOGO}<p class="muted">Confused by AI? We&rsquo;ll find the right tool for you. Editorial rankings, updated <time datetime="{UPD}">{UPD}</time>.</p></div>'
-            f'<nav class="fc2" aria-label="Categories">{cl}</nav><nav class="fc2" aria-label="ToolRank"><a href="/about/">About</a><a href="/methodology/">How we rank</a><a href="/compare/">Compare tools</a><a href="/claim/">Claim your listing</a><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/llms.txt">llms.txt</a></nav></div>'
+            f'<nav class="fc2" aria-label="Categories">{cl}</nav><nav class="fc2" aria-label="ToolRank"><a href="/about/">About</a><a href="/methodology/">How we rank</a><a href="/compare/">Compare tools</a><a href="/claim/">Claim your listing</a><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/sponsor/">Sponsor</a><a href="/llms.txt">llms.txt</a></nav></div>'
             f'<p class="si-tag small">ToolRank · Super Intelligence, ranked.</p><p class="muted small">© {UPD[:4]} ToolRank. Some links may become affiliate links; featured placements are labelled. Reviews are user-submitted via GitHub and moderated; they never change the editorial rank.</p></div></footer>')
 FOOT = FOOT_()
 def fit_title(*cands):
@@ -758,6 +758,22 @@ def methodology_page():
 <p class="muted small">Last updated {fmt_date(CHECK_DATE)}.</p></div></section></main>"""
     return doc(head("How ToolRank ranks AI tools: methodology | ToolRank", "Editorial, evidence-based rankings: capability and reliability over popularity, sources and check dates on every profile, sponsorships never affect rank.", "/methodology/", [ORG, SITE]), body)
 
+SPONSOR_OPTS = [
+ ("Featured spot", "US$5/month", "A labelled Featured placement for your tool in its category, renewed monthly.", "https://buy.stripe.com/9B600j3n40j49Jl73LbEA01"),
+ ("Launch spotlight", "US$9", "A week at the top of New this week, labelled as a spotlight.", "https://buy.stripe.com/14A4gz4r83vgg7Jco5bEA02"),
+ ("Comparison page", "US$15", "A Tool vs Tool page comparing your product with an alternative, written editorially from vendor-sourced facts.", "https://buy.stripe.com/fZueVdf5M9TE08LfAhbEA03"),
+ ("Launch Kit", "US$19", "Listing, a newsletter mention and an X post from ToolRank for your launch.", "https://buy.stripe.com/28E00j4r80j49Jl4VDbEA04"),
+]
+def sponsor_page():
+    cards = "".join(f'<article class="card"><h3>{E(n)}</h3><p class="eyebrow">{E(pr)}</p><p class="muted">{E(d)}</p><p><a class="btn" href="{E(u)}" target="_blank" rel="noopener">Buy {E(n)} →</a></p></article>' for n, pr, d, u in SPONSOR_OPTS)
+    cards += '<article class="card"><h3>Newsletter sponsor (ToolRank Brief)</h3><p class="eyebrow">Founding sponsor rate — enquire</p><p class="muted">A clearly marked sponsor slot in the ToolRank Brief newsletter. Founding sponsors get an early rate while the newsletter is new.</p><p><a class="btn ghost" href="/services.html">Enquire via services →</a></p></article>'
+    body = f"""<main><section class="hero sub"><div class="wrap"><h1>Sponsor ToolRank</h1><p class="lead">Reach people who are actively choosing AI tools, with placements that are always labelled and never affect editorial rank.</p></div></section>
+<section class="sec"><div class="wrap prose"><h2>Who we are</h2><p>ToolRank publishes evidence-first, editorial rankings of AI tools by use case. Pricing, free-tier limits and platforms are checked against vendors&rsquo; own pages, with sources and check dates on each profile. Our criteria are public on <a href="/methodology/">How we rank</a>.</p>
+<h2>Where we are today</h2><p>ToolRank is newly launched, so we do not quote audience or traffic figures yet. What we can state as of {fmt_date(CHECK_DATE)}:</p><ul><li>{NT} AI tools ranked across {len(D['categories'])} categories</li><li>{len(COMPARES)} head-to-head comparison pages</li><li>{len(BO['pages'])} best-of guides</li></ul></div></section>
+<section class="sec"><div class="wrap"><h2>Sponsorship options</h2><div class="grid">{cards}</div><p class="muted small">Payments are handled securely by Stripe.</p></div></section>
+<section class="sec"><div class="wrap prose"><h2>Our editorial promise</h2><p><b>Sponsored placements are always labelled and never affect editorial rank.</b> A tool&rsquo;s position is decided only by the criteria on <a href="/methodology/">How we rank</a>. Paying does not buy a better position, a better verdict or removal of a listed limitation.</p><p>Questions? See <a href="/services.html">services for makers</a> or <a href="/about/">about ToolRank</a>.</p></div></section></main>"""
+    return doc(head("Sponsor ToolRank: labelled placements for AI tools", "Sponsorship options on ToolRank: featured spots, launch spotlights, comparison pages, Launch Kit and newsletter sponsorship. Always labelled; never affects rank.", "/sponsor/", [ORG, SITE]), body)
+
 def about_page():
     nv = sum(1 for _, _, t in ALLT if verified(t))
     body = f"""<main><section class="hero sub"><div class="wrap"><h1>About ToolRank</h1><p class="lead">{E(ORG_DESC)}</p></div></section>
@@ -1017,7 +1033,7 @@ def main():
     (ROOT/"assets/ev.css").write_text(EV_CSS); (ROOT/"assets/compare.js").write_text(COMPARE_JS.replace("https://www.google.com/s2/favicons?domain=${esc(dom(t.url))}&amp;sz=32\" alt=\"\"", "/assets/logos/${t.s}.png\" alt=\"\" onerror=\"this.remove()\"").replace('&amp;sz=64" alt="" width="28" height="28" loading="lazy"', '&amp;sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()"').replace("https://www.google.com/s2/favicons?domain=${esc(dom(t.url))}&amp;sz=64", "/assets/logos/${t.s}.png"))
     for c, i, t in ALLT:
         d = ROOT/"tools"/slug(t["name"]); d.mkdir(parents=True, exist_ok=True); (d/"index.html").write_text(profile_page(c, i, t))
-    for name, fn in (("methodology", methodology_page), ("claim", claim_page), ("compare", compare_ui_page), ("about", about_page)):
+    for name, fn in (("methodology", methodology_page), ("claim", claim_page), ("compare", compare_ui_page), ("about", about_page), ("sponsor", sponsor_page)):
         (ROOT/name).mkdir(exist_ok=True); (ROOT/name/"index.html").write_text(fn())
     for k, ids in COMPARES:
         (ROOT/"compare"/k).mkdir(parents=True, exist_ok=True); (ROOT/"compare"/k/"index.html").write_text(cmp_page(k, ids))
@@ -1030,7 +1046,7 @@ def main():
     def sub(s): return re.sub(r'(<select name="category"[^>]*>).*?(</select>)', lambda m: m.group(1) + opts + m.group(2), s, flags=re.S)
     patch("featured.html", head("Get your AI tool featured | ToolRank", "Featured placements and newsletter sponsorship on ToolRank. Featured spots are clearly labelled; rankings stay editorial.", "/featured.html", [ORG, SITE]))
     patch("submit.html", head("Submit your AI tool for free | ToolRank", "Submit your AI tool to ToolRank for free. Every submission gets an editorial review; approved tools are listed in the right category.", "/submit.html", [ORG, SITE]), sub)
-    urls = ["/", "/reviews.html", "/services.html", "/submit.html", "/featured.html", "/methodology/", "/claim/", "/compare/", "/about/"] + [f"/best/{c['id']}/" for c in cats] + [f"/compare/{k}/" for k, _ in COMPARES] + [f"/best-of/{b['slug']}/" for b in BO["pages"]] + [prof(t) for _, _, t in ALLT]
+    urls = ["/", "/reviews.html", "/services.html", "/submit.html", "/featured.html", "/methodology/", "/claim/", "/compare/", "/about/", "/sponsor/"] + [f"/best/{c['id']}/" for c in cats] + [f"/compare/{k}/" for k, _ in COMPARES] + [f"/best-of/{b['slug']}/" for b in BO["pages"]] + [prof(t) for _, _, t in ALLT]
     (ROOT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         "".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{UPD}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Perplexity-User", "Google-Extended", "Googlebot", "Bingbot", "Applebot", "Applebot-Extended"]
@@ -1040,7 +1056,7 @@ def main():
     L += [f"\nAudiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). {NT} tools ranked across {len(cats)} categories; {len(R)} approved user reviews.\n"]
     L += [f"- [{c['title']}]({BASE}/best/{c['id']}/): {c['blurb']} {len(c['tools'])} tools; #1: {c['tools'][0]['name']}." for c in cats]
     def LLM_EV(): return (f"- [How we rank]({BASE}/methodology/): editorial, evidence-based; sources and check dates on every tool profile at {BASE}/tools/<slug>/.\n- [Compare tools (interactive)]({BASE}/compare/)\n" + "".join(f"- [{cmp_title(ids)}]({BASE}/compare/{k}/)\n" for k, ids in COMPARES) + f"- [Claim your listing (free)]({BASE}/claim/)\n")
-    L += [f"\n## Optional\n\n- [About ToolRank]({BASE}/about/)\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n- [Services for makers]({BASE}/services.html): free listing and Review Boost; founding prices (available now via Stripe checkout): Verified badge US$2, Featured spot US$5/mo, Launch spotlight US$9/wk, Comparison page US$15, Launch Kit US$19, AI Stack Audit US$29.\n" + LLM_EV() + f"- [Reviews]({BASE}/reviews.html): {len(R)} moderated user review(s) collected so far; leave one via GitHub.\n"]
+    L += [f"\n## Optional\n\n- [About ToolRank]({BASE}/about/)\n- [Full rankings]({BASE}/llms-full.txt)\n- [Submit a tool (free)]({BASE}/submit.html)\n- [Get featured]({BASE}/featured.html)\n- [Sponsor ToolRank]({BASE}/sponsor/): labelled sponsorship options; never affects editorial rank.\n- [Services for makers]({BASE}/services.html): free listing and Review Boost; founding prices (available now via Stripe checkout): Verified badge US$2, Featured spot US$5/mo, Launch spotlight US$9/wk, Comparison page US$15, Launch Kit US$19, AI Stack Audit US$29.\n" + LLM_EV() + f"- [Reviews]({BASE}/reviews.html): {len(R)} moderated user review(s) collected so far; leave one via GitHub.\n"]
     L.insert(3, "\n## Best-of guides (constraints)\n\n" + "\n".join(f"- [{b['h1']}]({BASE}/best-of/{b['slug']}/): {b['desc']}" for b in BO["pages"]) + "\n")
     (ROOT/"llms.txt").write_text("\n".join(L))
     F = [f"# ToolRank: full rankings\n\nLast updated {UPD}. Source: {BASE}/. Editorial ranking; position 1 = top pick. Pricing labels: free / freemium / paid (as listed; verify with vendor).\n"]
