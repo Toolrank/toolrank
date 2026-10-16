@@ -44,7 +44,9 @@ for c in D["categories"]:
         tiers = pd.get("tiers", []); tn = " ".join(x["name"] + " " + x["price"] + " " + x.get("notes", "") for x in tiers).lower()
         ALL.append(dict(id=i, cat=c["id"], rank=k, t=t, usd=usd(t), free=freeness(i, t), blob=blob, tiers=tiers, tn=tn))
 BYID = {a["id"]: a for a in ALL}
-def low(s): s = (s or "").strip().rstrip("."); return s[:1].lower() + s[1:] if s and not s[:2].isupper() else s
+def low(s):
+    s = (s or "").strip().rstrip("."); w = s.split(" ")[0] if s else ""
+    return s if (len(w) > 1 and (w.isupper() or any(ch.isupper() for ch in w[1:]))) else s[:1].lower() + s[1:]
 def tier_named(a, pred):
     for x in a["tiers"]:
         if pred(x): return x["name"]
@@ -54,7 +56,9 @@ def cheap_tier_name(a): return a["usd"][1] if a["usd"] else ""
 def money(v): return f"${v:,.2f}".replace(".00", "")
 def plan_txt(a, tn):
     x = next((x for x in a["tiers"] if x["name"] == tn), None)
-    return f'{x["name"]} ({x["price"]})' if x else (a["t"]["pricing_detail"].get("starting_price") or "price not yet verified")
+    if x: return f'{x["name"]} ({x["price"]})'
+    pd = a["t"]["pricing_detail"]
+    return pd.get("starting_price") or (f'free plan: {pd["free_tier"]}' if pd.get("free_tier") and a["free"] in ("yes", "free") else "price not yet verified")
 
 # ---------- topic definitions ----------
 # Each topic: slug, cat (breadcrumb category), h1, title, ids (ordered), tierfn, angle(intro sentence), crit(how chosen), kind, order_note
@@ -182,8 +186,13 @@ for T in TOPICS:
     picks = []
     for a in A[:7]:
         t = a["t"]; bf = t.get("best_for"); lim = t.get("avoid_if") or t.get("main_limitation"); tn = dict(items)[a["id"]]
-        line = f'Pick <b>{html.escape(t["name"])}</b>' + (f' for {html.escape(low(bf))}' if bf else f' if you want {html.escape(low(t["verdict"]))}')
-        line += f' ({html.escape(plan_txt(a, tn).replace(" (", ": ", 1).rstrip(")") if " (" in plan_txt(a, tn) else plan_txt(a, tn))})'
+        pt = (plan_txt(a, tn).replace(" (", ": ", 1)[:-1] if tn and plan_txt(a, tn).endswith(")") else plan_txt(a, tn))
+        if not bf:
+            line = f'<b>{html.escape(t["name"])}</b> ({html.escape(pt)}): {html.escape(t["verdict"].rstrip("."))}'
+            if lim: line += f'. Watch out: {html.escape(low(lim))}'
+            picks.append(line + "."); continue
+        line = f'Pick <b>{html.escape(t["name"])}</b> for {html.escape(low(bf))}'
+        line += f' ({html.escape((plan_txt(a, tn).replace(" (", ": ", 1)[:-1] if tn and plan_txt(a, tn).endswith(")") else plan_txt(a, tn)))})'
         if lim: line += f'; think twice if {html.escape(low(lim))}' if t.get("avoid_if") else f'. Watch out: {html.escape(low(lim))}'
         picks.append(line + ".")
     pick_txt = " ".join(picks)
