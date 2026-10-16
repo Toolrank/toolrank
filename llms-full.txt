@@ -59,9 +59,9 @@ Page: https://toolrank.io/best/coding/
 37. OpenCode (free; audience: business): Open-source terminal coding agent supporting many models. https://opencode.ai
 38. vibe-wise (free; audience: consumer): Claude Code/Codex plugin that teaches you to build while AI writes the code. New open-source launch on GitHub. https://github.com/nykooi1/vibe-wise
 39. scroll-craft (free; audience: consumer): Agent skill for building premium scroll-driven websites. New open-source launch on GitHub. https://github.com/nateherkai/scroll-craft
-40. CodeRabbit (freemium; audience: business): AI code reviews on pull requests. https://www.coderabbit.ai
+40. CodeRabbit (paid; audience: business): AI code reviews on pull requests. https://www.coderabbit.ai
 41. shadcn lint (free; audience: consumer): Agent-first linter for Tailwind design systems. New open-source launch on GitHub. https://github.com/shadcn-ui/lint
-42. Qodo (freemium; audience: business): AI code review and test generation. https://www.qodo.ai
+42. Qodo (paid; audience: business): AI code review and test generation. https://www.qodo.ai
 43. Magpie (freemium; audience: business): Menu-bar app to run any coding agent (Codex, Claude Code) on any model. New open-source launch on GitHub. https://usemagpie.ai
 44. Mono (monocode) (freemium; audience: business): A GUI for your coding agents. New open-source launch on GitHub. https://usemono.dev
 45. OmniRush (freemium; audience: business): Desktop coding agent with free access to frontier models. New open-source launch on GitHub. https://omnirush.ai
@@ -90,7 +90,7 @@ Page: https://toolrank.io/best/image/
 9. Leonardo.Ai (freemium; audience: consumer): Image and video generation platform with fine-tuned models; owned by Canva. https://leonardo.ai
 10. Stability AI (freemium; audience: both): Maker of Stable Diffusion open image models. https://stability.ai
 11. Canva AI (freemium; audience: both): Canva's design platform with built-in AI image generation. https://www.canva.com
-12. Freepik AI (freemium; audience: both): Image and video generation suite hosting many models. https://www.freepik.com/ai
+12. Freepik AI (paid; audience: both): Image and video generation suite hosting many models. https://www.freepik.com/ai
 13. Magnific (paid; audience: consumer): AI image upscaler and enhancer. https://www.magnific.com
 14. Photoroom (freemium; audience: both): AI background removal and product photo editing. https://www.photoroom.com
 15. Seedream (ByteDance) (freemium; audience: consumer): ByteDance Seed's image generation and editing model. https://seed.bytedance.com/en/seedream4_0
@@ -121,7 +121,7 @@ Page: https://toolrank.io/best/video/
 15. OpusClip (freemium; audience: both): Turns long videos into short vertical clips automatically. https://www.opus.pro
 16. Descript (video) (freemium; audience: both): Edit video by editing its transcript. https://www.descript.com
 17. CapCut (freemium; audience: consumer): ByteDance's video editor with AI captions, effects and generation. https://www.capcut.com
-18. Invideo AI (freemium; audience: both): Generates full videos with script, stock media and voiceover from a prompt. https://invideo.io
+18. Invideo AI (paid; audience: both): Generates full videos with script, stock media and voiceover from a prompt. https://invideo.io
 19. Colossyan (freemium; audience: business): AI avatar video creator focused on workplace learning. https://www.colossyan.com
 20. D-ID (freemium; audience: consumer): Talking-avatar video and real-time streaming avatars from a photo. https://www.d-id.com
 21. Wan (Alibaba) (freemium; audience: business): Alibaba's Wan video models, with open weights and a hosted generator. https://wan.video
@@ -168,7 +168,7 @@ Page: https://toolrank.io/best/voice-audio/
 12. AssemblyAI (freemium; audience: business): Speech-to-text and audio intelligence API. https://www.assemblyai.com
 13. Resemble AI (paid; audience: business): Voice cloning and deepfake detection. https://www.resemble.ai
 14. Adobe Podcast (freemium; audience: consumer): Enhance Speech cleans up recorded voice audio. https://podcast.adobe.com
-15. Krisp (freemium; audience: both): Noise cancellation and meeting notes. https://krisp.ai
+15. Krisp (paid; audience: both): Noise cancellation and meeting notes. https://krisp.ai
 16. Riverside (freemium; audience: both): Remote podcast and video recording with AI editing. https://riverside.com
 17. Hume AI (freemium; audience: business): Expressive, emotion-aware voice AI. https://www.hume.ai
 18. LALAL.AI (freemium; audience: consumer): Stem splitting: vocals and instrument separation. https://www.lalal.ai
@@ -190,7 +190,7 @@ Page: https://toolrank.io/best/automation/
 7. LangGraph (freemium; audience: business): Developer framework for stateful, controllable agents. https://www.langchain.com/langgraph
 8. CrewAI (freemium; audience: business): Multi-agent orchestration framework plus hosted platform. https://www.crewai.com
 9. Relevance AI (freemium; audience: business): No-code platform for building AI agent teams. https://www.relevanceai.com
-10. Gumloop (freemium; audience: business): Drag-and-drop AI automation and agent builder. https://www.gumloop.com
+10. Gumloop (paid; audience: business): Drag-and-drop AI automation and agent builder. https://www.gumloop.com
 11. OpenAI Agents SDK (free; audience: business): OpenAI's lightweight framework for multi-agent workflows. https://openai.github.io/openai-agents-python/
 12. Claude Agent SDK (free; audience: business): Anthropic's SDK for building agents on Claude Code's harness. https://code.claude.com/docs/en/agent-sdk/overview
 13. Google ADK (free; audience: business): Google's open-source Agent Development Kit. https://adk.dev/
@@ -199,12 +199,12 @@ Page: https://toolrank.io/best/automation/
 16. Pydantic AI (free; audience: business): Type-safe Python agent framework from the Pydantic team. https://pydantic.dev/docs/ai/overview/
 17. Mastra (free; audience: business): Open-source TypeScript agent framework. https://mastra.ai
 18. Dify (freemium; audience: business): Open-source platform for building LLM apps and agent workflows visually. https://dify.ai
-19. Flowise (free; audience: business): Open-source drag-and-drop builder for LLM agents. https://flowiseai.com
+19. Flowise (freemium; audience: business): Open-source drag-and-drop builder for LLM agents. https://flowiseai.com
 20. Langflow (free; audience: business): Open-source visual builder for agents and RAG. https://www.langflow.org
 21. Lindy (freemium; audience: both): No-code AI agents for business tasks like email and scheduling. https://www.lindy.ai
 22. Botpress (freemium; audience: business): Platform for building AI chat agents. https://botpress.com
 23. Voiceflow (freemium; audience: business): Platform to design and deploy chat and voice agents. https://www.voiceflow.com
-24. Vapi (paid; audience: business): Developer platform for voice AI agents. https://vapi.ai
+24. Vapi (freemium; audience: business): Developer platform for voice AI agents. https://vapi.ai
 25. Agno (free; audience: business): Open-source Python framework and runtime for multi-agent systems. https://www.agno.com
 26. Monid (freemium; audience: business): OpenRouter for agent tools. New open-source launch on GitHub. https://monid.ai
 27. agent-memory (free; audience: business): Long-term memory runtime for agents with plain Markdown as source of truth. New open-source launch on GitHub. https://github.com/tigerless-labs/agent-memory
@@ -271,7 +271,7 @@ Page: https://toolrank.io/best/business/
 5. Fireflies.ai (freemium; audience: business): Meeting recorder, transcription and summaries. https://fireflies.ai
 6. Fathom (freemium; audience: business): Free AI meeting notetaker for Zoom, Meet and Teams. https://www.fathom.ai
 7. Writer (paid; audience: business): Enterprise generative AI platform with brand-governed writing. https://writer.com
-8. Superhuman (paid; audience: business): Fast email client with AI writing and triage. https://superhuman.com
+8. Superhuman (freemium; audience: business): Fast email client with AI writing and triage. https://superhuman.com
 9. Glide (freemium; audience: both): No-code business apps from spreadsheets, with AI features. https://www.glideapps.com
 
 ## Restaurants & Bars
@@ -327,8 +327,8 @@ Page: https://toolrank.io/best/crypto/
 20. CoinStats (freemium; audience: consumer): Crypto portfolio tracker across exchanges and wallets, with AI insights. https://coinstats.app
 21. Koinly (freemium; audience: both): Crypto tax calculator that imports exchanges and wallets and produces tax reports. https://koinly.io
 22. CoinTracker (freemium; audience: both): Crypto tax and portfolio tracking for individuals and businesses. https://www.cointracker.io
-23. 3Commas (freemium; audience: consumer): Automated crypto trading bots and terminal connected to major exchanges. https://3commas.io
-24. Cryptohopper (freemium; audience: consumer): Cloud crypto trading bot with strategy designer and AI tools. https://www.cryptohopper.com
+23. 3Commas (paid; audience: consumer): Automated crypto trading bots and terminal connected to major exchanges. https://3commas.io
+24. Cryptohopper (paid; audience: consumer): Cloud crypto trading bot with strategy designer and AI tools. https://www.cryptohopper.com
 25. Chainalysis (paid; audience: business): Blockchain analytics for compliance, investigations and fraud prevention. https://www.chainalysis.com
 
 ## Education & Learning
@@ -338,7 +338,7 @@ Page: https://toolrank.io/best/education/
 
 1. Khanmigo (freemium; audience: both): Khan Academy's AI tutor for students and teaching assistant for teachers. https://www.khanmigo.ai
 2. Duolingo (freemium; audience: consumer): Gamified language learning; Max tier adds AI roleplay and explanations. https://www.duolingo.com
-3. Speak (freemium; audience: consumer): Language app focused on speaking practice with an AI tutor. https://www.speak.com
+3. Speak (paid; audience: consumer): Language app focused on speaking practice with an AI tutor. https://www.speak.com
 4. Quizlet (freemium; audience: consumer): Flashcards and study sets with AI-generated practice. https://quizlet.com
 5. MagicSchool (freemium; audience: business): AI toolkit for teachers and school districts: lesson plans, rubrics, feedback. https://www.magicschool.ai
 6. Brisk Teaching (freemium; audience: business): Chrome extension that helps teachers create, give feedback and differentiate. https://www.briskteaching.com
@@ -408,6 +408,31 @@ Page: https://toolrank.io/best/gaming/
 - Best AI coding tools for beginners: https://toolrank.io/best-of/ai-coding-tools-for-beginners/ | If you're new to code and want to build something, start with Lovable or Bolt.new. Both turn plain-language prompts into web apps in the browser and have free plans. Lovable gives 5 build credits a day, up to 30 a month. Bolt gives 300K tokens a day and 1M a month. Replit builds, hosts and deploys from one browser workspace, with Core at $20/month. If you want to learn to code in a real editor, GitHub Copilot Free and Cursor Free cost nothing to start. Checked 16 Oct 2026.
 - Best AI tools for building full-stack apps: https://toolrank.io/best-of/ai-tools-for-building-full-stack-apps/ | To go from a prompt to a running full-stack app, Bolt.new is our top pick. It builds, runs and deploys in the browser, has a generous token-based free tier, and Pro is $25/month. Lovable turns chat into web apps with hosting on Lovable Cloud, but we couldn't verify its paid prices. Replit covers prompt, build, database and deploy in one workspace, from $20/month. v0 generates React/Next.js apps that deploy to Vercel. Cursor fits developers who want full control in their own repo. Checked 16 Oct 2026.
 - Best AI coding tools with a free tier: https://toolrank.io/best-of/ai-coding-tools-with-free-tier/ | For a free plan that includes AI usage with no API key, Cursor Free is our top pick, with limited agent and chat requests. GitHub Copilot Free has limited chat and agent usage but no code review or cloud agent. Devin Desktop (formerly Windsurf) Free has a light agent quota and unlimited Tab completions. Kiro gives a perpetual 50 credits. Bolt gives 300K tokens a day. Lovable gives 5 build credits a day. Devin Free has a light quota without cloud agents. All limits were checked on vendor pages on 16 Oct 2026.
+- Best AI meeting note takers: https://toolrank.io/best-of/ai-meeting-note-takers/ | These tools record or transcribe meetings and write the notes for you. Otter.ai comes first: meeting transcription and AI notes. The cheapest verified paid plan here is Krisp Core ($8/user/month annually or $16 monthly). 4 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI tools for Zoom meetings: https://toolrank.io/best-of/ai-tools-for-zoom-meetings/ | Each of these tools lists a Zoom integration. Otter.ai comes first: meeting transcription and AI notes. The cheapest verified paid plan here is Krisp Core ($8/user/month annually or $16 monthly). 4 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI tools for Microsoft Teams users: https://toolrank.io/best-of/ai-tools-for-microsoft-teams/ | Each of these tools lists Microsoft Teams among its integrations or platforms. Microsoft Copilot comes first: built into Microsoft&#x27;s apps and available free for consumers, with business plans bundled with Microsoft 365. The cheapest verified paid plan here is Krisp Core ($8/user/month annually or $16 monthly). 3 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI tools for Google Workspace users: https://toolrank.io/best-of/ai-tools-for-google-workspace/ | Each of these tools connects to Gmail, Drive, Docs, Sheets, Meet or Google Calendar. Google Gemini comes first: low-cost entry tier and deep ties to Google storage, Search and creative tools. The cheapest verified paid plan here is Google Gemini Lower paid tier ($4.99/month). 7 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI avatar video generators: https://toolrank.io/best-of/ai-avatar-video-generators/ | These tools turn a script into a video presented by an AI avatar. HeyGen comes first: fastest path to presenter-style avatar videos, with a free tier to test. The cheapest verified paid plan here is Descript (video) Hobbyist ($16/month annual or $24 monthly). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI text-to-video generators: https://toolrank.io/best-of/ai-text-to-video-generators/ | These tools generate video clips from a prompt using video models. Runway comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is Pika Starter ($10/month ($8 annual)). 2 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best voice AI APIs for developers: https://toolrank.io/best-of/voice-ai-apis-for-developers/ | Each of these is a developer API for speech-to-text, text-to-speech or voice agents. ElevenLabs comes first: top-tier voice quality with a free tier and a cheap Starter plan that adds commercial rights. The cheapest verified paid plan here is ElevenLabs Starter ($6/month). 5 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI search engines: https://toolrank.io/best-of/ai-search-engines/ | These tools answer questions by searching the web and citing sources. Perplexity comes first: cited answers across top models with deep research, free to start. The cheapest verified paid plan here is Kagi Starter ($5/month). 3 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI tools for academic research: https://toolrank.io/best-of/ai-tools-for-academic-research/ | These tools search, summarise or check scientific papers and sources. NotebookLM comes first: answers grounded in your own sources, free for personal use, with Audio and Video Overviews. The cheapest verified paid plan here is Elicit Plus ($11/user/month billed $132/yr). 4 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best no-code AI agent builders: https://toolrank.io/best-of/no-code-ai-agent-builders/ | These tools let you build AI agents or AI workflows without writing code. Make comes first: A visual scenario builder with thousands of app integrations and a free plan. The cheapest verified paid plan here is Lindy Team (From $29.99/month). 3 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best open-source AI agent and workflow platforms: https://toolrank.io/best-of/open-source-ai-agent-platforms/ | These platforms publish open-source code you can self-host, with optional paid cloud plans. n8n comes first: developer-friendly automation with unlimited steps per execution and a self-host option. The cheapest verified paid plan here is Flowise Starter ($35/month). 4 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI website and app builders: https://toolrank.io/best-of/ai-website-builders/ | These tools build and publish websites or web apps in the browser. Lovable comes first: turns plain-language prompts into working web apps, with hosting via Lovable Cloud and a free daily allowance. The cheapest verified paid plan here is Framer Basic ($10/month (yearly)). 6 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI coding tools for JetBrains IDEs: https://toolrank.io/best-of/ai-coding-tools-for-jetbrains/ | Each of these tools lists JetBrains IDE support. GitHub Copilot comes first: works in most major editors and in GitHub itself, from a free plan up to cloud agents and code review. The cheapest verified paid plan here is GitHub Copilot Pro ($10/month). 5 of the 8 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI coding tools for VS Code: https://toolrank.io/best-of/ai-coding-tools-for-vs-code/ | Each of these tools runs in VS Code or is built on it. GitHub Copilot comes first: works in most major editors and in GitHub itself, from a free plan up to cloud agents and code review. The cheapest verified paid plan here is GitHub Copilot Pro ($10/month). 7 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI coding tools that use your own API keys: https://toolrank.io/best-of/ai-coding-tools-bring-your-own-key/ | Each of these tools lets you bring your own model API keys. Cline comes first: free, open-source (Apache-2.0) agent with no subscription or seat fees: you pay for inference only, at cost or with your own keys, from many providers. The cheapest verified paid plan here is Zed Pro ($10/month). 9 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI coding tools that work with local models: https://toolrank.io/best-of/ai-coding-tools-with-local-models/ | Each of these tools can use locally run models. Zed comes first: A very fast native editor that&#x27;s free forever with your own keys or external agents like Claude Agent and Codex CLI. Pro is a low $10/month. The cheapest verified paid plan here is Zed Pro ($10/month). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI coding tools that work with GitHub: https://toolrank.io/best-of/ai-coding-tools-for-github/ | Each of these tools lists a GitHub integration. GitHub Copilot comes first: works in most major editors and in GitHub itself, from a free plan up to cloud agents and code review. The cheapest verified paid plan here is GitHub Copilot Pro ($10/month). 5 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best free AI chatbots: https://toolrank.io/best-of/free-ai-chatbots/ | These general assistants have a free plan we confirmed on each vendor's page. ChatGPT comes first: the broadest general assistant: a usable free plan, apps on every major platform and a ladder of paid plans for heavier use. The cheapest verified paid plan here is Google Gemini Lower paid tier ($4.99/month). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI assistants built into office suites: https://toolrank.io/best-of/ai-assistants-for-office-suites/ | These AI assistants live inside a suite of documents, mail or work apps. Notion AI comes first: AI built into the docs and databases teams already use, with custom agents on Business. The cheapest verified paid plan here is Gemini for Google Workspace Business Starter ($7/user/month). 2 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI image generators with an API: https://toolrank.io/best-of/ai-image-generators-with-api/ | Each of these image generators offers an API. Ideogram comes first: credit-based plans with unlimited slow generations and character consistency. The cheapest verified paid plan here is Krea Basic ($9/month ($5 annual)). 2 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI game asset generators: https://toolrank.io/best-of/ai-game-asset-generators/ | These tools generate art, 3D models or game content for game developers. Rosebud AI comes first: fastest prompt-to-playable game builder, free to start with no card. The cheapest verified paid plan here is Scenario Starter ($15/month). 3 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI tools for restaurants: https://toolrank.io/best-of/ai-tools-for-restaurants/ | These tools handle restaurant phone calls, ordering or marketing with AI. Slang.ai comes first: restaurant-specific voice AI with clear per-location pricing. The cheapest verified paid plan here is Popmenu Starter ($159/month annual ($179 monthly)). None of the 4 has a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI tools with MCP support (all categories): https://toolrank.io/best-of/ai-tools-with-mcp-support/ | Each of these tools, across all categories, supports the Model Context Protocol. GitHub Copilot comes first: works in most major editors and in GitHub itself, from a free plan up to cloud agents and code review. The cheapest verified paid plan here is GitHub Copilot Pro ($10/month). 10 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best AI tools under $10 a month (all categories): https://toolrank.io/best-of/ai-tools-under-10-dollars-a-month/ | Every tool here, from any category, has a paid plan listed at $10 a month or less. Google Gemini comes first: low-cost entry tier and deep ties to Google storage, Search and creative tools. The cheapest verified paid plan here is Google Gemini Lower paid tier ($4.99/month). 8 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
+- Best free crypto analytics and portfolio tools: https://toolrank.io/best-of/free-crypto-analytics-and-portfolio-tools/ | These crypto tools have a free plan confirmed on their vendor pages. Dune comes first: the standard for public onchain dashboards with a free view tier. The cheapest verified paid plan here is Santiment Sanbase Pro ($49/month). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.
 
 ## New this week (as of 2026-10-16)
 

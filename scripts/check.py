@@ -24,7 +24,7 @@ for r in rv.get("reviews", []):
 idx = (ROOT/"index.html").read_text()
 if f"<b>{sum(len(c['tools']) for c in d['categories'])}</b> tools ranked" not in idx: fails.append("index.html: tools counter does not match tools.json")
 if f"<b>{len(rv.get('reviews', []))}</b> review" not in idx: fails.append("index.html: reviews counter does not match reviews.json")
-pages = [p for p in ROOT.rglob("*.html")]
+pages = [p for p in ROOT.rglob("*.html") if not re.fullmatch(r"google[0-9a-f]+\.html", p.name)]  # search-console verification files are not pages
 ext = set()
 for p in pages:
     s = p.read_text(); r = p.relative_to(ROOT)

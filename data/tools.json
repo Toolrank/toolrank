@@ -321,7 +321,41 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "bot-blocked (403/429), known official domain, verified 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://mistral.ai/pricing",
+       "label": "Le Chat (Mistral) pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [],
+     "best_for": "A European alternative assistant",
+     "main_limitation": "Pro price not read reliably",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free plan available",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Team",
+        "price": "$24.99/user/month",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     }
    ]
   },
@@ -731,7 +765,46 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://v0.app/pricing",
+       "label": "v0 pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Vercel"
+     ],
+     "best_for": "Generating React/Next.js UI and deploying to Vercel",
+     "main_limitation": "Usage is credit-based",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free: $0/month, deploy apps to Vercel",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": ""
+       },
+       {
+        "name": "Plus",
+        "price": "Not shown clearly in fetched text",
+        "notes": "$30 included monthly credits per user"
+       },
+       {
+        "name": "Business",
+        "price": "$100/user/month",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Replit",
@@ -1325,7 +1398,49 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://base44.com/pricing",
+       "label": "Base44 pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Building full apps from a prompt",
+     "main_limitation": "Credits cap AI messages and integration actions",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$40/month (billed annually)",
+      "free_tier": "Free to start",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Paid tier",
+        "price": "$40/month billed annually",
+        "notes": ""
+       },
+       {
+        "name": "Higher tier",
+        "price": "$80/month billed annually",
+        "notes": "500 message credits"
+       },
+       {
+        "name": "Top self-serve tier",
+        "price": "$160/month billed annually",
+        "notes": "1,200 message credits"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Google AI Studio (Build)",
@@ -1381,7 +1496,49 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://kilo.ai/pricing",
+       "label": "Kilo Code pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "VS Code",
+      "JetBrains",
+      "CLI"
+     ],
+     "integrations": [
+      "BYOK",
+      "Local models"
+     ],
+     "best_for": "Open-source coding agent with any model",
+     "main_limitation": "Model usage costs extra",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$15/user/month (Teams)",
+      "free_tier": "Free and open source; AI usage billed separately",
+      "tiers": [
+       {
+        "name": "Free & Open Source",
+        "price": "Free",
+        "notes": ""
+       },
+       {
+        "name": "Teams",
+        "price": "$15/user/month",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Rork",
@@ -1479,7 +1636,46 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.augmentcode.com/pricing",
+       "label": "Augment Code pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "VS Code",
+      "JetBrains",
+      "CLI"
+     ],
+     "integrations": [],
+     "best_for": "Teams wanting a flat-price coding agent",
+     "main_limitation": "Usage beyond the included amount is billed",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$20/month flat (Standard, up to 50 seats)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Standard",
+        "price": "$20/month flat",
+        "notes": "$20 usage included"
+       },
+       {
+        "name": "Business",
+        "price": "$100/month flat",
+        "notes": "$100 usage included"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Bubble",
@@ -1507,7 +1703,42 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://webflow.com/pricing",
+       "label": "Webflow pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "MCP server",
+      "Webflow Cloud"
+     ],
+     "best_for": "Designer-grade marketing sites",
+     "main_limitation": "Site and workspace plans are billed separately",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$15/month (Basic site plan, billed yearly)",
+      "free_tier": "Starter: free, webflow.io domain",
+      "tiers": [
+       {
+        "name": "Starter",
+        "price": "Free",
+        "notes": ""
+       },
+       {
+        "name": "Basic",
+        "price": "$15/month billed yearly",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Factory",
@@ -1535,7 +1766,40 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.framer.com/pricing",
+       "label": "Framer pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "Desktop"
+     ],
+     "integrations": [],
+     "best_for": "Designing and publishing websites visually",
+     "main_limitation": "Free sites use a Framer domain",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$10/month (Basic, yearly billing)",
+      "free_tier": "Free: 500 AI credits, Framer domain, 1 GB bandwidth",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Basic",
+        "price": "$10/month (yearly)",
+        "notes": "1,000 AI credits/month"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Warp",
@@ -1549,7 +1813,48 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.warp.dev/pricing",
+       "label": "Warp pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Mac",
+      "Linux",
+      "Windows"
+     ],
+     "integrations": [
+      "BYOK"
+     ],
+     "best_for": "An AI terminal and agent",
+     "main_limitation": "Agent usage beyond the included amount is billed",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$20/month (Build)",
+      "free_tier": "Free: $0/month, bring your own AI",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": ""
+       },
+       {
+        "name": "Build",
+        "price": "$20/month",
+        "notes": "$20 of agent usage at API rates"
+       },
+       {
+        "name": "Max",
+        "price": "$200/month",
+        "notes": "$200 of agent usage"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Dyad",
@@ -1611,7 +1916,7 @@
      "name": "CodeRabbit",
      "url": "https://www.coderabbit.ai",
      "verdict": "AI code reviews on pull requests.",
-     "pricing": "freemium",
+     "pricing": "paid",
      "tags": [
       "code review",
       "pull requests"
@@ -1619,7 +1924,48 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.coderabbit.ai/pricing",
+       "label": "CodeRabbit pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "GitHub",
+      "GitLab"
+     ],
+     "integrations": [
+      "GitHub",
+      "GitLab"
+     ],
+     "best_for": "AI pull-request reviews",
+     "main_limitation": "Per-user pricing adds up for large teams",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$24/user/month",
+      "free_tier": "Free trial",
+      "tiers": [
+       {
+        "name": "Essentials",
+        "price": "$24/user/month",
+        "notes": ""
+       },
+       {
+        "name": "Team",
+        "price": "$48/user/month",
+        "notes": ""
+       },
+       {
+        "name": "Top tier",
+        "price": "$72/user/month",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "shadcn lint",
@@ -1639,7 +1985,7 @@
      "name": "Qodo",
      "url": "https://www.qodo.ai",
      "verdict": "AI code review and test generation.",
-     "pricing": "freemium",
+     "pricing": "paid",
      "tags": [
       "code review",
       "testing"
@@ -1647,7 +1993,42 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.qodo.ai/pricing",
+       "label": "Qodo pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "IDE",
+      "Git"
+     ],
+     "integrations": [
+      "GitHub"
+     ],
+     "best_for": "AI code review for teams",
+     "main_limitation": "No permanent free tier",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$30 (Pro Team)",
+      "free_tier": "14-day free trial; free for qualifying open-source projects",
+      "tiers": [
+       {
+        "name": "Pro Team",
+        "price": "$30",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Magpie",
@@ -2413,7 +2794,7 @@
      "name": "Freepik AI",
      "url": "https://www.freepik.com/ai",
      "verdict": "Image and video generation suite hosting many models.",
-     "pricing": "freemium",
+     "pricing": "paid",
      "tags": [
       "multi-model",
       "stock"
@@ -2421,7 +2802,44 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "bot-blocked (403), known official domain",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.freepik.com/pricing",
+       "label": "Freepik AI pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "AI images plus stock content in one subscription",
+     "main_limitation": "Brand now shown as Magnific (formerly Freepik)",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$14.50/month (Premium, billed annually; $20 monthly)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Premium",
+        "price": "$14.50/month annually or $20 monthly",
+        "notes": ""
+       },
+       {
+        "name": "Premium+",
+        "price": "$33.75/month annually or $45 monthly",
+        "notes": "Unlimited generations"
+       },
+       {
+        "name": "Pro",
+        "price": "$82.50/month annually or $110 monthly",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Magnific",
@@ -2751,7 +3169,52 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.synthesia.io/pricing",
+       "label": "Synthesia pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "SCORM export",
+      "PowerPoint import",
+      "API"
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$18/month (Starter, billed yearly; $29 monthly)",
+      "free_tier": "Basic: 10 minutes of video/month, 500 credits, Synthesia watermark",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "$0/month",
+        "notes": "10 min video/month, watermark"
+       },
+       {
+        "name": "Starter",
+        "price": "$18/month yearly or $29 monthly",
+        "notes": "1 editor, 3 guests, no watermark"
+       },
+       {
+        "name": "Pro",
+        "price": "$64/month yearly or $89 monthly",
+        "notes": "5 personal avatars, 5 guests"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "SSO, unlimited personal avatars"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Pika",
@@ -2765,7 +3228,52 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://pika.art/pricing",
+       "label": "Pika pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "iOS",
+      "API"
+     ],
+     "integrations": [
+      "API",
+      "MCP"
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$8/month (Starter, annual; $10 monthly)",
+      "free_tier": "Free: $0, no monthly credits (credit packs only), 2 parallel video generations",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "Credit packs only"
+       },
+       {
+        "name": "Starter",
+        "price": "$10/month ($8 annual)",
+        "notes": "900 credits/month, no commercial license"
+       },
+       {
+        "name": "Creator",
+        "price": "$35/month ($28 annual)",
+        "notes": "3,150 credits/month, commercial license"
+       },
+       {
+        "name": "Fancy",
+        "price": "$95–$880/month",
+        "notes": "8,550+ credits, priority queue"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Hailuo AI (MiniMax)",
@@ -2863,7 +3371,54 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.opus.pro/pricing",
+       "label": "OpusClip pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "YouTube",
+      "Adobe Premiere Pro",
+      "DaVinci Resolve",
+      "Zapier (Pro)",
+      "API",
+      "MCP"
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$15/month (Starter)",
+      "free_tier": "Free: watermarked clips, 3-day export window, 9:16 only",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "Watermark, exports expire after 3 days"
+       },
+       {
+        "name": "Starter",
+        "price": "$15/month",
+        "notes": "No watermark, YouTube auto-import"
+       },
+       {
+        "name": "Pro",
+        "price": "$29/month",
+        "notes": "Scheduler, Premiere/DaVinci export, API, up to 4 users"
+       },
+       {
+        "name": "Business",
+        "price": "Custom",
+        "notes": "SSO, unlimited seats"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Descript (video)",
@@ -2877,7 +3432,57 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.descript.com/pricing",
+       "label": "Descript (video) pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Desktop",
+      "Web"
+     ],
+     "integrations": [
+      "Adobe Premiere",
+      "Final Cut Pro",
+      "Pro Tools"
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$16/month (Hobbyist, annual; $24 monthly)",
+      "free_tier": "Free: 60 media minutes/month, 720p export, 5GB storage",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "1 media hour/month, 720p export"
+       },
+       {
+        "name": "Hobbyist",
+        "price": "$16/month annual or $24 monthly",
+        "notes": "10 media hours, 400 AI credits, 1080p"
+       },
+       {
+        "name": "Creator",
+        "price": "$24/month annual or $35 monthly",
+        "notes": "30 media hours, 800 AI credits, 4K"
+       },
+       {
+        "name": "Business",
+        "price": "$50/month annual or $65 monthly",
+        "notes": "40 media hours, dubbing, Brand Studio"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "SSO/SCIM"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "CapCut",
@@ -2897,7 +3502,7 @@
      "name": "Invideo AI",
      "url": "https://invideo.io",
      "verdict": "Generates full videos with script, stock media and voiceover from a prompt.",
-     "pricing": "freemium",
+     "pricing": "paid",
      "tags": [
       "prompt to video",
       "stock"
@@ -2905,7 +3510,42 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://invideo.io/pricing",
+       "label": "Invideo AI pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$10/seat/month (Starter, billed annually; shown as 50% off $20)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Starter",
+        "price": "$10/seat/month billed annually",
+        "notes": "400 credits/seat/month, Agent Two Lite only"
+       },
+       {
+        "name": "Plus",
+        "price": "$30/seat/month billed annually",
+        "notes": "2,000 credits/seat/month, Seedance 2.5"
+       },
+       {
+        "name": "Max",
+        "price": "$75/seat/month billed annually",
+        "notes": "All models, lowest cost per credit"
+       }
+      ],
+      "notes": "Free plan not shown on the pricing page; listed annual prices were shown with a 50% promotional discount."
+     }
     },
     {
      "name": "Colossyan",
@@ -2919,7 +3559,46 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.colossyan.com/pricing",
+       "label": "Colossyan pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "SCORM",
+      "PowerPoint/PDF import"
+     ],
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$59/month (Professional, billed yearly)",
+      "free_tier": "Starter: free, 20 video minutes/month with NEO avatars, watermark",
+      "tiers": [
+       {
+        "name": "Starter",
+        "price": "Free",
+        "notes": "20 min/month, watermark, no SCORM"
+       },
+       {
+        "name": "Professional",
+        "price": "$59/month yearly",
+        "notes": "Watermark removal, 5 SCORM exports/month, up to 3 editors ($30/extra member)"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "Unlimited minutes, SSO, data residency"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "D-ID",
@@ -3270,7 +3949,44 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://prowritingaid.com/pricing",
+       "label": "ProWritingAid pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Fiction and long-form writers who want manuscript-level editing reports",
+     "main_limitation": "Monthly billing costs roughly three times the yearly rate",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$10/month (Premium, billed yearly $120; $30 monthly)",
+      "free_tier": "Free plan with core editing tools",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Premium",
+        "price": "$10/month yearly ($120) or $30 monthly",
+        "notes": "Unlimited line editing reports"
+       },
+       {
+        "name": "Premium Pro",
+        "price": "$12/month yearly ($144) or $36 monthly",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "NovelAI",
@@ -3311,7 +4027,47 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.deepl.com/en/pro",
+       "label": "DeepL Write pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "Desktop"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "Polishing and translating text in several languages",
+     "main_limitation": "Prices are listed in euros; Write Pro comes bundled with DeepL Pro",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "€7.49/month (DeepL Pro Individual, billed annually)",
+      "free_tier": "DeepL Write has a free version; Pro has a 30-day free trial",
+      "tiers": [
+       {
+        "name": "Individual",
+        "price": "€7.49/month billed annually",
+        "notes": "Includes Write Pro, 300,000 characters/month"
+       },
+       {
+        "name": "Team",
+        "price": "€24.99/user/month billed annually",
+        "notes": ""
+       },
+       {
+        "name": "Business",
+        "price": "€49.99/user/month billed annually",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Rytr",
@@ -3324,7 +4080,44 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://rytr.me/pricing",
+       "label": "Rytr pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Cheap short-form copy drafting",
+     "main_limitation": "Yearly prices shown; monthly prices are higher",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$7.50/month (Unlimited, billed yearly)",
+      "free_tier": "Free forever, 10K characters/month, no card",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "10K characters/month"
+       },
+       {
+        "name": "Unlimited",
+        "price": "$7.50/month (yearly)",
+        "notes": "Unlimited generations, 50 plagiarism checks/month"
+       },
+       {
+        "name": "Premium",
+        "price": "$24.16/month (yearly)",
+        "notes": "Multiple brands, 100 plagiarism checks/month"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Sepia",
@@ -3549,8 +4342,15 @@
      "main_limitation": "Media hours and AI credits are capped per plan.",
      "best_for": "Podcasters and video creators editing talking content",
      "avoid_if": "You need frame-level pro VFX editing",
-     "platforms": [],
-     "integrations": [],
+     "platforms": [
+      "Desktop",
+      "Web"
+     ],
+     "integrations": [
+      "Adobe Premiere",
+      "Final Cut Pro",
+      "Pro Tools"
+     ],
      "model_provider": "",
      "sources": [
       {
@@ -3562,31 +4362,36 @@
      "last_verified": "2026-10-16",
      "pricing_detail": {
       "model": "freemium",
-      "starting_price": "",
-      "free_tier": "",
+      "starting_price": "$16/month (Hobbyist, annual; $24 monthly)",
+      "free_tier": "Free: 60 media minutes/month, 720p export, 5GB storage",
       "tiers": [
        {
-        "name": "Entry paid tier",
-        "price": "price not shown in fetched page text",
-        "notes": "10 media hours, 400 AI credits/month, 1080p"
+        "name": "Free",
+        "price": "$0",
+        "notes": "1 media hour/month, 720p export"
+       },
+       {
+        "name": "Hobbyist",
+        "price": "$16/month annual or $24 monthly",
+        "notes": "10 media hours, 400 AI credits, 1080p"
        },
        {
         "name": "Creator",
-        "price": "$35/person/month",
+        "price": "$24/month annual or $35 monthly",
         "notes": "30 media hours, 800 AI credits, 4K"
        },
        {
         "name": "Business",
-        "price": "$65/person/month",
-        "notes": "40 media hours, 1,500 AI credits"
+        "price": "$50/month annual or $65 monthly",
+        "notes": "40 media hours, dubbing, Brand Studio"
        },
        {
         "name": "Enterprise",
         "price": "Custom",
-        "notes": ""
+        "notes": "SSO/SCIM"
        }
       ],
-      "notes": "Free to start per vendor; free plan limits not shown in fetched text."
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
      }
     },
     {
@@ -3678,7 +4483,50 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://otter.ai/pricing",
+       "label": "Otter.ai pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [
+      "Zoom",
+      "Google Meet",
+      "Microsoft Teams"
+     ],
+     "best_for": "Meeting transcription and notes for individuals and small teams",
+     "main_limitation": "Promotional discounts were shown on the pricing page; check the current price at checkout",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$8.33/user/month (Pro, billed annually; $16.99 monthly)",
+      "free_tier": "Basic: free forever",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "Free",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$8.33/user/month annually or $16.99 monthly",
+        "notes": ""
+       },
+       {
+        "name": "Business",
+        "price": "$19.99/user/month annually or $30 monthly",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Speechify",
@@ -3692,7 +4540,41 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://speechify.com/pricing/",
+       "label": "Speechify pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [],
+     "best_for": "Listening to documents and web pages read aloud",
+     "main_limitation": "Premium is expensive on monthly billing",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$29/month (Premium, billed monthly)",
+      "free_tier": "Free plan: listen at speeds up to 1.5x",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "Speeds up to 1.5x"
+       },
+       {
+        "name": "Premium",
+        "price": "$29/month billed monthly",
+        "notes": "Yearly billing advertised as saving 60%"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Murf",
@@ -3734,7 +4616,41 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://deepgram.com/pricing",
+       "label": "Deepgram pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "Developers adding speech-to-text to apps and voice agents",
+     "main_limitation": "API only, no end-user app",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "Pay as you go (Nova-3 from about $0.0048/min)",
+      "free_tier": "$200 free credit, then pay-as-you-go",
+      "tiers": [
+       {
+        "name": "Pay as you go",
+        "price": "$200 free credit, then per-minute",
+        "notes": "Nova-3 $0.0048/min shown"
+       },
+       {
+        "name": "Growth",
+        "price": "$4K+/year",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "AssemblyAI",
@@ -3748,7 +4664,36 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.assemblyai.com/pricing",
+       "label": "AssemblyAI pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "Developers transcribing recorded audio at scale",
+     "main_limitation": "API only, no end-user app",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "Pay as you go (Universal-2 $0.15/hour)",
+      "free_tier": "Free to start, then pay-as-you-go",
+      "tiers": [
+       {
+        "name": "Pay as you go",
+        "price": "Universal-2 $0.15/hr",
+        "notes": "Add-ons such as speaker diarization $0.02/hr"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Resemble AI",
@@ -3782,7 +4727,7 @@
      "name": "Krisp",
      "url": "https://krisp.ai",
      "verdict": "Noise cancellation and meeting notes.",
-     "pricing": "freemium",
+     "pricing": "paid",
      "tags": [
       "noise cancellation",
       "meetings"
@@ -3790,7 +4735,49 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://krisp.ai/pricing/",
+       "label": "Krisp pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Mac",
+      "Windows"
+     ],
+     "integrations": [
+      "Zoom",
+      "Google Meet",
+      "Microsoft Teams"
+     ],
+     "best_for": "Bot-free meeting notes and noise cancellation",
+     "main_limitation": "No permanent free plan listed, only a 7-day trial",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$8/user/month (Core, billed annually; $16 monthly)",
+      "free_tier": "7-day free trial, no card",
+      "tiers": [
+       {
+        "name": "Free Trial",
+        "price": "$0 for 7 days",
+        "notes": ""
+       },
+       {
+        "name": "Core",
+        "price": "$8/user/month annually or $16 monthly",
+        "notes": "Unlimited AI note-taker, bot-free"
+       },
+       {
+        "name": "Advanced",
+        "price": "$15/user/month annually or $30 monthly",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Riverside",
@@ -3804,7 +4791,44 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://riverside.com/pricing",
+       "label": "Riverside pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Remote podcast and video recording",
+     "main_limitation": "Live streaming and audience tools need Grow or above",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$24/month (Pro, billed annually $288; $29 monthly)",
+      "free_tier": "Free: $0/month",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$24/month annually ($288) or $29 monthly",
+        "notes": ""
+       },
+       {
+        "name": "Grow",
+        "price": "$34/month billed annually ($408)",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Hume AI",
@@ -3846,7 +4870,36 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://superwhisper.com",
+       "label": "Superwhisper pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Mac"
+     ],
+     "integrations": [
+      "Bring your own AI API keys (Pro)"
+     ],
+     "best_for": "Dictation on the desktop",
+     "main_limitation": "Pro price could not be read reliably from the page",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free tier forever; Pro features free for the first 3,000 words",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "AIVA",
@@ -4180,7 +5233,42 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.crewai.com/pricing",
+       "label": "CrewAI pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Cloud",
+      "Python framework"
+     ],
+     "integrations": [
+      "GitHub"
+     ],
+     "best_for": "Developers building multi-agent workflows",
+     "main_limitation": "Paid self-serve tier not shown; Enterprise is custom",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Basic: free, 50 workflow executions/month",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "Free",
+        "notes": "50 executions/month"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Relevance AI",
@@ -4196,11 +5284,43 @@
      "name": "Gumloop",
      "url": "https://www.gumloop.com",
      "verdict": "Drag-and-drop AI automation and agent builder.",
-     "pricing": "freemium",
+     "pricing": "paid",
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.gumloop.com/pricing",
+       "label": "Gumloop pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "No-code AI workflow automation",
+     "main_limitation": "No permanent free plan shown on the pricing page",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$37/month (Pro)",
+      "free_tier": "14-day free trial",
+      "tiers": [
+       {
+        "name": "Pro",
+        "price": "Starts at $37/month",
+        "notes": "20k credits/month"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "OpenAI Agents SDK",
@@ -4312,13 +5432,58 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://dify.ai/pricing",
+       "label": "Dify pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Cloud",
+      "Self-hosted"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "Teams building LLM apps with a visual builder",
+     "main_limitation": "Cloud plans are billed per workspace per year",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$590/workspace/year (Professional)",
+      "free_tier": "Sandbox: free, 200 message credits; open-source Community edition free to self-host",
+      "tiers": [
+       {
+        "name": "Sandbox",
+        "price": "Free",
+        "notes": "200 message credits"
+       },
+       {
+        "name": "Professional",
+        "price": "$590/workspace/year",
+        "notes": ""
+       },
+       {
+        "name": "Team",
+        "price": "$1,590/workspace/year",
+        "notes": ""
+       },
+       {
+        "name": "Community (self-hosted)",
+        "price": "Free",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Flowise",
      "url": "https://flowiseai.com",
      "verdict": "Open-source drag-and-drop builder for LLM agents.",
-     "pricing": "free",
+     "pricing": "freemium",
      "tags": [
       "visual builder",
       "open source"
@@ -4326,7 +5491,45 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://flowiseai.com",
+       "label": "Flowise pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Cloud",
+      "Self-hosted"
+     ],
+     "integrations": [],
+     "best_for": "Visual LLM flow building",
+     "main_limitation": "Free cloud plan is limited to 2 flows",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$35/month (Starter)",
+      "free_tier": "Free: $0/month, 2 flows and assistants",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "2 flows & assistants"
+       },
+       {
+        "name": "Starter",
+        "price": "$35/month",
+        "notes": "Unlimited flows"
+       },
+       {
+        "name": "Pro",
+        "price": "$65/month",
+        "notes": "5 users, +$15/user"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Langflow",
@@ -4340,7 +5543,32 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.langflow.org",
+       "label": "Langflow pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Desktop",
+      "Self-hosted",
+      "Cloud"
+     ],
+     "integrations": [
+      "MCP"
+     ],
+     "best_for": "Building and deploying agents and MCP servers visually",
+     "main_limitation": "Cloud limits are not published on the homepage",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Free and open source, plus a free cloud account",
+      "tiers": [],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Lindy",
@@ -4354,7 +5582,39 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.lindy.ai/pricing",
+       "label": "Lindy pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "AI assistants that handle email, meetings and admin",
+     "main_limitation": "Free credits expire after 7 days",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$29.99/month (3,000 credits)",
+      "free_tier": "$50 in free credits for 7 days, no card",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "$50 of credits, lasts 7 days"
+       },
+       {
+        "name": "Team",
+        "price": "From $29.99/month",
+        "notes": "3,000 credits/month; higher credit levels up to $99.99"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Botpress",
@@ -4368,7 +5628,46 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://botpress.com/pricing",
+       "label": "Botpress pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "Customer-facing chatbots",
+     "main_limitation": "Paid plans start high for small projects",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$150/month (Plus, billed annually)",
+      "free_tier": "Free: 100 conversations/month",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "100 conversations/month"
+       },
+       {
+        "name": "Plus",
+        "price": "$150/month billed annually",
+        "notes": "250 conversations/month, $25 AI usage"
+       },
+       {
+        "name": "Team",
+        "price": "$750/month billed annually",
+        "notes": "1,500 conversations/month"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Voiceflow",
@@ -4388,7 +5687,7 @@
      "name": "Vapi",
      "url": "https://vapi.ai",
      "verdict": "Developer platform for voice AI agents.",
-     "pricing": "paid",
+     "pricing": "freemium",
      "tags": [
       "voice agents",
       "api"
@@ -4396,7 +5695,49 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://vapi.ai/pricing",
+       "label": "Vapi pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "API"
+     ],
+     "integrations": [
+      "Deepgram",
+      "OpenAI",
+      "ElevenLabs",
+      "Twilio"
+     ],
+     "best_for": "Developers building voice agents",
+     "main_limitation": "Total cost stacks transcriber, model and voice per-minute fees",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$29/month (Core) plus usage",
+      "free_tier": "$5 free credits, then pay per minute",
+      "tiers": [
+       {
+        "name": "By usage",
+        "price": "$5 free credits, then per-minute",
+        "notes": ""
+       },
+       {
+        "name": "Core",
+        "price": "$29/month",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$999/month minimum",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Agno",
@@ -4797,7 +6138,46 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.granola.ai/pricing",
+       "label": "Granola pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Mac",
+      "Windows",
+      "iOS"
+     ],
+     "integrations": [],
+     "best_for": "Bot-free AI meeting notes",
+     "main_limitation": "Team features need Business",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$14/user/month (Business)",
+      "free_tier": "Basic: $0",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Business",
+        "price": "$14/user/month",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "$35/user/month",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "ChatGPT Deep Research",
@@ -4853,7 +6233,49 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://kagi.com/pricing",
+       "label": "Kagi pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Ad-free private search with an AI assistant",
+     "main_limitation": "Free use is a 100-search trial",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$5/month (Starter, 300 searches)",
+      "free_tier": "Free trial: 100 searches",
+      "tiers": [
+       {
+        "name": "Trial",
+        "price": "Free",
+        "notes": "100 searches"
+       },
+       {
+        "name": "Starter",
+        "price": "$5/month",
+        "notes": "300 searches"
+       },
+       {
+        "name": "Professional",
+        "price": "$10/month",
+        "notes": "Unlimited searches"
+       },
+       {
+        "name": "Ultimate",
+        "price": "$25/month",
+        "notes": "Premium AI"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "You.com",
@@ -4867,7 +6289,43 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://you.com/pricing",
+       "label": "You.com pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "API",
+      "Web"
+     ],
+     "integrations": [
+      "API",
+      "MCP"
+     ],
+     "best_for": "Developers needing a web-search API",
+     "main_limitation": "Pricing page covers the API, not consumer plans",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$5 per 1,000 calls (Web Search API)",
+      "free_tier": "Free tier: up to 100 queries via MCP server, no key",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Web Search API",
+        "price": "$5/1k calls",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Semantic Scholar",
@@ -4895,7 +6353,42 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://scite.ai/pricing",
+       "label": "Scite pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "API",
+      "MCP"
+     ],
+     "best_for": "Checking how papers have been cited",
+     "main_limitation": "No permanent free plan",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$12/month (Basic, billed yearly)",
+      "free_tier": "7-day free trial",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "$12/month billed yearly",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$40/month billed yearly",
+        "notes": "API access"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "SciSpace",
@@ -4979,7 +6472,49 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://liner.com/pricing",
+       "label": "Liner pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Source-cited AI search for students",
+     "main_limitation": "Free plan shows ads",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$14.99/month (Pro, billed annually; $17.99 monthly)",
+      "free_tier": "Free: $0, answers with ads",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "Ads"
+       },
+       {
+        "name": "Pro",
+        "price": "$14.99/month annually or $17.99 monthly",
+        "notes": ""
+       },
+       {
+        "name": "Max",
+        "price": "$29.99/month annually or $35.99 monthly",
+        "notes": ""
+       },
+       {
+        "name": "Team",
+        "price": "$26.99/seat/month",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Connected Papers",
@@ -5049,7 +6584,42 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.usemotion.com/pricing",
+       "label": "Motion pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Desktop"
+     ],
+     "integrations": [],
+     "best_for": "Auto-scheduling tasks into your calendar",
+     "main_limitation": "No free plan; billing period for the listed price was not clear on the page",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$19/seat/month (Pro AI)",
+      "free_tier": "Free trial",
+      "tiers": [
+       {
+        "name": "Pro AI",
+        "price": "$19/seat/month",
+        "notes": "7,500 credits/seat/month"
+       },
+       {
+        "name": "Business AI",
+        "price": "$29/seat/month",
+        "notes": "15,000 credits/seat/month"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Reclaim.ai",
@@ -5063,7 +6633,39 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://reclaim.ai/pricing",
+       "label": "Reclaim.ai pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Google Calendar",
+      "Slack",
+      "Zoom",
+      "Google Tasks"
+     ],
+     "best_for": "Calendar time-blocking for Google Calendar users",
+     "main_limitation": "Paid prices not verified",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Lite: free forever",
+      "tiers": [
+       {
+        "name": "Lite",
+        "price": "Free",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Raycast",
@@ -5077,7 +6679,34 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.raycast.com/pricing",
+       "label": "Raycast pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Mac"
+     ],
+     "integrations": [],
+     "best_for": "Mac launcher with optional AI",
+     "main_limitation": "Pro price not verified; Pro always includes AI",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free for personal use",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Mem",
@@ -5103,7 +6732,34 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.beautiful.ai/pricing",
+       "label": "Beautiful.ai pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Fast, well-designed slide decks",
+     "main_limitation": "No permanent free plan (free plans for students mentioned)",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$14.50/month (Pro, billed annually)",
+      "free_tier": "14-day free trial",
+      "tiers": [
+       {
+        "name": "Pro",
+        "price": "$14.50/month billed annually",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     }
    ]
   },
@@ -5308,7 +6964,39 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.clay.com/pricing",
+       "label": "Clay pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Enriching and automating prospect lists",
+     "main_limitation": "Paid plans start high",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$167/month (Launch)",
+      "free_tier": "Free: 500 actions/month, 100 data credits/month",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "500 actions/month"
+       },
+       {
+        "name": "Launch",
+        "price": "$167/month",
+        "notes": "15,000 actions/month"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Apollo.io",
@@ -5318,7 +7006,47 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.apollo.io/pricing",
+       "label": "Apollo.io pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Gmail",
+      "CRM"
+     ],
+     "best_for": "Prospecting database and outbound email",
+     "main_limitation": "Paid prices not verified",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free plan for light usage; Gmail only for sending",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Professional",
+        "price": "Not shown in fetched text",
+        "notes": ""
+       },
+       {
+        "name": "Custom",
+        "price": "Contact sales",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     }
    ]
   },
@@ -5630,7 +7358,48 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.fathom.ai/pricing",
+       "label": "Fathom pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Zoom",
+      "Google Meet",
+      "Microsoft Teams"
+     ],
+     "best_for": "Free meeting recording and summaries",
+     "main_limitation": "Team plans require at least 2 users",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$15/user/month (Team, annual; $19 monthly, 2-user minimum)",
+      "free_tier": "Free forever: unlimited recordings and instant summaries",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Team",
+        "price": "$15/user/month annually or $19 monthly",
+        "notes": "2 user minimum"
+       },
+       {
+        "name": "Business",
+        "price": "$25/user/month annually or $34 monthly",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Writer",
@@ -5650,14 +7419,56 @@
      "name": "Superhuman",
      "url": "https://superhuman.com",
      "verdict": "Fast email client with AI writing and triage.",
-     "pricing": "paid",
+     "pricing": "freemium",
      "tags": [
       "email"
      ],
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://superhuman.com/plans",
+       "label": "Superhuman pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "Desktop"
+     ],
+     "integrations": [
+      "Grammarly",
+      "Docs",
+      "Mail"
+     ],
+     "best_for": "AI writing help and email across apps",
+     "main_limitation": "Plans now bundle Grammarly, Docs and Mail; check what you need",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$12/member/month (Pro, billed annually; $15 monthly)",
+      "free_tier": "Free: $0, AI assistant in your apps",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Pro",
+        "price": "$12/member/month annually or $15 monthly",
+        "notes": ""
+       },
+       {
+        "name": "Business",
+        "price": "$33/member/month annually or $40 monthly",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Glide",
@@ -5671,7 +7482,49 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.glideapps.com/pricing",
+       "label": "Glide pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "No-code internal apps from spreadsheets",
+     "main_limitation": "Credits limit usage on every plan",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$25/month (Basic)",
+      "free_tier": "Free: limited credits",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Basic",
+        "price": "$25/month",
+        "notes": "2 team members"
+       },
+       {
+        "name": "Plus",
+        "price": "$50/month",
+        "notes": ""
+       },
+       {
+        "name": "Business",
+        "price": "$125/month",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     }
    ]
   },
@@ -6237,7 +8090,47 @@
       "trading",
       "cryptocurrency"
      ],
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://santiment.net/pricing/",
+       "label": "Santiment pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "On-chain and social crypto analytics",
+     "main_limitation": "Real-time data needs a paid plan",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$49/month (Sanbase Pro)",
+      "free_tier": "Free forever; 14-day trial of paid features",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Sanbase Pro",
+        "price": "$49/month",
+        "notes": "or $529/year"
+       },
+       {
+        "name": "Sanbase Max",
+        "price": "$249/month",
+        "notes": "Full API access"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Glassnode",
@@ -6494,7 +8387,38 @@
       "tracker",
       "cryptocurrency"
      ],
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://coinstats.app/pricing/",
+       "label": "CoinStats pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [
+      "Wallets and exchanges"
+     ],
+     "best_for": "Tracking a crypto portfolio across wallets",
+     "main_limitation": "Premium price not verified",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Basic: free; Premium 7-day trial",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "Free",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Koinly",
@@ -6513,7 +8437,36 @@
       "bitcoin",
       "cryptocurrency"
      ],
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://koinly.io/pricing/",
+       "label": "Koinly pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Exchanges and wallets"
+     ],
+     "best_for": "Crypto tax reporting",
+     "main_limitation": "Report prices not verified",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free forever: all features until you need a tax report",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "CoinTracker",
@@ -6538,7 +8491,7 @@
      "name": "3Commas",
      "url": "https://3commas.io",
      "verdict": "Automated crypto trading bots and terminal connected to major exchanges.",
-     "pricing": "freemium",
+     "pricing": "paid",
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
@@ -6551,13 +8504,47 @@
       "bitcoin",
       "cryptocurrency"
      ],
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://3commas.io/pricing",
+       "label": "3Commas pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Exchanges"
+     ],
+     "best_for": "Automated crypto trading bots",
+     "main_limitation": "No permanent free plan",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$15/month (Starter, annual; $20 monthly)",
+      "free_tier": "Free trial",
+      "tiers": [
+       {
+        "name": "Starter",
+        "price": "$15/month annually or $20 monthly",
+        "notes": "Spot bots, 1 exchange"
+       },
+       {
+        "name": "Pro",
+        "price": "$38/month annually or $50 monthly",
+        "notes": "Spot and futures, multi-account"
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Cryptohopper",
      "url": "https://www.cryptohopper.com",
      "verdict": "Cloud crypto trading bot with strategy designer and AI tools.",
-     "pricing": "freemium",
+     "pricing": "paid",
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
@@ -6570,7 +8557,46 @@
       "bitcoin",
       "cryptocurrency"
      ],
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://www.cryptohopper.com/pricing",
+       "label": "Cryptohopper pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Exchanges"
+     ],
+     "best_for": "Cloud crypto trading bots",
+     "main_limitation": "Prices exclude VAT; no permanent free plan",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$24.16/month (Explorer, billed annually)",
+      "free_tier": "3-day free trial (Explorer)",
+      "tiers": [
+       {
+        "name": "Explorer",
+        "price": "$24.16/month annually",
+        "notes": ""
+       },
+       {
+        "name": "Adventurer",
+        "price": "$57.50/month annually",
+        "notes": ""
+       },
+       {
+        "name": "Hero",
+        "price": "$107.50/month annually",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Chainalysis",
@@ -6709,11 +8735,34 @@
      "name": "Speak",
      "url": "https://www.speak.com",
      "verdict": "Language app focused on speaking practice with an AI tutor.",
-     "pricing": "freemium",
+     "pricing": "paid",
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://www.speak.com/",
+       "label": "Speak pricing",
+       "checked": "2026-10-16"
+      }
+     ],
+     "last_verified": "2026-10-16",
+     "platforms": [
+      "iOS",
+      "Android",
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Speaking practice with an AI tutor",
+     "main_limitation": "Subscription price not verified; no permanent free plan",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "",
+      "free_tier": "7-day free trial",
+      "tiers": [],
+      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
     },
     {
      "name": "Quizlet",

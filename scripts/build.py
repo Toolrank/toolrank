@@ -930,6 +930,7 @@ BO = json.loads((ROOT/"data/best-of.json").read_text()) if (ROOT/"data/best-of.j
 def tier(t, name): return next((x for x in PD(t).get("tiers", []) if x["name"] == name), None) if name else None
 def bestof_page(b):
     path = f"/best-of/{b['slug']}/"; ts = [(TOOLS[i], pl) for i, pl in b["items"]]; ids = [i for i, _ in b["items"]]
+    cid = b.get("cat", "coding"); ctit = next((c["title"] for c in D["categories"] if c["id"] == cid), "Coding & App Building") if cid != "multi" else "All categories"; curl = f"/best/{cid}/" if cid != "multi" else "/"; ctE = E(ctit)
     def plan(t, pl):
         x = tier(t, pl)
         if x and "not shown" in x["price"]: return f'<b>{E(x["name"])}</b>: {NV}'
@@ -947,22 +948,23 @@ def bestof_page(b):
     relc = [(k, i) for k, i in COMPARES if set(i) <= set(ids)][:10]
     relh = "".join(f'<li><a href="/compare/{k}/">{E(cmp_title(i))}</a></li>' for k, i in relc) + '<li><a href="/compare/">All comparisons →</a></li>'
     profs = " · ".join(f'<a href="{prof(t)}">{E(t["name"])}</a>' for t, _ in ts)
-    others = "".join(f'<li><a href="/best-of/{o["slug"]}/">{E(o["h1"])}</a></li>' for o in BO["pages"] if o is not b)
+    sib = [o for o in BO["pages"] if o is not b and o.get("cat", "coding") == cid]; sib += [o for o in BO["pages"] if o is not b and o.get("cat", "coding") != cid and set(i for i, _ in o["items"]) & set(ids)]
+    others = "".join(f'<li><a href="/best-of/{o["slug"]}/">{E(o["h1"])}</a></li>' for o in sib[:12])
     faq = b["faq"]; plain = lambda s: re.sub(r"<[^>]+>", "", s)
     ld = [ORG, SITE, {"@type": "WebPage", "name": b["h1"], "url": BASE+path, "dateModified": BO["checked"], "description": b["desc"]},
           {"@type": "ItemList", "name": b["h1"], "itemListElement": [{"@type": "ListItem", "position": k, "name": t["name"], "url": BASE+prof(t)} for k, (t, _) in enumerate(ts, 1)]},
           {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
-          {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ToolRank", "item": BASE+"/"}, {"@type": "ListItem", "position": 2, "name": "Coding & App Building", "item": BASE+"/best/coding/"}, {"@type": "ListItem", "position": 3, "name": b["h1"], "item": BASE+path}]}]
-    body = f"""<main><section class="hero sub"><div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">ToolRank</a> › <a href="/best/coding/">Coding &amp; App Building</a></nav><h1>{E(b['h1'])}</h1>
+          {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ToolRank", "item": BASE+"/"}, {"@type": "ListItem", "position": 2, "name": ctit, "item": BASE+curl}, {"@type": "ListItem", "position": 3, "name": b["h1"], "item": BASE+path}]}]
+    body = f"""<main><section class="hero sub"><div class="wrap"><nav class="crumb" aria-label="Breadcrumb"><a href="/">ToolRank</a> › <a href="{curl}">{ctE}</a></nav><h1>{E(b['h1'])}</h1>
 <p class="muted small">Updated {fmt_date(BO['checked'])} · Prices from vendor pages only · {METH_LINK}</p></div></section>
 <section class="sec"><div class="wrap"><div class="card pick"><h2>The short answer</h2><p>{b['summary']}</p></div>
-<h2>Ranked shortlist</h2><ol class="rlist">{short}</ol><p class="muted small">Order follows ToolRank&rsquo;s editorial ranking in <a href="/best/coding/">Coding &amp; App Building</a>, filtered to tools that fit this page. Anything we couldn&rsquo;t confirm on a vendor page says &ldquo;Not yet verified&rdquo;.</p>
+<h2>Ranked shortlist</h2><ol class="rlist">{short}</ol><p class="muted small">{b.get("order_note") or f'Order follows ToolRank&rsquo;s editorial ranking in <a href="{curl}">{ctE}</a>, filtered to tools that fit this page.'} Anything we couldn&rsquo;t confirm on a vendor page says &ldquo;Not yet verified&rdquo;.</p>
 <h2>Side by side</h2>{tbl}<p class="muted small">Prices as listed by each vendor on the last-checked date, USD, before tax. Plans and limits change, so follow the sources below.</p>
 <div class="card pick"><h2>Who should pick which</h2><p>{b['pick']}</p></div>
 <h2 id="faq">FAQ</h2><div class="faq">{''.join(f'<details class="card"><summary><b>{E(q)}</b></summary><p>{E(a)}</p></details>' for q, a in faq)}</div>
 <h2>Sources</h2><ul class="srcs">{srcs}</ul>
 <h2>Related comparisons</h2><ul class="rlist">{relh}</ul><p class="small">Profiles: {profs}</p>
-<h2>More best-of lists</h2><ul class="rlist">{others}<li><a href="/best/coding/">Full Coding &amp; App Building ranking →</a></li></ul>{DISCLOSE}{NL("nl-compact", "nlc")}</div></section></main>"""
+<h2>More best-of lists</h2><ul class="rlist">{others}<li><a href="{curl}">Full {ctE} ranking →</a></li></ul>{DISCLOSE}{NL("nl-compact", "nlc")}</div></section></main>"""
     return doc(head(b["title"] if b["title"].endswith("ToolRank") else fit_title(b["title"] + " | ToolRank", b["title"]), b["desc"], path, ld), body)
 
 def build_search_index():
