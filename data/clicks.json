@@ -1,7 +1,13 @@
 {
- "fetched": "2026-10-16 13:51 UTC",
- "fetched_ts": 1792158661,
+ "fetched": "2026-10-16 14:46 UTC",
+ "fetched_ts": 1792162016,
  "window": "last 7 days",
  "source": "GoatCounter click/ events (unique visitors)",
- "top": []
+ "top": [
+  {
+   "slug": "anatomy",
+   "tool": "Anatomy",
+   "count": 1
+  }
+ ]
 }
