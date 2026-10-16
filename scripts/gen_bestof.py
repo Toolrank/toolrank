@@ -77,8 +77,7 @@ for c in CAT:
         f"These {N} have a free plan or are free to use, and we confirmed it on each vendor's own pricing page", "a free plan or free use (not just a trial)", "free_tier verified")
     for cap in (10, 15, 20, 30, 50, 100):
         add(c, f"{slug(N)}-under-{cap}-a-month", f"Best {N} for ${cap} a month or less", f"Best {S} Under ${cap}/Month (2026)", [a for a in pool if a["usd"] and a["usd"][0] <= cap], cheap_tier_name,
-            f"Every tool here has a paid plan listed at ${cap} a month or less on its vendor's pricing page", f"a verified paid plan at or below ${cap}/month (USD)", "tier prices in USD", order="price",
-            order_note=f"Ordered by the lowest verified monthly price (cheapest first), then by ToolRank&rsquo;s editorial rank.")
+            f"Every tool here has a paid plan listed at ${cap} a month or less on its vendor's pricing page", f"a verified paid plan at or below ${cap}/month (USD)", "tier prices in USD")
     add(c, f"cheapest-{slug(N)}", f"Cheapest {N}: lowest verified paid plans", f"Cheapest {S}: Paid Plans Compared", [a for a in pool if a["usd"]], cheap_tier_name,
         f"This list ranks {N} purely by their cheapest verified paid plan", "a paid plan price we could read on the vendor page", "tier prices in USD", order="price",
         order_note="Ordered strictly by lowest verified monthly price, cheapest first. Rank in the category ranking is shown on each profile.")
@@ -134,6 +133,13 @@ X = [
  ("research", "ai-tools-with-mcp-support", "Best AI tools with MCP support (all categories)", "Best AI Tools With MCP Support (2026)", [a for a in ALL if "mcp" in a["blob"]], cheap_tier_name, "Each of these tools, across all categories, supports the Model Context Protocol", "MCP support listed by the vendor"),
  ("research", "ai-tools-under-10-dollars-a-month", "Best AI tools under $10 a month (all categories)", "Best AI Tools Under $10/Month (2026)", [a for a in ALL if a["usd"] and a["usd"][0] <= 10], cheap_tier_name, "Every tool here, from any category, has a paid plan listed at $10 a month or less", "a verified paid plan at or below $10/month"),
  ("crypto", "free-crypto-analytics-and-portfolio-tools", "Best free crypto analytics and portfolio tools", "Best Free Crypto Analytics Tools (2026)", [a for a in incat("crypto") if a["free"] in ("yes", "free")], free_tier_name, "These crypto tools have a free plan confirmed on their vendor pages", "a free plan"),
+ ("crypto", "crypto-analytics-tools-with-api", "Best crypto analytics tools with an API", "Best Crypto Analytics Tools With an API (2026)", pick("dune", "santiment", "nansen", "elfa-ai"), cheap_tier_name, "Each of these crypto data tools offers an API for pulling on-chain or market data into your own code", "an API listed on the vendor pricing page"),
+ ("research", "free-ai-tools-for-finding-research-papers", "Best free AI tools for finding research papers", "Best Free AI Tools for Research Papers (2026)", [a for a in pick("semantic-scholar", "research-rabbit", "undermind", "elicit", "consensus") if a["free"] in ("yes", "free")], free_tier_name, "Each of these paper-discovery tools can be used free, confirmed on the vendor's site", "a free plan for paper search or discovery"),
+ ("automation", "ai-agent-frameworks-for-developers", "Best AI agent frameworks for developers", "Best AI Agent Frameworks for Developers (2026)", pick("crewai", "mastra", "agno", "llamaindex", "langflow"), free_tier_name, "These are code-first frameworks or platforms for building AI agents, each with a free way to start", "a developer framework with a free tier or open-source edition"),
+ ("voice-audio", "ai-text-to-speech-tools", "Best AI text-to-speech tools", "Best AI Text-to-Speech Tools (2026)", pick("elevenlabs", "speechify", "murf", "cartesia"), cheap_tier_name, "These tools turn written text into natural-sounding speech", "text-to-speech as a core product on the vendor page"),
+ ("coding", "ai-app-builders-for-non-coders", "Best AI app builders for non-coders", "Best AI App Builders for Non-Coders (2026)", pick("lovable", "bolt-new", "base44", "create-xyz-anything", "macaly", "glide"), free_tier_name, "These tools build working apps from a prompt or a spreadsheet, without writing code", "prompt-to-app or no-code app building on the vendor page"),
+ ("research", "ai-note-taking-apps", "Best AI note-taking apps", "Best AI Note-Taking Apps (2026)", pick("notion-ai", "notebooklm", "mem", "granola"), cheap_tier_name, "These apps capture and organise notes with AI built in", "AI note-taking as a core feature on the vendor page"),
+ ("video", "ai-video-generators-with-free-plans", "Best AI video generators with a free plan", "Best Free AI Video Generators (2026)", [a for a in pick("runway", "pika", "hedra", "ltx-studio", "luma-ai", "leonardo-ai") if a["free"] in ("yes", "free")], free_tier_name, "Each of these generative video tools has a free plan we confirmed on its pricing page", "a free plan for generative video"),
  ("crypto", "crypto-trading-bots", "Best crypto trading bots", "Best Crypto Trading Bots (2026)", pick("3commas", "cryptohopper"), cheap_tier_name, "Automated crypto trading bot platforms", "trading-bot products"),
  ("writing", "ai-grammar-checkers", "Best AI grammar checkers and editors", "Best AI Grammar Checkers (2026)", pick("grammarly", "quillbot", "prowritingaid", "wordtune", "deepl-write"), cheap_tier_name, "These tools correct grammar and suggest edits to your writing", "grammar or editing as a core feature"),
  ("education", "ai-tools-for-teachers", "Best AI tools for teachers", "Best AI Tools for Teachers (2026)", pick("khanmigo", "magicschool"), free_tier_name, "AI tools built for teachers", "teacher plans"),
@@ -158,6 +164,8 @@ for c in CAT:
 
 # ---------- build pages ----------
 existing = {p["slug"]: p for p in BO["pages"] if p.get("n", 0) <= 50 and not p.get("generated")}
+LIVE = [p["slug"] for p in json.loads((ROOT/"data/best-of.live.json").read_text())] if (ROOT/"data/best-of.live.json").exists() else []
+TOPICS.sort(key=lambda T: (LIVE.index(T["slug"]) if T["slug"] in LIVE else len(LIVE)))  # published pages keep their URL and priority
 used_sets = [set(i for i, _ in p["items"]) for p in existing.values()]
 pages, skipped = [], []
 def jacc(a, b): return len(a & b) / max(1, len(a | b))
@@ -215,7 +223,17 @@ for x in live: plan(x["T"]["cat"], x["T"]["h1"], x["T"]["needs"], x["slug"], "li
 for x in pages[lim:]: plan(x["T"]["cat"], x["T"]["h1"], x["T"]["needs"], x["slug"], "ready (next batch)")
 for T, r in skipped: plan(T["cat"], T["h1"], T["needs"], None, "skipped", r)
 BO["pages"] = list(existing.values()) + [x["page"] for x in live]
+# previously published pages that are now near-duplicates: redirect to the page that covers them
+red = dict(BO.get("redirects", {})); now = {p["slug"] for p in BO["pages"]}
+for T, r in skipped:
+    if T["slug"] in LIVE and "near-duplicate of /best-of/" in r: red[T["slug"]] = r.split("/best-of/")[1].split("/")[0]
+BO["redirects"] = {k: v for k, v in red.items() if k not in now and v in now}
 BO["skipped_generated"] = [dict(slug=T["slug"], topic=T["h1"], reason=r) for T, r in skipped]
 (ROOT/"data/best-of.json").write_text(json.dumps(BO, indent=1, ensure_ascii=False) + "\n")
+extra = len(PLAN) - 500
+if extra > 0:
+    drop = [k for k, x in enumerate(PLAN) if x["status"] == "not started"][-extra:]
+    PLAN = [x for k, x in enumerate(PLAN) if k not in set(drop)]
+(ROOT/"data/best-of.live.json").write_text(json.dumps([{"slug": x} for x in dict.fromkeys(LIVE + [x["slug"] for x in live])], indent=0) + "\n")
 json.dump(PLAN, open(ROOT/"scripts/tmp/plan_status.json", "w"), indent=1)
 print(f"topics {len(TOPICS)}, buildable {len(pages)}, live now {len(live)}, skipped {len(skipped)}")

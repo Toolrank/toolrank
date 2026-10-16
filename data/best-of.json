@@ -701,8 +701,8 @@
    "cat": "business",
    "h1": "Best AI tools for Google Workspace users",
    "title": "Best AI Tools for Google Workspace Users (2026)",
-   "desc": "Best AI tools for Google Workspace users: 9 picks with vendor-verified prices checked 16 Oct 2026, including Google Gemini, Otter.ai and Krisp.",
-   "summary": "Each of these tools connects to Gmail, Drive, Docs, Sheets, Meet or Google Calendar. <b>Google Gemini</b> comes first: low-cost entry tier and deep ties to Google storage, Search and creative tools. The cheapest verified paid plan here is <b>Google Gemini</b> Lower paid tier ($4.99/month). 7 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI tools for Google Workspace users: 10 picks with vendor-verified prices checked 16 Oct 2026, including Google Gemini, Otter.ai and Krisp.",
+   "summary": "Each of these tools connects to Gmail, Drive, Docs, Sheets, Meet or Google Calendar. <b>Google Gemini</b> comes first: low-cost entry tier and deep ties to Google storage, Search and creative tools. The cheapest verified paid plan here is <b>Google Gemini</b> Lower paid tier ($4.99/month). 8 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "google-gemini",
@@ -739,6 +739,10 @@
     [
      "fathom",
      "Team"
+    ],
+    [
+     "brisk-teaching",
+     ""
     ]
    ],
    "pick": "Pick <b>Google Gemini</b> for people already in Google&#x27;s ecosystem (Gmail, Drive, Photos) (Lower paid tier: $4.99/month); think twice if you don&#x27;t use Google services and want a standalone assistant. Pick <b>Otter.ai</b> for meeting transcription and notes for individuals and small teams (Pro: $8.33/user/month annually or $16.99 monthly). Watch out: promotional discounts were shown on the pricing page; check the current price at checkout. Pick <b>Krisp</b> for bot-free meeting notes and noise cancellation (Core: $8/user/month annually or $16 monthly). Watch out: no permanent free plan listed, only a 7-day trial. Pick <b>NotebookLM</b> for students and researchers working from their own documents (In Google AI Pro: $19.99/month (Google AI Pro)); think twice if you need open web search as the main source. Pick <b>Reclaim.ai</b> for calendar time-blocking for Google Calendar users (free plan: Lite: free forever). Watch out: paid prices not verified. Pick <b>Apollo.io</b> for prospecting database and outbound email (free plan: Free plan for light usage; Gmail only for sending). Watch out: paid prices not verified. Pick <b>Gemini for Google Workspace</b> for teams on Google Workspace (Business Starter: $7/user/month); think twice if you&#x27;re a Microsoft 365 shop.",
@@ -749,7 +753,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Google Gemini: $0/month with a Google Account (Flash model, base usage limits); Otter.ai: Basic: free forever; NotebookLM: Standard chat/generation limits, up to 50 sources per notebook; Reclaim.ai: Lite: free forever; Apollo.io: Free plan for light usage; Gmail only for sending; Fireflies.ai: Unlimited transcription, limited AI summaries, 400 mins storage/team, 20 AI credits; Fathom: Free forever: unlimited recordings and instant summaries."
+     "Google Gemini: $0/month with a Google Account (Flash model, base usage limits); Otter.ai: Basic: free forever; NotebookLM: Standard chat/generation limits, up to 50 sources per notebook; Reclaim.ai: Lite: free forever; Apollo.io: Free plan for light usage; Gmail only for sending; Fireflies.ai: Unlimited transcription, limited AI summaries, 400 mins storage/team, 20 AI credits; Fathom: Free forever: unlimited recordings and instant summaries; Brisk Teaching: Free to install and get started."
     ],
     [
      "How were these tools chosen?",
@@ -1327,8 +1331,8 @@
    "cat": "coding",
    "h1": "Best AI coding tools that work with local models",
    "title": "Best AI Coding Tools for Local Models (2026)",
-   "desc": "Best AI coding tools that work with local models: 4 picks with vendor-verified prices checked 16 Oct 2026, including Zed, Aider and Kilo Code.",
-   "summary": "Each of these tools can use locally run models. <b>Zed</b> comes first: a very fast native editor that&#x27;s free forever with your own keys or external agents like Claude Agent and Codex CLI. Pro is a low $10/month. The cheapest verified paid plan here is <b>Zed</b> Pro ($10/month). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI coding tools that work with local models: 5 picks with vendor-verified prices checked 16 Oct 2026, including Zed, Aider and Kilo Code.",
+   "summary": "Each of these tools can use locally run models. <b>Zed</b> comes first: a very fast native editor that&#x27;s free forever with your own keys or external agents like Claude Agent and Codex CLI. Pro is a low $10/month. The cheapest verified paid plan here is <b>Zed</b> Pro ($10/month). 5 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "zed",
@@ -1343,11 +1347,15 @@
      "Free & Open Source"
     ],
     [
+     "dyad",
+     "Dyad Free"
+    ],
+    [
      "continue",
      ""
     ]
    ],
-   "pick": "Pick <b>Zed</b> for developers who want a fast native editor and a choice of AI (Zed-hosted, own keys or external agents) (Personal: $0); think twice if you depend on the VS Code or JetBrains extension ecosystems. Pick <b>Aider</b> for terminal users who want a free, model-agnostic pair programmer with clean git history (free plan: Free, open source: you pay only your LLM provider); think twice if you want a polished IDE, a hosted service, or one bundled subscription. Pick <b>Kilo Code</b> for open-source coding agent with any model (Free &amp; Open Source: Free). Watch out: model usage costs extra. Pick <b>Continue</b> for existing users who want a frozen, self-run open-source assistant with their own models (free plan: Open-source extension (Apache-2.0), self-run with your own model keys); think twice if you need a maintained tool. Look at Cline, or at Cursor, which acquired Continue.",
+   "pick": "Pick <b>Zed</b> for developers who want a fast native editor and a choice of AI (Zed-hosted, own keys or external agents) (Personal: $0); think twice if you depend on the VS Code or JetBrains extension ecosystems. Pick <b>Aider</b> for terminal users who want a free, model-agnostic pair programmer with clean git history (free plan: Free, open source: you pay only your LLM provider); think twice if you want a polished IDE, a hosted service, or one bundled subscription. Pick <b>Kilo Code</b> for open-source coding agent with any model (Free &amp; Open Source: Free). Watch out: model usage costs extra. Pick <b>Dyad</b> for building apps locally with any model (Dyad Free: Free). Watch out: desktop app only. Pick <b>Continue</b> for existing users who want a frozen, self-run open-source assistant with their own models (free plan: Open-source extension (Apache-2.0), self-run with your own model keys); think twice if you need a maintained tool. Look at Cline, or at Cursor, which acquired Continue.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -1355,7 +1363,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Zed: Personal: free forever, unlimited with your own API keys or external agents; Aider: Free, open source: you pay only your LLM provider; Kilo Code: Free and open source; AI usage billed separately; Continue: Open-source extension (Apache-2.0), self-run with your own model keys."
+     "Zed: Personal: free forever, unlimited with your own API keys or external agents; Aider: Free, open source: you pay only your LLM provider; Kilo Code: Free and open source; AI usage billed separately; Dyad: Dyad Free: free, open-source desktop app; Continue: Open-source extension (Apache-2.0), self-run with your own model keys."
     ],
     [
      "How were these tools chosen?",
@@ -1512,8 +1520,8 @@
    "cat": "image",
    "h1": "Best AI image generators with an API",
    "title": "Best AI Image Generator APIs (2026)",
-   "desc": "Best AI image generators with an API: 4 picks with vendor-verified prices checked 16 Oct 2026, including Ideogram, Black Forest Labs (FLUX) and Recraft.",
-   "summary": "Each of these image generators offers an API. <b>Ideogram</b> comes first: credit-based plans with unlimited slow generations and character consistency. The cheapest verified paid plan here is <b>Krea</b> Basic ($9/month ($5 annual)). 2 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI image generators with an API: 5 picks with vendor-verified prices checked 16 Oct 2026, including Ideogram, Black Forest Labs (FLUX) and Recraft.",
+   "summary": "Each of these image generators offers an API. <b>Ideogram</b> comes first: credit-based plans with unlimited slow generations and character consistency. The cheapest verified paid plan here is <b>Krea</b> Basic ($9/month ($5 annual)). 3 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "ideogram",
@@ -1530,9 +1538,13 @@
     [
      "krea",
      "Basic"
+    ],
+    [
+     "leonardo-ai",
+     "Essential"
     ]
    ],
-   "pick": "Pick <b>Ideogram</b> for posters, logos and graphics where legible text matters (Plus: $15/month annual ($20 monthly)); think twice if you need video-first workflows. Pick <b>Black Forest Labs (FLUX)</b> for developers embedding image generation in products (from $0.048/image (example rate on pricing calculator)); think twice if you want a no-code consumer app. Pick <b>Recraft</b> for designers making brand-consistent graphics and vectors (Basic: $10/month billed annually ($120)); think twice if you need commercial use on a free plan. Pick <b>Krea</b> for creators who want many models in one place (Basic: $9/month ($5 annual)); think twice if you only need one model and want the cheapest route.",
+   "pick": "Pick <b>Ideogram</b> for posters, logos and graphics where legible text matters (Plus: $15/month annual ($20 monthly)); think twice if you need video-first workflows. Pick <b>Black Forest Labs (FLUX)</b> for developers embedding image generation in products (from $0.048/image (example rate on pricing calculator)); think twice if you want a no-code consumer app. Pick <b>Recraft</b> for designers making brand-consistent graphics and vectors (Basic: $10/month billed annually ($120)); think twice if you need commercial use on a free plan. Pick <b>Krea</b> for creators who want many models in one place (Basic: $9/month ($5 annual)); think twice if you only need one model and want the cheapest route. Pick <b>Leonardo.Ai</b> for image and video generation with trainable models (Essential: $12/month). Watch out: free-tier creations are public; listed prices exclude tax and the monthly/yearly toggle state was not confirmed.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -1540,7 +1552,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Recraft: Limited free credits, personal use only; Krea: 100 units/day."
+     "Recraft: Limited free credits, personal use only; Krea: 100 units/day; Leonardo.Ai: Free: $0/month, 150 fast tokens/day, public creations."
     ],
     [
      "How were these tools chosen?",
@@ -1733,6 +1745,10 @@
      "AI Pro"
     ],
     [
+     "macaly",
+     "Starter"
+    ],
+    [
      "framer",
      "Basic"
     ],
@@ -1747,13 +1763,9 @@
     [
      "krea",
      "Basic"
-    ],
-    [
-     "pika",
-     "Starter"
     ]
    ],
-   "pick": "Pick <b>Google Gemini</b> for people already in Google&#x27;s ecosystem (Gmail, Drive, Photos) (Lower paid tier: $4.99/month); think twice if you don&#x27;t use Google services and want a standalone assistant. Pick <b>Cursor</b> for developers who want an AI-first editor with agents and code review (Plus: $8/month); think twice if you want flat pricing that includes third-party models. Pick <b>GitHub Copilot</b> for teams already on GitHub who want AI in their existing IDE (Pro: $10/month); think twice if you want an AI-native editor rather than a plugin. Pick <b>Zed</b> for developers who want a fast native editor and a choice of AI (Zed-hosted, own keys or external agents) (Pro: $10/month); think twice if you depend on the VS Code or JetBrains extension ecosystems. Pick <b>JetBrains AI (Junie)</b> for developers already living in JetBrains IDEs (AI Pro: $10/month ($100/year)); think twice if you don&#x27;t use JetBrains IDEs. Pick <b>Framer</b> for designing and publishing websites visually (Basic: $10/month (yearly)). Watch out: free sites use a Framer domain. Pick <b>Midjourney</b> for artists and marketers who want striking, stylised images (Basic: $10/month); think twice if you need a free tier or precise text in images.",
+   "pick": "Pick <b>Google Gemini</b> for people already in Google&#x27;s ecosystem (Gmail, Drive, Photos) (Lower paid tier: $4.99/month); think twice if you don&#x27;t use Google services and want a standalone assistant. Pick <b>Cursor</b> for developers who want an AI-first editor with agents and code review (Plus: $8/month); think twice if you want flat pricing that includes third-party models. Pick <b>GitHub Copilot</b> for teams already on GitHub who want AI in their existing IDE (Pro: $10/month); think twice if you want an AI-native editor rather than a plugin. Pick <b>Zed</b> for developers who want a fast native editor and a choice of AI (Zed-hosted, own keys or external agents) (Pro: $10/month); think twice if you depend on the VS Code or JetBrains extension ecosystems. Pick <b>JetBrains AI (Junie)</b> for developers already living in JetBrains IDEs (AI Pro: $10/month ($100/year)); think twice if you don&#x27;t use JetBrains IDEs. Pick <b>Macaly</b> for building and hosting websites by chat (Starter: $10/month). Watch out: credits cap usage. Pick <b>Framer</b> for designing and publishing websites visually (Basic: $10/month (yearly)). Watch out: free sites use a Framer domain.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -1761,7 +1773,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Google Gemini: $0/month with a Google Account (Flash model, base usage limits); Cursor: Free: limited agent requests and limited chat requests; GitHub Copilot: Limited chat and agent usage; no code review or cloud agent; Zed: Personal: free forever, unlimited with your own API keys or external agents; Framer: Free: 500 AI credits, Framer domain, 1 GB bandwidth; Recraft: Limited free credits, personal use only; Krea: 100 units/day; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations."
+     "Google Gemini: $0/month with a Google Account (Flash model, base usage limits); Cursor: Free: limited agent requests and limited chat requests; GitHub Copilot: Limited chat and agent usage; no code review or cloud agent; Zed: Personal: free forever, unlimited with your own API keys or external agents; Macaly: Free: $0/month, publish on a free address; Framer: Free: 500 AI credits, Framer domain, 1 GB bandwidth; Recraft: Limited free credits, personal use only; Krea: 100 units/day."
     ],
     [
      "How were these tools chosen?",
@@ -1777,9 +1789,13 @@
    "cat": "crypto",
    "h1": "Best free crypto analytics and portfolio tools",
    "title": "Best Free Crypto Analytics Tools (2026)",
-   "desc": "Best free crypto analytics and portfolio tools: 4 picks with vendor-verified prices checked 16 Oct 2026, including Dune, Santiment and CoinStats.",
-   "summary": "These crypto tools have a free plan confirmed on their vendor pages. <b>Dune</b> comes first: the standard for public onchain dashboards with a free view tier. The cheapest verified paid plan here is <b>Santiment</b> Sanbase Pro ($49/month). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best free crypto analytics and portfolio tools: 6 picks with vendor-verified prices checked 16 Oct 2026, including Nansen, Dune and Santiment.",
+   "summary": "These crypto tools have a free plan confirmed on their vendor pages. <b>Nansen</b> comes first: on-chain analytics with labelled wallets, smart-money tracking and an AI research assistant. The cheapest verified paid plan here is <b>Nansen</b> Pro ($49/month). 6 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
+    [
+     "nansen",
+     "Free"
+    ],
     [
      "dune",
      "Free"
@@ -1787,6 +1803,10 @@
     [
      "santiment",
      "Free"
+    ],
+    [
+     "elfa-ai",
+     "Pay as you go"
     ],
     [
      "coinstats",
@@ -1797,15 +1817,15 @@
      "Free"
     ]
    ],
-   "pick": "Pick <b>Dune</b> for crypto analysts building SQL dashboards (Free: $0); think twice if you don&#x27;t write SQL. Pick <b>Santiment</b> for on-chain and social crypto analytics (Free: $0). Watch out: real-time data needs a paid plan. Pick <b>CoinStats</b> for tracking a crypto portfolio across wallets (Basic: Free). Watch out: premium price not verified. Pick <b>Koinly</b> for crypto tax reporting (Free: $0). Watch out: report prices not verified.",
+   "pick": "Pick <b>Nansen</b> for on-chain analytics and Smart Money tracking (Free: $0/month). Watch out: no trial; free plan is limited outside Solana. Pick <b>Dune</b> for crypto analysts building SQL dashboards (Free: $0); think twice if you don&#x27;t write SQL. Pick <b>Santiment</b> for on-chain and social crypto analytics (Free: $0). Watch out: real-time data needs a paid plan. Pick <b>Elfa AI</b> for crypto social-intelligence data via API (Pay as you go: $0.0145/credit, $20 min deposit). Watch out: API only. Pick <b>CoinStats</b> for tracking a crypto portfolio across wallets (Basic: Free). Watch out: premium price not verified. Pick <b>Koinly</b> for crypto tax reporting (Free: $0). Watch out: report prices not verified.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "Santiment Sanbase Pro ($49/month) is the lowest paid price we verified on this list (https://santiment.net/pricing/, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "Nansen Pro ($49/month) is the lowest paid price we verified on this list (https://www.nansen.ai/plans, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
-     "Dune: View-only access; view and copy any dashboard or query; Santiment: Free forever; 14-day trial of paid features; CoinStats: Basic: free; Premium 7-day trial; Koinly: Free forever: all features until you need a tax report."
+     "Nansen: Free: $0/month, basic labels, Solana analytics, 20 AI credits/week; Dune: View-only access; view and copy any dashboard or query; Santiment: Free forever; 14-day trial of paid features; Elfa AI: free plan listed; CoinStats: Basic: free; Premium 7-day trial; Koinly: Free forever: all features until you need a tax report."
     ],
     [
      "How were these tools chosen?",
@@ -1867,16 +1887,16 @@
    "cat": "ai-assistants",
    "h1": "Best AI assistants for $30 a month or less",
    "title": "Best AI Assistants Under $30/Month (2026)",
-   "desc": "Best AI assistants for $30 a month or less: 4 picks with vendor-verified prices checked 16 Oct 2026, including Google Gemini, Claude and Microsoft Copilot.",
-   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>Google Gemini</b> comes first: low-cost entry tier and deep ties to Google storage, Search and creative tools. The cheapest verified paid plan here is <b>Google Gemini</b> Lower paid tier ($4.99/month). 3 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI assistants for $30 a month or less: 4 picks with vendor-verified prices checked 16 Oct 2026, including Claude, Google Gemini and Microsoft Copilot.",
+   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>Claude</b> comes first: strong writing quality with a clear free tier and transparent paid plans for individuals and teams. The cheapest verified paid plan here is <b>Google Gemini</b> Lower paid tier ($4.99/month). 3 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
-    [
-     "google-gemini",
-     "Lower paid tier"
-    ],
     [
      "claude",
      "Pro"
+    ],
+    [
+     "google-gemini",
+     "Lower paid tier"
     ],
     [
      "microsoft-copilot",
@@ -1887,7 +1907,7 @@
      "Team"
     ]
    ],
-   "pick": "Pick <b>Google Gemini</b> for people already in Google&#x27;s ecosystem (Gmail, Drive, Photos) (Lower paid tier: $4.99/month); think twice if you don&#x27;t use Google services and want a standalone assistant. Pick <b>Claude</b> for long-form writing, analysis and research with documents (Pro: $17/month annual or $20 monthly); think twice if you need unlimited heavy usage on a low budget. Pick <b>Microsoft Copilot</b> for people and teams living in Word, Excel, Outlook and Teams (Microsoft 365 Copilot Business: $18/user/month paid yearly (shown as reduced from $21)); think twice if you don&#x27;t use Microsoft 365. Pick <b>Le Chat (Mistral)</b> for a European alternative assistant (Team: $24.99/user/month). Watch out: pro price not read reliably.",
+   "pick": "Pick <b>Claude</b> for long-form writing, analysis and research with documents (Pro: $17/month annual or $20 monthly); think twice if you need unlimited heavy usage on a low budget. Pick <b>Google Gemini</b> for people already in Google&#x27;s ecosystem (Gmail, Drive, Photos) (Lower paid tier: $4.99/month); think twice if you don&#x27;t use Google services and want a standalone assistant. Pick <b>Microsoft Copilot</b> for people and teams living in Word, Excel, Outlook and Teams (Microsoft 365 Copilot Business: $18/user/month paid yearly (shown as reduced from $21)); think twice if you don&#x27;t use Microsoft 365. Pick <b>Le Chat (Mistral)</b> for a European alternative assistant (Team: $24.99/user/month). Watch out: pro price not read reliably.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -1895,14 +1915,13 @@
     ],
     [
      "Which of these have a free plan?",
-     "Google Gemini: $0/month with a Google Account (Flash model, base usage limits); Claude: Free: chat on web, desktop and mobile, with usage limits; Le Chat (Mistral): Free plan available."
+     "Claude: Free: chat on web, desktop and mobile, with usage limits; Google Gemini: $0/month with a Google Account (Flash model, base usage limits); Le Chat (Mistral): Free plan available."
     ],
     [
      "How were these tools chosen?",
      "They are the tools in ToolRank's rankings with a verified paid plan at or below $30/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
-   ],
-   "order_note": "Ordered by the lowest verified monthly price (cheapest first), then by ToolRank&rsquo;s editorial rank."
+   ]
   },
   {
    "slug": "ai-coding-tools-under-10-a-month",
@@ -1911,8 +1930,8 @@
    "cat": "coding",
    "h1": "Best AI coding tools for $10 a month or less",
    "title": "Best AI Coding Tools Under $10/Month (2026)",
-   "desc": "Best AI coding tools for $10 a month or less: 5 picks with vendor-verified prices checked 16 Oct 2026, including Cursor, GitHub Copilot and Zed.",
-   "summary": "Every tool here has a paid plan listed at $10 a month or less on its vendor's pricing page. <b>Cursor</b> comes first: a full AI-native editor with agents, cloud automations and code review, and a free tier to start. The cheapest verified paid plan here is <b>Cursor</b> Plus ($8/month). 4 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI coding tools for $10 a month or less: 6 picks with vendor-verified prices checked 16 Oct 2026, including Cursor, GitHub Copilot and Zed.",
+   "summary": "Every tool here has a paid plan listed at $10 a month or less on its vendor's pricing page. <b>Cursor</b> comes first: a full AI-native editor with agents, cloud automations and code review, and a free tier to start. The cheapest verified paid plan here is <b>Cursor</b> Plus ($8/month). 5 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "cursor",
@@ -1931,11 +1950,15 @@
      "AI Pro"
     ],
     [
+     "macaly",
+     "Starter"
+    ],
+    [
      "framer",
      "Basic"
     ]
    ],
-   "pick": "Pick <b>Cursor</b> for developers who want an AI-first editor with agents and code review (Plus: $8/month); think twice if you want flat pricing that includes third-party models. Pick <b>GitHub Copilot</b> for teams already on GitHub who want AI in their existing IDE (Pro: $10/month); think twice if you want an AI-native editor rather than a plugin. Pick <b>Zed</b> for developers who want a fast native editor and a choice of AI (Zed-hosted, own keys or external agents) (Pro: $10/month); think twice if you depend on the VS Code or JetBrains extension ecosystems. Pick <b>JetBrains AI (Junie)</b> for developers already living in JetBrains IDEs (AI Pro: $10/month ($100/year)); think twice if you don&#x27;t use JetBrains IDEs. Pick <b>Framer</b> for designing and publishing websites visually (Basic: $10/month (yearly)). Watch out: free sites use a Framer domain.",
+   "pick": "Pick <b>Cursor</b> for developers who want an AI-first editor with agents and code review (Plus: $8/month); think twice if you want flat pricing that includes third-party models. Pick <b>GitHub Copilot</b> for teams already on GitHub who want AI in their existing IDE (Pro: $10/month); think twice if you want an AI-native editor rather than a plugin. Pick <b>Zed</b> for developers who want a fast native editor and a choice of AI (Zed-hosted, own keys or external agents) (Pro: $10/month); think twice if you depend on the VS Code or JetBrains extension ecosystems. Pick <b>JetBrains AI (Junie)</b> for developers already living in JetBrains IDEs (AI Pro: $10/month ($100/year)); think twice if you don&#x27;t use JetBrains IDEs. Pick <b>Macaly</b> for building and hosting websites by chat (Starter: $10/month). Watch out: credits cap usage. Pick <b>Framer</b> for designing and publishing websites visually (Basic: $10/month (yearly)). Watch out: free sites use a Framer domain.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -1943,14 +1966,13 @@
     ],
     [
      "Which of these have a free plan?",
-     "Cursor: Free: limited agent requests and limited chat requests; GitHub Copilot: Limited chat and agent usage; no code review or cloud agent; Zed: Personal: free forever, unlimited with your own API keys or external agents; Framer: Free: 500 AI credits, Framer domain, 1 GB bandwidth."
+     "Cursor: Free: limited agent requests and limited chat requests; GitHub Copilot: Limited chat and agent usage; no code review or cloud agent; Zed: Personal: free forever, unlimited with your own API keys or external agents; Macaly: Free: $0/month, publish on a free address; Framer: Free: 500 AI credits, Framer domain, 1 GB bandwidth."
     ],
     [
      "How were these tools chosen?",
      "They are the tools in ToolRank's rankings with a verified paid plan at or below $10/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
-   ],
-   "order_note": "Ordered by the lowest verified monthly price (cheapest first), then by ToolRank&rsquo;s editorial rank."
+   ]
   },
   {
    "slug": "ai-coding-tools-under-15-a-month",
@@ -1959,8 +1981,8 @@
    "cat": "coding",
    "h1": "Best AI coding tools for $15 a month or less",
    "title": "Best AI Coding Tools Under $15/Month (2026)",
-   "desc": "Best AI coding tools for $15 a month or less: 7 picks with vendor-verified prices checked 16 Oct 2026, including Cursor, GitHub Copilot and Zed.",
-   "summary": "Every tool here has a paid plan listed at $15 a month or less on its vendor's pricing page. <b>Cursor</b> comes first: a full AI-native editor with agents, cloud automations and code review, and a free tier to start. The cheapest verified paid plan here is <b>Cursor</b> Plus ($8/month). 6 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI coding tools for $15 a month or less: 8 picks with vendor-verified prices checked 16 Oct 2026, including Cursor, GitHub Copilot and Zed.",
+   "summary": "Every tool here has a paid plan listed at $15 a month or less on its vendor's pricing page. <b>Cursor</b> comes first: a full AI-native editor with agents, cloud automations and code review, and a free tier to start. The cheapest verified paid plan here is <b>Cursor</b> Plus ($8/month). 7 of the 8 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "cursor",
@@ -1979,19 +2001,23 @@
      "AI Pro"
     ],
     [
-     "framer",
-     "Basic"
-    ],
-    [
      "kilo-code",
      "Teams"
     ],
     [
+     "macaly",
+     "Starter"
+    ],
+    [
      "webflow",
+     "Basic"
+    ],
+    [
+     "framer",
      "Basic"
     ]
    ],
-   "pick": "Pick <b>Cursor</b> for developers who want an AI-first editor with agents and code review (Plus: $8/month); think twice if you want flat pricing that includes third-party models. Pick <b>GitHub Copilot</b> for teams already on GitHub who want AI in their existing IDE (Pro: $10/month); think twice if you want an AI-native editor rather than a plugin. Pick <b>Zed</b> for developers who want a fast native editor and a choice of AI (Zed-hosted, own keys or external agents) (Pro: $10/month); think twice if you depend on the VS Code or JetBrains extension ecosystems. Pick <b>JetBrains AI (Junie)</b> for developers already living in JetBrains IDEs (AI Pro: $10/month ($100/year)); think twice if you don&#x27;t use JetBrains IDEs. Pick <b>Framer</b> for designing and publishing websites visually (Basic: $10/month (yearly)). Watch out: free sites use a Framer domain. Pick <b>Kilo Code</b> for open-source coding agent with any model (Teams: $15/user/month). Watch out: model usage costs extra. Pick <b>Webflow</b> for designer-grade marketing sites (Basic: $15/month billed yearly). Watch out: site and workspace plans are billed separately.",
+   "pick": "Pick <b>Cursor</b> for developers who want an AI-first editor with agents and code review (Plus: $8/month); think twice if you want flat pricing that includes third-party models. Pick <b>GitHub Copilot</b> for teams already on GitHub who want AI in their existing IDE (Pro: $10/month); think twice if you want an AI-native editor rather than a plugin. Pick <b>Zed</b> for developers who want a fast native editor and a choice of AI (Zed-hosted, own keys or external agents) (Pro: $10/month); think twice if you depend on the VS Code or JetBrains extension ecosystems. Pick <b>JetBrains AI (Junie)</b> for developers already living in JetBrains IDEs (AI Pro: $10/month ($100/year)); think twice if you don&#x27;t use JetBrains IDEs. Pick <b>Kilo Code</b> for open-source coding agent with any model (Teams: $15/user/month). Watch out: model usage costs extra. Pick <b>Macaly</b> for building and hosting websites by chat (Starter: $10/month). Watch out: credits cap usage. Pick <b>Webflow</b> for designer-grade marketing sites (Basic: $15/month billed yearly). Watch out: site and workspace plans are billed separately.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -1999,92 +2025,23 @@
     ],
     [
      "Which of these have a free plan?",
-     "Cursor: Free: limited agent requests and limited chat requests; GitHub Copilot: Limited chat and agent usage; no code review or cloud agent; Zed: Personal: free forever, unlimited with your own API keys or external agents; Framer: Free: 500 AI credits, Framer domain, 1 GB bandwidth; Kilo Code: Free and open source; AI usage billed separately; Webflow: Starter: free, webflow.io domain."
+     "Cursor: Free: limited agent requests and limited chat requests; GitHub Copilot: Limited chat and agent usage; no code review or cloud agent; Zed: Personal: free forever, unlimited with your own API keys or external agents; Kilo Code: Free and open source; AI usage billed separately; Macaly: Free: $0/month, publish on a free address; Webflow: Starter: free, webflow.io domain; Framer: Free: 500 AI credits, Framer domain, 1 GB bandwidth."
     ],
     [
      "How were these tools chosen?",
      "They are the tools in ToolRank's rankings with a verified paid plan at or below $15/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
-   ],
-   "order_note": "Ordered by the lowest verified monthly price (cheapest first), then by ToolRank&rsquo;s editorial rank."
-  },
-  {
-   "slug": "ai-coding-tools-under-30-a-month",
-   "n": 1029,
-   "generated": true,
-   "cat": "coding",
-   "h1": "Best AI coding tools for $30 a month or less",
-   "title": "Best AI Coding Tools Under $30/Month (2026)",
-   "desc": "Best AI coding tools for $30 a month or less: 10 picks with vendor-verified prices checked 16 Oct 2026, including Cursor, GitHub Copilot and Zed.",
-   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>Cursor</b> comes first: a full AI-native editor with agents, cloud automations and code review, and a free tier to start. The cheapest verified paid plan here is <b>Cursor</b> Plus ($8/month). 8 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
-   "items": [
-    [
-     "cursor",
-     "Plus"
-    ],
-    [
-     "github-copilot",
-     "Pro"
-    ],
-    [
-     "zed",
-     "Pro"
-    ],
-    [
-     "jetbrains-ai-junie",
-     "AI Pro"
-    ],
-    [
-     "framer",
-     "Basic"
-    ],
-    [
-     "kilo-code",
-     "Teams"
-    ],
-    [
-     "webflow",
-     "Basic"
-    ],
-    [
-     "claude-code",
-     "Claude Pro"
-    ],
-    [
-     "amazon-q-developer",
-     "Pro"
-    ],
-    [
-     "windsurf",
-     "Pro"
-    ]
-   ],
-   "pick": "Pick <b>Cursor</b> for developers who want an AI-first editor with agents and code review (Plus: $8/month); think twice if you want flat pricing that includes third-party models. Pick <b>GitHub Copilot</b> for teams already on GitHub who want AI in their existing IDE (Pro: $10/month); think twice if you want an AI-native editor rather than a plugin. Pick <b>Zed</b> for developers who want a fast native editor and a choice of AI (Zed-hosted, own keys or external agents) (Pro: $10/month); think twice if you depend on the VS Code or JetBrains extension ecosystems. Pick <b>JetBrains AI (Junie)</b> for developers already living in JetBrains IDEs (AI Pro: $10/month ($100/year)); think twice if you don&#x27;t use JetBrains IDEs. Pick <b>Framer</b> for designing and publishing websites visually (Basic: $10/month (yearly)). Watch out: free sites use a Framer domain. Pick <b>Kilo Code</b> for open-source coding agent with any model (Teams: $15/user/month). Watch out: model usage costs extra. Pick <b>Webflow</b> for designer-grade marketing sites (Basic: $15/month billed yearly). Watch out: site and workspace plans are billed separately.",
-   "faq": [
-    [
-     "Which of these is cheapest?",
-     "Cursor Plus ($8/month) is the lowest paid price we verified on this list (https://cursor.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
-    ],
-    [
-     "Which of these have a free plan?",
-     "Cursor: Free: limited agent requests and limited chat requests; GitHub Copilot: Limited chat and agent usage; no code review or cloud agent; Zed: Personal: free forever, unlimited with your own API keys or external agents; Framer: Free: 500 AI credits, Framer domain, 1 GB bandwidth; Kilo Code: Free and open source; AI usage billed separately; Webflow: Starter: free, webflow.io domain; Amazon Q Developer: 50 agentic requests/month (existing accounts only; new sign-ups closed 15 May 2026); Windsurf: Light agent quota, limited models, unlimited inline edits and Tab completions."
-    ],
-    [
-     "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with a verified paid plan at or below $30/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
-    ]
-   ],
-   "order_note": "Ordered by the lowest verified monthly price (cheapest first), then by ToolRank&rsquo;s editorial rank."
+   ]
   },
   {
    "slug": "paid-ai-coding-tools-no-free-plan",
-   "n": 1030,
+   "n": 1029,
    "generated": true,
    "cat": "coding",
    "h1": "Best paid AI coding tools (no free plan)",
    "title": "Best Paid AI Coding Tools: No Free Plan (2026)",
-   "desc": "Best paid AI coding tools (no free plan): 8 picks with vendor-verified prices checked 16 Oct 2026, including Claude Code, Replit and JetBrains AI (Junie).",
-   "summary": "These AI coding tools are paid products: no permanent free plan is listed on their pricing pages. <b>Claude Code</b> comes first: anthropic&#x27;s agentic coder runs in your terminal and repo, included with Claude paid plans. The cheapest verified paid plan here is <b>JetBrains AI (Junie)</b> AI Pro ($10/month ($100/year)). None of the 8 has a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best paid AI coding tools (no free plan): 9 picks with vendor-verified prices checked 16 Oct 2026, including Claude Code, Replit and JetBrains AI (Junie).",
+   "summary": "These AI coding tools are paid products: no permanent free plan is listed on their pricing pages. <b>Claude Code</b> comes first: anthropic&#x27;s agentic coder runs in your terminal and repo, included with Claude paid plans. The cheapest verified paid plan here is <b>JetBrains AI (Junie)</b> AI Pro ($10/month ($100/year)). None of the 9 has a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "claude-code",
@@ -2103,6 +2060,10 @@
      "Standard"
     ],
     [
+     "factory",
+     "Pro"
+    ],
+    [
      "coderabbit",
      "Essentials"
     ],
@@ -2119,7 +2080,7 @@
      ""
     ]
    ],
-   "pick": "Pick <b>Claude Code</b> for developers who prefer terminal-driven agents working across a repo (Claude Pro: $17/month annual or $20 monthly); think twice if you want a free tool or a graphical editor experience. Pick <b>Replit</b> for founders and builders who want an agent to build and host an app without local setup (Core: $20/month ($18 annual)); think twice if you want to work in your own local repo and editor. Pick <b>JetBrains AI (Junie)</b> for developers already living in JetBrains IDEs (AI Pro: $10/month ($100/year)); think twice if you don&#x27;t use JetBrains IDEs. Pick <b>Augment Code</b> for teams wanting a flat-price coding agent (Standard: $20/month flat). Watch out: usage beyond the included amount is billed. Pick <b>CodeRabbit</b> for AI pull-request reviews (Essentials: $24/user/month). Watch out: per-user pricing adds up for large teams. Pick <b>Qodo</b> for AI code review for teams ($30 (Pro Team)). Watch out: no permanent free tier. Pick <b>Tabnine</b> for enterprises that need self-hosted or air-gapped AI coding (price not yet verified); think twice if you&#x27;re an individual developer looking for a self-serve plan.",
+   "pick": "Pick <b>Claude Code</b> for developers who prefer terminal-driven agents working across a repo (Claude Pro: $17/month annual or $20 monthly); think twice if you want a free tool or a graphical editor experience. Pick <b>Replit</b> for founders and builders who want an agent to build and host an app without local setup (Core: $20/month ($18 annual)); think twice if you want to work in your own local repo and editor. Pick <b>JetBrains AI (Junie)</b> for developers already living in JetBrains IDEs (AI Pro: $10/month ($100/year)); think twice if you don&#x27;t use JetBrains IDEs. Pick <b>Augment Code</b> for teams wanting a flat-price coding agent (Standard: $20/month flat). Watch out: usage beyond the included amount is billed. Pick <b>Factory</b> for agent-driven software development (Pro: $20/month). Watch out: no free plan shown. Pick <b>CodeRabbit</b> for AI pull-request reviews (Essentials: $24/user/month). Watch out: per-user pricing adds up for large teams. Pick <b>Qodo</b> for AI code review for teams ($30 (Pro Team)). Watch out: no permanent free tier.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -2137,13 +2098,13 @@
   },
   {
    "slug": "ai-coding-tools-with-mobile-apps",
-   "n": 1031,
+   "n": 1030,
    "generated": true,
    "cat": "coding",
    "h1": "Best AI coding tools with mobile apps",
    "title": "Best AI Coding Tools With Mobile Apps (2026)",
-   "desc": "Best AI coding tools with mobile apps: 4 picks with vendor-verified prices checked 16 Oct 2026, including Cursor, GitHub Copilot and Replit.",
-   "summary": "Each of these AI coding tools lists an iOS, Android or mobile app among its platforms. <b>Cursor</b> comes first: a full AI-native editor with agents, cloud automations and code review, and a free tier to start. The cheapest verified paid plan here is <b>Cursor</b> Plus ($8/month). 2 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI coding tools with mobile apps: 5 picks with vendor-verified prices checked 16 Oct 2026, including Cursor, GitHub Copilot and Replit.",
+   "summary": "Each of these AI coding tools lists an iOS, Android or mobile app among its platforms. <b>Cursor</b> comes first: a full AI-native editor with agents, cloud automations and code review, and a free tier to start. The cheapest verified paid plan here is <b>Cursor</b> Plus ($8/month). 3 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "cursor",
@@ -2160,9 +2121,13 @@
     [
      "jetbrains-ai-junie",
      "AI Pro"
+    ],
+    [
+     "create-xyz-anything",
+     "Pro 20k"
     ]
    ],
-   "pick": "Pick <b>Cursor</b> for developers who want an AI-first editor with agents and code review (Plus: $8/month); think twice if you want flat pricing that includes third-party models. Pick <b>GitHub Copilot</b> for teams already on GitHub who want AI in their existing IDE (Pro: $10/month); think twice if you want an AI-native editor rather than a plugin. Pick <b>Replit</b> for founders and builders who want an agent to build and host an app without local setup (Core: $20/month ($18 annual)); think twice if you want to work in your own local repo and editor. Pick <b>JetBrains AI (Junie)</b> for developers already living in JetBrains IDEs (AI Pro: $10/month ($100/year)); think twice if you don&#x27;t use JetBrains IDEs.",
+   "pick": "Pick <b>Cursor</b> for developers who want an AI-first editor with agents and code review (Plus: $8/month); think twice if you want flat pricing that includes third-party models. Pick <b>GitHub Copilot</b> for teams already on GitHub who want AI in their existing IDE (Pro: $10/month); think twice if you want an AI-native editor rather than a plugin. Pick <b>Replit</b> for founders and builders who want an agent to build and host an app without local setup (Core: $20/month ($18 annual)); think twice if you want to work in your own local repo and editor. Pick <b>JetBrains AI (Junie)</b> for developers already living in JetBrains IDEs (AI Pro: $10/month ($100/year)); think twice if you don&#x27;t use JetBrains IDEs. Pick <b>Create.xyz (Anything)</b> for building apps from prompts (Pro 20k: $19/month). Watch out: free apps carry Anything branding.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -2170,7 +2135,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Cursor: Free: limited agent requests and limited chat requests; GitHub Copilot: Limited chat and agent usage; no code review or cloud agent."
+     "Cursor: Free: limited agent requests and limited chat requests; GitHub Copilot: Limited chat and agent usage; no code review or cloud agent; Create.xyz (Anything): Free plan."
     ],
     [
      "How were these tools chosen?",
@@ -2180,13 +2145,13 @@
   },
   {
    "slug": "ai-coding-tools-for-desktop",
-   "n": 1032,
+   "n": 1031,
    "generated": true,
    "cat": "coding",
    "h1": "Best AI coding tools with desktop apps",
    "title": "Best AI Coding Tools With Desktop Apps (2026)",
-   "desc": "Best AI coding tools with desktop apps: 8 picks with vendor-verified prices checked 16 Oct 2026, including Cursor, Windsurf and Devin.",
-   "summary": "Each of these AI coding tools runs as a desktop app (Mac, Windows or Linux) rather than only in a browser. <b>Cursor</b> comes first: a full AI-native editor with agents, cloud automations and code review, and a free tier to start. The cheapest verified paid plan here is <b>Cursor</b> Plus ($8/month). 8 of the 8 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI coding tools with desktop apps: 10 picks with vendor-verified prices checked 16 Oct 2026, including Cursor, Windsurf and Devin.",
+   "summary": "Each of these AI coding tools runs as a desktop app (Mac, Windows or Linux) rather than only in a browser. <b>Cursor</b> comes first: a full AI-native editor with agents, cloud automations and code review, and a free tier to start. The cheapest verified paid plan here is <b>Cursor</b> Plus ($8/month). 10 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "cursor",
@@ -2217,6 +2182,14 @@
      "Build"
     ],
     [
+     "dyad",
+     "Dyad Pro"
+    ],
+    [
+     "opencode",
+     ""
+    ],
+    [
      "codeium",
      "Pro"
     ]
@@ -2229,7 +2202,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Cursor: Free: limited agent requests and limited chat requests; Windsurf: Light agent quota, limited models, unlimited inline edits and Tab completions; Devin: Free plan: light quota, limited models (no cloud agents); Kiro: Perpetual free tier: 50 credits, Claude Sonnet 4.5 and open-weight models, rate-limited; Zed: Personal: free forever, unlimited with your own API keys or external agents; Framer: Free: 500 AI credits, Framer domain, 1 GB bandwidth; Warp: Free: $0/month, bring your own AI; Codeium: Devin Desktop Free: light agent quota, unlimited Tab completions."
+     "Cursor: Free: limited agent requests and limited chat requests; Windsurf: Light agent quota, limited models, unlimited inline edits and Tab completions; Devin: Free plan: light quota, limited models (no cloud agents); Kiro: Perpetual free tier: 50 credits, Claude Sonnet 4.5 and open-weight models, rate-limited; Zed: Personal: free forever, unlimited with your own API keys or external agents; Framer: Free: 500 AI credits, Framer domain, 1 GB bandwidth; Warp: Free: $0/month, bring your own AI; Dyad: Dyad Free: free, open-source desktop app; OpenCode: Open source; free models included or bring any provider; Codeium: Devin Desktop Free: light agent quota, unlimited Tab completions."
     ],
     [
      "How were these tools chosen?",
@@ -2239,7 +2212,7 @@
   },
   {
    "slug": "ai-coding-tools-for-teams",
-   "n": 1033,
+   "n": 1032,
    "generated": true,
    "cat": "coding",
    "h1": "Best AI coding tools for teams (per-seat plans)",
@@ -2306,7 +2279,7 @@
   },
   {
    "slug": "ai-coding-tools-for-enterprise",
-   "n": 1034,
+   "n": 1033,
    "generated": true,
    "cat": "coding",
    "h1": "Best AI coding tools for enterprise buyers",
@@ -2373,7 +2346,7 @@
   },
   {
    "slug": "ai-coding-tools-with-annual-discount",
-   "n": 1035,
+   "n": 1034,
    "generated": true,
    "cat": "coding",
    "h1": "AI coding tools that are cheaper billed yearly",
@@ -2420,7 +2393,7 @@
   },
   {
    "slug": "ai-coding-tools-with-mcp",
-   "n": 1036,
+   "n": 1035,
    "generated": true,
    "cat": "coding",
    "h1": "Best AI coding tools with MCP support",
@@ -2471,13 +2444,13 @@
   },
   {
    "slug": "self-hosted-ai-coding-tools",
-   "n": 1037,
+   "n": 1036,
    "generated": true,
    "cat": "coding",
    "h1": "Best self-hosted and open-source AI coding tools",
    "title": "Best Self-Hosted AI Coding Tools (2026)",
-   "desc": "Best self-hosted and open-source AI coding tools: 5 picks with vendor-verified prices checked 16 Oct 2026, including OpenHands, Aider and Kilo Code.",
-   "summary": "Each of these AI coding tools can run on your own machine or servers, or is open source. <b>OpenHands</b> comes first: MIT-licensed, model-agnostic agent with a web GUI, CLI and SDK. It runs free locally with unlimited conversations, there&#x27;s a free cloud Individual tier, and the GitHub community is large (about 91K stars). The cheapest verified paid plan here is <b>Kilo Code</b> Teams ($15/user/month). 5 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best self-hosted and open-source AI coding tools: 7 picks with vendor-verified prices checked 16 Oct 2026, including OpenHands, Aider and Kilo Code.",
+   "summary": "Each of these AI coding tools can run on your own machine or servers, or is open source. <b>OpenHands</b> comes first: MIT-licensed, model-agnostic agent with a web GUI, CLI and SDK. It runs free locally with unlimited conversations, there&#x27;s a free cloud Individual tier, and the GitHub community is large (about 91K stars). The cheapest verified paid plan here is <b>Kilo Code</b> Teams ($15/user/month). 7 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "openhands",
@@ -2492,6 +2465,14 @@
      "Free & Open Source"
     ],
     [
+     "dyad",
+     "Dyad Free"
+    ],
+    [
+     "opencode",
+     ""
+    ],
+    [
      "continue",
      ""
     ],
@@ -2500,7 +2481,7 @@
      ""
     ]
    ],
-   "pick": "Pick <b>OpenHands</b> for teams that want an autonomous agent they can self-host and audit (Local: open source) (Free); think twice if you want an inline autocomplete assistant inside your editor. Pick <b>Aider</b> for terminal users who want a free, model-agnostic pair programmer with clean git history (free plan: Free, open source: you pay only your LLM provider); think twice if you want a polished IDE, a hosted service, or one bundled subscription. Pick <b>Kilo Code</b> for open-source coding agent with any model (Free &amp; Open Source: Free). Watch out: model usage costs extra. Pick <b>Continue</b> for existing users who want a frozen, self-run open-source assistant with their own models (free plan: Open-source extension (Apache-2.0), self-run with your own model keys); think twice if you need a maintained tool. Look at Cline, or at Cursor, which acquired Continue. Pick <b>Roo Code</b> for nobody new. Existing users should migrate (free plan: Was free and open source (Apache-2.0); no longer maintained); think twice if you need any ongoing support. Use Cline instead.",
+   "pick": "Pick <b>OpenHands</b> for teams that want an autonomous agent they can self-host and audit (Local: open source) (Free); think twice if you want an inline autocomplete assistant inside your editor. Pick <b>Aider</b> for terminal users who want a free, model-agnostic pair programmer with clean git history (free plan: Free, open source: you pay only your LLM provider); think twice if you want a polished IDE, a hosted service, or one bundled subscription. Pick <b>Kilo Code</b> for open-source coding agent with any model (Free &amp; Open Source: Free). Watch out: model usage costs extra. Pick <b>Dyad</b> for building apps locally with any model (Dyad Free: Free). Watch out: desktop app only. Pick <b>OpenCode</b> for terminal users wanting an open-source coding agent (free plan: Open source; free models included or bring any provider). Watch out: you pay your model provider for paid models. Pick <b>Continue</b> for existing users who want a frozen, self-run open-source assistant with their own models (free plan: Open-source extension (Apache-2.0), self-run with your own model keys); think twice if you need a maintained tool. Look at Cline, or at Cursor, which acquired Continue. Pick <b>Roo Code</b> for nobody new. Existing users should migrate (free plan: Was free and open source (Apache-2.0); no longer maintained); think twice if you need any ongoing support. Use Cline instead.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -2508,7 +2489,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "OpenHands: Open source: free, unlimited local use. Cloud Individual: free, 10 conversations/day, BYOK or at-cost models; Aider: Free, open source: you pay only your LLM provider; Kilo Code: Free and open source; AI usage billed separately; Continue: Open-source extension (Apache-2.0), self-run with your own model keys; Roo Code: Was free and open source (Apache-2.0); no longer maintained."
+     "OpenHands: Open source: free, unlimited local use. Cloud Individual: free, 10 conversations/day, BYOK or at-cost models; Aider: Free, open source: you pay only your LLM provider; Kilo Code: Free and open source; AI usage billed separately; Dyad: Dyad Free: free, open-source desktop app; OpenCode: Open source; free models included or bring any provider; Continue: Open-source extension (Apache-2.0), self-run with your own model keys; Roo Code: Was free and open source (Apache-2.0); no longer maintained."
     ],
     [
      "How were these tools chosen?",
@@ -2518,36 +2499,40 @@
   },
   {
    "slug": "ai-image-tools-under-15-a-month",
-   "n": 1038,
+   "n": 1037,
    "generated": true,
    "cat": "image",
    "h1": "Best AI image tools for $15 a month or less",
    "title": "Best AI Image Tools Under $15/Month (2026)",
-   "desc": "Best AI image tools for $15 a month or less: 5 picks with vendor-verified prices checked 16 Oct 2026, including Krea, Midjourney and Recraft.",
-   "summary": "Every tool here has a paid plan listed at $15 a month or less on its vendor's pricing page. <b>Krea</b> comes first: access to many image/video models plus an agent, with a daily free allowance. The cheapest verified paid plan here is <b>Krea</b> Basic ($9/month ($5 annual)). 2 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI image tools for $15 a month or less: 6 picks with vendor-verified prices checked 16 Oct 2026, including Midjourney, Ideogram and Recraft.",
+   "summary": "Every tool here has a paid plan listed at $15 a month or less on its vendor's pricing page. <b>Midjourney</b> comes first: consistently strong image aesthetics with simple GPU-time based plans and commercial use rights. The cheapest verified paid plan here is <b>Krea</b> Basic ($9/month ($5 annual)). 3 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
-    [
-     "krea",
-     "Basic"
-    ],
     [
      "midjourney",
      "Basic"
+    ],
+    [
+     "ideogram",
+     "Plus"
     ],
     [
      "recraft",
      "Basic"
     ],
     [
-     "freepik-ai",
-     "Premium"
+     "krea",
+     "Basic"
     ],
     [
-     "ideogram",
-     "Plus"
+     "leonardo-ai",
+     "Essential"
+    ],
+    [
+     "freepik-ai",
+     "Premium"
     ]
    ],
-   "pick": "Pick <b>Krea</b> for creators who want many models in one place (Basic: $9/month ($5 annual)); think twice if you only need one model and want the cheapest route. Pick <b>Midjourney</b> for artists and marketers who want striking, stylised images (Basic: $10/month); think twice if you need a free tier or precise text in images. Pick <b>Recraft</b> for designers making brand-consistent graphics and vectors (Basic: $10/month billed annually ($120)); think twice if you need commercial use on a free plan. Pick <b>Freepik AI</b> for AI images plus stock content in one subscription (Premium: $14.50/month annually or $20 monthly). Watch out: brand now shown as Magnific (formerly Freepik). Pick <b>Ideogram</b> for posters, logos and graphics where legible text matters (Plus: $15/month annual ($20 monthly)); think twice if you need video-first workflows.",
+   "pick": "Pick <b>Midjourney</b> for artists and marketers who want striking, stylised images (Basic: $10/month); think twice if you need a free tier or precise text in images. Pick <b>Ideogram</b> for posters, logos and graphics where legible text matters (Plus: $15/month annual ($20 monthly)); think twice if you need video-first workflows. Pick <b>Recraft</b> for designers making brand-consistent graphics and vectors (Basic: $10/month billed annually ($120)); think twice if you need commercial use on a free plan. Pick <b>Krea</b> for creators who want many models in one place (Basic: $9/month ($5 annual)); think twice if you only need one model and want the cheapest route. Pick <b>Leonardo.Ai</b> for image and video generation with trainable models (Essential: $12/month). Watch out: free-tier creations are public; listed prices exclude tax and the monthly/yearly toggle state was not confirmed. Pick <b>Freepik AI</b> for AI images plus stock content in one subscription (Premium: $14.50/month annually or $20 monthly). Watch out: brand now shown as Magnific (formerly Freepik).",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -2555,18 +2540,17 @@
     ],
     [
      "Which of these have a free plan?",
-     "Krea: 100 units/day; Recraft: Limited free credits, personal use only."
+     "Recraft: Limited free credits, personal use only; Krea: 100 units/day; Leonardo.Ai: Free: $0/month, 150 fast tokens/day, public creations."
     ],
     [
      "How were these tools chosen?",
      "They are the tools in ToolRank's rankings with a verified paid plan at or below $15/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
-   ],
-   "order_note": "Ordered by the lowest verified monthly price (cheapest first), then by ToolRank&rsquo;s editorial rank."
+   ]
   },
   {
    "slug": "paid-ai-image-tools-no-free-plan",
-   "n": 1039,
+   "n": 1038,
    "generated": true,
    "cat": "image",
    "h1": "Best paid AI image tools (no free plan)",
@@ -2609,13 +2593,13 @@
   },
   {
    "slug": "free-ai-video-tools",
-   "n": 1040,
+   "n": 1039,
    "generated": true,
    "cat": "video",
    "h1": "Best free AI video tools (with a real free plan)",
    "title": "Best Free AI Video Tools in 2026",
-   "desc": "Best free AI video tools (with a real free plan): 7 picks with vendor-verified prices checked 16 Oct 2026, including Runway, HeyGen and Synthesia.",
-   "summary": "These AI video tools have a free plan or are free to use, and we confirmed it on each vendor's own pricing page. <b>Runway</b> comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 7 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best free AI video tools (with a real free plan): 10 picks with vendor-verified prices checked 16 Oct 2026, including Runway, HeyGen and Synthesia.",
+   "summary": "These AI video tools have a free plan or are free to use, and we confirmed it on each vendor's own pricing page. <b>Runway</b> comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 10 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "runway",
@@ -2634,6 +2618,10 @@
      "Free"
     ],
     [
+     "hedra",
+     ""
+    ],
+    [
      "opusclip",
      "Free"
     ],
@@ -2644,9 +2632,17 @@
     [
      "colossyan",
      "Starter"
+    ],
+    [
+     "ltx-studio",
+     "Free"
+    ],
+    [
+     "vozo",
+     "Free"
     ]
    ],
-   "pick": "Pick <b>Runway</b> for creators and studios producing AI video (Free: $0); think twice if you need long-form video on a small budget. Pick <b>HeyGen</b> for marketers and trainers producing avatar explainer videos (Free: $0); think twice if you need cinematic generative video. <b>Synthesia</b> (Basic: $0/month): AI avatar video platform for training and corporate videos in 140+ languages. <b>Pika</b> (Free: $0): Text- and image-to-video generator with effects for short social clips. <b>OpusClip</b> (Free: $0): Turns long videos into short vertical clips automatically. <b>Descript (video)</b> (Free: $0): Edit video by editing its transcript. <b>Colossyan</b> (Starter: Free): AI avatar video creator focused on workplace learning.",
+   "pick": "Pick <b>Runway</b> for creators and studios producing AI video (Free: $0); think twice if you need long-form video on a small budget. Pick <b>HeyGen</b> for marketers and trainers producing avatar explainer videos (Free: $0); think twice if you need cinematic generative video. <b>Synthesia</b> (Basic: $0/month): AI avatar video platform for training and corporate videos in 140+ languages. <b>Pika</b> (Free: $0): Text- and image-to-video generator with effects for short social clips. Pick <b>Hedra</b> for talking-character videos from images and audio ($20/month (billed monthly)). Watch out: credits limit output. <b>OpusClip</b> (Free: $0): Turns long videos into short vertical clips automatically. <b>Descript (video)</b> (Free: $0): Edit video by editing its transcript.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -2654,7 +2650,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Runway: 125 one-time credits, 5GB storage; HeyGen: 3 videos/month, up to 1 min each; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage; Colossyan: Starter: free, 20 video minutes/month with NEO avatars, watermark."
+     "Runway: 125 one-time credits, 5GB storage; HeyGen: 3 videos/month, up to 1 min each; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Hedra: Free plan, no credit card (per pricing page title); OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage; Colossyan: Starter: free, 20 video minutes/month with NEO avatars, watermark; LTX Studio: Free: $0 forever, 800 one-time credits; Vozo: Free: 1 seat, up to 20 min per video."
     ],
     [
      "How were these tools chosen?",
@@ -2664,16 +2660,24 @@
   },
   {
    "slug": "ai-video-tools-under-15-a-month",
-   "n": 1041,
+   "n": 1040,
    "generated": true,
    "cat": "video",
    "h1": "Best AI video tools for $15 a month or less",
    "title": "Best AI Video Tools Under $15/Month (2026)",
-   "desc": "Best AI video tools for $15 a month or less: 4 picks with vendor-verified prices checked 16 Oct 2026, including Pika, Invideo AI and Runway.",
-   "summary": "Every tool here has a paid plan listed at $15 a month or less on its vendor's pricing page. <b>Pika</b> comes first: text- and image-to-video generator with effects for short social clips. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 3 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI video tools for $15 a month or less: 5 picks with vendor-verified prices checked 16 Oct 2026, including Runway, Pika and OpusClip.",
+   "summary": "Every tool here has a paid plan listed at $15 a month or less on its vendor's pricing page. <b>Runway</b> comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 4 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
+     "runway",
+     "Standard"
+    ],
+    [
      "pika",
+     "Starter"
+    ],
+    [
+     "opusclip",
      "Starter"
     ],
     [
@@ -2681,15 +2685,11 @@
      "Starter"
     ],
     [
-     "runway",
-     "Standard"
-    ],
-    [
-     "opusclip",
-     "Starter"
+     "ltx-studio",
+     "Lite"
     ]
    ],
-   "pick": "<b>Pika</b> (Starter: $10/month ($8 annual)): Text- and image-to-video generator with effects for short social clips. <b>Invideo AI</b> (Starter: $10/seat/month billed annually): Generates full videos with script, stock media and voiceover from a prompt. Pick <b>Runway</b> for creators and studios producing AI video (Standard: $12/month annual ($15 monthly)); think twice if you need long-form video on a small budget. <b>OpusClip</b> (Starter: $15/month): Turns long videos into short vertical clips automatically.",
+   "pick": "Pick <b>Runway</b> for creators and studios producing AI video (Standard: $12/month annual ($15 monthly)); think twice if you need long-form video on a small budget. <b>Pika</b> (Starter: $10/month ($8 annual)): Text- and image-to-video generator with effects for short social clips. <b>OpusClip</b> (Starter: $15/month): Turns long videos into short vertical clips automatically. <b>Invideo AI</b> (Starter: $10/seat/month billed annually): Generates full videos with script, stock media and voiceover from a prompt. Pick <b>LTX Studio</b> for storyboarding and AI video production (Lite: $12/month yearly ($144) or $15 monthly). Watch out: free credits are one-time, not monthly.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -2697,36 +2697,39 @@
     ],
     [
      "Which of these have a free plan?",
-     "Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Runway: 125 one-time credits, 5GB storage; OpusClip: Free: watermarked clips, 3-day export window, 9:16 only."
+     "Runway: 125 one-time credits, 5GB storage; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; LTX Studio: Free: $0 forever, 800 one-time credits."
     ],
     [
      "How were these tools chosen?",
      "They are the tools in ToolRank's rankings with a verified paid plan at or below $15/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
-   ],
-   "order_note": "Ordered by the lowest verified monthly price (cheapest first), then by ToolRank&rsquo;s editorial rank."
+   ]
   },
   {
    "slug": "ai-video-tools-under-20-a-month",
-   "n": 1042,
+   "n": 1041,
    "generated": true,
    "cat": "video",
    "h1": "Best AI video tools for $20 a month or less",
    "title": "Best AI Video Tools Under $20/Month (2026)",
-   "desc": "Best AI video tools for $20 a month or less: 6 picks with vendor-verified prices checked 16 Oct 2026, including Pika, Invideo AI and Runway.",
-   "summary": "Every tool here has a paid plan listed at $20 a month or less on its vendor's pricing page. <b>Pika</b> comes first: text- and image-to-video generator with effects for short social clips. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 5 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI video tools for $20 a month or less: 9 picks with vendor-verified prices checked 16 Oct 2026, including Runway, Synthesia and Pika.",
+   "summary": "Every tool here has a paid plan listed at $20 a month or less on its vendor's pricing page. <b>Runway</b> comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 7 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
+    [
+     "runway",
+     "Standard"
+    ],
+    [
+     "synthesia",
+     "Starter"
+    ],
     [
      "pika",
      "Starter"
     ],
     [
-     "invideo-ai",
-     "Starter"
-    ],
-    [
-     "runway",
-     "Standard"
+     "hedra",
+     "Entry paid"
     ],
     [
      "opusclip",
@@ -2737,11 +2740,19 @@
      "Hobbyist"
     ],
     [
-     "synthesia",
+     "invideo-ai",
      "Starter"
+    ],
+    [
+     "ltx-studio",
+     "Lite"
+    ],
+    [
+     "topaz-video",
+     "Topaz for Web - Video"
     ]
    ],
-   "pick": "<b>Pika</b> (Starter: $10/month ($8 annual)): Text- and image-to-video generator with effects for short social clips. <b>Invideo AI</b> (Starter: $10/seat/month billed annually): Generates full videos with script, stock media and voiceover from a prompt. Pick <b>Runway</b> for creators and studios producing AI video (Standard: $12/month annual ($15 monthly)); think twice if you need long-form video on a small budget. <b>OpusClip</b> (Starter: $15/month): Turns long videos into short vertical clips automatically. <b>Descript (video)</b> (Hobbyist: $16/month annual or $24 monthly): Edit video by editing its transcript. <b>Synthesia</b> (Starter: $18/month yearly or $29 monthly): AI avatar video platform for training and corporate videos in 140+ languages.",
+   "pick": "Pick <b>Runway</b> for creators and studios producing AI video (Standard: $12/month annual ($15 monthly)); think twice if you need long-form video on a small budget. <b>Synthesia</b> (Starter: $18/month yearly or $29 monthly): AI avatar video platform for training and corporate videos in 140+ languages. <b>Pika</b> (Starter: $10/month ($8 annual)): Text- and image-to-video generator with effects for short social clips. Pick <b>Hedra</b> for talking-character videos from images and audio (Entry paid: $20/month billed monthly). Watch out: credits limit output. <b>OpusClip</b> (Starter: $15/month): Turns long videos into short vertical clips automatically. <b>Descript (video)</b> (Hobbyist: $16/month annual or $24 monthly): Edit video by editing its transcript. <b>Invideo AI</b> (Starter: $10/seat/month billed annually): Generates full videos with script, stock media and voiceover from a prompt.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -2749,59 +2760,66 @@
     ],
     [
      "Which of these have a free plan?",
-     "Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Runway: 125 one-time credits, 5GB storage; OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark."
+     "Runway: 125 one-time credits, 5GB storage; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Hedra: Free plan, no credit card (per pricing page title); OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage; LTX Studio: Free: $0 forever, 800 one-time credits."
     ],
     [
      "How were these tools chosen?",
      "They are the tools in ToolRank's rankings with a verified paid plan at or below $20/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
-   ],
-   "order_note": "Ordered by the lowest verified monthly price (cheapest first), then by ToolRank&rsquo;s editorial rank."
+   ]
   },
   {
    "slug": "ai-video-tools-under-30-a-month",
-   "n": 1043,
+   "n": 1042,
    "generated": true,
    "cat": "video",
    "h1": "Best AI video tools for $30 a month or less",
    "title": "Best AI Video Tools Under $30/Month (2026)",
-   "desc": "Best AI video tools for $30 a month or less: 8 picks with vendor-verified prices checked 16 Oct 2026, including Pika, Invideo AI and Runway.",
-   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>Pika</b> comes first: text- and image-to-video generator with effects for short social clips. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 6 of the 8 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI video tools for $30 a month or less: 10 picks with vendor-verified prices checked 16 Oct 2026, including Runway, Luma AI and HeyGen.",
+   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>Runway</b> comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 7 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
-    [
-     "pika",
-     "Starter"
-    ],
-    [
-     "invideo-ai",
-     "Starter"
-    ],
     [
      "runway",
      "Standard"
     ],
     [
-     "opusclip",
-     "Starter"
-    ],
-    [
-     "descript-video",
-     "Hobbyist"
-    ],
-    [
-     "synthesia",
-     "Starter"
+     "luma-ai",
+     "Plus"
     ],
     [
      "heygen",
      "Creator"
     ],
     [
-     "luma-ai",
-     "Plus"
+     "synthesia",
+     "Starter"
+    ],
+    [
+     "pika",
+     "Starter"
+    ],
+    [
+     "hedra",
+     "Entry paid"
+    ],
+    [
+     "captions",
+     "Max"
+    ],
+    [
+     "opusclip",
+     "Starter"
+    ],
+    [
+     "descript-video",
+     "Hobbyist"
+    ],
+    [
+     "invideo-ai",
+     "Starter"
     ]
    ],
-   "pick": "<b>Pika</b> (Starter: $10/month ($8 annual)): Text- and image-to-video generator with effects for short social clips. <b>Invideo AI</b> (Starter: $10/seat/month billed annually): Generates full videos with script, stock media and voiceover from a prompt. Pick <b>Runway</b> for creators and studios producing AI video (Standard: $12/month annual ($15 monthly)); think twice if you need long-form video on a small budget. <b>OpusClip</b> (Starter: $15/month): Turns long videos into short vertical clips automatically. <b>Descript (video)</b> (Hobbyist: $16/month annual or $24 monthly): Edit video by editing its transcript. <b>Synthesia</b> (Starter: $18/month yearly or $29 monthly): AI avatar video platform for training and corporate videos in 140+ languages. Pick <b>HeyGen</b> for marketers and trainers producing avatar explainer videos (Creator: $29/month); think twice if you need cinematic generative video.",
+   "pick": "Pick <b>Runway</b> for creators and studios producing AI video (Standard: $12/month annual ($15 monthly)); think twice if you need long-form video on a small budget. Pick <b>Luma AI</b> for video creators who want high quality and agent workflows (Plus: $30/month ($300/yr)); think twice if you want to try for free. Pick <b>HeyGen</b> for marketers and trainers producing avatar explainer videos (Creator: $29/month); think twice if you need cinematic generative video. <b>Synthesia</b> (Starter: $18/month yearly or $29 monthly): AI avatar video platform for training and corporate videos in 140+ languages. <b>Pika</b> (Starter: $10/month ($8 annual)): Text- and image-to-video generator with effects for short social clips. Pick <b>Hedra</b> for talking-character videos from images and audio (Entry paid: $20/month billed monthly). Watch out: credits limit output. <b>Captions</b> (Max: $24.99/month): Mobile-first app for AI captions, editing and talking-head video. Watch out: free plan not shown on the pricing page.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -2809,18 +2827,17 @@
     ],
     [
      "Which of these have a free plan?",
-     "Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Runway: 125 one-time credits, 5GB storage; OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; HeyGen: 3 videos/month, up to 1 min each."
+     "Runway: 125 one-time credits, 5GB storage; HeyGen: 3 videos/month, up to 1 min each; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Hedra: Free plan, no credit card (per pricing page title); OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage."
     ],
     [
      "How were these tools chosen?",
      "They are the tools in ToolRank's rankings with a verified paid plan at or below $30/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
-   ],
-   "order_note": "Ordered by the lowest verified monthly price (cheapest first), then by ToolRank&rsquo;s editorial rank."
+   ]
   },
   {
    "slug": "ai-video-tools-with-an-api",
-   "n": 1044,
+   "n": 1043,
    "generated": true,
    "cat": "video",
    "h1": "Best AI video tools with an API",
@@ -2863,7 +2880,7 @@
   },
   {
    "slug": "ai-video-tools-for-enterprise",
-   "n": 1045,
+   "n": 1044,
    "generated": true,
    "cat": "video",
    "h1": "Best AI video tools for enterprise buyers",
@@ -2906,13 +2923,13 @@
   },
   {
    "slug": "ai-video-tools-with-annual-discount",
-   "n": 1046,
+   "n": 1045,
    "generated": true,
    "cat": "video",
    "h1": "AI video tools that are cheaper billed yearly",
    "title": "AI Video Tools With Annual Discounts (2026)",
-   "desc": "AI video tools that are cheaper billed yearly: 6 picks with vendor-verified prices checked 16 Oct 2026, including Runway, Synthesia and Pika.",
-   "summary": "Each of these AI video tools shows both a yearly and a monthly price, so you can see what committing for a year saves. <b>Runway</b> comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 5 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "AI video tools that are cheaper billed yearly: 7 picks with vendor-verified prices checked 16 Oct 2026, including Runway, Synthesia and Pika.",
+   "summary": "Each of these AI video tools shows both a yearly and a monthly price, so you can see what committing for a year saves. <b>Runway</b> comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 6 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "runway",
@@ -2937,9 +2954,13 @@
     [
      "colossyan",
      "Professional"
+    ],
+    [
+     "ltx-studio",
+     "Lite"
     ]
    ],
-   "pick": "Pick <b>Runway</b> for creators and studios producing AI video (Standard: $12/month annual ($15 monthly)); think twice if you need long-form video on a small budget. <b>Synthesia</b> (Starter: $18/month yearly or $29 monthly): AI avatar video platform for training and corporate videos in 140+ languages. <b>Pika</b> (Starter: $10/month ($8 annual)): Text- and image-to-video generator with effects for short social clips. <b>Descript (video)</b> (Hobbyist: $16/month annual or $24 monthly): Edit video by editing its transcript. <b>Invideo AI</b> (Starter: $10/seat/month billed annually): Generates full videos with script, stock media and voiceover from a prompt. <b>Colossyan</b> (Professional: $59/month yearly): AI avatar video creator focused on workplace learning.",
+   "pick": "Pick <b>Runway</b> for creators and studios producing AI video (Standard: $12/month annual ($15 monthly)); think twice if you need long-form video on a small budget. <b>Synthesia</b> (Starter: $18/month yearly or $29 monthly): AI avatar video platform for training and corporate videos in 140+ languages. <b>Pika</b> (Starter: $10/month ($8 annual)): Text- and image-to-video generator with effects for short social clips. <b>Descript (video)</b> (Hobbyist: $16/month annual or $24 monthly): Edit video by editing its transcript. <b>Invideo AI</b> (Starter: $10/seat/month billed annually): Generates full videos with script, stock media and voiceover from a prompt. <b>Colossyan</b> (Professional: $59/month yearly): AI avatar video creator focused on workplace learning. Pick <b>LTX Studio</b> for storyboarding and AI video production (Lite: $12/month yearly ($144) or $15 monthly). Watch out: free credits are one-time, not monthly.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -2947,7 +2968,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Runway: 125 one-time credits, 5GB storage; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage; Colossyan: Starter: free, 20 video minutes/month with NEO avatars, watermark."
+     "Runway: 125 one-time credits, 5GB storage; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage; Colossyan: Starter: free, 20 video minutes/month with NEO avatars, watermark; LTX Studio: Free: $0 forever, 800 one-time credits."
     ],
     [
      "How were these tools chosen?",
@@ -2957,36 +2978,36 @@
   },
   {
    "slug": "ai-writing-tools-under-10-a-month",
-   "n": 1047,
+   "n": 1046,
    "generated": true,
    "cat": "writing",
    "h1": "Best AI writing tools for $10 a month or less",
    "title": "Best AI Writing Tools Under $10/Month (2026)",
-   "desc": "Best AI writing tools for $10 a month or less: 5 picks with vendor-verified prices checked 16 Oct 2026, including Wordtune, Rytr and QuillBot.",
-   "summary": "Every tool here has a paid plan listed at $10 a month or less on its vendor's pricing page. <b>Wordtune</b> comes first: low-cost rewriting with a free daily allowance. The cheapest verified paid plan here is <b>Wordtune</b> Advanced ($4.89/month annual ($6.99 list)). 4 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI writing tools for $10 a month or less: 5 picks with vendor-verified prices checked 16 Oct 2026, including Sudowrite, QuillBot and Wordtune.",
+   "summary": "Every tool here has a paid plan listed at $10 a month or less on its vendor's pricing page. <b>Sudowrite</b> comes first: fiction-specific models (Muse, Ballad) plus 30+ models with rollover credits. The cheapest verified paid plan here is <b>Wordtune</b> Advanced ($4.89/month annual ($6.99 list)). 4 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
-     "wordtune",
-     "Advanced"
-    ],
-    [
-     "rytr",
-     "Unlimited"
+     "sudowrite",
+     "Hobby & Student"
     ],
     [
      "quillbot",
      "Premium"
     ],
     [
-     "sudowrite",
-     "Hobby & Student"
+     "wordtune",
+     "Advanced"
     ],
     [
      "prowritingaid",
      "Premium"
+    ],
+    [
+     "rytr",
+     "Unlimited"
     ]
    ],
-   "pick": "Pick <b>Wordtune</b> for polishing emails and short-form text (Advanced: $4.89/month annual ($6.99 list)); think twice if you need unlimited rewrites for free. Pick <b>Rytr</b> for cheap short-form copy drafting (Unlimited: $7.50/month (yearly)). Watch out: yearly prices shown; monthly prices are higher. Pick <b>QuillBot</b> for students and non-native writers rewording text (Premium: $8.33/month billed annually); think twice if you need original long-form writing. Pick <b>Sudowrite</b> for novelists and screenwriters (Hobby &amp; Student: $10/month); think twice if you write business copy rather than fiction. Pick <b>ProWritingAid</b> for fiction and long-form writers who want manuscript-level editing reports (Premium: $10/month yearly ($120) or $30 monthly). Watch out: monthly billing costs roughly three times the yearly rate.",
+   "pick": "Pick <b>Sudowrite</b> for novelists and screenwriters (Hobby &amp; Student: $10/month); think twice if you write business copy rather than fiction. Pick <b>QuillBot</b> for students and non-native writers rewording text (Premium: $8.33/month billed annually); think twice if you need original long-form writing. Pick <b>Wordtune</b> for polishing emails and short-form text (Advanced: $4.89/month annual ($6.99 list)); think twice if you need unlimited rewrites for free. Pick <b>ProWritingAid</b> for fiction and long-form writers who want manuscript-level editing reports (Premium: $10/month yearly ($120) or $30 monthly). Watch out: monthly billing costs roughly three times the yearly rate. Pick <b>Rytr</b> for cheap short-form copy drafting (Unlimited: $7.50/month (yearly)). Watch out: yearly prices shown; monthly prices are higher.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -2994,18 +3015,17 @@
     ],
     [
      "Which of these have a free plan?",
-     "Wordtune: 10 rewrites/day, 3 per month for some features; Rytr: Free forever, 10K characters/month, no card; QuillBot: Basic grammar fixes and limited paraphrasing; ProWritingAid: Free plan with core editing tools."
+     "QuillBot: Basic grammar fixes and limited paraphrasing; Wordtune: 10 rewrites/day, 3 per month for some features; ProWritingAid: Free plan with core editing tools; Rytr: Free forever, 10K characters/month, no card."
     ],
     [
      "How were these tools chosen?",
      "They are the tools in ToolRank's rankings with a verified paid plan at or below $10/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
-   ],
-   "order_note": "Ordered by the lowest verified monthly price (cheapest first), then by ToolRank&rsquo;s editorial rank."
+   ]
   },
   {
    "slug": "ai-writing-tools-with-annual-discount",
-   "n": 1048,
+   "n": 1047,
    "generated": true,
    "cat": "writing",
    "h1": "AI writing tools that are cheaper billed yearly",
@@ -3052,13 +3072,13 @@
   },
   {
    "slug": "free-ai-voice-and-audio-tools",
-   "n": 1049,
+   "n": 1048,
    "generated": true,
    "cat": "voice-audio",
    "h1": "Best free AI voice and audio tools (with a real free plan)",
    "title": "Best Free AI Voice & Audio Tools in 2026",
    "desc": "Best free AI voice and audio tools (with a real free plan): 10 picks with vendor-verified prices checked 16 Oct 2026, including ElevenLabs, Suno and Udio.",
-   "summary": "These AI voice and audio tools have a free plan or are free to use, and we confirmed it on each vendor's own pricing page. <b>ElevenLabs</b> comes first: top-tier voice quality with a free tier and a cheap Starter plan that adds commercial rights. The cheapest verified paid plan here is <b>ElevenLabs</b> Starter ($6/month). 10 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "summary": "These AI voice and audio tools have a free plan or are free to use, and we confirmed it on each vendor's own pricing page. <b>ElevenLabs</b> comes first: top-tier voice quality with a free tier and a cheap Starter plan that adds commercial rights. The cheapest verified paid plan here is <b>Cartesia</b> Pro ($5/month). 10 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "elevenlabs",
@@ -3089,6 +3109,765 @@
      "Free"
     ],
     [
+     "murf",
+     ""
+    ],
+    [
+     "cartesia",
+     "Free"
+    ],
+    [
+     "deepgram",
+     ""
+    ]
+   ],
+   "pick": "Pick <b>ElevenLabs</b> for creators and developers needing realistic voiceovers or voice agents (Free: $0); think twice if you need commercial audio for free. Pick <b>Suno</b> for musicians and creators sketching complete songs (Free: $0); think twice if you need commercial rights without paying. Pick <b>Udio</b> for experimenting with AI music styles and edits (Free: $0); think twice if you need large monthly volumes cheaply. Pick <b>Descript</b> for podcasters and video creators editing talking content (Free: $0); think twice if you need frame-level pro VFX editing. Pick <b>Wispr Flow</b> for anyone who&#x27;d rather talk than type (Free: $0); think twice if you only need occasional built-in OS dictation. Pick <b>Otter.ai</b> for meeting transcription and notes for individuals and small teams (Basic: Free). Watch out: promotional discounts were shown on the pricing page; check the current price at checkout. Pick <b>Speechify</b> for listening to documents and web pages read aloud (Free: $0). Watch out: premium is expensive on monthly billing.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Cartesia Pro ($5/month) is the lowest paid price we verified on this list (https://cartesia.ai/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "ElevenLabs: 10k credits/month, 3 Studio projects, no commercial license; Suno: 50 credits/day, free models, standard features; Udio: 10 credits/day, 100/month, no rollovers; Descript: Free: 60 media minutes/month, 720p export, 5GB storage; Wispr Flow: Free on Mac, Windows, iPhone and Android (limited dictations); Otter.ai: Basic: free forever; Speechify: Free plan: listen at speeds up to 1.5x; Murf: $10 free API credit; Cartesia: Free: $0/month, 20K credits/month; Deepgram: $200 free credit, then pay-as-you-go."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a free plan or free use (not just a trial), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "crypto-analytics-tools-with-api",
+   "n": 1049,
+   "generated": true,
+   "cat": "crypto",
+   "h1": "Best crypto analytics tools with an API",
+   "title": "Best Crypto Analytics Tools With an API (2026)",
+   "desc": "Best crypto analytics tools with an API: 4 picks with vendor-verified prices checked 16 Oct 2026, including Nansen, Dune and Santiment.",
+   "summary": "Each of these crypto data tools offers an API for pulling on-chain or market data into your own code. <b>Nansen</b> comes first: on-chain analytics with labelled wallets, smart-money tracking and an AI research assistant. The cheapest verified paid plan here is <b>Nansen</b> Pro ($49/month). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "nansen",
+     "Pro"
+    ],
+    [
+     "dune",
+     "Analyst"
+    ],
+    [
+     "santiment",
+     "Sanbase Pro"
+    ],
+    [
+     "elfa-ai",
+     "Grow"
+    ]
+   ],
+   "pick": "Pick <b>Nansen</b> for on-chain analytics and Smart Money tracking (Pro: $49/month). Watch out: no trial; free plan is limited outside Solana. Pick <b>Dune</b> for crypto analysts building SQL dashboards (Analyst: $65/month); think twice if you don&#x27;t write SQL. Pick <b>Santiment</b> for on-chain and social crypto analytics (Sanbase Pro: $49/month). Watch out: real-time data needs a paid plan. Pick <b>Elfa AI</b> for crypto social-intelligence data via API (Grow: $870/month ($739.50 billed annually)). Watch out: API only.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Nansen Pro ($49/month) is the lowest paid price we verified on this list (https://www.nansen.ai/plans, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Nansen: Free: $0/month, basic labels, Solana analytics, 20 AI credits/week; Dune: View-only access; view and copy any dashboard or query; Santiment: Free forever; 14-day trial of paid features; Elfa AI: free plan listed."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with an API listed on the vendor pricing page, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "free-ai-tools-for-finding-research-papers",
+   "n": 1050,
+   "generated": true,
+   "cat": "research",
+   "h1": "Best free AI tools for finding research papers",
+   "title": "Best Free AI Tools for Research Papers (2026)",
+   "desc": "Best free AI tools for finding research papers: 5 picks with vendor-verified prices checked 16 Oct 2026, including Elicit, Consensus and Semantic Scholar.",
+   "summary": "Each of these paper-discovery tools can be used free, confirmed on the vendor's site. <b>Elicit</b> comes first: purpose-built for literature review, with systematic review workflows and Zotero import. The cheapest verified paid plan here is <b>Research Rabbit</b> ResearchRabbit+ ($10/month annual or $12.50 monthly). 5 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "elicit",
+     "Basic"
+    ],
+    [
+     "consensus",
+     "Free"
+    ],
+    [
+     "semantic-scholar",
+     "Free"
+    ],
+    [
+     "undermind",
+     "Free"
+    ],
+    [
+     "research-rabbit",
+     "Free"
+    ]
+   ],
+   "pick": "Pick <b>Elicit</b> for researchers doing literature and systematic reviews (Basic: Free); think twice if you need general web search. Pick <b>Consensus</b> for students and clinicians checking what research says (Free: $0); think twice if you need non-academic sources. Pick <b>Semantic Scholar</b> for free scientific paper search (Free: $0). Watch out: no paid tier; fewer AI writing features. Pick <b>Undermind</b> for deep literature searches for researchers (Free: $0). Watch out: monthly billing costs more (20% saved annually). Pick <b>Research Rabbit</b> for mapping related papers visually (Free: $0 forever). Watch out: prices marked with an asterisk on the page (may vary by region).",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Research Rabbit ResearchRabbit+ ($10/month annual or $12.50 monthly) is the lowest paid price we verified on this list (https://www.researchrabbit.ai/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Elicit: Limited Research Agent and Reports usage, Zotero import; Consensus: Basic paper search, 10 Pro messages/month, up to 3 Deep reviews/month; Semantic Scholar: Free AI-powered research tool (Ai2); Undermind: Free: $0 for exploratory research; Research Rabbit: Free: $0 forever."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a free plan for paper search or discovery, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-agent-frameworks-for-developers",
+   "n": 1051,
+   "generated": true,
+   "cat": "automation",
+   "h1": "Best AI agent frameworks for developers",
+   "title": "Best AI Agent Frameworks for Developers (2026)",
+   "desc": "Best AI agent frameworks for developers: 5 picks with vendor-verified prices checked 16 Oct 2026, including CrewAI, LlamaIndex and Mastra.",
+   "summary": "These are code-first frameworks or platforms for building AI agents, each with a free way to start. <b>CrewAI</b> comes first: multi-agent orchestration framework plus hosted platform. The cheapest verified paid plan here is <b>LlamaIndex</b> Starter ($50/month). 5 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "crewai",
+     "Basic"
+    ],
+    [
+     "llamaindex",
+     "Free"
+    ],
+    [
+     "mastra",
+     "Starter"
+    ],
+    [
+     "langflow",
+     ""
+    ],
+    [
+     "agno",
+     "Free"
+    ]
+   ],
+   "pick": "Pick <b>CrewAI</b> for developers building multi-agent workflows (Basic: Free). Watch out: paid self-serve tier not shown; Enterprise is custom. Pick <b>LlamaIndex</b> for document parsing and retrieval for LLM apps (Free: $0/month). Watch out: cloud credits limit parsing volume. Pick <b>Mastra</b> for TypeScript developers building agents (Starter: $0/month). Watch out: cloud Teams plan starts high. Pick <b>Langflow</b> for building and deploying agents and MCP servers visually (free plan: Free and open source, plus a free cloud account). Watch out: cloud limits are not published on the homepage. Pick <b>Agno</b> for python developers running agents on their own infrastructure (Free: $0/month). Watch out: control plane needs Pro.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "LlamaIndex Starter ($50/month) is the lowest paid price we verified on this list (https://www.llamaindex.ai/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "CrewAI: Basic: free, 50 workflow executions/month; LlamaIndex: Free: $0/month; Mastra: Starter: free for everyone; self-hosted open-source framework; Langflow: Free and open source, plus a free cloud account; Agno: Free: $0/month runtime, you host it."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a developer framework with a free tier or open-source edition, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-text-to-speech-tools",
+   "n": 1052,
+   "generated": true,
+   "cat": "voice-audio",
+   "h1": "Best AI text-to-speech tools",
+   "title": "Best AI Text-to-Speech Tools (2026)",
+   "desc": "Best AI text-to-speech tools: 4 picks with vendor-verified prices checked 16 Oct 2026, including ElevenLabs, Speechify and Murf.",
+   "summary": "These tools turn written text into natural-sounding speech. <b>ElevenLabs</b> comes first: top-tier voice quality with a free tier and a cheap Starter plan that adds commercial rights. The cheapest verified paid plan here is <b>Cartesia</b> Pro ($5/month). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "elevenlabs",
+     "Starter"
+    ],
+    [
+     "speechify",
+     "Premium"
+    ],
+    [
+     "murf",
+     ""
+    ],
+    [
+     "cartesia",
+     "Pro"
+    ]
+   ],
+   "pick": "Pick <b>ElevenLabs</b> for creators and developers needing realistic voiceovers or voice agents (Starter: $6/month); think twice if you need commercial audio for free. Pick <b>Speechify</b> for listening to documents and web pages read aloud (Premium: $29/month billed monthly). Watch out: premium is expensive on monthly billing. Pick <b>Murf</b> for text-to-speech voiceovers and voice agents (Pay as you go API ($0.01/1,000 characters, Falcon TTS)). Watch out: studio plan prices not verified. Pick <b>Cartesia</b> for developers building low-latency voice and TTS (Pro: $5/month). Watch out: credit-based; heavy use needs higher tiers.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Cartesia Pro ($5/month) is the lowest paid price we verified on this list (https://cartesia.ai/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "ElevenLabs: 10k credits/month, 3 Studio projects, no commercial license; Speechify: Free plan: listen at speeds up to 1.5x; Murf: $10 free API credit; Cartesia: Free: $0/month, 20K credits/month."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with text-to-speech as a core product on the vendor page, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-app-builders-for-non-coders",
+   "n": 1053,
+   "generated": true,
+   "cat": "coding",
+   "h1": "Best AI app builders for non-coders",
+   "title": "Best AI App Builders for Non-Coders (2026)",
+   "desc": "Best AI app builders for non-coders: 6 picks with vendor-verified prices checked 16 Oct 2026, including Lovable, Bolt.new and Base44.",
+   "summary": "These tools build working apps from a prompt or a spreadsheet, without writing code. <b>Lovable</b> comes first: turns plain-language prompts into working web apps, with hosting via Lovable Cloud and a free daily allowance. The cheapest verified paid plan here is <b>Macaly</b> Starter ($10/month). 6 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "lovable",
+     "Free"
+    ],
+    [
+     "bolt-new",
+     "Free"
+    ],
+    [
+     "base44",
+     "Free"
+    ],
+    [
+     "create-xyz-anything",
+     "Free"
+    ],
+    [
+     "macaly",
+     "Free"
+    ],
+    [
+     "glide",
+     "Free"
+    ]
+   ],
+   "pick": "Pick <b>Lovable</b> for non-developers and founders prototyping web apps fast (Free: $0); think twice if you need predictable flat costs for heavy iteration. Pick <b>Bolt.new</b> for quick full-stack prototypes and small business apps (Free: $0); think twice if you&#x27;ll burn through tokens on large projects without budget for upgrades. Pick <b>Base44</b> for building full apps from a prompt (Free: $0). Watch out: credits cap AI messages and integration actions. Pick <b>Create.xyz (Anything)</b> for building apps from prompts (Free: $0). Watch out: free apps carry Anything branding. Pick <b>Macaly</b> for building and hosting websites by chat (Free: $0/month). Watch out: credits cap usage. Pick <b>Glide</b> for no-code internal apps from spreadsheets (Free: $0). Watch out: credits limit usage on every plan.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Macaly Starter ($10/month) is the lowest paid price we verified on this list (https://www.macaly.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Lovable: 5 build credits/day (up to 30/month) plus 20 Cloud credits/month; Bolt.new: 300K tokens/day, 1M tokens/month, Bolt branding, 10MB uploads, unlimited databases; Base44: Free to start; Create.xyz (Anything): Free plan; Macaly: Free: $0/month, publish on a free address; Glide: Free: limited credits."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with prompt-to-app or no-code app building on the vendor page, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Tools come from several ToolRank categories, so they are grouped by category and then by each category&rsquo;s editorial rank."
+  },
+  {
+   "slug": "ai-note-taking-apps",
+   "n": 1054,
+   "generated": true,
+   "cat": "research",
+   "h1": "Best AI note-taking apps",
+   "title": "Best AI Note-Taking Apps (2026)",
+   "desc": "Best AI note-taking apps: 4 picks with vendor-verified prices checked 16 Oct 2026, including NotebookLM, Notion AI and Granola.",
+   "summary": "These apps capture and organise notes with AI built in. <b>NotebookLM</b> comes first: answers grounded in your own sources, free for personal use, with Audio and Video Overviews. The cheapest verified paid plan here is <b>Mem</b> Mem Plus ($9/month). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "notebooklm",
+     "In Google AI Pro"
+    ],
+    [
+     "notion-ai",
+     "Plus"
+    ],
+    [
+     "granola",
+     "Business"
+    ],
+    [
+     "mem",
+     "Mem Plus"
+    ]
+   ],
+   "pick": "Pick <b>NotebookLM</b> for students and researchers working from their own documents (In Google AI Pro: $19.99/month (Google AI Pro)); think twice if you need open web search as the main source. Pick <b>Notion AI</b> for teams whose knowledge already lives in Notion (Plus: $10/member/month); think twice if you don&#x27;t use Notion. Pick <b>Granola</b> for bot-free AI meeting notes (Business: $14/user/month). Watch out: team features need Business. Pick <b>Mem</b> for AI note-taking that organises itself (Mem Plus: $9/month). Watch out: free plan caps new notes.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Mem Mem Plus ($9/month) is the lowest paid price we verified on this list (https://get.mem.ai/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "NotebookLM: Standard chat/generation limits, up to 50 sources per notebook; Notion AI: Free plan includes a trial of Notion AI only; Granola: Basic: $0; Mem: Free: 25 new notes/month."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with AI note-taking as a core feature on the vendor page, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-video-generators-with-free-plans",
+   "n": 1055,
+   "generated": true,
+   "cat": "video",
+   "h1": "Best AI video generators with a free plan",
+   "title": "Best Free AI Video Generators (2026)",
+   "desc": "Best AI video generators with a free plan: 5 picks with vendor-verified prices checked 16 Oct 2026, including Leonardo.Ai, Runway and Pika.",
+   "summary": "Each of these generative video tools has a free plan we confirmed on its pricing page. <b>Leonardo.Ai</b> comes first: image and video generation platform with fine-tuned models; owned by Canva. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 5 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "leonardo-ai",
+     "Free"
+    ],
+    [
+     "runway",
+     "Free"
+    ],
+    [
+     "pika",
+     "Free"
+    ],
+    [
+     "hedra",
+     ""
+    ],
+    [
+     "ltx-studio",
+     "Free"
+    ]
+   ],
+   "pick": "Pick <b>Leonardo.Ai</b> for image and video generation with trainable models (Free: $0/month). Watch out: free-tier creations are public; listed prices exclude tax and the monthly/yearly toggle state was not confirmed. Pick <b>Runway</b> for creators and studios producing AI video (Free: $0); think twice if you need long-form video on a small budget. <b>Pika</b> (Free: $0): Text- and image-to-video generator with effects for short social clips. Pick <b>Hedra</b> for talking-character videos from images and audio ($20/month (billed monthly)). Watch out: credits limit output. Pick <b>LTX Studio</b> for storyboarding and AI video production (Free: $0). Watch out: free credits are one-time, not monthly.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Pika Starter ($10/month ($8 annual)) is the lowest paid price we verified on this list (https://pika.art/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Leonardo.Ai: Free: $0/month, 150 fast tokens/day, public creations; Runway: 125 one-time credits, 5GB storage; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Hedra: Free plan, no credit card (per pricing page title); LTX Studio: Free: $0 forever, 800 one-time credits."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a free plan for generative video, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Tools come from several ToolRank categories, so they are grouped by category and then by each category&rsquo;s editorial rank."
+  },
+  {
+   "slug": "ai-coding-tools-under-100-a-month",
+   "n": 1056,
+   "generated": true,
+   "cat": "coding",
+   "h1": "Best AI coding tools for $100 a month or less",
+   "title": "Best AI Coding Tools Under $100/Month (2026)",
+   "desc": "Best AI coding tools for $100 a month or less: 10 picks with vendor-verified prices checked 16 Oct 2026, including Cursor, Claude Code and GitHub Copilot.",
+   "summary": "Every tool here has a paid plan listed at $100 a month or less on its vendor's pricing page. <b>Cursor</b> comes first: a full AI-native editor with agents, cloud automations and code review, and a free tier to start. The cheapest verified paid plan here is <b>Cursor</b> Plus ($8/month). 8 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "cursor",
+     "Plus"
+    ],
+    [
+     "claude-code",
+     "Claude Pro"
+    ],
+    [
+     "github-copilot",
+     "Pro"
+    ],
+    [
+     "bolt-new",
+     "Pro"
+    ],
+    [
+     "windsurf",
+     "Pro"
+    ],
+    [
+     "v0",
+     "Business"
+    ],
+    [
+     "replit",
+     "Core"
+    ],
+    [
+     "devin",
+     "Pro"
+    ],
+    [
+     "kiro",
+     "Pro"
+    ],
+    [
+     "zed",
+     "Pro"
+    ]
+   ],
+   "pick": "Pick <b>Cursor</b> for developers who want an AI-first editor with agents and code review (Plus: $8/month); think twice if you want flat pricing that includes third-party models. Pick <b>Claude Code</b> for developers who prefer terminal-driven agents working across a repo (Claude Pro: $17/month annual or $20 monthly); think twice if you want a free tool or a graphical editor experience. Pick <b>GitHub Copilot</b> for teams already on GitHub who want AI in their existing IDE (Pro: $10/month); think twice if you want an AI-native editor rather than a plugin. Pick <b>Bolt.new</b> for quick full-stack prototypes and small business apps (Pro: $25/month); think twice if you&#x27;ll burn through tokens on large projects without budget for upgrades. Pick <b>Windsurf</b> for developers who want a VS Code-style IDE that manages several local and cloud agents from one screen (Pro: $20/month); think twice if you want a stable, unchanging product, or a flat price with no usage overages. Pick <b>v0</b> for generating React/Next.js UI and deploying to Vercel (Business: $100/user/month). Watch out: usage is credit-based. Pick <b>Replit</b> for founders and builders who want an agent to build and host an app without local setup (Core: $20/month ($18 annual)); think twice if you want to work in your own local repo and editor.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Cursor Plus ($8/month) is the lowest paid price we verified on this list (https://cursor.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Cursor: Free: limited agent requests and limited chat requests; GitHub Copilot: Limited chat and agent usage; no code review or cloud agent; Bolt.new: 300K tokens/day, 1M tokens/month, Bolt branding, 10MB uploads, unlimited databases; Windsurf: Light agent quota, limited models, unlimited inline edits and Tab completions; v0: Free: $0/month, deploy apps to Vercel; Devin: Free plan: light quota, limited models (no cloud agents); Kiro: Perpetual free tier: 50 credits, Claude Sonnet 4.5 and open-weight models, rate-limited; Zed: Personal: free forever, unlimited with your own API keys or external agents."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a verified paid plan at or below $100/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "free-ai-image-tools",
+   "n": 1057,
+   "generated": true,
+   "cat": "image",
+   "h1": "Best free AI image tools (with a real free plan)",
+   "title": "Best Free AI Image Tools in 2026",
+   "desc": "Best free AI image tools (with a real free plan): 4 picks with vendor-verified prices checked 16 Oct 2026, including Recraft, Krea and Leonardo.Ai.",
+   "summary": "These AI image tools have a free plan or are free to use, and we confirmed it on each vendor's own pricing page. <b>Recraft</b> comes first: low-cost plans with multiple models and design-focused output. The cheapest verified paid plan here is <b>Krea</b> Basic ($9/month ($5 annual)). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "recraft",
+     "Free"
+    ],
+    [
+     "krea",
+     "Free"
+    ],
+    [
+     "leonardo-ai",
+     "Free"
+    ],
+    [
+     "comfyui",
+     "Free"
+    ]
+   ],
+   "pick": "Pick <b>Recraft</b> for designers making brand-consistent graphics and vectors (Free: $0); think twice if you need commercial use on a free plan. Pick <b>Krea</b> for creators who want many models in one place (Free: $0); think twice if you only need one model and want the cheapest route. Pick <b>Leonardo.Ai</b> for image and video generation with trainable models (Free: $0/month). Watch out: free-tier creations are public; listed prices exclude tax and the monthly/yearly toggle state was not confirmed. Pick <b>ComfyUI</b> for node-based image and video workflows (Free: $0). Watch out: steep learning curve.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Krea Basic ($9/month ($5 annual)) is the lowest paid price we verified on this list (https://www.krea.ai/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Recraft: Limited free credits, personal use only; Krea: 100 units/day; Leonardo.Ai: Free: $0/month, 150 fast tokens/day, public creations; ComfyUI: Comfy Cloud: 5 free runs on GPUs for new users; ComfyUI itself is open source."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a free plan or free use (not just a trial), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-image-tools-with-annual-discount",
+   "n": 1058,
+   "generated": true,
+   "cat": "image",
+   "h1": "AI image tools that are cheaper billed yearly",
+   "title": "AI Image Tools With Annual Discounts (2026)",
+   "desc": "AI image tools that are cheaper billed yearly: 5 picks with vendor-verified prices checked 16 Oct 2026, including Ideogram, Recraft and Krea.",
+   "summary": "Each of these AI image tools shows both a yearly and a monthly price, so you can see what committing for a year saves. <b>Ideogram</b> comes first: credit-based plans with unlimited slow generations and character consistency. The cheapest verified paid plan here is <b>Krea</b> Basic ($9/month ($5 annual)). 3 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "ideogram",
+     "Plus"
+    ],
+    [
+     "recraft",
+     "Basic"
+    ],
+    [
+     "krea",
+     "Basic"
+    ],
+    [
+     "freepik-ai",
+     "Premium"
+    ],
+    [
+     "comfyui",
+     "Standard"
+    ]
+   ],
+   "pick": "Pick <b>Ideogram</b> for posters, logos and graphics where legible text matters (Plus: $15/month annual ($20 monthly)); think twice if you need video-first workflows. Pick <b>Recraft</b> for designers making brand-consistent graphics and vectors (Basic: $10/month billed annually ($120)); think twice if you need commercial use on a free plan. Pick <b>Krea</b> for creators who want many models in one place (Basic: $9/month ($5 annual)); think twice if you only need one model and want the cheapest route. Pick <b>Freepik AI</b> for AI images plus stock content in one subscription (Premium: $14.50/month annually or $20 monthly). Watch out: brand now shown as Magnific (formerly Freepik). Pick <b>ComfyUI</b> for node-based image and video workflows (Standard: $16/month yearly or $20 monthly). Watch out: steep learning curve.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Krea Basic ($9/month ($5 annual)) is the lowest paid price we verified on this list (https://www.krea.ai/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Recraft: Limited free credits, personal use only; Krea: 100 units/day; ComfyUI: Comfy Cloud: 5 free runs on GPUs for new users; ComfyUI itself is open source."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with both annual and monthly prices on the vendor page, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "paid-ai-video-tools-no-free-plan",
+   "n": 1059,
+   "generated": true,
+   "cat": "video",
+   "h1": "Best paid AI video tools (no free plan)",
+   "title": "Best Paid AI Video Tools: No Free Plan (2026)",
+   "desc": "Best paid AI video tools (no free plan): 4 picks with vendor-verified prices checked 16 Oct 2026, including Luma AI, Captions and Invideo AI.",
+   "summary": "These AI video tools are paid products: no permanent free plan is listed on their pricing pages. <b>Luma AI</b> comes first: high-end video models plus third-party models and agents in one plan. The cheapest verified paid plan here is <b>Invideo AI</b> Starter ($10/seat/month billed annually). None of the 4 has a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "luma-ai",
+     "Plus"
+    ],
+    [
+     "captions",
+     "Max"
+    ],
+    [
+     "invideo-ai",
+     "Starter"
+    ],
+    [
+     "topaz-video",
+     "Topaz for Web - Video"
+    ]
+   ],
+   "pick": "Pick <b>Luma AI</b> for video creators who want high quality and agent workflows (Plus: $30/month ($300/yr)); think twice if you want to try for free. <b>Captions</b> (Max: $24.99/month): Mobile-first app for AI captions, editing and talking-head video. Watch out: free plan not shown on the pricing page. <b>Invideo AI</b> (Starter: $10/seat/month billed annually): Generates full videos with script, stock media and voiceover from a prompt. Pick <b>Topaz Video</b> for upscaling and restoring video (Topaz for Web - Video: $19/month promo ($29 list)). Watch out: commercial use limited to orgs under $1M revenue on these plans.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Invideo AI Starter ($10/seat/month billed annually) is the lowest paid price we verified on this list (https://invideo.io/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "None of these lists a permanent free plan on its pricing page. Some offer a trial; see the table."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with no permanent free plan on the vendor page, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-voice-and-audio-tools-under-10-a-month",
+   "n": 1060,
+   "generated": true,
+   "cat": "voice-audio",
+   "h1": "Best AI voice and audio tools for $10 a month or less",
+   "title": "Best AI Voice & Audio Tools Under $10/Month (2026)",
+   "desc": "Best AI voice and audio tools for $10 a month or less: 7 picks with vendor-verified prices checked 16 Oct 2026, including ElevenLabs, Suno and Udio.",
+   "summary": "Every tool here has a paid plan listed at $10 a month or less on its vendor's pricing page. <b>ElevenLabs</b> comes first: top-tier voice quality with a free tier and a cheap Starter plan that adds commercial rights. The cheapest verified paid plan here is <b>Cartesia</b> Pro ($5/month). 6 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "elevenlabs",
+     "Starter"
+    ],
+    [
+     "suno",
+     "Pro"
+    ],
+    [
+     "udio",
+     "Standard"
+    ],
+    [
+     "otter-ai",
+     "Pro"
+    ],
+    [
+     "cartesia",
+     "Pro"
+    ],
+    [
+     "krisp",
+     "Core"
+    ],
+    [
+     "lalal-ai",
+     "Lite"
+    ]
+   ],
+   "pick": "Pick <b>ElevenLabs</b> for creators and developers needing realistic voiceovers or voice agents (Starter: $6/month); think twice if you need commercial audio for free. Pick <b>Suno</b> for musicians and creators sketching complete songs (Pro: $8/month (billed yearly)); think twice if you need commercial rights without paying. Pick <b>Udio</b> for experimenting with AI music styles and edits (Standard: $8/month annual ($10 monthly)); think twice if you need large monthly volumes cheaply. Pick <b>Otter.ai</b> for meeting transcription and notes for individuals and small teams (Pro: $8.33/user/month annually or $16.99 monthly). Watch out: promotional discounts were shown on the pricing page; check the current price at checkout. Pick <b>Cartesia</b> for developers building low-latency voice and TTS (Pro: $5/month). Watch out: credit-based; heavy use needs higher tiers. Pick <b>Krisp</b> for bot-free meeting notes and noise cancellation (Core: $8/user/month annually or $16 monthly). Watch out: no permanent free plan listed, only a 7-day trial. Pick <b>LALAL.AI</b> for separating vocals and stems from audio (Lite: $7.50/month ($90 billed annually)). Watch out: free plan is limited.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Cartesia Pro ($5/month) is the lowest paid price we verified on this list (https://cartesia.ai/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "ElevenLabs: 10k credits/month, 3 Studio projects, no commercial license; Suno: 50 credits/day, free models, standard features; Udio: 10 credits/day, 100/month, no rollovers; Otter.ai: Basic: free forever; Cartesia: Free: $0/month, 20K credits/month; LALAL.AI: Starter: always free."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a verified paid plan at or below $10/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-voice-and-audio-tools-under-20-a-month",
+   "n": 1061,
+   "generated": true,
+   "cat": "voice-audio",
+   "h1": "Best AI voice and audio tools for $20 a month or less",
+   "title": "Best AI Voice & Audio Tools Under $20/Month (2026)",
+   "desc": "Best AI voice and audio tools for $20 a month or less: 9 picks with vendor-verified prices checked 16 Oct 2026, including ElevenLabs, Suno and Udio.",
+   "summary": "Every tool here has a paid plan listed at $20 a month or less on its vendor's pricing page. <b>ElevenLabs</b> comes first: top-tier voice quality with a free tier and a cheap Starter plan that adds commercial rights. The cheapest verified paid plan here is <b>Cartesia</b> Pro ($5/month). 8 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "elevenlabs",
+     "Starter"
+    ],
+    [
+     "suno",
+     "Pro"
+    ],
+    [
+     "udio",
+     "Standard"
+    ],
+    [
+     "descript",
+     "Hobbyist"
+    ],
+    [
+     "wispr-flow",
+     "Pro"
+    ],
+    [
+     "otter-ai",
+     "Pro"
+    ],
+    [
+     "cartesia",
+     "Pro"
+    ],
+    [
+     "krisp",
+     "Core"
+    ],
+    [
+     "lalal-ai",
+     "Lite"
+    ]
+   ],
+   "pick": "Pick <b>ElevenLabs</b> for creators and developers needing realistic voiceovers or voice agents (Starter: $6/month); think twice if you need commercial audio for free. Pick <b>Suno</b> for musicians and creators sketching complete songs (Pro: $8/month (billed yearly)); think twice if you need commercial rights without paying. Pick <b>Udio</b> for experimenting with AI music styles and edits (Standard: $8/month annual ($10 monthly)); think twice if you need large monthly volumes cheaply. Pick <b>Descript</b> for podcasters and video creators editing talking content (Hobbyist: $16/month annual or $24 monthly); think twice if you need frame-level pro VFX editing. Pick <b>Wispr Flow</b> for anyone who&#x27;d rather talk than type (Pro: $12/user/month annual ($15 monthly)); think twice if you only need occasional built-in OS dictation. Pick <b>Otter.ai</b> for meeting transcription and notes for individuals and small teams (Pro: $8.33/user/month annually or $16.99 monthly). Watch out: promotional discounts were shown on the pricing page; check the current price at checkout. Pick <b>Cartesia</b> for developers building low-latency voice and TTS (Pro: $5/month). Watch out: credit-based; heavy use needs higher tiers.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Cartesia Pro ($5/month) is the lowest paid price we verified on this list (https://cartesia.ai/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "ElevenLabs: 10k credits/month, 3 Studio projects, no commercial license; Suno: 50 credits/day, free models, standard features; Udio: 10 credits/day, 100/month, no rollovers; Descript: Free: 60 media minutes/month, 720p export, 5GB storage; Wispr Flow: Free on Mac, Windows, iPhone and Android (limited dictations); Otter.ai: Basic: free forever; Cartesia: Free: $0/month, 20K credits/month; LALAL.AI: Starter: always free."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a verified paid plan at or below $20/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-voice-and-audio-tools-under-30-a-month",
+   "n": 1062,
+   "generated": true,
+   "cat": "voice-audio",
+   "h1": "Best AI voice and audio tools for $30 a month or less",
+   "title": "Best AI Voice & Audio Tools Under $30/Month (2026)",
+   "desc": "Best AI voice and audio tools for $30 a month or less: 10 picks with vendor-verified prices checked 16 Oct 2026, including ElevenLabs, Suno and Udio.",
+   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>ElevenLabs</b> comes first: top-tier voice quality with a free tier and a cheap Starter plan that adds commercial rights. The cheapest verified paid plan here is <b>Cartesia</b> Pro ($5/month). 9 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "elevenlabs",
+     "Starter"
+    ],
+    [
+     "suno",
+     "Pro"
+    ],
+    [
+     "udio",
+     "Standard"
+    ],
+    [
+     "descript",
+     "Hobbyist"
+    ],
+    [
+     "wispr-flow",
+     "Pro"
+    ],
+    [
+     "otter-ai",
+     "Pro"
+    ],
+    [
+     "speechify",
+     "Premium"
+    ],
+    [
+     "cartesia",
+     "Pro"
+    ],
+    [
+     "krisp",
+     "Core"
+    ],
+    [
+     "riverside",
+     "Pro"
+    ]
+   ],
+   "pick": "Pick <b>ElevenLabs</b> for creators and developers needing realistic voiceovers or voice agents (Starter: $6/month); think twice if you need commercial audio for free. Pick <b>Suno</b> for musicians and creators sketching complete songs (Pro: $8/month (billed yearly)); think twice if you need commercial rights without paying. Pick <b>Udio</b> for experimenting with AI music styles and edits (Standard: $8/month annual ($10 monthly)); think twice if you need large monthly volumes cheaply. Pick <b>Descript</b> for podcasters and video creators editing talking content (Hobbyist: $16/month annual or $24 monthly); think twice if you need frame-level pro VFX editing. Pick <b>Wispr Flow</b> for anyone who&#x27;d rather talk than type (Pro: $12/user/month annual ($15 monthly)); think twice if you only need occasional built-in OS dictation. Pick <b>Otter.ai</b> for meeting transcription and notes for individuals and small teams (Pro: $8.33/user/month annually or $16.99 monthly). Watch out: promotional discounts were shown on the pricing page; check the current price at checkout. Pick <b>Speechify</b> for listening to documents and web pages read aloud (Premium: $29/month billed monthly). Watch out: premium is expensive on monthly billing.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Cartesia Pro ($5/month) is the lowest paid price we verified on this list (https://cartesia.ai/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "ElevenLabs: 10k credits/month, 3 Studio projects, no commercial license; Suno: 50 credits/day, free models, standard features; Udio: 10 credits/day, 100/month, no rollovers; Descript: Free: 60 media minutes/month, 720p export, 5GB storage; Wispr Flow: Free on Mac, Windows, iPhone and Android (limited dictations); Otter.ai: Basic: free forever; Speechify: Free plan: listen at speeds up to 1.5x; Cartesia: Free: $0/month, 20K credits/month; Riverside: Free: $0/month."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a verified paid plan at or below $30/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-voice-and-audio-tools-with-an-api",
+   "n": 1063,
+   "generated": true,
+   "cat": "voice-audio",
+   "h1": "Best AI voice and audio tools with an API",
+   "title": "Best AI Voice & Audio Tools With an API (2026)",
+   "desc": "Best AI voice and audio tools with an API: 7 picks with vendor-verified prices checked 16 Oct 2026, including ElevenLabs, Murf and Cartesia.",
+   "summary": "Each of these AI voice and audio tools offers an API, so you can build it into your own product or workflow. <b>ElevenLabs</b> comes first: top-tier voice quality with a free tier and a cheap Starter plan that adds commercial rights. The cheapest verified paid plan here is <b>Cartesia</b> Pro ($5/month). 7 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "elevenlabs",
+     "Starter"
+    ],
+    [
+     "murf",
+     ""
+    ],
+    [
+     "cartesia",
+     "Pro"
+    ],
+    [
      "deepgram",
      ""
     ],
@@ -3097,28 +3876,639 @@
      ""
     ],
     [
-     "riverside",
-     "Free"
+     "resemble-ai",
+     "Growth tier"
+    ],
+    [
+     "superwhisper",
+     ""
     ]
    ],
-   "pick": "Pick <b>ElevenLabs</b> for creators and developers needing realistic voiceovers or voice agents (Free: $0); think twice if you need commercial audio for free. Pick <b>Suno</b> for musicians and creators sketching complete songs (Free: $0); think twice if you need commercial rights without paying. Pick <b>Udio</b> for experimenting with AI music styles and edits (Free: $0); think twice if you need large monthly volumes cheaply. Pick <b>Descript</b> for podcasters and video creators editing talking content (Free: $0); think twice if you need frame-level pro VFX editing. Pick <b>Wispr Flow</b> for anyone who&#x27;d rather talk than type (Free: $0); think twice if you only need occasional built-in OS dictation. Pick <b>Otter.ai</b> for meeting transcription and notes for individuals and small teams (Basic: Free). Watch out: promotional discounts were shown on the pricing page; check the current price at checkout. Pick <b>Speechify</b> for listening to documents and web pages read aloud (Free: $0). Watch out: premium is expensive on monthly billing.",
+   "pick": "Pick <b>ElevenLabs</b> for creators and developers needing realistic voiceovers or voice agents (Starter: $6/month); think twice if you need commercial audio for free. Pick <b>Murf</b> for text-to-speech voiceovers and voice agents (Pay as you go API ($0.01/1,000 characters, Falcon TTS)). Watch out: studio plan prices not verified. Pick <b>Cartesia</b> for developers building low-latency voice and TTS (Pro: $5/month). Watch out: credit-based; heavy use needs higher tiers. Pick <b>Deepgram</b> for developers adding speech-to-text to apps and voice agents (Pay as you go (Nova-3 from about $0.0048/min)). Watch out: API only, no end-user app. Pick <b>AssemblyAI</b> for developers transcribing recorded audio at scale (Pay as you go (Universal-2 $0.15/hour)). Watch out: API only, no end-user app. Pick <b>Resemble AI</b> for deepfake detection and voice AI via API (Growth tier: $350/month). Watch out: pricing page now centres on detection; voice-cloning plan prices not separately verified. Pick <b>Superwhisper</b> for dictation on the desktop (free plan: Free tier forever; Pro features free for the first 3,000 words). Watch out: pro price could not be read reliably from the page.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "ElevenLabs Starter ($6/month) is the lowest paid price we verified on this list (https://elevenlabs.io/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "Cartesia Pro ($5/month) is the lowest paid price we verified on this list (https://cartesia.ai/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
-     "ElevenLabs: 10k credits/month, 3 Studio projects, no commercial license; Suno: 50 credits/day, free models, standard features; Udio: 10 credits/day, 100/month, no rollovers; Descript: Free: 60 media minutes/month, 720p export, 5GB storage; Wispr Flow: Free on Mac, Windows, iPhone and Android (limited dictations); Otter.ai: Basic: free forever; Speechify: Free plan: listen at speeds up to 1.5x; Deepgram: $200 free credit, then pay-as-you-go; AssemblyAI: Free to start, then pay-as-you-go; Riverside: Free: $0/month."
+     "ElevenLabs: 10k credits/month, 3 Studio projects, no commercial license; Murf: $10 free API credit; Cartesia: Free: $0/month, 20K credits/month; Deepgram: $200 free credit, then pay-as-you-go; AssemblyAI: Free to start, then pay-as-you-go; Resemble AI: $0/month: no subscription fee, buy credits as you go; Superwhisper: Free tier forever; Pro features free for the first 3,000 words."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with an API listed by the vendor, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-voice-and-audio-tools-for-desktop",
+   "n": 1064,
+   "generated": true,
+   "cat": "voice-audio",
+   "h1": "Best AI voice and audio tools with desktop apps",
+   "title": "Best AI Voice & Audio Tools With Desktop Apps (2026)",
+   "desc": "Best AI voice and audio tools with desktop apps: 5 picks with vendor-verified prices checked 16 Oct 2026, including Descript, Wispr Flow and Krisp.",
+   "summary": "Each of these AI voice and audio tools runs as a desktop app (Mac, Windows or Linux) rather than only in a browser. <b>Descript</b> comes first: text-based editing plus the Underlord AI co-editor makes audio/video editing fast. The cheapest verified paid plan here is <b>Krisp</b> Core ($8/user/month annually or $16 monthly). 4 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "descript",
+     "Hobbyist"
+    ],
+    [
+     "wispr-flow",
+     "Pro"
+    ],
+    [
+     "krisp",
+     "Core"
+    ],
+    [
+     "superwhisper",
+     ""
+    ],
+    [
+     "aiva",
+     ""
+    ]
+   ],
+   "pick": "Pick <b>Descript</b> for podcasters and video creators editing talking content (Hobbyist: $16/month annual or $24 monthly); think twice if you need frame-level pro VFX editing. Pick <b>Wispr Flow</b> for anyone who&#x27;d rather talk than type (Pro: $12/user/month annual ($15 monthly)); think twice if you only need occasional built-in OS dictation. Pick <b>Krisp</b> for bot-free meeting notes and noise cancellation (Core: $8/user/month annually or $16 monthly). Watch out: no permanent free plan listed, only a 7-day trial. Pick <b>Superwhisper</b> for dictation on the desktop (free plan: Free tier forever; Pro features free for the first 3,000 words). Watch out: pro price could not be read reliably from the page. Pick <b>AIVA</b> for composing royalty-free instrumental music (€11/month (Standard, billed annually, + VAT)). Watch out: free tracks cannot be monetized; prices in euros.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Krisp Core ($8/user/month annually or $16 monthly) is the lowest paid price we verified on this list (https://krisp.ai/pricing/, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Descript: Free: 60 media minutes/month, 720p export, 5GB storage; Wispr Flow: Free on Mac, Windows, iPhone and Android (limited dictations); Superwhisper: Free tier forever; Pro features free for the first 3,000 words; AIVA: Free forever: 3 downloads/month, must credit AIVA, no monetization."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a desktop app listed by the vendor, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-voice-and-audio-tools-with-annual-discount",
+   "n": 1065,
+   "generated": true,
+   "cat": "voice-audio",
+   "h1": "AI voice and audio tools that are cheaper billed yearly",
+   "title": "AI Voice & Audio Tools With Annual Discounts (2026)",
+   "desc": "AI voice and audio tools that are cheaper billed yearly: 10 picks with vendor-verified prices checked 16 Oct 2026, including Suno, Udio and Descript.",
+   "summary": "Each of these AI voice and audio tools shows both a yearly and a monthly price, so you can see what committing for a year saves. <b>Suno</b> comes first: the most capable consumer song generator, with a daily free allowance. The cheapest verified paid plan here is <b>LALAL.AI</b> Lite ($7.50/month ($90 billed annually)). 9 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "suno",
+     "Pro"
+    ],
+    [
+     "udio",
+     "Standard"
+    ],
+    [
+     "descript",
+     "Hobbyist"
+    ],
+    [
+     "wispr-flow",
+     "Pro"
+    ],
+    [
+     "otter-ai",
+     "Pro"
+    ],
+    [
+     "speechify",
+     "Premium"
+    ],
+    [
+     "krisp",
+     "Core"
+    ],
+    [
+     "riverside",
+     "Pro"
+    ],
+    [
+     "lalal-ai",
+     "Lite"
+    ],
+    [
+     "aiva",
+     "Standard"
+    ]
+   ],
+   "pick": "Pick <b>Suno</b> for musicians and creators sketching complete songs (Pro: $8/month (billed yearly)); think twice if you need commercial rights without paying. Pick <b>Udio</b> for experimenting with AI music styles and edits (Standard: $8/month annual ($10 monthly)); think twice if you need large monthly volumes cheaply. Pick <b>Descript</b> for podcasters and video creators editing talking content (Hobbyist: $16/month annual or $24 monthly); think twice if you need frame-level pro VFX editing. Pick <b>Wispr Flow</b> for anyone who&#x27;d rather talk than type (Pro: $12/user/month annual ($15 monthly)); think twice if you only need occasional built-in OS dictation. Pick <b>Otter.ai</b> for meeting transcription and notes for individuals and small teams (Pro: $8.33/user/month annually or $16.99 monthly). Watch out: promotional discounts were shown on the pricing page; check the current price at checkout. Pick <b>Speechify</b> for listening to documents and web pages read aloud (Premium: $29/month billed monthly). Watch out: premium is expensive on monthly billing. Pick <b>Krisp</b> for bot-free meeting notes and noise cancellation (Core: $8/user/month annually or $16 monthly). Watch out: no permanent free plan listed, only a 7-day trial.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "LALAL.AI Lite ($7.50/month ($90 billed annually)) is the lowest paid price we verified on this list (https://www.lalal.ai/pricing/, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Suno: 50 credits/day, free models, standard features; Udio: 10 credits/day, 100/month, no rollovers; Descript: Free: 60 media minutes/month, 720p export, 5GB storage; Wispr Flow: Free on Mac, Windows, iPhone and Android (limited dictations); Otter.ai: Basic: free forever; Speechify: Free plan: listen at speeds up to 1.5x; Riverside: Free: $0/month; LALAL.AI: Starter: always free; AIVA: Free forever: 3 downloads/month, must credit AIVA, no monetization."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with both annual and monthly prices on the vendor page, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "free-ai-automation-tools",
+   "n": 1066,
+   "generated": true,
+   "cat": "automation",
+   "h1": "Best free AI automation tools (with a real free plan)",
+   "title": "Best Free AI Automation Tools in 2026",
+   "desc": "Best free AI automation tools (with a real free plan): 10 picks with vendor-verified prices checked 16 Oct 2026, including Zapier, Make and CrewAI.",
+   "summary": "These AI automation tools have a free plan or are free to use, and we confirmed it on each vendor's own pricing page. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 10 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "zapier",
+     "Free"
+    ],
+    [
+     "make",
+     ""
+    ],
+    [
+     "crewai",
+     "Basic"
+    ],
+    [
+     "llamaindex",
+     "Free"
+    ],
+    [
+     "mastra",
+     "Starter"
+    ],
+    [
+     "dify",
+     "Sandbox"
+    ],
+    [
+     "flowise",
+     "Free"
+    ],
+    [
+     "langflow",
+     ""
+    ],
+    [
+     "lindy",
+     "Free"
+    ],
+    [
+     "botpress",
+     "Free"
+    ]
+   ],
+   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Free: $0); think twice if you run very high volumes and want self-hosting. Pick <b>Make</b> for ops teams who want visual, branching automations (free plan: 1,000 credits/month, 1 MB data storage, 1 data store); think twice if you want flat unlimited runs. Pick <b>CrewAI</b> for developers building multi-agent workflows (Basic: Free). Watch out: paid self-serve tier not shown; Enterprise is custom. Pick <b>LlamaIndex</b> for document parsing and retrieval for LLM apps (Free: $0/month). Watch out: cloud credits limit parsing volume. Pick <b>Mastra</b> for TypeScript developers building agents (Starter: $0/month). Watch out: cloud Teams plan starts high. Pick <b>Dify</b> for teams building LLM apps with a visual builder (Sandbox: Free). Watch out: cloud plans are billed per workspace per year. Pick <b>Flowise</b> for visual LLM flow building (Free: $0/month). Watch out: free cloud plan is limited to 2 flows.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; Make: 1,000 credits/month, 1 MB data storage, 1 data store; CrewAI: Basic: free, 50 workflow executions/month; LlamaIndex: Free: $0/month; Mastra: Starter: free for everyone; self-hosted open-source framework; Dify: Sandbox: free, 200 message credits; open-source Community edition free to self-host; Flowise: Free: $0/month, 2 flows and assistants; Langflow: Free and open source, plus a free cloud account; Lindy: $50 in free credits for 7 days, no card; Botpress: Free: 100 conversations/month."
     ],
     [
      "How were these tools chosen?",
      "They are the tools in ToolRank's rankings with a free plan or free use (not just a trial), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
+  },
+  {
+   "slug": "ai-automation-tools-under-50-a-month",
+   "n": 1067,
+   "generated": true,
+   "cat": "automation",
+   "h1": "Best AI automation tools for $50 a month or less",
+   "title": "Best AI Automation Tools Under $50/Month (2026)",
+   "desc": "Best AI automation tools for $50 a month or less: 6 picks with vendor-verified prices checked 16 Oct 2026, including Zapier, Gumloop and LlamaIndex.",
+   "summary": "Every tool here has a paid plan listed at $50 a month or less on its vendor's pricing page. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 5 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "zapier",
+     "Professional"
+    ],
+    [
+     "gumloop",
+     "Pro"
+    ],
+    [
+     "llamaindex",
+     "Starter"
+    ],
+    [
+     "flowise",
+     "Starter"
+    ],
+    [
+     "lindy",
+     "Team"
+    ],
+    [
+     "vapi",
+     "Core"
+    ]
+   ],
+   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: from $19.99/month); think twice if you run very high volumes and want self-hosting. Pick <b>Gumloop</b> for no-code AI workflow automation (Pro: Starts at $37/month). Watch out: no permanent free plan shown on the pricing page. Pick <b>LlamaIndex</b> for document parsing and retrieval for LLM apps (Starter: $50/month). Watch out: cloud credits limit parsing volume. Pick <b>Flowise</b> for visual LLM flow building (Starter: $35/month). Watch out: free cloud plan is limited to 2 flows. Pick <b>Lindy</b> for AI assistants that handle email, meetings and admin (Team: From $29.99/month). Watch out: free credits expire after 7 days. Pick <b>Vapi</b> for developers building voice agents (Core: $29/month). Watch out: total cost stacks transcriber, model and voice per-minute fees.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; LlamaIndex: Free: $0/month; Flowise: Free: $0/month, 2 flows and assistants; Lindy: $50 in free credits for 7 days, no card; Vapi: $5 free credits, then pay per minute."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a verified paid plan at or below $50/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "cheapest-ai-automation-tools",
+   "n": 1068,
+   "generated": true,
+   "cat": "automation",
+   "h1": "Cheapest AI automation tools: lowest verified paid plans",
+   "title": "Cheapest AI Automation Tools: Paid Plans Compared",
+   "desc": "Cheapest AI automation tools: lowest verified paid plans: 9 picks with vendor-verified prices checked 16 Oct 2026, including Zapier, Vapi and Lindy.",
+   "summary": "This list ranks AI automation tools purely by their cheapest verified paid plan. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 8 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "zapier",
+     "Professional"
+    ],
+    [
+     "vapi",
+     "Core"
+    ],
+    [
+     "lindy",
+     "Team"
+    ],
+    [
+     "flowise",
+     "Starter"
+    ],
+    [
+     "gumloop",
+     "Pro"
+    ],
+    [
+     "llamaindex",
+     "Starter"
+    ],
+    [
+     "botpress",
+     "Plus"
+    ],
+    [
+     "agno",
+     "Pro"
+    ],
+    [
+     "mastra",
+     "Teams"
+    ]
+   ],
+   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: from $19.99/month); think twice if you run very high volumes and want self-hosting. Pick <b>Vapi</b> for developers building voice agents (Core: $29/month). Watch out: total cost stacks transcriber, model and voice per-minute fees. Pick <b>Lindy</b> for AI assistants that handle email, meetings and admin (Team: From $29.99/month). Watch out: free credits expire after 7 days. Pick <b>Flowise</b> for visual LLM flow building (Starter: $35/month). Watch out: free cloud plan is limited to 2 flows. Pick <b>Gumloop</b> for no-code AI workflow automation (Pro: Starts at $37/month). Watch out: no permanent free plan shown on the pricing page. Pick <b>LlamaIndex</b> for document parsing and retrieval for LLM apps (Starter: $50/month). Watch out: cloud credits limit parsing volume. Pick <b>Botpress</b> for customer-facing chatbots (Plus: $150/month billed annually). Watch out: paid plans start high for small projects.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; Vapi: $5 free credits, then pay per minute; Lindy: $50 in free credits for 7 days, no card; Flowise: Free: $0/month, 2 flows and assistants; LlamaIndex: Free: $0/month; Botpress: Free: 100 conversations/month; Agno: Free: $0/month runtime, you host it; Mastra: Starter: free for everyone; self-hosted open-source framework."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a paid plan price we could read on the vendor page, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Ordered strictly by lowest verified monthly price, cheapest first. Rank in the category ranking is shown on each profile."
+  },
+  {
+   "slug": "paid-ai-automation-tools-no-free-plan",
+   "n": 1069,
+   "generated": true,
+   "cat": "automation",
+   "h1": "Best paid AI automation tools (no free plan)",
+   "title": "Best Paid AI Automation Tools: No Free Plan (2026)",
+   "desc": "Best paid AI automation tools (no free plan): 4 picks with vendor-verified prices checked 16 Oct 2026, including n8n, Zapier Agents and Manus.",
+   "summary": "These AI automation tools are paid products: no permanent free plan is listed on their pricing pages. <b>n8n</b> comes first: developer-friendly automation with unlimited steps per execution and a self-host option. The cheapest verified paid plan here is <b>Gumloop</b> Pro (Starts at $37/month). None of the 4 has a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "n8n",
+     ""
+    ],
+    [
+     "zapier-agents",
+     ""
+    ],
+    [
+     "manus",
+     ""
+    ],
+    [
+     "gumloop",
+     "Pro"
+    ]
+   ],
+   "pick": "Pick <b>n8n</b> for technical teams building complex workflows and AI agents (€20/month (Starter, billed annually)); think twice if you want the simplest no-code setup. Pick <b>Zapier Agents</b> for teams already on Zapier who want agents (price not yet verified); think twice if you need a code-first agent framework. Pick <b>Manus</b> for delegating multi-step research and web tasks (price not yet verified); think twice if you need predictable per-task cost. Pick <b>Gumloop</b> for no-code AI workflow automation (Pro: Starts at $37/month). Watch out: no permanent free plan shown on the pricing page.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Gumloop Pro (Starts at $37/month) is the lowest paid price we verified on this list (https://www.gumloop.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "None of these lists a permanent free plan on its pricing page. Some offer a trial; see the table."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with no permanent free plan on the vendor page, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-automation-tools-with-an-api",
+   "n": 1070,
+   "generated": true,
+   "cat": "automation",
+   "h1": "Best AI automation tools with an API",
+   "title": "Best AI Automation Tools With an API (2026)",
+   "desc": "Best AI automation tools with an API: 6 picks with vendor-verified prices checked 16 Oct 2026, including Zapier, Zapier Agents and LlamaIndex.",
+   "summary": "Each of these AI automation tools offers an API, so you can build it into your own product or workflow. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 5 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "zapier",
+     "Professional"
+    ],
+    [
+     "zapier-agents",
+     ""
+    ],
+    [
+     "llamaindex",
+     "Starter"
+    ],
+    [
+     "dify",
+     ""
+    ],
+    [
+     "botpress",
+     "Plus"
+    ],
+    [
+     "vapi",
+     "Core"
+    ]
+   ],
+   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: from $19.99/month); think twice if you run very high volumes and want self-hosting. Pick <b>Zapier Agents</b> for teams already on Zapier who want agents (price not yet verified); think twice if you need a code-first agent framework. Pick <b>LlamaIndex</b> for document parsing and retrieval for LLM apps (Starter: $50/month). Watch out: cloud credits limit parsing volume. Pick <b>Dify</b> for teams building LLM apps with a visual builder ($590/workspace/year (Professional)). Watch out: cloud plans are billed per workspace per year. Pick <b>Botpress</b> for customer-facing chatbots (Plus: $150/month billed annually). Watch out: paid plans start high for small projects. Pick <b>Vapi</b> for developers building voice agents (Core: $29/month). Watch out: total cost stacks transcriber, model and voice per-minute fees.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; LlamaIndex: Free: $0/month; Dify: Sandbox: free, 200 message credits; open-source Community edition free to self-host; Botpress: Free: 100 conversations/month; Vapi: $5 free credits, then pay per minute."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with an API listed by the vendor, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-automation-tools-for-teams",
+   "n": 1071,
+   "generated": true,
+   "cat": "automation",
+   "h1": "Best AI automation tools for teams (per-seat plans)",
+   "title": "Best AI Automation Tools for Teams (2026)",
+   "desc": "Best AI automation tools for teams (per-seat plans): 6 picks with vendor-verified prices checked 16 Oct 2026, including Zapier, Mastra and Dify.",
+   "summary": "Each of these AI automation tools sells a team, business or per-seat plan, so you can put several people on one bill. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 6 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "zapier",
+     "Team"
+    ],
+    [
+     "mastra",
+     "Teams"
+    ],
+    [
+     "dify",
+     "Team"
+    ],
+    [
+     "flowise",
+     "Starter"
+    ],
+    [
+     "lindy",
+     "Team"
+    ],
+    [
+     "botpress",
+     "Team"
+    ]
+   ],
+   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Team: from $69/month); think twice if you run very high volumes and want self-hosting. Pick <b>Mastra</b> for TypeScript developers building agents (Teams: $250/month). Watch out: cloud Teams plan starts high. Pick <b>Dify</b> for teams building LLM apps with a visual builder (Team: $1,590/workspace/year). Watch out: cloud plans are billed per workspace per year. Pick <b>Flowise</b> for visual LLM flow building (Starter: $35/month). Watch out: free cloud plan is limited to 2 flows. Pick <b>Lindy</b> for AI assistants that handle email, meetings and admin (Team: From $29.99/month). Watch out: free credits expire after 7 days. Pick <b>Botpress</b> for customer-facing chatbots (Team: $750/month billed annually). Watch out: paid plans start high for small projects.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; Mastra: Starter: free for everyone; self-hosted open-source framework; Dify: Sandbox: free, 200 message credits; open-source Community edition free to self-host; Flowise: Free: $0/month, 2 flows and assistants; Lindy: $50 in free credits for 7 days, no card; Botpress: Free: 100 conversations/month."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a team, business or per-seat plan on the pricing page, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "self-hosted-ai-automation-tools",
+   "n": 1072,
+   "generated": true,
+   "cat": "automation",
+   "h1": "Best self-hosted and open-source AI automation tools",
+   "title": "Best Self-Hosted AI Automation Tools (2026)",
+   "desc": "Best self-hosted and open-source AI automation tools: 6 picks with vendor-verified prices checked 16 Oct 2026, including n8n, Mastra and Dify.",
+   "summary": "Each of these AI automation tools can run on your own machine or servers, or is open source. <b>n8n</b> comes first: developer-friendly automation with unlimited steps per execution and a self-host option. The cheapest verified paid plan here is <b>Flowise</b> Starter ($35/month). 5 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "n8n",
+     ""
+    ],
+    [
+     "mastra",
+     "Starter"
+    ],
+    [
+     "dify",
+     "Sandbox"
+    ],
+    [
+     "flowise",
+     "Free"
+    ],
+    [
+     "langflow",
+     ""
+    ],
+    [
+     "agno",
+     "Free"
+    ]
+   ],
+   "pick": "Pick <b>n8n</b> for technical teams building complex workflows and AI agents (€20/month (Starter, billed annually)); think twice if you want the simplest no-code setup. Pick <b>Mastra</b> for TypeScript developers building agents (Starter: $0/month). Watch out: cloud Teams plan starts high. Pick <b>Dify</b> for teams building LLM apps with a visual builder (Sandbox: Free). Watch out: cloud plans are billed per workspace per year. Pick <b>Flowise</b> for visual LLM flow building (Free: $0/month). Watch out: free cloud plan is limited to 2 flows. Pick <b>Langflow</b> for building and deploying agents and MCP servers visually (free plan: Free and open source, plus a free cloud account). Watch out: cloud limits are not published on the homepage. Pick <b>Agno</b> for python developers running agents on their own infrastructure (Free: $0/month). Watch out: control plane needs Pro.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Flowise Starter ($35/month) is the lowest paid price we verified on this list (https://flowiseai.com, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Mastra: Starter: free for everyone; self-hosted open-source framework; Dify: Sandbox: free, 200 message credits; open-source Community edition free to self-host; Flowise: Free: $0/month, 2 flows and assistants; Langflow: Free and open source, plus a free cloud account; Agno: Free: $0/month runtime, you host it."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with self-hosting, local use or an open-source licence stated by the vendor, confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "free-ai-research-and-productivity-tools",
+   "n": 1073,
+   "generated": true,
+   "cat": "research",
+   "h1": "Best free AI research and productivity tools (with a real free plan)",
+   "title": "Best Free AI Research Tools in 2026",
+   "desc": "Best free AI research and productivity tools (with a real free plan): 10 picks with vendor-verified prices checked 16 Oct 2026,",
+   "summary": "These AI research and productivity tools have a free plan or are free to use, and we confirmed it on each vendor's own pricing page. <b>Perplexity</b> comes first: cited answers across top models with deep research, free to start. The cheapest verified paid plan here is <b>Notion AI</b> Plus ($10/member/month). 10 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "perplexity",
+     "Free"
+    ],
+    [
+     "notebooklm",
+     "Free"
+    ],
+    [
+     "elicit",
+     "Basic"
+    ],
+    [
+     "consensus",
+     "Free"
+    ],
+    [
+     "notion-ai",
+     "Free"
+    ],
+    [
+     "granola",
+     "Basic"
+    ],
+    [
+     "you-com",
+     "Free"
+    ],
+    [
+     "semantic-scholar",
+     "Free"
+    ],
+    [
+     "undermind",
+     "Free"
+    ],
+    [
+     "exa",
+     "Starter"
+    ]
+   ],
+   "pick": "Pick <b>Perplexity</b> for fast researched answers with sources (Free: $0); think twice if you need long creative writing rather than research. Pick <b>NotebookLM</b> for students and researchers working from their own documents (Free: $0); think twice if you need open web search as the main source. Pick <b>Elicit</b> for researchers doing literature and systematic reviews (Basic: Free); think twice if you need general web search. Pick <b>Consensus</b> for students and clinicians checking what research says (Free: $0); think twice if you need non-academic sources. Pick <b>Notion AI</b> for teams whose knowledge already lives in Notion (Free: $0); think twice if you don&#x27;t use Notion. Pick <b>Granola</b> for bot-free AI meeting notes (Basic: $0). Watch out: team features need Business. Pick <b>You.com</b> for developers needing a web-search API (Free: $0). Watch out: pricing page covers the API, not consumer plans.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Notion AI Plus ($10/member/month) is the lowest paid price we verified on this list (https://www.notion.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Perplexity: Free sign-up; limits not specified on page; NotebookLM: Standard chat/generation limits, up to 50 sources per notebook; Elicit: Limited Research Agent and Reports usage, Zotero import; Consensus: Basic paper search, 10 Pro messages/month, up to 3 Deep reviews/month; Notion AI: Free plan includes a trial of Notion AI only; Granola: Basic: $0; You.com: Free tier: up to 100 queries via MCP server, no key; Semantic Scholar: Free AI-powered research tool (Ai2); Undermind: Free: $0 for exploratory research; Exa: Starter: free, $10 credits/month plus $10 onboarding bonus."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a free plan or free use (not just a trial), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-research-and-productivity-tools-under-10-a-month",
+   "n": 1074,
+   "generated": true,
+   "cat": "research",
+   "h1": "Best AI research and productivity tools for $10 a month or less",
+   "title": "Best AI Research Tools Under $10/Month (2026)",
+   "desc": "Best AI research and productivity tools for $10 a month or less: 4 picks with vendor-verified prices checked 16 Oct 2026,",
+   "summary": "Every tool here has a paid plan listed at $10 a month or less on its vendor's pricing page. <b>Notion AI</b> comes first: AI built into the docs and databases teams already use, with custom agents on Business. The cheapest verified paid plan here is <b>Kagi</b> Starter ($5/month). 3 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "items": [
+    [
+     "notion-ai",
+     "Plus"
+    ],
+    [
+     "kagi",
+     "Starter"
+    ],
+    [
+     "research-rabbit",
+     "ResearchRabbit+"
+    ],
+    [
+     "mem",
+     "Mem Plus"
+    ]
+   ],
+   "pick": "Pick <b>Notion AI</b> for teams whose knowledge already lives in Notion (Plus: $10/member/month); think twice if you don&#x27;t use Notion. Pick <b>Kagi</b> for ad-free private search with an AI assistant (Starter: $5/month). Watch out: free use is a 100-search trial. Pick <b>Research Rabbit</b> for mapping related papers visually (ResearchRabbit+: $10/month annual or $12.50 monthly). Watch out: prices marked with an asterisk on the page (may vary by region). Pick <b>Mem</b> for AI note-taking that organises itself (Mem Plus: $9/month). Watch out: free plan caps new notes.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Kagi Starter ($5/month) is the lowest paid price we verified on this list (https://kagi.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Notion AI: Free plan includes a trial of Notion AI only; Research Rabbit: Free: $0 forever; Mem: Free: 25 new notes/month."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a verified paid plan at or below $10/month (USD), confirmed on the vendor's own website on 16 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
   }
  ],
  "skipped_generated": [
+  {
+   "slug": "ai-coding-tools-under-30-a-month",
+   "topic": "Best AI coding tools for $30 a month or less",
+   "reason": "near-duplicate of /best-of/ai-coding-tools-under-20-a-month/ (same or almost the same verified tools)"
+  },
   {
    "slug": "free-ai-meeting-note-takers",
    "topic": "Best free AI meeting note takers",
@@ -3187,7 +4577,7 @@
   {
    "slug": "ai-assistants-under-20-a-month",
    "topic": "Best AI assistants for $20 a month or less",
-   "reason": "only 3 vendor-verified tool(s) match (Google Gemini, Claude, Microsoft Copilot); 4 needed"
+   "reason": "only 3 vendor-verified tool(s) match (Claude, Google Gemini, Microsoft Copilot); 4 needed"
   },
   {
    "slug": "ai-assistants-under-50-a-month",
@@ -3255,14 +4645,9 @@
    "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
   },
   {
-   "slug": "ai-coding-tools-under-100-a-month",
-   "topic": "Best AI coding tools for $100 a month or less",
-   "reason": "near-duplicate of /best-of/ai-coding-tools-under-30-a-month/ (same or almost the same verified tools)"
-  },
-  {
    "slug": "cheapest-ai-coding-tools",
    "topic": "Cheapest AI coding tools: lowest verified paid plans",
-   "reason": "near-duplicate of /best-of/ai-coding-tools-under-30-a-month/ (same or almost the same verified tools)"
+   "reason": "near-duplicate of /best-of/ai-coding-tools-under-15-a-month/ (same or almost the same verified tools)"
   },
   {
    "slug": "ai-coding-tools-with-free-trial-no-free-plan",
@@ -3275,14 +4660,9 @@
    "reason": "only 2 vendor-verified tool(s) match (Devin, Aider); 4 needed"
   },
   {
-   "slug": "free-ai-image-tools",
-   "topic": "Best free AI image tools (with a real free plan)",
-   "reason": "only 2 vendor-verified tool(s) match (Recraft, Krea); 4 needed"
-  },
-  {
    "slug": "ai-image-tools-under-10-a-month",
    "topic": "Best AI image tools for $10 a month or less",
-   "reason": "only 3 vendor-verified tool(s) match (Krea, Midjourney, Recraft); 4 needed"
+   "reason": "only 3 vendor-verified tool(s) match (Midjourney, Recraft, Krea); 4 needed"
   },
   {
    "slug": "ai-image-tools-under-20-a-month",
@@ -3317,7 +4697,7 @@
   {
    "slug": "ai-image-tools-with-mobile-apps",
    "topic": "Best AI image tools with mobile apps",
-   "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
+   "reason": "only 1 vendor-verified tool(s) match (Leonardo.Ai); 4 needed"
   },
   {
    "slug": "ai-image-tools-with-an-api",
@@ -3327,22 +4707,17 @@
   {
    "slug": "ai-image-tools-for-desktop",
    "topic": "Best AI image tools with desktop apps",
-   "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
+   "reason": "only 1 vendor-verified tool(s) match (ComfyUI); 4 needed"
   },
   {
    "slug": "ai-image-tools-for-teams",
    "topic": "Best AI image tools for teams (per-seat plans)",
-   "reason": "only 2 vendor-verified tool(s) match (Ideogram, Recraft); 4 needed"
+   "reason": "only 3 vendor-verified tool(s) match (Ideogram, Recraft, Leonardo.Ai); 4 needed"
   },
   {
    "slug": "ai-image-tools-for-enterprise",
    "topic": "Best AI image tools for enterprise buyers",
    "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
-  },
-  {
-   "slug": "ai-image-tools-with-annual-discount",
-   "topic": "AI image tools that are cheaper billed yearly",
-   "reason": "near-duplicate of /best-of/ai-image-tools-under-15-a-month/ (same or almost the same verified tools)"
   },
   {
    "slug": "ai-image-tools-with-mcp",
@@ -3352,7 +4727,7 @@
   {
    "slug": "self-hosted-ai-image-tools",
    "topic": "Best self-hosted and open-source AI image tools",
-   "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
+   "reason": "only 1 vendor-verified tool(s) match (ComfyUI); 4 needed"
   },
   {
    "slug": "ai-video-tools-under-10-a-month",
@@ -3372,7 +4747,7 @@
   {
    "slug": "cheapest-ai-video-tools",
    "topic": "Cheapest AI video tools: lowest verified paid plans",
-   "reason": "near-duplicate of /best-of/ai-video-tools-under-30-a-month/ (same or almost the same verified tools)"
+   "reason": "near-duplicate of /best-of/ai-video-tools-under-20-a-month/ (same or almost the same verified tools)"
   },
   {
    "slug": "ai-video-tools-with-free-trial-no-free-plan",
@@ -3380,19 +4755,14 @@
    "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
   },
   {
-   "slug": "paid-ai-video-tools-no-free-plan",
-   "topic": "Best paid AI video tools (no free plan)",
-   "reason": "only 2 vendor-verified tool(s) match (Luma AI, Invideo AI); 4 needed"
-  },
-  {
    "slug": "ai-video-tools-with-mobile-apps",
    "topic": "Best AI video tools with mobile apps",
-   "reason": "only 2 vendor-verified tool(s) match (Runway, Pika); 4 needed"
+   "reason": "only 3 vendor-verified tool(s) match (Runway, Pika, Captions); 4 needed"
   },
   {
    "slug": "ai-video-tools-for-desktop",
    "topic": "Best AI video tools with desktop apps",
-   "reason": "only 1 vendor-verified tool(s) match (Descript (video)); 4 needed"
+   "reason": "only 2 vendor-verified tool(s) match (Descript (video), Topaz Video); 4 needed"
   },
   {
    "slug": "ai-video-tools-for-teams",
@@ -3447,12 +4817,12 @@
   {
    "slug": "ai-writing-tools-with-free-trial-no-free-plan",
    "topic": "AI writing tools with a free trial (paid plans only)",
-   "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
+   "reason": "only 1 vendor-verified tool(s) match (Hemingway Editor); 4 needed"
   },
   {
    "slug": "paid-ai-writing-tools-no-free-plan",
    "topic": "Best paid AI writing tools (no free plan)",
-   "reason": "only 1 vendor-verified tool(s) match (Sudowrite); 4 needed"
+   "reason": "only 2 vendor-verified tool(s) match (Sudowrite, Hemingway Editor); 4 needed"
   },
   {
    "slug": "ai-writing-tools-with-mobile-apps",
@@ -3467,7 +4837,7 @@
   {
    "slug": "ai-writing-tools-for-desktop",
    "topic": "Best AI writing tools with desktop apps",
-   "reason": "only 1 vendor-verified tool(s) match (DeepL Write); 4 needed"
+   "reason": "only 2 vendor-verified tool(s) match (Hemingway Editor, DeepL Write); 4 needed"
   },
   {
    "slug": "ai-writing-tools-for-teams",
@@ -3507,7 +4877,7 @@
   {
    "slug": "cheapest-ai-voice-and-audio-tools",
    "topic": "Cheapest AI voice and audio tools: lowest verified paid plans",
-   "reason": "near-duplicate of /best-of/ai-voice-and-audio-tools-under-30-a-month/ (same or almost the same verified tools)"
+   "reason": "near-duplicate of /best-of/ai-voice-and-audio-tools-under-20-a-month/ (same or almost the same verified tools)"
   },
   {
    "slug": "ai-voice-and-audio-tools-with-free-trial-no-free-plan",
@@ -3532,12 +4902,7 @@
   {
    "slug": "ai-voice-and-audio-tools-for-enterprise",
    "topic": "Best AI voice and audio tools for enterprise buyers",
-   "reason": "only 1 vendor-verified tool(s) match (Descript); 4 needed"
-  },
-  {
-   "slug": "ai-voice-and-audio-tools-with-annual-discount",
-   "topic": "AI voice and audio tools that are cheaper billed yearly",
-   "reason": "near-duplicate of /best-of/ai-voice-and-audio-tools-under-30-a-month/ (same or almost the same verified tools)"
+   "reason": "only 2 vendor-verified tool(s) match (Descript, Murf); 4 needed"
   },
   {
    "slug": "ai-voice-and-audio-tools-with-mcp",
@@ -3567,16 +4932,11 @@
   {
    "slug": "ai-automation-tools-under-30-a-month",
    "topic": "Best AI automation tools for $30 a month or less",
-   "reason": "only 3 vendor-verified tool(s) match (Zapier, Vapi, Lindy); 4 needed"
+   "reason": "only 3 vendor-verified tool(s) match (Zapier, Lindy, Vapi); 4 needed"
   },
   {
    "slug": "ai-automation-tools-under-100-a-month",
    "topic": "Best AI automation tools for $100 a month or less",
-   "reason": "near-duplicate of /best-of/ai-automation-tools-under-50-a-month/ (same or almost the same verified tools)"
-  },
-  {
-   "slug": "cheapest-ai-automation-tools",
-   "topic": "Cheapest AI automation tools: lowest verified paid plans",
    "reason": "near-duplicate of /best-of/ai-automation-tools-under-50-a-month/ (same or almost the same verified tools)"
   },
   {
@@ -3610,34 +4970,19 @@
    "reason": "only 3 vendor-verified tool(s) match (Zapier, n8n, Langflow); 4 needed"
   },
   {
-   "slug": "self-hosted-ai-automation-tools",
-   "topic": "Best self-hosted and open-source AI automation tools",
-   "reason": "near-duplicate of /best-of/open-source-ai-agent-platforms/ (same or almost the same verified tools)"
-  },
-  {
-   "slug": "ai-research-and-productivity-tools-under-10-a-month",
-   "topic": "Best AI research and productivity tools for $10 a month or less",
-   "reason": "only 2 vendor-verified tool(s) match (Kagi, Notion AI); 4 needed"
-  },
-  {
-   "slug": "ai-research-and-productivity-tools-under-20-a-month",
-   "topic": "Best AI research and productivity tools for $20 a month or less",
-   "reason": "near-duplicate of /best-of/ai-research-and-productivity-tools-under-15-a-month/ (same or almost the same verified tools)"
-  },
-  {
    "slug": "ai-research-and-productivity-tools-under-30-a-month",
    "topic": "Best AI research and productivity tools for $30 a month or less",
-   "reason": "near-duplicate of /best-of/ai-research-and-productivity-tools-under-15-a-month/ (same or almost the same verified tools)"
+   "reason": "near-duplicate of /best-of/ai-research-and-productivity-tools-under-20-a-month/ (same or almost the same verified tools)"
   },
   {
    "slug": "ai-research-and-productivity-tools-under-50-a-month",
    "topic": "Best AI research and productivity tools for $50 a month or less",
-   "reason": "near-duplicate of /best-of/ai-research-and-productivity-tools-under-15-a-month/ (same or almost the same verified tools)"
+   "reason": "near-duplicate of /best-of/ai-research-and-productivity-tools-under-20-a-month/ (same or almost the same verified tools)"
   },
   {
    "slug": "ai-research-and-productivity-tools-under-100-a-month",
    "topic": "Best AI research and productivity tools for $100 a month or less",
-   "reason": "near-duplicate of /best-of/ai-research-and-productivity-tools-under-15-a-month/ (same or almost the same verified tools)"
+   "reason": "near-duplicate of /best-of/ai-research-and-productivity-tools-under-20-a-month/ (same or almost the same verified tools)"
   },
   {
    "slug": "cheapest-ai-research-and-productivity-tools",
@@ -3650,19 +4995,14 @@
    "reason": "near-duplicate of /best-of/ai-research-and-productivity-tools-with-free-trial-no-free-plan/ (same or almost the same verified tools)"
   },
   {
-   "slug": "ai-research-and-productivity-tools-with-an-api",
-   "topic": "Best AI research and productivity tools with an API",
-   "reason": "only 3 vendor-verified tool(s) match (Consensus, You.com, Scite); 4 needed"
+   "slug": "ai-research-and-productivity-tools-with-mobile-apps",
+   "topic": "Best AI research and productivity tools with mobile apps",
+   "reason": "near-duplicate of /best-of/ai-note-taking-apps/ (same or almost the same verified tools)"
   },
   {
    "slug": "ai-research-and-productivity-tools-for-enterprise",
    "topic": "Best AI research and productivity tools for enterprise buyers",
    "reason": "only 3 vendor-verified tool(s) match (Perplexity, Notion AI, Granola); 4 needed"
-  },
-  {
-   "slug": "ai-research-and-productivity-tools-with-mcp",
-   "topic": "Best AI research and productivity tools with MCP support",
-   "reason": "only 3 vendor-verified tool(s) match (Consensus, You.com, Scite); 4 needed"
   },
   {
    "slug": "self-hosted-ai-research-and-productivity-tools",
@@ -3702,7 +5042,7 @@
   {
    "slug": "ai-marketing-tools-under-100-a-month",
    "topic": "Best AI marketing tools for $100 a month or less",
-   "reason": "only 2 vendor-verified tool(s) match (Copy.ai, Jasper); 4 needed"
+   "reason": "only 2 vendor-verified tool(s) match (Jasper, Copy.ai); 4 needed"
   },
   {
    "slug": "cheapest-ai-marketing-tools",
@@ -3817,7 +5157,7 @@
   {
    "slug": "ai-business-tools-for-enterprise",
    "topic": "Best AI business tools for enterprise buyers",
-   "reason": "only 2 vendor-verified tool(s) match (ClickUp, Fireflies.ai); 4 needed"
+   "reason": "only 3 vendor-verified tool(s) match (ClickUp, Fireflies.ai, Writer); 4 needed"
   },
   {
    "slug": "ai-business-tools-with-mcp",
@@ -4035,14 +5375,9 @@
    "reason": "only 2 vendor-verified tool(s) match (3Commas, Cryptohopper); 4 needed"
   },
   {
-   "slug": "ai-crypto-tools-under-50-a-month",
-   "topic": "Best AI crypto tools for $50 a month or less",
-   "reason": "only 3 vendor-verified tool(s) match (3Commas, Cryptohopper, Santiment); 4 needed"
-  },
-  {
-   "slug": "cheapest-ai-crypto-tools",
-   "topic": "Cheapest AI crypto tools: lowest verified paid plans",
-   "reason": "near-duplicate of /best-of/ai-crypto-tools-under-100-a-month/ (same or almost the same verified tools)"
+   "slug": "ai-crypto-tools-under-100-a-month",
+   "topic": "Best AI crypto tools for $100 a month or less",
+   "reason": "near-duplicate of /best-of/ai-crypto-tools-under-50-a-month/ (same or almost the same verified tools)"
   },
   {
    "slug": "ai-crypto-tools-with-free-trial-no-free-plan",
@@ -4057,12 +5392,12 @@
   {
    "slug": "ai-crypto-tools-with-mobile-apps",
    "topic": "Best AI crypto tools with mobile apps",
-   "reason": "only 1 vendor-verified tool(s) match (CoinStats); 4 needed"
+   "reason": "only 2 vendor-verified tool(s) match (Nansen, CoinStats); 4 needed"
   },
   {
    "slug": "ai-crypto-tools-with-an-api",
    "topic": "Best AI crypto tools with an API",
-   "reason": "only 2 vendor-verified tool(s) match (Dune, Santiment); 4 needed"
+   "reason": "near-duplicate of /best-of/crypto-analytics-tools-with-api/ (same or almost the same verified tools)"
   },
   {
    "slug": "ai-crypto-tools-for-desktop",
@@ -4082,22 +5417,17 @@
   {
    "slug": "ai-crypto-tools-with-annual-discount",
    "topic": "AI crypto tools that are cheaper billed yearly",
-   "reason": "only 2 vendor-verified tool(s) match (3Commas, Cryptohopper); 4 needed"
+   "reason": "only 3 vendor-verified tool(s) match (Elfa AI, 3Commas, Cryptohopper); 4 needed"
   },
   {
    "slug": "ai-crypto-tools-with-mcp",
    "topic": "Best AI crypto tools with MCP support",
-   "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
+   "reason": "only 1 vendor-verified tool(s) match (Nansen); 4 needed"
   },
   {
    "slug": "self-hosted-ai-crypto-tools",
    "topic": "Best self-hosted and open-source AI crypto tools",
    "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
-  },
-  {
-   "slug": "free-ai-education-tools",
-   "topic": "Best free AI education tools (with a real free plan)",
-   "reason": "only 3 vendor-verified tool(s) match (Khanmigo, Duolingo, MagicSchool); 4 needed"
   },
   {
    "slug": "ai-education-tools-under-10-a-month",
@@ -4354,5 +5684,8 @@
    "topic": "Best self-hosted and open-source AI game development tools",
    "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
   }
- ]
+ ],
+ "redirects": {
+  "ai-coding-tools-under-30-a-month": "ai-coding-tools-under-20-a-month"
+ }
 }

@@ -436,6 +436,14 @@ def redirect_page(old, new):
             f'<meta http-equiv="refresh" content="0; url=/best/{new}/"><script>location.replace("/best/{new}/"+location.hash)</script><link rel="stylesheet" href="/assets/style.css"></head>'
             f'<body><main class="wrap sec"><h1>This list has moved</h1><p><a href="/best/{new}/">Go to {E(c["title"])} →</a></p></main></body></html>\n')
 
+def bestof_redirect(old, new):
+    """Retired /best-of/ page (merged as a near-duplicate) -> the page that now covers it."""
+    h1 = next((o["h1"] for o in BO["pages"] if o["slug"] == new), new); url = f"{BASE}/best-of/{new}/"
+    return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Moved: {E(h1)} | ToolRank</title>'
+            f'<meta name="description" content="This guide was merged into {E(h1)} on ToolRank."><link rel="canonical" href="{url}"><meta name="robots" content="noindex,follow">'
+            f'<meta http-equiv="refresh" content="0; url=/best-of/{new}/"><script>location.replace("/best-of/{new}/"+location.hash)</script><link rel="stylesheet" href="/assets/style.css"></head>'
+            f'<body><main class="wrap sec"><h1>This guide has moved</h1><p><a href="/best-of/{new}/">Go to {E(h1)} →</a></p></main></body></html>\n')
+
 def cat_reviews(c):
     rs = [r for t in c["tools"] for r in RB.get(slug(t["name"]), []) if r["listed"]]
     rs.sort(key=lambda r: (r["date"], r["id"]), reverse=True)
@@ -1008,6 +1016,8 @@ def main():
         (ROOT/"compare"/k).mkdir(parents=True, exist_ok=True); (ROOT/"compare"/k/"index.html").write_text(cmp_page(k, ids))
     for b in BO["pages"]:
         (ROOT/"best-of"/b["slug"]).mkdir(parents=True, exist_ok=True); (ROOT/"best-of"/b["slug"]/"index.html").write_text(bestof_page(b))
+    for o, n in BO.get("redirects", {}).items():
+        (ROOT/"best-of"/o).mkdir(parents=True, exist_ok=True); (ROOT/"best-of"/o/"index.html").write_text(bestof_redirect(o, n))
     (ROOT/"reviews.html").write_text(reviews_page()); (ROOT/"services.html").write_text(services_page()); (ROOT/"index.html").write_text(home(cats))
     opts = "".join(f"<option>{E(c['title'])}</option>" for c in cats) + "<option>Other / new category</option>"
     def sub(s): return re.sub(r'(<select name="category"[^>]*>).*?(</select>)', lambda m: m.group(1) + opts + m.group(2), s, flags=re.S)
