@@ -115,6 +115,7 @@ body>section.hero:not(.home):not(.sub):not(.cathero){padding-top:56px}
 .foot{margin-top:clamp(64px,10vw,120px);border-top:1px solid #ffffff0f;padding-top:48px;overflow:hidden}
 .fg{display:grid;grid-template-columns:1.2fr 2fr 1fr;gap:32px;margin-bottom:28px}.fl p{max-width:34ch}
 .fc2{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 20px;align-content:start}.fc2:last-child{grid-template-columns:1fr}.fc2 a{color:var(--mut);font-size:14.5px}.fc2 a:hover{color:#fff}
+.soc{display:flex;gap:14px;margin:12px 0 0}.soc a{color:var(--mut);font-size:14.5px}.soc a:hover{color:#fff}
 @media(max-width:800px){.fg{grid-template-columns:1fr}.fc2{grid-template-columns:repeat(2,1fr)}.fc2:last-child{grid-template-columns:repeat(2,1fr)}}
 .wm{margin:20px -2vw -1.2vw;padding:0 1vw}.wm svg{display:block;width:100%;height:auto;overflow:visible}.wm .wl{transition:transform .2s linear;will-change:transform}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.tile{transform:none!important}}
