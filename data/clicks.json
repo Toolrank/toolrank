@@ -1,12 +1,22 @@
 {
- "fetched": "2026-10-17 03:43 UTC",
- "fetched_ts": 1792208599,
+ "fetched": "2026-10-17 04:43 UTC",
+ "fetched_ts": 1792212213,
  "window": "last 7 days",
  "source": "GoatCounter click/ events (unique visitors)",
  "top": [
   {
    "slug": "anatomy",
    "tool": "Anatomy",
+   "count": 1
+  },
+  {
+   "slug": "devin",
+   "tool": "Devin",
+   "count": 1
+  },
+  {
+   "slug": "firebase-studio",
+   "tool": "Firebase Studio",
    "count": 1
   }
  ]
