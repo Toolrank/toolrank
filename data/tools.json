@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17",
+ "updated": "2026-10-18",
  "categories": [
   {
    "id": "ai-assistants",
@@ -31,10 +31,10 @@
       {
        "url": "https://chatgpt.com/pricing",
        "label": "ChatGPT pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "",
@@ -59,6 +59,16 @@
         "name": "Pro",
         "price": "paid; price not shown in fetched page text",
         "notes": "Expanded model access"
+       },
+       {
+        "name": "Business",
+        "price": "paid; price not shown in fetched page text",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": ""
        }
       ],
       "notes": "Plan names and features verified on the pricing page; paid prices render client-side and could not be read, so they are left unverified."
@@ -326,10 +336,10 @@
       {
        "url": "https://mistral.ai/pricing",
        "label": "Le Chat (Mistral) pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
       "Web",
       "iOS",
@@ -349,8 +359,18 @@
         "notes": ""
        },
        {
+        "name": "Pro",
+        "price": "$14.99/month",
+        "notes": "Verified students $5.99/month"
+       },
+       {
         "name": "Team",
         "price": "$24.99/user/month",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
         "notes": ""
        }
       ],
@@ -1761,7 +1781,52 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "platforms": [
+      "Web",
+      "Mobile"
+     ],
+     "integrations": [
+      "Figma Design"
+     ],
+     "best_for": "Designers turning prompts and Figma designs into working prototypes and apps",
+     "main_limitation": "AI credits are capped per seat; heavier use needs paid seats or extra credits",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$16/seat/month (Professional Full seat)",
+      "free_tier": "Starter: free, 150 AI credits/day up to 500/month",
+      "tiers": [
+       {
+        "name": "Starter",
+        "price": "Free",
+        "notes": "150 AI credits/day, up to 500/month"
+       },
+       {
+        "name": "Professional",
+        "price": "$16/seat/month (Full seat)",
+        "notes": "Monthly/annual toggle on page; Dev seat $12, Collab seat $3"
+       },
+       {
+        "name": "Organization",
+        "price": "$55/seat/month billed annually (Full seat)",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "$90/seat/month billed annually (Full seat)",
+        "notes": ""
+       }
+      ],
+      "notes": "Figma Make is included in Figma plans; prices in USD from the Figma pricing page."
+     },
+     "sources": [
+      {
+       "url": "https://www.figma.com/pricing/",
+       "label": "Figma pricing",
+       "checked": "2026-10-18"
+      }
+     ],
+     "last_verified": "2026-10-18"
     },
     {
      "name": "Augment Code",
@@ -2892,7 +2957,8 @@
       "API"
      ],
      "integrations": [
-      "API"
+      "API",
+      "MCP"
      ],
      "model_provider": "Recraft plus third-party models (e.g. Nano Banana, Seedream)",
      "sources": [
@@ -2900,9 +2966,14 @@
        "url": "https://www.recraft.ai/pricing",
        "label": "Recraft pricing",
        "checked": "2026-10-16"
+      },
+      {
+       "url": "https://github.com/recraft-ai/mcp-recraft-server",
+       "label": "Recraft official MCP server (GitHub)",
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$10/month (Basic, billed annually)",
@@ -2948,7 +3019,8 @@
      "avoid_if": "You only need one model and want the cheapest route",
      "platforms": [
       "Web",
-      "API"
+      "API",
+      "iOS"
      ],
      "integrations": [
       "API"
@@ -2958,10 +3030,10 @@
       {
        "url": "https://www.krea.ai/pricing",
        "label": "Krea pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$9/month ($5 billed annually)",
@@ -2990,7 +3062,12 @@
        {
         "name": "Business",
         "price": "$200/month ($160 annual)",
-        "notes": "80k units/month"
+        "notes": "Team-based; up to 50 members included"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": "Dedicated support, IP indemnity"
        }
       ],
       "notes": ""
@@ -3222,15 +3299,30 @@
        "url": "https://www.canva.com/pricing/",
        "label": "Canva pricing",
        "checked": "2026-10-17"
+      },
+      {
+       "url": "https://www.canva.com/download/mac/",
+       "label": "Canva downloads",
+       "checked": "2026-10-18"
+      },
+      {
+       "url": "https://www.canva.com/help/mcp-agent-setup/",
+       "label": "Canva MCP connector help",
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-17",
+     "last_verified": "2026-10-18",
      "platforms": [
-      "Web"
+      "Web",
+      "Mac",
+      "Windows",
+      "iOS",
+      "Android"
      ],
      "integrations": [
       "Affinity",
-      "Canva AI connectors"
+      "Canva AI connectors",
+      "MCP"
      ],
      "best_for": "Non-designers making social posts, presentations and marketing graphics with AI help",
      "main_limitation": "AI use is capped by a shared allowance; heavier AI needs the AI Pass add-on at extra cost",
@@ -3756,18 +3848,21 @@
      "best_for": "Marketers and trainers producing avatar explainer videos",
      "avoid_if": "You need cinematic generative video",
      "platforms": [
-      "Web"
+      "Web",
+      "API"
      ],
-     "integrations": [],
+     "integrations": [
+      "API"
+     ],
      "model_provider": "",
      "sources": [
       {
        "url": "https://www.heygen.com/pricing",
        "label": "HeyGen pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$29/month (Creator)",
@@ -3787,9 +3882,14 @@
         "name": "Pro",
         "price": "$49/month",
         "notes": "1,000 credits, 4K"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": ""
        }
       ],
-      "notes": "Business plans also offered."
+      "notes": "Business plans also offered. Vendor page: add team members for $20/seat/month."
      }
     },
     {
@@ -4826,17 +4926,33 @@
      "main_limitation": "Free tier is spelling/grammar; full-sentence rewrites and tone need Pro.",
      "best_for": "Anyone writing emails and docs who wants clean, correct text",
      "avoid_if": "You need long-form creative generation",
-     "platforms": [],
+     "platforms": [
+      "Web",
+      "Mac",
+      "Windows",
+      "iOS",
+      "Android"
+     ],
      "integrations": [],
      "model_provider": "",
      "sources": [
       {
        "url": "https://www.grammarly.com/plans",
        "label": "Grammarly plans",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
+      },
+      {
+       "url": "https://www.grammarly.com/desktop",
+       "label": "Grammarly desktop",
+       "checked": "2026-10-18"
+      },
+      {
+       "url": "https://www.grammarly.com/mobile",
+       "label": "Grammarly mobile",
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$12/month (Pro)",
@@ -4850,7 +4966,7 @@
        {
         "name": "Pro",
         "price": "$12/month",
-        "notes": ""
+        "notes": "Includes team features previously only in Business"
        },
        {
         "name": "Enterprise",
@@ -4977,17 +5093,19 @@
      "main_limitation": "Free: 10 rewrites/day; Advanced is still daily-limited.",
      "best_for": "Polishing emails and short-form text",
      "avoid_if": "You need unlimited rewrites for free",
-     "platforms": [],
+     "platforms": [
+      "iOS"
+     ],
      "integrations": [],
      "model_provider": "",
      "sources": [
       {
        "url": "https://www.wordtune.com/plans",
        "label": "Wordtune plans",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$4.89/month (Advanced, billed annually)",
@@ -5071,14 +5189,18 @@
       {
        "url": "https://prowritingaid.com/pricing",
        "label": "ProWritingAid pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
-      "Web"
+      "Web",
+      "Desktop"
      ],
-     "integrations": [],
+     "integrations": [
+      "Google Docs",
+      "Microsoft Office"
+     ],
      "best_for": "Fiction and long-form writers who want manuscript-level editing reports",
      "main_limitation": "Monthly billing costs roughly three times the yearly rate",
      "pricing_detail": {
@@ -5117,7 +5239,34 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "AI-assisted fiction writing and anime-style image generation",
+     "main_limitation": "No permanent free plan; plan prices beyond the starting price need a login to view",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$10/month",
+      "free_tier": "Trial period for new users (vendor FAQ)",
+      "tiers": [
+       {
+        "name": "Subscription",
+        "price": "From $10/month",
+        "notes": "Text and image generation; on-demand Anlas also sold"
+       }
+      ],
+      "notes": "Vendor FAQ states subscriptions start at $10/month; individual tier names and prices Not yet verified (shown only after login)."
+     },
+     "sources": [
+      {
+       "url": "https://novelai.net/",
+       "label": "NovelAI homepage and FAQ",
+       "checked": "2026-10-18"
+      }
+     ],
+     "last_verified": "2026-10-18"
     },
     {
      "name": "Lex",
@@ -5278,7 +5427,9 @@
      "avoid_if": "You need commercial audio for free",
      "platforms": [
       "Web",
-      "API"
+      "API",
+      "iOS",
+      "Android"
      ],
      "integrations": [
       "API"
@@ -5288,10 +5439,15 @@
       {
        "url": "https://elevenlabs.io/pricing",
        "label": "ElevenLabs pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
+      },
+      {
+       "url": "https://elevenlabs.io/mobile",
+       "label": "ElevenLabs mobile app",
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$6/month (Starter)",
@@ -5320,12 +5476,17 @@
        {
         "name": "Scale",
         "price": "$299/month",
-        "notes": "1.8M credits, 3 seats"
+        "notes": "3 workspace seats, team collaboration"
        },
        {
         "name": "Business",
         "price": "$990/month",
         "notes": "6M credits, 10 seats"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom pricing; contact sales",
+        "notes": ""
        }
       ],
       "notes": "Prices exclude taxes; first-month promos were running on check date."
@@ -5541,10 +5702,10 @@
       {
        "url": "https://wisprflow.ai/pricing",
        "label": "Wispr Flow pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$12/user/month (Pro, annual; $15 monthly)",
@@ -5569,6 +5730,11 @@
         "name": "Higher tier",
         "price": "$26/user/month annual ($33 monthly)",
         "notes": "SCIM, SLA support"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom; talk to sales",
+        "notes": "SSO/SAML, organisation-wide admin controls"
        }
       ],
       "notes": ""
@@ -5628,10 +5794,10 @@
       {
        "url": "https://otter.ai/pricing",
        "label": "Otter.ai pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
       "Web",
       "iOS",
@@ -5663,6 +5829,11 @@
         "name": "Business",
         "price": "$19.99/user/month annually or $30 monthly",
         "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Schedule a demo (price not shown)",
+        "notes": "For large teams and companies"
        }
       ],
       "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
@@ -5831,10 +6002,10 @@
       {
        "url": "https://deepgram.com/pricing",
        "label": "Deepgram pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
       "API"
      ],
@@ -5857,6 +6028,11 @@
         "name": "Growth",
         "price": "$4K+/year",
         "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": "Custom models, BAA available"
        }
       ],
       "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
@@ -5879,10 +6055,10 @@
       {
        "url": "https://www.assemblyai.com/pricing",
        "label": "AssemblyAI pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
       "API"
      ],
@@ -5900,6 +6076,11 @@
         "name": "Pay as you go",
         "price": "Universal-2 $0.15/hr",
         "notes": "Add-ons such as speaker diarization $0.02/hr"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": "Custom pricing for high-volume usage"
        }
       ],
       "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
@@ -5985,10 +6166,10 @@
       {
        "url": "https://krisp.ai/pricing/",
        "label": "Krisp pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
       "Mac",
       "Windows"
@@ -6019,6 +6200,11 @@
         "name": "Advanced",
         "price": "$15/user/month annually or $30 monthly",
         "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom pricing; talk to sales",
+        "notes": "SSO/SCIM, org-wide rollout"
        }
       ],
       "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
@@ -6543,7 +6729,54 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "platforms": [
+      "Python framework",
+      "JavaScript framework",
+      "Cloud",
+      "Self-hosted"
+     ],
+     "integrations": [
+      "LangSmith"
+     ],
+     "best_for": "Developers building stateful, controllable AI agents in code",
+     "main_limitation": "The framework is free, but hosted deployment and tracing run on LangSmith with per-seat and usage charges",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$39/seat/month (LangSmith Plus)",
+      "free_tier": "Open-source framework (MIT licence); LangSmith Developer plan $0 with 1 free seat and 5k base traces/month",
+      "tiers": [
+       {
+        "name": "Developer",
+        "price": "$0/seat per month",
+        "notes": "1 seat, 5k base traces/month"
+       },
+       {
+        "name": "Plus",
+        "price": "$39/seat per month",
+        "notes": "Unlimited seats, 10k base traces/month, 1 free small deployment"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "Self-hosted and hybrid deployment options"
+       }
+      ],
+      "notes": "Framework licence from the GitHub repository; plan prices from the LangChain pricing page (LangSmith platform)."
+     },
+     "sources": [
+      {
+       "url": "https://www.langchain.com/pricing",
+       "label": "LangChain pricing",
+       "checked": "2026-10-18"
+      },
+      {
+       "url": "https://github.com/langchain-ai/langgraph",
+       "label": "LangGraph GitHub (MIT licence)",
+       "checked": "2026-10-18"
+      }
+     ],
+     "last_verified": "2026-10-18"
     },
     {
      "name": "CrewAI",
@@ -8828,10 +9061,10 @@
       {
        "url": "https://www.copy.ai/prices",
        "label": "Copy.ai pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "paid",
       "starting_price": "$24/month (billed annually; $29 monthly)",
@@ -8856,6 +9089,11 @@
         "name": "200 seats",
         "price": "$3,000/month",
         "notes": "75K credits"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": ""
        }
       ],
       "notes": "'Try for free' offered; free limits not shown."
@@ -9032,10 +9270,10 @@
       {
        "url": "https://www.clay.com/pricing",
        "label": "Clay pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
       "Web"
      ],
@@ -9044,18 +9282,28 @@
      "main_limitation": "Paid plans start high",
      "pricing_detail": {
       "model": "freemium",
-      "starting_price": "$167/month (Launch)",
+      "starting_price": "$167/month (Launch, billed annually; from $185/month)",
       "free_tier": "Free: 500 actions/month, 100 data credits/month",
       "tiers": [
        {
         "name": "Free",
         "price": "$0",
-        "notes": "500 actions/month"
+        "notes": ""
        },
        {
         "name": "Launch",
-        "price": "$167/month",
-        "notes": "15,000 actions/month"
+        "price": "$167/month billed annually (from $185/month)",
+        "notes": ""
+       },
+       {
+        "name": "Growth",
+        "price": "$446/month billed annually (from $495/month)",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom pricing with annual commitment",
+        "notes": "SSO, enterprise-grade security and support"
        }
       ],
       "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
@@ -9263,7 +9511,9 @@
      "best_for": "Teams building custom ops tools on structured data",
      "avoid_if": "You need a simple spreadsheet",
      "platforms": [
-      "Web"
+      "Web",
+      "Desktop",
+      "Mobile"
      ],
      "integrations": [],
      "model_provider": "",
@@ -9271,16 +9521,37 @@
       {
        "url": "https://www.airtable.com/pricing",
        "label": "Airtable pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
-      "starting_price": "",
-      "free_tier": "Free plan available (per vendor FAQ)",
-      "tiers": [],
-      "notes": "Per-seat pricing; amounts not verifiable from fetched text."
+      "starting_price": "$20/user/month (Team, billed annually)",
+      "free_tier": "Free plan at no cost for users getting started",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": ""
+       },
+       {
+        "name": "Team",
+        "price": "$20/user/month billed annually",
+        "notes": ""
+       },
+       {
+        "name": "Business",
+        "price": "$45/user/month billed annually",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise Scale",
+        "price": "Custom; contact sales",
+        "notes": ""
+       }
+      ],
+      "notes": "Plans are charged per seat (users with edit permissions). Monthly-billing prices not shown in the fetched FAQ text."
      }
     },
     {
@@ -9301,7 +9572,11 @@
      "best_for": "Teams consolidating tasks, docs and goals",
      "avoid_if": "You want a minimal, simple task app",
      "platforms": [
-      "Web"
+      "Web",
+      "Mac",
+      "Windows",
+      "iOS",
+      "Android"
      ],
      "integrations": [
       "Webhooks",
@@ -9312,10 +9587,15 @@
       {
        "url": "https://clickup.com/pricing",
        "label": "ClickUp pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
+      },
+      {
+       "url": "https://clickup.com/download",
+       "label": "ClickUp downloads",
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$7/user/month (Unlimited, billed yearly; $10 monthly)",
@@ -9426,10 +9706,10 @@
       {
        "url": "https://www.fathom.ai/pricing",
        "label": "Fathom pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
       "Web"
      ],
@@ -9458,6 +9738,11 @@
        {
         "name": "Business",
         "price": "$25/user/month annually or $34 monthly",
+        "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
         "notes": ""
        }
       ],
@@ -9528,13 +9813,14 @@
       {
        "url": "https://superhuman.com/plans",
        "label": "Superhuman pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
       "Web",
-      "Desktop"
+      "Desktop",
+      "Mobile"
      ],
      "integrations": [
       "Grammarly",
@@ -9562,6 +9848,11 @@
         "name": "Business",
         "price": "$33/member/month annually or $40 monthly",
         "notes": ""
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales",
+        "notes": "Advanced security and controls"
        }
       ],
       "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
@@ -10322,7 +10613,8 @@
      ],
      "integrations": [
       "API",
-      "CSV export"
+      "CSV export",
+      "MCP"
      ],
      "model_provider": "",
      "sources": [
@@ -10330,9 +10622,14 @@
        "url": "https://dune.com/pricing",
        "label": "Dune pricing",
        "checked": "2026-10-16"
+      },
+      {
+       "url": "https://docs.dune.com/docs/agents/mcp",
+       "label": "Dune MCP docs",
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$65/month (Analyst)",
@@ -10425,16 +10722,22 @@
       {
        "url": "https://santiment.net/pricing/",
        "label": "Santiment pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
+      },
+      {
+       "url": "https://ai.santiment.net",
+       "label": "Santiment AI and MCP connector",
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
       "Web",
       "API"
      ],
      "integrations": [
-      "API"
+      "API",
+      "MCP"
      ],
      "best_for": "On-chain and social crypto analytics",
      "main_limitation": "Real-time data needs a paid plan",
@@ -10567,15 +10870,16 @@
       {
        "url": "https://www.elfa.ai/pricing",
        "label": "Elfa AI pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
       "API"
      ],
      "integrations": [
-      "API"
+      "API",
+      "MCP"
      ],
      "best_for": "Crypto social-intelligence data via API",
      "main_limitation": "API only",
@@ -10741,7 +11045,7 @@
      "name": "Zerion",
      "url": "https://zerion.io",
      "verdict": "Multi-chain self-custody wallet and portfolio tracker.",
-     "pricing": "free",
+     "pricing": "freemium",
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
@@ -10756,7 +11060,65 @@
       "ethereum",
       "cryptocurrency"
      ],
-     "audience": "consumer"
+     "audience": "consumer",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Browser extension",
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "Self-custody wallet and multichain portfolio tracking, plus a wallet-data API for developers",
+     "main_limitation": "Premium price is not shown on the homepage; API paid tiers start at $149/month",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$149/month (Builder API plan)",
+      "free_tier": "Free wallet on iOS, Android, extension and web; free Developer API plan ($0 forever, 2K requests/day)",
+      "tiers": [
+       {
+        "name": "Wallet",
+        "price": "$0",
+        "notes": "Free app; Premium adds lower swap and bridge fees (price not shown)"
+       },
+       {
+        "name": "Developer (API)",
+        "price": "$0 forever",
+        "notes": "2K requests/day"
+       },
+       {
+        "name": "Builder (API)",
+        "price": "$149/month",
+        "notes": "Up to 250K requests/month"
+       },
+       {
+        "name": "Startup (API)",
+        "price": "$499/month",
+        "notes": "Up to 1M requests/month"
+       },
+       {
+        "name": "Enterprise (API)",
+        "price": "Custom",
+        "notes": ""
+       }
+      ],
+      "notes": "Checked on the vendor homepage and API page; Zerion Premium price Not yet verified."
+     },
+     "sources": [
+      {
+       "url": "https://zerion.io/",
+       "label": "Zerion homepage",
+       "checked": "2026-10-18"
+      },
+      {
+       "url": "https://zerion.io/api",
+       "label": "Zerion API pricing",
+       "checked": "2026-10-18"
+      }
+     ],
+     "last_verified": "2026-10-18"
     },
     {
      "name": "DeBank",
@@ -10800,17 +11162,18 @@
       {
        "url": "https://coinstats.app/pricing/",
        "label": "CoinStats pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
       "Web",
       "iOS",
       "Android"
      ],
      "integrations": [
-      "Wallets and exchanges"
+      "Wallets and exchanges",
+      "MCP"
      ],
      "best_for": "Tracking a crypto portfolio across wallets",
      "main_limitation": "Premium price not verified",
@@ -10823,6 +11186,11 @@
         "name": "Basic",
         "price": "Free",
         "notes": ""
+       },
+       {
+        "name": "Premium",
+        "price": "$13.99/month after a 7-day free trial",
+        "notes": "Unlimited portfolios, up to 100,000 transactions"
        }
       ],
       "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
@@ -10967,12 +11335,14 @@
       {
        "url": "https://3commas.io/pricing",
        "label": "3Commas pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
-      "Web"
+      "Web",
+      "iOS",
+      "Android"
      ],
      "integrations": [
       "Exchanges"
@@ -11020,15 +11390,23 @@
       {
        "url": "https://www.cryptohopper.com/pricing",
        "label": "Cryptohopper pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
+      },
+      {
+       "url": "https://www.cryptohopper.com/features/cryptohopper-mcp",
+       "label": "Cryptohopper MCP",
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "platforms": [
-      "Web"
+      "Web",
+      "iOS",
+      "Android"
      ],
      "integrations": [
-      "Exchanges"
+      "Exchanges",
+      "MCP"
      ],
      "best_for": "Cloud crypto trading bots",
      "main_limitation": "Prices exclude VAT; no permanent free plan",
@@ -11602,18 +11980,27 @@
      "best_for": "Game studios needing style-consistent assets",
      "avoid_if": "You need general marketing images",
      "platforms": [
-      "Web"
+      "Web",
+      "API"
      ],
-     "integrations": [],
+     "integrations": [
+      "API",
+      "MCP"
+     ],
      "model_provider": "",
      "sources": [
       {
        "url": "https://www.scenario.com/pricing",
        "label": "Scenario pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
+      },
+      {
+       "url": "https://docs.scenario.com/",
+       "label": "Scenario API docs",
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$15/month (Starter)",
@@ -11633,6 +12020,11 @@
         "name": "Max",
         "price": "$75/month",
         "notes": "10,000 credits"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "For organizations running AI at scale; unlimited seats"
        }
       ],
       "notes": "Annual billing saves 33% per vendor; displayed price toggle may reflect annual."
@@ -11709,18 +12101,27 @@
      "best_for": "Game devs and 3D printers needing quick models",
      "avoid_if": "You need production-grade hand-modelled topology",
      "platforms": [
-      "Web"
+      "Web",
+      "API"
      ],
-     "integrations": [],
+     "integrations": [
+      "API",
+      "MCP"
+     ],
      "model_provider": "",
      "sources": [
       {
        "url": "https://www.meshy.ai/pricing",
        "label": "Meshy pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
+      },
+      {
+       "url": "https://docs.meshy.ai/",
+       "label": "Meshy docs (API and MCP server)",
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$20/month (Pro, billed monthly)",
@@ -11735,9 +12136,19 @@
         "name": "Pro",
         "price": "$20/month",
         "notes": "First month $10 promo"
+       },
+       {
+        "name": "Studio",
+        "price": "$70/month billed monthly",
+        "notes": "Additional seats $10/mo per seat; first month 50% off for new users"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Contact sales (price not confirmed)",
+        "notes": ""
        }
       ],
-      "notes": "Studio and Enterprise plans also listed."
+      "notes": "Checked on the vendor pricing page; new users get 50% off their first month on monthly plans per the vendor."
      }
     },
     {
@@ -11765,10 +12176,10 @@
       {
        "url": "https://inworld.ai/pricing",
        "label": "Inworld pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-18",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$25/month (Creator)",
@@ -11783,6 +12194,11 @@
         "name": "Creator",
         "price": "$25/month",
         "notes": "TTS-2 $20/1M chars"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom pricing, limits and terms",
+        "notes": "Contact sales"
        }
       ],
       "notes": "Higher tiers offer volume discounts."

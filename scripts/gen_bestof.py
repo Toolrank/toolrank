@@ -226,6 +226,7 @@ for T in TOPICS:
     names = [a["t"]["name"] for a in A]
     title = T["title"] if len(T["title"]) <= 60 else T["title"].replace(" (2026)", "")
     desc = fit_desc(f'{topic}: {len(A)} picks with vendor-verified prices checked {DAYH}, ', f'including {", ".join(names[:2])} and {names[2]}.' if len(", ".join(names[:2]) + names[2]) < 70 else f'led by {names[0]}.')
+    if desc.endswith(","): desc = desc[:-1] + "."
     if len(desc) < 70: desc = fit_desc(desc, " Free plans, limits and who should pick which.")
     assert len(title) <= 60 and 70 <= len(desc) <= 160, (T["slug"], title, desc)
     p = dict(slug=T["slug"], n=1000 + len(pages), generated=True, cat=T["cat"], h1=topic, title=title, desc=desc, summary=summ, items=items, pick=pick_txt, faq=faq)
