@@ -1,101 +1,101 @@
 {
- "fetched": "2026-10-16 05:43 UTC",
- "fetched_ts": 1792129382,
+ "fetched": "2026-10-17 02:43 UTC",
+ "fetched_ts": 1792204987,
  "stars_baseline": "2026-10-15",
  "repos_tracked": 16,
  "stars": [
   {
-   "tool": "geo-sleuth",
-   "repo": "Oldcircle/geo-sleuth",
-   "gained": 115,
-   "stars": 3008,
-   "url": "https://github.com/Oldcircle/geo-sleuth"
-  },
-  {
    "tool": "agent-memory",
    "repo": "tigerless-labs/agent-memory",
-   "gained": 114,
-   "stars": 3822,
+   "gained": 234,
+   "stars": 3942,
    "url": "https://github.com/tigerless-labs/agent-memory"
+  },
+  {
+   "tool": "geo-sleuth",
+   "repo": "Oldcircle/geo-sleuth",
+   "gained": 209,
+   "stars": 3102,
+   "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 108,
-   "stars": 110629,
+   "gained": 178,
+   "stars": 110699,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 65,
-   "stars": 3458,
+   "gained": 140,
+   "stars": 3533,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
+  },
+  {
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 103,
+   "stars": 3699,
+   "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 58,
-   "stars": 3515,
+   "gained": 93,
+   "stars": 3550,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 40,
-   "stars": 3685,
+   "gained": 80,
+   "stars": 3725,
    "url": "https://github.com/ZJU-REAL/Easel"
-  },
-  {
-   "tool": "vibe-wise",
-   "repo": "nykooi1/vibe-wise",
-   "gained": 39,
-   "stars": 3635,
-   "url": "https://github.com/nykooi1/vibe-wise"
-  },
-  {
-   "tool": "jevgrep",
-   "repo": "dzhng/jevgrep",
-   "gained": 35,
-   "stars": 2727,
-   "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 30,
-   "stars": 3333,
+   "gained": 75,
+   "stars": 3378,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
-   "tool": "Gemini CLI",
-   "repo": "google-gemini/gemini-cli",
-   "gained": 15,
-   "stars": 107394,
-   "url": "https://github.com/google-gemini/gemini-cli"
+   "tool": "jevgrep",
+   "repo": "dzhng/jevgrep",
+   "gained": 63,
+   "stars": 2755,
+   "url": "https://github.com/dzhng/jevgrep"
+  },
+  {
+   "tool": "Microsoft Agent Framework",
+   "repo": "microsoft/agent-framework",
+   "gained": 37,
+   "stars": 14172,
+   "url": "https://github.com/microsoft/agent-framework"
   }
  ],
  "hn": [
   {
    "tool": "Krea",
    "stories": 1,
-   "points": 284,
+   "points": 342,
    "top_title": "Krea 3 – An image model built for editing at scale",
    "top_url": "https://news.ycombinator.com/item?id=50105648"
   },
   {
-   "tool": "Claude",
-   "stories": 4,
-   "points": 12,
-   "top_title": "Show HN: A Playable Architectural Facade Synth",
-   "top_url": "https://news.ycombinator.com/item?id=50068405"
+   "tool": "Black Forest Labs (FLUX)",
+   "stories": 2,
+   "points": 127,
+   "top_title": "FLUX 3 Image Klein",
+   "top_url": "https://news.ycombinator.com/item?id=50123580"
   },
   {
-   "tool": "Black Forest Labs (FLUX)",
-   "stories": 1,
-   "points": 7,
-   "top_title": "Flux 3 Image Klein",
-   "top_url": "https://news.ycombinator.com/item?id=50105288"
+   "tool": "Claude",
+   "stories": 6,
+   "points": 16,
+   "top_title": "Show HN: A Playable Architectural Facade Synth",
+   "top_url": "https://news.ycombinator.com/item?id=50068405"
   },
   {
    "tool": "OpenCode",
@@ -110,6 +110,13 @@
    "points": 4,
    "top_title": "Cursor drops $20 Pro plan, merges X",
    "top_url": "https://news.ycombinator.com/item?id=50069771"
+  },
+  {
+   "tool": "Perplexity",
+   "stories": 2,
+   "points": 4,
+   "top_title": "Open-sourcing SPACE, the sandbox platform behind Computer",
+   "top_url": "https://news.ycombinator.com/item?id=50122131"
   },
   {
    "tool": "Airtable",
@@ -138,13 +145,6 @@
    "points": 2,
    "top_title": "Design Systems",
    "top_url": "https://news.ycombinator.com/item?id=50088586"
-  },
-  {
-   "tool": "Synthesia",
-   "stories": 1,
-   "points": 2,
-   "top_title": "Synthesia Launches Syren: Video and Motion Graphics from a Single Prompt",
-   "top_url": "https://news.ycombinator.com/item?id=50022229"
   }
  ]
 }
