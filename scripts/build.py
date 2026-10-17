@@ -330,7 +330,7 @@ def NL(cls="", hid="nl"):
             f'<div class="nlf"><a class="btn" href="{NL_URL}" target="_blank" rel="noopener" aria-describedby="{hid}-h">Subscribe free</a></div></div>')
 def FOOT_():
     cl = "".join(f'<a href="/best/{c["id"]}/">{E(c["title"])}</a>' for c in D["categories"])
-    return (f'<footer class="foot"><div class="wrap">{NL("nl-foot", "nlf")}<div class="fg"><div class="fl">{LOGO}<p class="muted">Confused by AI? We&rsquo;ll find the right tool for you. Editorial rankings, updated <time datetime="{UPD}">{UPD}</time>.</p><p class="soc"><a href="https://x.com/ToolRank_io" rel="me noopener" target="_blank" aria-label="ToolRank on X">X</a><a href="https://www.instagram.com/toolrank.io/" rel="me noopener" target="_blank" aria-label="ToolRank on Instagram">Instagram</a></p></div>'
+    return (f'<footer class="foot"><div class="wrap">{NL("nl-foot", "nlf")}<div class="fg"><div class="fl">{LOGO}<p class="muted">Confused by AI? We&rsquo;ll find the right tool for you. Editorial rankings, updated <time datetime="{UPD}">{UPD}</time>.</p><p class="soc"><a href="https://x.com/ToolRank_io" rel="me noopener" target="_blank" aria-label="ToolRank on X">X</a><a href="https://www.instagram.com/toolrank.io/" rel="me noopener" target="_blank" aria-label="ToolRank on Instagram">Instagram</a></p><p class="pwa-i small" hidden><button type="button" class="pwa-btn" hidden>Install app</button><span class="pwa-hint" hidden>Tap Share then Add to Home Screen</span><button type="button" class="pwa-x" aria-label="Dismiss install option">×</button></p></div>'
             f'<nav class="fc2" aria-label="Categories">{cl}</nav><nav class="fc2" aria-label="ToolRank"><a href="/about/">About</a><a href="/methodology/">How we rank</a><a href="/compare/">Compare tools</a><a href="/claim/">Claim your listing</a><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/sponsor/">Sponsor</a><a href="/llms.txt">llms.txt</a></nav></div>'
             f'<p class="si-tag small">ToolRank · Super Intelligence, ranked.</p><p class="muted small">© {UPD[:4]} ToolRank. Some links may become affiliate links; featured placements are labelled. Reviews are user-submitted via GitHub and moderated; they never change the editorial rank.</p></div></footer>')
 FOOT = FOOT_()
@@ -356,7 +356,7 @@ def head(title, desc, path, ld, otype="website"):
 <link rel="canonical" href="{url}"><meta name="robots" content="index,follow,max-snippet:-1"><meta name="theme-color" content="#0b1220"><meta name="color-scheme" content="dark">
 <meta property="og:type" content="{otype}"><meta property="og:site_name" content="ToolRank"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}">
 <meta property="og:image" content="{BASE}/assets/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE}/assets/og.png">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><meta name="twitter:title" content="{E(title)}"><meta name="twitter:description" content="{E(desc)}">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="apple-mobile-web-app-title" content="ToolRank"><meta name="twitter:title" content="{E(title)}"><meta name="twitter:description" content="{E(desc)}">
 <script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@graph": ld}, ensure_ascii=False)}</script><!--/SEO-->"""
 def doc(headblock, body, extra_head=""):
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n{headblock}{FONTS}'
@@ -899,6 +899,8 @@ Promise.all([fetch("/data/tools.json").then(r=>r.json()),fetch("/data/reviews.js
 """
 
 EV_CSS = """
+.pwa-i{display:flex;align-items:center;gap:8px;margin:14px 0 0;color:var(--mut)}.pwa-i[hidden],.pwa-i [hidden]{display:none}.pwa-btn{font:600 13px Inter,system-ui,sans-serif;color:var(--txt);background:#ffffff0a;border:1px solid var(--line);border-radius:99px;padding:6px 14px;cursor:pointer}.pwa-btn:hover{border-color:var(--acc2);color:#fff}.pwa-x{background:none;border:0;color:var(--mut);font-size:18px;line-height:1;padding:4px 6px;cursor:pointer}.pwa-x:hover{color:#fff}
+.offl{max-width:560px;margin:clamp(48px,12vw,120px) auto;text-align:center;padding:0 20px}.offl img{width:96px;height:96px;border-radius:22px;margin-bottom:18px}.offl .btn{margin-top:14px}
 .mnav{display:none;align-items:center;gap:10px}.cpill{background:var(--btn);color:#fff!important;font-weight:700;font-size:14px;padding:8px 16px;border-radius:99px;box-shadow:0 4px 16px #2563eb55}
 .hb{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:#ffffff0a;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer}.hb span{width:18px;height:2px;background:#fff;border-radius:2px;transition:transform .2s,opacity .2s}
 .hb[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.hb[aria-expanded=true] span:nth-child(2){opacity:0}.hb[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
@@ -1020,6 +1022,60 @@ def build_search_index():
     (ROOT/"data"/"search-index.json").write_text(json.dumps({"updated": UPD, "pages": pages, "categories": cats, "tools": tools}, separators=(",", ":"), ensure_ascii=False) + "\n")
     return len(pages)
 
+SW_JS = r"""/* ToolRank service worker (generated by scripts/build.py; do not edit by hand). Version tracks the build's cache-busting hashes. */
+const V="__VERSION__",PRE="tr-pre-"+V,RT="tr-rt-"+V,PG="tr-pg-"+V;
+const PRECACHE=__PRECACHE__;
+const MAXRT=150,MAXPG=60;
+self.addEventListener("install",e=>{e.waitUntil(caches.open(PRE).then(c=>c.addAll(PRECACHE.map(u=>new Request(u,{cache:"reload"})))).then(()=>self.skipWaiting()))});
+self.addEventListener("activate",e=>{e.waitUntil((async()=>{
+  const keep=[PRE,RT,PG];for(const k of await caches.keys())if(k.startsWith("tr-")&&!keep.includes(k))await caches.delete(k);
+  if(self.registration.navigationPreload)await self.registration.navigationPreload.enable();
+  await self.clients.claim()})())});
+const trim=async(n,max)=>{const c=await caches.open(n),k=await c.keys();for(let i=0;i<k.length-max;i++)await c.delete(k[i])};
+const okRes=r=>r&&r.ok&&r.type==="basic"&&!r.redirected;
+const pageKey=u=>{const x=new URL(u);return x.origin+x.pathname};  /* static site: the query string never changes the HTML */
+async function nav(e){
+  try{
+    const r=(await e.preloadResponse)||await fetch(e.request);
+    if(okRes(r)){const c=r.clone();e.waitUntil(caches.open(PG).then(p=>p.put(pageKey(e.request.url),c)).then(()=>trim(PG,MAXPG)))}
+    return r;
+  }catch(err){
+    const pg=await caches.open(PG);
+    return (await pg.match(pageKey(e.request.url)))||(await caches.match(pageKey(e.request.url)))||(await caches.match(e.request.url,{ignoreSearch:true}))||(await caches.match("/offline.html"))||Response.error();
+  }
+}
+async function data(e){  /* JSON data: always fresh when online, last copy when offline */
+  try{const r=await fetch(e.request);if(okRes(r)){const c=r.clone();e.waitUntil(caches.open(RT).then(x=>x.put(e.request,c)))}return r}
+  catch(err){return (await caches.match(e.request))||Response.error()}
+}
+async function swr(e){
+  const hit=await caches.match(e.request);
+  const net=fetch(e.request).then(r=>{if(okRes(r)){const c=r.clone();caches.open(RT).then(x=>x.put(e.request,c)).then(()=>trim(RT,MAXRT))}return r});
+  if(hit){e.waitUntil(net.catch(()=>{}));return hit}
+  return net;
+}
+self.addEventListener("fetch",e=>{
+  const q=e.request;if(q.method!=="GET")return;
+  const u=new URL(q.url);if(u.origin!==self.location.origin)return;  /* never touch cross-origin (Stripe, beehiiv, analytics, fonts CDNs) */
+  if(u.pathname==="/sw.js"||u.pathname.endsWith("/clicks.json"))return;  /* never cache */
+  if(q.mode==="navigate"){e.respondWith(nav(e));return}
+  if(u.pathname.startsWith("/data/")){e.respondWith(data(e));return}
+  if(/\.(css|js|woff2|png|svg|jpg|jpeg|webp|gif|ico|webmanifest)$/.test(u.pathname)){e.respondWith(swr(e));return}
+});
+"""
+MANIFEST = {"id": "/", "name": "ToolRank", "short_name": "ToolRank", "description": "AI tools, ranked with checked, dated pricing", "lang": "en",
+            "start_url": "/?source=pwa", "scope": "/", "display": "standalone", "background_color": "#0b1220", "theme_color": "#0b1220", "categories": ["productivity", "utilities"],
+            "icons": [{"src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+                      {"src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+                      {"src": "/assets/icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}],
+            "shortcuts": [{"name": "Compare tools", "short_name": "Compare", "url": "/compare/?source=pwa", "icons": [{"src": "/assets/icons/icon-192.png", "sizes": "192x192"}]},
+                          {"name": "Browse categories", "short_name": "Categories", "url": "/?source=pwa#browse", "icons": [{"src": "/assets/icons/icon-192.png", "sizes": "192x192"}]}]}
+def offline_page():
+    hb = head("You're offline | ToolRank", "You're offline. ToolRank needs a connection to load this page; pages you visited recently may still open. Reconnect and try again.", "/offline.html", [ORG, SITE]).replace("index,follow,max-snippet:-1", "noindex,follow")
+    body = ('<main id="main" class="offl"><img src="/assets/icons/icon-192.png" alt="" width="96" height="96"><h1>You&rsquo;re offline</h1>'
+            '<p class="muted">ToolRank can&rsquo;t reach the network right now. Pages you opened recently may still work; everything else will load once you&rsquo;re back online.</p>'
+            '<p><a class="btn" href="/">Go to the homepage</a></p><p class="small muted"><a href="" onclick="location.reload();return false">Try again</a></p></main>')
+    return doc(hb, body)
 def main():
     cats = D["categories"]
     ensure_fonts(); print(f"logos: fetched {ensure_logos()} new")
@@ -1041,6 +1097,7 @@ def main():
         (ROOT/"best-of"/b["slug"]).mkdir(parents=True, exist_ok=True); (ROOT/"best-of"/b["slug"]/"index.html").write_text(bestof_page(b))
     for o, n in BO.get("redirects", {}).items():
         (ROOT/"best-of"/o).mkdir(parents=True, exist_ok=True); (ROOT/"best-of"/o/"index.html").write_text(bestof_redirect(o, n))
+    (ROOT/"offline.html").write_text(offline_page()); (ROOT/"manifest.webmanifest").write_text(json.dumps(MANIFEST, indent=1) + "\n")
     (ROOT/"reviews.html").write_text(reviews_page()); (ROOT/"services.html").write_text(services_page()); (ROOT/"index.html").write_text(home(cats))
     opts = "".join(f"<option>{E(c['title'])}</option>" for c in cats) + "<option>Other / new category</option>"
     def sub(s): return re.sub(r'(<select name="category"[^>]*>).*?(</select>)', lambda m: m.group(1) + opts + m.group(2), s, flags=re.S)
@@ -1077,15 +1134,22 @@ def main():
     PRIV = '<!--PRIV--><p class="small muted">Privacy: cookieless, privacy-friendly analytics via <a href="https://www.goatcounter.com" rel="noopener" target="_blank">GoatCounter</a>. No cookies, no personal data, no tracking across sites.</p><!--/PRIV-->'
     npg = build_search_index(); print(f"search-index: {npg} pages")
     import hashlib
-    V = {a: hashlib.sha1((ROOT/"assets"/a).read_bytes()).hexdigest()[:8] for a in ("app.js", "style.css", "hero.js", "ev.css", "compare.js")}
+    V = {a: hashlib.sha1((ROOT/"assets"/a).read_bytes()).hexdigest()[:8] for a in ("app.js", "style.css", "hero.js", "ev.css", "compare.js", "pwa.js")}
     for h in ROOT.rglob("*.html"):
         if "shots" in h.parts or h.parent.name in REDIRECTS: continue
         s = h.read_text(); n = re.sub(r"<!--GC-->.*?<!--/GC-->", "", s, flags=re.S); n = re.sub(r"<!--PRIV-->.*?<!--/PRIV-->", "", n, flags=re.S)
         n = n.replace('<p class="muted small">©', PRIV + '<p class="muted small">©', 1).replace("</body>", GC + "</body>", 1)
         n = re.sub(r'<a (?![^>]*\brel=)([^>]*href="/compare/\?tools=[^"]*"[^>]*)>', r'<a rel="nofollow" \1>', n)
+        if h.name == "offline.html": n = re.sub(r"<!--GC-->.*?<!--/GC-->", "", n, flags=re.S)
+        if "<!--SEO-->" in n and "assets/pwa.js" not in n: n = n.replace("</body>", '<script defer src="/assets/pwa.js"></script></body>', 1)
         if 'class="hero' in n and "assets/hero.js" not in n: n = n.replace("</body>", '<script defer src="/assets/hero.js"></script></body>', 1)
-        n = re.sub(r'(assets/(app\.js|style\.css|hero\.js|ev\.css|compare\.js))(\?v=[0-9a-f]+)?"', lambda m: f'{m.group(1)}?v={V[m.group(2)]}"', n)
+        n = re.sub(r'(assets/(app\.js|style\.css|hero\.js|ev\.css|compare\.js|pwa\.js))(\?v=[0-9a-f]+)?"', lambda m: f'{m.group(1)}?v={V[m.group(2)]}"', n)
         if n != s: h.write_text(n)
+    pre = ["/", "/offline.html", "/manifest.webmanifest", "/assets/fonts/inter.woff2", "/assets/fonts/sora.woff2", "/assets/logo.svg", "/assets/favicon.svg", "/assets/favicon-32.png",
+           "/assets/apple-touch-icon.png", "/assets/icons/icon-192.png", "/assets/icons/icon-512.png", "/assets/icons/icon-512-maskable.png"] + [f"/assets/{a}?v={v}" for a, v in V.items()]
+    swv = hashlib.sha1((json.dumps(V, sort_keys=True) + SW_JS + json.dumps(pre)).encode()).hexdigest()[:10]
+    (ROOT/"sw.js").write_text(SW_JS.replace("__VERSION__", swv).replace("__PRECACHE__", json.dumps(pre)))
+    print(f"sw.js: cache version {swv} ({len(pre)} precached)")
     print(f"cache-bust: app.js?v={V['app.js']} style.css?v={V['style.css']}")
     print(f"built {len(cats)} category pages + {len(REDIRECTS)} redirects, sitemap ({len(urls)} urls), robots, llms.txt, llms-full.txt")
 if __name__ == "__main__": main()
