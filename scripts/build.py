@@ -198,6 +198,7 @@ def clicks():
         print(f"WARN clicks fetch failed ({type(e).__name__}: {getattr(e, 'code', '')} {getattr(e, 'reason', e)!r}); keeping previous data", file=sys.stderr)
         return old
 CL = clicks()
+if CL and CL.get("top"): CL = {**CL, "top": [x for x in CL["top"] if x.get("slug") in TOOLS]}  # drop delisted tools from cached click data
 def clicks_card():
     if CL and CL.get("top"):
         body = '<ol class="tl">' + "".join(f'<li><a href="/reviews.html#{x["slug"]}">{E(x["tool"])}</a> <span class="up">{x["count"]:,}</span> <span class="muted">visitor{"s" if x["count"] != 1 else ""}</span></li>' for x in CL["top"]) + '</ol>'

@@ -1503,20 +1503,6 @@
      "audience": "both"
     },
     {
-     "name": "Firebase Studio",
-     "url": "https://firebase.studio",
-     "verdict": "Google's cloud workspace for prototyping full-stack apps with Gemini.",
-     "pricing": "free",
-     "tags": [
-      "google",
-      "full stack"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "both"
-    },
-    {
      "name": "Create.xyz (Anything)",
      "url": "https://www.createanything.com",
      "verdict": "Prompt-to-app builder for web and mobile apps.",

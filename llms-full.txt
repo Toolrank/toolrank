@@ -40,39 +40,38 @@ Page: https://toolrank.io/best/coding/
 18. Gemini CLI (free; audience: business): Google's open-source terminal coding agent powered by Gemini. https://github.com/google-gemini/gemini-cli
 19. Base44 (freemium; audience: both): Prompt-to-app builder with built-in database, auth and hosting; owned by Wix. https://base44.com
 20. Google AI Studio (Build) (free; audience: both): Google's AI Studio builds and deploys Gemini-powered apps from a prompt. https://aistudio.google.com
-21. Firebase Studio (free; audience: both): Google's cloud workspace for prototyping full-stack apps with Gemini. https://firebase.studio
-22. Create.xyz (Anything) (freemium; audience: consumer): Prompt-to-app builder for web and mobile apps. https://www.createanything.com
-23. Kilo Code (freemium; audience: business): Open-source coding agent for VS Code and JetBrains. https://kilo.ai
-24. Rork (freemium; audience: consumer): Builds native mobile apps (React Native) from a prompt. https://rork.com
-25. Softgen (paid; audience: consumer): AI web app builder producing Next.js apps with Firebase/Supabase. https://softgen.ai
-26. Tempo (freemium; audience: consumer): Visual React editor with AI that generates and edits code. https://www.tempo.new
-27. Same (freemium; audience: consumer): Clones or builds web apps from a prompt or URL. https://same.new
-28. Macaly (freemium; audience: consumer): Prompt-to-website and app builder for non-developers. https://www.macaly.com
-29. Figma Make (freemium; audience: both): Figma's prompt-to-app feature that turns designs and prompts into working prototypes. https://www.figma.com/make/
-30. Augment Code (paid; audience: business): Coding agent built for large codebases with deep context. https://www.augmentcode.com
-31. Bubble (freemium; audience: both): Established no-code platform with an AI app generator. https://bubble.io
-32. Webflow (freemium; audience: both): Visual website builder with AI site and page generation. https://webflow.com
-33. Factory (paid; audience: business): Droids: coding agents for terminal, IDE and CI. https://factory.com
-34. Framer (freemium; audience: both): Design-first website builder with AI page generation. https://www.framer.com
-35. Warp (freemium; audience: business): Agentic terminal and development environment. https://www.warp.dev
-36. Dyad (freemium; audience: consumer): Free, local, open-source app builder; bring your own model keys. https://www.dyad.sh
-37. OpenCode (free; audience: business): Open-source terminal coding agent supporting many models. https://opencode.ai
-38. vibe-wise (free; audience: consumer): Claude Code/Codex plugin that teaches you to build while AI writes the code. New open-source launch on GitHub. https://github.com/nykooi1/vibe-wise
-39. scroll-craft (free; audience: consumer): Agent skill for building premium scroll-driven websites. New open-source launch on GitHub. https://github.com/nateherkai/scroll-craft
-40. CodeRabbit (paid; audience: business): AI code reviews on pull requests. https://www.coderabbit.ai
-41. shadcn lint (free; audience: consumer): Agent-first linter for Tailwind design systems. New open-source launch on GitHub. https://github.com/shadcn-ui/lint
-42. Qodo (paid; audience: business): AI code review and test generation. https://www.qodo.ai
-43. Magpie (freemium; audience: business): Menu-bar app to run any coding agent (Codex, Claude Code) on any model. New open-source launch on GitHub. https://usemagpie.ai
-44. Mono (monocode) (freemium; audience: business): A GUI for your coding agents. New open-source launch on GitHub. https://usemono.dev
-45. OmniRush (freemium; audience: business): Desktop coding agent with free access to frontier models. New open-source launch on GitHub. https://omnirush.ai
-46. jevgrep (free; audience: business): CLI for coding agents to find code by asking what it does. New open-source launch on GitHub. https://github.com/dzhng/jevgrep
-47. coucou (freemium; audience: business): Tiny Mac-notch/iPhone companion that keeps an eye on your AI coding agents. New open-source launch on GitHub. https://louis-cfm.github.io/coucou/
-48. Tabnine (paid; audience: business): Privacy-focused AI code assistant, acquired by Tricentis in 2026. https://www.tabnine.com
-49. Cody (Sourcegraph) (paid; audience: business): Sourcegraph's AI coding assistant; Free and Pro discontinued in 2025, Enterprise only. https://sourcegraph.com/docs/cody
-50. Amazon Q Developer (freemium; audience: business): AWS coding assistant, closed to new sign-ups since May 2026 and being replaced by Kiro. https://aws.amazon.com/q/developer/
-51. Codeium (freemium; audience: business): Former name of Windsurf; codeium.com now redirects to Devin Desktop. https://codeium.com
-52. Continue (free; audience: business): Open-source coding agent, acquired by Cursor in 2026; no longer maintained. https://www.continue.dev
-53. Roo Code (free; audience: business): Open-source VS Code coding agent; shut down 15 May 2026. https://github.com/RooCodeInc/Roo-Code
+21. Create.xyz (Anything) (freemium; audience: consumer): Prompt-to-app builder for web and mobile apps. https://www.createanything.com
+22. Kilo Code (freemium; audience: business): Open-source coding agent for VS Code and JetBrains. https://kilo.ai
+23. Rork (freemium; audience: consumer): Builds native mobile apps (React Native) from a prompt. https://rork.com
+24. Softgen (paid; audience: consumer): AI web app builder producing Next.js apps with Firebase/Supabase. https://softgen.ai
+25. Tempo (freemium; audience: consumer): Visual React editor with AI that generates and edits code. https://www.tempo.new
+26. Same (freemium; audience: consumer): Clones or builds web apps from a prompt or URL. https://same.new
+27. Macaly (freemium; audience: consumer): Prompt-to-website and app builder for non-developers. https://www.macaly.com
+28. Figma Make (freemium; audience: both): Figma's prompt-to-app feature that turns designs and prompts into working prototypes. https://www.figma.com/make/
+29. Augment Code (paid; audience: business): Coding agent built for large codebases with deep context. https://www.augmentcode.com
+30. Bubble (freemium; audience: both): Established no-code platform with an AI app generator. https://bubble.io
+31. Webflow (freemium; audience: both): Visual website builder with AI site and page generation. https://webflow.com
+32. Factory (paid; audience: business): Droids: coding agents for terminal, IDE and CI. https://factory.com
+33. Framer (freemium; audience: both): Design-first website builder with AI page generation. https://www.framer.com
+34. Warp (freemium; audience: business): Agentic terminal and development environment. https://www.warp.dev
+35. Dyad (freemium; audience: consumer): Free, local, open-source app builder; bring your own model keys. https://www.dyad.sh
+36. OpenCode (free; audience: business): Open-source terminal coding agent supporting many models. https://opencode.ai
+37. vibe-wise (free; audience: consumer): Claude Code/Codex plugin that teaches you to build while AI writes the code. New open-source launch on GitHub. https://github.com/nykooi1/vibe-wise
+38. scroll-craft (free; audience: consumer): Agent skill for building premium scroll-driven websites. New open-source launch on GitHub. https://github.com/nateherkai/scroll-craft
+39. CodeRabbit (paid; audience: business): AI code reviews on pull requests. https://www.coderabbit.ai
+40. shadcn lint (free; audience: consumer): Agent-first linter for Tailwind design systems. New open-source launch on GitHub. https://github.com/shadcn-ui/lint
+41. Qodo (paid; audience: business): AI code review and test generation. https://www.qodo.ai
+42. Magpie (freemium; audience: business): Menu-bar app to run any coding agent (Codex, Claude Code) on any model. New open-source launch on GitHub. https://usemagpie.ai
+43. Mono (monocode) (freemium; audience: business): A GUI for your coding agents. New open-source launch on GitHub. https://usemono.dev
+44. OmniRush (freemium; audience: business): Desktop coding agent with free access to frontier models. New open-source launch on GitHub. https://omnirush.ai
+45. jevgrep (free; audience: business): CLI for coding agents to find code by asking what it does. New open-source launch on GitHub. https://github.com/dzhng/jevgrep
+46. coucou (freemium; audience: business): Tiny Mac-notch/iPhone companion that keeps an eye on your AI coding agents. New open-source launch on GitHub. https://louis-cfm.github.io/coucou/
+47. Tabnine (paid; audience: business): Privacy-focused AI code assistant, acquired by Tricentis in 2026. https://www.tabnine.com
+48. Cody (Sourcegraph) (paid; audience: business): Sourcegraph's AI coding assistant; Free and Pro discontinued in 2025, Enterprise only. https://sourcegraph.com/docs/cody
+49. Amazon Q Developer (freemium; audience: business): AWS coding assistant, closed to new sign-ups since May 2026 and being replaced by Kiro. https://aws.amazon.com/q/developer/
+50. Codeium (freemium; audience: business): Former name of Windsurf; codeium.com now redirects to Devin Desktop. https://codeium.com
+51. Continue (free; audience: business): Open-source coding agent, acquired by Cursor in 2026; no longer maintained. https://www.continue.dev
+52. Roo Code (free; audience: business): Open-source VS Code coding agent; shut down 15 May 2026. https://github.com/RooCodeInc/Roo-Code
 
 ## Image & Design
 
