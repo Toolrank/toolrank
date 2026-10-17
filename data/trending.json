@@ -1,99 +1,106 @@
 {
- "fetched": "2026-10-17 02:43 UTC",
- "fetched_ts": 1792204987,
+ "fetched": "2026-10-17 23:33 UTC",
+ "fetched_ts": 1792280027,
  "stars_baseline": "2026-10-15",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "agent-memory",
    "repo": "tigerless-labs/agent-memory",
-   "gained": 234,
-   "stars": 3942,
+   "gained": 353,
+   "stars": 4061,
    "url": "https://github.com/tigerless-labs/agent-memory"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 209,
-   "stars": 3102,
+   "gained": 338,
+   "stars": 3231,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 178,
-   "stars": 110699,
+   "gained": 255,
+   "stars": 110776,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 140,
-   "stars": 3533,
+   "gained": 214,
+   "stars": 3607,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
+  },
+  {
+   "tool": "ReelMimic",
+   "repo": "edenfunf/reelmimic",
+   "gained": 149,
+   "stars": 3452,
+   "url": "https://github.com/edenfunf/reelmimic"
+  },
+  {
+   "tool": "Easel",
+   "repo": "ZJU-REAL/Easel",
+   "gained": 144,
+   "stars": 3789,
+   "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 103,
-   "stars": 3699,
+   "gained": 138,
+   "stars": 3734,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 93,
-   "stars": 3550,
+   "gained": 131,
+   "stars": 3588,
    "url": "https://github.com/nateherkai/scroll-craft"
-  },
-  {
-   "tool": "Easel",
-   "repo": "ZJU-REAL/Easel",
-   "gained": 80,
-   "stars": 3725,
-   "url": "https://github.com/ZJU-REAL/Easel"
-  },
-  {
-   "tool": "ReelMimic",
-   "repo": "edenfunf/reelmimic",
-   "gained": 75,
-   "stars": 3378,
-   "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "jevgrep",
    "repo": "dzhng/jevgrep",
-   "gained": 63,
-   "stars": 2755,
+   "gained": 77,
+   "stars": 2769,
    "url": "https://github.com/dzhng/jevgrep"
   },
   {
-   "tool": "Microsoft Agent Framework",
-   "repo": "microsoft/agent-framework",
-   "gained": 37,
-   "stars": 14172,
-   "url": "https://github.com/microsoft/agent-framework"
+   "tool": "Gemini CLI",
+   "repo": "google-gemini/gemini-cli",
+   "gained": 47,
+   "stars": 107426,
+   "url": "https://github.com/google-gemini/gemini-cli"
   }
  ],
  "hn": [
   {
    "tool": "Krea",
    "stories": 1,
-   "points": 342,
+   "points": 348,
    "top_title": "Krea 3 – An image model built for editing at scale",
    "top_url": "https://news.ycombinator.com/item?id=50105648"
   },
   {
    "tool": "Black Forest Labs (FLUX)",
    "stories": 2,
-   "points": 127,
+   "points": 213,
    "top_title": "FLUX 3 Image Klein",
    "top_url": "https://news.ycombinator.com/item?id=50123580"
   },
   {
+   "tool": "JetBrains AI (Junie)",
+   "stories": 1,
+   "points": 15,
+   "top_title": "JetBrains Junie Local: An agent you own, not one you rent",
+   "top_url": "https://news.ycombinator.com/item?id=50132963"
+  },
+  {
    "tool": "Claude",
-   "stories": 6,
-   "points": 16,
+   "stories": 5,
+   "points": 14,
    "top_title": "Show HN: A Playable Architectural Facade Synth",
    "top_url": "https://news.ycombinator.com/item?id=50068405"
   },
@@ -105,18 +112,18 @@
    "top_url": "https://news.ycombinator.com/item?id=50057747"
   },
   {
+   "tool": "Perplexity",
+   "stories": 2,
+   "points": 5,
+   "top_title": "Open-sourcing SPACE, the sandbox platform behind Computer",
+   "top_url": "https://news.ycombinator.com/item?id=50122131"
+  },
+  {
    "tool": "Cursor",
    "stories": 3,
    "points": 4,
    "top_title": "Cursor drops $20 Pro plan, merges X",
    "top_url": "https://news.ycombinator.com/item?id=50069771"
-  },
-  {
-   "tool": "Perplexity",
-   "stories": 2,
-   "points": 4,
-   "top_title": "Open-sourcing SPACE, the sandbox platform behind Computer",
-   "top_url": "https://news.ycombinator.com/item?id=50122131"
   },
   {
    "tool": "Airtable",
@@ -138,13 +145,6 @@
    "points": 2,
    "top_title": "AI Engineering Maturity Model: 5 Stages for Teams",
    "top_url": "https://news.ycombinator.com/item?id=50042292"
-  },
-  {
-   "tool": "Webflow",
-   "stories": 1,
-   "points": 2,
-   "top_title": "Design Systems",
-   "top_url": "https://news.ycombinator.com/item?id=50088586"
   }
  ]
 }
