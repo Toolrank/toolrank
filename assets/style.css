@@ -224,3 +224,13 @@ h2.big{font-size:clamp(36px,6.2vw,76px);font-weight:700;letter-spacing:-.05em;li
 @media(max-width:760px){.top nav a:not(.btn){display:none}.top nav a[href="/reviews.html"]{display:none}.hero.studio-hero{min-height:0}}
 @media(max-width:760px){.top nav[aria-label=Main]{display:none}.mnav{display:flex}}
 .band.faq .wrap.prose{max-width:1280px}.band.faq details{max-width:900px}
+/* sample work */
+.sample{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,72px);align-items:center}
+.sample .lead{margin:0 0 24px;max-width:52ch}.sample h2.big{margin-bottom:.2em}
+h2.mid{font-size:clamp(32px,4.6vw,56px);letter-spacing:-.05em;line-height:1;margin:0 0 .2em}
+.slabel{display:inline-block;margin:0 0 20px;padding:6px 12px;border:1px solid #60a5fa66;border-radius:8px;background:#2563eb1f;color:#dbe7ff;font-size:13.5px;font-weight:600}
+.ticks{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}.ticks li{position:relative;padding-left:22px;color:#cbd5e1;font-size:15px}.ticks li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;border-radius:3px;background:var(--acc2)}
+.shot{margin:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;box-shadow:0 30px 80px #0008}.shot img{display:block;width:100%;height:auto}
+@media(max-width:900px){.sample{grid-template-columns:1fr}}
+.band.light .note p{color:#334155}
+.band.light .cta{--txt:#e2e8f0;--mut:#b6c2d3;color:var(--txt)}.band.light .cta h2{color:#fff}

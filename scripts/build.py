@@ -595,7 +595,8 @@ def home(cats):
 <p class="lead">Fixed-price websites, web apps and custom business software for small businesses, bands and startups: booking systems, client portals, dashboards and internal tools that run in the browser. Built in 1&ndash;2 weeks.</p>
 <p class="hcta"><a class="btn xl" href="{E(QUOTE_MAIL)}">Get a quote</a> <a class="btn ghost xl" href="/studio/">See packages</a></p>{KPIS}</div></section>
 <section class="band light" id="packages"><div class="wrap"><div class="sh"><p class="eyebrow">Packages</p><h2 class="big">Simple, fixed prices.</h2></div><div class="grid">{studio_strip()}</div><p class="muted small">Prices in Australian dollars. <a href="/studio/">Full package details, how it works and FAQ →</a></p></div></section>
-<section class="band" id="why"><div class="wrap"><div class="sh"><p class="eyebrow">Why us</p><h2 class="big">What you can count on.</h2></div><div class="feats">{whyh}</div><p class="hcta l"><a class="btn xl" href="{E(QUOTE_MAIL)}">Get a quote</a></p></div></section>
+{sample_html(True)}
+<section class="band light" id="why"><div class="wrap"><div class="sh"><p class="eyebrow">Why us</p><h2 class="big">What you can count on.</h2></div><div class="feats">{whyh}</div><p class="hcta l"><a class="btn xl" href="{E(QUOTE_MAIL)}">Get a quote</a></p></div></section>
 <section class="band alt rankhero" id="rankings"><div class="wrap hw">
 <p class="eyebrow">Free: AI tool rankings</p>
 <div class="seg" role="tablist" aria-label="Audience"><span class="ind" aria-hidden="true"></span><button type="button" role="tab" data-tab="you" aria-selected="true">For You</button><button type="button" role="tab" data-tab="business" aria-selected="false">For Business</button><button type="button" role="tab" data-tab="makers" aria-selected="false">For Makers</button></div>
@@ -797,6 +798,18 @@ STUDIO_FAQ = [
 ]
 KPIS = ('<dl class="kpis"><div><dt>Build time</dt><dd>1&ndash;2 weeks</dd></div><div><dt>Fixed price from</dt><dd>A$1,200</dd></div>'
         '<div><dt>Yours at handover</dt><dd>Domain, code, accounts</dd></div><div><dt>Based in</dt><dd>Sydney</dd></div></dl>')
+BOOKDESK = "https://toolrank.github.io/bookdesk-demo/"
+def sample_html(compact=False):
+    img = ('<figure class="shot"><img src="/assets/bookdesk-dashboard.webp" width="1200" height="750" loading="lazy" decoding="async" '
+           'alt="BookDesk dashboard with today&rsquo;s bookings, weekly revenue by day and upcoming bookings, using sample data"></figure>')
+    feats = "".join(f"<li>{x}</li>" for x in ("Calendar", "Clients", "Services", "Revenue dashboard", "CSV export", "Works offline", "Installs on laptop and phone"))
+    head_ = '<h2 class="big">BookDesk</h2>' if not compact else '<h2 class="mid">BookDesk</h2>'
+    more = '' if not compact else ' <a class="btn ghost xl" href="/studio/#sample">More about our work</a>'
+    return (f'<section class="band" id="sample"><div class="wrap"><div class="sample{" cmp" if compact else ""}"><div class="stx"><p class="eyebrow">Sample work</p>{head_}'
+            '<p class="slabel">Sample built by ToolRank Studio. Not a client project.</p>'
+            '<p class="lead">A booking and client manager for small service businesses. It installs on your laptop and phone from the browser, works offline, and keeps your calendar, clients, services, a revenue dashboard and CSV export in one place.</p>'
+            + ('' if compact else f'<ul class="ticks">{feats}</ul>') +
+            f'<p class="hcta l"><a class="btn xl" href="{BOOKDESK}" target="_blank" rel="noopener">Try the live demo</a>{more}</p></div>{img}</div></div></section>')
 def studio_strip():
     c = "".join(f'<article class="card plan"><h3>{E(n)}</h3><div class="price">{E(pr)}</div><p>{E(d)}</p><p class="small"><b>Full ownership handed over: domain, code, accounts.</b></p></article>' for n, pr, _, d in STUDIO_PKGS)
     c += '<article class="card plan"><h3>Care plan</h3><div class="price">A$49/month</div><p>Updates, monitoring, backups and up to 30 minutes of small fixes a month. No lock-in.</p></article>'
@@ -818,10 +831,11 @@ def studio_page():
     stepsh = "".join(f'<article class="feat"><span class="fn">0{i}</span><h3>{a}</h3><p>{b}</p></article>' for i, (a, b) in enumerate(steps, 1))
     body = f"""<main><section class="hero sub studio-hero"><div class="wrap"><p class="eyebrow">ToolRank Studio</p><h1>Website &amp; app builds by ToolRank Studio</h1><p class="lead">Fixed-price websites, web apps and custom business software for small businesses, bands and startups. Booking systems, client portals, dashboards and internal tools that run in the browser. Built in 1&ndash;2 weeks, then handed over to you in full.</p><p class="hcta l"><a class="btn xl" href="{E(QUOTE_MAIL)}">Get a quote</a> <a class="btn ghost xl" href="#faq">FAQ</a></p>{KPIS}</div></section>
 <section class="band light" id="packages"><div class="wrap"><div class="sh"><p class="eyebrow">Packages</p><h2 class="big">Simple, fixed prices.</h2></div><div class="grid">{cards}</div><p class="muted small">Prices in Australian dollars. The price and scope are confirmed in writing before work starts. Domain registration and any third-party fees are paid by you, in your name.</p></div></section>
-<section class="band" id="how"><div class="wrap"><div class="sh"><p class="eyebrow">How it works</p><h2 class="big">Brief, build, handover.</h2></div><div class="feats f3">{stepsh}</div>
+{sample_html()}
+<section class="band light" id="how"><div class="wrap"><div class="sh"><p class="eyebrow">How it works</p><h2 class="big">Brief, build, handover.</h2></div><div class="feats f3">{stepsh}</div>
 <div class="note"><h3>Separate from the rankings</h3><p><b>ToolRank Studio is a separate services arm. Studio work never affects ToolRank rankings.</b> Client projects are never listed in the rankings, and paying for a build does not change any tool&rsquo;s position, verdict or listed limitations. Rankings follow only the criteria on <a href="/methodology/">How we rank</a>.</p></div></div></section>
-<section class="band light faq" id="faq"><div class="wrap prose"><p class="eyebrow">FAQ</p><h2 class="big">Frequently asked questions</h2>{''.join(f'<details><summary><h3>{E(a)}</h3></summary><p>{E(b)}</p></details>' for a, b in STUDIO_FAQ)}</div></section>
-<section class="band" id="quote"><div class="wrap"><div class="cta big"><div><h2>Get a quote</h2><p>Email us your business name, what you need (website, web app or business software), your deadline and your budget. We reply with a fixed price and scope. Based in Sydney, working with clients across Australia.</p></div><a class="btn xl" href="{E(QUOTE_MAIL)}">Get a quote</a></div></div></section></main>"""
+<section class="band faq" id="faq"><div class="wrap prose"><p class="eyebrow">FAQ</p><h2 class="big">Frequently asked questions</h2>{''.join(f'<details><summary><h3>{E(a)}</h3></summary><p>{E(b)}</p></details>' for a, b in STUDIO_FAQ)}</div></section>
+<section class="band light" id="quote"><div class="wrap"><div class="cta big"><div><h2>Get a quote</h2><p>Email us your business name, what you need (website, web app or business software), your deadline and your budget. We reply with a fixed price and scope. Based in Sydney, working with clients across Australia.</p></div><a class="btn xl" href="{E(QUOTE_MAIL)}">Get a quote</a></div></div></section></main>"""
     ld = [ORG, SITE, {"@type": "Service", "name": "ToolRank Studio: websites, web apps and custom business software", "url": BASE+"/studio/", "provider": {"@id": BASE+"/#org"}, "areaServed": "AU", "serviceType": "Website, web app and custom business software development",
           "description": "Fixed-price websites, web apps and custom business software that runs in the browser, built in 1-2 weeks with full ownership handed over.", "offers": [{"@type": "Offer", "name": n, "price": re.sub(r"[^0-9]", "", pr), "priceCurrency": "AUD", "description": d} for n, pr, _, d in STUDIO_PKGS] + [{"@type": "Offer", "name": "Care plan", "price": "49", "priceCurrency": "AUD", "description": "Monthly updates, monitoring, backups and small fixes."}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": a, "acceptedAnswer": {"@type": "Answer", "text": b}} for a, b in STUDIO_FAQ]}]
     return doc(head("Website & app builds by ToolRank Studio | ToolRank", "Fixed-price websites, web apps and custom business software from ToolRank Studio, built in 1-2 weeks with full ownership handed over.", "/studio/", ld), body)
