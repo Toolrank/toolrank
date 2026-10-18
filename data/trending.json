@@ -1,6 +1,6 @@
 {
- "fetched": "2026-10-18 19:36 UTC",
- "fetched_ts": 1792352203,
+ "fetched": "2026-10-18 21:50 UTC",
+ "fetched_ts": 1792360203,
  "stars_baseline": "2026-10-15",
  "repos_tracked": 16,
  "stars": [
@@ -14,64 +14,64 @@
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 457,
-   "stars": 3350,
+   "gained": 461,
+   "stars": 3354,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 317,
-   "stars": 3620,
+   "gained": 320,
+   "stars": 3623,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 299,
-   "stars": 110820,
+   "gained": 306,
+   "stars": 110827,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 280,
-   "stars": 3673,
+   "gained": 289,
+   "stars": 3682,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 182,
-   "stars": 3827,
+   "gained": 185,
+   "stars": 3830,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 167,
-   "stars": 3624,
+   "gained": 174,
+   "stars": 3631,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 153,
-   "stars": 3749,
+   "gained": 159,
+   "stars": 3755,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "jevgrep",
    "repo": "dzhng/jevgrep",
-   "gained": 96,
-   "stars": 2788,
+   "gained": 100,
+   "stars": 2792,
    "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "VoiceMem",
    "repo": "xzf-thu/VoiceMem",
-   "gained": 61,
-   "stars": 2577,
+   "gained": 62,
+   "stars": 2578,
    "url": "https://github.com/xzf-thu/VoiceMem"
   }
  ],

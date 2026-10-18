@@ -1,7 +1,70 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-19",
  "note": "GitHub items dated by trending snapshot date, not repo creation date.",
  "items": [
+  {
+   "date": "2026-10-19",
+   "title": "cathrynlavery/diagram-design",
+   "summary": "GitHub weekly trending: editorial diagram design for coding agents (Claude Code, Codex, GitHub Copilot, Cursor and more), with 44 diagram types as self-contained HTML + SVG.",
+   "url": "https://github.com/cathrynlavery/diagram-design",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "debpalash/VoiceStudio",
+   "summary": "GitHub daily trending: an open-source, fully local ElevenLabs alternative for voice cloning, voice design, video dubbing, dictation, transcription and audiobook creation.",
+   "url": "https://github.com/debpalash/VoiceStudio",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "MadsLorentzen/ai-job-search",
+   "summary": "GitHub daily trending: a job-search framework built on Claude Code that runs on your machine to evaluate postings, tailor CVs, write cover letters and prep interviews.",
+   "url": "https://github.com/MadsLorentzen/ai-job-search",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "Reflection Beam (open weights)",
+   "summary": "Reflection has released the weights for Beam, its first open-weight model: a 501B-parameter MoE (23B active) with a 1M-token context, built for coding and long-horizon agentic work. Apache 2.0, on Hugging Face.",
+   "url": "https://reflection.ai/blog/beam-is-available",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "Elorian Glimpse",
+   "summary": "Elorian's first model, a visual-thinking model that reasons over images and video, uses multimodal tools and can coordinate subagents. Available via API and chat UI at $0.60/$3 per 1M tokens.",
+   "url": "https://elorian.ai/blog/introducing-glimpse",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "Perplexity pplx-decider-v1.2",
+   "summary": "Perplexity's 27B decision model for text and images (Qwen3.8-27B backbone) returns typed probabilities for yes/no, choice and score questions, answering several questions about one input in a single pass. Weights on Hugging Face.",
+   "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.2",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "Liquid AI d1-ultra",
+   "summary": "Liquid AI's multimodal decision model answers yes/no, choice and score questions about text and images with calibrated probabilities in one forward pass, without generating tokens. On the Liquid API at $0.042 per 1M input tokens.",
+   "url": "https://www.liquid.ai/blog/d1-ultra",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "Datadog Scout 1.0",
+   "summary": "Datadog's first model specialised for investigating production incidents, powering its Bits Investigation SRE agent. Post-trained with RL on GLM-5.3 Flash; in closed preview with sign-up open.",
+   "url": "https://www.datadoghq.com/blog/ai/introducing-scout-sre-specialized-model-bits-ai/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "StepFun Step 5 Preview (open weights)",
+   "summary": "StepFun's flagship 600B-parameter MoE (27B active) for agentic work, with a 1M-token context and vision input, now released with open weights on Hugging Face after launching in StepFun's products and API.",
+   "url": "https://huggingface.co/stepfun-ai/Step-5-Preview",
+   "type": "model"
+  },
   {
    "date": "2026-10-15",
    "title": "Muse Spark Open",
@@ -67,6 +130,20 @@
   },
   {
    "date": "2026-10-14",
+   "title": "Ling-3.1-flash (open weights)",
+   "summary": "Ant Group's inclusionAI published weights for Ling-3.1-flash, a 560B-parameter hybrid reasoning MoE (25B active) with a 1M-token context, aimed at agents, search, office work and software engineering. MIT licence.",
+   "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-14",
+   "title": "Paper Instruments Ultramarine 1 Flash",
+   "summary": "An agentic model for professional knowledge work (finance, law, consulting, operations), RL-trained on GLM-5.3 Flash; about $0.13 per task on its maker's internal suite. Available through an OpenAI-compatible API.",
+   "url": "https://www.paperinstruments.com/blog/ultramarine",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-14",
    "title": "Grok Voice 3.0",
    "summary": "xAI's new speech-to-speech model, with sub-second latency, available today in the Voice Agent API at $0.08/min, the same price as Grok Voice 2.0.",
    "url": "https://x.ai/news/grok-voice-3",
@@ -84,6 +161,13 @@
    "title": "Gemini 4 Argon",
    "summary": "Google's new frontier model, available via Gemini API, AI Studio and the Gemini app (Pro/Ultra). Intro price $2/$10 per 1M tokens until Nov 30.",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-12",
+   "title": "Meta Muse Wonder and Muse Wonder Full",
+   "summary": "Meta's new frontier models for coding, long-running agents and computer use, with a 1M-token context and active memory. Muse Wonder is on Meta Model API and Muse Code at $4/$20 per 1M tokens; Muse Wonder Full is for Muse Code Power and Maximum Usage subscribers.",
+   "url": "https://research.meta.ai/blog/muse-wonder",
    "type": "model"
   }
  ]
