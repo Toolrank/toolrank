@@ -359,8 +359,12 @@ def head(title, desc, path, ld, otype="website"):
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="apple-mobile-web-app-title" content="ToolRank"><meta name="twitter:title" content="{E(title)}"><meta name="twitter:description" content="{E(desc)}">
 <script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@graph": ld}, ensure_ascii=False)}</script><!--/SEO-->"""
 def doc(headblock, body, extra_head=""):
+    skip = ""  # keyboard / screen-reader users can jump past the nav to the page's <main id="main">
+    if "<main" in body:
+        if 'id="main"' not in body: body = re.sub(r"<main(?=[\s>])", '<main id="main"', body, count=1)
+        skip = '<a class="skip" href="#main">Skip to content</a>'
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n{headblock}{FONTS}'
-            f'<link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/ev.css">{extra_head}</head><body>\n{NAV}\n{body}\n{FOOT}</body></html>\n')
+            f'<link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/ev.css">{extra_head}</head><body>\n{skip}{NAV}\n{body}\n{FOOT}</body></html>\n')
 
 APPCAT = {"ai-assistants": "UtilitiesApplication", "coding": "DeveloperApplication", "image": "DesignApplication", "video": "MultimediaApplication",
           "writing": "UtilitiesApplication", "voice-audio": "MultimediaApplication", "automation": "BusinessApplication", "research": "ReferenceApplication",

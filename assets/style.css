@@ -235,3 +235,4 @@ h2.mid{font-size:clamp(32px,4.6vw,56px);letter-spacing:-.05em;line-height:1;marg
 .band.light .note p{color:#334155}
 .band.light .cta{--txt:#e2e8f0;--mut:#b6c2d3;color:var(--txt)}.band.light .cta h2{color:#fff}
 .tag.lp{color:#fff;background:var(--acc);border-color:var(--acc);text-transform:none}.band.light .tag.lp{color:#fff;border-color:var(--acc)}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;padding:10px 16px;border-radius:10px;background:var(--btn);color:#fff;font-weight:600;transition:top .15s}.skip:focus{top:12px;color:#fff}
