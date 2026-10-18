@@ -1,6 +1,6 @@
 # ToolRank
 
-> Confused by AI? Editorial rankings of AI tools by use case. Last updated 2026-10-18. Rankings are editorial; featured placements are labelled. Launch offer: free for the first 100 tools (including featured placement); after that, free listing plus paid options at founding prices.
+> ToolRank is a Sydney-based studio that builds websites and web apps for small businesses, bands and startups: fixed prices, 1-2 week builds, full ownership (domain, code, accounts) handed over. Packages: https://toolrank.io/studio/ (Starter site A$1,200, Business site A$2,200, Web app MVP from A$4,900, Care plan A$49/month). Contact: hello@toolrank.io. ToolRank also publishes free, independent AI tool rankings by use case. Last updated 2026-10-18. Rankings are editorial; paid builds and sponsorships never affect rank; featured placements are labelled. Launch offer: free for the first 100 tools (including featured placement); after that, free listing plus paid options at founding prices.
 
 ## Categories
 

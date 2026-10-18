@@ -11,11 +11,11 @@ N = json.loads((ROOT/"data/new-this-week.json").read_text())
 UPD = D["updated"]; E = html.escape
 LOGO = '<a class="logo" href="/"><img class="mark" src="/assets/logo.svg" alt="" width="46" height="28">Tool<b>Rank</b></a>'
 SAMEAS = ["https://x.com/ToolRank_io", "https://www.instagram.com/toolrank.io/"]  # official ToolRank social/profile URLs
-ORG_DESC = "ToolRank publishes editorial rankings and side-by-side comparisons of AI tools by use case, with pricing and limits checked against vendor pages."
+ORG_DESC = "ToolRank is a Sydney-based studio that builds websites and web apps for small businesses, bands and startups, at fixed prices with full ownership handed over. ToolRank also publishes free, independent AI tool rankings; paid builds and sponsorships never affect rank."
 ORG = {"@type": "Organization", "@id": BASE+"/#org", "name": "ToolRank", "url": BASE+"/", "description": ORG_DESC,
        "logo": {"@type": "ImageObject", "url": BASE+"/assets/icon-512.png", "width": 512, "height": 512},
        "publishingPrinciples": BASE+"/methodology/", "sameAs": SAMEAS}
-SITE = {"@type": "WebSite", "@id": BASE+"/#website", "name": "ToolRank", "url": BASE+"/", "publisher": {"@id": BASE+"/#org"},
+SITE = {"@type": "WebSite", "@id": BASE+"/#website", "name": "ToolRank", "url": BASE+"/", "description": "Website and web app builds by ToolRank, plus free, independent AI tool rankings.", "publisher": {"@id": BASE+"/#org"},
         "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": BASE+"/?q={search_term_string}"},
                             "query-input": "required name=search_term_string"}}
 REPO = "Toolrank/toolrank"
@@ -318,8 +318,8 @@ def ensure_fonts():
 FONTS = ('<!--FONTS--><link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/sora.woff2" as="font" type="font/woff2" crossorigin>'
          '<style>' + "".join(f'@font-face{{font-family:{fam};font-style:normal;font-weight:{lo} {hi};font-display:swap;src:url(/assets/fonts/{n}.woff2) format("woff2");unicode-range:{FONT_UNI}}}'
                              for n, fam, lo, hi in (("inter", "Inter", 400, 700), ("sora", "Sora", 600, 800))) + '</style><!--/FONTS-->')
-MENU = [("/#browse", "Categories"), ("/#trending", "Trending"), ("/compare/", "Compare"), ("/methodology/", "How we rank"), ("/reviews.html", "Reviews"), ("/services.html", "For makers"), ("/submit.html", "Submit a tool")]
-NAV = (f'<header class="top"><div class="bar">{LOGO}<nav aria-label="Main"><a href="/#browse">Categories</a><a href="/#trending">Trending</a>'
+MENU = [("/studio/", "Build with us"), ("/#browse", "Categories"), ("/#trending", "Trending"), ("/compare/", "Compare"), ("/methodology/", "How we rank"), ("/reviews.html", "Reviews"), ("/services.html", "For makers"), ("/submit.html", "Submit a tool")]
+NAV = (f'<header class="top"><div class="bar">{LOGO}<nav aria-label="Main"><a href="/studio/"><b>Build with us</b></a><a href="/#browse">Categories</a><a href="/#trending">Trending</a>'
        f'<a href="/compare/">Compare</a><a href="/methodology/">How we rank</a><a href="/reviews.html">Reviews</a><a href="/services.html" class="hm">For makers</a><a class="btn sm" href="/submit.html">Submit a tool</a></nav>'
        '<div class="mnav"><a class="cpill" href="/compare/">Compare</a><button type="button" class="hb" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><span></span><span></span><span></span></button></div></div>'
        '<nav id="mmenu" class="mmenu" aria-label="Mobile" hidden>' + "".join(f'<a href="{h}">{l}</a>' for h, l in MENU) + '</nav>'
@@ -331,7 +331,7 @@ def NL(cls="", hid="nl"):
             f'<div class="nlf"><a class="btn" href="{NL_URL}" target="_blank" rel="noopener" aria-describedby="{hid}-h">Subscribe free</a></div></div>')
 def FOOT_():
     cl = "".join(f'<a href="/best/{c["id"]}/">{E(c["title"])}</a>' for c in D["categories"])
-    return (f'<footer class="foot"><div class="wrap">{NL("nl-foot", "nlf")}<div class="fg"><div class="fl">{LOGO}<p class="muted">Confused by AI? We&rsquo;ll find the right tool for you. Editorial rankings, updated <time datetime="{UPD}">{UPD}</time>.</p><p class="soc"><a href="https://x.com/ToolRank_io" rel="me noopener" target="_blank" aria-label="ToolRank on X">X</a><a href="https://www.instagram.com/toolrank.io/" rel="me noopener" target="_blank" aria-label="ToolRank on Instagram">Instagram</a></p><p class="pwa-i small" hidden><button type="button" class="pwa-btn" hidden>Install app</button><span class="pwa-hint" hidden>Tap Share then Add to Home Screen</span><button type="button" class="pwa-x" aria-label="Dismiss install option">×</button></p></div>'
+    return (f'<footer class="foot"><div class="wrap">{NL("nl-foot", "nlf")}<div class="fg"><div class="fl">{LOGO}<p class="muted">Websites and web apps, built at fixed prices and handed over in full. Plus free AI tool rankings, updated <time datetime="{UPD}">{UPD}</time>.</p><p class="soc"><a href="https://x.com/ToolRank_io" rel="me noopener" target="_blank" aria-label="ToolRank on X">X</a><a href="https://www.instagram.com/toolrank.io/" rel="me noopener" target="_blank" aria-label="ToolRank on Instagram">Instagram</a></p><p class="pwa-i small" hidden><button type="button" class="pwa-btn" hidden>Install app</button><span class="pwa-hint" hidden>Tap Share then Add to Home Screen</span><button type="button" class="pwa-x" aria-label="Dismiss install option">×</button></p></div>'
             f'<nav class="fc2" aria-label="Categories">{cl}</nav><nav class="fc2" aria-label="ToolRank"><a href="/about/">About</a><a href="/methodology/">How we rank</a><a href="/compare/">Compare tools</a><a href="/claim/">Claim your listing</a><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/sponsor/">Sponsor</a><a href="/studio/">Website &amp; app builds</a><a href="/llms.txt">llms.txt</a></nav></div>'
             f'<p class="si-tag small">ToolRank · Super Intelligence, ranked.</p><p class="muted small">© {UPD[:4]} ToolRank. Some links may become affiliate links; featured placements are labelled. Reviews are user-submitted via GitHub and moderated; they never change the editorial rank.</p></div></footer>')
 FOOT = FOOT_()
@@ -587,13 +587,23 @@ def FRESH():
     return '<p class="fresh"><span class="fl0">Fresh comparisons:</span>' + ''.join(f'<a class="chip" href="/compare/{k}/">{E(cmp_title(ids))}</a>' for k, ids in COMPARES[:6]) + '<a class="btn" href="/compare/">All comparisons →</a><a href="/methodology/">How we rank →</a></p>'
 def home(cats):
     tiles = "".join(tile(c) for c in cats)
-    body = f"""<main id="main"><section class="hero home"><div class="wrap hw">
+    why = [("Modern, fast, mobile-friendly builds", "Clean, quick-loading sites and apps that work well on phones and desktops."), ("Fixed prices", "You get a fixed price and scope in writing before any work starts."),
+           ("Built in 1-2 weeks", "Most builds go from agreed brief to launch in one to two weeks."), ("You own everything", "Domain, code and accounts are in your name and handed over at launch."), ("Sydney-based", "Based in Sydney, working with clients across Australia.")]
+    whyh = "".join(f'<article class="card"><h3>{E(a)}</h3><p class="muted">{E(b)}</p></article>' for a, b in why)
+    body = f"""<main id="main"><section class="hero home studio-hero"><div class="wrap hw">
+<p class="si-eyebrow"><span>ToolRank Studio</span></p>
+<h1>We build websites and web apps <span class="gt">with full ownership handed over.</span></h1>
+<p class="lead">Fixed-price websites and web apps for small businesses, bands and startups. Built in 1&ndash;2 weeks.</p>
+<p class="hcta"><a class="btn" href="{E(QUOTE_MAIL)}">Get a quote</a> <a class="btn ghost" href="/studio/">See packages</a></p></div></section>
+<section class="sec" id="packages"><div class="wrap"><div class="sh"><p class="eyebrow">Packages</p><h2 class="big">Simple, fixed prices.</h2></div><div class="grid">{studio_strip()}</div><p class="muted small">Prices in Australian dollars. <a href="/studio/">Full package details, how it works and FAQ →</a></p></div></section>
+<section class="sec" id="why"><div class="wrap"><div class="sh"><p class="eyebrow">Why us</p><h2 class="big">What you can count on.</h2></div><div class="grid">{whyh}</div><p><a class="btn" href="{E(QUOTE_MAIL)}">Get a quote</a></p></div></section>
+<section class="sec rankhero" id="rankings"><div class="wrap hw">
+<p class="eyebrow">Free: AI tool rankings</p>
 <div class="seg" role="tablist" aria-label="Audience"><span class="ind" aria-hidden="true"></span><button type="button" role="tab" data-tab="you" aria-selected="true">For You</button><button type="button" role="tab" data-tab="business" aria-selected="false">For Business</button><button type="button" role="tab" data-tab="makers" aria-selected="false">For Makers</button></div>
-<p class="si-eyebrow"><span>Super Intelligence, ranked.</span></p>
-<h1>Confused by AI? <span class="gt">We&rsquo;ll find the right tool for you.</span></h1>
+<h2 class="big">Confused by AI? We&rsquo;ll find the right tool for you.</h2>
 <p class="lead" id="tagline">Hand-picked, editorially ranked AI tools across {len(cats)} categories. No fluff.</p>
 <form class="search" id="sf" role="search" action="/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" name="q" type="search" enterkeyhint="search" placeholder="What do you want to do? e.g. edit video" aria-label="Search tools" autocomplete="off"><select id="price" aria-label="Pricing"><option value="">Any price</option><option value="free">Free tier</option><option value="paid">Paid</option></select><button type="submit" class="btn">Search</button></form>
-{stats_html()}{FRESH()}</div></section>
+<p class="muted small">Free and independent. Paid builds and sponsorships never affect rank. <a href="/methodology/">How we rank →</a></p>{stats_html()}{FRESH()}</div></section>
 <div id="dirwrap" class="pane"><section class="sec" id="results" hidden aria-live="polite"><div class="wrap"><div class="sh row"><h2 id="rtitle">Results</h2><button type="button" class="btn ghost sm" id="rclear">Clear</button></div><div class="tgrid" id="rgrid"></div></div></section>
 <section class="sec" id="browse"><div class="wrap"><div class="sh"><p class="eyebrow">Browse</p><h2 class="big">Start with what you want to do.</h2><p class="muted" id="tabnote">Tap a category to see the ranked tools.</p></div>
 <div class="tiles" id="tiles">{tiles}</div></div></section>
@@ -605,8 +615,9 @@ def home(cats):
 </main><script src="/assets/app.js"></script>"""
     ild = [ORG, SITE] + [{"@type": "ItemList", "name": "Best AI tools: " + c["title"], "url": f"{BASE}/best/{c['id']}/",
                            "itemListElement": [{"@type": "ListItem", "position": i, "name": t["name"], "url": t["url"]} for i, t in enumerate(c["tools"], 1)]} for c in cats]
-    return doc(head("ToolRank: the best AI tools ranked by use case (" + UPD[:4] + ")",
-                    f"Confused by AI? Editorial rankings of {NT} AI tools across {len(cats)} categories, with pricing and limits checked against vendor pages. Updated {UPD}.", "/", ild), body)
+    return doc(head("ToolRank: website and web app builds, plus AI tool rankings",
+                    "Fixed-price websites and web apps for small businesses, bands and startups, built in 1-2 weeks and fully handed over. Plus free AI tool rankings.", "/", ild), body,
+               '<style>.rankhero{text-align:center;border-top:1px solid #ffffff14}.rankhero .seg,.rankhero .search{margin-left:auto;margin-right:auto}.hcta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.studio-hero .lead{margin-left:auto;margin-right:auto}</style>')
 
 # ================= Evidence layer (profiles, methodology, comparisons, claim) =================
 CHECK_DATE = "2026-10-16"
@@ -777,6 +788,19 @@ def sponsor_page():
     return doc(head("Sponsor ToolRank: labelled placements for AI tools", "Sponsorship options on ToolRank: featured spots, launch spotlights, comparison pages, Launch Kit and newsletter sponsorship. Always labelled; never affects rank.", "/sponsor/", [ORG, SITE]), body)
 
 STUDIO_MAIL = "hello@toolrank.io"
+from urllib.parse import quote as _q
+QUOTE_MAIL = f"mailto:{STUDIO_MAIL}?subject=" + _q("Quote request: website or web app") + "&body=" + _q("Hi ToolRank,\n\nBusiness name:\nWhat I need (website, web app, pages or features):\nDeadline:\nBudget:\n\nThanks")
+STUDIO_FAQ = [
+ ("What do I own?", "Everything: the domain, the code, the content and the accounts it runs on. They are set up in your name and handed over at launch."),
+ ("How long does it take?", "Most builds take 1-2 weeks from an agreed brief. The timeline is confirmed in your quote before work starts."),
+ ("Do you do hosting?", "We set up hosting on your own account, so you are never locked in. Any hosting or domain fees are billed to you directly by the provider. The optional care plan covers updates and fixes."),
+ ("What happens after launch?", "The site or app is yours to run. You can join the care plan (A$49/month, no lock-in) for updates and small fixes, or ask us to quote new work. The Web app MVP includes 30 days of bug fixes."),
+ ("How do I pay?", "A 50% deposit to start and 50% on handover, by bank transfer or card invoice."),
+]
+def studio_strip():
+    c = "".join(f'<article class="card plan"><h3>{E(n)}</h3><div class="price">{E(pr)}</div><p>{E(d)}</p><p class="small"><b>Full ownership handed over: domain, code, accounts.</b></p></article>' for n, pr, _, d in STUDIO_PKGS)
+    c += '<article class="card plan"><h3>Care plan</h3><div class="price">A$49/month</div><p>Updates, monitoring, backups and up to 30 minutes of small fixes a month. No lock-in.</p></article>'
+    return c
 STUDIO_PKGS = [
  ("Starter site", "A$1,200", "fixed price", "Up to 3 pages, for a band, sole trader, event or side project. Mobile-friendly, contact link, basic search setup, live on your own domain."),
  ("Business site", "A$2,200", "fixed price", "Up to 5 pages for a small business. Enquiry form, basic on-page SEO, Google Business Profile and Search Console set up."),
@@ -788,28 +812,29 @@ def studio_page():
     cards = "".join(f'<article class="card plan"><h3>{E(n)}</h3><div class="price">{E(pr)}</div><span class="tag">{E(t)}</span><p>{E(d)}</p>{own}<a class="btn" href="{mail}">Ask about {E(n)}</a></article>' for n, pr, t, d in STUDIO_PKGS)
     cards += (f'<article class="card plan"><h3>Care plan</h3><div class="price">A$49/month</div><span class="tag">no lock-in</span><p>Updates, uptime monitoring, backups, security fixes and up to 30 minutes of small changes or fixes each month. Cancel any time.</p>'
               f'<p><b>Your site stays on your own accounts.</b> Hosting and domain fees, if any, are billed to you directly by the provider.</p><a class="btn ghost" href="{mail}">Ask about care</a></article>')
-    body = f"""<main><section class="hero sub"><div class="wrap"><h1>Website &amp; app builds by ToolRank Studio</h1><p class="lead">Fixed-price websites and simple web apps for small businesses, bands and founders. Built in 1&ndash;2 weeks, then handed over to you in full.</p><p><a class="btn" href="{mail}">Email {STUDIO_MAIL}</a></p></div></section>
+    body = f"""<main><section class="hero sub"><div class="wrap"><h1>Website &amp; app builds by ToolRank Studio</h1><p class="lead">Fixed-price websites and simple web apps for small businesses, bands and founders. Built in 1&ndash;2 weeks, then handed over to you in full.</p><p><a class="btn" href="{E(QUOTE_MAIL)}">Get a quote</a> <a class="btn ghost" href="#faq">FAQ</a></p></div></section>
 <section class="sec"><div class="wrap"><h2>Packages</h2><div class="grid">{cards}</div><p class="muted small">Prices in Australian dollars. The price and scope are confirmed in writing before work starts. Domain registration and any third-party fees are paid by you, in your name.</p></div></section>
-<section class="sec"><div class="wrap prose"><h2>How it works</h2><ol><li><b>Brief.</b> Email us what you need: pages, features, examples you like and your deadline. We reply with a fixed price and scope.</li><li><b>Build in 1&ndash;2 weeks.</b> You see progress on a private preview link and give feedback before launch.</li><li><b>Handover.</b> We launch on your domain and hand over the domain, code and accounts, with a short guide to running it.</li></ol>
-<h2>Separate from the rankings</h2><p><b>ToolRank Studio is a separate services arm. Studio work never affects ToolRank rankings.</b> Client projects are never listed in the AI tool rankings, and paying for a build does not change any tool&rsquo;s position, verdict or listed limitations. Rankings follow only the criteria on <a href="/methodology/">How we rank</a>.</p>
-<h2>Contact</h2><p>Email <a href="{mail}">{STUDIO_MAIL}</a> with a short brief. Based in Sydney, working with clients across Australia.</p></div></section></main>"""
+<section class="sec" id="faq"><div class="wrap prose"><h2>How it works</h2><ol><li><b>Brief.</b> Email us what you need: pages, features, examples you like and your deadline. We reply with a fixed price and scope.</li><li><b>Build in 1&ndash;2 weeks.</b> You see progress on a private preview link and give feedback before launch.</li><li><b>Handover.</b> We launch on your domain and hand over the domain, code and accounts, with a short guide to running it.</li></ol>
+<h2>Separate from the rankings</h2><p><b>ToolRank Studio is a separate services arm. Studio work never affects ToolRank rankings.</b> Client projects are never listed in the rankings, and paying for a build does not change any tool&rsquo;s position, verdict or listed limitations. Rankings follow only the criteria on <a href="/methodology/">How we rank</a>.</p>
+<h2>Frequently asked questions</h2>{''.join(f'<details><summary><h3>{E(a)}</h3></summary><p>{E(b)}</p></details>' for a, b in STUDIO_FAQ)}</div></section>
+<section class="sec" id="quote"><div class="wrap"><div class="cta big"><div><h2>Get a quote</h2><p>Email us your business name, what you need, your deadline and your budget. We reply with a fixed price and scope. Based in Sydney, working with clients across Australia.</p></div><a class="btn" href="{E(QUOTE_MAIL)}">Get a quote</a></div></div></section></main>"""
     ld = [ORG, SITE, {"@type": "Service", "name": "ToolRank Studio: website and web app builds", "url": BASE+"/studio/", "provider": {"@id": BASE+"/#org"}, "areaServed": "AU", "serviceType": "Website and web app development",
-          "offers": [{"@type": "Offer", "name": n, "price": re.sub(r"[^0-9]", "", pr), "priceCurrency": "AUD", "description": d} for n, pr, _, d in STUDIO_PKGS] + [{"@type": "Offer", "name": "Care plan", "price": "49", "priceCurrency": "AUD", "description": "Monthly updates, monitoring, backups and small fixes."}]}]
+          "description": "Fixed-price websites and web apps, built in 1-2 weeks with full ownership handed over.", "offers": [{"@type": "Offer", "name": n, "price": re.sub(r"[^0-9]", "", pr), "priceCurrency": "AUD", "description": d} for n, pr, _, d in STUDIO_PKGS] + [{"@type": "Offer", "name": "Care plan", "price": "49", "priceCurrency": "AUD", "description": "Monthly updates, monitoring, backups and small fixes."}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": a, "acceptedAnswer": {"@type": "Answer", "text": b}} for a, b in STUDIO_FAQ]}]
     return doc(head("Website & app builds by ToolRank Studio | ToolRank", "Fixed-price websites and web app MVPs from ToolRank Studio, built in 1-2 weeks with full ownership handed over. Separate from ToolRank rankings.", "/studio/", ld), body)
 
 def about_page():
     nv = sum(1 for _, _, t in ALLT if verified(t))
     body = f"""<main><section class="hero sub"><div class="wrap"><h1>About ToolRank</h1><p class="lead">{E(ORG_DESC)}</p></div></section>
 <section class="sec"><div class="wrap prose">
-<h2>What ToolRank is</h2><p>ToolRank is an independent directory of AI tools. Each category page ranks tools for one job, such as coding, image generation or customer support, so you can see which tool we think does that job best and why.</p>
+<h2>What ToolRank is</h2><p>ToolRank builds websites and web apps for small businesses, bands and startups, at fixed prices with full ownership handed over. See <a href="/studio/">packages and how it works</a>.</p><p>ToolRank also publishes a free, independent directory of AI tools. Each category page ranks tools for one job, such as coding, image generation or customer support, so you can see which tool we think does that job best and why.</p>
 <h2>What we cover</h2><p>As of {fmt_date(CHECK_DATE)}, ToolRank ranks {NT} tools across {len(D['categories'])} categories and publishes {len(COMPARES)} head-to-head comparison pages. {nv} tool profiles have pricing, free-tier limits and platforms checked against the vendor&rsquo;s own pages, with sources and the check date listed on each profile. Profiles we have not checked yet say &ldquo;Not yet verified&rdquo; instead of guessing.</p>
 <h2>How rankings work</h2><p>Rankings are editorial. Capability and reliability on the core job weigh more than popularity. The full criteria are on <a href="/methodology/">How we rank</a>.</p>
-<h2>How ToolRank is funded</h2><p>Listing is free. Makers can buy clearly labelled placements and services, listed with prices on the <a href="/services.html">services page</a>. Some outbound links may become affiliate links. Paid placements and affiliate links never change a tool&rsquo;s rank.</p>
+<h2>How ToolRank is funded</h2><p>ToolRank is funded mainly by paid <a href="/studio/">website and web app builds</a>. Listing is free. Makers can buy clearly labelled placements and services, listed with prices on the <a href="/services.html">services page</a>. Some outbound links may become affiliate links. Paid builds, paid placements and affiliate links never change a tool&rsquo;s rank. Client projects are never listed in the rankings.</p>
 <h2>Reviews and corrections</h2><p>User reviews are submitted through public GitHub issues and moderated before they appear. They are shown next to rankings but do not move them. Vendors can <a href="/claim/">claim a listing</a> for free to correct facts, with a link to their own pricing or docs page.</p>
 <h2>Contact</h2><p>The fastest way to reach us is a <a href="https://github.com/{REPO}/issues/new" target="_blank" rel="noopener">GitHub issue</a>. To suggest a tool, use <a href="/submit.html">Submit a tool</a>.</p><p>Follow ToolRank: <a href="https://x.com/ToolRank_io" rel="me noopener" target="_blank">X</a> · <a href="https://www.instagram.com/toolrank.io/" rel="me noopener" target="_blank">Instagram</a>.</p>
 <p class="muted small">Last updated {fmt_date(CHECK_DATE)}.</p></div></section></main>"""
     ld = [ORG, SITE, {"@type": "AboutPage", "url": BASE+"/about/", "name": "About ToolRank", "dateModified": CHECK_DATE, "about": {"@id": BASE+"/#org"}, "mainEntity": {"@id": BASE+"/#org"}}]
-    return doc(head("About ToolRank: independent AI tool rankings", "What ToolRank is, what it covers, how rankings work, how the site is funded and how to send corrections or reviews.", "/about/", ld), body)
+    return doc(head("About ToolRank: web builds and free AI tool rankings", "ToolRank builds websites and web apps with full ownership handed over, and publishes free, independent AI tool rankings. How it works and how it is funded.", "/about/", ld), body)
 
 def claim_page():
     url = f"https://github.com/{REPO}/issues/new?template=claim-listing.yml"
@@ -1132,7 +1157,7 @@ def main():
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Perplexity-User", "Google-Extended", "Googlebot", "Bingbot", "Applebot", "Applebot-Extended"]
     (ROOT/"robots.txt").write_text("# ToolRank: search engines and AI crawlers are welcome.\n" + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) +
                                    f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
-    L = [f"# ToolRank\n\n> Confused by AI? Editorial rankings of AI tools by use case. Last updated {UPD}. Rankings are editorial; featured placements are labelled. Launch offer: free for the first 100 tools (including featured placement); after that, free listing plus paid options at founding prices.\n\n## Categories\n"]
+    L = [f"# ToolRank\n\n> ToolRank is a Sydney-based studio that builds websites and web apps for small businesses, bands and startups: fixed prices, 1-2 week builds, full ownership (domain, code, accounts) handed over. Packages: {BASE}/studio/ (Starter site A$1,200, Business site A$2,200, Web app MVP from A$4,900, Care plan A$49/month). Contact: {STUDIO_MAIL}. ToolRank also publishes free, independent AI tool rankings by use case. Last updated {UPD}. Rankings are editorial; paid builds and sponsorships never affect rank; featured placements are labelled. Launch offer: free for the first 100 tools (including featured placement); after that, free listing plus paid options at founding prices.\n\n## Categories\n"]
     L += [f"\nAudiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). {NT} tools ranked across {len(cats)} categories; {len(R)} approved user reviews.\n"]
     L += [f"- [{c['title']}]({BASE}/best/{c['id']}/): {c['blurb']} {len(c['tools'])} tools; #1: {c['tools'][0]['name']}." for c in cats]
     def LLM_EV(): return (f"- [How we rank]({BASE}/methodology/): editorial, evidence-based; sources and check dates on every tool profile at {BASE}/tools/<slug>/.\n- [Compare tools (interactive)]({BASE}/compare/)\n" + "".join(f"- [{cmp_title(ids)}]({BASE}/compare/{k}/)\n" for k, ids in COMPARES) + f"- [Claim your listing (free)]({BASE}/claim/)\n")
