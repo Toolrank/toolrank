@@ -145,3 +145,82 @@ body:has(.nl-home) .nl-foot{display:none}
 @media(max-width:560px){.nl input{flex:none;width:100%}}
 .nlf{flex:0 0 auto;max-width:none}.nl-compact .nlf .btn{width:100%}
 @media(max-width:560px){.nlf{width:100%}}
+/* ===== v3 restyle: bold display type, full-bleed bands, crisp cards (ToolRank navy/blue) ===== */
+:root{--hf:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--r:14px;--bg:#0a1020;--bg2:#0e1729;--card:#0f1a2f;--line:#1f2b40;--lt:#f4f7fc;--band:clamp(72px,10vw,140px)}
+h1,h2,h3{font-family:var(--hf);font-weight:700}
+h1{letter-spacing:-.045em}h2{letter-spacing:-.035em}
+h2.big{font-size:clamp(36px,6.2vw,76px);font-weight:700;letter-spacing:-.05em;line-height:.98;max-width:18ch}
+.eyebrow{font-weight:700;letter-spacing:.16em;font-size:12px}
+.si-eyebrow span{font-family:var(--hf)}.sipick{font-family:var(--hf)}
+/* nav: minimal, solid, prominent CTA */
+.top{background:#0a1020f2;border-bottom:1px solid #ffffff12}
+.bar{max-width:1280px;padding:14px 24px}.wrap{max-width:1280px;padding:0 24px}
+.top nav{gap:26px}.top nav a{font-size:14px;font-weight:500;color:#aab6c8}
+.top nav a.nb{color:#fff;font-weight:700}
+.top nav .btn.sm{padding:10px 18px;font-size:14px}
+.logo{font-family:var(--hf);font-weight:800;letter-spacing:-.04em}
+/* buttons: crisp, squarer */
+.btn{border-radius:10px;box-shadow:none;font-weight:700;letter-spacing:-.005em}
+.btn:hover{box-shadow:0 8px 24px #2563eb40}
+.btn.xl{padding:16px 26px;font-size:16px}
+.btn.ghost{background:transparent;border:1px solid #ffffff33}.btn.ghost:hover{background:#ffffff10}
+.cpill{border-radius:10px;box-shadow:none}
+/* bands */
+.band{padding:var(--band) 0;position:relative}
+.band.alt{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.band.light{--bg:var(--lt);--bg2:#e9eef7;--card:#fff;--line:#d5deec;--txt:#0a1020;--mut:#4a5870;--acc2:#1d4ed8;background:var(--lt);color:var(--txt)}
+.band.light a:not(.btn){color:#1d4ed8}.band.light a:not(.btn):hover{color:#0a1020;text-decoration:underline}
+.band.light .card p,.band.light .faq p,.band.light .prose p,.band.light .prose li{color:#334155}
+.band.light .card{box-shadow:0 1px 2px #0a10200d}.band.light .card:hover{border-color:#93b4ef}
+.band.light .btn.ghost{color:#0a1020!important;border-color:#b8c6dc}.band.light .btn.ghost:hover{background:#e9eef7}
+.band.light .tag{color:#4a5870;border-color:#c9d4e6}
+.band.light h2.big,.band.light h3{color:#0a1020}
+.band .sh{margin-bottom:clamp(32px,4vw,56px)}
+.band + .band{border-top:0}
+/* hero: generous, left-aligned, huge display type, faint vertical grid */
+.hero.studio-hero{text-align:left;min-height:min(86vh,860px);display:flex;align-items:center;padding:clamp(72px,12vw,150px) 0 clamp(56px,8vw,100px);background:linear-gradient(90deg,#ffffff08 1px,transparent 1px) 0 0/calc(100%/6) 100%,radial-gradient(80% 70% at 85% 10%,#2563eb2e,transparent 60%),var(--bg)}
+.hero.studio-hero .wrap{width:100%}
+.hero.studio-hero h1{font-size:clamp(42px,7.2vw,108px);line-height:.96;letter-spacing:-.055em;max-width:17ch;margin:0 0 .4em}
+.hero.studio-hero .lead{margin:0 0 36px;max-width:56ch;color:#c3cddb}
+.hero.sub.studio-hero{min-height:0}
+.hero.sub.studio-hero h1{font-size:clamp(40px,7.2vw,104px)}
+.hero.home::after{display:none}
+.hcta{display:flex;gap:12px;flex-wrap:wrap;margin:0}.studio-hero .hcta,.hcta.l{justify-content:flex-start}.hcta.l{margin-top:clamp(32px,4vw,48px)}
+/* KPI / stat blocks */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);margin:clamp(48px,7vw,88px) 0 0;border-top:1px solid #ffffff1f}
+.kpis div{padding:22px 24px 0 0;border-right:1px solid #ffffff14;margin-right:24px}.kpis div:last-child{border:0;margin:0}
+.kpis dt{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#93a3ba;font-weight:600;margin:0 0 8px}
+.kpis dd{margin:0;font:700 clamp(22px,2.6vw,34px)/1.1 var(--hf);letter-spacing:-.035em;color:#fff}
+@media(max-width:760px){.kpis{grid-template-columns:1fr 1fr}.kpis div:nth-child(2){border:0;margin:0}.kpis div{padding-bottom:18px}}
+/* feature blocks */
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.feats.f3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.feat{padding:clamp(24px,3vw,40px);border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:12px;min-height:220px}
+.feat .fn{font:700 13px var(--hf);color:var(--acc2);letter-spacing:.1em}
+.feat h3{font-size:clamp(22px,2.4vw,30px);letter-spacing:-.035em;line-height:1.05;margin:auto 0 0}
+.feat p{margin:0;color:var(--mut);font-size:15px}
+.note{margin-top:clamp(40px,5vw,64px);padding:24px 28px;border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:var(--r);background:var(--card);max-width:860px}.note p{margin:0;color:#cbd5e1}.note h3{margin:0 0 8px}
+/* cards: crisp, subtle borders */
+.card{border-radius:var(--r);padding:24px}
+.plan .price{font:700 clamp(30px,3.4vw,40px)/1 var(--hf);letter-spacing:-.04em;margin:4px 0}
+.cta{border-radius:var(--r);background:radial-gradient(120% 140% at 0% 0%,#2563eb33,transparent 60%),#0e1729;border-color:#2563eb55}
+.cta.big h2{font-size:clamp(32px,5vw,60px);letter-spacing:-.05em;line-height:1}
+.fcard,.panel,.trows,.nl,.tile{border-radius:var(--r)}
+/* rankings band (secondary) */
+.rankhero{text-align:center}.rankhero .seg{margin-left:auto;margin-right:auto}.rankhero h2.big{margin-left:auto;margin-right:auto;font-size:clamp(30px,4.6vw,56px)}.rankhero .lead{margin-left:auto;margin-right:auto}
+/* faq in bands */
+.band.faq details{border-top:1px solid var(--line);padding:18px 0}.band.faq details:last-child{border-bottom:1px solid var(--line)}.band.faq summary{cursor:pointer;list-style:none}.band.faq summary h3{display:inline;font-size:clamp(18px,2vw,22px)}
+/* sub heroes site-wide: bigger, tighter */
+.hero.sub{padding:clamp(64px,10vw,128px) 0 clamp(24px,4vw,40px)}
+.hero.sub h1,.ch h1{font-size:clamp(38px,6.6vw,84px);line-height:1;letter-spacing:-.05em}
+.sec{padding-top:clamp(56px,8vw,112px)}
+/* footer: clean link columns */
+.foot{border-top:1px solid var(--line);background:#080d1a;padding-top:clamp(56px,8vw,96px)}
+.fg{grid-template-columns:1.3fr 1fr 2fr 1fr;gap:40px}
+.fcol{display:flex;flex-direction:column;gap:6px}.fcol a{color:var(--mut);font-size:14.5px}.fcol a:hover,.fc2 a:hover{color:#fff}
+.fh{grid-column:1/-1;margin:0 0 8px;font:700 12px var(--hf);letter-spacing:.16em;text-transform:uppercase;color:#e2e8f0}
+@media(max-width:900px){.fg{grid-template-columns:1fr 1fr}.fl{grid-column:1/-1}}
+@media(max-width:560px){.fg{grid-template-columns:1fr}.fc2,.fc2:last-child{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.top nav a:not(.btn){display:none}.top nav a[href="/reviews.html"]{display:none}.hero.studio-hero{min-height:0}}
+@media(max-width:760px){.top nav[aria-label=Main]{display:none}.mnav{display:flex}}
+.band.faq .wrap.prose{max-width:1280px}.band.faq details{max-width:900px}

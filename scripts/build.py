@@ -315,13 +315,12 @@ def ensure_fonts():
         opt = subset.Options(); opt.flavor = "woff2"; opt.layout_features = ["kern", "liga", "calt", "tnum"]; opt.name_IDs = ["*"]
         sb = subset.Subsetter(opt); sb.populate(unicodes=subset.parse_unicodes(FONT_UNI)); sb.subset(f)
         f.flavor = "woff2"; f.save(str(out))
-FONTS = ('<!--FONTS--><link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/sora.woff2" as="font" type="font/woff2" crossorigin>'
+FONTS = ('<!--FONTS--><link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>'
          '<style>' + "".join(f'@font-face{{font-family:{fam};font-style:normal;font-weight:{lo} {hi};font-display:swap;src:url(/assets/fonts/{n}.woff2) format("woff2");unicode-range:{FONT_UNI}}}'
-                             for n, fam, lo, hi in (("inter", "Inter", 400, 700), ("sora", "Sora", 600, 800))) + '</style><!--/FONTS-->')
-MENU = [("/studio/", "Build with us"), ("/#browse", "Categories"), ("/#trending", "Trending"), ("/compare/", "Compare"), ("/methodology/", "How we rank"), ("/reviews.html", "Reviews"), ("/services.html", "For makers"), ("/submit.html", "Submit a tool")]
-NAV = (f'<header class="top"><div class="bar">{LOGO}<nav aria-label="Main"><a href="/studio/"><b>Build with us</b></a><a href="/#browse">Categories</a><a href="/#trending">Trending</a>'
-       f'<a href="/compare/">Compare</a><a href="/methodology/">How we rank</a><a href="/reviews.html">Reviews</a><a href="/services.html" class="hm">For makers</a><a class="btn sm" href="/submit.html">Submit a tool</a></nav>'
-       '<div class="mnav"><a class="cpill" href="/compare/">Compare</a><button type="button" class="hb" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><span></span><span></span><span></span></button></div></div>'
+                             for n, fam, lo, hi in (("inter", "Inter", 400, 700),)) + '</style><!--/FONTS-->')
+MENU = [("/studio/", "Build with us"), ("/studio/#quote", "Get a quote"), ("/#browse", "Categories"), ("/#trending", "Trending"), ("/compare/", "Compare"), ("/methodology/", "How we rank"), ("/reviews.html", "Reviews"), ("/services.html", "For makers"), ("/submit.html", "Submit a tool")]
+NAV = (f'<header class="top"><div class="bar">{LOGO}<nav aria-label="Main"><a href="/studio/" class="nb">Build with us</a><a href="/#browse">Rankings</a><a href="/compare/">Compare</a><a href="/methodology/">How we rank</a><a href="/reviews.html">Reviews</a><a href="/submit.html" class="hm">Submit a tool</a><a class="btn sm" href="/studio/#quote">Get a quote</a></nav>'
+       '<div class="mnav"><a class="cpill" href="/studio/#quote">Get a quote</a><button type="button" class="hb" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu"><span></span><span></span><span></span></button></div></div>'
        '<nav id="mmenu" class="mmenu" aria-label="Mobile" hidden>' + "".join(f'<a href="{h}">{l}</a>' for h, l in MENU) + '</nav>'
        '<script>(function(){var b=document.querySelector(".hb"),m=document.getElementById("mmenu");if(!b)return;function s(o){b.setAttribute("aria-expanded",o);b.setAttribute("aria-label",o?"Close menu":"Open menu");m.hidden=!o;document.documentElement.classList.toggle("mopen",o)}'
        'b.onclick=function(){s(m.hidden)};m.addEventListener("click",function(e){if(e.target.closest("a"))s(false)});addEventListener("keydown",function(e){if(e.key==="Escape"&&!m.hidden){s(false);b.focus()}})})()</script></header>')
@@ -332,7 +331,7 @@ def NL(cls="", hid="nl"):
 def FOOT_():
     cl = "".join(f'<a href="/best/{c["id"]}/">{E(c["title"])}</a>' for c in D["categories"])
     return (f'<footer class="foot"><div class="wrap">{NL("nl-foot", "nlf")}<div class="fg"><div class="fl">{LOGO}<p class="muted">Websites, web apps and custom business software, built at fixed prices and handed over in full. Plus free AI tool rankings, updated <time datetime="{UPD}">{UPD}</time>.</p><p class="soc"><a href="https://x.com/ToolRank_io" rel="me noopener" target="_blank" aria-label="ToolRank on X">X</a><a href="https://www.instagram.com/toolrank.io/" rel="me noopener" target="_blank" aria-label="ToolRank on Instagram">Instagram</a></p><p class="pwa-i small" hidden><button type="button" class="pwa-btn" hidden>Install app</button><span class="pwa-hint" hidden>Tap Share then Add to Home Screen</span><button type="button" class="pwa-x" aria-label="Dismiss install option">×</button></p></div>'
-            f'<nav class="fc2" aria-label="Categories">{cl}</nav><nav class="fc2" aria-label="ToolRank"><a href="/about/">About</a><a href="/methodology/">How we rank</a><a href="/compare/">Compare tools</a><a href="/claim/">Claim your listing</a><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/sponsor/">Sponsor</a><a href="/studio/">Website &amp; app builds</a><a href="/llms.txt">llms.txt</a></nav></div>'
+            f'<nav class="fcol" aria-label="Studio"><p class="fh">Studio</p><a href="/studio/">Build with us</a><a href="/studio/#packages">Packages</a><a href="/studio/#how">How it works</a><a href="/studio/#faq">FAQ</a><a href="/studio/#quote">Get a quote</a></nav><nav class="fc2" aria-label="Categories"><p class="fh">AI tool rankings</p>{cl}</nav><nav class="fc2" aria-label="ToolRank"><p class="fh">ToolRank</p><a href="/about/">About</a><a href="/methodology/">How we rank</a><a href="/compare/">Compare tools</a><a href="/claim/">Claim your listing</a><a href="/reviews.html">Reviews</a><a href="/submit.html">Submit a tool</a><a href="/services.html">Services</a><a href="/featured.html">Get featured</a><a href="/sponsor/">Sponsor</a><a href="/studio/">Website &amp; app builds</a><a href="/llms.txt">llms.txt</a></nav></div>'
             f'<p class="si-tag small">ToolRank · Super Intelligence, ranked.</p><p class="muted small">© {UPD[:4]} ToolRank. Some links may become affiliate links; featured placements are labelled. Reviews are user-submitted via GitHub and moderated; they never change the editorial rank.</p></div></footer>')
 FOOT = FOOT_()
 def fit_title(*cands):
@@ -589,15 +588,15 @@ def home(cats):
     tiles = "".join(tile(c) for c in cats)
     why = [("Modern, fast, mobile-friendly builds", "Clean, quick-loading sites and apps that work well on phones and desktops."), ("Fixed prices", "You get a fixed price and scope in writing before any work starts."),
            ("Built in 1-2 weeks", "Most builds go from agreed brief to launch in one to two weeks."), ("You own everything", "Domain, code and accounts are in your name and handed over at launch."), ("Sydney-based", "Based in Sydney, working with clients across Australia.")]
-    whyh = "".join(f'<article class="card"><h3>{E(a)}</h3><p class="muted">{E(b)}</p></article>' for a, b in why)
+    whyh = "".join(f'<article class="feat"><span class="fn">0{i}</span><h3>{E(a)}</h3><p>{E(b)}</p></article>' for i, (a, b) in enumerate(why, 1))
     body = f"""<main id="main"><section class="hero home studio-hero"><div class="wrap hw">
 <p class="si-eyebrow"><span>ToolRank Studio</span></p>
 <h1>We build websites, web apps and business software <span class="gt">with full ownership handed over.</span></h1>
 <p class="lead">Fixed-price websites, web apps and custom business software for small businesses, bands and startups: booking systems, client portals, dashboards and internal tools that run in the browser. Built in 1&ndash;2 weeks.</p>
-<p class="hcta"><a class="btn" href="{E(QUOTE_MAIL)}">Get a quote</a> <a class="btn ghost" href="/studio/">See packages</a></p></div></section>
-<section class="sec" id="packages"><div class="wrap"><div class="sh"><p class="eyebrow">Packages</p><h2 class="big">Simple, fixed prices.</h2></div><div class="grid">{studio_strip()}</div><p class="muted small">Prices in Australian dollars. <a href="/studio/">Full package details, how it works and FAQ →</a></p></div></section>
-<section class="sec" id="why"><div class="wrap"><div class="sh"><p class="eyebrow">Why us</p><h2 class="big">What you can count on.</h2></div><div class="grid">{whyh}</div><p><a class="btn" href="{E(QUOTE_MAIL)}">Get a quote</a></p></div></section>
-<section class="sec rankhero" id="rankings"><div class="wrap hw">
+<p class="hcta"><a class="btn xl" href="{E(QUOTE_MAIL)}">Get a quote</a> <a class="btn ghost xl" href="/studio/">See packages</a></p>{KPIS}</div></section>
+<section class="band light" id="packages"><div class="wrap"><div class="sh"><p class="eyebrow">Packages</p><h2 class="big">Simple, fixed prices.</h2></div><div class="grid">{studio_strip()}</div><p class="muted small">Prices in Australian dollars. <a href="/studio/">Full package details, how it works and FAQ →</a></p></div></section>
+<section class="band" id="why"><div class="wrap"><div class="sh"><p class="eyebrow">Why us</p><h2 class="big">What you can count on.</h2></div><div class="feats">{whyh}</div><p class="hcta l"><a class="btn xl" href="{E(QUOTE_MAIL)}">Get a quote</a></p></div></section>
+<section class="band alt rankhero" id="rankings"><div class="wrap hw">
 <p class="eyebrow">Free: AI tool rankings</p>
 <div class="seg" role="tablist" aria-label="Audience"><span class="ind" aria-hidden="true"></span><button type="button" role="tab" data-tab="you" aria-selected="true">For You</button><button type="button" role="tab" data-tab="business" aria-selected="false">For Business</button><button type="button" role="tab" data-tab="makers" aria-selected="false">For Makers</button></div>
 <h2 class="big">Confused by AI? We&rsquo;ll find the right tool for you.</h2>
@@ -616,8 +615,7 @@ def home(cats):
     ild = [ORG, SITE] + [{"@type": "ItemList", "name": "Best AI tools: " + c["title"], "url": f"{BASE}/best/{c['id']}/",
                            "itemListElement": [{"@type": "ListItem", "position": i, "name": t["name"], "url": t["url"]} for i, t in enumerate(c["tools"], 1)]} for c in cats]
     return doc(head("ToolRank: websites, web apps and business software",
-                    "Fixed-price websites, web apps and business software for small businesses, bands and startups, fully handed over. Plus free AI tool rankings.", "/", ild), body,
-               '<style>.rankhero{text-align:center;border-top:1px solid #ffffff14}.rankhero .seg,.rankhero .search{margin-left:auto;margin-right:auto}.hcta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.studio-hero .lead{margin-left:auto;margin-right:auto}</style>')
+                    "Fixed-price websites, web apps and business software for small businesses, bands and startups, fully handed over. Plus free AI tool rankings.", "/", ild), body)
 
 # ================= Evidence layer (profiles, methodology, comparisons, claim) =================
 CHECK_DATE = "2026-10-16"
@@ -797,6 +795,8 @@ STUDIO_FAQ = [
  ("What happens after launch?", "The site or app is yours to run. You can join the care plan (A$49/month, no lock-in) for updates and small fixes, or ask us to quote new work. The Web app MVP includes 30 days of bug fixes."),
  ("How do I pay?", "A 50% deposit to start and 50% on handover, by bank transfer or card invoice."),
 ]
+KPIS = ('<dl class="kpis"><div><dt>Build time</dt><dd>1&ndash;2 weeks</dd></div><div><dt>Fixed price from</dt><dd>A$1,200</dd></div>'
+        '<div><dt>Yours at handover</dt><dd>Domain, code, accounts</dd></div><div><dt>Based in</dt><dd>Sydney</dd></div></dl>')
 def studio_strip():
     c = "".join(f'<article class="card plan"><h3>{E(n)}</h3><div class="price">{E(pr)}</div><p>{E(d)}</p><p class="small"><b>Full ownership handed over: domain, code, accounts.</b></p></article>' for n, pr, _, d in STUDIO_PKGS)
     c += '<article class="card plan"><h3>Care plan</h3><div class="price">A$49/month</div><p>Updates, monitoring, backups and up to 30 minutes of small fixes a month. No lock-in.</p></article>'
@@ -809,15 +809,19 @@ STUDIO_PKGS = [
 def studio_page():
     own = '<p><b>Full ownership handed over: domain, code, accounts.</b></p>'
     mail = f"mailto:{STUDIO_MAIL}?subject=ToolRank%20Studio%20enquiry"
-    cards = "".join(f'<article class="card plan"><h3>{E(n)}</h3><div class="price">{E(pr)}</div><span class="tag">{E(t)}</span><p>{E(d)}</p>{own}<a class="btn" href="{mail}">Ask about {E(n)}</a></article>' for n, pr, t, d in STUDIO_PKGS)
+    cards = "".join(f'<article class="card plan"><h3>{E(n)}</h3><div class="price">{E(pr)}</div><span class="tag">{E(t)}</span><p>{E(d)}</p>{own}<a class="btn" href="{E(QUOTE_MAIL)}">Get a quote</a></article>' for n, pr, t, d in STUDIO_PKGS)
     cards += (f'<article class="card plan"><h3>Care plan</h3><div class="price">A$49/month</div><span class="tag">no lock-in</span><p>Updates, uptime monitoring, backups, security fixes and up to 30 minutes of small changes or fixes each month. Cancel any time.</p>'
-              f'<p><b>Your site stays on your own accounts.</b> Hosting and domain fees, if any, are billed to you directly by the provider.</p><a class="btn ghost" href="{mail}">Ask about care</a></article>')
-    body = f"""<main><section class="hero sub"><div class="wrap"><h1>Website &amp; app builds by ToolRank Studio</h1><p class="lead">Fixed-price websites, web apps and custom business software for small businesses, bands and startups. Booking systems, client portals, dashboards and internal tools that run in the browser. Built in 1&ndash;2 weeks, then handed over to you in full.</p><p><a class="btn" href="{E(QUOTE_MAIL)}">Get a quote</a> <a class="btn ghost" href="#faq">FAQ</a></p></div></section>
-<section class="sec"><div class="wrap"><h2>Packages</h2><div class="grid">{cards}</div><p class="muted small">Prices in Australian dollars. The price and scope are confirmed in writing before work starts. Domain registration and any third-party fees are paid by you, in your name.</p></div></section>
-<section class="sec" id="faq"><div class="wrap prose"><h2>How it works</h2><ol><li><b>Brief.</b> Email us what you need: pages, features, examples you like and your deadline. We reply with a fixed price and scope.</li><li><b>Build in 1&ndash;2 weeks.</b> You see progress on a private preview link and give feedback before launch.</li><li><b>Handover.</b> We launch on your domain and hand over the domain, code and accounts, with a short guide to running it.</li></ol>
-<h2>Separate from the rankings</h2><p><b>ToolRank Studio is a separate services arm. Studio work never affects ToolRank rankings.</b> Client projects are never listed in the rankings, and paying for a build does not change any tool&rsquo;s position, verdict or listed limitations. Rankings follow only the criteria on <a href="/methodology/">How we rank</a>.</p>
-<h2>Frequently asked questions</h2>{''.join(f'<details><summary><h3>{E(a)}</h3></summary><p>{E(b)}</p></details>' for a, b in STUDIO_FAQ)}</div></section>
-<section class="sec" id="quote"><div class="wrap"><div class="cta big"><div><h2>Get a quote</h2><p>Email us your business name, what you need (website, web app or business software), your deadline and your budget. We reply with a fixed price and scope. Based in Sydney, working with clients across Australia.</p></div><a class="btn" href="{E(QUOTE_MAIL)}">Get a quote</a></div></div></section></main>"""
+              f'<p><b>Your site stays on your own accounts.</b> Hosting and domain fees, if any, are billed to you directly by the provider.</p><a class="btn ghost" href="{E(QUOTE_MAIL)}">Ask about care</a></article>')
+    steps = [("Brief", "Email us what you need: pages, features, examples you like and your deadline. We reply with a fixed price and scope."),
+             ("Build in 1&ndash;2 weeks", "You see progress on a private preview link and give feedback before launch."),
+             ("Handover", "We launch on your domain and hand over the domain, code and accounts, with a short guide to running it.")]
+    stepsh = "".join(f'<article class="feat"><span class="fn">0{i}</span><h3>{a}</h3><p>{b}</p></article>' for i, (a, b) in enumerate(steps, 1))
+    body = f"""<main><section class="hero sub studio-hero"><div class="wrap"><p class="eyebrow">ToolRank Studio</p><h1>Website &amp; app builds by ToolRank Studio</h1><p class="lead">Fixed-price websites, web apps and custom business software for small businesses, bands and startups. Booking systems, client portals, dashboards and internal tools that run in the browser. Built in 1&ndash;2 weeks, then handed over to you in full.</p><p class="hcta l"><a class="btn xl" href="{E(QUOTE_MAIL)}">Get a quote</a> <a class="btn ghost xl" href="#faq">FAQ</a></p>{KPIS}</div></section>
+<section class="band light" id="packages"><div class="wrap"><div class="sh"><p class="eyebrow">Packages</p><h2 class="big">Simple, fixed prices.</h2></div><div class="grid">{cards}</div><p class="muted small">Prices in Australian dollars. The price and scope are confirmed in writing before work starts. Domain registration and any third-party fees are paid by you, in your name.</p></div></section>
+<section class="band" id="how"><div class="wrap"><div class="sh"><p class="eyebrow">How it works</p><h2 class="big">Brief, build, handover.</h2></div><div class="feats f3">{stepsh}</div>
+<div class="note"><h3>Separate from the rankings</h3><p><b>ToolRank Studio is a separate services arm. Studio work never affects ToolRank rankings.</b> Client projects are never listed in the rankings, and paying for a build does not change any tool&rsquo;s position, verdict or listed limitations. Rankings follow only the criteria on <a href="/methodology/">How we rank</a>.</p></div></div></section>
+<section class="band light faq" id="faq"><div class="wrap prose"><p class="eyebrow">FAQ</p><h2 class="big">Frequently asked questions</h2>{''.join(f'<details><summary><h3>{E(a)}</h3></summary><p>{E(b)}</p></details>' for a, b in STUDIO_FAQ)}</div></section>
+<section class="band" id="quote"><div class="wrap"><div class="cta big"><div><h2>Get a quote</h2><p>Email us your business name, what you need (website, web app or business software), your deadline and your budget. We reply with a fixed price and scope. Based in Sydney, working with clients across Australia.</p></div><a class="btn xl" href="{E(QUOTE_MAIL)}">Get a quote</a></div></div></section></main>"""
     ld = [ORG, SITE, {"@type": "Service", "name": "ToolRank Studio: websites, web apps and custom business software", "url": BASE+"/studio/", "provider": {"@id": BASE+"/#org"}, "areaServed": "AU", "serviceType": "Website, web app and custom business software development",
           "description": "Fixed-price websites, web apps and custom business software that runs in the browser, built in 1-2 weeks with full ownership handed over.", "offers": [{"@type": "Offer", "name": n, "price": re.sub(r"[^0-9]", "", pr), "priceCurrency": "AUD", "description": d} for n, pr, _, d in STUDIO_PKGS] + [{"@type": "Offer", "name": "Care plan", "price": "49", "priceCurrency": "AUD", "description": "Monthly updates, monitoring, backups and small fixes."}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": a, "acceptedAnswer": {"@type": "Answer", "text": b}} for a, b in STUDIO_FAQ]}]
     return doc(head("Website & app builds by ToolRank Studio | ToolRank", "Fixed-price websites, web apps and custom business software from ToolRank Studio, built in 1-2 weeks with full ownership handed over.", "/studio/", ld), body)
@@ -1193,7 +1197,7 @@ def main():
         if 'class="hero' in n and "assets/hero.js" not in n: n = n.replace("</body>", '<script defer src="/assets/hero.js"></script></body>', 1)
         n = re.sub(r'(assets/(app\.js|style\.css|hero\.js|ev\.css|compare\.js|pwa\.js))(\?v=[0-9a-f]+)?"', lambda m: f'{m.group(1)}?v={V[m.group(2)]}"', n)
         if n != s: h.write_text(n)
-    pre = ["/", "/offline.html", "/manifest.webmanifest", "/assets/fonts/inter.woff2", "/assets/fonts/sora.woff2", "/assets/logo.svg", "/assets/favicon.svg", "/assets/favicon-32.png",
+    pre = ["/", "/offline.html", "/manifest.webmanifest", "/assets/fonts/inter.woff2", "/assets/logo.svg", "/assets/favicon.svg", "/assets/favicon-32.png",
            "/assets/apple-touch-icon.png", "/assets/icons/icon-192.png", "/assets/icons/icon-512.png", "/assets/icons/icon-512-maskable.png"] + [f"/assets/{a}?v={v}" for a, v in V.items()]
     swv = hashlib.sha1((json.dumps(V, sort_keys=True) + SW_JS + json.dumps(pre)).encode()).hexdigest()[:10]
     (ROOT/"sw.js").write_text(SW_JS.replace("__VERSION__", swv).replace("__PRECACHE__", json.dumps(pre)))
