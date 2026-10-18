@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-19",
  "categories": [
   {
    "id": "ai-assistants",
@@ -23,55 +23,68 @@
      "platforms": [
       "Web",
       "iOS",
-      "Android"
+      "Android",
+      "Mac",
+      "Windows",
+      "Chrome extension"
      ],
      "integrations": [],
      "model_provider": "OpenAI",
      "sources": [
       {
+       "url": "https://learn.chatgpt.com/docs/pricing",
+       "label": "ChatGPT and Codex plan prices (OpenAI docs)",
+       "checked": "2026-10-19"
+      },
+      {
        "url": "https://chatgpt.com/pricing",
-       "label": "ChatGPT pricing",
-       "checked": "2026-10-18"
+       "label": "ChatGPT pricing (plan features)",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://chatgpt.com/download",
+       "label": "Download ChatGPT (desktop and mobile)",
+       "checked": "2026-10-19"
       }
      ],
-     "last_verified": "2026-10-18",
+     "last_verified": "2026-10-19",
      "pricing_detail": {
       "model": "freemium",
-      "starting_price": "",
+      "starting_price": "$8/month (Go)",
       "free_tier": "Free plan: unlimited* everyday text chats, limited messages with uploads (vendor footnotes apply)",
       "tiers": [
        {
         "name": "Free",
         "price": "$0/month",
-        "notes": ""
+        "notes": "Limited uploads, image creation, deep research and Codex"
        },
        {
         "name": "Go",
-        "price": "paid; price not shown in fetched page text",
-        "notes": "More messages, tools and uploads"
+        "price": "$8/month",
+        "notes": "More messages, uploads and image creation; limited Codex; may include ads"
        },
        {
         "name": "Plus",
-        "price": "paid; price not shown in fetched page text",
-        "notes": ""
+        "price": "$20/month",
+        "notes": "Expanded deep research, ChatGPT Work and Codex"
        },
        {
         "name": "Pro",
-        "price": "paid; price not shown in fetched page text",
-        "notes": "Expanded model access"
+        "price": "From $100/month",
+        "notes": "Plans at $100, $200 or $500 per month"
        },
        {
         "name": "Business",
-        "price": "paid; price not shown in fetched page text",
-        "notes": ""
+        "price": "$20/user/month billed annually (2+ users); $25/user/month billed monthly",
+        "notes": "No training on business data by default"
        },
        {
-        "name": "Enterprise",
+        "name": "Enterprise & Edu",
         "price": "Contact sales",
-        "notes": ""
+        "notes": "SCIM, EKM and enterprise controls"
        }
       ],
-      "notes": "Plan names and features verified on the pricing page; paid prices render client-side and could not be read, so they are left unverified."
+      "notes": "USD prices from OpenAI's pricing docs; chatgpt.com/pricing shows region-specific prices client-side. Business needs 2+ users."
      }
     },
     {
@@ -163,7 +176,9 @@
      "platforms": [
       "Web",
       "Android",
-      "iOS"
+      "iOS",
+      "Windows",
+      "macOS"
      ],
      "integrations": [
       "Gmail",
@@ -177,37 +192,52 @@
       {
        "url": "https://gemini.google/subscriptions/",
        "label": "Google AI plans",
-       "checked": "2026-10-16"
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://gemini.google/desktop/",
+       "label": "Gemini for desktop",
+       "checked": "2026-10-19"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-19",
      "pricing_detail": {
       "model": "freemium",
-      "starting_price": "$4.99/month",
-      "free_tier": "$0/month with a Google Account (Flash model, base usage limits)",
+      "starting_price": "$4.99/month (Google AI Plus)",
+      "free_tier": "$0/month with a Google Account (Flash-Lite model, base usage limits)",
       "tiers": [
        {
         "name": "Free",
         "price": "$0/month",
-        "notes": ""
+        "notes": "With a Google Account; Flash-Lite model, image generation and editing, Deep Research, Gemini Live"
        },
        {
-        "name": "Lower paid tier",
+        "name": "Google AI Plus",
         "price": "$4.99/month",
-        "notes": "2x Free usage, 200 Google Flow credits"
+        "notes": "2x Free usage"
        },
        {
-        "name": "AI Pro",
+        "name": "Google AI Pro",
         "price": "$19.99/month",
-        "notes": "4x usage, 1,000 Flow credits, 5 TB storage"
+        "notes": "More access to 3.1 Pro and Deep Research, 1M-token context"
        },
        {
-        "name": "Ultra",
+        "name": "Google AI Ultra",
         "price": "$99.99 or $199.99/month",
-        "notes": "5x / 20x AI Pro usage, 20 TB+ storage"
+        "notes": "5x / 20x AI Pro usage"
+       },
+       {
+        "name": "Gemini Enterprise Business edition",
+        "price": "$21 USD per seat per month",
+        "notes": "For small businesses and teams, up to 300 seats; trial available"
+       },
+       {
+        "name": "Gemini Enterprise Standard / Plus",
+        "price": "From $30 USD per seat per month; contact sales",
+        "notes": "Enterprise IT controls, unlimited seats"
        }
       ],
-      "notes": "US prices shown on the subscriptions page."
+      "notes": "US prices shown on the subscriptions page (Personal and Business tabs). Desktop apps for Windows and macOS."
      }
     },
     {
@@ -286,41 +316,74 @@
      "audience": "consumer",
      "job": "xAI's assistant with chat, voice, image/video generation and real-time X data",
      "why_rank": "Fast-moving assistant bundled with X plans and Cursor, with image and video generation built in.",
-     "main_limitation": "Best models and longer conversations need SuperGrok or higher; prices were not readable on the plans page.",
+     "main_limitation": "The Free plan has limited requests; the latest models, Grok Bot and 4x usage need Premium ($30/month) or above",
      "best_for": "X users who want real-time context plus image/video generation",
      "avoid_if": "You want a clearly documented free usage allowance",
      "platforms": [
-      "Web"
+      "Web",
+      "iOS",
+      "Android"
      ],
      "integrations": [
-      "X"
+      "X",
+      "Cursor"
      ],
      "model_provider": "xAI",
      "sources": [
       {
-       "url": "https://grok.com/plans",
-       "label": "Grok plans",
-       "checked": "2026-10-16"
+       "url": "https://x.ai/pricing",
+       "label": "Grok pricing (xAI)",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://x.ai/grok",
+       "label": "Grok product page",
+       "checked": "2026-10-19"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-19",
      "pricing_detail": {
       "model": "freemium",
-      "starting_price": "",
-      "free_tier": "",
+      "starting_price": "$8/month (Plus)",
+      "free_tier": "Free: $0/month, limited chat and agent requests",
       "tiers": [
        {
-        "name": "SuperGrok",
-        "price": "price not shown in fetched page text",
-        "notes": "5x longer conversations, Expert mode, HD 720p 30s video"
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "Limited AI usage"
        },
        {
-        "name": "SuperGrok Heavy",
-        "price": "price not shown in fetched page text",
-        "notes": "Highest usage, includes X Premium+"
+        "name": "Plus",
+        "price": "$8/month",
+        "notes": "Shared AI usage pool; Grok Chat, Voice, Imagine and Build; Grok API access; X Premium checkmark"
+       },
+       {
+        "name": "Premium",
+        "price": "$30/month",
+        "notes": "4x Plus usage, latest models, image and video generation"
+       },
+       {
+        "name": "Super",
+        "price": "$100/month",
+        "notes": "15x Plus usage"
+       },
+       {
+        "name": "Ultra",
+        "price": "$200/month",
+        "notes": "50x Plus usage"
+       },
+       {
+        "name": "Teams",
+        "price": "$30+/user/month",
+        "notes": "Pooled usage"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom (contact sales)",
+        "notes": ""
        }
       ],
-      "notes": "Plan names and features from grok.com/plans; prices not verifiable from the fetched page."
+      "notes": "Prices exclude taxes (vendor page). Plans bundle X features and Cursor access."
      }
     },
     {
@@ -336,10 +399,10 @@
       {
        "url": "https://mistral.ai/pricing",
        "label": "Le Chat (Mistral) pricing",
-       "checked": "2026-10-18"
+       "checked": "2026-10-19"
       }
      ],
-     "last_verified": "2026-10-18",
+     "last_verified": "2026-10-19",
      "platforms": [
       "Web",
       "iOS",
@@ -411,17 +474,23 @@
      "integrations": [
       "Grok models",
       "Third-party models (billed by usage)",
-      "Bugbot code review"
+      "Bugbot code review",
+      "Slack"
      ],
      "model_provider": "Grok models; third-party models on higher plans (billed by usage)",
      "sources": [
       {
        "url": "https://cursor.com/pricing",
        "label": "Cursor pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://cursor.com/docs/integrations/slack",
+       "label": "Cursor Slack integration docs",
+       "checked": "2026-10-19"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-19",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$8/month (Plus)",
@@ -483,21 +552,28 @@
      "platforms": [
       "Terminal (CLI)"
      ],
-     "integrations": [],
+     "integrations": [
+      "Slack"
+     ],
      "model_provider": "Anthropic",
      "sources": [
+      {
+       "url": "https://claude.com/pricing",
+       "label": "Claude pricing",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://code.claude.com/docs/en/slack",
+       "label": "Claude Code in Slack docs",
+       "checked": "2026-10-19"
+      },
       {
        "url": "https://code.claude.com/docs/en/overview",
        "label": "Claude Code docs",
        "checked": "2026-10-16"
-      },
-      {
-       "url": "https://claude.com/pricing",
-       "label": "Claude pricing",
-       "checked": "2026-10-16"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-19",
      "pricing_detail": {
       "model": "paid",
       "starting_price": "$17/month (via Claude Pro, billed annually)",
@@ -775,7 +851,81 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "bot-blocked (403), known official domain",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://learn.chatgpt.com/docs/pricing",
+       "label": "ChatGPT and Codex plan prices (OpenAI docs)",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://chatgpt.com/pricing",
+       "label": "ChatGPT pricing (plan features)",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://github.com/openai/codex",
+       "label": "Codex CLI GitHub repository",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://learn.chatgpt.com/docs/third-party/slack",
+       "label": "Use ChatGPT in Slack (Codex Cloud delegation)",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Terminal (CLI)",
+      "VS Code",
+      "Cursor",
+      "Windsurf",
+      "Desktop app",
+      "Web"
+     ],
+     "integrations": [
+      "Slack"
+     ],
+     "best_for": "ChatGPT subscribers who want one coding agent across the terminal, IDE, desktop app and cloud",
+     "main_limitation": "Usage limits depend on your ChatGPT plan; Plus and Pro users who hit them must buy extra credits",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$8/month (ChatGPT Go)",
+      "free_tier": "Included in ChatGPT Free with limited Codex access",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "Limited uploads, image creation, deep research and Codex"
+       },
+       {
+        "name": "Go",
+        "price": "$8/month",
+        "notes": "More messages, uploads and image creation; limited Codex; may include ads"
+       },
+       {
+        "name": "Plus",
+        "price": "$20/month",
+        "notes": "Expanded deep research, ChatGPT Work and Codex"
+       },
+       {
+        "name": "Pro",
+        "price": "From $100/month",
+        "notes": "Plans at $100, $200 or $500 per month"
+       },
+       {
+        "name": "Business",
+        "price": "$20/user/month billed annually (2+ users); $25/user/month billed monthly",
+        "notes": "No training on business data by default"
+       },
+       {
+        "name": "Enterprise & Edu",
+        "price": "Contact sales",
+        "notes": "SCIM, EKM and enterprise controls"
+       }
+      ],
+      "notes": "Codex is included in ChatGPT Free, Go, Plus, Pro, Business, Edu and Enterprise plans (vendor docs). The Codex CLI is open source (Apache-2.0). USD prices from OpenAI's pricing docs."
+     }
     },
     {
      "name": "v0",
@@ -1676,7 +1826,44 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://softgen.ai/",
+       "label": "Softgen homepage",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Supabase",
+      "GitHub",
+      "Stripe",
+      "Vercel"
+     ],
+     "best_for": "Founders building a full-stack web app from a plain-English description, with model choice and GitHub export",
+     "main_limitation": "Plan names and the full price ladder were not shown on the homepage (pricing page renders client-side)",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$25/month",
+      "free_tier": "Free trial credits, no credit card required",
+      "tiers": [
+       {
+        "name": "Free trial",
+        "price": "$0 (trial credits)",
+        "notes": "No credit card required"
+       },
+       {
+        "name": "Subscription",
+        "price": "From $25/month",
+        "notes": "12+ models, managed Supabase, GitHub export on every plan; credits roll over on Pro"
+       }
+      ],
+      "notes": "Prices from the vendor homepage comparison; the pricing page could not be read."
+     }
     },
     {
      "name": "Tempo",
@@ -2237,7 +2424,29 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://github.com/nykooi1/vibe-wise",
+       "label": "vibe-wise GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Claude Code plugin",
+      "Codex plugin"
+     ],
+     "integrations": [],
+     "best_for": "Beginners who want to learn how their app is built while an AI agent writes the code",
+     "main_limitation": "A plugin, not an app: you need Claude Code or Codex",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source (MIT)",
+      "tiers": [],
+      "notes": "MIT-licensed repository; free."
+     }
     },
     {
      "name": "scroll-craft",
@@ -2251,7 +2460,30 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://github.com/nateherkai/scroll-craft",
+       "label": "scroll-craft GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Agent skill",
+      "Claude Code plugin",
+      "Codex"
+     ],
+     "integrations": [],
+     "best_for": "Developers using coding agents to build immersive, scroll-driven marketing websites",
+     "main_limitation": "Needs a coding agent that supports skills",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source (MIT)",
+      "tiers": [],
+      "notes": "MIT-licensed repository; free."
+     }
     },
     {
      "name": "CodeRabbit",
@@ -2320,7 +2552,30 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://github.com/shadcn-ui/lint",
+       "label": "lint GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Command line"
+     ],
+     "integrations": [
+      "Tailwind CSS"
+     ],
+     "best_for": "Teams that want coding agents to follow their Tailwind design-system rules",
+     "main_limitation": "Only useful for Tailwind-based design systems",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source (MIT)",
+      "tiers": [],
+      "notes": "MIT-licensed repository from the shadcn/ui team."
+     }
     },
     {
      "name": "Qodo",
@@ -2425,7 +2680,28 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://github.com/dzhng/jevgrep",
+       "label": "jevgrep GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "CLI"
+     ],
+     "integrations": [],
+     "best_for": "Coding agents and developers finding files by describing what the code does",
+     "main_limitation": "A young CLI tool aimed at agent workflows",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source (MIT)",
+      "tiers": [],
+      "notes": "MIT-licensed repository; free."
+     }
     },
     {
      "name": "coucou",
@@ -3085,7 +3361,60 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://gemini.google/subscriptions/",
+       "label": "Google AI plans",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://gemini.google/desktop/",
+       "label": "Gemini for desktop",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web",
+      "Android",
+      "iOS",
+      "Windows",
+      "macOS"
+     ],
+     "integrations": [
+      "Google Flow"
+     ],
+     "best_for": "Generating and editing images by chatting, inside the Gemini app people already use",
+     "main_limitation": "Higher usage limits need a paid Google AI plan",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$4.99/month (Google AI Plus)",
+      "free_tier": "Free: $0/month with a Google Account, image generation and editing included",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "With a Google Account; Flash-Lite model, image generation and editing, Deep Research, Gemini Live"
+       },
+       {
+        "name": "Google AI Plus",
+        "price": "$4.99/month",
+        "notes": "2x Free usage"
+       },
+       {
+        "name": "Google AI Pro",
+        "price": "$19.99/month",
+        "notes": "More access to 3.1 Pro and Deep Research, 1M-token context"
+       },
+       {
+        "name": "Google AI Ultra",
+        "price": "$99.99 or $199.99/month",
+        "notes": "5x / 20x AI Pro usage"
+       }
+      ],
+      "notes": "US prices shown on the subscriptions page. Google Flow includes limited Nano Banana Pro access."
+     }
     },
     {
      "name": "Adobe Firefly",
@@ -3608,7 +3937,31 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://github.com/kaankiziltug/logo-design-skill",
+       "label": "logo-design-skill GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Agent skill",
+      "Claude",
+      "Gemini CLI",
+      "Codex"
+     ],
+     "integrations": [],
+     "best_for": "Designing SVG logos with an AI agent, using a built-in process and a 1,400+ logo reference library",
+     "main_limitation": "Runs inside an AI agent; output quality depends on the model you use",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source (MIT)",
+      "tiers": [],
+      "notes": "MIT-licensed repository; free."
+     }
     },
     {
      "name": "Goldie",
@@ -3622,7 +3975,32 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://github.com/software-mansion-labs/goldie",
+       "label": "goldie GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "CLI",
+      "Agent skill",
+      "Claude Code plugin"
+     ],
+     "integrations": [
+      "argent"
+     ],
+     "best_for": "App developers generating App Store and Google Play screenshots and preview videos with a coding agent",
+     "main_limitation": "Needs Node 20+, ffmpeg and a simulator or emulator; App Store shots need Xcode",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source (MIT)",
+      "tiers": [],
+      "notes": "MIT licence (LICENSE file). Install with npm i -g goldie."
+     }
     }
    ]
   },
@@ -4885,7 +5263,29 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://github.com/edenfunf/reelmimic",
+       "label": "reelmimic GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Claude Code",
+      "Codex"
+     ],
+     "integrations": [],
+     "best_for": "Making a new video in the style of one you like, with an AI agent crew planning and building it",
+     "main_limitation": "Runs through Claude Code or Codex, so you pay for that agent's usage",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source (MIT)",
+      "tiers": [],
+      "notes": "MIT-licensed repository; free."
+     }
     }
    ]
   },
@@ -5265,7 +5665,35 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://lex.page/pricing",
+       "label": "Lex pricing",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Existing Lex users who want a minimal writing editor with premium AI models",
+     "main_limitation": "Lex is no longer accepting new customers (vendor pricing page, checked 19 Oct 2026)",
+     "pricing_detail": {
+      "model": "",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Lex Pro",
+        "price": "Price shown to existing users only (log in)",
+        "notes": "Premium AI models, early access, priority email support"
+       }
+      ],
+      "notes": "Vendor says existing accounts keep working; Pro prices are shown only after login. Lex Teams is an add-on for shared folders.",
+      "free_tier_unverified": true
+     }
     },
     {
      "name": "DeepL Write",
@@ -5383,7 +5811,30 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://github.com/Nanako0129/sepia",
+       "label": "sepia GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Agent skill",
+      "Claude Code plugin",
+      "Codex plugin"
+     ],
+     "integrations": [],
+     "best_for": "Writers who want an agent skill that repairs AI-sounding prose and fiction structure",
+     "main_limitation": "Needs an agent that supports Agent Skills",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source (MIT)",
+      "tiers": [],
+      "notes": "MIT-licensed repository; free."
+     }
     }
    ]
   },
@@ -5409,7 +5860,7 @@
      "job": "AI voice generation, voice cloning, dubbing and speech-to-text",
      "why_rank": "Top-tier voice quality with a free tier and a cheap Starter plan that adds commercial rights.",
      "main_limitation": "Free plan (10k credits/month) has no commercial license; cloning and higher quality need paid tiers.",
-     "best_for": "Creators and developers needing realistic voiceovers or voice agents",
+     "best_for": "Creators and developers needing realistic voiceovers, voice agents or AI-generated music (Eleven Music)",
      "avoid_if": "You need commercial audio for free",
      "platforms": [
       "Web",
@@ -5425,15 +5876,20 @@
       {
        "url": "https://elevenlabs.io/pricing",
        "label": "ElevenLabs pricing",
-       "checked": "2026-10-18"
+       "checked": "2026-10-19"
       },
       {
        "url": "https://elevenlabs.io/mobile",
        "label": "ElevenLabs mobile app",
-       "checked": "2026-10-18"
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://elevenlabs.io/music",
+       "label": "Eleven Music",
+       "checked": "2026-10-19"
       }
      ],
-     "last_verified": "2026-10-18",
+     "last_verified": "2026-10-19",
      "pricing_detail": {
       "model": "freemium",
       "starting_price": "$6/month (Starter)",
@@ -6133,7 +6589,37 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://podcast.adobe.com/en/",
+       "label": "Adobe Podcast homepage",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Adobe Firefly"
+     ],
+     "best_for": "Cleaning up noisy voice recordings and recording or editing podcasts in the browser",
+     "main_limitation": "Premium features come through an Adobe Firefly Pro subscription",
+     "pricing_detail": {
+      "model": "",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Adobe Podcast Premium",
+        "price": "Included with the Adobe Firefly Pro plan (free trial offered)",
+        "notes": "Enhance up to 4 hours a day, files up to 1 GB, bulk upload, video support"
+       }
+      ],
+      "notes": "Free use limits were not stated on the homepage. Firefly Pro price is on Adobe's Firefly plans page.",
+      "free_tier_unverified": true
+     }
     },
     {
      "name": "Krisp",
@@ -6259,7 +6745,32 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.hume.ai/",
+       "label": "Hume AI homepage",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "Voice AI teams measuring and improving voice agents and models (VoiceEQ evaluation, Expression APIs)",
+     "main_limitation": "No pricing on the website; the site now centres on voice AI evaluation",
+     "pricing_detail": {
+      "model": "",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [],
+      "notes": "hume.ai/pricing redirects to the homepage. Pricing Not yet verified.",
+      "free_tier_unverified": true
+     }
     },
     {
      "name": "LALAL.AI",
@@ -6372,10 +6883,10 @@
       {
        "url": "https://www.aiva.ai/pricing",
        "label": "AIVA pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-19"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-19",
      "platforms": [
       "Web",
       "Desktop"
@@ -6419,7 +6930,29 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://github.com/xzf-thu/VoiceMem",
+       "label": "VoiceMem GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Python",
+      "Self-hosted"
+     ],
+     "integrations": [],
+     "best_for": "Developers adding long-term memory and emotion context to voice agents",
+     "main_limitation": "Research-grade infrastructure you host yourself",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source (Apache-2.0)",
+      "tiers": [],
+      "notes": "Apache-2.0 repository; free."
+     }
     }
    ]
   },
@@ -6943,7 +7476,37 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://code.claude.com/docs/en/agent-sdk/overview",
+       "label": "Claude Agent SDK overview",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://github.com/anthropics/claude-agent-sdk-python",
+       "label": "Claude Agent SDK (Python) GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Python framework",
+      "TypeScript framework"
+     ],
+     "integrations": [
+      "MCP",
+      "Claude API"
+     ],
+     "best_for": "Developers embedding Claude Code's agent loop, tools and sessions in their own app",
+     "main_limitation": "Needs a Claude API key; claude.ai logins and rate limits are not allowed for third-party products",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Free SDK (Python repository MIT-licensed); you pay for Claude API usage",
+      "tiers": [],
+      "notes": "Use is governed by Anthropic's Commercial Terms (vendor docs)."
+     }
     },
     {
      "name": "Google ADK",
@@ -7598,7 +8161,32 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://github.com/tigerless-labs/agent-memory",
+       "label": "agent-memory GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Python",
+      "Local"
+     ],
+     "integrations": [
+      "Claude Code",
+      "Codex"
+     ],
+     "best_for": "Giving Claude Code and Codex one shared long-term memory stored as plain Markdown",
+     "main_limitation": "Local tool; you manage the store yourself",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source (MIT)",
+      "tiers": [],
+      "notes": "MIT-licensed repository; no API key needed (vendor README)."
+     }
     },
     {
      "name": "Reef",
@@ -8058,7 +8646,66 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://learn.chatgpt.com/docs/pricing",
+       "label": "ChatGPT and Codex plan prices (OpenAI docs)",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://chatgpt.com/pricing",
+       "label": "ChatGPT pricing (plan features)",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [],
+     "best_for": "Multi-step web research reports from inside ChatGPT",
+     "main_limitation": "Free use is limited; more deep research needs a paid ChatGPT plan",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$8/month (ChatGPT Go)",
+      "free_tier": "ChatGPT Free includes limited deep research",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "Limited uploads, image creation, deep research and Codex"
+       },
+       {
+        "name": "Go",
+        "price": "$8/month",
+        "notes": "More messages, uploads and image creation; limited Codex; may include ads"
+       },
+       {
+        "name": "Plus",
+        "price": "$20/month",
+        "notes": "Expanded deep research, ChatGPT Work and Codex"
+       },
+       {
+        "name": "Pro",
+        "price": "From $100/month",
+        "notes": "Plans at $100, $200 or $500 per month"
+       },
+       {
+        "name": "Business",
+        "price": "$20/user/month billed annually (2+ users); $25/user/month billed monthly",
+        "notes": "No training on business data by default"
+       },
+       {
+        "name": "Enterprise & Edu",
+        "price": "Contact sales",
+        "notes": "SCIM, EKM and enterprise controls"
+       }
+      ],
+      "notes": "Deep research is part of ChatGPT plans. USD prices from OpenAI's pricing docs."
+     }
     },
     {
      "name": "Gemini Deep Research",
@@ -8072,7 +8719,54 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://gemini.google/subscriptions/",
+       "label": "Google AI plans",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web",
+      "Android",
+      "iOS"
+     ],
+     "integrations": [
+      "Gmail",
+      "Google Drive"
+     ],
+     "best_for": "Research reports built from hundreds of web sources, inside the Gemini app",
+     "main_limitation": "More Deep Research use needs Google AI Pro or Ultra",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$4.99/month (Google AI Plus)",
+      "free_tier": "Free: Deep Research is included in the $0 plan with a Google Account",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "With a Google Account; Flash-Lite model, image generation and editing, Deep Research, Gemini Live"
+       },
+       {
+        "name": "Google AI Plus",
+        "price": "$4.99/month",
+        "notes": "2x Free usage"
+       },
+       {
+        "name": "Google AI Pro",
+        "price": "$19.99/month",
+        "notes": "More access to 3.1 Pro and Deep Research, 1M-token context"
+       },
+       {
+        "name": "Google AI Ultra",
+        "price": "$99.99 or $199.99/month",
+        "notes": "5x / 20x AI Pro usage"
+       }
+      ],
+      "notes": "US prices shown on the subscriptions page."
+     }
     },
     {
      "name": "Google AI Mode",
@@ -8729,7 +9423,34 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 OK 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://github.com/Oldcircle/geo-sleuth",
+       "label": "geo-sleuth GitHub repository",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Agent skill",
+      "Claude Code",
+      "Codex",
+      "Cursor",
+      "Gemini CLI"
+     ],
+     "integrations": [
+      "OpenStreetMap"
+     ],
+     "best_for": "Working out where a photo was taken, with the agent showing its evidence",
+     "main_limitation": "Runs inside a coding agent; accuracy depends on the photo",
+     "pricing_detail": {
+      "model": "free",
+      "starting_price": "",
+      "free_tier": "Open source (MIT)",
+      "tiers": [],
+      "notes": "MIT-licensed repository; free."
+     }
     },
     {
      "name": "Motion",
@@ -9918,7 +10639,7 @@
      "audience": "business",
      "job": "AI phone answering for restaurants that turns calls into reservations",
      "why_rank": "Restaurant-specific voice AI with clear per-location pricing.",
-     "main_limitation": "From $399 per location per month.",
+     "main_limitation": "Prices are per location and quoted (get a quote); multi-location Enterprise is custom-priced",
      "best_for": "Busy restaurants missing calls",
      "avoid_if": "You're a small venue with few calls",
      "platforms": [
@@ -9930,27 +10651,32 @@
       {
        "url": "https://www.slang.ai/pricing",
        "label": "Slang.ai pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-19"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-19",
      "pricing_detail": {
       "model": "paid",
-      "starting_price": "$399/location/month (Core)",
+      "starting_price": "From $399 per location (Core)",
       "free_tier": "",
       "tiers": [
        {
         "name": "Core",
-        "price": "from $399/location",
-        "notes": ""
+        "price": "Starting at $399 per location (get a quote)",
+        "notes": "AI reservation answering, text confirmations, bilingual support"
        },
        {
-        "name": "Higher tier",
-        "price": "from $599/location",
-        "notes": "Smarter routing, missed-call capture"
+        "name": "Premium",
+        "price": "Starting at $599 per location (get a quote)",
+        "notes": "Smarter routing, missed-call capture, 97 languages, priority support"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom pricing",
+        "notes": "Custom workflows and integrations, SLA-backed support, multi-location"
        }
       ],
-      "notes": "Shown as 'starting at' per location."
+      "notes": "USD prices shown (CAD and AUD also offered on the page)."
      }
     },
     {
@@ -10010,7 +10736,34 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://conversenow.ai/",
+       "label": "ConverseNow homepage",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Phone"
+     ],
+     "integrations": [],
+     "best_for": "Restaurant chains automating phone and drive-thru ordering with branded voice AI",
+     "main_limitation": "No published prices; you must book a demo",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "Custom (demo required)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Voice ordering platform",
+        "price": "Custom pricing; get a demo",
+        "notes": "Branded voice AI for phone and drive-thru orders, dedicated engineering"
+       }
+      ],
+      "notes": "Plan details from the vendor homepage."
+     }
     },
     {
      "name": "Owner.com",
@@ -10169,7 +10922,35 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.winnowsolutions.com/",
+       "label": "Winnow homepage",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Kitchen hardware",
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Commercial kitchens that want AI to record food waste automatically and forecast production",
+     "main_limitation": "Hardware-based enterprise product with no published prices",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "Custom (demo required)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Track / Vision / Hub",
+        "price": "Custom pricing; contact sales",
+        "notes": "From tablet-only Track to Winnow Vision with touchless Throw & Go"
+       }
+      ],
+      "notes": "Vendor reports use in 3,500+ locations in 90+ countries."
+     }
     }
    ]
   },
@@ -10548,7 +11329,44 @@
       "wallet",
       "cryptocurrency"
      ],
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://arkm.com/api",
+       "label": "Arkham API",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://info.arkm.com/",
+       "label": "Arkham overview",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "API",
+      "Polymarket"
+     ],
+     "best_for": "Traders and investigators linking wallets to real-world entities and tracking fund flows",
+     "main_limitation": "Platform and API prices are not published on the pages we checked",
+     "pricing_detail": {
+      "model": "",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "API",
+        "price": "Free trial; price not shown",
+        "notes": "16 chains, entity labels, HyperCore and Polymarket data, illicit-activity risk scores"
+       }
+      ],
+      "notes": "Platform tools: Tracer, Visualizer, Alerts, Labels.",
+      "free_tier_unverified": true
+     }
     },
     {
      "name": "Messari",
@@ -10683,7 +11501,29 @@
       "token",
       "cryptocurrency"
      ],
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://www.tokenmetrics.com/",
+       "label": "Token Metrics homepage",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Crypto traders browsing curated smart-money signals and vault strategies",
+     "main_limitation": "No pricing on the homepage; the site now centres on signals and vaults",
+     "pricing_detail": {
+      "model": "",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [],
+      "notes": "tokenmetrics.com/pricing returned 404 on the check date. Pricing Not yet verified.",
+      "free_tier_unverified": true
+     }
     },
     {
      "name": "Santiment",
@@ -10706,6 +11546,11 @@
      "audience": "both",
      "sources": [
       {
+       "url": "https://app.santiment.net/pricing",
+       "label": "Santiment pricing",
+       "checked": "2026-10-19"
+      },
+      {
        "url": "https://santiment.net/pricing/",
        "label": "Santiment pricing",
        "checked": "2026-10-18"
@@ -10716,7 +11561,7 @@
        "checked": "2026-10-18"
       }
      ],
-     "last_verified": "2026-10-18",
+     "last_verified": "2026-10-19",
      "platforms": [
       "Web",
       "API"
@@ -10735,20 +11580,20 @@
        {
         "name": "Free",
         "price": "$0",
-        "notes": ""
+        "notes": "30-day data lag, up to 3 alerts"
        },
        {
         "name": "Sanbase Pro",
-        "price": "$49/month",
-        "notes": "or $529/year"
+        "price": "$49/month, or $529/year billed annually (10% off)",
+        "notes": "Real-time and full historical data, Google Sheets plugin"
        },
        {
         "name": "Sanbase Max",
-        "price": "$249/month",
-        "notes": "Full API access"
+        "price": "$249/month, or $2,700/year billed annually (10% off)",
+        "notes": "Full API access, 20 alerts, technical support"
        }
       ],
-      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+      "notes": "Holding SAN tokens gives a 20% discount (vendor page)."
      }
     },
     {
@@ -10906,7 +11751,39 @@
       "developer",
       "cryptocurrency"
      ],
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.chaingpt.org/",
+       "label": "ChainGPT homepage",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://app.chaingpt.org/pricing",
+       "label": "ChainGPT AI Hub pricing",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web",
+      "Telegram",
+      "Discord",
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "Web3 users and builders who want a crypto chatbot plus smart-contract generator and auditor APIs",
+     "main_limitation": "Plan prices render client-side and could not be read",
+     "pricing_detail": {
+      "model": "",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [],
+      "notes": "AI Hub monthly chat plans and developer API credits exist (vendor pricing page). Prices Not yet verified.",
+      "free_tier_unverified": true
+     }
     },
     {
      "name": "Bankr",
@@ -10965,7 +11842,48 @@
       "phishing",
       "cryptocurrency"
      ],
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.scamsniffer.io/",
+       "label": "Scam Sniffer homepage and pricing",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Browser extension",
+      "API",
+      "Web"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "Wallet users who want free phishing warnings, and teams that need a scam blocklist API",
+     "main_limitation": "Real-time API access starts at $999/month",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "From $999/month (Standard API)",
+      "free_tier": "Free browser extension; open-source scam database ($0, free for commercial use)",
+      "tiers": [
+       {
+        "name": "Open source",
+        "price": "$0",
+        "notes": "Public scam database on GitHub, domain blacklist updated daily"
+       },
+       {
+        "name": "Standard",
+        "price": "From $999/month",
+        "notes": "Real-time API lookups for one product, priced by query volume"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "Bulk feeds, drainer attribution, custom integration and SLA"
+       }
+      ],
+      "notes": "Chrome extension is free (vendor page)."
+     }
     },
     {
      "name": "Blockaid",
@@ -10985,7 +11903,37 @@
       "developer",
       "cryptocurrency"
      ],
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.blockaid.io/",
+       "label": "Blockaid homepage",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "Wallets, exchanges and protocols stopping scams, drainers and exploits before they hit users",
+     "main_limitation": "Built for companies, not individuals; no published prices",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "Custom (demo required)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Enterprise platform",
+        "price": "Custom pricing; request a demo",
+        "notes": "Transaction and dApp scanning, onchain monitoring, cosigner, preventive compliance"
+       }
+      ],
+      "notes": "Vendor names Coinbase Wallet, MetaMask and OpenSea among users."
+     }
     },
     {
      "name": "GoPlus Security",
@@ -11005,7 +11953,43 @@
       "api",
       "cryptocurrency"
      ],
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://gopluslabs.io/",
+       "label": "GoPlus homepage",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://gopluslabs.io/security-api",
+       "label": "GoPlus Security API",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://docs.gopluslabs.io/",
+       "label": "GoPlus docs",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web",
+      "Browser extension",
+      "API"
+     ],
+     "integrations": [
+      "API"
+     ],
+     "best_for": "Wallets and dApps checking token, NFT, address and dApp risk through an API",
+     "main_limitation": "API prices are not published on the pages we checked",
+     "pricing_detail": {
+      "model": "",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [],
+      "notes": "Vendor names DexScreener among API users. Docs mention a free malicious-address library.",
+      "free_tier_unverified": true
+     }
     },
     {
      "name": "De.Fi",
@@ -11438,7 +12422,39 @@
       "onchain",
       "cryptocurrency"
      ],
-     "audience": "business"
+     "audience": "business",
+     "sources": [
+      {
+       "url": "https://www.chainalysis.com/",
+       "label": "Chainalysis homepage",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://www.chainalysis.com/request-a-demo/",
+       "label": "Chainalysis request a demo",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Exchanges, financial institutions and governments doing crypto compliance and investigations",
+     "main_limitation": "Enterprise sales only, with no published prices",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "Custom (demo required)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Platform",
+        "price": "Custom pricing; request a demo",
+        "notes": "Investigations, transaction monitoring, wallet and VASP risk, fraud prevention, data solutions"
+       }
+      ],
+      "notes": "Vendor reports 1,500+ customers."
+     }
     }
    ]
   },
@@ -11565,11 +12581,11 @@
      "sources": [
       {
        "url": "https://www.speak.com/",
-       "label": "Speak pricing",
-       "checked": "2026-10-16"
+       "label": "Speak homepage and FAQ",
+       "checked": "2026-10-19"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-19",
      "platforms": [
       "iOS",
       "Android",
@@ -11582,8 +12598,19 @@
       "model": "paid",
       "starting_price": "",
       "free_tier": "7-day free trial",
-      "tiers": [],
-      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+      "tiers": [
+       {
+        "name": "Speak Premium",
+        "price": "Price shown in the app (varies by region)",
+        "notes": ""
+       },
+       {
+        "name": "Speak Premium Plus",
+        "price": "Price shown in the app (varies by region)",
+        "notes": "Unlimited personalised lessons, Speak Tutor"
+       }
+      ],
+      "notes": "Vendor FAQ: after the 7-day trial a paid subscription is required; pricing varies by plan, region and promotions."
      }
     },
     {
@@ -11594,7 +12621,54 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "bot-blocked (403/429), known official domain, verified 2026-10-15",
-     "audience": "consumer"
+     "audience": "consumer",
+     "sources": [
+      {
+       "url": "https://help.quizlet.com/hc/en-us/articles/360040762212-Teachers-Getting-started",
+       "label": "Quizlet Help: Teachers getting started",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://help.quizlet.com/hc/en-us/articles/4406068706829-Reporting-an-unauthorized-charge",
+       "label": "Quizlet Help: plans and prices",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://help.quizlet.com/hc/en-us/articles/360029964011-Buying-Quizlet-for-a-group",
+       "label": "Quizlet Help: group discounts",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Teachers assigning flashcards and practice that students can do free, and students studying with Plus",
+     "main_limitation": "Prices are shown at checkout in local currency, so we could not verify them",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Teacher-assigned activities are free for students (no account needed)",
+      "tiers": [
+       {
+        "name": "Quizlet Plus",
+        "price": "Annual or monthly; price not verified",
+        "notes": ""
+       },
+       {
+        "name": "Quizlet Plus for teachers",
+        "price": "Annual subscription, renews automatically; price not verified",
+        "notes": "Content creation and formative assessment to track student progress"
+       },
+       {
+        "name": "Group subscriptions",
+        "price": "5% to 84% off, by quote",
+        "notes": "One-year subscriptions; purchase orders for 10+"
+       }
+      ],
+      "notes": "quizlet.com blocks automated fetches; plan facts were read from Quizlet's own help centre via the search index on 19 Oct 2026."
+     }
     },
     {
      "name": "MagicSchool",
@@ -11658,14 +12732,19 @@
      "audience": "business",
      "sources": [
       {
+       "url": "https://www.briskteaching.com/plans",
+       "label": "Brisk plans",
+       "checked": "2026-10-19"
+      },
+      {
        "url": "https://www.briskteaching.com/",
        "label": "Brisk Teaching pricing",
        "checked": "2026-10-16"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-19",
      "platforms": [
-      "Chrome extension",
+      "Chrome & Edge extension",
       "Web"
      ],
      "integrations": [
@@ -11676,16 +12755,26 @@
      "main_limitation": "School pricing not verified",
      "pricing_detail": {
       "model": "freemium",
-      "starting_price": "",
-      "free_tier": "Free to install and get started",
+      "starting_price": "Custom (schools and districts)",
+      "free_tier": "Free for teachers ($0)",
       "tiers": [
        {
         "name": "Free",
         "price": "$0",
-        "notes": ""
+        "notes": "For teachers; self-serve resources"
+       },
+       {
+        "name": "Premium",
+        "price": "Custom pricing (speak with us)",
+        "notes": "Schools and districts: aligned to state standards, admin visibility, CSM support"
+       },
+       {
+        "name": "Intelligence",
+        "price": "Custom pricing (speak with us)",
+        "notes": "Districts: curriculum-grounded library, dedicated CSM"
        }
       ],
-      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+      "notes": "Checked on the vendor plans page."
      }
     }
    ]
@@ -11907,7 +12996,46 @@
      "affiliate_url": "",
      "featured": false,
      "url_check": "200 verified 2026-10-15",
-     "audience": "both"
+     "audience": "both",
+     "sources": [
+      {
+       "url": "https://www.wysa.com/faq",
+       "label": "Wysa FAQ",
+       "checked": "2026-10-19"
+      },
+      {
+       "url": "https://www.wysa.com/",
+       "label": "Wysa homepage",
+       "checked": "2026-10-19"
+      }
+     ],
+     "last_verified": "2026-10-19",
+     "platforms": [
+      "iOS",
+      "Android",
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Anonymous, everyday mental-wellbeing support from a CBT-based AI chatbot",
+     "main_limitation": "A self-help tool, not a replacement for clinical care; Premium price is not on the website",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Talking to Wysa AI is free, including tools offered within conversations",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "AI conversations and in-chat tools"
+       },
+       {
+        "name": "Premium",
+        "price": "Paid; price not shown",
+        "notes": "Full tool library; human coaching in some locations at extra cost"
+       }
+      ],
+      "notes": "Free premium access through some employers, schools and insurers (vendor FAQ). Subscriptions are managed in Google Play and the App Store."
+     }
     }
    ]
   },
@@ -11939,16 +13067,42 @@
       {
        "url": "https://rosebud.ai/pricing",
        "label": "Rosebud AI pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-19"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-19",
      "pricing_detail": {
       "model": "freemium",
-      "starting_price": "",
-      "free_tier": "8,000 starting credits, no card; refills in eligible regions",
-      "tiers": [],
-      "notes": "Paid plans add credits, private projects, commercial rights and code export (prices not in fetched text)."
+      "starting_price": "$15/month (Indie Dev)",
+      "free_tier": "Free (Newbie): 8,000 credits per week, no credit card; weekly refills in eligible regions",
+      "tiers": [
+       {
+        "name": "Newbie",
+        "price": "Free",
+        "notes": "8,000 credits per week, hosted games, remixing"
+       },
+       {
+        "name": "Indie Dev",
+        "price": "$15/month",
+        "notes": "100,000 credits/month, private projects, code tab in browser"
+       },
+       {
+        "name": "10x Dev",
+        "price": "$30/month",
+        "notes": "300,000 credits/month, commercial rights, no Rosebud branding"
+       },
+       {
+        "name": "Pro",
+        "price": "$50/month",
+        "notes": "1,000,000 credits/month, downloadable code and Windows export"
+       },
+       {
+        "name": "Scale",
+        "price": "$100/month",
+        "notes": "2,000,000 credits/month, enterprise-grade hosting"
+       }
+      ],
+      "notes": "Unused monthly credits roll over once on paid plans (vendor FAQ)."
      }
     },
     {
