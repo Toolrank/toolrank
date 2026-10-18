@@ -1,106 +1,106 @@
 {
- "fetched": "2026-10-17 23:33 UTC",
- "fetched_ts": 1792280027,
+ "fetched": "2026-10-18 19:36 UTC",
+ "fetched_ts": 1792352203,
  "stars_baseline": "2026-10-15",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "agent-memory",
    "repo": "tigerless-labs/agent-memory",
-   "gained": 353,
-   "stars": 4061,
+   "gained": 515,
+   "stars": 4223,
    "url": "https://github.com/tigerless-labs/agent-memory"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 338,
-   "stars": 3231,
+   "gained": 457,
+   "stars": 3350,
    "url": "https://github.com/Oldcircle/geo-sleuth"
+  },
+  {
+   "tool": "ReelMimic",
+   "repo": "edenfunf/reelmimic",
+   "gained": 317,
+   "stars": 3620,
+   "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 255,
-   "stars": 110776,
+   "gained": 299,
+   "stars": 110820,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 214,
-   "stars": 3607,
+   "gained": 280,
+   "stars": 3673,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
-  },
-  {
-   "tool": "ReelMimic",
-   "repo": "edenfunf/reelmimic",
-   "gained": 149,
-   "stars": 3452,
-   "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 144,
-   "stars": 3789,
+   "gained": 182,
+   "stars": 3827,
    "url": "https://github.com/ZJU-REAL/Easel"
-  },
-  {
-   "tool": "vibe-wise",
-   "repo": "nykooi1/vibe-wise",
-   "gained": 138,
-   "stars": 3734,
-   "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 131,
-   "stars": 3588,
+   "gained": 167,
+   "stars": 3624,
    "url": "https://github.com/nateherkai/scroll-craft"
+  },
+  {
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 153,
+   "stars": 3749,
+   "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "jevgrep",
    "repo": "dzhng/jevgrep",
-   "gained": 77,
-   "stars": 2769,
+   "gained": 96,
+   "stars": 2788,
    "url": "https://github.com/dzhng/jevgrep"
   },
   {
-   "tool": "Gemini CLI",
-   "repo": "google-gemini/gemini-cli",
-   "gained": 47,
-   "stars": 107426,
-   "url": "https://github.com/google-gemini/gemini-cli"
+   "tool": "VoiceMem",
+   "repo": "xzf-thu/VoiceMem",
+   "gained": 61,
+   "stars": 2577,
+   "url": "https://github.com/xzf-thu/VoiceMem"
   }
  ],
  "hn": [
   {
    "tool": "Krea",
    "stories": 1,
-   "points": 348,
+   "points": 350,
    "top_title": "Krea 3 – An image model built for editing at scale",
    "top_url": "https://news.ycombinator.com/item?id=50105648"
   },
   {
    "tool": "Black Forest Labs (FLUX)",
    "stories": 2,
-   "points": 213,
+   "points": 219,
    "top_title": "FLUX 3 Image Klein",
    "top_url": "https://news.ycombinator.com/item?id=50123580"
   },
   {
    "tool": "JetBrains AI (Junie)",
    "stories": 1,
-   "points": 15,
+   "points": 24,
    "top_title": "JetBrains Junie Local: An agent you own, not one you rent",
    "top_url": "https://news.ycombinator.com/item?id=50132963"
   },
   {
    "tool": "Claude",
-   "stories": 5,
-   "points": 14,
+   "stories": 6,
+   "points": 17,
    "top_title": "Show HN: A Playable Architectural Facade Synth",
    "top_url": "https://news.ycombinator.com/item?id=50068405"
   },
@@ -140,11 +140,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50053620"
   },
   {
-   "tool": "Augment Code",
-   "stories": 1,
+   "tool": "Lovable",
+   "stories": 2,
    "points": 2,
-   "top_title": "AI Engineering Maturity Model: 5 Stages for Teams",
-   "top_url": "https://news.ycombinator.com/item?id=50042292"
+   "top_title": "You can now chat with Lovable for free",
+   "top_url": "https://news.ycombinator.com/item?id=50143817"
   }
  ]
 }
