@@ -597,8 +597,8 @@ def home(cats):
     whyh = "".join(f'<article class="feat"><span class="fn">0{i}</span><h3>{E(a)}</h3><p>{E(b)}</p></article>' for i, (a, b) in enumerate(why, 1))
     body = f"""<main id="main"><section class="hero home studio-hero"><div class="wrap hw">
 <p class="si-eyebrow"><span>ToolRank Studio</span></p>
-<h1>We build websites, web apps and business software <span class="gt">with full ownership handed over.</span></h1>
-<p class="lead">Fixed-price websites, web apps and custom business software for small businesses, bands and startups: booking systems, client portals, dashboards and internal tools that run in the browser. Built in 1&ndash;2 weeks.</p>
+<h1>Websites and software, <span class="gt">built fast.</span></h1>
+<p class="lead">Fixed prices from A$499. You own everything.</p>
 <p class="hcta"><a class="btn xl" href="{E(QUOTE_MAIL)}">Get a quote</a> <a class="btn ghost xl" href="/studio/">See packages</a></p>{KPIS}</div></section>
 <section class="band light" id="packages"><div class="wrap"><div class="sh"><p class="eyebrow">Packages &middot; launch pricing</p><h2 class="big">Simple, fixed prices.</h2></div><div class="grid">{studio_strip()}</div><p class="muted small">Prices in Australian dollars. <a href="/studio/">Full package details, how it works and FAQ →</a></p></div></section>
 {sample_html(True)}
