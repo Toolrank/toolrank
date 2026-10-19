@@ -1,77 +1,77 @@
 {
- "fetched": "2026-10-18 21:50 UTC",
- "fetched_ts": 1792360203,
+ "fetched": "2026-10-19 18:54 UTC",
+ "fetched_ts": 1792436054,
  "stars_baseline": "2026-10-15",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "agent-memory",
    "repo": "tigerless-labs/agent-memory",
-   "gained": 515,
-   "stars": 4223,
+   "gained": 677,
+   "stars": 4385,
    "url": "https://github.com/tigerless-labs/agent-memory"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 461,
-   "stars": 3354,
+   "gained": 568,
+   "stars": 3461,
    "url": "https://github.com/Oldcircle/geo-sleuth"
-  },
-  {
-   "tool": "ReelMimic",
-   "repo": "edenfunf/reelmimic",
-   "gained": 320,
-   "stars": 3623,
-   "url": "https://github.com/edenfunf/reelmimic"
-  },
-  {
-   "tool": "OpenAI Whisper",
-   "repo": "openai/whisper",
-   "gained": 306,
-   "stars": 110827,
-   "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 289,
-   "stars": 3682,
+   "gained": 366,
+   "stars": 3759,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
-   "tool": "Easel",
-   "repo": "ZJU-REAL/Easel",
-   "gained": 185,
-   "stars": 3830,
-   "url": "https://github.com/ZJU-REAL/Easel"
+   "tool": "OpenAI Whisper",
+   "repo": "openai/whisper",
+   "gained": 357,
+   "stars": 110878,
+   "url": "https://github.com/openai/whisper"
+  },
+  {
+   "tool": "ReelMimic",
+   "repo": "edenfunf/reelmimic",
+   "gained": 352,
+   "stars": 3655,
+   "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 174,
-   "stars": 3631,
+   "gained": 228,
+   "stars": 3685,
    "url": "https://github.com/nateherkai/scroll-craft"
+  },
+  {
+   "tool": "Easel",
+   "repo": "ZJU-REAL/Easel",
+   "gained": 215,
+   "stars": 3860,
+   "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 159,
-   "stars": 3755,
+   "gained": 182,
+   "stars": 3778,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "jevgrep",
    "repo": "dzhng/jevgrep",
-   "gained": 100,
-   "stars": 2792,
+   "gained": 124,
+   "stars": 2816,
    "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "VoiceMem",
    "repo": "xzf-thu/VoiceMem",
-   "gained": 62,
-   "stars": 2578,
+   "gained": 79,
+   "stars": 2595,
    "url": "https://github.com/xzf-thu/VoiceMem"
   }
  ],
@@ -79,14 +79,14 @@
   {
    "tool": "Krea",
    "stories": 1,
-   "points": 350,
+   "points": 352,
    "top_title": "Krea 3 – An image model built for editing at scale",
    "top_url": "https://news.ycombinator.com/item?id=50105648"
   },
   {
    "tool": "Black Forest Labs (FLUX)",
    "stories": 2,
-   "points": 219,
+   "points": 220,
    "top_title": "FLUX 3 Image Klein",
    "top_url": "https://news.ycombinator.com/item?id=50123580"
   },
@@ -99,17 +99,10 @@
   },
   {
    "tool": "Claude",
-   "stories": 6,
-   "points": 17,
+   "stories": 7,
+   "points": 18,
    "top_title": "Show HN: A Playable Architectural Facade Synth",
    "top_url": "https://news.ycombinator.com/item?id=50068405"
-  },
-  {
-   "tool": "OpenCode",
-   "stories": 1,
-   "points": 6,
-   "top_title": "Migrating to OpenCode 2.0",
-   "top_url": "https://news.ycombinator.com/item?id=50057747"
   },
   {
    "tool": "Perplexity",
@@ -133,18 +126,25 @@
    "top_url": "https://news.ycombinator.com/item?id=50062703"
   },
   {
-   "tool": "Anatomy",
-   "stories": 2,
-   "points": 3,
-   "top_title": "Anatomy · a Skill for Claude Code",
-   "top_url": "https://news.ycombinator.com/item?id=50053620"
-  },
-  {
    "tool": "Lovable",
    "stories": 2,
    "points": 2,
    "top_title": "You can now chat with Lovable for free",
    "top_url": "https://news.ycombinator.com/item?id=50143817"
+  },
+  {
+   "tool": "Devin",
+   "stories": 2,
+   "points": 2,
+   "top_title": "Security Swarm",
+   "top_url": "https://news.ycombinator.com/item?id=50155469"
+  },
+  {
+   "tool": "Webflow",
+   "stories": 1,
+   "points": 2,
+   "top_title": "Design Systems",
+   "top_url": "https://news.ycombinator.com/item?id=50088586"
   }
  ]
 }
