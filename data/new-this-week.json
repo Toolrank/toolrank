@@ -1,7 +1,42 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "note": "GitHub items dated by trending snapshot date, not repo creation date.",
  "items": [
+  {
+   "date": "2026-10-20",
+   "title": "stablyai/orca",
+   "summary": "GitHub daily trending: a place for working with a fleet of coding agents. Run any coding agent with your own subscription, on desktop, mobile or a remote runtime.",
+   "url": "https://github.com/stablyai/orca",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "headroomlabs-ai/headroom",
+   "summary": "GitHub daily trending: compresses tool outputs, logs, files and RAG chunks before they reach the LLM, claiming 20% fewer tokens for coding agents and 60-95% fewer for JSON. Library, proxy and MCP server.",
+   "url": "https://github.com/headroomlabs-ai/headroom",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "MiniMax M3.1 Flash",
+   "summary": "MiniMax's next-generation Flash model for agentic tasks, coding, computer use and cybersecurity, revealed as the anonymous 'Space Bunny'. $0.15/$0.60 per 1M tokens via the MiniMax API, M Plan and MiniMax Code; weights to follow.",
+   "url": "https://www.minimax.io/blog/minimax-m31f",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "Cloudflare Clairic (preview)",
+   "summary": "Cloudflare's first extraction model pulls typed values (text spans, numbers, dates, lists) from text or images and estimates or forecasts values with confidence scores, in one pass with no output tokens. Preview on Workers AI; open weights planned.",
+   "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "Viggle JST-2",
+   "summary": "Viggle's physics-native world model generates explorable 3D scenes in about one second, plus animation-ready 3D characters and full-body motion from text, images or video. Free to try in the PINOC browser app.",
+   "url": "https://viggle.ai/jst2",
+   "type": "model"
+  },
   {
    "date": "2026-10-19",
    "title": "cathrynlavery/diagram-design",
@@ -24,6 +59,20 @@
    "type": "github"
   },
   {
+   "date": "2026-10-17",
+   "title": "DeepSeek-V4.1-Flash-1017",
+   "summary": "A minor update to DeepSeek-V4.1-Flash with better reasoning, coding, agentic and visual benchmark scores, faster task completion and shorter outputs. Live on DeepSeek's website, app and API, with open weights on Hugging Face and ModelScope.",
+   "url": "https://api-docs.deepseek.com/news/news261017/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "GPT-6 Pro update in ChatGPT",
+   "summary": "GPT-6 Pro in ChatGPT's chat tab now gives faster responses, makes better use of plugins and tools, and can run multiple agents on different parts of a task in parallel. Rolling out to eligible Pro users.",
+   "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+   "type": "launch"
+  },
+  {
    "date": "2026-10-16",
    "title": "Reflection Beam (open weights)",
    "summary": "Reflection has released the weights for Beam, its first open-weight model: a 501B-parameter MoE (23B active) with a 1M-token context, built for coding and long-horizon agentic work. Apache 2.0, on Hugging Face.",
@@ -42,6 +91,27 @@
    "title": "Perplexity pplx-decider-v1.2",
    "summary": "Perplexity's 27B decision model for text and images (Qwen3.8-27B backbone) returns typed probabilities for yes/no, choice and score questions, answering several questions about one input in a single pass. Weights on Hugging Face.",
    "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.2",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "Junie Local on Windows and NVIDIA RTX Spark",
+   "summary": "JetBrains' free, fully local Junie coding agent now runs on NVIDIA RTX Spark PCs and is stable on Windows with 24GB+ RTX GPUs. No token charges or quotas, and code never leaves the machine; choose Qwen3.6-27B or JetBrains' merged Qwen3.8-3.6-27B-blend.",
+   "url": "https://junie.jetbrains.com/blog/junie-local-rtx-spark/",
+   "type": "launch"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "Muse Spark Open",
+   "summary": "Meta releases the weights for Muse Spark Open, a natively multimodal 816B-parameter (42B active) model with a 1M-token context, built for coding and agentic work. Runs on two M5 Ultra Mac Studios via MLX; Muse Model License.",
+   "url": "https://research.meta.ai/blog/muse-spark-open",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-15",
+   "title": "FLUX 3 Image Klein",
+   "summary": "Black Forest Labs' 5.6B open-weights model for text-to-image, editing and multi-reference generation (up to 10 images), with native 4K and bounding-box control. Runs on 8GB-VRAM GPUs with the INT8 build; also in the BFL API.",
+   "url": "https://bfl.ai/blog/flux-3-image-klein",
    "type": "model"
   },
   {
@@ -67,23 +137,9 @@
   },
   {
    "date": "2026-10-15",
-   "title": "Muse Spark Open",
-   "summary": "Meta releases the weights for Muse Spark Open, a natively multimodal 816B-parameter (42B active) model with a 1M-token context, built for coding and agentic work. Runs on two M5 Ultra Mac Studios via MLX; Muse Model License.",
-   "url": "https://research.meta.ai/blog/muse-spark-open",
-   "type": "model"
-  },
-  {
-   "date": "2026-10-15",
    "title": "NVIDIA Nemotron 3.5 Super VL",
    "summary": "NVIDIA's open 120B-parameter multimodal model for always-on agents, available now on Hugging Face, OpenRouter, ModelScope and as NVIDIA NIM. Released alongside Nemotron 3.5 Bolt 74B-A9B for local 24GB systems.",
    "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-   "type": "model"
-  },
-  {
-   "date": "2026-10-15",
-   "title": "FLUX 3 Image Klein",
-   "summary": "Black Forest Labs' 5.6B open-weights model for text-to-image, editing and multi-reference generation (up to 10 images), with native 4K and bounding-box control. Runs on 8GB-VRAM GPUs with the INT8 build; also in the BFL API.",
-   "url": "https://bfl.ai/blog/flux-3-image-klein",
    "type": "model"
   },
   {
@@ -129,6 +185,13 @@
    "type": "github"
   },
   {
+   "date": "2026-10-15",
+   "title": "Krea 3 (beta)",
+   "summary": "Krea's new image editing model built for production: changes only what you ask, with native 2K output, box-based regional edits and up to eight reference images. Under 8 seconds and about $0.06 per edit; in the Krea app and API.",
+   "url": "https://www.krea.ai/krea-3",
+   "type": "model"
+  },
+  {
    "date": "2026-10-14",
    "title": "Ling-3.1-flash (open weights)",
    "summary": "Ant Group's inclusionAI published weights for Ling-3.1-flash, a 560B-parameter hybrid reasoning MoE (25B active) with a 1M-token context, aimed at agents, search, office work and software engineering. MIT licence.",
@@ -161,13 +224,6 @@
    "title": "Gemini 4 Argon",
    "summary": "Google's new frontier model, available via Gemini API, AI Studio and the Gemini app (Pro/Ultra). Intro price $2/$10 per 1M tokens until Nov 30.",
    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-   "type": "model"
-  },
-  {
-   "date": "2026-10-12",
-   "title": "Meta Muse Wonder and Muse Wonder Full",
-   "summary": "Meta's new frontier models for coding, long-running agents and computer use, with a 1M-token context and active memory. Muse Wonder is on Meta Model API and Muse Code at $4/$20 per 1M tokens; Muse Wonder Full is for Muse Code Power and Maximum Usage subscribers.",
-   "url": "https://research.meta.ai/blog/muse-wonder",
    "type": "model"
   }
  ]

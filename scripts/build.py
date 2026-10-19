@@ -150,6 +150,8 @@ def momentum():
         print(f"WARN trending fetch failed ({e}); keeping previous data", file=sys.stderr)
         return old or {"fetched": None, "stars_baseline": None, "repos_tracked": 0, "stars": [], "hn": []}
 TR = momentum()
+_NAMES = {t["name"] for t in TOOLS.values()}
+TR = {**TR, "hn": [x for x in TR.get("hn") or [] if x.get("tool") in _NAMES], "stars": [x for x in TR.get("stars") or [] if x.get("tool") in _NAMES]}  # drop delisted tools from cached trending data
 def clicks():
     """Most-clicked tools from GoatCounter 'click/<slug>' events (last 7 days). Needs GOATCOUNTER_TOKEN; fetched at most every 50 min."""
     cp = ROOT/"data/clicks.json"; old = json.loads(cp.read_text()) if cp.exists() else None
@@ -581,7 +583,7 @@ def new_html():
     def one(n):
         m = re.match(r"^([\w.-]+)/([\w.-]+)$", n["title"].strip()) if n.get("type") == "github" else None
         title, sub = (pretty_repo(m.group(2)), f'<span class="own">by {E(m.group(1))} on GitHub</span>') if m else (n["title"], "")
-        return (f'<article class="card nw"><span class="date">{E(n["date"])} · {E(n["type"])}</span><h3><a class="cl" href="{E(n["url"])}" target="_blank" rel="noopener">{E(title)}</a></h3>{sub}'
+        return (f'<article class="card nw"><span class="date"><time datetime="{E(n["date"])}">{E(n["date"])}</time> · {E(n["type"])}</span><h3><a class="cl" href="{E(n["url"])}" target="_blank" rel="noopener">{E(title)}</a></h3>{sub}'
                 f'<p>{E(n["summary"])}</p><span class="more" aria-hidden="true">Read more →</span></article>')
     return (f'<section class="sec" id="new"><div class="wrap"><div class="sh"><p class="eyebrow">New this week</p><h2 class="big">Fresh launches.</h2></div><div class="hs">'
             + "".join(one(n) for n in its) + '</div></div></section>')
@@ -657,8 +659,13 @@ def cmp_url(*ts, static=True):
     k = STATIC_CMP.get(frozenset(ids)) if static and len(ids) > 1 else None
     return f"/compare/{k}/" if k else "/compare/?tools=" + ",".join(ids)
 CJ = json.loads((ROOT/"data/comparisons.json").read_text())["comparisons"]  # editorial comparison pages (pick + FAQ per page)
+def _listed(ids, where):
+    gone = [i for i in ids if i not in TOOLS]
+    if gone: print(f"WARN {where}: dropping delisted tool(s) {', '.join(gone)}", file=sys.stderr)
+    return not gone
+CJ = [c for c in CJ if _listed(c["ids"], f"comparison {c['key']}")]  # a delisted tool takes its comparison pages with it
 CMP = {c["key"]: c for c in CJ}
-COMPARES = [(c["key"], c["ids"]) for c in CJ] + [(k, i) for k, i in (("lovable-vs-bolt-new", ["lovable", "bolt-new"]), ("make-vs-n8n-vs-zapier", ["make", "n8n", "zapier"])) if k not in CMP]
+COMPARES = [(c["key"], c["ids"]) for c in CJ] + [(k, i) for k, i in (("lovable-vs-bolt-new", ["lovable", "bolt-new"]), ("make-vs-n8n-vs-zapier", ["make", "n8n", "zapier"])) if k not in CMP and _listed(i, f"comparison {k}")]
 CTITLE = {tuple(c["ids"]): c["title"] for c in CJ}
 STATIC_CMP = {frozenset(i): k for k, i in COMPARES}
 def cmp_title(ids): return CTITLE.get(tuple(ids)) or " vs ".join(TOOLS[i]["name"] for i in ids)
@@ -1024,12 +1031,18 @@ def patch(fn, block, extra=None):
     s = re.sub(r'<link rel="preconnect".*?display=swap">', "", s); s = re.sub(r"<!--FONTS-->.*?<!--/FONTS-->", "", s, flags=re.S)
     s = re.sub(r'<header class="top">.*?</header>', lambda m: NAV, s, flags=re.S)
     s = re.sub(r'<footer.*?</footer>', lambda m: FOOT, s, flags=re.S)
+    if 'class="skip"' not in s:  # same 'Skip to content' link doc() adds; these pages put their hero heading before <main>, so land on the hero
+        s = re.sub(r'<section class="hero"(?![^>]*\bid=)', '<section class="hero" id="content"', s, count=1)
+        if 'id="content"' in s: s = s.replace("<body>", '<body>\n<a class="skip" href="#content">Skip to content</a>', 1)
     s = re.sub(r'<link rel="stylesheet" href="/assets/ev\.css[^"]*">', "", s)
     s = re.sub(r'(<link rel="stylesheet" href="/assets/style\.css[^"]*">)', lambda m: FONTS + m.group(1) + '<link rel="stylesheet" href="/assets/ev.css">', s, count=1)
     if extra: s = extra(s)
     p.write_text(s)
 
 BO = json.loads((ROOT/"data/best-of.json").read_text()) if (ROOT/"data/best-of.json").exists() else {"pages": []}
+for _b in BO["pages"]:  # drop delisted tools from best-of shortlists (re-run scripts/gen_bestof.py to refresh the copy)
+    if not _listed([i for i, _ in _b["items"]], f"best-of {_b['slug']}"): _b["items"] = [x for x in _b["items"] if x[0] in TOOLS]
+BO["pages"] = [b for b in BO["pages"] if b["items"]]
 def tier(t, name): return next((x for x in PD(t).get("tiers", []) if x["name"] == name), None) if name else None
 def bestof_page(b):
     path = f"/best-of/{b['slug']}/"; ts = [(TOOLS[i], pl) for i, pl in b["items"]]; ids = [i for i, _ in b["items"]]

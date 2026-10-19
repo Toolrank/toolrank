@@ -4585,57 +4585,6 @@
      }
     },
     {
-     "name": "Hedra",
-     "url": "https://www.hedra.com",
-     "verdict": "Generates talking-character videos from an image and audio.",
-     "pricing": "freemium",
-     "tags": [
-      "avatars",
-      "lip sync"
-     ],
-     "affiliate_url": "",
-     "featured": false,
-     "url_check": "200 OK 2026-10-15",
-     "audience": "consumer",
-     "sources": [
-      {
-       "url": "https://www.hedra.com/pricing",
-       "label": "Hedra pricing",
-       "checked": "2026-10-16"
-      }
-     ],
-     "last_verified": "2026-10-16",
-     "platforms": [
-      "Web"
-     ],
-     "integrations": [],
-     "best_for": "Talking-character videos from images and audio",
-     "main_limitation": "Credits limit output",
-     "pricing_detail": {
-      "model": "freemium",
-      "starting_price": "$20/month (billed monthly)",
-      "free_tier": "Free plan, no credit card (per pricing page title)",
-      "tiers": [
-       {
-        "name": "Entry paid",
-        "price": "$20/month billed monthly",
-        "notes": "2,000 credits/month"
-       },
-       {
-        "name": "Mid tier",
-        "price": "$50/month billed monthly",
-        "notes": "7,200 credits/month"
-       },
-       {
-        "name": "Top individual tier",
-        "price": "$100/month billed monthly",
-        "notes": "18,000 credits/month"
-       }
-      ],
-      "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
-     }
-    },
-    {
      "name": "Captions",
      "url": "https://www.captions.ai",
      "verdict": "Mobile-first app for AI captions, editing and talking-head video.",

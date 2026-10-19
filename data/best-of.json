@@ -2762,10 +2762,6 @@
      "Free"
     ],
     [
-     "hedra",
-     ""
-    ],
-    [
      "opusclip",
      "Free"
     ],
@@ -2780,9 +2776,13 @@
     [
      "colossyan",
      "Starter"
+    ],
+    [
+     "ltx-studio",
+     "Free"
     ]
    ],
-   "pick": "Pick <b>Runway</b> for creators and studios producing AI video (Free: $0); think twice if you need long-form video on a small budget. Pick <b>HeyGen</b> for marketers and trainers producing avatar explainer videos (Free: $0); think twice if you need cinematic generative video. <b>Synthesia</b> (Basic: $0/month): AI avatar video platform for training and corporate videos in 140+ languages. <b>Pika</b> (Free: $0): Text- and image-to-video generator with effects for short social clips. Pick <b>Vidu</b> for reference-to-video and consistent characters across shots (Free: $0/month). Watch out: listed yearly prices include a first-time purchase discount. Pick <b>Hedra</b> for talking-character videos from images and audio ($20/month (billed monthly)). Watch out: credits limit output. <b>OpusClip</b> (Free: $0): Turns long videos into short vertical clips automatically.",
+   "pick": "Pick <b>Runway</b> for creators and studios producing AI video (Free: $0); think twice if you need long-form video on a small budget. Pick <b>HeyGen</b> for marketers and trainers producing avatar explainer videos (Free: $0); think twice if you need cinematic generative video. <b>Synthesia</b> (Basic: $0/month): AI avatar video platform for training and corporate videos in 140+ languages. <b>Pika</b> (Free: $0): Text- and image-to-video generator with effects for short social clips. Pick <b>Vidu</b> for reference-to-video and consistent characters across shots (Free: $0/month). Watch out: listed yearly prices include a first-time purchase discount. <b>OpusClip</b> (Free: $0): Turns long videos into short vertical clips automatically. <b>Descript (video)</b> (Free: $0): Edit video by editing its transcript.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -2790,7 +2790,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Runway: 125 one-time credits, 5GB storage; HeyGen: 3 videos/month, up to 1 min each; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Vidu: Free: $0/month, Q4 model at 540P, 10 references/month; Hedra: Free plan, no credit card (per pricing page title); OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage; CapCut: Free: USD 0, free templates and basic editing tools; Colossyan: Starter: free, 20 video minutes/month with NEO avatars, watermark."
+     "Runway: 125 one-time credits, 5GB storage; HeyGen: 3 videos/month, up to 1 min each; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Vidu: Free: $0/month, Q4 model at 540P, 10 references/month; OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage; CapCut: Free: USD 0, free templates and basic editing tools; Colossyan: Starter: free, 20 video minutes/month with NEO avatars, watermark; LTX Studio: Free: $0 forever, 800 one-time credits."
     ],
     [
      "How were these tools chosen?",
@@ -2869,7 +2869,7 @@
    "h1": "Best AI video tools for $20 a month or less",
    "title": "Best AI Video Tools Under $20/Month (2026)",
    "desc": "Best AI video tools for $20 a month or less: 10 picks with vendor-verified prices checked 16–17 Oct 2026, including Runway, Kling AI and Synthesia.",
-   "summary": "Every tool here has a paid plan listed at $20 a month or less on its vendor's pricing page. <b>Runway</b> comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is <b>PixVerse</b> Standard ($8/month billed yearly ($96) or $10 monthly). 7 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–17 Oct 2026.",
+   "summary": "Every tool here has a paid plan listed at $20 a month or less on its vendor's pricing page. <b>Runway</b> comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is <b>PixVerse</b> Standard ($8/month billed yearly ($96) or $10 monthly). 6 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–17 Oct 2026.",
    "items": [
     [
      "runway",
@@ -2900,16 +2900,16 @@
      "Standard"
     ],
     [
-     "hedra",
-     "Entry paid"
-    ],
-    [
      "opusclip",
      "Starter"
     ],
     [
      "descript-video",
      "Hobbyist"
+    ],
+    [
+     "invideo-ai",
+     "Starter"
     ]
    ],
    "pick": "Pick <b>Runway</b> for creators and studios producing AI video (Standard: $12/month annual ($15 monthly)); think twice if you need long-form video on a small budget. Pick <b>Kling AI</b> for creators who want high-quality text- and image-to-video with 1080p/4K output (Standard: $8.80/month after a $6.99 first month ($10 list)). Watch out: introductory first-month prices and countdown offers make the ongoing price easy to misread. <b>Synthesia</b> (Starter: $18/month yearly or $29 monthly): AI avatar video platform for training and corporate videos in 140+ languages. <b>Pika</b> (Starter: $10/month ($8 annual)): Text- and image-to-video generator with effects for short social clips. Pick <b>Higgsfield</b> for cinematic AI video with camera-motion presets and many hosted models (Starter: $19/month billed annually). Watch out: heavy promotional pricing changes often. Pick <b>PixVerse</b> for social creators making short videos with templates and many third-party models (Standard: $8/month billed yearly ($96) or $10 monthly). Watch out: credits limit output; some models are only discounted, not included. Pick <b>Vidu</b> for reference-to-video and consistent characters across shots (Standard: $8.25/month billed yearly ($99) or $10 monthly). Watch out: listed yearly prices include a first-time purchase discount.",
@@ -2920,7 +2920,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Runway: 125 one-time credits, 5GB storage; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Vidu: Free: $0/month, Q4 model at 540P, 10 references/month; Hedra: Free plan, no credit card (per pricing page title); OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage."
+     "Runway: 125 one-time credits, 5GB storage; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Vidu: Free: $0/month, Q4 model at 540P, 10 references/month; OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; Descript (video): Free: 60 media minutes/month, 720p export, 5GB storage."
     ],
     [
      "How were these tools chosen?",
@@ -2936,7 +2936,7 @@
    "h1": "Best AI video tools for $30 a month or less",
    "title": "Best AI Video Tools Under $30/Month (2026)",
    "desc": "Best AI video tools for $30 a month or less: 10 picks with vendor-verified prices checked 16–18 Oct 2026, including Runway, Kling AI and Luma AI.",
-   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>Runway</b> comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is <b>PixVerse</b> Standard ($8/month billed yearly ($96) or $10 monthly). 6 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–18 Oct 2026.",
+   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>Runway</b> comes first: leading video models with clear credit-based plans and mobile apps. The cheapest verified paid plan here is <b>PixVerse</b> Standard ($8/month billed yearly ($96) or $10 monthly). 5 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–18 Oct 2026.",
    "items": [
     [
      "runway",
@@ -2975,8 +2975,8 @@
      "Standard"
     ],
     [
-     "hedra",
-     "Entry paid"
+     "captions",
+     "Max"
     ]
    ],
    "pick": "Pick <b>Runway</b> for creators and studios producing AI video (Standard: $12/month annual ($15 monthly)); think twice if you need long-form video on a small budget. Pick <b>Kling AI</b> for creators who want high-quality text- and image-to-video with 1080p/4K output (Standard: $8.80/month after a $6.99 first month ($10 list)). Watch out: introductory first-month prices and countdown offers make the ongoing price easy to misread. Pick <b>Luma AI</b> for video creators who want high quality and agent workflows (Plus: $30/month ($300/yr)); think twice if you want to try for free. Pick <b>HeyGen</b> for marketers and trainers producing avatar explainer videos (Creator: $29/month); think twice if you need cinematic generative video. <b>Synthesia</b> (Starter: $18/month yearly or $29 monthly): AI avatar video platform for training and corporate videos in 140+ languages. <b>Pika</b> (Starter: $10/month ($8 annual)): Text- and image-to-video generator with effects for short social clips. Pick <b>Higgsfield</b> for cinematic AI video with camera-motion presets and many hosted models (Starter: $19/month billed annually). Watch out: heavy promotional pricing changes often.",
@@ -2987,7 +2987,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Runway: 125 one-time credits, 5GB storage; HeyGen: 3 videos/month, up to 1 min each; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Vidu: Free: $0/month, Q4 model at 540P, 10 references/month; Hedra: Free plan, no credit card (per pricing page title)."
+     "Runway: 125 one-time credits, 5GB storage; HeyGen: 3 videos/month, up to 1 min each; Synthesia: Basic: 10 minutes of video/month, 500 credits, Synthesia watermark; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Vidu: Free: $0/month, Q4 model at 540P, 10 references/month."
     ],
     [
      "How were these tools chosen?",
@@ -3631,8 +3631,8 @@
    "cat": "video",
    "h1": "Best AI video generators with a free plan",
    "title": "Best Free AI Video Generators (2026)",
-   "desc": "Best AI video generators with a free plan: 5 picks with vendor-verified prices checked 16 Oct 2026, including Leonardo.Ai, Runway and Pika.",
-   "summary": "Each of these generative video tools has a free plan we confirmed on its pricing page. <b>Leonardo.Ai</b> comes first: image and video generation platform with fine-tuned models; owned by Canva. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 5 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
+   "desc": "Best AI video generators with a free plan: 4 picks with vendor-verified prices checked 16 Oct 2026, including Leonardo.Ai, Runway and Pika.",
+   "summary": "Each of these generative video tools has a free plan we confirmed on its pricing page. <b>Leonardo.Ai</b> comes first: image and video generation platform with fine-tuned models; owned by Canva. The cheapest verified paid plan here is <b>Pika</b> Starter ($10/month ($8 annual)). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16 Oct 2026.",
    "items": [
     [
      "leonardo-ai",
@@ -3647,15 +3647,11 @@
      "Free"
     ],
     [
-     "hedra",
-     ""
-    ],
-    [
      "ltx-studio",
      "Free"
     ]
    ],
-   "pick": "Pick <b>Leonardo.Ai</b> for image and video generation with trainable models (Free: $0/month). Watch out: free-tier creations are public; listed prices exclude tax and the monthly/yearly toggle state was not confirmed. Pick <b>Runway</b> for creators and studios producing AI video (Free: $0); think twice if you need long-form video on a small budget. <b>Pika</b> (Free: $0): Text- and image-to-video generator with effects for short social clips. Pick <b>Hedra</b> for talking-character videos from images and audio ($20/month (billed monthly)). Watch out: credits limit output. Pick <b>LTX Studio</b> for storyboarding and AI video production (Free: $0). Watch out: free credits are one-time, not monthly.",
+   "pick": "Pick <b>Leonardo.Ai</b> for image and video generation with trainable models (Free: $0/month). Watch out: free-tier creations are public; listed prices exclude tax and the monthly/yearly toggle state was not confirmed. Pick <b>Runway</b> for creators and studios producing AI video (Free: $0); think twice if you need long-form video on a small budget. <b>Pika</b> (Free: $0): Text- and image-to-video generator with effects for short social clips. Pick <b>LTX Studio</b> for storyboarding and AI video production (Free: $0). Watch out: free credits are one-time, not monthly.",
    "faq": [
     [
      "Which of these is cheapest?",
@@ -3663,7 +3659,7 @@
     ],
     [
      "Which of these have a free plan?",
-     "Leonardo.Ai: Free: $0/month, 150 fast tokens/day, public creations; Runway: 125 one-time credits, 5GB storage; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; Hedra: Free plan, no credit card (per pricing page title); LTX Studio: Free: $0 forever, 800 one-time credits."
+     "Leonardo.Ai: Free: $0/month, 150 fast tokens/day, public creations; Runway: 125 one-time credits, 5GB storage; Pika: Free: $0, no monthly credits (credit packs only), 2 parallel video generations; LTX Studio: Free: $0 forever, 800 one-time credits."
     ],
     [
      "How were these tools chosen?",
