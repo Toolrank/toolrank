@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "categories": [
   {
    "id": "ai-assistants",
@@ -1868,7 +1868,7 @@
     {
      "name": "Tempo",
      "url": "https://www.tempo.new",
-     "verdict": "Visual React editor with AI that generates and edits code.",
+     "verdict": "One IDE for designers, PMs and engineers to direct coding agents on specs, designs and pull requests.",
      "pricing": "freemium",
      "tags": [
       "react",
@@ -1880,17 +1880,17 @@
      "audience": "consumer",
      "sources": [
       {
+       "url": "https://www.tempo.new/",
+       "label": "Tempo homepage",
+       "checked": "2026-10-21"
+      },
+      {
        "url": "https://www.tempo.new/pricing",
        "label": "Tempo pricing",
        "checked": "2026-10-20"
-      },
-      {
-       "url": "https://www.tempo.new/",
-       "label": "Tempo homepage",
-       "checked": "2026-10-20"
       }
      ],
-     "last_verified": "2026-10-20",
+     "last_verified": "2026-10-21",
      "platforms": [
       "macOS",
       "Windows",
@@ -1930,7 +1930,9 @@
        }
       ],
       "notes": "Tempo now describes itself as one IDE for the whole team, with agents powered by Claude Code and Codex. All prices in USD."
-     }
+     },
+     "job": "Lets the whole product team turn feedback into specs, designs and PRs with coding agents",
+     "why_rank": "Agents work on your real codebase, with designs that ship as pull requests."
     },
     {
      "name": "Same",
@@ -3081,6 +3083,125 @@
       "free_tier": "Was free and open source (Apache-2.0); no longer maintained",
       "tiers": [],
       "notes": "Discontinued 15 May 2026."
+     }
+    },
+    {
+     "name": "Greptile",
+     "url": "https://www.greptile.com",
+     "verdict": "AI code review that comments on pull requests with full-codebase context.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "business",
+     "job": "Reviews pull requests and catches bugs using context from your whole codebase",
+     "why_rank": "A free Starter plan, flat per-seat Pro price and self-hosting on Enterprise.",
+     "sources": [
+      {
+       "url": "https://www.greptile.com/pricing",
+       "label": "Greptile pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "CLI",
+      "Self-hosted (Enterprise)"
+     ],
+     "integrations": [
+      "GitHub",
+      "GitLab",
+      "Bitbucket",
+      "Gitea",
+      "Perforce",
+      "Zapier"
+     ],
+     "best_for": "Teams who want an AI reviewer on every pull request",
+     "main_limitation": "The free plan covers 1 active developer; extra review credits cost $1 each",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$30/seat/month (Pro)",
+      "free_tier": "Starter: free, 1 active developer, 50 credits a month",
+      "tiers": [
+       {
+        "name": "Starter",
+        "price": "Free",
+        "notes": "1 developer, unlimited repositories"
+       },
+       {
+        "name": "Pro",
+        "price": "$30/seat/month",
+        "notes": "14-day free trial; 50 credits per seat, custom rules"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom pricing",
+        "notes": "Self-hosted, SSO/SAML, GitHub Enterprise Server, GitLab Self-Managed"
+       }
+      ],
+      "notes": "Free for qualified open-source projects; 50% off for early-stage startups."
+     }
+    },
+    {
+     "name": "Graphite",
+     "url": "https://graphite.com",
+     "verdict": "Stacked pull requests, AI reviews and a merge queue, now with Cursor Cloud Agents.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "business",
+     "job": "Speeds up code review with stacked PRs, AI reviews and Graphite Chat",
+     "why_rank": "A free Hobby plan and per-user team plans with unlimited AI reviews.",
+     "sources": [
+      {
+       "url": "https://graphite.com/pricing",
+       "label": "Graphite pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "CLI",
+      "VS Code"
+     ],
+     "integrations": [
+      "GitHub",
+      "Slack",
+      "MCP",
+      "Cursor Cloud Agents"
+     ],
+     "best_for": "GitHub teams who want stacked PRs and AI review in one workflow",
+     "main_limitation": "Unlimited AI reviews need the $40/user Team plan; GitHub only",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$20/user/month (Starter, billed annually)",
+      "free_tier": "Hobby: free, personal repos, limited AI reviews",
+      "tiers": [
+       {
+        "name": "Hobby",
+        "price": "Free",
+        "notes": "Personal repos, CLI, MCP, VS Code extension"
+       },
+       {
+        "name": "Starter",
+        "price": "$20/user/month billed annually",
+        "notes": "All org repos, Slack notifications"
+       },
+       {
+        "name": "Team",
+        "price": "$40/user/month billed annually",
+        "notes": "Unlimited AI reviews and chat, merge queue"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "SAML, GHES, audit log"
+       }
+      ],
+      "notes": "Annual billing is 20% off; monthly prices were not shown in the fetched text."
      }
     }
    ]
@@ -7045,6 +7166,122 @@
       "tiers": [],
       "notes": "Apache-2.0 repository; free."
      }
+    },
+    {
+     "name": "Aqua Voice",
+     "url": "https://aquavoice.com",
+     "verdict": "Fast voice dictation for Mac, Windows, iOS and Android, with MCP and an API.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "both",
+     "job": "Turns speech into polished text in any app",
+     "why_rank": "A free tier, low Pro price and SOC 2 Type II for teams.",
+     "sources": [
+      {
+       "url": "https://aquavoice.com/pricing",
+       "label": "Aqua Voice pricing and FAQ",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Mac",
+      "Windows",
+      "iOS",
+      "Android",
+      "API"
+     ],
+     "integrations": [
+      "MCP",
+      "CLI"
+     ],
+     "best_for": "People who want unlimited, tuned dictation across desktop and phone",
+     "main_limitation": "The free plan stops at 1,000 words",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$8/month (Pro, billed annually)",
+      "free_tier": "Free: 1,000 words, Avalon transcription model, no card",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "1,000 words"
+       },
+       {
+        "name": "Pro",
+        "price": "$8/month billed annually; $10/month month-to-month",
+        "notes": "Unlimited words, custom instructions"
+       },
+       {
+        "name": "Max",
+        "price": "$24/month billed annually; $30/month month-to-month",
+        "notes": "Realtime Mode"
+       },
+       {
+        "name": "Business",
+        "price": "$19/seat/month billed annually; $24/seat/month monthly",
+        "notes": "2+ seats, SSO/SAML, SCIM, zero data retention"
+       }
+      ],
+      "notes": "Students get 70% off Pro and Max. SOC 2 Type II, ISO 27001 (vendor FAQ)."
+     }
+    },
+    {
+     "name": "Willow",
+     "url": "https://willowvoice.com",
+     "verdict": "AI dictation that types anywhere, with Scribe for writing from your intent.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "both",
+     "job": "Dictates text into any app and drafts writing from spoken intent",
+     "why_rank": "Free basic plan with no card, and HIPAA and SOC 2 on Business.",
+     "sources": [
+      {
+       "url": "https://willowvoice.com/pricing",
+       "label": "Willow pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Mac",
+      "iOS"
+     ],
+     "integrations": [],
+     "best_for": "Professionals who want accurate dictation on Mac and iPhone",
+     "main_limitation": "The free plan uses a weaker model and caps Scribe at 20 uses a week",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$12/user/month (Pro, billed annually)",
+      "free_tier": "Basic: free, unlimited Frontier Mini dictation, 20 Scribe uses a week",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "Free",
+        "notes": "Weaker model, limited personalization"
+       },
+       {
+        "name": "Pro",
+        "price": "$12/user/month billed annually; $15 monthly",
+        "notes": "Frontier Pro model, unlimited Scribe"
+       },
+       {
+        "name": "Business",
+        "price": "$28/month billed annually; $35 monthly",
+        "notes": "Zero data retention, SOC 2 Type II, HIPAA"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom (contact sales)",
+        "notes": "SSO/SAML, API, invoicing"
+       }
+      ],
+      "notes": "Annual billing saves 20%. Windows and Android availability Not yet verified."
+     }
     }
    ]
   },
@@ -10463,6 +10700,73 @@
       ],
       "notes": "Annual billing saves 20% (vendor FAQ). 7-day refund."
      }
+    },
+    {
+     "name": "Metricool",
+     "url": "https://metricool.com",
+     "verdict": "Social media planning, analytics and ads reporting with an AI assistant and MCP.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "business",
+     "job": "Schedules posts and reports on social, ads and competitors across brands",
+     "why_rank": "A free plan for one brand, low per-brand pricing, plus MCP and API access.",
+     "sources": [
+      {
+       "url": "https://metricool.com/pricing/",
+       "label": "Metricool pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "API",
+      "MCP"
+     ],
+     "integrations": [
+      "Instagram",
+      "TikTok",
+      "YouTube",
+      "LinkedIn",
+      "Google Business Profile",
+      "Canva",
+      "Google Drive",
+      "Zapier",
+      "Make",
+      "Looker Studio"
+     ],
+     "best_for": "Freelancers and agencies scheduling and reporting on several brands' social accounts",
+     "main_limitation": "LinkedIn and X need a paid plan; the free plan caps posts at 20 a month",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$20/month (Starter, billed annually)",
+      "free_tier": "Free: 1 brand, 20 scheduled posts a month, AI assistant, MCP",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "1 brand, 20 posts/month, 30 days of analytics"
+       },
+       {
+        "name": "Starter",
+        "price": "From $20/month billed annually; from $25/month billed monthly",
+        "notes": "Up to 10 brands, unlimited publishing, LinkedIn"
+       },
+       {
+        "name": "Advanced",
+        "price": "From $53/month billed annually; from $67/month billed monthly",
+        "notes": "Up to 50 brands, approvals, API (Zapier, Make)"
+       },
+       {
+        "name": "Custom",
+        "price": "Contact sales",
+        "notes": "White label, custom AI credits"
+       }
+      ],
+      "notes": "Annual billing saves up to 24%. Prices also shown in EUR."
+     }
     }
    ]
   },
@@ -11939,6 +12243,283 @@
       ],
       "notes": "Annual billing on Operator and Manager is 10% off the monthly price. Add-on prices shown in GBP."
      }
+    },
+    {
+     "name": "Host Tools",
+     "url": "https://hosttools.com",
+     "verdict": "Automated guest messaging, reviews and calendar sync for Airbnb, Vrbo and Booking.com hosts.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "business",
+     "job": "Automates guest and cleaner messages, reviews and pricing rules across rental channels",
+     "why_rank": "Low per-listing prices, AI-personalised replies and a 14-day trial with no card.",
+     "sources": [
+      {
+       "url": "https://hosttools.com/pricing/",
+       "label": "Host Tools pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "Mobile app"
+     ],
+     "integrations": [
+      "Airbnb",
+      "Vrbo",
+      "Booking.com",
+      "Google Vacation Rentals",
+      "Smart locks"
+     ],
+     "best_for": "Hosts with a few listings who want hands-off guest messaging and reviews",
+     "main_limitation": "No free plan; the price rises with every listing you add",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$28/month (Messaging, 1 listing, billed yearly)",
+      "free_tier": "14-day free trial, no credit card",
+      "tiers": [
+       {
+        "name": "Messaging",
+        "price": "$28/month billed yearly ($336/year) or $30/month monthly",
+        "notes": "1 listing; automated messages and reviews, unified inbox"
+       },
+       {
+        "name": "Pro",
+        "price": "$30/month billed yearly ($360/year) or $32/month monthly",
+        "notes": "1 listing; calendar sync, smart pricing, AI-personalized replies, direct booking site"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom quote (134+ listings)",
+        "notes": "Onboarding session, priority support"
+       }
+      ],
+      "notes": "Total price per month for the whole account, set by listing count. Smart lock add-on $3/month. Prices in USD."
+     }
+    },
+    {
+     "name": "Wheelhouse",
+     "url": "https://www.usewheelhouse.com",
+     "verdict": "Dynamic pricing and market data for short-term rentals, with a free tier.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "business",
+     "job": "Sets nightly rates from market data and syncs them to your listings",
+     "why_rank": "Every listing starts on a free tier, with a flat per-listing paid plan and an API.",
+     "sources": [
+      {
+       "url": "https://www.usewheelhouse.com/pricing",
+       "label": "Wheelhouse plans and pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "Daily price sync to connected accounts"
+     ],
+     "best_for": "Hosts and operators who want data-driven nightly prices without a long contract",
+     "main_limitation": "Paid pricing is per listing, so costs grow with your portfolio",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$19.99/month per listing (Pro Flat)",
+      "free_tier": "Free plan: link listings, market report and settings, no credit card",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "Every listing starts on the free tier"
+       },
+       {
+        "name": "Pro Flex",
+        "price": "1% of revenue, with a $2.99 minimum monthly fee",
+        "notes": "Billed at time of reservation"
+       },
+       {
+        "name": "Pro Flat",
+        "price": "$19.99/month per listing",
+        "notes": "$16.99 per listing for 10–49 listings"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom (contact sales)",
+        "notes": "50+ listings"
+       },
+       {
+        "name": "Dynamic Sets",
+        "price": "$12.99 per set per month",
+        "notes": "Market comparison sets add-on"
+       }
+      ],
+      "notes": "No setup fees; cancel anytime (vendor FAQ). Prices in USD."
+     }
+    },
+    {
+     "name": "OwnerRez",
+     "url": "https://www.ownerrez.com",
+     "verdict": "Vacation rental software with channel management, Rezzy AI and an MCP connector for Claude and ChatGPT.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "business",
+     "job": "Runs bookings, channels, messaging, payments and websites for rental owners and managers",
+     "why_rank": "Per-property pricing with no booking fees or contracts, plus MCP access for AI assistants.",
+     "sources": [
+      {
+       "url": "https://www.ownerrez.com/pricing",
+       "label": "OwnerRez pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "MCP"
+     ],
+     "integrations": [
+      "Airbnb",
+      "Vrbo",
+      "Booking.com",
+      "Google Vacation Rentals",
+      "QuickBooks",
+      "Claude",
+      "ChatGPT"
+     ],
+     "best_for": "Owners and managers who want an all-in-one PMS and to connect it to Claude or ChatGPT",
+     "main_limitation": "Rezzy AI, SMS, websites and QuickBooks are paid premium add-ons; no free plan",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "",
+      "free_tier": "14-day free trial",
+      "tiers": [
+       {
+        "name": "Per-property plan",
+        "price": "Sliding scale by number of properties; exact price for a set property count Not yet verified",
+        "notes": "Unlimited bookings, team logins, channel management, digital signatures"
+       },
+       {
+        "name": "Premium features",
+        "price": "Extra monthly fee each",
+        "notes": "Rezzy AI, SMS, hosted sites, WordPress plugin, QuickBooks, property management"
+       }
+      ],
+      "notes": "No setup fees, booking fees or contracts; billed monthly by card. Pricing is per account, not per user."
+     }
+    },
+    {
+     "name": "Smoobu",
+     "url": "https://www.smoobu.com",
+     "verdict": "Vacation rental PMS and channel manager with iOS and Android apps.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "business",
+     "job": "Syncs calendars with 100+ booking portals and manages bookings, guests and a booking website",
+     "why_rank": "Commission-free plans from about €28 a month and a 14-day trial with no card.",
+     "sources": [
+      {
+       "url": "https://www.smoobu.com/en/pricing/",
+       "label": "Smoobu pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "API"
+     ],
+     "integrations": [
+      "Airbnb",
+      "Booking.com",
+      "Expedia",
+      "Stripe",
+      "PayPal"
+     ],
+     "best_for": "Small European hosts who want a channel manager, booking site and apps in one",
+     "main_limitation": "Billed in EUR; the cheapest Flex plan adds a 0.9% booking fee",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "From €28 a month (1 unit, per vendor FAQ)",
+      "free_tier": "14-day free trial, no credit card",
+      "tiers": [
+       {
+        "name": "Professional Flex",
+        "price": "€29 a month + 0.9% booking fee",
+        "notes": "Everything included"
+       },
+       {
+        "name": "Professional Prepaid",
+        "price": "€35 a month monthly; €31.50 a month billed yearly",
+        "notes": "0% booking fee; channel manager, website builder, full API"
+       },
+       {
+        "name": "Pro+",
+        "price": "€55 a month monthly; €49.50 a month billed yearly",
+        "notes": "E-invoicing, dynamic pricing, priority support"
+       }
+      ],
+      "notes": "All subscriptions billed in EUR; USD/GBP shown as estimates. 10% off yearly, 20% off 2-year plans. 20+ properties: custom quote."
+     }
+    },
+    {
+     "name": "Tokeet",
+     "url": "https://www.tokeet.com",
+     "verdict": "Channel manager and PMS for rentals with TokeetAI guest messaging and a free plan.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "business",
+     "job": "Syncs channels and automates bookings, guest messages and pricing for rental managers",
+     "why_rank": "States a free plan and a 15-day trial with no card on its pricing page.",
+     "sources": [
+      {
+       "url": "https://www.tokeet.com/pricing",
+       "label": "Tokeet pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [
+      "Payment gateways"
+     ],
+     "best_for": "Rental managers who want channel management, AI messaging and mobile apps",
+     "main_limitation": "Paid prices depend on rental count; only the 10-rental price was shown on the fetched page",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free plan (stated on pricing page); 15-day free trial, no credit card",
+      "tiers": [
+       {
+        "name": "Free plan",
+        "price": "Free",
+        "notes": "Stated on the pricing page; limits Not yet verified"
+       },
+       {
+        "name": "Paid (10 rentals)",
+        "price": "$134.90/month with monthly payments",
+        "notes": "Reservation and channel manager, mobile app, website builder, unlimited users"
+       }
+      ],
+      "notes": "Yearly billing saves 20% (vendor page). No booking or usage fees."
+     }
     }
    ]
   },
@@ -13248,6 +13829,125 @@
       ],
       "notes": "Vendor reports 1,500+ customers."
      }
+    },
+    {
+     "name": "Bitsgap",
+     "url": "https://bitsgap.com",
+     "verdict": "Crypto trading bots (grid, DCA, COMBO) with an AI Assistant across 18 exchanges.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "consumer",
+     "job": "Runs automated grid and DCA trading bots on your exchange accounts",
+     "why_rank": "A free plan, a 7-day Pro trial with no card, and desktop and mobile apps.",
+     "sources": [
+      {
+       "url": "https://bitsgap.com/pricing",
+       "label": "Bitsgap pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "Desktop",
+      "Mobile app"
+     ],
+     "integrations": [
+      "18 supported exchanges"
+     ],
+     "best_for": "Crypto traders who want grid and DCA bots with AI-suggested settings",
+     "main_limitation": "Live bots need a paid plan; the free plan only runs bots in demo mode",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$23/month (Basic, billed yearly)",
+      "free_tier": "Free: $0/month, manual trading, 20 demo bots; 7-day PRO trial, no card",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "Demo bots, manual trading"
+       },
+       {
+        "name": "Basic",
+        "price": "$23/month billed yearly; $29/month monthly",
+        "notes": "3 grid bots, 10 DCA bots, AI Assistant"
+       },
+       {
+        "name": "Advanced",
+        "price": "$55/month billed yearly; $69/month monthly",
+        "notes": "10 grid bots, 50 DCA bots, futures bots"
+       },
+       {
+        "name": "Pro",
+        "price": "$119/month billed yearly; $149/month monthly",
+        "notes": "50 grid bots, 250 DCA bots, AI Portfolio Mode"
+       }
+      ],
+      "notes": "All charges in USD. Yearly billing saves 20%."
+     }
+    },
+    {
+     "name": "WunderTrading",
+     "url": "https://wundertrading.com",
+     "verdict": "Crypto trading bots, TradingView automation and an AI trading bot, with API and MCP access.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "consumer",
+     "job": "Automates TradingView signals, DCA and grid bots across exchanges",
+     "why_rank": "A lifetime free plan and API and MCP connectivity on every plan.",
+     "sources": [
+      {
+       "url": "https://wundertrading.com/en/pricing",
+       "label": "WunderTrading pricing and FAQ",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "API",
+      "MCP"
+     ],
+     "integrations": [
+      "TradingView",
+      "18+ exchanges",
+      "Hyperliquid",
+      "Webhooks"
+     ],
+     "best_for": "Traders automating TradingView strategies or signals across several exchanges",
+     "main_limitation": "Paid plan prices were not shown in the fetched page text",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free plan with no time limit (1 signal, DCA and grid bot); 7-day Pro trial",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "Free",
+        "notes": "1 signal bot, 1 DCA bot, 1 grid bot"
+       },
+       {
+        "name": "Basic",
+        "price": "Price not shown in fetched text",
+        "notes": "5 signal, 20 DCA, 5 grid bots"
+       },
+       {
+        "name": "Pro",
+        "price": "Price not shown in fetched text",
+        "notes": "50 signal, 100 DCA, 20 grid bots"
+       },
+       {
+        "name": "Premium",
+        "price": "Price not shown in fetched text",
+        "notes": "Unlimited signal bots, 300 DCA, 200 grid bots"
+       }
+      ],
+      "notes": "Annual billing up to 25% off (vendor page). Trial ends on the Free plan with no charge."
+     }
     }
    ]
   },
@@ -13793,6 +14493,157 @@
       ],
       "notes": "Vendor says student and teacher data is never used to train AI models."
      }
+    },
+    {
+     "name": "Knowt",
+     "url": "https://knowt.com",
+     "verdict": "Free flashcards and notes with AI summaries, lecture notes and a voice tutor on Ultra.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "consumer",
+     "job": "Turns PDFs, videos, slides and lectures into notes, flashcards and practice",
+     "why_rank": "Unlimited free creation, with Ultra about half price billed yearly.",
+     "sources": [
+      {
+       "url": "https://knowt.com/plans",
+       "label": "Knowt plans and pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [],
+     "best_for": "Students who want AI study notes, flashcards and AP, SAT and ACT prep",
+     "main_limitation": "AI summarizers and the voice tutor need Ultra; app-store purchases cannot be refunded by Knowt",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$12.99/month (Ultra, billed yearly)",
+      "free_tier": "Basic: free, unlimited file creation, live collaboration and storage",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "Free",
+        "notes": "Unlimited creation; 5 million resources"
+       },
+       {
+        "name": "Ultra - Annual",
+        "price": "$12.99/month, billed upfront at $149.99/year",
+        "notes": "3-day free trial; ad-free, AI summarizers, AI voice tutor"
+       },
+       {
+        "name": "Ultra - Monthly",
+        "price": "$24.99/month",
+        "notes": "Same features, billed monthly"
+       }
+      ],
+      "notes": "Full refund within 24 hours of purchase or renewal, minus ~3.5% fees (web purchases)."
+     }
+    },
+    {
+     "name": "Praktika",
+     "url": "https://praktika.ai",
+     "verdict": "Language-speaking practice with AI tutors in an iOS and Android app.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "consumer",
+     "job": "Lets you practise speaking a language with AI tutor avatars and instant feedback",
+     "why_rank": "Mobile-first AI conversation practice at a fraction of a human tutor's price.",
+     "sources": [
+      {
+       "url": "https://praktika.ai/",
+       "label": "Praktika homepage",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "iOS",
+      "Android"
+     ],
+     "integrations": [],
+     "best_for": "Learners who want daily speaking practice with feedback on every message",
+     "main_limitation": "Plan prices are not published on the homepage; the vendor only quotes about $8 a month",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Subscription",
+        "price": "About $8 a month (vendor's own comparison); exact plan prices Not yet verified",
+        "notes": "AI tutors, instant feedback"
+       }
+      ],
+      "notes": "Whether a free plan exists was not shown on the vendor page (Not yet verified).",
+      "free_tier_unverified": true
+     }
+    },
+    {
+     "name": "Kahoot!",
+     "url": "https://kahoot.com",
+     "verdict": "Game-based quizzes for classrooms, with AI tools to build kahoots from topics, PDFs and notes.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "both",
+     "job": "Creates and hosts quiz games and lessons, with AI generation from files and URLs",
+     "why_rank": "A free teacher plan plus low per-teacher yearly plans.",
+     "sources": [
+      {
+       "url": "https://kahoot.com/schools/plans/",
+       "label": "Kahoot! plans for schools",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [],
+     "best_for": "Teachers who want quick quizzes and review games generated with AI",
+     "main_limitation": "Teacher plans are billed per teacher, upfront for a full year",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Kahoot! Go: free plan for teachers",
+      "tiers": [
+       {
+        "name": "Kahoot! Go",
+        "price": "Free",
+        "notes": "Free plan for teachers"
+       },
+       {
+        "name": "Kahoot!+ Bronze",
+        "price": "$36/year per teacher (shown as $3 a month)",
+        "notes": "Up to 50 participants; AI content creation"
+       },
+       {
+        "name": "Kahoot!+ Silver",
+        "price": "$84/year per teacher (shown as $7 a month)",
+        "notes": "Up to 100 participants"
+       },
+       {
+        "name": "Kahoot!+ Gold",
+        "price": "$144/year per teacher (shown as $12 a month)",
+        "notes": "Up to 200 participants; full AI toolkit"
+       },
+       {
+        "name": "Kahoot! One",
+        "price": "$228/year per teacher (shown as $19 a month)",
+        "notes": "All question types and study tools"
+       }
+      ],
+      "notes": "Vendor FAQ: education plans are billed upfront for the year, with no monthly billing option. USD prices."
+     }
     }
    ]
   },
@@ -14210,11 +15061,11 @@
      "sources": [
       {
        "url": "https://www.myfitnesspal.com/premium",
-       "label": "MyFitnessPal Premium",
-       "checked": "2026-10-20"
+       "label": "MyFitnessPal Premium pricing",
+       "checked": "2026-10-21"
       }
      ],
-     "last_verified": "2026-10-20",
+     "last_verified": "2026-10-21",
      "platforms": [
       "iOS",
       "Android",
@@ -14232,7 +15083,7 @@
      "main_limitation": "The Meal Scan, Voice Log and barcode scanning features need Premium; Premium price was not shown on the fetched page",
      "pricing_detail": {
       "model": "freemium",
-      "starting_price": "",
+      "starting_price": "$19.99/month (Premium monthly)",
       "free_tier": "Free version: nutrition, exercise and weight tracking",
       "tiers": [
        {
@@ -14241,12 +15092,138 @@
         "notes": "Nutrition and exercise tracking"
        },
        {
-        "name": "Premium",
-        "price": "Price not shown on fetched page",
-        "notes": "Barcode and Meal Scan, Voice Log, custom macros, ad-free; 7-day free trial for new members"
+        "name": "Premium (annual)",
+        "price": "$79.99/year",
+        "notes": "Barcode and Meal Scan, Voice Log, custom macros, ad-free"
+       },
+       {
+        "name": "Premium (monthly)",
+        "price": "$19.99/month",
+        "notes": "Same benefits, a month at a time"
        }
       ],
-      "notes": "Premium is offered on monthly or annual subscriptions (vendor FAQ)."
+      "notes": "7-day free Premium trial for new members; the annual plan is 67% cheaper than monthly (vendor page). USD prices."
+     }
+    },
+    {
+     "name": "Cronometer",
+     "url": "https://cronometer.com",
+     "verdict": "Detailed nutrition tracker with photo and voice logging and the Crono Coach AI assistant.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "consumer",
+     "job": "Tracks food, nutrients, exercise and biometrics with AI coaching",
+     "why_rank": "A real free version plus a Gold plan under $5 a month billed yearly.",
+     "sources": [
+      {
+       "url": "https://cronometer.com/gold/",
+       "label": "Cronometer Gold pricing and features",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [
+      "Siri (voice log)",
+      "Apps and devices sync"
+     ],
+     "best_for": "People who want accurate macro and micronutrient tracking with AI-powered guidance",
+     "main_limitation": "Photo log, voice log and Crono Coach need Gold",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$4.99/month (Gold, billed annually)",
+      "free_tier": "Free version: log foods, exercise, biometrics; track up to 84 nutrients",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "Basic tracking"
+       },
+       {
+        "name": "Gold (annual)",
+        "price": "$59.99/year ($4.99/month billed annually)",
+        "notes": "Ad-free, Photo Log, Voice Log, Crono Coach"
+       },
+       {
+        "name": "Gold (monthly)",
+        "price": "$10.99/month billed monthly",
+        "notes": "Same features"
+       }
+      ],
+      "notes": "USD prices. Annual saves 54% vs monthly (vendor page)."
+     }
+    },
+    {
+     "name": "Strava",
+     "url": "https://www.strava.com",
+     "verdict": "Run, ride and hike tracking with Athlete Intelligence AI summaries for subscribers.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "consumer",
+     "job": "Records activities and gives AI-written performance insights and routes",
+     "why_rank": "A free plan for recording, with a 30-day free subscription trial.",
+     "sources": [
+      {
+       "url": "https://www.strava.com/subscribe",
+       "label": "Strava subscription",
+       "checked": "2026-10-21"
+      },
+      {
+       "url": "https://support.strava.com/hc/en-us/articles/26786795557005-Athlete-Intelligence-on-Strava",
+       "label": "Athlete Intelligence (Strava Help Center)",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "Mobile app"
+     ],
+     "integrations": [
+      "Runna"
+     ],
+     "best_for": "Runners, cyclists and hikers who want AI summaries of each workout plus routes and leaderboards",
+     "main_limitation": "Athlete Intelligence is for subscribers and trial users only; the monthly price was not shown",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free: record activities, community and safety features",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "Record activities"
+       },
+       {
+        "name": "Individual Subscription",
+        "price": "$79.99/year + tax (shown as $6.67 a month); 30-day trial for $0",
+        "notes": "Routes, advanced analysis, Athlete Intelligence"
+       },
+       {
+        "name": "Family Subscription",
+        "price": "$139.99/year + tax, annual only",
+        "notes": "4 accounts"
+       },
+       {
+        "name": "Strava + Runna",
+        "price": "$149.99/year + tax, annual only",
+        "notes": "Adds Runna training plans"
+       },
+       {
+        "name": "Student",
+        "price": "$39.99/year + tax, annual only",
+        "notes": "Verified students"
+       }
+      ],
+      "notes": "Monthly billing option is offered but its price was not shown on the fetched page (Not yet verified). Athlete Intelligence uses generative AI on your activity data (Strava Help Center)."
      }
     }
    ]
@@ -14705,6 +15682,126 @@
        }
       ],
       "notes": "DCC Bridge to 3D tools on paid plans."
+     }
+    },
+    {
+     "name": "Hyper3D Rodin",
+     "url": "https://hyper3d.ai",
+     "verdict": "Image- and text-to-3D generator with an API, MCP and plug-ins for game engines.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "both",
+     "job": "Generates textured 3D models and worlds from images or text",
+     "why_rank": "Pay-by-result free tier, yearly discount and plug-ins for Unity, Unreal, Godot and Blender.",
+     "sources": [
+      {
+       "url": "https://hyper3d.ai/pricing",
+       "label": "Hyper3D pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "API",
+      "MCP"
+     ],
+     "integrations": [
+      "Blender",
+      "Unity",
+      "Unreal",
+      "Godot",
+      "Maya",
+      "3ds Max",
+      "ComfyUI"
+     ],
+     "best_for": "Game developers and 3D artists who want production-ready assets and an API",
+     "main_limitation": "API access needs the $96+/month Business plan",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$24/month (Creator, billed yearly)",
+      "free_tier": "Free: $0, pay by result (direct credits $1.50 each), 10 private assets",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "Pay by result; direct credits $1.50 each"
+       },
+       {
+        "name": "Creator",
+        "price": "$24/month billed yearly ($288/year); $30/month monthly",
+        "notes": "About 60 models; unlimited export and any use"
+       },
+       {
+        "name": "Business",
+        "price": "$96/month billed yearly ($1,152/year); $120/month monthly",
+        "notes": "Full API access, commercial ChatAvatar licence"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "Team-grade controls, on-premise deployment, fine-tuning"
+       }
+      ],
+      "notes": "Yearly plans save 20%. Education pricing for verified students and educators."
+     }
+    },
+    {
+     "name": "Sloyd",
+     "url": "https://www.sloyd.ai",
+     "verdict": "Text- and image-to-3D with templates, AI rigging and plug-ins for Unity, Unreal and Blender.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-21 (vendor page fetched)",
+     "audience": "both",
+     "job": "Generates and customises game-ready 3D models, textures and animations",
+     "why_rank": "Unlimited generations from $12.50 a month billed yearly, with a free plan.",
+     "sources": [
+      {
+       "url": "https://www.sloyd.ai/pricing",
+       "label": "Sloyd pricing",
+       "checked": "2026-10-21"
+      }
+     ],
+     "last_verified": "2026-10-21",
+     "platforms": [
+      "Web",
+      "API"
+     ],
+     "integrations": [
+      "Unity",
+      "Unreal",
+      "Blender",
+      "Godot",
+      "Roblox Studio"
+     ],
+     "best_for": "Indie game developers who want unlimited 3D generations with a commercial licence",
+     "main_limitation": "The free plan is personal-use only with 1 AI generation a day; API credits are billed separately",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$12.50/month (Plus, billed yearly)",
+      "free_tier": "Guest: $0, 1 AI 3D generation a day, personal-use licence",
+      "tiers": [
+       {
+        "name": "Guest",
+        "price": "$0/month",
+        "notes": "1 AI generation per day"
+       },
+       {
+        "name": "Sloyd Plus",
+        "price": "$12.50/month billed yearly ($150/year); $15/month monthly",
+        "notes": "Unlimited generations, plug-ins, commercial use"
+       },
+       {
+        "name": "Sloyd Pro",
+        "price": "$41.67/month billed yearly ($500/year); $50/month monthly",
+        "notes": "Priority queue, reselling rights"
+       }
+      ],
+      "notes": "API runs on prepaid credits, separate from web plans (sloyd.ai/api/pricing)."
      }
     }
    ]
