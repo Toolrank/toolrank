@@ -1,78 +1,78 @@
 {
- "fetched": "2026-10-19 18:54 UTC",
- "fetched_ts": 1792436054,
+ "fetched": "2026-10-20 15:45 UTC",
+ "fetched_ts": 1792511122,
  "stars_baseline": "2026-10-15",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "agent-memory",
    "repo": "tigerless-labs/agent-memory",
-   "gained": 677,
-   "stars": 4385,
+   "gained": 838,
+   "stars": 4546,
    "url": "https://github.com/tigerless-labs/agent-memory"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 568,
-   "stars": 3461,
+   "gained": 675,
+   "stars": 3568,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 366,
-   "stars": 3759,
+   "gained": 431,
+   "stars": 3824,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 357,
-   "stars": 110878,
+   "gained": 405,
+   "stars": 110926,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 352,
-   "stars": 3655,
+   "gained": 348,
+   "stars": 3651,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 228,
-   "stars": 3685,
+   "gained": 287,
+   "stars": 3744,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 215,
-   "stars": 3860,
+   "gained": 253,
+   "stars": 3898,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 182,
-   "stars": 3778,
+   "gained": 208,
+   "stars": 3804,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "jevgrep",
    "repo": "dzhng/jevgrep",
-   "gained": 124,
-   "stars": 2816,
+   "gained": 134,
+   "stars": 2826,
    "url": "https://github.com/dzhng/jevgrep"
   },
   {
-   "tool": "VoiceMem",
-   "repo": "xzf-thu/VoiceMem",
-   "gained": 79,
-   "stars": 2595,
-   "url": "https://github.com/xzf-thu/VoiceMem"
+   "tool": "Sepia",
+   "repo": "Nanako0129/sepia",
+   "gained": 96,
+   "stars": 3275,
+   "url": "https://github.com/Nanako0129/sepia"
   }
  ],
  "hn": [
@@ -100,9 +100,9 @@
   {
    "tool": "Claude",
    "stories": 7,
-   "points": 18,
-   "top_title": "Show HN: A Playable Architectural Facade Synth",
-   "top_url": "https://news.ycombinator.com/item?id=50068405"
+   "points": 12,
+   "top_title": "Fable 5.5: SVG of a controller riding a bicyle riding a pelican riding a bicycle",
+   "top_url": "https://news.ycombinator.com/item?id=50136416"
   },
   {
    "tool": "Perplexity",
@@ -110,20 +110,6 @@
    "points": 5,
    "top_title": "Open-sourcing SPACE, the sandbox platform behind Computer",
    "top_url": "https://news.ycombinator.com/item?id=50122131"
-  },
-  {
-   "tool": "Cursor",
-   "stories": 3,
-   "points": 4,
-   "top_title": "Cursor drops $20 Pro plan, merges X",
-   "top_url": "https://news.ycombinator.com/item?id=50069771"
-  },
-  {
-   "tool": "Airtable",
-   "stories": 2,
-   "points": 4,
-   "top_title": "Back to bases: What's next at Airtable",
-   "top_url": "https://news.ycombinator.com/item?id=50062703"
   },
   {
    "tool": "Lovable",
@@ -140,11 +126,25 @@
    "top_url": "https://news.ycombinator.com/item?id=50155469"
   },
   {
+   "tool": "Exa",
+   "stories": 2,
+   "points": 2,
+   "top_title": "Exa 3.0",
+   "top_url": "https://news.ycombinator.com/item?id=50160981"
+  },
+  {
    "tool": "Webflow",
    "stories": 1,
    "points": 2,
    "top_title": "Design Systems",
    "top_url": "https://news.ycombinator.com/item?id=50088586"
+  },
+  {
+   "tool": "Clay",
+   "stories": 1,
+   "points": 2,
+   "top_title": "Why Clay Has an AI Writing Policy",
+   "top_url": "https://news.ycombinator.com/item?id=50143643"
   }
  ]
 }
