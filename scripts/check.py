@@ -62,14 +62,19 @@ def get(u):
         except urllib.error.HTTPError as e:
             if m == "GET" or e.code not in (403, 405, 400, 404, 501): return u, e.code
         except Exception as e:
-            if m == "GET": return u, str(e)[:60]
+            if m == "GET":
+                try: return u, urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (ToolRank link check)"}), timeout=30).status  # one retry for transient timeouts
+                except urllib.error.HTTPError as e2: return u, e2.code
+                except Exception as e2: return u, str(e2)[:60]
+ISSUE = "https://github.com/Toolrank/toolrank/issues/new?"  # one per tool, same template; checking hundreds trips GitHub throttling (false timeouts)
+iss = sorted(u for u in ext if u.startswith(ISSUE)); ext = (ext - set(iss)) | set(iss[:1])
 if "--no-external" not in sys.argv:
     with cf.ThreadPoolExecutor(12) as x:
         for u, st in sorted(x.map(get, sorted(ext))):
             if isinstance(st, int) and st < 400: continue
             soft = st in (401, 403, 429) or (st == 404 and u.startswith(FAVICON))  # favicon 404 = no icon; <img onerror> falls back to the letter badge
             (warns if soft else fails).append(f"outbound {u}: {st}")
-print(f"pages checked: {len(pages)}, outbound urls: {len(ext)}")
+print(f"pages checked: {len(pages)}, outbound urls: {len(ext)} ({len(iss)} review-issue links checked as one)")
 for w in warns: print("WARN", w)
 for f in fails: print("FAIL", f)
 print("OK" if not fails else f"{len(fails)} failure(s)"); sys.exit(1 if fails else 0)

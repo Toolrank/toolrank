@@ -1,7 +1,42 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "note": "GitHub items dated by trending snapshot date, not repo creation date.",
  "items": [
+  {
+   "date": "2026-10-21",
+   "title": "cloudflare/security-audit-skill",
+   "summary": "GitHub daily trending: a coding-agent skill from Cloudflare for multi-phase security audits, with independently verified, machine-readable findings. MIT licensed.",
+   "url": "https://github.com/cloudflare/security-audit-skill",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "Mistral Voxtral 3",
+   "summary": "New speech-to-text and text-to-speech models plus a LiveKit-based voice agent SDK: transcription in 50+ languages with diarization, expressive speech in 35+ languages, and sub-second turns. From $0.0035/min transcription and $13 per 1M characters for speech; EU-hosted API or self-deployment.",
+   "url": "https://mistral.ai/news/voxtral-3/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "ElevenLabs Eleven Realtime",
+   "summary": "Two speech-to-speech models that each act as a complete voice agent: v1 Mini for natural, low-cost conversations and v1 Max for complex, tool-heavy tasks. 90+ languages, 17,000+ voices, in ElevenAgents and an OpenAI Realtime-compatible API; rolling out gradually.",
+   "url": "https://elevenlabs.io/blog/realtime",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "Bria Fibo 2",
+   "summary": "Bria's new image generation and editing model, trained on 100% licensed data. Open weights for Generate and Edit on Hugging Face, and the same Bria API with no code changes.",
+   "url": "https://docs.bria.ai/whats-new/fibo-2",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "i14 Sugar Glider 120B",
+   "summary": "A 120B model on i14's constant-memory Cerbearus architecture that reads up to a million tokens with fixed memory per token, fitting many more long-context requests per server. Early access via waitlist, in i14's cloud, your VPC or on-premises.",
+   "url": "https://www.i14.ai/news/sugar-glider-120b",
+   "type": "model"
+  },
   {
    "date": "2026-10-20",
    "title": "stablyai/orca",
@@ -15,6 +50,13 @@
    "summary": "GitHub daily trending: compresses tool outputs, logs, files and RAG chunks before they reach the LLM, claiming 20% fewer tokens for coding agents and 60-95% fewer for JSON. Library, proxy and MCP server.",
    "url": "https://github.com/headroomlabs-ai/headroom",
    "type": "github"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "Inception Mercury 3",
+   "summary": "Inception's largest diffusion language model, claimed at 1,068 tokens/s on NVIDIA GPUs with a 1M-token context. $0.20/$0.70 per 1M input/output tokens (50% off at launch); OpenAI-compatible API, OpenRouter, Baseten and Vercel. Weights not released.",
+   "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+   "type": "model"
   },
   {
    "date": "2026-10-19",
@@ -210,20 +252,6 @@
    "title": "Grok Voice 3.0",
    "summary": "xAI's new speech-to-speech model, with sub-second latency, available today in the Voice Agent API at $0.08/min, the same price as Grok Voice 2.0.",
    "url": "https://x.ai/news/grok-voice-3",
-   "type": "model"
-  },
-  {
-   "date": "2026-10-13",
-   "title": "Liquid AI LFM2.5-24B-A2B",
-   "summary": "Open-weight 24B reasoning model with just 2B active parameters, built for fast, private agents on-device. 131K context; on Hugging Face and Liquid's Playground.",
-   "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
-   "type": "model"
-  },
-  {
-   "date": "2026-10-13",
-   "title": "Gemini 4 Argon",
-   "summary": "Google's new frontier model, available via Gemini API, AI Studio and the Gemini app (Pro/Ultra). Intro price $2/$10 per 1M tokens until Nov 30.",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
    "type": "model"
   }
  ]
