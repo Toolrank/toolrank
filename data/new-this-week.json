@@ -1,13 +1,34 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "note": "GitHub items dated by trending snapshot date, not repo creation date.",
  "items": [
+  {
+   "date": "2026-10-22",
+   "title": "akitaonrails/ai-memory",
+   "summary": "GitHub daily trending: long-term memory for coding-agent CLIs that also makes it easier to hand work off between different agent vendors. MIT licensed.",
+   "url": "https://github.com/akitaonrails/ai-memory",
+   "type": "github"
+  },
   {
    "date": "2026-10-21",
    "title": "cloudflare/security-audit-skill",
    "summary": "GitHub daily trending: a coding-agent skill from Cloudflare for multi-phase security audits, with independently verified, machine-readable findings. MIT licensed.",
    "url": "https://github.com/cloudflare/security-audit-skill",
    "type": "github"
+  },
+  {
+   "date": "2026-10-21",
+   "title": "Recursive Flint",
+   "summary": "Recursive's first model: a 40B mixture-of-experts coding model with about 2.5B active per token, built for fast agentic coding on local hardware. Over 125 tokens/s on an M4 Pro MacBook Pro, up to 512k context. Free open weights on Hugging Face under Apache 2.0.",
+   "url": "https://recursive.com/updates/introducing-recursive-flint",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-21",
+   "title": "Gradium Phonon",
+   "summary": "Open-source text-to-speech that runs fully on-device, in as little as 64.5 MB with 31M parameters, on phones, laptops, embedded hardware and in the browser. Apache 2.0 weights on Hugging Face; voice cloning and design via the Gradium API.",
+   "url": "https://gradium.ai/blog/gradium-releases-phonon",
+   "type": "model"
   },
   {
    "date": "2026-10-20",
@@ -50,6 +71,20 @@
    "summary": "GitHub daily trending: compresses tool outputs, logs, files and RAG chunks before they reach the LLM, claiming 20% fewer tokens for coding agents and 60-95% fewer for JSON. Library, proxy and MCP server.",
    "url": "https://github.com/headroomlabs-ai/headroom",
    "type": "github"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "humans& Ampersand v0.1",
+   "summary": "A 'collaborator' model built on GLM 5.3 and trained to help groups reach individual and shared goals over months, for example inside a group chat. Available now through an OpenAI Agents API-compatible API, no waitlist.",
+   "url": "https://ampersand.humansand.ai/blog/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "Ornith-1.5-122B (open weights)",
+   "summary": "A 122B mixture-of-experts model from Ornith, trained with a self-improvement loop and designed for single-GPU deployment. MIT-licensed weights and GGUF quantizations on Hugging Face.",
+   "url": "https://huggingface.co/ornith-ai/Ornith-1.5-122B",
+   "type": "model"
   },
   {
    "date": "2026-10-19",
@@ -234,24 +269,10 @@
    "type": "model"
   },
   {
-   "date": "2026-10-14",
-   "title": "Ling-3.1-flash (open weights)",
-   "summary": "Ant Group's inclusionAI published weights for Ling-3.1-flash, a 560B-parameter hybrid reasoning MoE (25B active) with a 1M-token context, aimed at agents, search, office work and software engineering. MIT licence.",
-   "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash",
-   "type": "model"
-  },
-  {
-   "date": "2026-10-14",
-   "title": "Paper Instruments Ultramarine 1 Flash",
-   "summary": "An agentic model for professional knowledge work (finance, law, consulting, operations), RL-trained on GLM-5.3 Flash; about $0.13 per task on its maker's internal suite. Available through an OpenAI-compatible API.",
-   "url": "https://www.paperinstruments.com/blog/ultramarine",
-   "type": "model"
-  },
-  {
-   "date": "2026-10-14",
-   "title": "Grok Voice 3.0",
-   "summary": "xAI's new speech-to-speech model, with sub-second latency, available today in the Voice Agent API at $0.08/min, the same price as Grok Voice 2.0.",
-   "url": "https://x.ai/news/grok-voice-3",
+   "date": "2026-10-15",
+   "title": "Kling 4.0",
+   "summary": "Kling AI's new video model: native 3-30 second clips in one pass, steadier motion and camera work, and up to 15 reference assets plus 10 keyframes. Live on kling.ai and via Kling MCP and CLI; API access and 4K 10-bit HDR coming soon.",
+   "url": "https://kling.ai/feature/kling-4-ai-video-generation",
    "type": "model"
   }
  ]
