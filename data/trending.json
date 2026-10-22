@@ -1,77 +1,77 @@
 {
- "fetched": "2026-10-21 11:46 UTC",
- "fetched_ts": 1792583162,
+ "fetched": "2026-10-22 07:54 UTC",
+ "fetched_ts": 1792655673,
  "stars_baseline": "2026-10-15",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 811,
-   "stars": 3704,
+   "gained": 877,
+   "stars": 3770,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "agent-memory",
    "repo": "tigerless-labs/agent-memory",
-   "gained": 588,
-   "stars": 4296,
+   "gained": 696,
+   "stars": 4404,
    "url": "https://github.com/tigerless-labs/agent-memory"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 496,
-   "stars": 3889,
+   "gained": 665,
+   "stars": 4058,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 464,
-   "stars": 110985,
+   "gained": 522,
+   "stars": 111043,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 327,
-   "stars": 3784,
+   "gained": 389,
+   "stars": 3846,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 302,
-   "stars": 3947,
+   "gained": 332,
+   "stars": 3977,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 230,
-   "stars": 3826,
+   "gained": 248,
+   "stars": 3844,
    "url": "https://github.com/nykooi1/vibe-wise"
-  },
-  {
-   "tool": "jevgrep",
-   "repo": "dzhng/jevgrep",
-   "gained": 141,
-   "stars": 2833,
-   "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 128,
-   "stars": 3307,
+   "gained": 229,
+   "stars": 3408,
    "url": "https://github.com/Nanako0129/sepia"
+  },
+  {
+   "tool": "jevgrep",
+   "repo": "dzhng/jevgrep",
+   "gained": 147,
+   "stars": 2839,
+   "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 112,
-   "stars": 14247,
+   "gained": 130,
+   "stars": 14265,
    "url": "https://github.com/microsoft/agent-framework"
   }
  ],
@@ -99,10 +99,10 @@
   },
   {
    "tool": "Claude",
-   "stories": 5,
-   "points": 9,
-   "top_title": "Fable 5.5: SVG of a controller riding a bicyle riding a pelican riding a bicycle",
-   "top_url": "https://news.ycombinator.com/item?id=50136416"
+   "stories": 7,
+   "points": 17,
+   "top_title": "Claude Code install script is down",
+   "top_url": "https://news.ycombinator.com/item?id=50192140"
   },
   {
    "tool": "Perplexity",
@@ -112,11 +112,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50122131"
   },
   {
-   "tool": "Lovable",
-   "stories": 2,
-   "points": 2,
-   "top_title": "You can now chat with Lovable for free",
-   "top_url": "https://news.ycombinator.com/item?id=50143817"
+   "tool": "Raycast",
+   "stories": 1,
+   "points": 3,
+   "top_title": "Raycast Glaze",
+   "top_url": "https://news.ycombinator.com/item?id=50192037"
   },
   {
    "tool": "Exa",
@@ -126,18 +126,18 @@
    "top_url": "https://news.ycombinator.com/item?id=50160981"
   },
   {
-   "tool": "Webflow",
-   "stories": 1,
-   "points": 2,
-   "top_title": "Design Systems",
-   "top_url": "https://news.ycombinator.com/item?id=50088586"
-  },
-  {
    "tool": "Clay",
    "stories": 1,
    "points": 2,
    "top_title": "Why Clay Has an AI Writing Policy",
    "top_url": "https://news.ycombinator.com/item?id=50143643"
+  },
+  {
+   "tool": "Lovable",
+   "stories": 1,
+   "points": 1,
+   "top_title": "You can now chat with Lovable for free",
+   "top_url": "https://news.ycombinator.com/item?id=50143817"
   },
   {
    "tool": "Devin",
