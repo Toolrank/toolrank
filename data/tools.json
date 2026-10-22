@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "categories": [
   {
    "id": "ai-assistants",
@@ -441,6 +441,62 @@
        }
       ],
       "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
+     }
+    },
+    {
+     "name": "Lumo (Proton)",
+     "url": "https://lumo.proton.me",
+     "verdict": "Private AI chat assistant from Proton with zero-access encrypted chats and a free plan.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "both",
+     "job": "Answers questions, searches the web, analyses files and makes images in encrypted chats",
+     "why_rank": "A free plan with no card, chats never used for training, and Plus under $10 a month billed yearly.",
+     "sources": [
+      {
+       "url": "https://proton.me/lumo/pricing",
+       "label": "Lumo pricing and FAQ",
+       "checked": "2026-10-23"
+      },
+      {
+       "url": "https://lumo.proton.me/about",
+       "label": "About Lumo",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Proton Drive"
+     ],
+     "best_for": "People who want a ChatGPT-style assistant with strong privacy",
+     "main_limitation": "Free plan limits messages and Max model use; Business plan price not shown",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$9.99/month (Plus, billed yearly)",
+      "free_tier": "Free plan: limited messages, Max model use and image generations, no credit card",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "1 Project, limited usage"
+       },
+       {
+        "name": "Lumo Plus",
+        "price": "$12.99/month billed monthly; $9.99/month billed yearly ($119.88 every 12 months)",
+        "notes": "More Max model usage, unlimited Projects"
+       },
+       {
+        "name": "Lumo for Business",
+        "price": "Price not shown in fetched text",
+        "notes": "Via Lumo Professional or Proton Workspace"
+       }
+      ],
+      "notes": "Prices in USD. 30-day money-back guarantee. Vendor says Lumo's code is open source and chats are stored with zero-access encryption."
      }
     }
    ]
@@ -3206,6 +3262,120 @@
       ],
       "notes": "Annual billing is 20% off; monthly prices were not shown in the fetched text."
      }
+    },
+    {
+     "name": "Hostinger AI Builder",
+     "url": "https://www.hostinger.com/ai-builder",
+     "verdict": "Prompt-to-website and web app builder with hosting, domain and email included.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "both",
+     "job": "Builds websites, online stores and web apps from a prompt or drag-and-drop, then hosts them",
+     "why_rank": "Hosting, a domain and a built-in back end in one plan, plus code export.",
+     "sources": [
+      {
+       "url": "https://www.hostinger.com/ai-builder",
+       "label": "Hostinger AI Builder plans and FAQ",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Stripe",
+      "PayPal",
+      "Google Analytics",
+      "Google AdSense",
+      "Meta Pixel",
+      "WhatsApp"
+     ],
+     "best_for": "Beginners who want a site or simple web app built and hosted in one place",
+     "main_limitation": "Low prices need a 48-month upfront plan and renew higher; no native mobile apps",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$2.49/mo (Premium, 48-month plan paid upfront)",
+      "free_tier": "Try both building modes with 5 free AI credits, no card required (trial)",
+      "tiers": [
+       {
+        "name": "Premium",
+        "price": "$2.49/mo on a 48-month plan ($119.52 upfront); renews at $10.99/mo",
+        "notes": "Up to 3 websites, 250 AI credits"
+       },
+       {
+        "name": "Unlimited",
+        "price": "$3.49/mo on a 48-month plan ($167.52 upfront); renews at $16.99/mo",
+        "notes": "Unlimited websites, ecommerce"
+       },
+       {
+        "name": "Cloud Startup",
+        "price": "$7.99/mo on a 48-month plan ($383.52 upfront); renews at $25.99/mo",
+        "notes": "More performance, 1,000 AI credits"
+       }
+      ],
+      "notes": "Prices in USD, shown during a Black Friday offer; all plans are paid upfront. 30-day money-back guarantee if fewer than 30 credits used."
+     }
+    },
+    {
+     "name": "Kombai",
+     "url": "https://kombai.com",
+     "verdict": "AI design engineer for frontend: designs on a canvas and writes production UI code.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "business",
+     "job": "Designs and codes frontend UIs that fit your existing repo and design system",
+     "why_rank": "A free plan with daily credits, a $20 Pro plan and MCP and Figma support.",
+     "sources": [
+      {
+       "url": "https://kombai.com/pricing",
+       "label": "Kombai pricing and FAQ",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Browser extension"
+     ],
+     "integrations": [
+      "Figma",
+      "MCP integrations",
+      "Storybook"
+     ],
+     "best_for": "Frontend developers and teams who want polished UI code from designs or prompts",
+     "main_limitation": "Credit-based usage; SSO and audit logs need Enterprise",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$20/month (Pro)",
+      "free_tier": "Free: $0/month, 150 credits at sign-up plus 50 a day (max 300 a month)",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "300 credits a month"
+       },
+       {
+        "name": "Pro",
+        "price": "$20/month",
+        "notes": "2,000 credits a month, no AI training on your data"
+       },
+       {
+        "name": "Team",
+        "price": "$40/user/month",
+        "notes": "Shared credit pool, up to 20 seats"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "SSO/SAML, audit logs, custom SLAs"
+       }
+      ],
+      "notes": "Prices in USD. Annual billing saves 20% on Pro and Team."
+     }
     }
    ]
   },
@@ -5502,6 +5672,61 @@
       "tiers": [],
       "notes": "MIT-licensed repository; free."
      }
+    },
+    {
+     "name": "Filmora",
+     "url": "https://filmora.wondershare.com",
+     "verdict": "Desktop video editor for Windows and Mac with 20+ credit-based AI tools.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "consumer",
+     "job": "Edits videos on your computer with AI tools for clips, captions, voice and enhancement",
+     "why_rank": "A free edition, one subscription for Windows and Mac, and a perpetual licence option.",
+     "sources": [
+      {
+       "url": "https://filmora.wondershare.com/shop/buy/buy-video-editor.html",
+       "label": "Filmora plans and FAQ",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Windows",
+      "Mac"
+     ],
+     "integrations": [],
+     "best_for": "Creators who want a desktop editor with AI shortcuts built in",
+     "main_limitation": "Free exports carry a watermark; most AI features use credits",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "US$59.99/year (Advanced)",
+      "free_tier": "Free edition: basic editing features; exports carry a watermark",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "Price not shown in fetched text",
+        "notes": "Subscription, Windows and Mac"
+       },
+       {
+        "name": "Advanced",
+        "price": "US$59.99/year (a US$69.99 figure is also shown)",
+        "notes": "1,000 AI credits a month, 10 GB cloud"
+       },
+       {
+        "name": "Perpetual",
+        "price": "One-time price not shown in fetched text",
+        "notes": "Filmora 16 updates only, 1,000 one-time AI credits"
+       },
+       {
+        "name": "Business plan",
+        "price": "Price not shown in fetched text",
+        "notes": "For several users"
+       }
+      ],
+      "notes": "Prices in USD. 30-day money-back guarantee. Basic and Advanced licences work on both Windows and Mac; Perpetual is device-specific."
+     }
     }
    ]
   },
@@ -5600,34 +5825,39 @@
      "model_provider": "Sudowrite Muse and Ballad plus 30+ third-party models",
      "sources": [
       {
+       "url": "https://www.sudowrite.com/pricing",
+       "label": "Sudowrite plans and pricing",
+       "checked": "2026-10-23"
+      },
+      {
        "url": "https://sudowrite.com/pricing",
        "label": "Sudowrite pricing",
        "checked": "2026-10-16"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-23",
      "pricing_detail": {
       "model": "paid",
       "starting_price": "$10/month",
-      "free_tier": "",
+      "free_tier": "Free trial, no credit card (paid plans only)",
       "tiers": [
        {
         "name": "Hobby & Student",
         "price": "$10/month",
-        "notes": "225,000 credits"
+        "notes": "225,000 credits a month"
        },
        {
         "name": "Professional",
         "price": "$22/month",
-        "notes": "1,000,000 credits"
+        "notes": "1,000,000 credits a month"
        },
        {
         "name": "Max",
         "price": "$44/month",
-        "notes": "2,000,000 credits"
+        "notes": "2,000,000 credits a month, credits roll over 12 months"
        }
       ],
-      "notes": "Free trial, no card. Unused credits roll over 12 months (higher tiers)."
+      "notes": "Prices in USD as displayed. Yearly billing is up to 50% off (yearly figures not captured). Every plan starts with a free trial, no credit card."
      }
     },
     {
@@ -6106,6 +6336,126 @@
        }
       ],
       "notes": "Prices shown in USD and localised by region. Annual billing gives 2 months off. Vendor FAQ: no free plan."
+     }
+    },
+    {
+     "name": "Jenni AI",
+     "url": "https://jenni.ai",
+     "verdict": "AI academic writing assistant with autocomplete, citations and PDF chat.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "both",
+     "job": "Helps draft essays and papers with AI autocomplete, citations and source PDFs",
+     "why_rank": "A free plan with no card, unlimited citations, and team seats for research groups.",
+     "sources": [
+      {
+       "url": "https://jenni.ai/pricing",
+       "label": "Jenni AI pricing",
+       "checked": "2026-10-23"
+      },
+      {
+       "url": "https://jenni.ai/teams",
+       "label": "Jenni AI team plans",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Web",
+      "Browser extension"
+     ],
+     "integrations": [],
+     "best_for": "Students and researchers writing papers with citations",
+     "main_limitation": "Free plan caps autocompletes at 10 a day; team prices need a demo",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$12/month (Plus)",
+      "free_tier": "Free: $0/month, 10 AI autocompletes a day, unlimited citations",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0/month",
+        "notes": "10 autocompletes a day, 10 PDF uploads"
+       },
+       {
+        "name": "Plus",
+        "price": "$12/month as displayed",
+        "notes": "5,000 autocompletes a month"
+       },
+       {
+        "name": "Pro",
+        "price": "$29/month as displayed",
+        "notes": "Unlimited autocomplete, edits and chat"
+       },
+       {
+        "name": "Teams",
+        "price": "Per-seat pricing via demo",
+        "notes": "Single invoicing, admin dashboard, volume discounts per seat"
+       }
+      ],
+      "notes": "Prices in USD. The page has a monthly/annual toggle (annual saves up to 60%); which billing period the displayed prices use is Not yet verified. Vendor says user data is not used to train models."
+     }
+    },
+    {
+     "name": "LanguageTool",
+     "url": "https://languagetool.org",
+     "verdict": "Grammar, style and spelling checker for 30+ languages with AI rephrasing.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "both",
+     "job": "Checks grammar, punctuation and style as you write in the browser, Word and desktop apps",
+     "why_rank": "A free Basic plan, 30+ languages and team style guides and dictionaries.",
+     "sources": [
+      {
+       "url": "https://languagetool.org/premium",
+       "label": "LanguageTool Premium and Teams",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Chrome",
+      "Edge",
+      "Firefox",
+      "Safari",
+      "Opera",
+      "Windows",
+      "Mac",
+      "iOS"
+     ],
+     "integrations": [
+      "Microsoft Word",
+      "LibreOffice",
+      "Thunderbird"
+     ],
+     "best_for": "Multilingual writers and teams who want one checker across browser and desktop",
+     "main_limitation": "Basic caps text at 2,000 characters per field and 3 AI rephrasings a day; prices not shown",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Basic: free, 2,000 characters per text field, 3 AI rephrasings a day",
+      "tiers": [
+       {
+        "name": "Basic",
+        "price": "Free",
+        "notes": "Core checks, 30+ languages"
+       },
+       {
+        "name": "Premium",
+        "price": "Price not shown in fetched text",
+        "notes": "150,000 characters per field, unlimited AI paraphrasing"
+       },
+       {
+        "name": "Teams",
+        "price": "Price not shown in fetched text",
+        "notes": "User management, team style guide, team dictionary"
+       }
+      ],
+      "notes": "Prices include VAT and were not shown in the fetched text (Not yet verified). 14-day money-back guarantee on Premium."
      }
     }
    ]
@@ -11826,6 +12176,76 @@
       ],
       "notes": "Checked on the vendor pricing page; anything not shown there is marked Not yet verified."
      }
+    },
+    {
+     "name": "Tactiq",
+     "url": "https://tactiq.io",
+     "verdict": "Bot-free meeting transcription and AI summaries for Google Meet, Zoom and Teams.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "business",
+     "job": "Transcribes meetings live without a bot and writes AI summaries, action items and follow-ups",
+     "why_rank": "A free-forever plan with no card and Pro from $8 per user a month billed annually.",
+     "sources": [
+      {
+       "url": "https://tactiq.io/pricing",
+       "label": "Tactiq pricing",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Chrome extension",
+      "MCP"
+     ],
+     "integrations": [
+      "Google Meet",
+      "Zoom",
+      "Microsoft Teams",
+      "Google Drive",
+      "Notion",
+      "Slack",
+      "HubSpot",
+      "Linear",
+      "Claude connector (beta)"
+     ],
+     "best_for": "Teams who want meeting transcripts and AI notes without a bot joining the call",
+     "main_limitation": "Free plan caps transcripts at 10 a month; monthly-billing prices were not shown",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$8 per user/month (Pro, billed annually)",
+      "free_tier": "Free forever, no credit card: 10 transcripts and 5 AI credits a month",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "1 user, 10 transcripts a month"
+       },
+       {
+        "name": "Pro",
+        "price": "$8 per user/month, billed annually",
+        "notes": "Unlimited transcripts, 10 AI credits a month"
+       },
+       {
+        "name": "Team",
+        "price": "$16.67 per user/month, billed annually",
+        "notes": "1 to 20 users, unlimited AI credits"
+       },
+       {
+        "name": "Business",
+        "price": "$29.17 per user/month, billed annually",
+        "notes": "20 to 200 users, SAML SSO, Tactiq MCP (beta)"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "200+ users, contact sales"
+       }
+      ],
+      "notes": "Prices in USD. Annual billing saves up to 33%; monthly prices were not shown in the fetched text. Education pricing on application."
+     }
     }
    ]
   },
@@ -12156,6 +12576,61 @@
        }
       ],
       "notes": "Vendor reports use in 3,500+ locations in 90+ countries."
+     }
+    },
+    {
+     "name": "Maple",
+     "url": "https://www.maple.inc",
+     "verdict": "Voice AI that answers restaurant calls, takes orders and books tables.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "business",
+     "job": "Answers restaurant phone calls 24/7, takes orders into your POS and manages reservations",
+     "why_rank": "Flat monthly prices with no per-minute fees, and POS and OpenTable integrations on Pro.",
+     "sources": [
+      {
+       "url": "https://www.maple.inc/pricing",
+       "label": "Maple pricing",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Phone"
+     ],
+     "integrations": [
+      "Toast",
+      "Square",
+      "Clover",
+      "Shift4 Dine",
+      "OpenTable"
+     ],
+     "best_for": "Restaurants that miss calls during service and want phone orders in their POS",
+     "main_limitation": "No free plan or trial listed; ordering and reservations need the Pro plan",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$85/month (Voice, billed annually)",
+      "free_tier": "",
+      "tiers": [
+       {
+        "name": "Maple Voice",
+        "price": "$85/month billed annually; $150/month billed monthly",
+        "notes": "24/7 answering, FAQs, call transfer"
+       },
+       {
+        "name": "Maple Pro",
+        "price": "$220/month billed annually; $350/month billed monthly",
+        "notes": "Phone orders into your POS, reservations"
+       },
+       {
+        "name": "Maple Enterprise",
+        "price": "Custom",
+        "notes": "Multi-location management"
+       }
+      ],
+      "notes": "Prices in USD. No contracts or per-minute fees. Free demo on request."
      }
     }
    ]
@@ -13144,6 +13619,64 @@
        }
       ],
       "notes": "First $5,000 USD in bookings carry no booking fee; no contracts or setup fees. Add-ons: Owner Hub from $30 a month, Advanced Connectivity from $10 a month. Prices in USD."
+     }
+    },
+    {
+     "name": "Turno",
+     "url": "https://turno.com",
+     "verdict": "Turnover platform for rental hosts with a cleaner marketplace and an AI maintenance agent.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "business",
+     "job": "Finds, schedules and pays cleaners for short-term rental turnovers, synced to booking calendars",
+     "why_rank": "Free for one property or marketplace cleaners, then $10 a month per property.",
+     "sources": [
+      {
+       "url": "https://turno.com/pricing/",
+       "label": "Turno pricing and FAQ",
+       "checked": "2026-10-23"
+      },
+      {
+       "url": "https://turno.com/blog/str-turnover-software-built-for-cleaners/",
+       "label": "Turno product and AI features",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Web",
+      "Mobile app"
+     ],
+     "integrations": [
+      "Airbnb (official software partner)",
+      "Booking calendar sync"
+     ],
+     "best_for": "Airbnb and Vrbo hosts who want cleaning scheduled and paid automatically",
+     "main_limitation": "Using your own cleaners on 2+ properties costs $10 a month per property",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$10/month per property",
+      "free_tier": "Free for 1 property, or for any number using only Turno Marketplace cleaners",
+      "tiers": [
+       {
+        "name": "Single Property Account",
+        "price": "$0",
+        "notes": "Marketplace cleaners and your own teammates"
+       },
+       {
+        "name": "Marketplace Cleaners Only",
+        "price": "$0, unlimited properties",
+        "notes": "Turno Marketplace cleaners only"
+       },
+       {
+        "name": "Marketplace & Non-Turno Teammates",
+        "price": "$10/month per property billed monthly; $96 per property billed annually",
+        "notes": "Save 20% yearly; 14-day free trial"
+       }
+      ],
+      "notes": "Prices in USD. Fees for cleaning services and platform fees apply. AI: an agent spots maintenance issues in chat and turns them into a maintenance project in one click."
      }
     }
    ]
@@ -15477,6 +16010,179 @@
       ],
       "notes": "Prices also shown in USD and EUR on the vendor page. Yearly saves 17%."
      }
+    },
+    {
+     "name": "Mindsmith",
+     "url": "https://www.mindsmith.ai",
+     "verdict": "AI eLearning authoring tool for courses, scenarios and SCORM sharing.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "business",
+     "job": "Builds interactive eLearning lessons and courses with AI, then shares them by link, embed or SCORM",
+     "why_rank": "A free plan, learners always free, and 30% off for educators.",
+     "sources": [
+      {
+       "url": "https://www.mindsmith.ai/pricing",
+       "label": "Mindsmith pricing",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "SCORM",
+      "ElevenLabs"
+     ],
+     "best_for": "Trainers and small L&D teams who want fast AI course authoring",
+     "main_limitation": "Paid plans are priced per author; SSO needs Enterprise",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$39 per author a month (Professional, billed annually)",
+      "free_tier": "Free: $0, 450 AI credits at sign-up (one-time), unlimited content",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "450 one-time AI credits, Mindsmith badge"
+       },
+       {
+        "name": "Professional",
+        "price": "$39 per author a month, billed annually ($468/year)",
+        "notes": "For individual creators and small teams"
+       },
+       {
+        "name": "Business",
+        "price": "$65 per author a month, billed annually ($780/year)",
+        "notes": "For teams: live collaboration, version history"
+       },
+       {
+        "name": "Enterprise",
+        "price": "Custom",
+        "notes": "SAML/SSO, SLA"
+       }
+      ],
+      "notes": "Prices in USD. Monthly billing is offered; annual saves 20%. Educators get 30% off."
+     }
+    },
+    {
+     "name": "Almanack",
+     "url": "https://www.almanack.ai",
+     "verdict": "AI curriculum and lesson planning platform for K-12 teachers.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "both",
+     "job": "Plans standards-aligned lessons and adapts curriculum, worksheets and slides for each class",
+     "why_rank": "A free plan, a 2-week Pro trial and team plans for departments.",
+     "sources": [
+      {
+       "url": "https://www.almanack.ai/pricing",
+       "label": "Almanack pricing",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Google Classroom",
+      "Google Slides",
+      "PowerPoint"
+     ],
+     "best_for": "K-12 teachers and departments adapting curriculum for mixed-ability classes",
+     "main_limitation": "Pro price was not shown in the fetched text; team plans need sales",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "",
+      "free_tier": "Free plan: lesson planning, slides, worksheets, quizzes",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "Free",
+        "notes": "Core curriculum adaptation tools"
+       },
+       {
+        "name": "Pro",
+        "price": "Price not shown in fetched text; 2-week free trial",
+        "notes": "Unlimited generation, differentiation"
+       },
+       {
+        "name": "Small Teams",
+        "price": "Contact sales",
+        "notes": "Unlimited collaborators, shared libraries"
+       },
+       {
+        "name": "Schools/Districts",
+        "price": "Contact us",
+        "notes": "Coverage and compliance platform"
+       }
+      ],
+      "notes": "Billing offered annually, quarterly or monthly. Checked on the vendor's own page; anything not shown there is marked Not yet verified."
+     }
+    },
+    {
+     "name": "Edcafe",
+     "url": "https://www.edcafe.ai",
+     "verdict": "AI teaching assistant for quizzes, chatbots, mini apps and grading.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "both",
+     "job": "Creates quizzes, class chatbots and mini apps and grades assignments with AI",
+     "why_rank": "A free-forever plan and paid plans from $7.99 a month billed annually.",
+     "sources": [
+      {
+       "url": "https://www.edcafe.ai/pricing",
+       "label": "Edcafe pricing",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Web"
+     ],
+     "integrations": [
+      "Moodle",
+      "Canvas",
+      "Blackboard"
+     ],
+     "best_for": "Teachers who want low-cost AI activities and grading for their classes",
+     "main_limitation": "Monthly-billing prices were not shown; LMS integration is for schools",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$7.99/mo (Pro, billed annually)",
+      "free_tier": "Free: unlimited AI generations, 3 chatbots, 40 participants",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "3 chatbots, 3 graders"
+       },
+       {
+        "name": "Pro",
+        "price": "$7.99/mo billed annually",
+        "notes": "20 chatbots, 200 participants"
+       },
+       {
+        "name": "Premium",
+        "price": "$14.99/mo billed annually",
+        "notes": "Unlimited chatbots, 1,000 participants"
+       },
+       {
+        "name": "Schools & Districts",
+        "price": "Contact sales",
+        "notes": "DPA, SOC 2 report, LMS integration"
+       }
+      ],
+      "notes": "Prices in USD. Checked on the vendor's own page; anything not shown there is marked Not yet verified."
+     }
     }
    ]
   },
@@ -16158,6 +16864,114 @@
        }
       ],
       "notes": "Annual billing saves 33% vs monthly (monthly price not shown). Discounts for part-time clinicians, registrars and practices. Whether Pro is per clinician is Not yet verified."
+     }
+    },
+    {
+     "name": "Freed",
+     "url": "https://www.getfreed.ai",
+     "verdict": "AI medical scribe that writes notes, codes and letters from patient visits.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "business",
+     "job": "Listens to visits and writes clinical notes, codes, letters and patient instructions",
+     "why_rank": "A 7-day trial with no card, specialty templates and group plans for clinics.",
+     "sources": [
+      {
+       "url": "https://www.getfreed.ai/pricing",
+       "label": "Freed pricing and FAQ",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Web",
+      "Mobile"
+     ],
+     "integrations": [
+      "Browser-based EHRs (push)",
+      "Zoom"
+     ],
+     "best_for": "Clinicians and small clinics who want notes done minutes after each visit",
+     "main_limitation": "No free plan; Core and Premier prices were not clear on the fetched page",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$39/mo (Starter)",
+      "free_tier": "7-day free trial, no credit card",
+      "tiers": [
+       {
+        "name": "Starter",
+        "price": "$39/mo",
+        "notes": "1 clinician, up to 40 notes a month"
+       },
+       {
+        "name": "Core",
+        "price": "Two figures shown; price not shown clearly",
+        "notes": "Unlimited notes, clinical evidence"
+       },
+       {
+        "name": "Premier",
+        "price": "Two figures shown; price not shown clearly",
+        "notes": "EHR push, coding, letters"
+       },
+       {
+        "name": "Groups",
+        "price": "Custom",
+        "notes": "Team template library, note sharing, Medical Assistant seats, SSO"
+       }
+      ],
+      "notes": "Prices in USD. Vendor FAQ: 50% student discount on the monthly individual plan; residents, students and trainees can get Core free. HIPAA and SOC 2 Type 1 and 2."
+     }
+    },
+    {
+     "name": "Twofold Health",
+     "url": "https://www.trytwofold.com",
+     "verdict": "AI scribe for clinicians across mental health, primary care and allied health.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-23 (vendor page fetched)",
+     "audience": "business",
+     "job": "Turns sessions, dictation or uploads into structured clinical notes",
+     "why_rank": "A free week with no card, iOS and Android apps, and group plans with volume pricing.",
+     "sources": [
+      {
+       "url": "https://www.trytwofold.com/pricing",
+       "label": "Twofold pricing and FAQ",
+       "checked": "2026-10-23"
+      }
+     ],
+     "last_verified": "2026-10-23",
+     "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+     ],
+     "integrations": [
+      "Zoom",
+      "Google Meet",
+      "Doxy"
+     ],
+     "best_for": "Therapists and clinicians who want notes in their own style on any device",
+     "main_limitation": "The regular individual price was not shown in the fetched text",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "",
+      "free_tier": "One week free, no credit card (trial)",
+      "tiers": [
+       {
+        "name": "Individual",
+        "price": "Price not shown in fetched text; intro offer: free for a week, then $19 for the first month",
+        "notes": "Signed BAA included"
+       },
+       {
+        "name": "Group",
+        "price": "Custom volume pricing",
+        "notes": "Team onboarding, shared team templates, seat management"
+       }
+      ],
+      "notes": "Vendor FAQ: no audio stored, no training on your data, HIPAA with BAA, Australian Privacy Principles."
      }
     }
    ]
