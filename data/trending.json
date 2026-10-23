@@ -1,94 +1,94 @@
 {
- "fetched": "2026-10-22 07:54 UTC",
- "fetched_ts": 1792655673,
- "stars_baseline": "2026-10-15",
+ "fetched": "2026-10-23 04:44 UTC",
+ "fetched_ts": 1792730671,
+ "stars_baseline": "2026-10-16",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 877,
-   "stars": 3770,
+   "gained": 858,
+   "stars": 3866,
    "url": "https://github.com/Oldcircle/geo-sleuth"
-  },
-  {
-   "tool": "agent-memory",
-   "repo": "tigerless-labs/agent-memory",
-   "gained": 696,
-   "stars": 4404,
-   "url": "https://github.com/tigerless-labs/agent-memory"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 665,
-   "stars": 4058,
+   "gained": 739,
+   "stars": 4197,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
+  },
+  {
+   "tool": "agent-memory",
+   "repo": "tigerless-labs/agent-memory",
+   "gained": 712,
+   "stars": 4534,
+   "url": "https://github.com/tigerless-labs/agent-memory"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 522,
-   "stars": 111043,
+   "gained": 467,
+   "stars": 111096,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 389,
-   "stars": 3846,
+   "gained": 382,
+   "stars": 3897,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 332,
-   "stars": 3977,
+   "gained": 330,
+   "stars": 4015,
    "url": "https://github.com/ZJU-REAL/Easel"
-  },
-  {
-   "tool": "vibe-wise",
-   "repo": "nykooi1/vibe-wise",
-   "gained": 248,
-   "stars": 3844,
-   "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 229,
-   "stars": 3408,
+   "gained": 238,
+   "stars": 3429,
    "url": "https://github.com/Nanako0129/sepia"
   },
   {
-   "tool": "jevgrep",
-   "repo": "dzhng/jevgrep",
-   "gained": 147,
-   "stars": 2839,
-   "url": "https://github.com/dzhng/jevgrep"
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 234,
+   "stars": 3869,
+   "url": "https://github.com/nykooi1/vibe-wise"
+  },
+  {
+   "tool": "Gemini CLI",
+   "repo": "google-gemini/gemini-cli",
+   "gained": 138,
+   "stars": 107532,
+   "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 130,
-   "stars": 14265,
+   "gained": 133,
+   "stars": 14282,
    "url": "https://github.com/microsoft/agent-framework"
   }
  ],
  "hn": [
   {
-   "tool": "Krea",
-   "stories": 1,
-   "points": 352,
-   "top_title": "Krea 3 – An image model built for editing at scale",
-   "top_url": "https://news.ycombinator.com/item?id=50105648"
-  },
-  {
    "tool": "Black Forest Labs (FLUX)",
-   "stories": 2,
-   "points": 220,
+   "stories": 1,
+   "points": 213,
    "top_title": "FLUX 3 Image Klein",
    "top_url": "https://news.ycombinator.com/item?id=50123580"
+  },
+  {
+   "tool": "Claude",
+   "stories": 7,
+   "points": 29,
+   "top_title": "A sourced timeline of the PHP2Shell leak and embargo break",
+   "top_url": "https://news.ycombinator.com/item?id=50190603"
   },
   {
    "tool": "JetBrains AI (Junie)",
@@ -98,18 +98,25 @@
    "top_url": "https://news.ycombinator.com/item?id=50132963"
   },
   {
-   "tool": "Claude",
-   "stories": 7,
-   "points": 17,
-   "top_title": "Claude Code install script is down",
-   "top_url": "https://news.ycombinator.com/item?id=50192140"
+   "tool": "LlamaIndex",
+   "stories": 1,
+   "points": 13,
+   "top_title": "OCRia-1: A new SOTA 4B document parser",
+   "top_url": "https://news.ycombinator.com/item?id=50198352"
   },
   {
    "tool": "Perplexity",
-   "stories": 4,
-   "points": 8,
+   "stories": 3,
+   "points": 6,
    "top_title": "Open-sourcing SPACE, the sandbox platform behind Computer",
    "top_url": "https://news.ycombinator.com/item?id=50122131"
+  },
+  {
+   "tool": "Grok",
+   "stories": 1,
+   "points": 5,
+   "top_title": "What the heck is the Public Suffix List?",
+   "top_url": "https://news.ycombinator.com/item?id=50199475"
   },
   {
    "tool": "Raycast",
@@ -126,25 +133,18 @@
    "top_url": "https://news.ycombinator.com/item?id=50160981"
   },
   {
+   "tool": "Google AI Studio (Build)",
+   "stories": 1,
+   "points": 2,
+   "top_title": "Introducing the Gemini API CLI",
+   "top_url": "https://news.ycombinator.com/item?id=50197506"
+  },
+  {
    "tool": "Clay",
    "stories": 1,
    "points": 2,
    "top_title": "Why Clay Has an AI Writing Policy",
    "top_url": "https://news.ycombinator.com/item?id=50143643"
-  },
-  {
-   "tool": "Lovable",
-   "stories": 1,
-   "points": 1,
-   "top_title": "You can now chat with Lovable for free",
-   "top_url": "https://news.ycombinator.com/item?id=50143817"
-  },
-  {
-   "tool": "Devin",
-   "stories": 1,
-   "points": 1,
-   "top_title": "Security Swarm",
-   "top_url": "https://news.ycombinator.com/item?id=50155469"
   }
  ]
 }
