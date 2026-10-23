@@ -1,14 +1,9 @@
 {
- "fetched": "2026-10-23 13:51 UTC",
- "fetched_ts": 1792763499,
+ "fetched": "2026-10-23 15:49 UTC",
+ "fetched_ts": 1792770575,
  "window": "last 7 days",
  "source": "GoatCounter click/ events (unique visitors)",
  "top": [
-  {
-   "slug": "anatomy",
-   "tool": "Anatomy",
-   "count": 1
-  },
   {
    "slug": "devin",
    "tool": "Devin",
