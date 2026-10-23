@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "categories": [
   {
    "id": "ai-assistants",
@@ -7736,7 +7736,7 @@
       {
        "url": "https://zapier.com/pricing",
        "label": "Zapier pricing",
-       "checked": "2026-10-16"
+       "checked": "2026-10-24"
       },
       {
        "url": "https://zapier.com/agents",
@@ -7744,11 +7744,11 @@
        "checked": "2026-10-16"
       }
      ],
-     "last_verified": "2026-10-16",
+     "last_verified": "2026-10-24",
      "pricing_detail": {
       "model": "freemium",
-      "starting_price": "$19.99/month (Professional)",
-      "free_tier": "100 tasks/month; Zaps, Tables and Forms included",
+      "starting_price": "$19.99/month (Professional, billed annually)",
+      "free_tier": "Free forever: 100 tasks/month, two-step Zaps, basic access to Agents, Chatbots and MCP",
       "tiers": [
        {
         "name": "Free",
@@ -7757,21 +7757,21 @@
        },
        {
         "name": "Professional",
-        "price": "from $19.99/month",
-        "notes": "Multi-step Zaps"
+        "price": "$19.99/month billed annually; $29.99/month billed monthly",
+        "notes": "750 tasks/month; multi-step Zaps, AI by Zapier"
        },
        {
         "name": "Team",
-        "price": "from $69/month",
-        "notes": ""
+        "price": "$69/month billed annually; $103.50/month billed monthly",
+        "notes": "2,000 tasks/month, 25 users, SAML SSO"
        },
        {
         "name": "Enterprise",
         "price": "Contact sales",
-        "notes": ""
+        "notes": "Unlimited users, annual task limits"
        }
       ],
-      "notes": "Price depends on selected task tier."
+      "notes": "Prices in USD; higher task tiers cost more. Annual billing is 33% off monthly. 14-day free trial of Professional, no credit card. Non-profits get a further 15% off."
      }
     },
     {
@@ -9018,6 +9018,124 @@
        }
       ],
       "notes": "Annual billing saves 2 months. Extra credits $0.007 each on Plus and Team. Embed plan from $36k a year."
+     }
+    },
+    {
+     "name": "IFTTT",
+     "url": "https://ifttt.com",
+     "verdict": "Long-running no-code automation service for apps and smart devices, with AI services on Pro+.",
+     "pricing": "freemium",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-24 (vendor page fetched)",
+     "audience": "both",
+     "job": "Connects apps and smart-home devices with Applets that run automatically",
+     "why_rank": "A free-forever plan with 2 Applets, Pro at $2.99 a month billed annually, and AI services on Pro+.",
+     "sources": [
+      {
+       "url": "https://ifttt.com/plans",
+       "label": "IFTTT plans and pricing",
+       "checked": "2026-10-24"
+      }
+     ],
+     "last_verified": "2026-10-24",
+     "platforms": [
+      "Web",
+      "Mobile app"
+     ],
+     "integrations": [
+      "Webhooks",
+      "1,000+ services",
+      "Smart-home devices"
+     ],
+     "best_for": "People automating smart-home devices and everyday apps without code",
+     "main_limitation": "Free plan is limited to 2 Applets; AI services and filters need Pro+; monthly-billing prices were not shown",
+     "pricing_detail": {
+      "model": "freemium",
+      "starting_price": "$2.99 per month (Pro, $35.88 billed annually)",
+      "free_tier": "Free forever: 2 Applets, unlimited Applet runs, free mobile app access",
+      "tiers": [
+       {
+        "name": "Free",
+        "price": "$0",
+        "notes": "2 Applets, unlimited Applet runs, mobile app access"
+       },
+       {
+        "name": "Pro",
+        "price": "$2.99 per month ($35.88 billed annually)",
+        "notes": "20 Applets, multi-action Applets, webhooks"
+       },
+       {
+        "name": "Pro+",
+        "price": "$8.99 per month ($107.88 billed annually)",
+        "notes": "Unlimited Applets, AI services, queries and filters, multiple accounts, developer tools"
+       }
+      ],
+      "notes": "Prices in USD as shown. The plans page lists the annual billing amounts; a separate monthly-billing price was not shown."
+     }
+    },
+    {
+     "name": "Microsoft Power Automate",
+     "url": "https://www.microsoft.com/en-us/power-platform/products/power-automate",
+     "verdict": "Microsoft's low-code automation for cloud flows and desktop RPA, with Copilot to build flows in natural language.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-24 (vendor page fetched)",
+     "audience": "business",
+     "job": "Automates cloud workflows and desktop apps (RPA), with Copilot for building flows from natural language",
+     "why_rank": "Premium is $15 per user a month paid yearly, with a 30-day free trial and attended desktop RPA included.",
+     "sources": [
+      {
+       "url": "https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing",
+       "label": "Power Automate pricing",
+       "checked": "2026-10-24"
+      },
+      {
+       "url": "https://www.microsoft.com/en-us/power-platform/products/power-automate",
+       "label": "Power Automate features (Copilot)",
+       "checked": "2026-10-24"
+      }
+     ],
+     "last_verified": "2026-10-24",
+     "platforms": [
+      "Web",
+      "Power Automate for desktop (Windows)"
+     ],
+     "integrations": [
+      "Microsoft 365",
+      "Microsoft Dataverse",
+      "Copilot Studio"
+     ],
+     "best_for": "Microsoft 365 organisations automating cloud apps and Windows desktop tasks",
+     "main_limitation": "Unattended bots cost $150 per bot a month; prices may vary by country and the page did not show monthly billing",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$15/user/month (Premium, paid yearly)",
+      "free_tier": "30-day free trial with cloud flows and standard connectors",
+      "tiers": [
+       {
+        "name": "Free trial",
+        "price": "Free for 30 days",
+        "notes": "UI-based cloud flows and standard connectors"
+       },
+       {
+        "name": "Premium",
+        "price": "$15/user/month",
+        "notes": "Cloud flows, attended desktop flows (RPA), process mining"
+       },
+       {
+        "name": "Process",
+        "price": "$150/bot/month",
+        "notes": "Unattended desktop flows (RPA)"
+       },
+       {
+        "name": "Hosted Process",
+        "price": "$215/bot/month",
+        "notes": "Unattended RPA on a Microsoft-hosted virtual machine"
+       }
+      ],
+      "notes": "Prices in USD and paid yearly, per the vendor page; it notes actual prices can vary by country and are shown at checkout. AI: Copilot in Power Automate for natural-language flow authoring and AI insights."
      }
     }
    ]
@@ -13677,6 +13795,66 @@
        }
       ],
       "notes": "Prices in USD. Fees for cleaning services and platform fees apply. AI: an agent spots maintenance issues in chat and turns them into a maintenance project in one click."
+     }
+    },
+    {
+     "name": "HostBuddy AI",
+     "url": "https://hostbuddy.ai",
+     "verdict": "AI guest messaging for short-term rental hosts, connected to your property management system.",
+     "pricing": "paid",
+     "affiliate_url": "",
+     "featured": false,
+     "url_check": "200 OK 2026-10-24 (vendor page fetched)",
+     "audience": "business",
+     "job": "Answers guest messages through your PMS with AI, plus upsells, guest journeys and action items",
+     "why_rank": "Per-property pricing from $7 a month with a 2-week free trial on every plan.",
+     "sources": [
+      {
+       "url": "https://hostbuddy.ai/pricing",
+       "label": "HostBuddy AI pricing",
+       "checked": "2026-10-24"
+      },
+      {
+       "url": "https://hostbuddy.ai/",
+       "label": "HostBuddy AI features",
+       "checked": "2026-10-24"
+      }
+     ],
+     "last_verified": "2026-10-24",
+     "platforms": [
+      "Web",
+      "Mobile app"
+     ],
+     "integrations": [
+      "PMS integration (20+ integrations)",
+      "Website chat widget",
+      "Slack notifications",
+      "Webhooks"
+     ],
+     "best_for": "Airbnb and vacation rental hosts who want guest messages answered 24/7 by AI",
+     "main_limitation": "No free plan after the 2-week trial; Pro limits conversation history to 30 days and has no team collaboration",
+     "pricing_detail": {
+      "model": "paid",
+      "starting_price": "$7/month per property (Pro)",
+      "free_tier": "2-week free trial on every plan; paid plans only",
+      "tiers": [
+       {
+        "name": "Pro",
+        "price": "$7/month per property, billed monthly",
+        "notes": "AI guest messaging, PMS integration, 30-day conversation history"
+       },
+       {
+        "name": "Elite",
+        "price": "$10/month per property, billed monthly",
+        "notes": "Upsells, up to 5 guest journeys, team collaboration (max 3)"
+       },
+       {
+        "name": "Ultimate",
+        "price": "$12/month per property, billed monthly",
+        "notes": "Unlimited journeys and team collaboration"
+       }
+      ],
+      "notes": "Prices in USD for monthly billing. The page offers annual billing with 2 months free; annual prices were not captured. Also priced in GBP, AUD and CAD."
      }
     }
    ]

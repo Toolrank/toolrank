@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-23",
+ "checked": "2026-10-24",
  "skipped": [
   {
    "n": 33,
@@ -4093,8 +4093,8 @@
    "cat": "automation",
    "h1": "Best free AI automation tools (with a real free plan)",
    "title": "Best Free AI Automation Tools in 2026",
-   "desc": "Best free AI automation tools (with a real free plan): 10 picks with vendor-verified prices checked 16–19 Oct 2026, including Zapier, Make and LangGraph.",
-   "summary": "These AI automation tools have a free plan or are free to use, and we confirmed it on each vendor's own pricing page. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 10 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–19 Oct 2026.",
+   "desc": "Best free AI automation tools (with a real free plan): 10 picks with vendor-verified prices checked 16–24 Oct 2026, including Zapier, Make and LangGraph.",
+   "summary": "These AI automation tools have a free plan or are free to use, and we confirmed it on each vendor's own pricing page. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional ($19.99/month billed annually; $29.99/month billed monthly). 10 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–24 Oct 2026.",
    "items": [
     [
      "zapier",
@@ -4141,15 +4141,15 @@
    "faq": [
     [
      "Which of these is cheapest?",
-     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "Zapier Professional ($19.99/month billed annually; $29.99/month billed monthly) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
-     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; Make: 1,000 credits/month, 1 MB data storage, 1 data store; LangGraph: Open-source framework (MIT licence); LangSmith Developer plan $0 with 1 free seat and 5k base traces/month; CrewAI: Basic: free, 50 workflow executions/month; OpenAI Agents SDK: Open source (MIT); Claude Agent SDK: Free SDK (Python repository MIT-licensed); you pay for Claude API usage; Google ADK: Open source (Apache-2.0); Microsoft Agent Framework: Open source (MIT); LlamaIndex: Free: $0/month; Pydantic AI: Open source (MIT)."
+     "Zapier: Free forever: 100 tasks/month, two-step Zaps, basic access to Agents, Chatbots and MCP; Make: 1,000 credits/month, 1 MB data storage, 1 data store; LangGraph: Open-source framework (MIT licence); LangSmith Developer plan $0 with 1 free seat and 5k base traces/month; CrewAI: Basic: free, 50 workflow executions/month; OpenAI Agents SDK: Open source (MIT); Claude Agent SDK: Free SDK (Python repository MIT-licensed); you pay for Claude API usage; Google ADK: Open source (Apache-2.0); Microsoft Agent Framework: Open source (MIT); LlamaIndex: Free: $0/month; Pydantic AI: Open source (MIT)."
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with a free plan or free use (not just a trial), confirmed on the vendor's own website on 16–19 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with a free plan or free use (not just a trial), confirmed on the vendor's own website on 16–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
   },
@@ -4160,8 +4160,8 @@
    "cat": "automation",
    "h1": "Best AI automation tools for $50 a month or less",
    "title": "Best AI Automation Tools Under $50/Month (2026)",
-   "desc": "Best AI automation tools for $50 a month or less: 7 picks with vendor-verified prices checked 16–22 Oct 2026, including Zapier, Gumloop and LlamaIndex.",
-   "summary": "Every tool here has a paid plan listed at $50 a month or less on its vendor's pricing page. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 6 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–22 Oct 2026.",
+   "desc": "Best AI automation tools for $50 a month or less: 9 picks with vendor-verified prices checked 16–24 Oct 2026, including Zapier, Gumloop and LlamaIndex.",
+   "summary": "Every tool here has a paid plan listed at $50 a month or less on its vendor's pricing page. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>IFTTT</b> Pro ($2.99 per month ($35.88 billed annually)). 7 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–24 Oct 2026.",
    "items": [
     [
      "zapier",
@@ -4190,101 +4190,41 @@
     [
      "activepieces",
      "Plus"
+    ],
+    [
+     "ifttt",
+     "Pro"
+    ],
+    [
+     "microsoft-power-automate",
+     "Premium"
     ]
    ],
-   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: from $19.99/month); think twice if you run very high volumes and want self-hosting. Pick <b>Gumloop</b> for no-code AI workflow automation (Pro: Starts at $37/month). Watch out: no permanent free plan shown on the pricing page. Pick <b>LlamaIndex</b> for document parsing and retrieval for LLM apps (Starter: $50/month). Watch out: cloud credits limit parsing volume. Pick <b>Flowise</b> for visual LLM flow building (Starter: $35/month). Watch out: free cloud plan is limited to 2 flows. Pick <b>Lindy</b> for AI assistants that handle email, meetings and admin (Team: From $29.99/month). Watch out: free credits expire after 7 days. Pick <b>Vapi</b> for developers building voice agents (Core: $29/month). Watch out: total cost stacks transcriber, model and voice per-minute fees. Pick <b>Activepieces</b> for teams who want Zapier-style automation with AI agents and the option to self-host (Plus: $20/month flat). Watch out: credits cap usage; SSO needs the $200 Team plan.",
+   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: $19.99/month billed annually; $29.99/month billed monthly); think twice if you run very high volumes and want self-hosting. Pick <b>Gumloop</b> for no-code AI workflow automation (Pro: Starts at $37/month). Watch out: no permanent free plan shown on the pricing page. Pick <b>LlamaIndex</b> for document parsing and retrieval for LLM apps (Starter: $50/month). Watch out: cloud credits limit parsing volume. Pick <b>Flowise</b> for visual LLM flow building (Starter: $35/month). Watch out: free cloud plan is limited to 2 flows. Pick <b>Lindy</b> for AI assistants that handle email, meetings and admin (Team: From $29.99/month). Watch out: free credits expire after 7 days. Pick <b>Vapi</b> for developers building voice agents (Core: $29/month). Watch out: total cost stacks transcriber, model and voice per-minute fees. Pick <b>Activepieces</b> for teams who want Zapier-style automation with AI agents and the option to self-host (Plus: $20/month flat). Watch out: credits cap usage; SSO needs the $200 Team plan.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "IFTTT Pro ($2.99 per month ($35.88 billed annually)) is the lowest paid price we verified on this list (https://ifttt.com/plans, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
-     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; LlamaIndex: Free: $0/month; Flowise: Free: $0/month, 2 flows and assistants; Lindy: $50 in free credits for 7 days, no card; Vapi: $5 free credits, then pay per minute; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users."
+     "Zapier: Free forever: 100 tasks/month, two-step Zaps, basic access to Agents, Chatbots and MCP; LlamaIndex: Free: $0/month; Flowise: Free: $0/month, 2 flows and assistants; Lindy: $50 in free credits for 7 days, no card; Vapi: $5 free credits, then pay per minute; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users; IFTTT: Free forever: 2 Applets, unlimited Applet runs, free mobile app access."
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with a verified paid plan at or below $50/month (USD), confirmed on the vendor's own website on 16–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with a verified paid plan at or below $50/month (USD), confirmed on the vendor's own website on 16–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
   },
   {
-   "slug": "cheapest-ai-automation-tools",
-   "n": 1064,
-   "generated": true,
-   "cat": "automation",
-   "h1": "Cheapest AI automation tools: lowest verified paid plans",
-   "title": "Cheapest AI Automation Tools: Paid Plans Compared",
-   "desc": "Cheapest AI automation tools: lowest verified paid plans: 10 picks with vendor-verified prices checked 16–22 Oct 2026, including Zapier, Activepieces and Vapi.",
-   "summary": "This list ranks AI automation tools purely by their cheapest verified paid plan. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 9 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–22 Oct 2026.",
-   "items": [
-    [
-     "zapier",
-     "Professional"
-    ],
-    [
-     "activepieces",
-     "Plus"
-    ],
-    [
-     "vapi",
-     "Core"
-    ],
-    [
-     "lindy",
-     "Team"
-    ],
-    [
-     "flowise",
-     "Starter"
-    ],
-    [
-     "gumloop",
-     "Pro"
-    ],
-    [
-     "llamaindex",
-     "Starter"
-    ],
-    [
-     "botpress",
-     "Plus"
-    ],
-    [
-     "agno",
-     "Pro"
-    ],
-    [
-     "mastra",
-     "Teams"
-    ]
-   ],
-   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: from $19.99/month); think twice if you run very high volumes and want self-hosting. Pick <b>Activepieces</b> for teams who want Zapier-style automation with AI agents and the option to self-host (Plus: $20/month flat). Watch out: credits cap usage; SSO needs the $200 Team plan. Pick <b>Vapi</b> for developers building voice agents (Core: $29/month). Watch out: total cost stacks transcriber, model and voice per-minute fees. Pick <b>Lindy</b> for AI assistants that handle email, meetings and admin (Team: From $29.99/month). Watch out: free credits expire after 7 days. Pick <b>Flowise</b> for visual LLM flow building (Starter: $35/month). Watch out: free cloud plan is limited to 2 flows. Pick <b>Gumloop</b> for no-code AI workflow automation (Pro: Starts at $37/month). Watch out: no permanent free plan shown on the pricing page. Pick <b>LlamaIndex</b> for document parsing and retrieval for LLM apps (Starter: $50/month). Watch out: cloud credits limit parsing volume.",
-   "faq": [
-    [
-     "Which of these is cheapest?",
-     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
-    ],
-    [
-     "Which of these have a free plan?",
-     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users; Vapi: $5 free credits, then pay per minute; Lindy: $50 in free credits for 7 days, no card; Flowise: Free: $0/month, 2 flows and assistants; LlamaIndex: Free: $0/month; Botpress: Free: 100 conversations/month; Agno: Free: $0/month runtime, you host it; Mastra: Starter: free for everyone; self-hosted open-source framework."
-    ],
-    [
-     "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with a paid plan price we could read on the vendor page, confirmed on the vendor's own website on 16–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
-    ]
-   ],
-   "order_note": "Ordered strictly by lowest verified monthly price, cheapest first. Rank in the category ranking is shown on each profile."
-  },
-  {
    "slug": "paid-ai-automation-tools-no-free-plan",
-   "n": 1065,
+   "n": 1064,
    "generated": true,
    "cat": "automation",
    "h1": "Best paid AI automation tools (no free plan)",
    "title": "Best Paid AI Automation Tools: No Free Plan (2026)",
-   "desc": "Best paid AI automation tools (no free plan): 5 picks with vendor-verified prices checked 16–17 Oct 2026, including n8n, Zapier Agents and Manus.",
-   "summary": "These AI automation tools are paid products: no permanent free plan is listed on their pricing pages. <b>n8n</b> comes first: developer-friendly automation with unlimited steps per execution and a self-host option. The cheapest verified paid plan here is <b>Gumloop</b> Pro (Starts at $37/month). None of the 5 has a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–17 Oct 2026.",
+   "desc": "Best paid AI automation tools (no free plan): 6 picks with vendor-verified prices checked 16–24 Oct 2026, including n8n, Zapier Agents and Manus.",
+   "summary": "These AI automation tools are paid products: no permanent free plan is listed on their pricing pages. <b>n8n</b> comes first: developer-friendly automation with unlimited steps per execution and a self-host option. The cheapest verified paid plan here is <b>Microsoft Power Automate</b> Premium ($15/user/month). None of the 6 has a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–24 Oct 2026.",
    "items": [
     [
      "n8n",
@@ -4305,13 +4245,17 @@
     [
      "voiceflow",
      ""
+    ],
+    [
+     "microsoft-power-automate",
+     "Premium"
     ]
    ],
-   "pick": "Pick <b>n8n</b> for technical teams building complex workflows and AI agents (€20/month (Starter, billed annually)); think twice if you want the simplest no-code setup. Pick <b>Zapier Agents</b> for teams already on Zapier who want agents (price not yet verified); think twice if you need a code-first agent framework. Pick <b>Manus</b> for delegating multi-step research and web tasks (price not yet verified); think twice if you need predictable per-task cost. Pick <b>Gumloop</b> for no-code AI workflow automation (Pro: Starts at $37/month). Watch out: no permanent free plan shown on the pricing page. Pick <b>Voiceflow</b> for customer-experience teams building chat and voice agents (price not yet verified). Watch out: no published per-plan prices.",
+   "pick": "Pick <b>n8n</b> for technical teams building complex workflows and AI agents (€20/month (Starter, billed annually)); think twice if you want the simplest no-code setup. Pick <b>Zapier Agents</b> for teams already on Zapier who want agents (price not yet verified); think twice if you need a code-first agent framework. Pick <b>Manus</b> for delegating multi-step research and web tasks (price not yet verified); think twice if you need predictable per-task cost. Pick <b>Gumloop</b> for no-code AI workflow automation (Pro: Starts at $37/month). Watch out: no permanent free plan shown on the pricing page. Pick <b>Voiceflow</b> for customer-experience teams building chat and voice agents (price not yet verified). Watch out: no published per-plan prices. Pick <b>Microsoft Power Automate</b> for microsoft 365 organisations automating cloud apps and Windows desktop tasks (Premium: $15/user/month). Watch out: unattended bots cost $150 per bot a month; prices may vary by country and the page did not show monthly billing.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "Gumloop Pro (Starts at $37/month) is the lowest paid price we verified on this list (https://www.gumloop.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "Microsoft Power Automate Premium ($15/user/month) is the lowest paid price we verified on this list (https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
@@ -4319,13 +4263,13 @@
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with no permanent free plan on the vendor page, confirmed on the vendor's own website on 16–17 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with no permanent free plan on the vendor page, confirmed on the vendor's own website on 16–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
   },
   {
    "slug": "ai-automation-tools-with-an-api",
-   "n": 1066,
+   "n": 1065,
    "generated": true,
    "cat": "automation",
    "h1": "Best AI automation tools with an API",
@@ -4384,13 +4328,13 @@
   },
   {
    "slug": "ai-automation-tools-for-teams",
-   "n": 1067,
+   "n": 1066,
    "generated": true,
    "cat": "automation",
    "h1": "Best AI automation tools for teams (per-seat plans)",
    "title": "Best AI Automation Tools for Teams (2026)",
-   "desc": "Best AI automation tools for teams (per-seat plans): 8 picks with vendor-verified prices checked 16–22 Oct 2026, including Zapier, LangGraph and Mastra.",
-   "summary": "Each of these AI automation tools sells a team, business or per-seat plan, so you can put several people on one bill. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 8 of the 8 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–22 Oct 2026.",
+   "desc": "Best AI automation tools for teams (per-seat plans): 9 picks with vendor-verified prices checked 16–24 Oct 2026, including Zapier, LangGraph and Mastra.",
+   "summary": "Each of these AI automation tools sells a team, business or per-seat plan, so you can put several people on one bill. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Microsoft Power Automate</b> Premium ($15/user/month). 8 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–24 Oct 2026.",
    "items": [
     [
      "zapier",
@@ -4423,27 +4367,31 @@
     [
      "activepieces",
      "Team"
+    ],
+    [
+     "microsoft-power-automate",
+     "Premium"
     ]
    ],
-   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Team: from $69/month); think twice if you run very high volumes and want self-hosting. Pick <b>LangGraph</b> for developers building stateful, controllable AI agents in code (Developer: $0/seat per month). Watch out: the framework is free, but hosted deployment and tracing run on LangSmith with per-seat and usage charges. Pick <b>Mastra</b> for TypeScript developers building agents (Teams: $250/month). Watch out: cloud Teams plan starts high. Pick <b>Dify</b> for teams building LLM apps with a visual builder (Team: $1,590/workspace/year). Watch out: cloud plans are billed per workspace per year. Pick <b>Flowise</b> for visual LLM flow building (Starter: $35/month). Watch out: free cloud plan is limited to 2 flows. Pick <b>Lindy</b> for AI assistants that handle email, meetings and admin (Team: From $29.99/month). Watch out: free credits expire after 7 days. Pick <b>Botpress</b> for customer-facing chatbots (Team: $750/month billed annually). Watch out: paid plans start high for small projects.",
+   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Team: $69/month billed annually; $103.50/month billed monthly); think twice if you run very high volumes and want self-hosting. Pick <b>LangGraph</b> for developers building stateful, controllable AI agents in code (Developer: $0/seat per month). Watch out: the framework is free, but hosted deployment and tracing run on LangSmith with per-seat and usage charges. Pick <b>Mastra</b> for TypeScript developers building agents (Teams: $250/month). Watch out: cloud Teams plan starts high. Pick <b>Dify</b> for teams building LLM apps with a visual builder (Team: $1,590/workspace/year). Watch out: cloud plans are billed per workspace per year. Pick <b>Flowise</b> for visual LLM flow building (Starter: $35/month). Watch out: free cloud plan is limited to 2 flows. Pick <b>Lindy</b> for AI assistants that handle email, meetings and admin (Team: From $29.99/month). Watch out: free credits expire after 7 days. Pick <b>Botpress</b> for customer-facing chatbots (Team: $750/month billed annually). Watch out: paid plans start high for small projects.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "Microsoft Power Automate Premium ($15/user/month) is the lowest paid price we verified on this list (https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
-     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; LangGraph: Open-source framework (MIT licence); LangSmith Developer plan $0 with 1 free seat and 5k base traces/month; Mastra: Starter: free for everyone; self-hosted open-source framework; Dify: Sandbox: free, 200 message credits; open-source Community edition free to self-host; Flowise: Free: $0/month, 2 flows and assistants; Lindy: $50 in free credits for 7 days, no card; Botpress: Free: 100 conversations/month; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users."
+     "Zapier: Free forever: 100 tasks/month, two-step Zaps, basic access to Agents, Chatbots and MCP; LangGraph: Open-source framework (MIT licence); LangSmith Developer plan $0 with 1 free seat and 5k base traces/month; Mastra: Starter: free for everyone; self-hosted open-source framework; Dify: Sandbox: free, 200 message credits; open-source Community edition free to self-host; Flowise: Free: $0/month, 2 flows and assistants; Lindy: $50 in free credits for 7 days, no card; Botpress: Free: 100 conversations/month; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users."
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with a team, business or per-seat plan on the pricing page, confirmed on the vendor's own website on 16–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with a team, business or per-seat plan on the pricing page, confirmed on the vendor's own website on 16–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
   },
   {
    "slug": "self-hosted-ai-automation-tools",
-   "n": 1068,
+   "n": 1067,
    "generated": true,
    "cat": "automation",
    "h1": "Best self-hosted and open-source AI automation tools",
@@ -4510,7 +4458,7 @@
   },
   {
    "slug": "free-ai-research-and-productivity-tools",
-   "n": 1069,
+   "n": 1068,
    "generated": true,
    "cat": "research",
    "h1": "Best free AI research and productivity tools (with a real free plan)",
@@ -4577,7 +4525,7 @@
   },
   {
    "slug": "ai-research-and-productivity-tools-under-10-a-month",
-   "n": 1070,
+   "n": 1069,
    "generated": true,
    "cat": "research",
    "h1": "Best AI research and productivity tools for $10 a month or less",
@@ -4632,7 +4580,7 @@
   },
   {
    "slug": "ai-research-and-productivity-tools-under-15-a-month",
-   "n": 1071,
+   "n": 1070,
    "generated": true,
    "cat": "research",
    "h1": "Best AI research and productivity tools for $15 a month or less",
@@ -4699,7 +4647,7 @@
   },
   {
    "slug": "ai-research-and-productivity-tools-with-free-trial-no-free-plan",
-   "n": 1072,
+   "n": 1071,
    "generated": true,
    "cat": "research",
    "h1": "AI research and productivity tools with a free trial (paid plans only)",
@@ -4742,7 +4690,7 @@
   },
   {
    "slug": "ai-research-and-productivity-tools-with-an-api",
-   "n": 1073,
+   "n": 1072,
    "generated": true,
    "cat": "research",
    "h1": "Best AI research and productivity tools with an API",
@@ -4801,7 +4749,7 @@
   },
   {
    "slug": "ai-research-and-productivity-tools-for-desktop",
-   "n": 1074,
+   "n": 1073,
    "generated": true,
    "cat": "research",
    "h1": "Best AI research and productivity tools with desktop apps",
@@ -4848,7 +4796,7 @@
   },
   {
    "slug": "ai-research-and-productivity-tools-for-teams",
-   "n": 1075,
+   "n": 1074,
    "generated": true,
    "cat": "research",
    "h1": "Best AI research and productivity tools for teams (per-seat plans)",
@@ -4903,7 +4851,7 @@
   },
   {
    "slug": "ai-research-and-productivity-tools-with-annual-discount",
-   "n": 1076,
+   "n": 1075,
    "generated": true,
    "cat": "research",
    "h1": "AI research and productivity tools that are cheaper billed yearly",
@@ -4970,7 +4918,7 @@
   },
   {
    "slug": "ai-research-and-productivity-tools-with-mcp",
-   "n": 1077,
+   "n": 1076,
    "generated": true,
    "cat": "research",
    "h1": "Best AI research and productivity tools with MCP support",
@@ -5013,7 +4961,7 @@
   },
   {
    "slug": "free-ai-business-tools",
-   "n": 1078,
+   "n": 1077,
    "generated": true,
    "cat": "business",
    "h1": "Best free AI business tools (with a real free plan)",
@@ -5072,7 +5020,7 @@
   },
   {
    "slug": "ai-business-tools-under-15-a-month",
-   "n": 1079,
+   "n": 1078,
    "generated": true,
    "cat": "business",
    "h1": "Best AI business tools for $15 a month or less",
@@ -5123,7 +5071,7 @@
   },
   {
    "slug": "ai-business-tools-under-30-a-month",
-   "n": 1080,
+   "n": 1079,
    "generated": true,
    "cat": "business",
    "h1": "Best AI business tools for $30 a month or less",
@@ -5186,7 +5134,7 @@
   },
   {
    "slug": "ai-business-tools-with-annual-discount",
-   "n": 1081,
+   "n": 1080,
    "generated": true,
    "cat": "business",
    "h1": "AI business tools that are cheaper billed yearly",
@@ -5241,7 +5189,7 @@
   },
   {
    "slug": "ai-crypto-tools-under-50-a-month",
-   "n": 1082,
+   "n": 1081,
    "generated": true,
    "cat": "crypto",
    "h1": "Best AI crypto tools for $50 a month or less",
@@ -5300,7 +5248,7 @@
   },
   {
    "slug": "free-ai-education-tools",
-   "n": 1083,
+   "n": 1082,
    "generated": true,
    "cat": "education",
    "h1": "Best free AI education tools (with a real free plan)",
@@ -5367,7 +5315,7 @@
   },
   {
    "slug": "free-ai-game-development-tools",
-   "n": 1084,
+   "n": 1083,
    "generated": true,
    "cat": "gaming",
    "h1": "Best free AI game development tools (with a real free plan)",
@@ -5426,7 +5374,7 @@
   },
   {
    "slug": "ai-game-development-tools-under-30-a-month",
-   "n": 1085,
+   "n": 1084,
    "generated": true,
    "cat": "gaming",
    "h1": "Best AI game development tools for $30 a month or less",
@@ -5485,7 +5433,7 @@
   },
   {
    "slug": "python-ai-agent-frameworks",
-   "n": 1086,
+   "n": 1085,
    "generated": true,
    "cat": "automation",
    "h1": "Best open-source Python AI agent frameworks",
@@ -5548,7 +5496,7 @@
   },
   {
    "slug": "ai-tools-for-hotels",
-   "n": 1087,
+   "n": 1086,
    "generated": true,
    "cat": "hospitality",
    "h1": "Best AI tools for hotels",
@@ -5587,7 +5535,7 @@
   },
   {
    "slug": "ai-image-tools-under-10-a-month",
-   "n": 1088,
+   "n": 1087,
    "generated": true,
    "cat": "image",
    "h1": "Best AI image tools for $10 a month or less",
@@ -5642,7 +5590,7 @@
   },
   {
    "slug": "ai-image-tools-for-teams",
-   "n": 1089,
+   "n": 1088,
    "generated": true,
    "cat": "image",
    "h1": "Best AI image tools for teams (per-seat plans)",
@@ -5693,7 +5641,7 @@
   },
   {
    "slug": "ai-image-tools-for-enterprise",
-   "n": 1090,
+   "n": 1089,
    "generated": true,
    "cat": "image",
    "h1": "Best AI image tools for enterprise buyers",
@@ -5744,7 +5692,7 @@
   },
   {
    "slug": "ai-video-tools-under-10-a-month",
-   "n": 1091,
+   "n": 1090,
    "generated": true,
    "cat": "video",
    "h1": "Best AI video tools for $10 a month or less",
@@ -5795,7 +5743,7 @@
   },
   {
    "slug": "ai-video-tools-with-mobile-apps",
-   "n": 1092,
+   "n": 1091,
    "generated": true,
    "cat": "video",
    "h1": "Best AI video tools with mobile apps",
@@ -5838,7 +5786,7 @@
   },
   {
    "slug": "ai-video-tools-for-teams",
-   "n": 1093,
+   "n": 1092,
    "generated": true,
    "cat": "video",
    "h1": "Best AI video tools for teams (per-seat plans)",
@@ -5881,7 +5829,7 @@
   },
   {
    "slug": "ai-video-tools-with-mcp",
-   "n": 1094,
+   "n": 1093,
    "generated": true,
    "cat": "video",
    "h1": "Best AI video tools with MCP support",
@@ -5924,13 +5872,13 @@
   },
   {
    "slug": "ai-automation-tools-for-enterprise",
-   "n": 1095,
+   "n": 1094,
    "generated": true,
    "cat": "automation",
    "h1": "Best AI automation tools for enterprise buyers",
    "title": "Best AI Automation Tools for Enterprise (2026)",
-   "desc": "Best AI automation tools for enterprise buyers: 7 picks with vendor-verified prices checked 16–22 Oct 2026, including Zapier, LangGraph and CrewAI.",
-   "summary": "Each of these AI automation tools lists an Enterprise or custom-priced plan, the usual route to SSO, contracts and volume pricing. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 4 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–22 Oct 2026.",
+   "desc": "Best AI automation tools for enterprise buyers: 7 picks with vendor-verified prices checked 16–24 Oct 2026, including Zapier, LangGraph and CrewAI.",
+   "summary": "Each of these AI automation tools lists an Enterprise or custom-priced plan, the usual route to SSO, contracts and volume pricing. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional ($19.99/month billed annually; $29.99/month billed monthly). 4 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–24 Oct 2026.",
    "items": [
     [
      "zapier",
@@ -5965,27 +5913,27 @@
    "faq": [
     [
      "Which of these is cheapest?",
-     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "Zapier Professional ($19.99/month billed annually; $29.99/month billed monthly) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
-     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; LangGraph: Open-source framework (MIT licence); LangSmith Developer plan $0 with 1 free seat and 5k base traces/month; CrewAI: Basic: free, 50 workflow executions/month; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users."
+     "Zapier: Free forever: 100 tasks/month, two-step Zaps, basic access to Agents, Chatbots and MCP; LangGraph: Open-source framework (MIT licence); LangSmith Developer plan $0 with 1 free seat and 5k base traces/month; CrewAI: Basic: free, 50 workflow executions/month; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users."
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with an Enterprise or custom plan on the pricing page, confirmed on the vendor's own website on 16–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with an Enterprise or custom plan on the pricing page, confirmed on the vendor's own website on 16–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
   },
   {
    "slug": "ai-automation-tools-with-mcp",
-   "n": 1096,
+   "n": 1095,
    "generated": true,
    "cat": "automation",
    "h1": "Best AI automation tools with MCP support",
    "title": "Best AI Automation Tools With MCP Support (2026)",
-   "desc": "Best AI automation tools with MCP support: 9 picks with vendor-verified prices checked 16–22 Oct 2026, including Zapier, n8n and Relevance AI.",
-   "summary": "Each of these AI automation tools supports the Model Context Protocol (MCP), so AI agents can connect to it. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 7 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–22 Oct 2026.",
+   "desc": "Best AI automation tools with MCP support: 9 picks with vendor-verified prices checked 16–24 Oct 2026, including Zapier, n8n and Relevance AI.",
+   "summary": "Each of these AI automation tools supports the Model Context Protocol (MCP), so AI agents can connect to it. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional ($19.99/month billed annually; $29.99/month billed monthly). 7 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–24 Oct 2026.",
    "items": [
     [
      "zapier",
@@ -6024,25 +5972,25 @@
      "Plus"
     ]
    ],
-   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: from $19.99/month); think twice if you run very high volumes and want self-hosting. Pick <b>n8n</b> for technical teams building complex workflows and AI agents (€20/month (Starter, billed annually)); think twice if you want the simplest no-code setup. Pick <b>Relevance AI</b> for companies building a team of AI agents for sales and operations (price not yet verified). Watch out: only the Enterprise plan was shown on the pricing page. Pick <b>OpenAI Agents SDK</b> for developers building multi-agent workflows with tools and handoffs (free plan: Open source (MIT)). Watch out: you pay your model provider for usage. Pick <b>Claude Agent SDK</b> for developers embedding Claude Code&#x27;s agent loop, tools and sessions in their own app (free plan: Free SDK (Python repository MIT-licensed); you pay for Claude API usage). Watch out: needs a Claude API key; claude.ai logins and rate limits are not allowed for third-party products. Pick <b>Google ADK</b> for developers building agents on Gemini and Google Cloud (free plan: Open source (Apache-2.0)). Watch out: you pay your model provider for usage. Pick <b>Pydantic AI</b> for python developers who want type-safe agents (free plan: Open source (MIT)). Watch out: a code library: you supply model API keys and hosting.",
+   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: $19.99/month billed annually; $29.99/month billed monthly); think twice if you run very high volumes and want self-hosting. Pick <b>n8n</b> for technical teams building complex workflows and AI agents (€20/month (Starter, billed annually)); think twice if you want the simplest no-code setup. Pick <b>Relevance AI</b> for companies building a team of AI agents for sales and operations (price not yet verified). Watch out: only the Enterprise plan was shown on the pricing page. Pick <b>OpenAI Agents SDK</b> for developers building multi-agent workflows with tools and handoffs (free plan: Open source (MIT)). Watch out: you pay your model provider for usage. Pick <b>Claude Agent SDK</b> for developers embedding Claude Code&#x27;s agent loop, tools and sessions in their own app (free plan: Free SDK (Python repository MIT-licensed); you pay for Claude API usage). Watch out: needs a Claude API key; claude.ai logins and rate limits are not allowed for third-party products. Pick <b>Google ADK</b> for developers building agents on Gemini and Google Cloud (free plan: Open source (Apache-2.0)). Watch out: you pay your model provider for usage. Pick <b>Pydantic AI</b> for python developers who want type-safe agents (free plan: Open source (MIT)). Watch out: a code library: you supply model API keys and hosting.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "Zapier Professional ($19.99/month billed annually; $29.99/month billed monthly) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
-     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; OpenAI Agents SDK: Open source (MIT); Claude Agent SDK: Free SDK (Python repository MIT-licensed); you pay for Claude API usage; Google ADK: Open source (Apache-2.0); Pydantic AI: Open source (MIT); Langflow: Free and open source, plus a free cloud account; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users."
+     "Zapier: Free forever: 100 tasks/month, two-step Zaps, basic access to Agents, Chatbots and MCP; OpenAI Agents SDK: Open source (MIT); Claude Agent SDK: Free SDK (Python repository MIT-licensed); you pay for Claude API usage; Google ADK: Open source (Apache-2.0); Pydantic AI: Open source (MIT); Langflow: Free and open source, plus a free cloud account; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users."
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with MCP support listed by the vendor, confirmed on the vendor's own website on 16–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with MCP support listed by the vendor, confirmed on the vendor's own website on 16–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
   },
   {
    "slug": "cheapest-ai-research-and-productivity-tools",
-   "n": 1097,
+   "n": 1096,
    "generated": true,
    "cat": "research",
    "h1": "Cheapest AI research and productivity tools: lowest verified paid plans",
@@ -6110,7 +6058,7 @@
   },
   {
    "slug": "ai-research-and-productivity-tools-for-enterprise",
-   "n": 1098,
+   "n": 1097,
    "generated": true,
    "cat": "research",
    "h1": "Best AI research and productivity tools for enterprise buyers",
@@ -6157,7 +6105,7 @@
   },
   {
    "slug": "free-ai-marketing-tools",
-   "n": 1099,
+   "n": 1098,
    "generated": true,
    "cat": "marketing",
    "h1": "Best free AI marketing tools (with a real free plan)",
@@ -6224,7 +6172,7 @@
   },
   {
    "slug": "cheapest-ai-marketing-tools",
-   "n": 1100,
+   "n": 1099,
    "generated": true,
    "cat": "marketing",
    "h1": "Cheapest AI marketing tools: lowest verified paid plans",
@@ -6292,7 +6240,7 @@
   },
   {
    "slug": "ai-health-and-fitness-tools-with-mobile-apps",
-   "n": 1101,
+   "n": 1100,
    "generated": true,
    "cat": "health",
    "h1": "Best AI health and fitness tools with mobile apps",
@@ -6359,7 +6307,7 @@
   },
   {
    "slug": "ai-image-tools-with-mobile-apps",
-   "n": 1102,
+   "n": 1101,
    "generated": true,
    "cat": "image",
    "h1": "Best AI image tools with mobile apps",
@@ -6414,7 +6362,7 @@
   },
   {
    "slug": "ai-image-tools-with-mcp",
-   "n": 1103,
+   "n": 1102,
    "generated": true,
    "cat": "image",
    "h1": "Best AI image tools with MCP support",
@@ -6457,7 +6405,7 @@
   },
   {
    "slug": "ai-writing-tools-for-desktop",
-   "n": 1104,
+   "n": 1103,
    "generated": true,
    "cat": "writing",
    "h1": "Best AI writing tools with desktop apps",
@@ -6504,7 +6452,7 @@
   },
   {
    "slug": "ai-voice-and-audio-tools-with-mobile-apps",
-   "n": 1105,
+   "n": 1104,
    "generated": true,
    "cat": "voice-audio",
    "h1": "Best AI voice and audio tools with mobile apps",
@@ -6555,7 +6503,7 @@
   },
   {
    "slug": "ai-voice-and-audio-tools-for-teams",
-   "n": 1106,
+   "n": 1105,
    "generated": true,
    "cat": "voice-audio",
    "h1": "Best AI voice and audio tools for teams (per-seat plans)",
@@ -6606,7 +6554,7 @@
   },
   {
    "slug": "ai-voice-and-audio-tools-for-enterprise",
-   "n": 1107,
+   "n": 1106,
    "generated": true,
    "cat": "voice-audio",
    "h1": "Best AI voice and audio tools for enterprise buyers",
@@ -6673,7 +6621,7 @@
   },
   {
    "slug": "ai-business-tools-with-mobile-apps",
-   "n": 1108,
+   "n": 1107,
    "generated": true,
    "cat": "business",
    "h1": "Best AI business tools with mobile apps",
@@ -6716,7 +6664,7 @@
   },
   {
    "slug": "ai-crypto-tools-with-mobile-apps",
-   "n": 1109,
+   "n": 1108,
    "generated": true,
    "cat": "crypto",
    "h1": "Best AI crypto tools with mobile apps",
@@ -6767,7 +6715,7 @@
   },
   {
    "slug": "ai-crypto-tools-with-an-api",
-   "n": 1110,
+   "n": 1109,
    "generated": true,
    "cat": "crypto",
    "h1": "Best AI crypto tools with an API",
@@ -6834,7 +6782,7 @@
   },
   {
    "slug": "ai-crypto-tools-with-mcp",
-   "n": 1111,
+   "n": 1110,
    "generated": true,
    "cat": "crypto",
    "h1": "Best AI crypto tools with MCP support",
@@ -6893,7 +6841,7 @@
   },
   {
    "slug": "ai-game-development-tools-for-enterprise",
-   "n": 1112,
+   "n": 1111,
    "generated": true,
    "cat": "gaming",
    "h1": "Best AI game development tools for enterprise buyers",
@@ -6944,7 +6892,7 @@
   },
   {
    "slug": "ai-game-development-tools-with-mcp",
-   "n": 1113,
+   "n": 1112,
    "generated": true,
    "cat": "gaming",
    "h1": "Best AI game development tools with MCP support",
@@ -6991,7 +6939,7 @@
   },
   {
    "slug": "ai-coding-agents-in-slack",
-   "n": 1114,
+   "n": 1113,
    "generated": true,
    "cat": "coding",
    "h1": "Best AI coding agents you can use from Slack",
@@ -7042,7 +6990,7 @@
   },
   {
    "slug": "ai-music-generators",
-   "n": 1115,
+   "n": 1114,
    "generated": true,
    "cat": "voice-audio",
    "h1": "Best AI music generators",
@@ -7085,7 +7033,7 @@
   },
   {
    "slug": "ai-assistants-for-desktop",
-   "n": 1116,
+   "n": 1115,
    "generated": true,
    "cat": "ai-assistants",
    "h1": "Best AI assistants with desktop apps",
@@ -7128,7 +7076,7 @@
   },
   {
    "slug": "self-hosted-ai-image-tools",
-   "n": 1117,
+   "n": 1116,
    "generated": true,
    "cat": "image",
    "h1": "Best self-hosted and open-source AI image tools",
@@ -7171,7 +7119,7 @@
   },
   {
    "slug": "free-ai-writing-tools",
-   "n": 1118,
+   "n": 1117,
    "generated": true,
    "cat": "writing",
    "h1": "Best free AI writing tools (with a real free plan)",
@@ -7234,7 +7182,7 @@
   },
   {
    "slug": "ai-research-and-productivity-tools-with-mobile-apps",
-   "n": 1119,
+   "n": 1118,
    "generated": true,
    "cat": "research",
    "h1": "Best AI research and productivity tools with mobile apps",
@@ -7289,7 +7237,7 @@
   },
   {
    "slug": "paid-ai-crypto-tools-no-free-plan",
-   "n": 1120,
+   "n": 1119,
    "generated": true,
    "cat": "crypto",
    "h1": "Best paid AI crypto tools (no free plan)",
@@ -7332,7 +7280,7 @@
   },
   {
    "slug": "ai-crypto-tools-for-enterprise",
-   "n": 1121,
+   "n": 1120,
    "generated": true,
    "cat": "crypto",
    "h1": "Best AI crypto tools for enterprise buyers",
@@ -7383,7 +7331,7 @@
   },
   {
    "slug": "ai-tools-for-restaurants-for-enterprise",
-   "n": 1122,
+   "n": 1121,
    "generated": true,
    "cat": "restaurants",
    "h1": "Best AI tools for restaurants for enterprise buyers",
@@ -7430,7 +7378,7 @@
   },
   {
    "slug": "ai-crypto-tools-with-annual-discount",
-   "n": 1123,
+   "n": 1122,
    "generated": true,
    "cat": "crypto",
    "h1": "AI crypto tools that are cheaper billed yearly",
@@ -7481,7 +7429,7 @@
   },
   {
    "slug": "ai-tools-for-teachers",
-   "n": 1124,
+   "n": 1123,
    "generated": true,
    "cat": "education",
    "h1": "Best AI tools for teachers",
@@ -7524,7 +7472,7 @@
   },
   {
    "slug": "ai-image-tools-for-desktop",
-   "n": 1125,
+   "n": 1124,
    "generated": true,
    "cat": "image",
    "h1": "Best AI image tools with desktop apps",
@@ -7567,7 +7515,7 @@
   },
   {
    "slug": "paid-ai-marketing-tools-no-free-plan",
-   "n": 1126,
+   "n": 1125,
    "generated": true,
    "cat": "marketing",
    "h1": "Best paid AI marketing tools (no free plan)",
@@ -7630,7 +7578,7 @@
   },
   {
    "slug": "ai-marketing-tools-with-an-api",
-   "n": 1127,
+   "n": 1126,
    "generated": true,
    "cat": "marketing",
    "h1": "Best AI marketing tools with an API",
@@ -7689,7 +7637,7 @@
   },
   {
    "slug": "ai-marketing-tools-for-teams",
-   "n": 1128,
+   "n": 1127,
    "generated": true,
    "cat": "marketing",
    "h1": "Best AI marketing tools for teams (per-seat plans)",
@@ -7740,7 +7688,7 @@
   },
   {
    "slug": "ai-marketing-tools-for-enterprise",
-   "n": 1129,
+   "n": 1128,
    "generated": true,
    "cat": "marketing",
    "h1": "Best AI marketing tools for enterprise buyers",
@@ -7807,7 +7755,7 @@
   },
   {
    "slug": "ai-marketing-tools-with-annual-discount",
-   "n": 1130,
+   "n": 1129,
    "generated": true,
    "cat": "marketing",
    "h1": "AI marketing tools that are cheaper billed yearly",
@@ -7874,13 +7822,13 @@
   },
   {
    "slug": "ai-hospitality-tools-with-free-trial-no-free-plan",
-   "n": 1131,
+   "n": 1130,
    "generated": true,
    "cat": "hospitality",
    "h1": "AI hospitality tools with a free trial (paid plans only)",
    "title": "AI Hospitality Tools With a Free Trial (2026)",
-   "desc": "AI hospitality tools with a free trial (paid plans only): 8 picks with vendor-verified prices checked 20–22 Oct 2026, including Lodgify, Guesty and iGMS.",
-   "summary": "None of these AI hospitality tools has a permanent free plan, but each offers a trial confirmed on its pricing page. <b>Lodgify</b> comes first: low entry price for one property, no booking fees, and an AI assistant for guest replies. The cheapest verified paid plan here is <b>Guesty</b> Lite (From $9/month per listing). None of the 8 has a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–22 Oct 2026.",
+   "desc": "AI hospitality tools with a free trial (paid plans only): 9 picks with vendor-verified prices checked 20–24 Oct 2026, including Lodgify, Guesty and iGMS.",
+   "summary": "None of these AI hospitality tools has a permanent free plan, but each offers a trial confirmed on its pricing page. <b>Lodgify</b> comes first: low entry price for one property, no booking fees, and an AI assistant for guest replies. The cheapest verified paid plan here is <b>HostBuddy AI</b> Pro ($7/month per property, billed monthly). None of the 9 has a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–24 Oct 2026.",
    "items": [
     [
      "lodgify",
@@ -7913,13 +7861,17 @@
     [
      "pricelabs",
      "Dynamic Pricing (rest of world)"
+    ],
+    [
+     "hostbuddy-ai",
+     "Pro"
     ]
    ],
    "pick": "Pick <b>Lodgify</b> for hosts with a few properties who want their own booking website and synced calendars (Basic: From $14/month). Watch out: price rises with property count and plan; automated messaging starts on Professional. Pick <b>Guesty</b> for hosts with 1–3 listings who may grow into a full property-management platform (Lite: From $9/month per listing). Watch out: the Pro and Enterprise plans are quoted by listing count. Pick <b>iGMS</b> for hosts who want AI-drafted guest replies and only pay for properties that get bookings (PRO: $38/month per property billed annually, or $48 billed monthly (1 property)). Watch out: AI Agent and dynamic pricing need PRO+. Pick <b>Uplisting</b> for operators who want to connect AI agents to their rental business through MCP or the API (£0/month + 3% per booking (pay as you go)). Watch out: prices are in GBP; the Independent Host plan is capped at 4 properties. Pick <b>Host Tools</b> for hosts with a few listings who want hands-off guest messaging and reviews (Messaging: $28/month billed yearly ($336/year) or $30/month monthly). Watch out: no free plan; the price rises with every listing you add. Pick <b>OwnerRez</b> for owners and managers who want an all-in-one PMS and to connect it to Claude or ChatGPT (price not yet verified). Watch out: rezzy AI, SMS, websites and QuickBooks are paid premium add-ons; no free plan. Pick <b>Smoobu</b> for small European hosts who want a channel manager, booking site and apps in one (From €28 a month (1 unit, per vendor FAQ)). Watch out: billed in EUR; the cheapest Flex plan adds a 0.9% booking fee.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "Guesty Lite (From $9/month per listing) is the lowest paid price we verified on this list (https://www.guesty.com/pricing/, checked 20 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "HostBuddy AI Pro ($7/month per property, billed monthly) is the lowest paid price we verified on this list (https://hostbuddy.ai/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
@@ -7927,13 +7879,13 @@
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with a trial but no permanent free plan, confirmed on the vendor's own website on 20–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with a trial but no permanent free plan, confirmed on the vendor's own website on 20–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
   },
   {
    "slug": "paid-ai-hospitality-tools-no-free-plan",
-   "n": 1132,
+   "n": 1131,
    "generated": true,
    "cat": "hospitality",
    "h1": "Best paid AI hospitality tools (no free plan)",
@@ -8000,7 +7952,7 @@
   },
   {
    "slug": "ai-hospitality-tools-with-an-api",
-   "n": 1133,
+   "n": 1132,
    "generated": true,
    "cat": "hospitality",
    "h1": "Best AI hospitality tools with an API",
@@ -8059,7 +8011,7 @@
   },
   {
    "slug": "ai-hospitality-tools-for-enterprise",
-   "n": 1134,
+   "n": 1133,
    "generated": true,
    "cat": "hospitality",
    "h1": "Best AI hospitality tools for enterprise buyers",
@@ -8118,7 +8070,7 @@
   },
   {
    "slug": "ai-education-tools-under-10-a-month",
-   "n": 1135,
+   "n": 1134,
    "generated": true,
    "cat": "education",
    "h1": "Best AI education tools for $10 a month or less",
@@ -8165,7 +8117,7 @@
   },
   {
    "slug": "ai-education-tools-for-enterprise",
-   "n": 1136,
+   "n": 1135,
    "generated": true,
    "cat": "education",
    "h1": "Best AI education tools for enterprise buyers",
@@ -8224,7 +8176,7 @@
   },
   {
    "slug": "ai-health-and-fitness-tools-under-10-a-month",
-   "n": 1137,
+   "n": 1136,
    "generated": true,
    "cat": "health",
    "h1": "Best AI health and fitness tools for $10 a month or less",
@@ -8271,7 +8223,7 @@
   },
   {
    "slug": "crypto-trading-bots",
-   "n": 1138,
+   "n": 1137,
    "generated": true,
    "cat": "crypto",
    "h1": "Best crypto trading bots",
@@ -8314,7 +8266,7 @@
   },
   {
    "slug": "ai-dictation-apps",
-   "n": 1139,
+   "n": 1138,
    "generated": true,
    "cat": "voice-audio",
    "h1": "Best AI dictation apps",
@@ -8357,7 +8309,7 @@
   },
   {
    "slug": "ai-code-review-tools",
-   "n": 1140,
+   "n": 1139,
    "generated": true,
    "cat": "coding",
    "h1": "Best AI code review tools",
@@ -8400,7 +8352,7 @@
   },
   {
    "slug": "ai-marketing-tools-under-20-a-month",
-   "n": 1141,
+   "n": 1140,
    "generated": true,
    "cat": "marketing",
    "h1": "Best AI marketing tools for $20 a month or less",
@@ -8447,7 +8399,7 @@
   },
   {
    "slug": "free-ai-hospitality-tools",
-   "n": 1142,
+   "n": 1141,
    "generated": true,
    "cat": "hospitality",
    "h1": "Best free AI hospitality tools (with a real free plan)",
@@ -8502,13 +8454,13 @@
   },
   {
    "slug": "ai-hospitality-tools-under-30-a-month",
-   "n": 1143,
+   "n": 1142,
    "generated": true,
    "cat": "hospitality",
    "h1": "Best AI hospitality tools for $30 a month or less",
    "title": "Best AI Hospitality Tools Under $30/Month (2026)",
-   "desc": "Best AI hospitality tools for $30 a month or less: 6 picks with vendor-verified prices checked 20–23 Oct 2026, including Lodgify, Guesty and Host Tools.",
-   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>Lodgify</b> comes first: low entry price for one property, no booking fees, and an AI assistant for guest replies. The cheapest verified paid plan here is <b>Guesty</b> Lite (From $9/month per listing). 2 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–23 Oct 2026.",
+   "desc": "Best AI hospitality tools for $30 a month or less: 7 picks with vendor-verified prices checked 20–24 Oct 2026, including Lodgify, Guesty and Host Tools.",
+   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>Lodgify</b> comes first: low entry price for one property, no booking fees, and an AI assistant for guest replies. The cheapest verified paid plan here is <b>HostBuddy AI</b> Pro ($7/month per property, billed monthly). 2 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–24 Oct 2026.",
    "items": [
     [
      "lodgify",
@@ -8533,13 +8485,17 @@
     [
      "turno",
      "Marketplace & Non-Turno Teammates"
+    ],
+    [
+     "hostbuddy-ai",
+     "Pro"
     ]
    ],
-   "pick": "Pick <b>Lodgify</b> for hosts with a few properties who want their own booking website and synced calendars (Basic: From $14/month). Watch out: price rises with property count and plan; automated messaging starts on Professional. Pick <b>Guesty</b> for hosts with 1–3 listings who may grow into a full property-management platform (Lite: From $9/month per listing). Watch out: the Pro and Enterprise plans are quoted by listing count. Pick <b>Host Tools</b> for hosts with a few listings who want hands-off guest messaging and reviews (Messaging: $28/month billed yearly ($336/year) or $30/month monthly). Watch out: no free plan; the price rises with every listing you add. Pick <b>Wheelhouse</b> for hosts and operators who want data-driven nightly prices without a long contract (Pro Flat: $19.99/month per listing). Watch out: paid pricing is per listing, so costs grow with your portfolio. Pick <b>PriceLabs</b> for hosts and managers who want automated nightly pricing they can run from an AI assistant (Dynamic Pricing: rest of world) ($9.99/month per listing, plus tax). Watch out: no free plan; the price is per listing, and higher in the US, UK, Europe and Australia. Pick <b>Turno</b> for airbnb and Vrbo hosts who want cleaning scheduled and paid automatically (Marketplace &amp; Non-Turno Teammates: $10/month per property billed monthly; $96 per property billed annually). Watch out: using your own cleaners on 2+ properties costs $10 a month per property.",
+   "pick": "Pick <b>Lodgify</b> for hosts with a few properties who want their own booking website and synced calendars (Basic: From $14/month). Watch out: price rises with property count and plan; automated messaging starts on Professional. Pick <b>Guesty</b> for hosts with 1–3 listings who may grow into a full property-management platform (Lite: From $9/month per listing). Watch out: the Pro and Enterprise plans are quoted by listing count. Pick <b>Host Tools</b> for hosts with a few listings who want hands-off guest messaging and reviews (Messaging: $28/month billed yearly ($336/year) or $30/month monthly). Watch out: no free plan; the price rises with every listing you add. Pick <b>Wheelhouse</b> for hosts and operators who want data-driven nightly prices without a long contract (Pro Flat: $19.99/month per listing). Watch out: paid pricing is per listing, so costs grow with your portfolio. Pick <b>PriceLabs</b> for hosts and managers who want automated nightly pricing they can run from an AI assistant (Dynamic Pricing: rest of world) ($9.99/month per listing, plus tax). Watch out: no free plan; the price is per listing, and higher in the US, UK, Europe and Australia. Pick <b>Turno</b> for airbnb and Vrbo hosts who want cleaning scheduled and paid automatically (Marketplace &amp; Non-Turno Teammates: $10/month per property billed monthly; $96 per property billed annually). Watch out: using your own cleaners on 2+ properties costs $10 a month per property. Pick <b>HostBuddy AI</b> for airbnb and vacation rental hosts who want guest messages answered 24/7 by AI (Pro: $7/month per property, billed monthly). Watch out: no free plan after the 2-week trial; Pro limits conversation history to 30 days and has no team collaboration.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "Guesty Lite (From $9/month per listing) is the lowest paid price we verified on this list (https://www.guesty.com/pricing/, checked 20 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "HostBuddy AI Pro ($7/month per property, billed monthly) is the lowest paid price we verified on this list (https://hostbuddy.ai/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
@@ -8547,20 +8503,24 @@
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with a verified paid plan at or below $30/month (USD), confirmed on the vendor's own website on 20–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with a verified paid plan at or below $30/month (USD), confirmed on the vendor's own website on 20–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
   },
   {
    "slug": "cheapest-ai-hospitality-tools",
-   "n": 1144,
+   "n": 1143,
    "generated": true,
    "cat": "hospitality",
    "h1": "Cheapest AI hospitality tools: lowest verified paid plans",
    "title": "Cheapest AI Hospitality Tools: Paid Plans Compared",
-   "desc": "Cheapest AI hospitality tools: lowest verified paid plans: 8 picks with vendor-verified prices checked 20–23 Oct 2026, including Guesty, PriceLabs and Turno.",
-   "summary": "This list ranks AI hospitality tools purely by their cheapest verified paid plan. <b>Guesty</b> comes first: lite plan starts at $9 a listing; ReplyAI drafts guest replies on every plan. The cheapest verified paid plan here is <b>Guesty</b> Lite (From $9/month per listing). 3 of the 8 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–23 Oct 2026.",
+   "desc": "Cheapest AI hospitality tools: lowest verified paid plans: 9 picks with vendor-verified prices checked 20–24 Oct 2026.",
+   "summary": "This list ranks AI hospitality tools purely by their cheapest verified paid plan. <b>HostBuddy AI</b> comes first: per-property pricing from $7 a month with a 2-week free trial on every plan. The cheapest verified paid plan here is <b>HostBuddy AI</b> Pro ($7/month per property, billed monthly). 3 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–24 Oct 2026.",
    "items": [
+    [
+     "hostbuddy-ai",
+     "Pro"
+    ],
     [
      "guesty",
      "Lite"
@@ -8594,11 +8554,11 @@
      "Paid (10 rentals)"
     ]
    ],
-   "pick": "Pick <b>Guesty</b> for hosts with 1–3 listings who may grow into a full property-management platform (Lite: From $9/month per listing). Watch out: the Pro and Enterprise plans are quoted by listing count. Pick <b>PriceLabs</b> for hosts and managers who want automated nightly pricing they can run from an AI assistant (Dynamic Pricing: rest of world) ($9.99/month per listing, plus tax). Watch out: no free plan; the price is per listing, and higher in the US, UK, Europe and Australia. Pick <b>Turno</b> for airbnb and Vrbo hosts who want cleaning scheduled and paid automatically (Marketplace &amp; Non-Turno Teammates: $10/month per property billed monthly; $96 per property billed annually). Watch out: using your own cleaners on 2+ properties costs $10 a month per property. Pick <b>Lodgify</b> for hosts with a few properties who want their own booking website and synced calendars (Basic: From $14/month). Watch out: price rises with property count and plan; automated messaging starts on Professional. Pick <b>Wheelhouse</b> for hosts and operators who want data-driven nightly prices without a long contract (Pro Flat: $19.99/month per listing). Watch out: paid pricing is per listing, so costs grow with your portfolio. Pick <b>Host Tools</b> for hosts with a few listings who want hands-off guest messaging and reviews (Messaging: $28/month billed yearly ($336/year) or $30/month monthly). Watch out: no free plan; the price rises with every listing you add. Pick <b>iGMS</b> for hosts who want AI-drafted guest replies and only pay for properties that get bookings (PRO: $38/month per property billed annually, or $48 billed monthly (1 property)). Watch out: AI Agent and dynamic pricing need PRO+.",
+   "pick": "Pick <b>HostBuddy AI</b> for airbnb and vacation rental hosts who want guest messages answered 24/7 by AI (Pro: $7/month per property, billed monthly). Watch out: no free plan after the 2-week trial; Pro limits conversation history to 30 days and has no team collaboration. Pick <b>Guesty</b> for hosts with 1–3 listings who may grow into a full property-management platform (Lite: From $9/month per listing). Watch out: the Pro and Enterprise plans are quoted by listing count. Pick <b>PriceLabs</b> for hosts and managers who want automated nightly pricing they can run from an AI assistant (Dynamic Pricing: rest of world) ($9.99/month per listing, plus tax). Watch out: no free plan; the price is per listing, and higher in the US, UK, Europe and Australia. Pick <b>Turno</b> for airbnb and Vrbo hosts who want cleaning scheduled and paid automatically (Marketplace &amp; Non-Turno Teammates: $10/month per property billed monthly; $96 per property billed annually). Watch out: using your own cleaners on 2+ properties costs $10 a month per property. Pick <b>Lodgify</b> for hosts with a few properties who want their own booking website and synced calendars (Basic: From $14/month). Watch out: price rises with property count and plan; automated messaging starts on Professional. Pick <b>Wheelhouse</b> for hosts and operators who want data-driven nightly prices without a long contract (Pro Flat: $19.99/month per listing). Watch out: paid pricing is per listing, so costs grow with your portfolio. Pick <b>Host Tools</b> for hosts with a few listings who want hands-off guest messaging and reviews (Messaging: $28/month billed yearly ($336/year) or $30/month monthly). Watch out: no free plan; the price rises with every listing you add.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "Guesty Lite (From $9/month per listing) is the lowest paid price we verified on this list (https://www.guesty.com/pricing/, checked 20 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "HostBuddy AI Pro ($7/month per property, billed monthly) is the lowest paid price we verified on this list (https://hostbuddy.ai/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
@@ -8606,20 +8566,20 @@
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with a paid plan price we could read on the vendor page, confirmed on the vendor's own website on 20–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with a paid plan price we could read on the vendor page, confirmed on the vendor's own website on 20–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ],
    "order_note": "Ordered strictly by lowest verified monthly price, cheapest first. Rank in the category ranking is shown on each profile."
   },
   {
    "slug": "ai-hospitality-tools-with-mobile-apps",
-   "n": 1145,
+   "n": 1144,
    "generated": true,
    "cat": "hospitality",
    "h1": "Best AI hospitality tools with mobile apps",
    "title": "Best AI Hospitality Tools With Mobile Apps (2026)",
-   "desc": "Best AI hospitality tools with mobile apps: 9 picks with vendor-verified prices checked 17–23 Oct 2026, including Mindtrip, Lodgify and iGMS.",
-   "summary": "Each of these AI hospitality tools lists an iOS, Android or mobile app among its platforms. <b>Mindtrip</b> comes first: AI travel planner that builds itineraries on a map and helps you book. The cheapest verified paid plan here is <b>PriceLabs</b> Dynamic Pricing (rest of world) ($9.99/month per listing, plus tax). 3 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 17–23 Oct 2026.",
+   "desc": "Best AI hospitality tools with mobile apps: 10 picks with vendor-verified prices checked 17–24 Oct 2026, including Mindtrip, Lodgify and iGMS.",
+   "summary": "Each of these AI hospitality tools lists an iOS, Android or mobile app among its platforms. <b>Mindtrip</b> comes first: AI travel planner that builds itineraries on a map and helps you book. The cheapest verified paid plan here is <b>HostBuddy AI</b> Pro ($7/month per property, billed monthly). 3 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 17–24 Oct 2026.",
    "items": [
     [
      "mindtrip",
@@ -8656,13 +8616,17 @@
     [
      "turno",
      "Marketplace & Non-Turno Teammates"
+    ],
+    [
+     "hostbuddy-ai",
+     "Pro"
     ]
    ],
    "pick": "Pick <b>Mindtrip</b> for planning a trip, keeping the itinerary and bookings in one place and getting price-drop alerts (price not yet verified). Watch out: no pricing or free-plan statement on the homepage. Pick <b>Lodgify</b> for hosts with a few properties who want their own booking website and synced calendars (Basic: From $14/month). Watch out: price rises with property count and plan; automated messaging starts on Professional. Pick <b>iGMS</b> for hosts who want AI-drafted guest replies and only pay for properties that get bookings (PRO: $38/month per property billed annually, or $48 billed monthly (1 property)). Watch out: AI Agent and dynamic pricing need PRO+. Pick <b>Host Tools</b> for hosts with a few listings who want hands-off guest messaging and reviews (Messaging: $28/month billed yearly ($336/year) or $30/month monthly). Watch out: no free plan; the price rises with every listing you add. Pick <b>Smoobu</b> for small European hosts who want a channel manager, booking site and apps in one (From €28 a month (1 unit, per vendor FAQ)). Watch out: billed in EUR; the cheapest Flex plan adds a 0.9% booking fee. Pick <b>Tokeet</b> for rental managers who want channel management, AI messaging and mobile apps (Paid: 10 rentals) ($134.90/month with monthly payments). Watch out: paid prices depend on rental count; only the 10-rental price was shown on the fetched page. Pick <b>PriceLabs</b> for hosts and managers who want automated nightly pricing they can run from an AI assistant (Dynamic Pricing: rest of world) ($9.99/month per listing, plus tax). Watch out: no free plan; the price is per listing, and higher in the US, UK, Europe and Australia.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "PriceLabs Dynamic Pricing (rest of world) ($9.99/month per listing, plus tax) is the lowest paid price we verified on this list (https://hello.pricelabs.co/pricing/, checked 22 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "HostBuddy AI Pro ($7/month per property, billed monthly) is the lowest paid price we verified on this list (https://hostbuddy.ai/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
@@ -8670,13 +8634,13 @@
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with a mobile app listed on the vendor site, confirmed on the vendor's own website on 17–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with a mobile app listed on the vendor site, confirmed on the vendor's own website on 17–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
   },
   {
    "slug": "ai-crypto-tools-under-30-a-month",
-   "n": 1146,
+   "n": 1145,
    "generated": true,
    "cat": "crypto",
    "h1": "Best AI crypto tools for $30 a month or less",
@@ -8719,7 +8683,7 @@
   },
   {
    "slug": "ai-education-tools-under-15-a-month",
-   "n": 1147,
+   "n": 1146,
    "generated": true,
    "cat": "education",
    "h1": "Best AI education tools for $15 a month or less",
@@ -8774,7 +8738,7 @@
   },
   {
    "slug": "ai-education-tools-with-mobile-apps",
-   "n": 1148,
+   "n": 1147,
    "generated": true,
    "cat": "education",
    "h1": "Best AI education tools with mobile apps",
@@ -8817,7 +8781,7 @@
   },
   {
    "slug": "ai-education-tools-with-annual-discount",
-   "n": 1149,
+   "n": 1148,
    "generated": true,
    "cat": "education",
    "h1": "AI education tools that are cheaper billed yearly",
@@ -8864,7 +8828,7 @@
   },
   {
    "slug": "free-ai-health-and-fitness-tools",
-   "n": 1150,
+   "n": 1149,
    "generated": true,
    "cat": "health",
    "h1": "Best free AI health and fitness tools (with a real free plan)",
@@ -8911,7 +8875,7 @@
   },
   {
    "slug": "ai-health-and-fitness-tools-with-free-trial-no-free-plan",
-   "n": 1151,
+   "n": 1150,
    "generated": true,
    "cat": "health",
    "h1": "AI health and fitness tools with a free trial (paid plans only)",
@@ -8970,7 +8934,7 @@
   },
   {
    "slug": "ai-health-and-fitness-tools-with-annual-discount",
-   "n": 1152,
+   "n": 1151,
    "generated": true,
    "cat": "health",
    "h1": "AI health and fitness tools that are cheaper billed yearly",
@@ -9017,7 +8981,7 @@
   },
   {
    "slug": "ai-game-development-tools-under-15-a-month",
-   "n": 1153,
+   "n": 1152,
    "generated": true,
    "cat": "gaming",
    "h1": "Best AI game development tools for $15 a month or less",
@@ -9060,7 +9024,7 @@
   },
   {
    "slug": "ai-game-development-tools-under-20-a-month",
-   "n": 1154,
+   "n": 1153,
    "generated": true,
    "cat": "gaming",
    "h1": "Best AI game development tools for $20 a month or less",
@@ -9111,7 +9075,7 @@
   },
   {
    "slug": "ai-game-development-tools-with-an-api",
-   "n": 1155,
+   "n": 1154,
    "generated": true,
    "cat": "gaming",
    "h1": "Best AI game development tools with an API",
@@ -9166,7 +9130,7 @@
   },
   {
    "slug": "ai-game-development-tools-for-teams",
-   "n": 1156,
+   "n": 1155,
    "generated": true,
    "cat": "gaming",
    "h1": "Best AI game development tools for teams (per-seat plans)",
@@ -9209,7 +9173,7 @@
   },
   {
    "slug": "ai-game-development-tools-with-annual-discount",
-   "n": 1157,
+   "n": 1156,
    "generated": true,
    "cat": "gaming",
    "h1": "AI game development tools that are cheaper billed yearly",
@@ -9252,7 +9216,7 @@
   },
   {
    "slug": "ai-fitness-trackers",
-   "n": 1158,
+   "n": 1157,
    "generated": true,
    "cat": "health",
    "h1": "Best AI fitness wearables",
@@ -9295,7 +9259,7 @@
   },
   {
    "slug": "paid-ai-writing-tools-no-free-plan",
-   "n": 1159,
+   "n": 1158,
    "generated": true,
    "cat": "writing",
    "h1": "Best paid AI writing tools (no free plan)",
@@ -9338,13 +9302,13 @@
   },
   {
    "slug": "ai-automation-tools-under-30-a-month",
-   "n": 1160,
+   "n": 1159,
    "generated": true,
    "cat": "automation",
    "h1": "Best AI automation tools for $30 a month or less",
    "title": "Best AI Automation Tools Under $30/Month (2026)",
-   "desc": "Best AI automation tools for $30 a month or less: 4 picks with vendor-verified prices checked 16–22 Oct 2026, including Zapier, Lindy and Vapi.",
-   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional (from $19.99/month). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–22 Oct 2026.",
+   "desc": "Best AI automation tools for $30 a month or less: 6 picks with vendor-verified prices checked 16–24 Oct 2026, including Zapier, Lindy and Vapi.",
+   "summary": "Every tool here has a paid plan listed at $30 a month or less on its vendor's pricing page. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>IFTTT</b> Pro ($2.99 per month ($35.88 billed annually)). 5 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–24 Oct 2026.",
    "items": [
     [
      "zapier",
@@ -9361,27 +9325,35 @@
     [
      "activepieces",
      "Plus"
+    ],
+    [
+     "ifttt",
+     "Pro"
+    ],
+    [
+     "microsoft-power-automate",
+     "Premium"
     ]
    ],
-   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: from $19.99/month); think twice if you run very high volumes and want self-hosting. Pick <b>Lindy</b> for AI assistants that handle email, meetings and admin (Team: From $29.99/month). Watch out: free credits expire after 7 days. Pick <b>Vapi</b> for developers building voice agents (Core: $29/month). Watch out: total cost stacks transcriber, model and voice per-minute fees. Pick <b>Activepieces</b> for teams who want Zapier-style automation with AI agents and the option to self-host (Plus: $20/month flat). Watch out: credits cap usage; SSO needs the $200 Team plan.",
+   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: $19.99/month billed annually; $29.99/month billed monthly); think twice if you run very high volumes and want self-hosting. Pick <b>Lindy</b> for AI assistants that handle email, meetings and admin (Team: From $29.99/month). Watch out: free credits expire after 7 days. Pick <b>Vapi</b> for developers building voice agents (Core: $29/month). Watch out: total cost stacks transcriber, model and voice per-minute fees. Pick <b>Activepieces</b> for teams who want Zapier-style automation with AI agents and the option to self-host (Plus: $20/month flat). Watch out: credits cap usage; SSO needs the $200 Team plan. Pick <b>IFTTT</b> for people automating smart-home devices and everyday apps without code (Pro: $2.99 per month ($35.88 billed annually)). Watch out: free plan is limited to 2 Applets; AI services and filters need Pro+; monthly-billing prices were not shown. Pick <b>Microsoft Power Automate</b> for microsoft 365 organisations automating cloud apps and Windows desktop tasks (Premium: $15/user/month). Watch out: unattended bots cost $150 per bot a month; prices may vary by country and the page did not show monthly billing.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "Zapier Professional (from $19.99/month) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "IFTTT Pro ($2.99 per month ($35.88 billed annually)) is the lowest paid price we verified on this list (https://ifttt.com/plans, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
-     "Zapier: 100 tasks/month; Zaps, Tables and Forms included; Lindy: $50 in free credits for 7 days, no card; Vapi: $5 free credits, then pay per minute; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users."
+     "Zapier: Free forever: 100 tasks/month, two-step Zaps, basic access to Agents, Chatbots and MCP; Lindy: $50 in free credits for 7 days, no card; Vapi: $5 free credits, then pay per minute; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users; IFTTT: Free forever: 2 Applets, unlimited Applet runs, free mobile app access."
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with a verified paid plan at or below $30/month (USD), confirmed on the vendor's own website on 16–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with a verified paid plan at or below $30/month (USD), confirmed on the vendor's own website on 16–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
   },
   {
    "slug": "ai-marketing-tools-under-100-a-month",
-   "n": 1161,
+   "n": 1160,
    "generated": true,
    "cat": "marketing",
    "h1": "Best AI marketing tools for $100 a month or less",
@@ -9448,7 +9420,7 @@
   },
   {
    "slug": "ai-marketing-tools-with-free-trial-no-free-plan",
-   "n": 1162,
+   "n": 1161,
    "generated": true,
    "cat": "marketing",
    "h1": "AI marketing tools with a free trial (paid plans only)",
@@ -9499,7 +9471,7 @@
   },
   {
    "slug": "ai-marketing-tools-with-mobile-apps",
-   "n": 1163,
+   "n": 1162,
    "generated": true,
    "cat": "marketing",
    "h1": "Best AI marketing tools with mobile apps",
@@ -9542,7 +9514,7 @@
   },
   {
    "slug": "ai-marketing-tools-with-mcp",
-   "n": 1164,
+   "n": 1163,
    "generated": true,
    "cat": "marketing",
    "h1": "Best AI marketing tools with MCP support",
@@ -9597,7 +9569,7 @@
   },
   {
    "slug": "ai-hospitality-tools-with-mcp",
-   "n": 1165,
+   "n": 1164,
    "generated": true,
    "cat": "hospitality",
    "h1": "Best AI hospitality tools with MCP support",
@@ -9644,7 +9616,7 @@
   },
   {
    "slug": "ai-education-tools-with-free-trial-no-free-plan",
-   "n": 1166,
+   "n": 1165,
    "generated": true,
    "cat": "education",
    "h1": "AI education tools with a free trial (paid plans only)",
@@ -9687,7 +9659,7 @@
   },
   {
    "slug": "cheapest-ai-health-and-fitness-tools",
-   "n": 1167,
+   "n": 1166,
    "generated": true,
    "cat": "health",
    "h1": "Cheapest AI health and fitness tools: lowest verified paid plans",
@@ -9747,7 +9719,7 @@
   },
   {
    "slug": "ai-assistants-under-10-a-month",
-   "n": 1168,
+   "n": 1167,
    "generated": true,
    "cat": "ai-assistants",
    "h1": "Best AI assistants for $10 a month or less",
@@ -9790,7 +9762,7 @@
   },
   {
    "slug": "ai-assistants-for-teams",
-   "n": 1169,
+   "n": 1168,
    "generated": true,
    "cat": "ai-assistants",
    "h1": "Best AI assistants for teams (per-seat plans)",
@@ -9841,7 +9813,7 @@
   },
   {
    "slug": "ai-assistants-with-annual-discount",
-   "n": 1170,
+   "n": 1169,
    "generated": true,
    "cat": "ai-assistants",
    "h1": "AI assistants that are cheaper billed yearly",
@@ -9884,7 +9856,7 @@
   },
   {
    "slug": "ai-coding-tools-with-free-trial-no-free-plan",
-   "n": 1171,
+   "n": 1170,
    "generated": true,
    "cat": "coding",
    "h1": "AI coding tools with a free trial (paid plans only)",
@@ -9927,7 +9899,7 @@
   },
   {
    "slug": "ai-video-tools-for-desktop",
-   "n": 1172,
+   "n": 1171,
    "generated": true,
    "cat": "video",
    "h1": "Best AI video tools with desktop apps",
@@ -9970,7 +9942,7 @@
   },
   {
    "slug": "ai-writing-tools-under-15-a-month",
-   "n": 1173,
+   "n": 1172,
    "generated": true,
    "cat": "writing",
    "h1": "Best AI writing tools for $15 a month or less",
@@ -10033,7 +10005,7 @@
   },
   {
    "slug": "ai-writing-tools-for-teams",
-   "n": 1174,
+   "n": 1173,
    "generated": true,
    "cat": "writing",
    "h1": "Best AI writing tools for teams (per-seat plans)",
@@ -10080,7 +10052,7 @@
   },
   {
    "slug": "cheapest-ai-tools-for-restaurants",
-   "n": 1175,
+   "n": 1174,
    "generated": true,
    "cat": "restaurants",
    "h1": "Cheapest AI tools for restaurants: lowest verified paid plans",
@@ -10124,13 +10096,13 @@
   },
   {
    "slug": "ai-hospitality-tools-under-15-a-month",
-   "n": 1176,
+   "n": 1175,
    "generated": true,
    "cat": "hospitality",
    "h1": "Best AI hospitality tools for $15 a month or less",
    "title": "Best AI Hospitality Tools Under $15/Month (2026)",
-   "desc": "Best AI hospitality tools for $15 a month or less: 4 picks with vendor-verified prices checked 20–23 Oct 2026, including Lodgify, Guesty and PriceLabs.",
-   "summary": "Every tool here has a paid plan listed at $15 a month or less on its vendor's pricing page. <b>Lodgify</b> comes first: low entry price for one property, no booking fees, and an AI assistant for guest replies. The cheapest verified paid plan here is <b>Guesty</b> Lite (From $9/month per listing). 1 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–23 Oct 2026.",
+   "desc": "Best AI hospitality tools for $15 a month or less: 5 picks with vendor-verified prices checked 20–24 Oct 2026, including Lodgify, Guesty and PriceLabs.",
+   "summary": "Every tool here has a paid plan listed at $15 a month or less on its vendor's pricing page. <b>Lodgify</b> comes first: low entry price for one property, no booking fees, and an AI assistant for guest replies. The cheapest verified paid plan here is <b>HostBuddy AI</b> Pro ($7/month per property, billed monthly). 1 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–24 Oct 2026.",
    "items": [
     [
      "lodgify",
@@ -10147,13 +10119,17 @@
     [
      "turno",
      "Marketplace & Non-Turno Teammates"
+    ],
+    [
+     "hostbuddy-ai",
+     "Pro"
     ]
    ],
-   "pick": "Pick <b>Lodgify</b> for hosts with a few properties who want their own booking website and synced calendars (Basic: From $14/month). Watch out: price rises with property count and plan; automated messaging starts on Professional. Pick <b>Guesty</b> for hosts with 1–3 listings who may grow into a full property-management platform (Lite: From $9/month per listing). Watch out: the Pro and Enterprise plans are quoted by listing count. Pick <b>PriceLabs</b> for hosts and managers who want automated nightly pricing they can run from an AI assistant (Dynamic Pricing: rest of world) ($9.99/month per listing, plus tax). Watch out: no free plan; the price is per listing, and higher in the US, UK, Europe and Australia. Pick <b>Turno</b> for airbnb and Vrbo hosts who want cleaning scheduled and paid automatically (Marketplace &amp; Non-Turno Teammates: $10/month per property billed monthly; $96 per property billed annually). Watch out: using your own cleaners on 2+ properties costs $10 a month per property.",
+   "pick": "Pick <b>Lodgify</b> for hosts with a few properties who want their own booking website and synced calendars (Basic: From $14/month). Watch out: price rises with property count and plan; automated messaging starts on Professional. Pick <b>Guesty</b> for hosts with 1–3 listings who may grow into a full property-management platform (Lite: From $9/month per listing). Watch out: the Pro and Enterprise plans are quoted by listing count. Pick <b>PriceLabs</b> for hosts and managers who want automated nightly pricing they can run from an AI assistant (Dynamic Pricing: rest of world) ($9.99/month per listing, plus tax). Watch out: no free plan; the price is per listing, and higher in the US, UK, Europe and Australia. Pick <b>Turno</b> for airbnb and Vrbo hosts who want cleaning scheduled and paid automatically (Marketplace &amp; Non-Turno Teammates: $10/month per property billed monthly; $96 per property billed annually). Watch out: using your own cleaners on 2+ properties costs $10 a month per property. Pick <b>HostBuddy AI</b> for airbnb and vacation rental hosts who want guest messages answered 24/7 by AI (Pro: $7/month per property, billed monthly). Watch out: no free plan after the 2-week trial; Pro limits conversation history to 30 days and has no team collaboration.",
    "faq": [
     [
      "Which of these is cheapest?",
-     "Guesty Lite (From $9/month per listing) is the lowest paid price we verified on this list (https://www.guesty.com/pricing/, checked 20 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+     "HostBuddy AI Pro ($7/month per property, billed monthly) is the lowest paid price we verified on this list (https://hostbuddy.ai/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
     ],
     [
      "Which of these have a free plan?",
@@ -10161,13 +10137,13 @@
     ],
     [
      "How were these tools chosen?",
-     "They are the tools in ToolRank's rankings with a verified paid plan at or below $15/month (USD), confirmed on the vendor's own website on 20–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+     "They are the tools in ToolRank's rankings with a verified paid plan at or below $15/month (USD), confirmed on the vendor's own website on 20–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
   },
   {
    "slug": "ai-hospitality-tools-with-annual-discount",
-   "n": 1177,
+   "n": 1176,
    "generated": true,
    "cat": "hospitality",
    "h1": "AI hospitality tools that are cheaper billed yearly",
@@ -10210,7 +10186,7 @@
   },
   {
    "slug": "ai-education-tools-for-teams",
-   "n": 1178,
+   "n": 1177,
    "generated": true,
    "cat": "education",
    "h1": "Best AI education tools for teams (per-seat plans)",
@@ -10253,7 +10229,7 @@
   },
   {
    "slug": "ai-health-and-fitness-tools-for-teams",
-   "n": 1179,
+   "n": 1178,
    "generated": true,
    "cat": "health",
    "h1": "Best AI health and fitness tools for teams (per-seat plans)",
@@ -10296,7 +10272,7 @@
   },
   {
    "slug": "ai-health-and-fitness-tools-for-enterprise",
-   "n": 1180,
+   "n": 1179,
    "generated": true,
    "cat": "health",
    "h1": "Best AI health and fitness tools for enterprise buyers",
@@ -10339,7 +10315,7 @@
   },
   {
    "slug": "ai-business-tools-under-10-a-month",
-   "n": 1181,
+   "n": 1180,
    "generated": true,
    "cat": "business",
    "h1": "Best AI business tools for $10 a month or less",
@@ -10379,6 +10355,1019 @@
      "They are the tools in ToolRank's rankings with a verified paid plan at or below $10/month (USD), confirmed on the vendor's own website on 16–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
     ]
    ]
+  },
+  {
+   "slug": "ai-pricing-tools-for-rentals-and-hotels",
+   "n": 1181,
+   "generated": true,
+   "cat": "hospitality",
+   "h1": "Best AI dynamic pricing tools for rentals and hotels",
+   "title": "Best AI Pricing Tools for Rentals and Hotels (2026)",
+   "desc": "Best AI dynamic pricing tools for rentals and hotels: 5 picks with vendor-verified prices checked 17–22 Oct 2026, including Duetto, Hospitable and Wheelhouse.",
+   "summary": "These tools set nightly or room rates automatically from market data. <b>Duetto</b> comes first: hotel revenue management and pricing software. The cheapest verified paid plan here is <b>PriceLabs</b> Dynamic Pricing (rest of world) ($9.99/month per listing, plus tax). 3 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 17–22 Oct 2026.",
+   "items": [
+    [
+     "duetto",
+     ""
+    ],
+    [
+     "hospitable",
+     ""
+    ],
+    [
+     "wheelhouse",
+     "Pro Flat"
+    ],
+    [
+     "pricelabs",
+     "Dynamic Pricing (rest of world)"
+    ],
+    [
+     "beyond",
+     ""
+    ]
+   ],
+   "pick": "Pick <b>Duetto</b> for hotel revenue teams that want AI-driven rate recommendations and profit benchmarking (Custom (demo required)). Watch out: enterprise sales process with no published prices. Pick <b>Hospitable</b> for hosts on Airbnb and Vrbo who want AI-drafted guest replies and automation (free plan: Free plan (Essentials): unified inbox, calendar and scheduled guest messages). Watch out: paid plan prices were not shown on the fetched page (they depend on property count). Pick <b>Wheelhouse</b> for hosts and operators who want data-driven nightly prices without a long contract (Pro Flat: $19.99/month per listing). Watch out: paid pricing is per listing, so costs grow with your portfolio. Pick <b>PriceLabs</b> for hosts and managers who want automated nightly pricing they can run from an AI assistant (Dynamic Pricing: rest of world) ($9.99/month per listing, plus tax). Watch out: no free plan; the price is per listing, and higher in the US, UK, Europe and Australia. Pick <b>Beyond</b> for hosts and property managers who only want to pay for pricing when they get booked (1% of bookings (Growth)). Watch out: paid plans take a share of each booking; API access needs the Pro plan.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "PriceLabs Dynamic Pricing (rest of world) ($9.99/month per listing, plus tax) is the lowest paid price we verified on this list (https://hello.pricelabs.co/pricing/, checked 22 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Hospitable: Free plan (Essentials): unified inbox, calendar and scheduled guest messages; Wheelhouse: Free plan: link listings, market report and settings, no credit card; Beyond: Free plan with no booking fee."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with dynamic or revenue-managed pricing described on the vendor site, confirmed on the vendor's own website on 17–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-guest-messaging-for-vacation-rentals",
+   "n": 1182,
+   "generated": true,
+   "cat": "hospitality",
+   "h1": "Best AI guest messaging tools for vacation rentals",
+   "title": "Best AI Guest Messaging for Vacation Rentals",
+   "desc": "Best AI guest messaging tools for vacation rentals: 5 picks with vendor-verified prices checked 20–24 Oct 2026, including Hospitable, iGMS and Uplisting.",
+   "summary": "These tools answer or automate guest messages for short-term rental hosts. <b>Hospitable</b> comes first: a genuinely free Essentials plan, plus AI replies, API and MCP access on paid plans. The cheapest verified paid plan here is <b>HostBuddy AI</b> Pro ($7/month per property, billed monthly). 1 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–24 Oct 2026.",
+   "items": [
+    [
+     "hospitable",
+     ""
+    ],
+    [
+     "igms",
+     "PRO"
+    ],
+    [
+     "uplisting",
+     ""
+    ],
+    [
+     "host-tools",
+     "Messaging"
+    ],
+    [
+     "hostbuddy-ai",
+     "Pro"
+    ]
+   ],
+   "pick": "Pick <b>Hospitable</b> for hosts on Airbnb and Vrbo who want AI-drafted guest replies and automation (free plan: Free plan (Essentials): unified inbox, calendar and scheduled guest messages). Watch out: paid plan prices were not shown on the fetched page (they depend on property count). Pick <b>iGMS</b> for hosts who want AI-drafted guest replies and only pay for properties that get bookings (PRO: $38/month per property billed annually, or $48 billed monthly (1 property)). Watch out: AI Agent and dynamic pricing need PRO+. Pick <b>Uplisting</b> for operators who want to connect AI agents to their rental business through MCP or the API (£0/month + 3% per booking (pay as you go)). Watch out: prices are in GBP; the Independent Host plan is capped at 4 properties. Pick <b>Host Tools</b> for hosts with a few listings who want hands-off guest messaging and reviews (Messaging: $28/month billed yearly ($336/year) or $30/month monthly). Watch out: no free plan; the price rises with every listing you add. Pick <b>HostBuddy AI</b> for airbnb and vacation rental hosts who want guest messages answered 24/7 by AI (Pro: $7/month per property, billed monthly). Watch out: no free plan after the 2-week trial; Pro limits conversation history to 30 days and has no team collaboration.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "HostBuddy AI Pro ($7/month per property, billed monthly) is the lowest paid price we verified on this list (https://hostbuddy.ai/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Hospitable: Free plan (Essentials): unified inbox, calendar and scheduled guest messages."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with automated guest messaging described on the vendor site, confirmed on the vendor's own website on 20–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-tools-for-airbnb-hosts",
+   "n": 1183,
+   "generated": true,
+   "cat": "hospitality",
+   "h1": "Best AI tools for Airbnb hosts",
+   "title": "Best AI Tools for Airbnb Hosts (2026)",
+   "desc": "Best AI tools for Airbnb hosts: 9 picks with vendor-verified prices checked 20–23 Oct 2026, including Hospitable, Lodgify and Guesty.",
+   "summary": "Each of these tools lists Airbnb among its channels or integrations. <b>Hospitable</b> comes first: a genuinely free Essentials plan, plus AI replies, API and MCP access on paid plans. The cheapest verified paid plan here is <b>Guesty</b> Lite (From $9/month per listing). 2 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–23 Oct 2026.",
+   "items": [
+    [
+     "hospitable",
+     ""
+    ],
+    [
+     "lodgify",
+     "Basic"
+    ],
+    [
+     "guesty",
+     "Lite"
+    ],
+    [
+     "igms",
+     "PRO"
+    ],
+    [
+     "uplisting",
+     ""
+    ],
+    [
+     "host-tools",
+     "Messaging"
+    ],
+    [
+     "ownerrez",
+     ""
+    ],
+    [
+     "smoobu",
+     ""
+    ],
+    [
+     "turno",
+     "Marketplace & Non-Turno Teammates"
+    ]
+   ],
+   "pick": "Pick <b>Hospitable</b> for hosts on Airbnb and Vrbo who want AI-drafted guest replies and automation (free plan: Free plan (Essentials): unified inbox, calendar and scheduled guest messages). Watch out: paid plan prices were not shown on the fetched page (they depend on property count). Pick <b>Lodgify</b> for hosts with a few properties who want their own booking website and synced calendars (Basic: From $14/month). Watch out: price rises with property count and plan; automated messaging starts on Professional. Pick <b>Guesty</b> for hosts with 1–3 listings who may grow into a full property-management platform (Lite: From $9/month per listing). Watch out: the Pro and Enterprise plans are quoted by listing count. Pick <b>iGMS</b> for hosts who want AI-drafted guest replies and only pay for properties that get bookings (PRO: $38/month per property billed annually, or $48 billed monthly (1 property)). Watch out: AI Agent and dynamic pricing need PRO+. Pick <b>Uplisting</b> for operators who want to connect AI agents to their rental business through MCP or the API (£0/month + 3% per booking (pay as you go)). Watch out: prices are in GBP; the Independent Host plan is capped at 4 properties. Pick <b>Host Tools</b> for hosts with a few listings who want hands-off guest messaging and reviews (Messaging: $28/month billed yearly ($336/year) or $30/month monthly). Watch out: no free plan; the price rises with every listing you add. Pick <b>OwnerRez</b> for owners and managers who want an all-in-one PMS and to connect it to Claude or ChatGPT (price not yet verified). Watch out: rezzy AI, SMS, websites and QuickBooks are paid premium add-ons; no free plan.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Guesty Lite (From $9/month per listing) is the lowest paid price we verified on this list (https://www.guesty.com/pricing/, checked 20 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Hospitable: Free plan (Essentials): unified inbox, calendar and scheduled guest messages; Turno: Free for 1 property, or for any number using only Turno Marketplace cleaners."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with Airbnb listed as a channel or integration by the vendor, confirmed on the vendor's own website on 20–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-social-media-schedulers",
+   "n": 1184,
+   "generated": true,
+   "cat": "marketing",
+   "h1": "Best AI social media schedulers",
+   "title": "Best AI Social Media Schedulers (2026)",
+   "desc": "Best AI social media schedulers: 9 picks with vendor-verified prices checked 20–22 Oct 2026, including Typefully, Buffer and Predis.ai.",
+   "summary": "These tools plan and schedule social posts, with AI help for writing them. <b>Typefully</b> comes first: clean writing and scheduling for threads with a free plan and an API. The cheapest verified paid plan here is <b>Buffer</b> Essentials ($5/month per channel ($60 billed yearly)). 4 of the 9 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–22 Oct 2026.",
+   "items": [
+    [
+     "typefully",
+     ""
+    ],
+    [
+     "buffer",
+     "Essentials"
+    ],
+    [
+     "predis-ai",
+     "Core"
+    ],
+    [
+     "ocoya",
+     "Starter"
+    ],
+    [
+     "metricool",
+     "Starter"
+    ],
+    [
+     "hootsuite",
+     "Standard"
+    ],
+    [
+     "socialbee",
+     "Bootstrap"
+    ],
+    [
+     "later",
+     "Starter"
+    ],
+    [
+     "publer",
+     ""
+    ]
+   ],
+   "pick": "Pick <b>Typefully</b> for creators growing on X and LinkedIn (free plan: 1 social set, 1 user, 10 posts/month); think twice if you need a full social media suite. Pick <b>Buffer</b> for creators and small teams scheduling posts on several social networks on a budget (Essentials: $5/month per channel ($60 billed yearly)). Watch out: free plan allows 10 scheduled posts per channel and 1 user. Pick <b>Predis.ai</b> for small brands and agencies making social ads and posts without a designer (Core: $19/month billed yearly ($32 monthly)). Watch out: the 3-day trial needs a card and is charged when it ends. Pick <b>Ocoya</b> for teams and agencies managing several brands&#x27; social posts (Starter: $29/month). Watch out: no free plan; the 7-day trial needs a card. Pick <b>Metricool</b> for freelancers and agencies scheduling and reporting on several brands&#x27; social accounts (Starter: From $20/month billed annually; from $25/month billed monthly). Watch out: LinkedIn and X need a paid plan; the free plan caps posts at 20 a month. Pick <b>Hootsuite</b> for marketing teams who manage many social accounts and messages in one place (Standard: $99 per user/month, billed annually). Watch out: no free plan; plans are sold per user and start at $99. Pick <b>SocialBee</b> for freelancers and small businesses posting to 5 to 25 social profiles (Bootstrap: $24.20/month billed annually ($290/year); $29/month billed monthly). Watch out: no free plan; extra users and workspaces cost $10 a month each.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Buffer Essentials ($5/month per channel ($60 billed yearly)) is the lowest paid price we verified on this list (https://buffer.com/pricing, checked 22 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Typefully: 1 social set, 1 user, 10 posts/month; Buffer: Free plan: $0 forever, 10 scheduled posts per channel, AI Assistant; Metricool: Free: 1 brand, 20 scheduled posts a month, AI assistant, MCP; Publer: Free forever: 1 user, 3 social accounts (not X), 10 scheduled posts per account."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with post scheduling plus AI writing tools on the vendor site, confirmed on the vendor's own website on 20–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-seo-tools",
+   "n": 1185,
+   "generated": true,
+   "cat": "marketing",
+   "h1": "Best AI SEO and AI search visibility tools",
+   "title": "Best AI SEO Tools (2026)",
+   "desc": "Best AI SEO and AI search visibility tools: 4 picks with vendor-verified prices checked 20–22 Oct 2026, including Surfer, Writesonic and Ahrefs.",
+   "summary": "These tools research keywords, optimise content or track how your brand shows up in Google and AI answers. <b>Surfer</b> comes first: combines a content editor with AI visibility tracking, with MCP and API on higher plans. The cheapest verified paid plan here is <b>Ahrefs</b> Starter ($29/month). 2 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–22 Oct 2026.",
+   "items": [
+    [
+     "surfer",
+     "Discovery"
+    ],
+    [
+     "writesonic",
+     "Starter"
+    ],
+    [
+     "ahrefs",
+     "Starter"
+    ],
+    [
+     "semrush",
+     "SEO"
+    ]
+   ],
+   "pick": "Pick <b>Surfer</b> for content teams who want to rank in Google and get cited in AI answers (Discovery: $49/month). Watch out: no free plan; API access is on the top Peace of Mind plan. Pick <b>Writesonic</b> for marketing teams who want to see and improve how AI answers mention their brand (Starter: $79/month billed annually). Watch out: plans start at $79 a month billed annually; agentic workflows are trial-limited below Enterprise. Pick <b>Ahrefs</b> for SEO teams and consultants who want deep search data inside their AI tools (Starter: $29/month). Watch out: no trials or discounts; API and MCP start on the $249 Standard plan. Pick <b>Semrush</b> for marketers who want SEO and AI-search tracking in one tool (SEO: $117.33/month billed annually; $139/month billed monthly). Watch out: paid plans start above $100 a month; API access needs the custom Advanced plan.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Ahrefs Starter ($29/month) is the lowest paid price we verified on this list (https://ahrefs.com/pricing, checked 22 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Ahrefs: Ahrefs Free: limited Site Explorer and Site Audit for your own site; Semrush: Free: $0/month, 10 reports a day, no credit card; 7-day free trial of paid plans."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with SEO or AI search visibility as the vendor's core product, confirmed on the vendor's own website on 20–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-3d-model-generators",
+   "n": 1186,
+   "generated": true,
+   "cat": "gaming",
+   "h1": "Best AI 3D model generators",
+   "title": "Best AI 3D Model Generators (2026)",
+   "desc": "Best AI 3D model generators: 4 picks with vendor-verified prices checked 18–21 Oct 2026, including Meshy, Tripo AI and Hyper3D Rodin.",
+   "summary": "These tools generate textured 3D models from text or images. <b>Meshy</b> comes first: quick text/image-to-3D with auto-rigging and a no-card free tier. The cheapest verified paid plan here is <b>Sloyd</b> Sloyd Plus ($12.50/month billed yearly ($150/year); $15/month monthly). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 18–21 Oct 2026.",
+   "items": [
+    [
+     "meshy",
+     "Pro"
+    ],
+    [
+     "tripo-ai",
+     "Pro"
+    ],
+    [
+     "hyper3d-rodin",
+     "Creator"
+    ],
+    [
+     "sloyd",
+     "Sloyd Plus"
+    ]
+   ],
+   "pick": "Pick <b>Meshy</b> for game devs and 3D printers needing quick models (Pro: $20/month); think twice if you need production-grade hand-modelled topology. Pick <b>Tripo AI</b> for game developers and 3D artists generating textured models and props quickly (Pro: $20/month billed annually ($240/year)). Watch out: free models are public and non-commercial; commercial use needs a paid plan. Pick <b>Hyper3D Rodin</b> for game developers and 3D artists who want production-ready assets and an API (Creator: $24/month billed yearly ($288/year); $30/month monthly). Watch out: API access needs the $96+/month Business plan. Pick <b>Sloyd</b> for indie game developers who want unlimited 3D generations with a commercial licence (Sloyd Plus: $12.50/month billed yearly ($150/year); $15/month monthly). Watch out: the free plan is personal-use only with 1 AI generation a day; API credits are billed separately.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Sloyd Sloyd Plus ($12.50/month billed yearly ($150/year); $15/month monthly) is the lowest paid price we verified on this list (https://www.sloyd.ai/pricing, checked 21 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Meshy: 100 credits/month, 1 concurrent task; Tripo AI: Free: $0, 200 monthly credits (about 13 models), non-commercial use; Hyper3D Rodin: Free: $0, pay by result (direct credits $1.50 each), 10 private assets; Sloyd: Guest: $0, 1 AI 3D generation a day, personal-use licence."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with 3D model generation as the vendor's core product, confirmed on the vendor's own website on 18–21 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-tools-for-blender-users",
+   "n": 1187,
+   "generated": true,
+   "cat": "gaming",
+   "h1": "Best AI tools that work with Blender",
+   "title": "Best AI Tools for Blender Users (2026)",
+   "desc": "Best AI tools that work with Blender: 4 picks with vendor-verified prices checked 20–21 Oct 2026.",
+   "summary": "Each of these tools lists Blender among its integrations or export targets. <b>Wonder Studio (Autodesk Flow Studio)</b> comes first: autodesk tool that replaces actors with CG characters from live footage. The cheapest verified paid plan here is <b>Sloyd</b> Sloyd Plus ($12.50/month billed yearly ($150/year); $15/month monthly). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 20–21 Oct 2026.",
+   "items": [
+    [
+     "wonder-studio-autodesk-flow-studio",
+     ""
+    ],
+    [
+     "tripo-ai",
+     "Pro"
+    ],
+    [
+     "hyper3d-rodin",
+     "Creator"
+    ],
+    [
+     "sloyd",
+     "Sloyd Plus"
+    ]
+   ],
+   "pick": "Pick <b>Wonder Studio (Autodesk Flow Studio)</b> for filmmakers and VFX artists turning live-action footage into editable CG scenes, with markerless mocap and camera tracking (free plan: Free tier for exploring AI-powered VFX (monthly credits)). Watch out: paid plan prices were not shown on the fetched page; work is credit-based per second of footage. Pick <b>Tripo AI</b> for game developers and 3D artists generating textured models and props quickly (Pro: $20/month billed annually ($240/year)). Watch out: free models are public and non-commercial; commercial use needs a paid plan. Pick <b>Hyper3D Rodin</b> for game developers and 3D artists who want production-ready assets and an API (Creator: $24/month billed yearly ($288/year); $30/month monthly). Watch out: API access needs the $96+/month Business plan. Pick <b>Sloyd</b> for indie game developers who want unlimited 3D generations with a commercial licence (Sloyd Plus: $12.50/month billed yearly ($150/year); $15/month monthly). Watch out: the free plan is personal-use only with 1 AI generation a day; API credits are billed separately.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Sloyd Sloyd Plus ($12.50/month billed yearly ($150/year); $15/month monthly) is the lowest paid price we verified on this list (https://www.sloyd.ai/pricing, checked 21 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Wonder Studio (Autodesk Flow Studio): Free tier for exploring AI-powered VFX (monthly credits); Tripo AI: Free: $0, 200 monthly credits (about 13 models), non-commercial use; Hyper3D Rodin: Free: $0, pay by result (direct credits $1.50 each), 10 private assets; Sloyd: Guest: $0, 1 AI 3D generation a day, personal-use licence."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with Blender listed by the vendor, confirmed on the vendor's own website on 20–21 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Tools come from several ToolRank categories, so they are grouped by category and then by each category&rsquo;s editorial rank."
+  },
+  {
+   "slug": "crypto-security-and-scam-detection-tools",
+   "n": 1188,
+   "generated": true,
+   "cat": "crypto",
+   "h1": "Best crypto security and scam detection tools",
+   "title": "Best Crypto Security and Scam Detection Tools",
+   "desc": "Best crypto security and scam detection tools: 4 picks with vendor-verified prices checked 19–20 Oct 2026, including Scam Sniffer, Blockaid and GoPlus Security.",
+   "summary": "These tools screen tokens, contracts, addresses or transactions for scams and risk. <b>Scam Sniffer</b> comes first: browser extension and feeds that flag crypto phishing and wallet-drainer sites. The cheapest verified paid plan here is <b>Scam Sniffer</b> Standard (From $999/month). 2 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 19–20 Oct 2026.",
+   "items": [
+    [
+     "scam-sniffer",
+     "Standard"
+    ],
+    [
+     "blockaid",
+     ""
+    ],
+    [
+     "goplus-security",
+     ""
+    ],
+    [
+     "de-fi",
+     ""
+    ]
+   ],
+   "pick": "Pick <b>Scam Sniffer</b> for wallet users who want free phishing warnings, and teams that need a scam blocklist API (Standard: From $999/month). Watch out: real-time API access starts at $999/month. Pick <b>Blockaid</b> for wallets, exchanges and protocols stopping scams, drainers and exploits before they hit users (Custom (demo required)). Watch out: built for companies, not individuals; no published prices. Pick <b>GoPlus Security</b> for wallets and dApps checking token, NFT, address and dApp risk through an API (price not yet verified). Watch out: API prices are not published on the pages we checked. Pick <b>De.Fi</b> for DeFi users checking smart-contract and wallet-approval risks, and tracking positions across 45+ chains (free plan: Free: Scanner and Shield security tools, and the audit database). Watch out: paid plans and prices were not shown on the homepage.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Scam Sniffer Standard (From $999/month) is the lowest paid price we verified on this list (https://www.scamsniffer.io/, checked 19 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Scam Sniffer: Free browser extension; open-source scam database ($0, free for commercial use); De.Fi: Free: Scanner and Shield security tools, and the audit database."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with risk or scam detection as the vendor's core product, confirmed on the vendor's own website on 19–20 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "onchain-analytics-platforms",
+   "n": 1189,
+   "generated": true,
+   "cat": "crypto",
+   "h1": "Best on-chain crypto analytics platforms",
+   "title": "Best On-Chain Crypto Analytics Platforms (2026)",
+   "desc": "Best on-chain crypto analytics platforms: 6 picks with vendor-verified prices checked 16–20 Oct 2026, including Nansen, Arkham and Messari.",
+   "summary": "These platforms turn blockchain data into wallet, flow and market analytics. <b>Nansen</b> comes first: on-chain analytics with labelled wallets, smart-money tracking and an AI research assistant. The cheapest verified paid plan here is <b>Nansen</b> Pro ($49/month). 4 of the 6 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–20 Oct 2026.",
+   "items": [
+    [
+     "nansen",
+     "Pro"
+    ],
+    [
+     "arkham",
+     ""
+    ],
+    [
+     "messari",
+     ""
+    ],
+    [
+     "dune",
+     "Analyst"
+    ],
+    [
+     "santiment",
+     "Sanbase Pro"
+    ],
+    [
+     "glassnode",
+     "Advanced"
+    ]
+   ],
+   "pick": "Pick <b>Nansen</b> for on-chain analytics and Smart Money tracking (Pro: $49/month). Watch out: no trial; free plan is limited outside Solana. Pick <b>Arkham</b> for traders and investigators linking wallets to real-world entities and tracking fund flows (price not yet verified). Watch out: platform and API prices are not published on the pages we checked. Pick <b>Messari</b> for crypto investors and teams who want institutional research, fundraising data and an AI copilot in one place (free plan: Basic plan: free (1 watchlist, view-only screeners, curated news)). Watch out: the Enterprise price is not published and there is no self-serve trial. Pick <b>Dune</b> for crypto analysts building SQL dashboards (Analyst: $65/month); think twice if you don&#x27;t write SQL. Pick <b>Santiment</b> for on-chain and social crypto analytics (Sanbase Pro: $49/month, or $529/year billed annually (10% off)). Watch out: real-time data needs a paid plan. Pick <b>Glassnode</b> for traders and analysts who want deep on-chain and market metrics (Advanced: $49 per month, billed annually). Watch out: prices exclude VAT and Professional is a big step up.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Nansen Pro ($49/month) is the lowest paid price we verified on this list (https://www.nansen.ai/plans, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Nansen: Free: $0/month, basic labels, Solana analytics, 20 AI credits/week; Messari: Basic plan: free (1 watchlist, view-only screeners, curated news); Dune: View-only access; view and copy any dashboard or query; Santiment: Free forever; 14-day trial of paid features."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with on-chain analytics as the vendor's core product, confirmed on the vendor's own website on 16–20 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-phone-answering-for-restaurants",
+   "n": 1190,
+   "generated": true,
+   "cat": "restaurants",
+   "h1": "Best AI phone answering for restaurants",
+   "title": "Best AI Phone Answering for Restaurants (2026)",
+   "desc": "Best AI phone answering for restaurants: 4 picks with vendor-verified prices checked 16–23 Oct 2026, including Slang.ai, Loman and ConverseNow.",
+   "summary": "These voice AI tools answer restaurant phone calls, take orders or book tables. <b>Slang.ai</b> comes first: restaurant-specific voice AI with clear per-location pricing. The cheapest verified paid plan here is <b>Maple</b> Maple Voice ($85/month billed annually; $150/month billed monthly). None of the 4 has a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–23 Oct 2026.",
+   "items": [
+    [
+     "slang-ai",
+     "Core"
+    ],
+    [
+     "loman",
+     "Starter"
+    ],
+    [
+     "conversenow",
+     "Voice ordering platform"
+    ],
+    [
+     "maple",
+     "Maple Voice"
+    ]
+   ],
+   "pick": "Pick <b>Slang.ai</b> for busy restaurants missing calls (Core: Starting at $399 per location (get a quote)); think twice if you&#x27;re a small venue with few calls. Pick <b>Loman</b> for restaurants wanting phone ordering automated (Starter: On request); think twice if you need public, self-serve pricing. Pick <b>ConverseNow</b> for restaurant chains automating phone and drive-thru ordering with branded voice AI (Voice ordering platform: Custom pricing; get a demo). Watch out: no published prices; you must book a demo. Pick <b>Maple</b> for restaurants that miss calls during service and want phone orders in their POS (Maple Voice: $85/month billed annually; $150/month billed monthly). Watch out: no free plan or trial listed; ordering and reservations need the Pro plan.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Maple Maple Voice ($85/month billed annually; $150/month billed monthly) is the lowest paid price we verified on this list (https://www.maple.inc/pricing, checked 23 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "None of these has a free plan we could confirm. None lists a permanent free plan on its pricing page. Some offer a trial; see the table."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with AI phone answering as the vendor's core product, confirmed on the vendor's own website on 16–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-tools-for-slack-users",
+   "n": 1191,
+   "generated": true,
+   "cat": "research",
+   "h1": "Best AI tools that work in Slack",
+   "title": "Best AI Tools for Slack Users (2026)",
+   "desc": "Best AI tools that work in Slack: 10 picks with vendor-verified prices checked 16–23 Oct 2026, including Cursor, Claude Code and OpenAI Codex.",
+   "summary": "Each of these tools, across categories, lists Slack among its integrations. <b>Cursor</b> comes first: a full AI-native editor with agents, cloud automations and code review, and a free tier to start. The cheapest verified paid plan here is <b>Cursor</b> Plus ($8/month). 9 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–23 Oct 2026.",
+   "items": [
+    [
+     "cursor",
+     "Plus"
+    ],
+    [
+     "claude-code",
+     "Claude Pro"
+    ],
+    [
+     "openai-codex",
+     "Go"
+    ],
+    [
+     "devin",
+     "Pro"
+    ],
+    [
+     "openhands",
+     ""
+    ],
+    [
+     "graphite",
+     "Starter"
+    ],
+    [
+     "reclaim-ai",
+     ""
+    ],
+    [
+     "typefully",
+     ""
+    ],
+    [
+     "writer",
+     ""
+    ],
+    [
+     "tactiq",
+     "Pro"
+    ]
+   ],
+   "pick": "Pick <b>Cursor</b> for developers who want an AI-first editor with agents and code review (Plus: $8/month); think twice if you want flat pricing that includes third-party models. Pick <b>Claude Code</b> for developers who prefer terminal-driven agents working across a repo (Claude Pro: $17/month annual or $20 monthly); think twice if you want a free tool or a graphical editor experience. Pick <b>OpenAI Codex</b> for ChatGPT subscribers who want one coding agent across the terminal, IDE, desktop app and cloud (Go: $8/month). Watch out: usage limits depend on your ChatGPT plan; Plus and Pro users who hit them must buy extra credits. Pick <b>Devin</b> for teams that want to hand well-scoped tickets to an agent and review the PRs (Pro: $20/month); think twice if you want to stay hands-on in your editor, or you can&#x27;t give an agent repo access. Pick <b>OpenHands</b> for teams that want an autonomous agent they can self-host and audit (free plan: Open source: free, unlimited local use. Cloud Individual: free, 10 conversations/day, BYOK or at-cost models); think twice if you want an inline autocomplete assistant inside your editor. Pick <b>Graphite</b> for GitHub teams who want stacked PRs and AI review in one workflow (Starter: $20/user/month billed annually). Watch out: unlimited AI reviews need the $40/user Team plan; GitHub only. Pick <b>Reclaim.ai</b> for calendar time-blocking for Google Calendar users (free plan: Lite: free forever). Watch out: paid prices not verified.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Cursor Plus ($8/month) is the lowest paid price we verified on this list (https://cursor.com/pricing, checked 19 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Cursor: Free: limited agent requests and limited chat requests; OpenAI Codex: Included in ChatGPT Free with limited Codex access; Devin: Free plan: light quota, limited models (no cloud agents); OpenHands: Open source: free, unlimited local use. Cloud Individual: free, 10 conversations/day, BYOK or at-cost models; Graphite: Hobby: free, personal repos, limited AI reviews; Reclaim.ai: Lite: free forever; Typefully: 1 social set, 1 user, 10 posts/month; Writer: Starter: 14-day free trial, no card; Tactiq: Free forever, no credit card: 10 transcripts and 5 AI credits a month."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with Slack listed by the vendor, confirmed on the vendor's own website on 16–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Tools come from several ToolRank categories, so they are grouped by category and then by each category&rsquo;s editorial rank."
+  },
+  {
+   "slug": "ai-tools-for-zapier-users",
+   "n": 1192,
+   "generated": true,
+   "cat": "research",
+   "h1": "Best AI tools that connect to Zapier",
+   "title": "Best AI Tools That Connect to Zapier (2026)",
+   "desc": "Best AI tools that connect to Zapier: 7 picks with vendor-verified prices checked 16–22 Oct 2026, including Greptile, OpusClip and Otter.ai.",
+   "summary": "Each of these tools lists Zapier among its integrations, so you can wire it into thousands of other apps. <b>Greptile</b> comes first: a free Starter plan, flat per-seat Pro price and self-hosting on Enterprise. The cheapest verified paid plan here is <b>Buffer</b> Essentials ($5/month per channel ($60 billed yearly)). 6 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–22 Oct 2026.",
+   "items": [
+    [
+     "greptile",
+     "Pro"
+    ],
+    [
+     "opusclip",
+     "Starter"
+    ],
+    [
+     "otter-ai",
+     "Pro"
+    ],
+    [
+     "typefully",
+     ""
+    ],
+    [
+     "buffer",
+     "Essentials"
+    ],
+    [
+     "metricool",
+     "Starter"
+    ],
+    [
+     "socialbee",
+     "Bootstrap"
+    ]
+   ],
+   "pick": "Pick <b>Greptile</b> for teams who want an AI reviewer on every pull request (Pro: $30/seat/month). Watch out: the free plan covers 1 active developer; extra review credits cost $1 each. <b>OpusClip</b> (Starter: $15/month): Turns long videos into short vertical clips automatically. Pick <b>Otter.ai</b> for meeting transcription and notes for individuals and small teams (Pro: $8.33/user/month annually or $16.99 monthly). Watch out: promotional discounts were shown on the pricing page; check the current price at checkout. Pick <b>Typefully</b> for creators growing on X and LinkedIn (free plan: 1 social set, 1 user, 10 posts/month); think twice if you need a full social media suite. Pick <b>Buffer</b> for creators and small teams scheduling posts on several social networks on a budget (Essentials: $5/month per channel ($60 billed yearly)). Watch out: free plan allows 10 scheduled posts per channel and 1 user. Pick <b>Metricool</b> for freelancers and agencies scheduling and reporting on several brands&#x27; social accounts (Starter: From $20/month billed annually; from $25/month billed monthly). Watch out: LinkedIn and X need a paid plan; the free plan caps posts at 20 a month. Pick <b>SocialBee</b> for freelancers and small businesses posting to 5 to 25 social profiles (Bootstrap: $24.20/month billed annually ($290/year); $29/month billed monthly). Watch out: no free plan; extra users and workspaces cost $10 a month each.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Buffer Essentials ($5/month per channel ($60 billed yearly)) is the lowest paid price we verified on this list (https://buffer.com/pricing, checked 22 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Greptile: Starter: free, 1 active developer, 50 credits a month; OpusClip: Free: watermarked clips, 3-day export window, 9:16 only; Otter.ai: Basic: free forever; Typefully: 1 social set, 1 user, 10 posts/month; Buffer: Free plan: $0 forever, 10 scheduled posts per channel, AI Assistant; Metricool: Free: 1 brand, 20 scheduled posts a month, AI assistant, MCP."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with Zapier listed as an integration by the vendor, confirmed on the vendor's own website on 16–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Tools come from several ToolRank categories, so they are grouped by category and then by each category&rsquo;s editorial rank."
+  },
+  {
+   "slug": "ai-tools-for-canva-users",
+   "n": 1193,
+   "generated": true,
+   "cat": "research",
+   "h1": "Best AI tools that work with Canva",
+   "title": "Best AI Tools for Canva Users (2026)",
+   "desc": "Best AI tools that work with Canva: 7 picks with vendor-verified prices checked 18–23 Oct 2026, including Canva AI, Buffer and Metricool.",
+   "summary": "Each of these tools is Canva or lists Canva among its integrations. <b>Canva AI</b> comes first: canva&#x27;s design platform with built-in AI image generation. The cheapest verified paid plan here is <b>Buffer</b> Essentials ($5/month per channel ($60 billed yearly)). 6 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 18–23 Oct 2026.",
+   "items": [
+    [
+     "canva-ai",
+     ""
+    ],
+    [
+     "buffer",
+     "Essentials"
+    ],
+    [
+     "metricool",
+     "Starter"
+    ],
+    [
+     "publer",
+     ""
+    ],
+    [
+     "diffit",
+     "Individual teacher"
+    ],
+    [
+     "schoolai",
+     ""
+    ],
+    [
+     "edcafe",
+     "Pro"
+    ]
+   ],
+   "pick": "Pick <b>Canva AI</b> for non-designers making social posts, presentations and marketing graphics with AI help (US$144/year (Pro, one person)). Watch out: AI use is capped by a shared allowance; heavier AI needs the AI Pass add-on at extra cost. Pick <b>Buffer</b> for creators and small teams scheduling posts on several social networks on a budget (Essentials: $5/month per channel ($60 billed yearly)). Watch out: free plan allows 10 scheduled posts per channel and 1 user. Pick <b>Metricool</b> for freelancers and agencies scheduling and reporting on several brands&#x27; social accounts (Starter: From $20/month billed annually; from $25/month billed monthly). Watch out: LinkedIn and X need a paid plan; the free plan caps posts at 20 a month. Pick <b>Publer</b> for solo creators and small teams who want cheap scheduling and AI-agent access (free plan: Free forever: 1 user, 3 social accounts (not X), 10 scheduled posts per account). Watch out: paid prices depend on account count and were not shown in the fetched text. Pick <b>Diffit</b> for teachers who need the same content at several reading levels (ELL, SPED, intervention) (Individual teacher: $14.99/month billed monthly or $149.99/year billed annually). Watch out: exports to Google, Microsoft and Canva need Premium or a school licence. Pick <b>SchoolAI</b> for schools and districts rolling out AI tutoring with teacher oversight (price not yet verified). Watch out: pro and Scale prices are not published; the free tier caps Space launches at 5 a year. Pick <b>Edcafe</b> for teachers who want low-cost AI activities and grading for their classes (Pro: $7.99/mo billed annually). Watch out: monthly-billing prices were not shown; LMS integration is for schools.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Buffer Essentials ($5/month per channel ($60 billed yearly)) is the lowest paid price we verified on this list (https://buffer.com/pricing, checked 22 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Canva AI: Free: US$0, up to 20 Standard or Premium AI uses, 5GB storage; Buffer: Free plan: $0 forever, 10 scheduled posts per channel, AI Assistant; Metricool: Free: 1 brand, 20 scheduled posts a month, AI assistant, MCP; Publer: Free forever: 1 user, 3 social accounts (not X), 10 scheduled posts per account; Diffit: Basic: free (PDF download, print, share; last 90 days of resources); Edcafe: Free: unlimited AI generations, 3 chatbots, 40 participants."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with Canva listed by the vendor, confirmed on the vendor's own website on 18–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Tools come from several ToolRank categories, so they are grouped by category and then by each category&rsquo;s editorial rank."
+  },
+  {
+   "slug": "ai-browser-extensions",
+   "n": 1194,
+   "generated": true,
+   "cat": "research",
+   "h1": "Best AI tools with browser extensions",
+   "title": "Best AI Browser Extensions (2026)",
+   "desc": "Best AI tools with browser extensions: 10 picks with vendor-verified prices checked 18–23 Oct 2026, including ChatGPT, Kombai and Jenni AI.",
+   "summary": "Each of these tools offers a Chrome or browser extension, so it works on the pages you already use. <b>ChatGPT</b> comes first: the broadest general assistant: a usable free plan, apps on every major platform and a ladder of paid plans for heavier use. The cheapest verified paid plan here is <b>Buffer</b> Essentials ($5/month per channel ($60 billed yearly)). 9 of the 10 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 18–23 Oct 2026.",
+   "items": [
+    [
+     "chatgpt",
+     "Go"
+    ],
+    [
+     "kombai",
+     "Pro"
+    ],
+    [
+     "jenni-ai",
+     "Plus"
+    ],
+    [
+     "languagetool",
+     ""
+    ],
+    [
+     "buffer",
+     "Essentials"
+    ],
+    [
+     "publer",
+     ""
+    ],
+    [
+     "tactiq",
+     "Pro"
+    ],
+    [
+     "scam-sniffer",
+     "Standard"
+    ],
+    [
+     "goplus-security",
+     ""
+    ],
+    [
+     "zerion",
+     "Builder (API)"
+    ]
+   ],
+   "pick": "Pick <b>ChatGPT</b> for everyday drafting, Q&amp;A and file analysis across web and mobile (Go: $8/month); think twice if you need guaranteed access to the strongest models without paying. Pick <b>Kombai</b> for frontend developers and teams who want polished UI code from designs or prompts (Pro: $20/month). Watch out: credit-based usage; SSO and audit logs need Enterprise. Pick <b>Jenni AI</b> for students and researchers writing papers with citations (Plus: $12/month as displayed). Watch out: free plan caps autocompletes at 10 a day; team prices need a demo. Pick <b>LanguageTool</b> for multilingual writers and teams who want one checker across browser and desktop (free plan: Basic: free, 2,000 characters per text field, 3 AI rephrasings a day). Watch out: basic caps text at 2,000 characters per field and 3 AI rephrasings a day; prices not shown. Pick <b>Buffer</b> for creators and small teams scheduling posts on several social networks on a budget (Essentials: $5/month per channel ($60 billed yearly)). Watch out: free plan allows 10 scheduled posts per channel and 1 user. Pick <b>Publer</b> for solo creators and small teams who want cheap scheduling and AI-agent access (free plan: Free forever: 1 user, 3 social accounts (not X), 10 scheduled posts per account). Watch out: paid prices depend on account count and were not shown in the fetched text. Pick <b>Tactiq</b> for teams who want meeting transcripts and AI notes without a bot joining the call (Pro: $8 per user/month, billed annually). Watch out: free plan caps transcripts at 10 a month; monthly-billing prices were not shown.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Buffer Essentials ($5/month per channel ($60 billed yearly)) is the lowest paid price we verified on this list (https://buffer.com/pricing, checked 22 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "ChatGPT: Free plan: unlimited* everyday text chats, limited messages with uploads (vendor footnotes apply); Kombai: Free: $0/month, 150 credits at sign-up plus 50 a day (max 300 a month); Jenni AI: Free: $0/month, 10 AI autocompletes a day, unlimited citations; LanguageTool: Basic: free, 2,000 characters per text field, 3 AI rephrasings a day; Buffer: Free plan: $0 forever, 10 scheduled posts per channel, AI Assistant; Publer: Free forever: 1 user, 3 social accounts (not X), 10 scheduled posts per account; Tactiq: Free forever, no credit card: 10 transcripts and 5 AI credits a month; Scam Sniffer: Free browser extension; open-source scam database ($0, free for commercial use); Zerion: Free wallet on iOS, Android, extension and web; free Developer API plan ($0 forever, 2K requests/day)."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a browser extension listed by the vendor, confirmed on the vendor's own website on 18–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Tools come from several ToolRank categories, so they are grouped by category and then by each category&rsquo;s editorial rank."
+  },
+  {
+   "slug": "ai-tools-for-hubspot-users",
+   "n": 1195,
+   "generated": true,
+   "cat": "business",
+   "h1": "Best AI tools for HubSpot users",
+   "title": "Best AI Tools for HubSpot Users (2026)",
+   "desc": "Best AI tools for HubSpot users: 4 picks with vendor-verified prices checked 17–23 Oct 2026, including Otter.ai, HubSpot Breeze and Apollo.io.",
+   "summary": "Each of these tools is part of HubSpot or lists a HubSpot integration. <b>Otter.ai</b> comes first: meeting transcription and AI notes. The cheapest verified paid plan here is <b>Tactiq</b> Pro ($8 per user/month, billed annually). 4 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 17–23 Oct 2026.",
+   "items": [
+    [
+     "otter-ai",
+     "Pro"
+    ],
+    [
+     "hubspot-breeze",
+     "Starter"
+    ],
+    [
+     "apollo-io",
+     ""
+    ],
+    [
+     "tactiq",
+     "Pro"
+    ]
+   ],
+   "pick": "Pick <b>Otter.ai</b> for meeting transcription and notes for individuals and small teams (Pro: $8.33/user/month annually or $16.99 monthly). Watch out: promotional discounts were shown on the pricing page; check the current price at checkout. Pick <b>HubSpot Breeze</b> for marketing teams already on, or moving to, the HubSpot CRM who want AI agents built in (Starter: $20/seat/month). Watch out: AI agents run on HubSpot Credits, and Professional and Enterprise add mandatory onboarding fees. Pick <b>Apollo.io</b> for prospecting database and outbound email (free plan: Free plan with no time limit (light usage; Gmail only for sending)). Watch out: paid prices not verified. Pick <b>Tactiq</b> for teams who want meeting transcripts and AI notes without a bot joining the call (Pro: $8 per user/month, billed annually). Watch out: free plan caps transcripts at 10 a month; monthly-billing prices were not shown.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Tactiq Pro ($8 per user/month, billed annually) is the lowest paid price we verified on this list (https://tactiq.io/pricing, checked 23 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Otter.ai: Basic: free forever; HubSpot Breeze: Free tools: $0/month for up to 2 users, no credit card; Apollo.io: Free plan with no time limit (light usage; Gmail only for sending); Tactiq: Free forever, no credit card: 10 transcripts and 5 AI credits a month."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with HubSpot listed by the vendor, confirmed on the vendor's own website on 17–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Tools come from several ToolRank categories, so they are grouped by category and then by each category&rsquo;s editorial rank."
+  },
+  {
+   "slug": "ai-tools-with-whatsapp",
+   "n": 1196,
+   "generated": true,
+   "cat": "business",
+   "h1": "Best AI tools that work with WhatsApp",
+   "title": "Best AI Tools That Work With WhatsApp (2026)",
+   "desc": "Best AI tools that work with WhatsApp: 4 picks with vendor-verified prices checked 16–23 Oct 2026, including Hostinger AI Builder, Mem and Canary Technologies.",
+   "summary": "Each of these tools lists WhatsApp among its channels or integrations. <b>Hostinger AI Builder</b> comes first: hosting, a domain and a built-in back end in one plan, plus code export. The cheapest verified paid plan here is <b>Hostinger AI Builder</b> Premium ($2.49/mo on a 48-month plan ($119.52 upfront); renews at $10.99/mo). 1 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–23 Oct 2026.",
+   "items": [
+    [
+     "hostinger-ai-builder",
+     "Premium"
+    ],
+    [
+     "mem",
+     "Mem Plus"
+    ],
+    [
+     "canary-technologies",
+     ""
+    ],
+    [
+     "asksuite",
+     ""
+    ]
+   ],
+   "pick": "Pick <b>Hostinger AI Builder</b> for beginners who want a site or simple web app built and hosted in one place (Premium: $2.49/mo on a 48-month plan ($119.52 upfront); renews at $10.99/mo). Watch out: low prices need a 48-month upfront plan and renew higher; no native mobile apps. Pick <b>Mem</b> for AI note-taking that organises itself (Mem Plus: $9/month). Watch out: free plan caps new notes. Pick <b>Canary Technologies</b> for hotels wanting check-in, upsells and AI guest messaging in one system (Custom quote). Watch out: no public prices: every bundle is quoted. Pick <b>Asksuite</b> for hotels that want an AI reservation agent to answer guests and drive direct bookings (Custom (demo required)). Watch out: prices are not published; you must book a demo.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Hostinger AI Builder Premium ($2.49/mo on a 48-month plan ($119.52 upfront); renews at $10.99/mo) is the lowest paid price we verified on this list (https://www.hostinger.com/ai-builder, checked 23 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Mem: Free: 25 new notes/month."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with WhatsApp listed by the vendor, confirmed on the vendor's own website on 16–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Tools come from several ToolRank categories, so they are grouped by category and then by each category&rsquo;s editorial rank."
+  },
+  {
+   "slug": "ai-tools-for-microsoft-word",
+   "n": 1197,
+   "generated": true,
+   "cat": "writing",
+   "h1": "Best AI tools that work in Microsoft Word",
+   "title": "Best AI Tools for Microsoft Word (2026)",
+   "desc": "Best AI tools that work in Microsoft Word: 5 picks with vendor-verified prices checked 16–23 Oct 2026.",
+   "summary": "Each of these tools works inside Microsoft Word or Office, or exports to it. <b>Microsoft Copilot</b> comes first: built into Microsoft&#x27;s apps and available free for consumers, with business plans bundled with Microsoft 365. The cheapest verified paid plan here is <b>ProWritingAid</b> Premium ($10/month yearly ($120) or $30 monthly). 3 of the 5 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–23 Oct 2026.",
+   "items": [
+    [
+     "microsoft-copilot",
+     "Microsoft 365 Copilot Business"
+    ],
+    [
+     "prowritingaid",
+     "Premium"
+    ],
+    [
+     "languagetool",
+     ""
+    ],
+    [
+     "microsoft-365-copilot",
+     "Copilot Business"
+    ],
+    [
+     "diffit",
+     "Individual teacher"
+    ]
+   ],
+   "pick": "Pick <b>Microsoft Copilot</b> for people and teams living in Word, Excel, Outlook and Teams (Microsoft 365 Copilot Business: $18/user/month paid yearly (shown as reduced from $21)); think twice if you don&#x27;t use Microsoft 365. Pick <b>ProWritingAid</b> for fiction and long-form writers who want manuscript-level editing reports (Premium: $10/month yearly ($120) or $30 monthly). Watch out: monthly billing costs roughly three times the yearly rate. Pick <b>LanguageTool</b> for multilingual writers and teams who want one checker across browser and desktop (free plan: Basic: free, 2,000 characters per text field, 3 AI rephrasings a day). Watch out: basic caps text at 2,000 characters per field and 3 AI rephrasings a day; prices not shown. Pick <b>Microsoft 365 Copilot</b> for microsoft 365 organisations (Copilot Business: $18/user/month paid yearly); think twice if your team runs on Google Workspace. Pick <b>Diffit</b> for teachers who need the same content at several reading levels (ELL, SPED, intervention) (Individual teacher: $14.99/month billed monthly or $149.99/year billed annually). Watch out: exports to Google, Microsoft and Canva need Premium or a school licence.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "ProWritingAid Premium ($10/month yearly ($120) or $30 monthly) is the lowest paid price we verified on this list (https://prowritingaid.com/pricing, checked 18 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "ProWritingAid: Free plan with core editing tools; LanguageTool: Basic: free, 2,000 characters per text field, 3 AI rephrasings a day; Diffit: Basic: free (PDF download, print, share; last 90 days of resources)."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with Microsoft Word or Office listed by the vendor, confirmed on the vendor's own website on 16–23 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Tools come from several ToolRank categories, so they are grouped by category and then by each category&rsquo;s editorial rank."
+  },
+  {
+   "slug": "ai-tools-for-google-docs",
+   "n": 1198,
+   "generated": true,
+   "cat": "writing",
+   "h1": "Best AI tools that work in Google Docs",
+   "title": "Best AI Tools for Google Docs (2026)",
+   "desc": "Best AI tools that work in Google Docs: 7 picks with vendor-verified prices checked 16–22 Oct 2026.",
+   "summary": "Each of these tools works inside Google Docs or exports to it. <b>ProWritingAid</b> comes first: grammar and style checker aimed at fiction writers. The cheapest verified paid plan here is <b>Gemini for Google Workspace</b> Business Starter ($7/user/month). 5 of the 7 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–22 Oct 2026.",
+   "items": [
+    [
+     "prowritingaid",
+     "Premium"
+    ],
+    [
+     "gemini-for-google-workspace",
+     "Business Starter"
+    ],
+    [
+     "superhuman",
+     "Pro"
+    ],
+    [
+     "brisk-teaching",
+     ""
+    ],
+    [
+     "diffit",
+     "Individual teacher"
+    ],
+    [
+     "twee",
+     "Schools (3–10 seats)"
+    ],
+    [
+     "teachermatic",
+     ""
+    ]
+   ],
+   "pick": "Pick <b>ProWritingAid</b> for fiction and long-form writers who want manuscript-level editing reports (Premium: $10/month yearly ($120) or $30 monthly). Watch out: monthly billing costs roughly three times the yearly rate. Pick <b>Gemini for Google Workspace</b> for teams on Google Workspace (Business Starter: $7/user/month); think twice if you&#x27;re a Microsoft 365 shop. Pick <b>Superhuman</b> for AI writing help and email across apps (Pro: $12/member/month annually or $15 monthly). Watch out: plans now bundle Grammarly, Docs and Mail; check what you need. Pick <b>Brisk Teaching</b> for teachers creating lessons and feedback in the browser (Custom (schools and districts)). Watch out: school pricing not verified. Pick <b>Diffit</b> for teachers who need the same content at several reading levels (ELL, SPED, intervention) (Individual teacher: $14.99/month billed monthly or $149.99/year billed annually). Watch out: exports to Google, Microsoft and Canva need Premium or a school licence. Pick <b>Twee</b> for language teachers, especially English teachers, making exercises from videos, texts and word lists (Schools: 3–10 seats) ($8.33/seat/month ($99.95 per seat for 1 year)). Watch out: only a 5-run trial is free; individual Basic and Pro prices were not shown on the fetched page. Pick <b>TeacherMatic</b> for UK and international teachers who want quick AI-made teaching resources (£6.99/month (Professional Individual)). Watch out: priced in GBP; the free plan caps generations at 15 a day.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Gemini for Google Workspace Business Starter ($7/user/month) is the lowest paid price we verified on this list (https://workspace.google.com/pricing, checked 16 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "ProWritingAid: Free plan with core editing tools; Superhuman: Free: $0, AI assistant in your apps; Brisk Teaching: Free for teachers ($0); Diffit: Basic: free (PDF download, print, share; last 90 days of resources); TeacherMatic: Free Individual: £0, 15 generations a day, select AI generators."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with Google Docs listed by the vendor, confirmed on the vendor's own website on 16–22 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ],
+   "order_note": "Tools come from several ToolRank categories, so they are grouped by category and then by each category&rsquo;s editorial rank."
+  },
+  {
+   "slug": "ai-automation-tools-under-20-a-month",
+   "n": 1199,
+   "generated": true,
+   "cat": "automation",
+   "h1": "Best AI automation tools for $20 a month or less",
+   "title": "Best AI Automation Tools Under $20/Month (2026)",
+   "desc": "Best AI automation tools for $20 a month or less: 4 picks with vendor-verified prices checked 22–24 Oct 2026, including Zapier, Activepieces and IFTTT.",
+   "summary": "Every tool here has a paid plan listed at $20 a month or less on its vendor's pricing page. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>IFTTT</b> Pro ($2.99 per month ($35.88 billed annually)). 3 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 22–24 Oct 2026.",
+   "items": [
+    [
+     "zapier",
+     "Professional"
+    ],
+    [
+     "activepieces",
+     "Plus"
+    ],
+    [
+     "ifttt",
+     "Pro"
+    ],
+    [
+     "microsoft-power-automate",
+     "Premium"
+    ]
+   ],
+   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: $19.99/month billed annually; $29.99/month billed monthly); think twice if you run very high volumes and want self-hosting. Pick <b>Activepieces</b> for teams who want Zapier-style automation with AI agents and the option to self-host (Plus: $20/month flat). Watch out: credits cap usage; SSO needs the $200 Team plan. Pick <b>IFTTT</b> for people automating smart-home devices and everyday apps without code (Pro: $2.99 per month ($35.88 billed annually)). Watch out: free plan is limited to 2 Applets; AI services and filters need Pro+; monthly-billing prices were not shown. Pick <b>Microsoft Power Automate</b> for microsoft 365 organisations automating cloud apps and Windows desktop tasks (Premium: $15/user/month). Watch out: unattended bots cost $150 per bot a month; prices may vary by country and the page did not show monthly billing.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "IFTTT Pro ($2.99 per month ($35.88 billed annually)) is the lowest paid price we verified on this list (https://ifttt.com/plans, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Zapier: Free forever: 100 tasks/month, two-step Zaps, basic access to Agents, Chatbots and MCP; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users; IFTTT: Free forever: 2 Applets, unlimited Applet runs, free mobile app access."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with a verified paid plan at or below $20/month (USD), confirmed on the vendor's own website on 22–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
+  },
+  {
+   "slug": "ai-automation-tools-with-annual-discount",
+   "n": 1200,
+   "generated": true,
+   "cat": "automation",
+   "h1": "AI automation tools that are cheaper billed yearly",
+   "title": "AI Automation Tools With Annual Discounts (2026)",
+   "desc": "AI automation tools that are cheaper billed yearly: 4 picks with vendor-verified prices checked 16–24 Oct 2026, including Zapier, n8n and Botpress.",
+   "summary": "Each of these AI automation tools shows both a yearly and a monthly price, so you can see what committing for a year saves. <b>Zapier</b> comes first: the largest app ecosystem with a free forever plan and simple task-based pricing. The cheapest verified paid plan here is <b>Zapier</b> Professional ($19.99/month billed annually; $29.99/month billed monthly). 3 of the 4 have a free plan we could confirm. Every price below is from the vendor&rsquo;s own page, checked 16–24 Oct 2026.",
+   "items": [
+    [
+     "zapier",
+     "Professional"
+    ],
+    [
+     "n8n",
+     "Starter"
+    ],
+    [
+     "botpress",
+     "Plus"
+    ],
+    [
+     "activepieces",
+     "Plus"
+    ]
+   ],
+   "pick": "Pick <b>Zapier</b> for non-technical teams automating across many SaaS apps (Professional: $19.99/month billed annually; $29.99/month billed monthly); think twice if you run very high volumes and want self-hosting. Pick <b>n8n</b> for technical teams building complex workflows and AI agents (Starter: €20/month annual); think twice if you want the simplest no-code setup. Pick <b>Botpress</b> for customer-facing chatbots (Plus: $150/month billed annually). Watch out: paid plans start high for small projects. Pick <b>Activepieces</b> for teams who want Zapier-style automation with AI agents and the option to self-host (Plus: $20/month flat). Watch out: credits cap usage; SSO needs the $200 Team plan.",
+   "faq": [
+    [
+     "Which of these is cheapest?",
+     "Zapier Professional ($19.99/month billed annually; $29.99/month billed monthly) is the lowest paid price we verified on this list (https://zapier.com/pricing, checked 24 Oct 2026). Check the vendor page for tax, billing period and usage limits."
+    ],
+    [
+     "Which of these have a free plan?",
+     "Zapier: Free forever: 100 tasks/month, two-step Zaps, basic access to Agents, Chatbots and MCP; Botpress: Free: 100 conversations/month; Activepieces: Free forever, no card: 1,000 credits a month, up to 5 users."
+    ],
+    [
+     "How were these tools chosen?",
+     "They are the tools in ToolRank's rankings with both annual and monthly prices on the vendor page, confirmed on the vendor's own website on 16–24 Oct 2026. Tools we could not verify are left out rather than guessed, and anything unconfirmed is marked Not yet verified."
+    ]
+   ]
   }
  ],
  "skipped_generated": [
@@ -10408,6 +11397,11 @@
    "reason": "near-duplicate of /best-of/ai-voice-and-audio-tools-under-10-a-month/ (same or almost the same verified tools)"
   },
   {
+   "slug": "cheapest-ai-automation-tools",
+   "topic": "Cheapest AI automation tools: lowest verified paid plans",
+   "reason": "near-duplicate of /best-of/ai-automation-tools-under-50-a-month/ (same or almost the same verified tools)"
+  },
+  {
    "slug": "ai-research-and-productivity-tools-under-20-a-month",
    "topic": "Best AI research and productivity tools for $20 a month or less",
    "reason": "near-duplicate of /best-of/free-ai-research-and-productivity-tools/ (same or almost the same verified tools)"
@@ -10431,6 +11425,11 @@
    "slug": "ai-tools-for-terminal-users",
    "topic": "Best AI coding tools for terminal users",
    "reason": "near-duplicate of /best-of/ai-coding-agents/ (same or almost the same verified tools)"
+  },
+  {
+   "slug": "ai-medical-scribes",
+   "topic": "Best AI medical scribes for clinicians",
+   "reason": "near-duplicate of /best-of/ai-health-and-fitness-tools-for-teams/ (same or almost the same verified tools)"
   },
   {
    "slug": "free-ai-assistants",
@@ -10665,17 +11664,12 @@
   {
    "slug": "ai-automation-tools-under-10-a-month",
    "topic": "Best AI automation tools for $10 a month or less",
-   "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
+   "reason": "only 1 vendor-verified tool(s) match (IFTTT); 4 needed"
   },
   {
    "slug": "ai-automation-tools-under-15-a-month",
    "topic": "Best AI automation tools for $15 a month or less",
-   "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
-  },
-  {
-   "slug": "ai-automation-tools-under-20-a-month",
-   "topic": "Best AI automation tools for $20 a month or less",
-   "reason": "only 2 vendor-verified tool(s) match (Zapier, Activepieces); 4 needed"
+   "reason": "only 2 vendor-verified tool(s) match (IFTTT, Microsoft Power Automate); 4 needed"
   },
   {
    "slug": "ai-automation-tools-under-100-a-month",
@@ -10685,22 +11679,17 @@
   {
    "slug": "ai-automation-tools-with-free-trial-no-free-plan",
    "topic": "AI automation tools with a free trial (paid plans only)",
-   "reason": "only 2 vendor-verified tool(s) match (Gumloop, Voiceflow); 4 needed"
+   "reason": "only 3 vendor-verified tool(s) match (Gumloop, Voiceflow, Microsoft Power Automate); 4 needed"
   },
   {
    "slug": "ai-automation-tools-with-mobile-apps",
    "topic": "Best AI automation tools with mobile apps",
-   "reason": "only 0 vendor-verified tool(s) match (none); 4 needed"
+   "reason": "only 1 vendor-verified tool(s) match (IFTTT); 4 needed"
   },
   {
    "slug": "ai-automation-tools-for-desktop",
    "topic": "Best AI automation tools with desktop apps",
-   "reason": "only 1 vendor-verified tool(s) match (Langflow); 4 needed"
-  },
-  {
-   "slug": "ai-automation-tools-with-annual-discount",
-   "topic": "AI automation tools that are cheaper billed yearly",
-   "reason": "only 3 vendor-verified tool(s) match (n8n, Botpress, Activepieces); 4 needed"
+   "reason": "only 2 vendor-verified tool(s) match (Langflow, Microsoft Power Automate); 4 needed"
   },
   {
    "slug": "ai-research-and-productivity-tools-under-30-a-month",
@@ -10895,7 +11884,7 @@
   {
    "slug": "ai-hospitality-tools-under-10-a-month",
    "topic": "Best AI hospitality tools for $10 a month or less",
-   "reason": "only 3 vendor-verified tool(s) match (Guesty, PriceLabs, Turno); 4 needed"
+   "reason": "near-duplicate of /best-of/ai-hospitality-tools-under-15-a-month/ (same or almost the same verified tools)"
   },
   {
    "slug": "ai-hospitality-tools-under-20-a-month",
@@ -10920,7 +11909,7 @@
   {
    "slug": "ai-hospitality-tools-for-teams",
    "topic": "Best AI hospitality tools for teams (per-seat plans)",
-   "reason": "only 2 vendor-verified tool(s) match (OwnerRez, Turno); 4 needed"
+   "reason": "only 3 vendor-verified tool(s) match (OwnerRez, Turno, HostBuddy AI); 4 needed"
   },
   {
    "slug": "self-hosted-ai-hospitality-tools",
@@ -11126,6 +12115,7 @@
   "ai-voice-and-audio-tools-under-20-a-month": "ai-voice-and-audio-tools-under-10-a-month",
   "ai-research-and-productivity-tools-under-20-a-month": "free-ai-research-and-productivity-tools",
   "cheapest-ai-crypto-tools": "ai-crypto-tools-under-50-a-month",
-  "ai-marketing-tools-under-30-a-month": "cheapest-ai-marketing-tools"
+  "ai-marketing-tools-under-30-a-month": "cheapest-ai-marketing-tools",
+  "cheapest-ai-automation-tools": "ai-automation-tools-under-50-a-month"
  }
 }
