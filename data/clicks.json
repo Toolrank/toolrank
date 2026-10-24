@@ -1,13 +1,7 @@
 {
- "fetched": "2026-10-24 02:43 UTC",
- "fetched_ts": 1792809823,
+ "fetched": "2026-10-24 03:44 UTC",
+ "fetched_ts": 1792813489,
  "window": "last 7 days",
  "source": "GoatCounter click/ events (unique visitors)",
- "top": [
-  {
-   "slug": "devin",
-   "tool": "Devin",
-   "count": 1
-  }
- ]
+ "top": []
 }
