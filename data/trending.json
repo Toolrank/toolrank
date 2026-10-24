@@ -1,92 +1,85 @@
 {
- "fetched": "2026-10-23 04:44 UTC",
- "fetched_ts": 1792730671,
- "stars_baseline": "2026-10-16",
+ "fetched": "2026-10-24 01:01 UTC",
+ "fetched_ts": 1792803696,
+ "stars_baseline": "2026-10-17",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 858,
-   "stars": 3866,
+   "gained": 725,
+   "stars": 3956,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 739,
-   "stars": 4197,
+   "gained": 703,
+   "stars": 4310,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "agent-memory",
    "repo": "tigerless-labs/agent-memory",
-   "gained": 712,
-   "stars": 4534,
+   "gained": 495,
+   "stars": 4556,
    "url": "https://github.com/tigerless-labs/agent-memory"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 467,
-   "stars": 111096,
+   "gained": 369,
+   "stars": 111145,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 382,
-   "stars": 3897,
+   "gained": 362,
+   "stars": 3950,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 330,
-   "stars": 4015,
+   "gained": 243,
+   "stars": 4032,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 238,
-   "stars": 3429,
+   "gained": 227,
+   "stars": 3442,
    "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 234,
-   "stars": 3869,
+   "gained": 148,
+   "stars": 3882,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
    "gained": 138,
-   "stars": 107532,
+   "stars": 107564,
    "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 133,
-   "stars": 14282,
+   "gained": 116,
+   "stars": 14296,
    "url": "https://github.com/microsoft/agent-framework"
   }
  ],
  "hn": [
   {
-   "tool": "Black Forest Labs (FLUX)",
-   "stories": 1,
-   "points": 213,
-   "top_title": "FLUX 3 Image Klein",
-   "top_url": "https://news.ycombinator.com/item?id=50123580"
-  },
-  {
    "tool": "Claude",
-   "stories": 7,
-   "points": 29,
+   "stories": 6,
+   "points": 28,
    "top_title": "A sourced timeline of the PHP2Shell leak and embargo break",
    "top_url": "https://news.ycombinator.com/item?id=50190603"
   },
@@ -100,7 +93,7 @@
   {
    "tool": "LlamaIndex",
    "stories": 1,
-   "points": 13,
+   "points": 14,
    "top_title": "OCRia-1: A new SOTA 4B document parser",
    "top_url": "https://news.ycombinator.com/item?id=50198352"
   },
@@ -108,8 +101,8 @@
    "tool": "Perplexity",
    "stories": 3,
    "points": 6,
-   "top_title": "Open-sourcing SPACE, the sandbox platform behind Computer",
-   "top_url": "https://news.ycombinator.com/item?id=50122131"
+   "top_title": "A good teacher meets the student where they are",
+   "top_url": "https://news.ycombinator.com/item?id=50206593"
   },
   {
    "tool": "Grok",
@@ -117,6 +110,13 @@
    "points": 5,
    "top_title": "What the heck is the Public Suffix List?",
    "top_url": "https://news.ycombinator.com/item?id=50199475"
+  },
+  {
+   "tool": "Google AI Studio (Build)",
+   "stories": 1,
+   "points": 3,
+   "top_title": "Introducing the Gemini API CLI",
+   "top_url": "https://news.ycombinator.com/item?id=50197506"
   },
   {
    "tool": "Raycast",
@@ -133,11 +133,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50160981"
   },
   {
-   "tool": "Google AI Studio (Build)",
+   "tool": "n8n",
    "stories": 1,
    "points": 2,
-   "top_title": "Introducing the Gemini API CLI",
-   "top_url": "https://news.ycombinator.com/item?id=50197506"
+   "top_title": "N8n Brand Refresh",
+   "top_url": "https://news.ycombinator.com/item?id=50208667"
   },
   {
    "tool": "Clay",
