@@ -1,85 +1,85 @@
 {
- "fetched": "2026-10-24 21:41 UTC",
- "fetched_ts": 1792878113,
- "stars_baseline": "2026-10-17",
+ "fetched": "2026-10-25 18:46 UTC",
+ "fetched_ts": 1792953972,
+ "stars_baseline": "2026-10-18",
  "repos_tracked": 16,
  "stars": [
   {
+   "tool": "Gemini CLI",
+   "repo": "google-gemini/gemini-cli",
+   "gained": 939,
+   "stars": 108379,
+   "url": "https://github.com/google-gemini/gemini-cli"
+  },
+  {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 838,
-   "stars": 4445,
+   "gained": 863,
+   "stars": 4545,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 812,
-   "stars": 4043,
+   "gained": 787,
+   "stars": 4141,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "agent-memory",
    "repo": "tigerless-labs/agent-memory",
-   "gained": 659,
-   "stars": 4720,
+   "gained": 503,
+   "stars": 4726,
    "url": "https://github.com/tigerless-labs/agent-memory"
-  },
-  {
-   "tool": "Gemini CLI",
-   "repo": "google-gemini/gemini-cli",
-   "gained": 537,
-   "stars": 107963,
-   "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 422,
-   "stars": 111198,
+   "gained": 421,
+   "stars": 111248,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 402,
-   "stars": 3990,
+   "gained": 400,
+   "stars": 4031,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 259,
-   "stars": 4048,
+   "gained": 240,
+   "stars": 4070,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 244,
-   "stars": 3459,
+   "gained": 239,
+   "stars": 3474,
    "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 181,
-   "stars": 3915,
+   "gained": 192,
+   "stars": 3947,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 124,
-   "stars": 14304,
+   "gained": 120,
+   "stars": 14313,
    "url": "https://github.com/microsoft/agent-framework"
   }
  ],
  "hn": [
   {
    "tool": "Claude",
-   "stories": 7,
-   "points": 30,
+   "stories": 6,
+   "points": 27,
    "top_title": "A sourced timeline of the PHP2Shell leak and embargo break",
    "top_url": "https://news.ycombinator.com/item?id=50190603"
   },
@@ -92,8 +92,8 @@
   },
   {
    "tool": "Perplexity",
-   "stories": 3,
-   "points": 6,
+   "stories": 4,
+   "points": 8,
    "top_title": "A good teacher meets the student where they are",
    "top_url": "https://news.ycombinator.com/item?id=50206593"
   },
@@ -140,11 +140,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50208667"
   },
   {
-   "tool": "Clay",
+   "tool": "Devin",
    "stories": 1,
-   "points": 2,
-   "top_title": "Why Clay Has an AI Writing Policy",
-   "top_url": "https://news.ycombinator.com/item?id=50143643"
+   "points": 1,
+   "top_title": "Security Swarm",
+   "top_url": "https://news.ycombinator.com/item?id=50155469"
   }
  ]
 }
