@@ -21,6 +21,15 @@ rv = json.loads((ROOT/"data/reviews.json").read_text())
 for r in rv.get("reviews", []):
     if not (isinstance(r.get("rating"), int) and 1 <= r["rating"] <= 5 and r.get("text") and r.get("url", "").startswith("https://github.com/Toolrank/toolrank/issues/")):
         fails.append(f"reviews.json: invalid review {r.get('id')}")
+sc = json.loads((ROOT/"data/shop.json").read_text()); scat = {c["id"] for c in sc["categories"]}  # ToolRank Shop: products only go live with a real price + Stripe link
+for pr in json.loads((ROOT/"data/products.json").read_text())["products"]:
+    if pr.get("category") not in scat: fails.append(f"products.json {pr.get('id')}: unknown category")
+    if pr.get("status") not in ("draft", "active", "paused"): fails.append(f"products.json {pr.get('id')}: bad status")
+    if pr.get("status") == "active" and not (isinstance(pr.get("our_price"), (int, float)) and pr["our_price"] > 0 and str(pr.get("stripe_link") or "").startswith("https://buy.stripe.com/")):
+        fails.append(f"products.json {pr.get('id')}: active but missing our_price or https://buy.stripe.com/ stripe_link")
+    if isinstance(pr.get("our_price"), (int, float)) and isinstance(pr.get("supplier_cost"), (int, float)) and pr["our_price"] * 0.9835 - 0.30 <= pr["supplier_cost"]:
+        warns.append(f"products.json {pr.get('id')}: our_price leaves no margin after Stripe fees")
+    if pr.get("stripe_link") and pr.get("status") == "active" and not (ROOT/"shop/p"/pr["id"]/"index.html").exists(): fails.append(f"products.json {pr.get('id')}: active but page not built (run scripts/shop.py)")
 idx = (ROOT/"index.html").read_text()
 if f"<b>{sum(len(c['tools']) for c in d['categories'])}</b> tools ranked" not in idx: fails.append("index.html: tools counter does not match tools.json")
 if f"<b>{len(rv.get('reviews', []))}</b> review" not in idx: fails.append("index.html: reviews counter does not match reviews.json")

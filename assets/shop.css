@@ -1,0 +1,40 @@
+/* ToolRank Shop (generated pages use this alongside style.css + ev.css) */
+.shop .hero.studio-hero.shophero{min-height:min(74vh,760px)}
+.shop .hero.studio-hero.shophero h1{max-width:15ch}
+.catnav{position:sticky;top:60px;z-index:10;background:#0b1220e6;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.catnav .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}.catnav .wrap::-webkit-scrollbar{display:none}
+.catnav a{flex:none;padding:7px 14px;border-radius:99px;color:var(--mut);font-weight:600;font-size:14px;border:1px solid transparent}
+.catnav a:hover{color:#fff;border-color:var(--line)}.catnav a[aria-current=page]{color:#fff;background:var(--btn);box-shadow:0 4px 18px #2563eb44}
+.shoptiles{grid-template-columns:repeat(3,1fr)}@media(max-width:900px){.shoptiles{grid-template-columns:repeat(2,1fr)}}
+.shoptiles .tile{aspect-ratio:16/10}
+.sec.tight{padding-top:clamp(28px,4vw,48px)}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:1000px){.pgrid{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.pgrid{grid-template-columns:repeat(2,1fr);gap:12px}}
+.pcard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r);background:var(--card);overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s}
+.pcard:hover{transform:translateY(-3px);border-color:#2563eb88;box-shadow:0 18px 44px #0008}
+.pimg{display:block;aspect-ratio:5/4;background:var(--bg2)}.pimg img{width:100%;height:100%;object-fit:cover;display:block}
+.pbody{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pbody h3{font-size:17px;margin:0;line-height:1.25}.pbody h3 a{color:var(--txt)}.pbody h3 a:hover{color:#fff}
+.pcat{margin:0;font:600 11.5px/1 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--acc2)}
+.pprice{margin:auto 0 0;font:700 20px var(--hf);letter-spacing:-.02em;color:#fff}.pprice.tbc{font:600 14px Inter,sans-serif;color:var(--mut);display:flex;gap:8px;align-items:center}
+.pprice.big{font-size:clamp(28px,3.4vw,40px);margin:8px 0 18px}.pprice.big.tbc{font-size:16px}
+.pprice .tag{text-transform:uppercase;letter-spacing:.08em;font-size:10.5px;color:#fbbf24;border-color:#fbbf2466}
+.empty{border:1px dashed #334155;border-radius:var(--r);padding:clamp(28px,5vw,56px);text-align:center;background:#111a2e80}.empty h3{font-size:clamp(22px,2.6vw,30px)}.empty p{margin:0 auto 8px;max-width:52ch;color:#b6c2d3}
+.pnote{margin:22px 0 14px}
+.pp{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,5vw,64px);align-items:start}
+@media(max-width:860px){.pp{grid-template-columns:1fr}}
+.ppimg{margin:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--bg2)}.ppimg img{display:block;width:100%;height:auto}
+.ppinfo h1{font-size:clamp(32px,4.4vw,54px);font-weight:800;letter-spacing:-.045em;line-height:1.02;margin:8px 0 0}
+.buy{margin:0 0 8px}
+.pfacts{list-style:none;padding:0;margin:26px 0 0;border-top:1px solid var(--line)}.pfacts li{padding:12px 0 12px 24px;border-bottom:1px solid var(--line);position:relative;color:#cbd5e1;font-size:15px}
+.pfacts li::before{content:"";position:absolute;left:0;top:1.15em;width:10px;height:10px;border-radius:3px;background:var(--acc2)}
+.wrap.prose.pdesc{margin-top:clamp(36px,5vw,64px);max-width:1200px}.pdesc>*{max-width:760px}
+.shopsub{padding-bottom:clamp(18px,3vw,30px)!important}.shopsub .lead{margin-bottom:8px}
+.policy h2{font-size:clamp(20px,2.4vw,26px);margin-top:1.6em}.policy ol,.policy ul{color:#cbd5e1}.policy li{margin:8px 0}
+.acl{border-left:3px solid var(--acc);padding:14px 18px;background:var(--card);border-radius:12px}
+.pvbar{background:#fbbf24;color:#0b1220;font:700 13px Inter,sans-serif;text-align:center;padding:8px 12px;letter-spacing:.02em}
+.shopfoot{display:grid;grid-template-columns:2fr 1fr;gap:40px;border-top:1px solid var(--line);padding-top:28px;margin-top:8px}
+.shopfoot nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 20px;align-content:start}.shopfoot nav:last-child{grid-template-columns:1fr}.shopfoot a{color:var(--mut);font-size:14.5px}.shopfoot a:hover{color:#fff}
+@media(max-width:700px){.shopfoot{grid-template-columns:1fr}}
+.shop-seller{margin:18px 0 0}
+.wrap.prose.policy{max-width:1200px}.policy>*{max-width:760px}
