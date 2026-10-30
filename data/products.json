@@ -633,7 +633,8 @@
    "stock_checked": "2026-10-31T01:18+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active"
+   "status": "active",
+   "group": "Garage & servicing"
   },
   {
    "id": "pressure-brake-bleeder-3l",
@@ -657,7 +658,8 @@
    "stock_checked": "2026-10-31T01:18+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active"
+   "status": "active",
+   "group": "Garage & servicing"
   },
   {
    "id": "4wd-tyre-deflators-4-pack",
@@ -682,7 +684,8 @@
    "stock_checked": "2026-10-31T01:18+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active"
+   "status": "active",
+   "group": "4WD, roof & recovery"
   },
   {
    "id": "rear-motorcycle-paddock-stand",
@@ -706,7 +709,8 @@
    "stock_checked": "2026-10-31T01:18+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active"
+   "status": "active",
+   "group": "Garage & servicing"
   },
   {
    "id": "tyre-inflator-with-gauge-160psi",
@@ -730,7 +734,8 @@
    "stock_checked": "2026-10-31T01:18+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active"
+   "status": "active",
+   "group": "4WD, roof & recovery"
   },
   {
    "id": "expandable-garden-hose-30m",
@@ -1774,6 +1779,1047 @@
    ],
    "stock": "in_stock",
    "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "dash-cam-front-rear-10in",
+   "sku": "TR-AU-006",
+   "name": "Front and rear dash cam, 10in screen",
+   "category": "automotive",
+   "description": "Records the road ahead and behind in 1080P, with a 10in touch screen and loop recording.",
+   "specs": [
+    "1080P front and rear",
+    "170° front, 120° rear",
+    "10in IPS touch screen",
+    "Takes TF card up to 128GB (not included)"
+   ],
+   "group": "Upgrade older cars",
+   "our_price": 55.95,
+   "regular_price": 60.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-au-006-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-006-1.webp",
+    "/assets/shop/p/tr-au-006-2.webp",
+    "/assets/shop/p/tr-au-006-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "reversing-camera-mirror-kit",
+   "sku": "TR-AU-007",
+   "name": "Reversing camera with mirror monitor",
+   "category": "automotive",
+   "description": "Rear camera that mounts above the number plate, with colour night vision and a mirror-style display.",
+   "specs": [
+    "120° camera lens",
+    "Colour night vision, 9 LEDs",
+    "IP rated waterproof camera",
+    "9–35V power"
+   ],
+   "group": "Upgrade older cars",
+   "fit": "Supplier lists 9–35V vehicle power systems; camera mounts above the number plate",
+   "our_price": 68.95,
+   "image": "/assets/shop/p/tr-au-007-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-007-1.webp",
+    "/assets/shop/p/tr-au-007-2.webp",
+    "/assets/shop/p/tr-au-007-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "rechargeable-spotlight-10w",
+   "sku": "TR-AU-008",
+   "name": "Rechargeable handheld spotlight",
+   "category": "automotive",
+   "description": "Bright 900 lumen handheld spotlight with a car charger for roadside and campsite use.",
+   "specs": [
+    "10W LED, 900 lumens",
+    "About 2.5–3 hours per charge",
+    "Car charger and home charger included"
+   ],
+   "group": "4WD, roof & recovery",
+   "our_price": 39.95,
+   "image": "/assets/shop/p/tr-au-008-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-008-1.webp",
+    "/assets/shop/p/tr-au-008-2.webp",
+    "/assets/shop/p/tr-au-008-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "12v-tyre-compressor-85l",
+   "sku": "TR-AU-009",
+   "name": "12V tyre compressor 85L/min",
+   "category": "automotive",
+   "description": "Dual-cylinder 12V compressor for car and 4WD tyres, with gauge, hoses and carry bag.",
+   "specs": [
+    "85L/min airflow",
+    "150 PSI max",
+    "Battery clamps",
+    "Gauge, deflator valve, carry bag"
+   ],
+   "group": "4WD, roof & recovery",
+   "our_price": 72.95,
+   "regular_price": 79.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-au-009-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-009-1.webp",
+    "/assets/shop/p/tr-au-009-2.webp",
+    "/assets/shop/p/tr-au-009-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "roof-rack-cross-bars-1350mm",
+   "sku": "TR-AU-010",
+   "name": "Roof rack cross bars 1350mm (lockable)",
+   "category": "automotive",
+   "description": "Aluminium cross bars that clamp to raised roof rails, with locks and a T-slot channel.",
+   "specs": [
+    "1350mm aluminium bars",
+    "150kg stated load",
+    "Lockable, 2 keys",
+    "T-slot channel"
+   ],
+   "group": "4WD, roof & recovery",
+   "fit": "Supplier says universal for raised roof rails up to 1170mm apart",
+   "universal": true,
+   "our_price": 132.95,
+   "image": "/assets/shop/p/tr-au-010-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-010-1.webp",
+    "/assets/shop/p/tr-au-010-2.webp",
+    "/assets/shop/p/tr-au-010-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "roof-rack-bars-no-rails-105cm",
+   "sku": "TR-AU-011",
+   "name": "Roof rack bars for cars without rails",
+   "category": "automotive",
+   "description": "Lockable 105cm bars that clamp into the door frame on cars with a bare roof.",
+   "specs": [
+    "105cm aluminium bars",
+    "75kg max load",
+    "2 locks per bar",
+    "T-slot channel"
+   ],
+   "group": "4WD, roof & recovery",
+   "fit": "Supplier lists 4 and 5-door cars without raised rails; not for 3-door cars, vans or large 4x4s",
+   "our_price": 126.95,
+   "image": "/assets/shop/p/tr-au-011-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-011-1.webp",
+    "/assets/shop/p/tr-au-011-2.webp",
+    "/assets/shop/p/tr-au-011-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "clip-on-towing-mirrors-pair",
+   "sku": "TR-AU-012",
+   "name": "Clip-on towing mirrors (pair)",
+   "category": "automotive",
+   "description": "Strap-on towing mirrors with flat and convex glass for seeing past a caravan or trailer.",
+   "specs": [
+    "Pair",
+    "Flat and convex glass",
+    "360° ball swivel",
+    "Clamp and strap mounting"
+   ],
+   "group": "Towing & caravan",
+   "fit": "Supplier says universal clamp-on for cars, utes and 4x4s",
+   "universal": true,
+   "our_price": 58.95,
+   "image": "/assets/shop/p/tr-au-012-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-012-1.webp",
+    "/assets/shop/p/tr-au-012-2.webp",
+    "/assets/shop/p/tr-au-012-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "wheel-clamp-lock",
+   "sku": "TR-AU-013",
+   "name": "Wheel clamp lock",
+   "category": "automotive",
+   "description": "Bright yellow steel wheel clamp that covers the wheel nuts. Keeps a trailer or caravan where you left it.",
+   "specs": [
+    "Steel, yellow finish",
+    "Protective nut cover disc",
+    "Keyed lock"
+   ],
+   "group": "Towing & caravan",
+   "fit": "Supplier lists 13–15in wheels up to 220mm wide",
+   "our_price": 66.95,
+   "image": "/assets/shop/p/tr-au-013-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-013-1.webp",
+    "/assets/shop/p/tr-au-013-2.webp",
+    "/assets/shop/p/tr-au-013-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "retractable-windscreen-sunshade",
+   "sku": "TR-AU-014",
+   "name": "Retractable windscreen sun shade",
+   "category": "automotive",
+   "description": "Roll-out shade that sits at the base of the windscreen and pulls across when you park.",
+   "specs": [
+    "Adjusts 72–140cm wide",
+    "210D Oxford cloth, silver coated",
+    "Retracts into housing"
+   ],
+   "group": "Car care & interior",
+   "fit": "Supplier lists windscreens 72–140cm wide",
+   "our_price": 41.95,
+   "image": "/assets/shop/p/tr-au-014-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-014-1.webp",
+    "/assets/shop/p/tr-au-014-2.webp",
+    "/assets/shop/p/tr-au-014-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "sound-deadening-mat-20-sheets",
+   "sku": "TR-AU-015",
+   "name": "Sound deadening mat (20 sheets)",
+   "category": "automotive",
+   "description": "Peel-and-stick butyl sheets to quieten doors, floors and wheel arches.",
+   "specs": [
+    "20 sheets, 400 × 250mm",
+    "1.8m² coverage",
+    "2mm butyl with aluminium",
+    "−40°C to 120°C"
+   ],
+   "group": "Car care & interior",
+   "our_price": 82.95,
+   "image": "/assets/shop/p/tr-au-015-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-015-1.webp",
+    "/assets/shop/p/tr-au-015-2.webp",
+    "/assets/shop/p/tr-au-015-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "car-wheel-dolly-set-4",
+   "sku": "TR-AU-016",
+   "name": "Car wheel dollies (set of 4)",
+   "category": "automotive",
+   "description": "Diamond-plate skates that go under each tyre so one person can push a parked car around the garage.",
+   "specs": [
+    "4 dollies, 12 × 16in",
+    "6000lb (2700kg) combined",
+    "2 braked castors each"
+   ],
+   "group": "Garage & servicing",
+   "our_price": 238.95,
+   "image": "/assets/shop/p/tr-au-016-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-016-1.webp",
+    "/assets/shop/p/tr-au-016-2.webp",
+    "/assets/shop/p/tr-au-016-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "uhf-aerial-bullbar-mount",
+   "sku": "TR-AU-017",
+   "name": "UHF aerial bullbar mount",
+   "category": "automotive",
+   "description": "Folding steel aerial bracket with six angles and a spring latch, no tools needed to fold.",
+   "specs": [
+    "6 positions over 90°",
+    "Powder-coated steel",
+    "7 × 5.6 × 8.1cm"
+   ],
+   "group": "4WD, roof & recovery",
+   "fit": "Supplier says it uses existing factory holes on most bullbars",
+   "our_price": 81.95,
+   "image": "/assets/shop/p/tr-au-017-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-017-1.webp",
+    "/assets/shop/p/tr-au-017-2.webp",
+    "/assets/shop/p/tr-au-017-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "transmission-fluid-filler-pump-3l",
+   "sku": "TR-AU-018",
+   "name": "Transmission fluid filler pump 3L",
+   "category": "automotive",
+   "description": "Hand-pump ATF filler with gauge, a long hose and eight adaptors.",
+   "specs": [
+    "3L reservoir",
+    "0–85 PSI gauge",
+    "107cm hose",
+    "8 adaptors (5 universal, 3 vehicle-specific)"
+   ],
+   "group": "Garage & servicing",
+   "our_price": 100.95,
+   "image": "/assets/shop/p/tr-au-018-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-018-1.webp",
+    "/assets/shop/p/tr-au-018-2.webp",
+    "/assets/shop/p/tr-au-018-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "tailpipe-expander-set-3pc",
+   "sku": "TR-AU-019",
+   "name": "Tailpipe expander set (3 piece)",
+   "category": "automotive",
+   "description": "Drop-forged expanders to round out dented tailpipes and mufflers.",
+   "specs": [
+    "3 sizes, 1-1/8in to 3-1/2in",
+    "Drop-forged steel",
+    "Carry case"
+   ],
+   "group": "Garage & servicing",
+   "our_price": 64.95,
+   "image": "/assets/shop/p/tr-au-019-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-019-1.webp",
+    "/assets/shop/p/tr-au-019-2.webp",
+    "/assets/shop/p/tr-au-019-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "car-trim-retainer-clips-kit",
+   "sku": "TR-AU-020",
+   "name": "Car trim clip kit with removal tools",
+   "category": "automotive",
+   "description": "Big assortment of push clips for trim, bumpers, guards and splash shields, plus removal tools.",
+   "specs": [
+    "845 pieces, 24 sizes",
+    "4 removal tools",
+    "Nylon and metal"
+   ],
+   "group": "Garage & servicing",
+   "fit": "Supplier says universal; lists Ford, GM, Chrysler, Toyota, Honda and others",
+   "universal": true,
+   "our_price": 34.95,
+   "image": "/assets/shop/p/tr-au-020-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-020-1.webp",
+    "/assets/shop/p/tr-au-020-2.webp",
+    "/assets/shop/p/tr-au-020-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "roof-rack-side-awning-1-4x2m",
+   "sku": "TR-AU-021",
+   "name": "Roof rack side awning 1.4 × 2m",
+   "category": "automotive",
+   "description": "Quick roadside shade that bolts to your roof rack, with poles, ropes and pegs.",
+   "specs": [
+    "1.4 × 2m canopy",
+    "420D Oxford canvas",
+    "Telescopic legs to 2m",
+    "Brackets and carry bag included"
+   ],
+   "group": "4WD, roof & recovery",
+   "fit": "Supplier says it fits compatible roof rack systems with the 2 brackets supplied",
+   "our_price": 153.95,
+   "image": "/assets/shop/p/tr-au-021-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-021-1.webp",
+    "/assets/shop/p/tr-au-021-2.webp",
+    "/assets/shop/p/tr-au-021-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "panel-fender-stand",
+   "sku": "TR-AU-022",
+   "name": "Panel and fender stand",
+   "category": "automotive",
+   "description": "Adjustable padded stand for holding doors, bonnets and guards while you sand or paint.",
+   "specs": [
+    "58–104cm height",
+    "Opens 38–93cm",
+    "Up to 225kg (height dependent)",
+    "Foam-padded rails"
+   ],
+   "group": "Garage & servicing",
+   "our_price": 108.95,
+   "image": "/assets/shop/p/tr-au-022-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-022-1.webp",
+    "/assets/shop/p/tr-au-022-2.webp",
+    "/assets/shop/p/tr-au-022-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "rv-led-ceiling-light-12v",
+   "sku": "TR-AU-023",
+   "name": "12V LED ceiling light for RVs",
+   "category": "automotive",
+   "description": "Slim touch-dimming LED panel light for caravans, campers and vans.",
+   "specs": [
+    "1200 lumens, 18W",
+    "12–30V",
+    "Touch dimming",
+    "298 × 118 × 16mm"
+   ],
+   "group": "Towing & caravan",
+   "fit": "Supplier lists 12–30V vehicle systems",
+   "our_price": 31.95,
+   "image": "/assets/shop/p/tr-au-023-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-023-1.webp",
+    "/assets/shop/p/tr-au-023-2.webp",
+    "/assets/shop/p/tr-au-023-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "caravan-privacy-screen-3-4m",
+   "sku": "TR-AU-024",
+   "name": "Caravan privacy screen 3.4 × 1.8m",
+   "category": "automotive",
+   "description": "Side screen that slides into a roll-out awning for shade and privacy at camp.",
+   "specs": [
+    "3.4 × 1.8m",
+    "166gsm polyethylene",
+    "Pegs, ropes and bag included"
+   ],
+   "group": "Towing & caravan",
+   "fit": "Supplier says it works with most roll-out caravan awnings",
+   "our_price": 77.95,
+   "image": "/assets/shop/p/tr-au-024-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-024-1.webp",
+    "/assets/shop/p/tr-au-024-2.webp",
+    "/assets/shop/p/tr-au-024-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "pop-top-privacy-screen-2-1m",
+   "sku": "TR-AU-025",
+   "name": "Pop-top privacy screen 2.1 × 1.8m",
+   "category": "automotive",
+   "description": "Shorter screen for pop-top awnings, 95% shade, reversible fabric.",
+   "specs": [
+    "2.1 × 1.8m",
+    "95% shade",
+    "Stainless D-rings",
+    "7 ropes and pegs"
+   ],
+   "group": "Towing & caravan",
+   "fit": "Supplier lists most pop-top roll-out awnings, including Dometic A&E and Carefree Fiesta",
+   "our_price": 64.95,
+   "image": "/assets/shop/p/tr-au-025-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-025-1.webp",
+    "/assets/shop/p/tr-au-025-2.webp",
+    "/assets/shop/p/tr-au-025-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "caravan-roof-hatch-400",
+   "sku": "TR-AU-026",
+   "name": "Caravan roof hatch with fly screen",
+   "category": "automotive",
+   "description": "Clear roof vent with a handwheel opener and built-in mosquito net.",
+   "specs": [
+    "Fits openings 340–400mm square",
+    "Roof 25–50mm thick",
+    "Mosquito net",
+    "Handwheel opening"
+   ],
+   "group": "Towing & caravan",
+   "fit": "Supplier lists openings 340 × 340mm to 400 × 400mm, roof thickness 25–50mm",
+   "our_price": 142.95,
+   "image": "/assets/shop/p/tr-au-026-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-026-1.webp",
+    "/assets/shop/p/tr-au-026-2.webp",
+    "/assets/shop/p/tr-au-026-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "van-door-lock-hasp",
+   "sku": "TR-AU-027",
+   "name": "Van door lock with brackets",
+   "category": "automotive",
+   "description": "Heavy steel hasp lock with an enclosed shackle for van, ute canopy or shed doors.",
+   "specs": [
+    "Nickel-plated steel",
+    "Enclosed shackle",
+    "2 keys",
+    "Fixing bolts not included"
+   ],
+   "group": "Towing & caravan",
+   "our_price": 50.95,
+   "image": "/assets/shop/p/tr-au-027-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-027-1.webp",
+    "/assets/shop/p/tr-au-027-2.webp",
+    "/assets/shop/p/tr-au-027-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "heat-shrink-solder-connectors-250",
+   "sku": "TR-AU-028",
+   "name": "Heat shrink solder connectors (250)",
+   "category": "automotive",
+   "description": "Waterproof solder-seal butt connectors for 12V wiring jobs, in four sizes.",
+   "specs": [
+    "250 pieces, 4 sizes",
+    "IP67 when sealed",
+    "Needs a heat gun",
+    "Storage box"
+   ],
+   "group": "Garage & servicing",
+   "our_price": 45.95,
+   "image": "/assets/shop/p/tr-au-028-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-028-1.webp",
+    "/assets/shop/p/tr-au-028-2.webp",
+    "/assets/shop/p/tr-au-028-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "12v-solar-panel-50w",
+   "sku": "TR-AU-029",
+   "name": "12V solar panel 50W",
+   "category": "automotive",
+   "description": "Compact monocrystalline panel for a caravan, camper or ute canopy roof.",
+   "specs": [
+    "50W, 12V",
+    "58 × 51 × 3cm",
+    "Tempered glass, aluminium frame"
+   ],
+   "group": "Towing & caravan",
+   "our_price": 88.95,
+   "image": "/assets/shop/p/tr-au-029-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-029-1.webp",
+    "/assets/shop/p/tr-au-029-2.webp",
+    "/assets/shop/p/tr-au-029-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:22+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "gps-head-up-display-usb",
+   "sku": "TR-AU-030",
+   "name": "GPS head-up display (USB)",
+   "category": "automotive",
+   "description": "Plug-in GPS speed display for the dash. Adds a clear speed readout to any older car.",
+   "specs": [
+    "GPS + BeiDou speed",
+    "Direction, voltage, trip distance",
+    "Overspeed and fatigue alerts",
+    "USB powered"
+   ],
+   "group": "Upgrade older cars",
+   "fit": "Supplier says universal for all vehicles; speed comes from GPS, so no OBD port is needed",
+   "universal": true,
+   "our_price": 56.95,
+   "image": "/assets/shop/p/tr-au-030-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-030-1.webp",
+    "/assets/shop/p/tr-au-030-2.webp",
+    "/assets/shop/p/tr-au-030-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "portable-carplay-screen-7in",
+   "sku": "TR-AU-031",
+   "name": "Portable CarPlay & Android Auto screen 7in",
+   "category": "automotive",
+   "description": "Dash-mounted 7in touch screen that brings wireless CarPlay and Android Auto to a car without it.",
+   "specs": [
+    "7in 1024 × 600 touch screen",
+    "Wireless CarPlay and Android Auto",
+    "Bluetooth 5.1 hands-free",
+    "FM transmitter and reversing camera input"
+   ],
+   "group": "Upgrade older cars",
+   "fit": "Sound plays through your car radio by FM (87.5–108MHz); suction mount for the dash. No built-in battery",
+   "our_price": 80.95,
+   "regular_price": 88.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-au-031-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-031-1.webp",
+    "/assets/shop/p/tr-au-031-2.webp",
+    "/assets/shop/p/tr-au-031-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "wireless-carplay-adapter-2in1",
+   "sku": "TR-AU-032",
+   "name": "Wireless CarPlay & Android Auto adapter",
+   "category": "automotive",
+   "description": "Small dongle that turns a car's wired CarPlay into wireless CarPlay or Android Auto.",
+   "specs": [
+    "Wireless CarPlay and Android Auto",
+    "Plugs into USB or USB-C",
+    "iPhone 6 and up, Android 11 and up",
+    "55 × 28 × 9mm"
+   ],
+   "group": "Upgrade older cars",
+   "fit": "Supplier says it is only for cars that already have factory wired CarPlay. It does not add CarPlay to cars without it",
+   "our_price": 59.95,
+   "image": "/assets/shop/p/tr-au-032-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-032-1.webp",
+    "/assets/shop/p/tr-au-032-2.webp",
+    "/assets/shop/p/tr-au-032-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "bluetooth-fm-transmitter-km28",
+   "sku": "TR-AU-033",
+   "name": "Bluetooth FM transmitter and AUX adapter",
+   "category": "automotive",
+   "description": "Streams phone music and calls to an older car stereo by FM or AUX, with a large display.",
+   "specs": [
+    "Bluetooth 5.0",
+    "FM, AUX, TF card and MP3",
+    "Hands-free calls",
+    "Siri and Google Assistant"
+   ],
+   "group": "Upgrade older cars",
+   "fit": "Supplier lists playback via FM radio or AUX input",
+   "our_price": 57.95,
+   "image": "/assets/shop/p/tr-au-033-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-033-1.webp",
+    "/assets/shop/p/tr-au-033-2.webp",
+    "/assets/shop/p/tr-au-033-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "obd2-scanner-2-8in",
+   "sku": "TR-AU-034",
+   "name": "OBD2 code reader with colour screen",
+   "category": "automotive",
+   "description": "Reads and clears engine fault codes, with live data and I/M readiness on a 2.8in screen.",
+   "specs": [
+    "Reads and clears codes",
+    "Live data and freeze frame",
+    "I/M readiness, O2 and EVAP tests",
+    "2.8in colour screen"
+   ],
+   "group": "Upgrade older cars",
+   "fit": "Supplier lists OBD2/EOBD protocols J1850 PWM/VPW, ISO 9141-2, ISO 14230 KWP and ISO 15765 CAN, 9–16V. Your car needs an OBD2 port",
+   "our_price": 73.95,
+   "image": "/assets/shop/p/tr-au-034-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-034-1.webp",
+    "/assets/shop/p/tr-au-034-2.webp",
+    "/assets/shop/p/tr-au-034-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "dash-phone-mount-360",
+   "sku": "TR-AU-035",
+   "name": "Dashboard phone mount, 360°",
+   "category": "automotive",
+   "description": "Suction dash mount that rotates for portrait or landscape navigation, with a parking number card.",
+   "specs": [
+    "360° rotation",
+    "Suction and anti-slip base",
+    "Holds most phone sizes",
+    "230g"
+   ],
+   "group": "Upgrade older cars",
+   "fit": "Supplier says it holds a wide range of phone sizes; base suits smooth dash surfaces",
+   "our_price": 75.95,
+   "image": "/assets/shop/p/tr-au-035-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-035-1.webp",
+    "/assets/shop/p/tr-au-035-2.webp",
+    "/assets/shop/p/tr-au-035-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "usb-c-car-charger-130w",
+   "sku": "TR-AU-036",
+   "name": "USB-C car charger 130W, 3 port",
+   "category": "automotive",
+   "description": "Metal-bodied fast charger with two USB-C ports and one USB-A, enough for a phone and laptop at once.",
+   "specs": [
+    "130W total",
+    "USB-C 100W + USB-C 30W / USB-A 30W",
+    "Metal body",
+    "CHOETECH TC0011"
+   ],
+   "group": "Upgrade older cars",
+   "our_price": 63.95,
+   "image": "/assets/shop/p/tr-au-036-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-036-1.webp",
+    "/assets/shop/p/tr-au-036-2.webp",
+    "/assets/shop/p/tr-au-036-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "jump-starter-2000a",
+   "sku": "TR-AU-037",
+   "name": "Jump starter 2000A with power bank",
+   "category": "automotive",
+   "description": "Portable lithium jump starter for flat 12V batteries, with a torch and USB power bank.",
+   "specs": [
+    "2000A peak",
+    "Up to 7L petrol or 5.5L diesel",
+    "2 × USB out, USB-C in",
+    "4-mode LED light"
+   ],
+   "group": "4WD, roof & recovery",
+   "fit": "Supplier lists 12V vehicles up to 7L petrol or 5.5L diesel",
+   "our_price": 85.95,
+   "regular_price": 93.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-au-037-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-037-1.webp",
+    "/assets/shop/p/tr-au-037-2.webp",
+    "/assets/shop/p/tr-au-037-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "recovery-tracks-pair",
+   "sku": "TR-AU-038",
+   "name": "Recovery tracks (pair)",
+   "category": "automotive",
+   "description": "Reinforced nylon traction boards for getting unstuck from sand, mud or snow.",
+   "specs": [
+    "Pair",
+    "Reinforced nylon",
+    "28cm wide",
+    "Stated up to 10 tonnes"
+   ],
+   "group": "4WD, roof & recovery",
+   "our_price": 78.95,
+   "image": "/assets/shop/p/tr-au-038-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-038-1.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "car-wash-kit-22pc",
+   "sku": "TR-AU-039",
+   "name": "Car wash and detailing kit, 22 piece",
+   "category": "automotive",
+   "description": "Brushes, drill attachments, microfibre and sponges for inside and out, in a carry bag.",
+   "specs": [
+    "22 pieces",
+    "4 drill brush attachments",
+    "5 detailing brushes",
+    "Microfibre gloves and towel, bag"
+   ],
+   "group": "Car care & interior",
+   "our_price": 66.95,
+   "image": "/assets/shop/p/tr-au-039-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-039-1.webp",
+    "/assets/shop/p/tr-au-039-2.webp",
+    "/assets/shop/p/tr-au-039-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "first-aid-kit-258pc-artg",
+   "sku": "TR-AU-040",
+   "name": "First aid kit 258 piece (ARTG listed)",
+   "category": "automotive",
+   "description": "Two-bag first aid kit for the car or ute, listed on the Australian Register of Therapeutic Goods.",
+   "specs": [
+    "258 pieces in 2 kits",
+    "ARTG 244567",
+    "Includes CPR mask, emergency blanket, guide"
+   ],
+   "group": "Car care & interior",
+   "our_price": 78.95,
+   "image": "/assets/shop/p/tr-au-040-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-040-1.webp",
+    "/assets/shop/p/tr-au-040-2.webp",
+    "/assets/shop/p/tr-au-040-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "boot-organiser-65l",
+   "sku": "TR-AU-041",
+   "name": "Collapsible boot organiser 65L",
+   "category": "automotive",
+   "description": "Waterproof boot organiser with dividers and pockets that folds flat when not needed.",
+   "specs": [
+    "65L",
+    "Removable divider",
+    "Folds flat",
+    "Waterproof Oxford fabric"
+   ],
+   "group": "Car care & interior",
+   "our_price": 59.95,
+   "image": "/assets/shop/p/tr-au-041-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-041-1.webp",
+    "/assets/shop/p/tr-au-041-2.webp",
+    "/assets/shop/p/tr-au-041-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "led-light-bar-20in",
+   "sku": "TR-AU-042",
+   "name": "LED light bar 20in, spot and flood",
+   "category": "automotive",
+   "description": "Combo-beam LED driving light bar with mounting brackets for a 4WD or ute.",
+   "specs": [
+    "20in, 42 LEDs",
+    "13,230 lumens",
+    "9–32V, IP68",
+    "Brackets included, wiring loom not included"
+   ],
+   "group": "4WD, roof & recovery",
+   "fit": "Supplier lists 9–32V; wiring loom not included",
+   "our_price": 75.95,
+   "image": "/assets/shop/p/tr-au-042-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-042-1.webp",
+    "/assets/shop/p/tr-au-042-2.webp",
+    "/assets/shop/p/tr-au-042-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "winch-recovery-kit-11pc",
+   "sku": "TR-AU-043",
+   "name": "4WD winch recovery kit, 11 piece",
+   "category": "automotive",
+   "description": "Bag of winch recovery gear: tow strap, shackles, snatch block, damper and shovel.",
+   "specs": [
+    "8000kg 9m tow strap",
+    "2 × 4.75t shackles",
+    "8t snatch block",
+    "Damper, shovel, hitch receiver, tyre deflator"
+   ],
+   "group": "4WD, roof & recovery",
+   "our_price": 197.95,
+   "image": "/assets/shop/p/tr-au-043-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-043-1.webp",
+    "/assets/shop/p/tr-au-043-2.webp",
+    "/assets/shop/p/tr-au-043-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "front-seat-cover-pu-bamboo",
+   "sku": "TR-AU-044",
+   "name": "Front seat cover, PU with bamboo charcoal",
+   "category": "automotive",
+   "description": "Padded PU leather seat cover with a non-slip back and hook fixings.",
+   "specs": [
+    "PU leather, bamboo charcoal fill",
+    "Non-slip rubber base",
+    "2 buckles, 2 hooks",
+    "Approx. 53 × 51cm"
+   ],
+   "group": "Car care & interior",
+   "fit": "Supplier says universal and compatible with 95% of car models: small cars, sedans, SUVs, trucks, MPVs and vans",
+   "universal": true,
+   "our_price": 56.95,
+   "image": "/assets/shop/p/tr-au-044-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-044-1.webp",
+    "/assets/shop/p/tr-au-044-2.webp",
+    "/assets/shop/p/tr-au-044-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:31+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "active"

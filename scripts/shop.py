@@ -167,13 +167,27 @@ def price_html(p, big=False):
 def stock_html(p):
     return f'<p class="stk">{ic("check", "ic sm")}In stock</p>' if p.get("stock") == "in_stock" else ""
 
+def fit_html(p):
+    o = '<p class="uf">Universal fit</p>' if p.get("universal") else ""
+    if p.get("fit"): o += f'<p class="fit"><b>Fit:</b> {E(p["fit"])}</p>'
+    if p.get("model_no"): o += f'<p class="fit"><b>Model / part no.:</b> {E(p["model_no"])}</p>'
+    return o
+def gslug(g): return "g-" + re.sub(r"[^a-z0-9]+", "-", g.lower()).strip("-")
+def grouped(c, items, preview):
+    gs = [g for g in c.get("groups", []) if any(p.get("group") == g for p in items)]
+    if not gs: return grid(items, preview)
+    rest = [p for p in items if p.get("group") not in gs]
+    chips = '<nav class="chips" aria-label="Jump to group">' + "".join(f'<a href="#{gslug(g)}">{E(g)} <span>{sum(1 for p in items if p.get("group") == g)}</span></a>' for g in gs) + '</nav>'
+    out = chips + "".join(f'<section class="grp" id="{gslug(g)}"><h2>{E(g)}</h2>' + grid([p for p in items if p.get("group") == g], preview) + '</section>' for g in gs)
+    if rest: out += '<section class="grp" id="g-more"><h2>More</h2>' + grid(rest, preview) + '</section>'
+    return out
 def card(p, preview=False, lazy=True):
     href = f'/shop/p/{p["id"]}/'
     if not sellable(p):
         return (f'<article class="pc"><a class="pci" href="{href}"><img src="{E(img(p))}" alt="{E(p["name"])}" width="400" height="400" loading="lazy"></a>'
                 f'<div class="pcb"><p class="pcc">{E(CAT[p["category"]]["title"])}</p><h3><a href="{href}">{E(p["name"])}</a></h3><p class="pp"><span class="tbc">Draft, not for sale</span></p></div></article>')
     return (f'<article class="pc"><a class="pci" href="{href}"><img src="{E(img(p))}" alt="{E(p["name"])}" width="400" height="400"{" loading=lazy" if lazy else ""}></a>'
-            f'<div class="pcb"><p class="pcc">{E(CAT[p["category"]]["title"])}</p><h3><a href="{href}">{E(p["name"])}</a></h3>{price_html(p)}{stock_html(p)}'
+            f'<div class="pcb"><p class="pcc">{E(CAT[p["category"]]["title"])}</p><h3><a href="{href}">{E(p["name"])}</a></h3>{'<p class="uf">Universal fit</p>' if p.get("universal") else ""}{price_html(p)}{stock_html(p)}'
             f'<a class="btn ob" href="{E(buy_href(p))}">Order now</a></div></article>')
 
 def carousel(title, items, more_href, hid, preview=False):
@@ -252,7 +266,7 @@ def cat_page(C, c, prods, preview):
     items = [p for p in (prods if preview else listed(prods)) if p["category"] == c["id"]]
     main = ('<div class="wrap">' + crumbs((c["title"], None)) + '<div class="lay">' + sidebar(c["id"]) + '<div class="mc">'
             f'<div class="ph cph"><img src="/assets/img/cat-{c["id"]}.webp" alt="{E(ALT[c["id"]])}" width="640" height="480"><div><h1>{E(c["title"])}</h1><p>{E(c["blurb"])}</p></div></div>'
-            + grid(items, preview) + '<p class="note">Prices in Australian dollars, delivery included to most metro areas. <a href="/shop/shipping/">Shipping</a> &middot; <a href="/shop/returns/">Returns</a></p>'
+            + grouped(c, items, preview) + '<p class="note">Prices in Australian dollars, delivery included to most metro areas. <a href="/shop/shipping/">Shipping</a> &middot; <a href="/shop/returns/">Returns</a></p>'
             + '</div></div></div>')
     ld = [{"@type": "CollectionPage", "name": c["title"], "url": f'{BASE}/shop/{c["id"]}/'}, crumb_ld((c["title"], f'{BASE}/shop/{c["id"]}/'))]
     if items: ld.append({"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i, "name": p["name"], "url": f'{BASE}/shop/p/{p["id"]}/'} for i, p in enumerate(items, 1)]})
@@ -272,7 +286,7 @@ def product_page(C, p, prods, preview):
     stock = (f'<p class="stk">{ic("check", "ic sm")}In stock <span>(checked {nice_date(p["stock_checked"])})</span></p>' if p.get("stock") == "in_stock" and p.get("stock_checked") else stock_html(p))
     price = price_html(p, True) if ok else '<p class="pp big"><span class="tbc">Price to be confirmed</span></p>'
     main = ('<div class="wrap">' + crumbs((c["title"], f'/shop/{c["id"]}/'), (p["name"], None)) + '<div class="prd">' + gal +
-            f'<div class="pinf"><p class="pcc"><a href="/shop/{c["id"]}/">{E(c["title"])}</a></p><h1>{E(p["name"])}</h1><p class="sku">Product ID: {E(p.get("sku") or p["id"])}</p>'
+            f'<div class="pinf"><p class="pcc"><a href="/shop/{c["id"]}/">{E(c["title"])}</a></p><h1>{E(p["name"])}</h1><p class="sku">Product ID: {E(p.get("sku") or p["id"])}</p>' + fit_html(p) +
             f'{price}{stock}{buy}<p class="dsc">{E(str(p.get("description") or ""))}</p>'
             + (f'<h2>Specs</h2><ul class="spec">{specs}</ul>' if specs else "") +
             f'<ul class="pfacts"><li>{ic("truck", "ic sm")}Ships direct from an Australian supplier, usually within 1&ndash;3 business days. Delivery included to most metro areas.</li>'

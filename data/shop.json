@@ -26,8 +26,15 @@
   },
   {
    "id": "automotive",
-   "title": "Automotive",
-   "blurb": "Socket sets, jacks, stands and garage gear."
+   "title": "Automotive & 4WD",
+   "blurb": "Upgrades for older cars, 4WD and recovery gear, towing, caravan and car care.",
+   "groups": [
+    "Upgrade older cars",
+    "4WD, roof & recovery",
+    "Towing & caravan",
+    "Car care & interior",
+    "Garage & servicing"
+   ]
   },
   {
    "id": "garden",
