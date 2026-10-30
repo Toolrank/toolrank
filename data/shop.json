@@ -1,0 +1,58 @@
+{
+ "_note": "Store config. The seller shown on the site is always 'ToolRank' (contact hello@toolrank.io); never add a personal name or ABN here. Products only appear on the site when status is 'active' AND our_price is set AND (stripe_link is set OR order_by_email is true).",
+ "contact_email": "hello@toolrank.io",
+ "change_of_mind_days": null,
+ "policies_updated": "2026-10-27",
+ "categories": [
+  {
+   "id": "power-tools",
+   "title": "Power tools",
+   "blurb": "Drills, drivers, saws, grinders and accessories."
+  },
+  {
+   "id": "hand-tools",
+   "title": "Hand tools",
+   "blurb": "Spanners, screwdrivers, pliers, hammers and bit sets."
+  },
+  {
+   "id": "hardware",
+   "title": "Hardware & fasteners",
+   "blurb": "Screws, bolts, anchors, hinges and fixings."
+  },
+  {
+   "id": "building",
+   "title": "Building & construction",
+   "blurb": "Sawhorses, clamps, ladders and site gear."
+  },
+  {
+   "id": "automotive",
+   "title": "Automotive",
+   "blurb": "Socket sets, jacks, stands and garage gear."
+  },
+  {
+   "id": "garden",
+   "title": "Garden & outdoor",
+   "blurb": "Pruners, rakes, hoses and outdoor gear."
+  },
+  {
+   "id": "cleaning",
+   "title": "Cleaning",
+   "blurb": "Pressure-washer gear, brushes and buckets."
+  },
+  {
+   "id": "safety",
+   "title": "Safety & workwear",
+   "blurb": "Gloves, glasses, hearing protection and hi-vis."
+  },
+  {
+   "id": "workshop-storage",
+   "title": "Workshop storage",
+   "blurb": "Tool chests, workbenches, trolleys and racking."
+  },
+  {
+   "id": "music-gear",
+   "title": "Music gear",
+   "blurb": "Stands, mics, studio foam, rack gear and stage essentials."
+  }
+ ]
+}

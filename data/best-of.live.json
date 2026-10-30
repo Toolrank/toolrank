@@ -1,0 +1,632 @@
+[
+{
+"slug": "ai-meeting-note-takers"
+},
+{
+"slug": "ai-tools-for-zoom-meetings"
+},
+{
+"slug": "ai-tools-for-microsoft-teams"
+},
+{
+"slug": "ai-tools-for-google-workspace"
+},
+{
+"slug": "ai-avatar-video-generators"
+},
+{
+"slug": "ai-text-to-video-generators"
+},
+{
+"slug": "voice-ai-apis-for-developers"
+},
+{
+"slug": "ai-search-engines"
+},
+{
+"slug": "ai-tools-for-academic-research"
+},
+{
+"slug": "no-code-ai-agent-builders"
+},
+{
+"slug": "open-source-ai-agent-platforms"
+},
+{
+"slug": "ai-website-builders"
+},
+{
+"slug": "ai-coding-tools-for-jetbrains"
+},
+{
+"slug": "ai-coding-tools-for-vs-code"
+},
+{
+"slug": "ai-coding-tools-bring-your-own-key"
+},
+{
+"slug": "ai-coding-tools-with-local-models"
+},
+{
+"slug": "ai-coding-tools-for-github"
+},
+{
+"slug": "free-ai-chatbots"
+},
+{
+"slug": "ai-assistants-for-office-suites"
+},
+{
+"slug": "ai-image-generators-with-api"
+},
+{
+"slug": "ai-game-asset-generators"
+},
+{
+"slug": "ai-tools-for-restaurants"
+},
+{
+"slug": "ai-tools-with-mcp-support"
+},
+{
+"slug": "ai-tools-under-10-dollars-a-month"
+},
+{
+"slug": "free-crypto-analytics-and-portfolio-tools"
+},
+{
+"slug": "ai-grammar-checkers"
+},
+{
+"slug": "ai-assistants-under-30-a-month"
+},
+{
+"slug": "ai-coding-tools-under-10-a-month"
+},
+{
+"slug": "ai-coding-tools-under-15-a-month"
+},
+{
+"slug": "ai-coding-tools-under-30-a-month"
+},
+{
+"slug": "paid-ai-coding-tools-no-free-plan"
+},
+{
+"slug": "ai-coding-tools-with-mobile-apps"
+},
+{
+"slug": "ai-coding-tools-for-desktop"
+},
+{
+"slug": "ai-coding-tools-for-teams"
+},
+{
+"slug": "ai-coding-tools-for-enterprise"
+},
+{
+"slug": "ai-coding-tools-with-annual-discount"
+},
+{
+"slug": "ai-coding-tools-with-mcp"
+},
+{
+"slug": "self-hosted-ai-coding-tools"
+},
+{
+"slug": "ai-image-tools-under-15-a-month"
+},
+{
+"slug": "paid-ai-image-tools-no-free-plan"
+},
+{
+"slug": "free-ai-video-tools"
+},
+{
+"slug": "ai-video-tools-under-15-a-month"
+},
+{
+"slug": "ai-video-tools-under-20-a-month"
+},
+{
+"slug": "ai-video-tools-under-30-a-month"
+},
+{
+"slug": "ai-video-tools-with-an-api"
+},
+{
+"slug": "ai-video-tools-for-enterprise"
+},
+{
+"slug": "ai-video-tools-with-annual-discount"
+},
+{
+"slug": "ai-writing-tools-under-10-a-month"
+},
+{
+"slug": "ai-writing-tools-with-annual-discount"
+},
+{
+"slug": "free-ai-voice-and-audio-tools"
+},
+{
+"slug": "crypto-analytics-tools-with-api"
+},
+{
+"slug": "free-ai-tools-for-finding-research-papers"
+},
+{
+"slug": "ai-agent-frameworks-for-developers"
+},
+{
+"slug": "ai-text-to-speech-tools"
+},
+{
+"slug": "ai-app-builders-for-non-coders"
+},
+{
+"slug": "ai-note-taking-apps"
+},
+{
+"slug": "ai-video-generators-with-free-plans"
+},
+{
+"slug": "ai-coding-tools-under-100-a-month"
+},
+{
+"slug": "free-ai-image-tools"
+},
+{
+"slug": "ai-image-tools-with-annual-discount"
+},
+{
+"slug": "paid-ai-video-tools-no-free-plan"
+},
+{
+"slug": "ai-voice-and-audio-tools-under-10-a-month"
+},
+{
+"slug": "ai-voice-and-audio-tools-under-20-a-month"
+},
+{
+"slug": "ai-voice-and-audio-tools-under-30-a-month"
+},
+{
+"slug": "ai-voice-and-audio-tools-with-an-api"
+},
+{
+"slug": "ai-voice-and-audio-tools-for-desktop"
+},
+{
+"slug": "ai-voice-and-audio-tools-with-annual-discount"
+},
+{
+"slug": "free-ai-automation-tools"
+},
+{
+"slug": "ai-automation-tools-under-50-a-month"
+},
+{
+"slug": "cheapest-ai-automation-tools"
+},
+{
+"slug": "paid-ai-automation-tools-no-free-plan"
+},
+{
+"slug": "ai-automation-tools-with-an-api"
+},
+{
+"slug": "ai-automation-tools-for-teams"
+},
+{
+"slug": "self-hosted-ai-automation-tools"
+},
+{
+"slug": "free-ai-research-and-productivity-tools"
+},
+{
+"slug": "ai-research-and-productivity-tools-under-10-a-month"
+},
+{
+"slug": "ai-research-and-productivity-tools-under-15-a-month"
+},
+{
+"slug": "ai-research-and-productivity-tools-under-20-a-month"
+},
+{
+"slug": "ai-research-and-productivity-tools-with-free-trial-no-free-plan"
+},
+{
+"slug": "ai-research-and-productivity-tools-with-an-api"
+},
+{
+"slug": "ai-research-and-productivity-tools-for-desktop"
+},
+{
+"slug": "ai-research-and-productivity-tools-for-teams"
+},
+{
+"slug": "ai-research-and-productivity-tools-with-annual-discount"
+},
+{
+"slug": "ai-research-and-productivity-tools-with-mcp"
+},
+{
+"slug": "free-ai-business-tools"
+},
+{
+"slug": "ai-business-tools-under-15-a-month"
+},
+{
+"slug": "ai-business-tools-under-30-a-month"
+},
+{
+"slug": "ai-business-tools-with-annual-discount"
+},
+{
+"slug": "ai-crypto-tools-under-50-a-month"
+},
+{
+"slug": "cheapest-ai-crypto-tools"
+},
+{
+"slug": "free-ai-education-tools"
+},
+{
+"slug": "free-ai-game-development-tools"
+},
+{
+"slug": "ai-game-development-tools-under-30-a-month"
+},
+{
+"slug": "python-ai-agent-frameworks"
+},
+{
+"slug": "ai-tools-for-hotels"
+},
+{
+"slug": "ai-image-tools-under-10-a-month"
+},
+{
+"slug": "ai-image-tools-for-teams"
+},
+{
+"slug": "ai-image-tools-for-enterprise"
+},
+{
+"slug": "ai-video-tools-under-10-a-month"
+},
+{
+"slug": "ai-video-tools-with-mobile-apps"
+},
+{
+"slug": "ai-video-tools-for-teams"
+},
+{
+"slug": "ai-video-tools-with-mcp"
+},
+{
+"slug": "ai-automation-tools-for-enterprise"
+},
+{
+"slug": "ai-automation-tools-with-mcp"
+},
+{
+"slug": "cheapest-ai-research-and-productivity-tools"
+},
+{
+"slug": "ai-research-and-productivity-tools-for-enterprise"
+},
+{
+"slug": "free-ai-marketing-tools"
+},
+{
+"slug": "cheapest-ai-marketing-tools"
+},
+{
+"slug": "ai-health-and-fitness-tools-with-mobile-apps"
+},
+{
+"slug": "ai-image-tools-with-mobile-apps"
+},
+{
+"slug": "ai-image-tools-with-mcp"
+},
+{
+"slug": "ai-writing-tools-for-desktop"
+},
+{
+"slug": "ai-voice-and-audio-tools-with-mobile-apps"
+},
+{
+"slug": "ai-voice-and-audio-tools-for-teams"
+},
+{
+"slug": "ai-voice-and-audio-tools-for-enterprise"
+},
+{
+"slug": "ai-business-tools-with-mobile-apps"
+},
+{
+"slug": "ai-crypto-tools-with-mobile-apps"
+},
+{
+"slug": "ai-crypto-tools-with-an-api"
+},
+{
+"slug": "ai-crypto-tools-with-mcp"
+},
+{
+"slug": "ai-game-development-tools-for-enterprise"
+},
+{
+"slug": "ai-game-development-tools-with-mcp"
+},
+{
+"slug": "ai-coding-agents-in-slack"
+},
+{
+"slug": "ai-music-generators"
+},
+{
+"slug": "ai-assistants-for-desktop"
+},
+{
+"slug": "self-hosted-ai-image-tools"
+},
+{
+"slug": "free-ai-writing-tools"
+},
+{
+"slug": "ai-research-and-productivity-tools-with-mobile-apps"
+},
+{
+"slug": "paid-ai-crypto-tools-no-free-plan"
+},
+{
+"slug": "ai-crypto-tools-for-enterprise"
+},
+{
+"slug": "ai-tools-for-restaurants-for-enterprise"
+},
+{
+"slug": "ai-crypto-tools-with-annual-discount"
+},
+{
+"slug": "ai-tools-for-teachers"
+},
+{
+"slug": "ai-image-tools-for-desktop"
+},
+{
+"slug": "ai-marketing-tools-under-30-a-month"
+},
+{
+"slug": "paid-ai-marketing-tools-no-free-plan"
+},
+{
+"slug": "ai-marketing-tools-with-an-api"
+},
+{
+"slug": "ai-marketing-tools-for-teams"
+},
+{
+"slug": "ai-marketing-tools-for-enterprise"
+},
+{
+"slug": "ai-marketing-tools-with-annual-discount"
+},
+{
+"slug": "ai-hospitality-tools-with-free-trial-no-free-plan"
+},
+{
+"slug": "paid-ai-hospitality-tools-no-free-plan"
+},
+{
+"slug": "ai-hospitality-tools-with-an-api"
+},
+{
+"slug": "ai-hospitality-tools-for-enterprise"
+},
+{
+"slug": "ai-education-tools-under-10-a-month"
+},
+{
+"slug": "ai-education-tools-for-enterprise"
+},
+{
+"slug": "ai-health-and-fitness-tools-under-10-a-month"
+},
+{
+"slug": "crypto-trading-bots"
+},
+{
+"slug": "ai-dictation-apps"
+},
+{
+"slug": "ai-code-review-tools"
+},
+{
+"slug": "ai-marketing-tools-under-20-a-month"
+},
+{
+"slug": "free-ai-hospitality-tools"
+},
+{
+"slug": "ai-hospitality-tools-under-30-a-month"
+},
+{
+"slug": "cheapest-ai-hospitality-tools"
+},
+{
+"slug": "ai-hospitality-tools-with-mobile-apps"
+},
+{
+"slug": "ai-crypto-tools-under-30-a-month"
+},
+{
+"slug": "ai-education-tools-under-15-a-month"
+},
+{
+"slug": "ai-education-tools-with-mobile-apps"
+},
+{
+"slug": "ai-education-tools-with-annual-discount"
+},
+{
+"slug": "free-ai-health-and-fitness-tools"
+},
+{
+"slug": "ai-health-and-fitness-tools-with-free-trial-no-free-plan"
+},
+{
+"slug": "ai-health-and-fitness-tools-with-annual-discount"
+},
+{
+"slug": "ai-game-development-tools-under-15-a-month"
+},
+{
+"slug": "ai-game-development-tools-under-20-a-month"
+},
+{
+"slug": "ai-game-development-tools-with-an-api"
+},
+{
+"slug": "ai-game-development-tools-for-teams"
+},
+{
+"slug": "ai-game-development-tools-with-annual-discount"
+},
+{
+"slug": "ai-fitness-trackers"
+},
+{
+"slug": "paid-ai-writing-tools-no-free-plan"
+},
+{
+"slug": "ai-automation-tools-under-30-a-month"
+},
+{
+"slug": "ai-marketing-tools-under-100-a-month"
+},
+{
+"slug": "ai-marketing-tools-with-free-trial-no-free-plan"
+},
+{
+"slug": "ai-marketing-tools-with-mobile-apps"
+},
+{
+"slug": "ai-marketing-tools-with-mcp"
+},
+{
+"slug": "ai-hospitality-tools-with-mcp"
+},
+{
+"slug": "ai-education-tools-with-free-trial-no-free-plan"
+},
+{
+"slug": "cheapest-ai-health-and-fitness-tools"
+},
+{
+"slug": "ai-assistants-under-10-a-month"
+},
+{
+"slug": "ai-assistants-for-teams"
+},
+{
+"slug": "ai-assistants-with-annual-discount"
+},
+{
+"slug": "ai-coding-tools-with-free-trial-no-free-plan"
+},
+{
+"slug": "ai-video-tools-for-desktop"
+},
+{
+"slug": "ai-writing-tools-under-15-a-month"
+},
+{
+"slug": "ai-writing-tools-for-teams"
+},
+{
+"slug": "cheapest-ai-tools-for-restaurants"
+},
+{
+"slug": "ai-hospitality-tools-under-15-a-month"
+},
+{
+"slug": "ai-hospitality-tools-with-annual-discount"
+},
+{
+"slug": "ai-education-tools-for-teams"
+},
+{
+"slug": "ai-health-and-fitness-tools-for-teams"
+},
+{
+"slug": "ai-health-and-fitness-tools-for-enterprise"
+},
+{
+"slug": "ai-business-tools-under-10-a-month"
+},
+{
+"slug": "ai-pricing-tools-for-rentals-and-hotels"
+},
+{
+"slug": "ai-guest-messaging-for-vacation-rentals"
+},
+{
+"slug": "ai-tools-for-airbnb-hosts"
+},
+{
+"slug": "ai-social-media-schedulers"
+},
+{
+"slug": "ai-seo-tools"
+},
+{
+"slug": "ai-3d-model-generators"
+},
+{
+"slug": "ai-tools-for-blender-users"
+},
+{
+"slug": "crypto-security-and-scam-detection-tools"
+},
+{
+"slug": "onchain-analytics-platforms"
+},
+{
+"slug": "ai-phone-answering-for-restaurants"
+},
+{
+"slug": "ai-tools-for-slack-users"
+},
+{
+"slug": "ai-tools-for-zapier-users"
+},
+{
+"slug": "ai-tools-for-canva-users"
+},
+{
+"slug": "ai-browser-extensions"
+},
+{
+"slug": "ai-tools-for-hubspot-users"
+},
+{
+"slug": "ai-tools-with-whatsapp"
+},
+{
+"slug": "ai-tools-for-microsoft-word"
+},
+{
+"slug": "ai-tools-for-google-docs"
+},
+{
+"slug": "ai-automation-tools-under-20-a-month"
+},
+{
+"slug": "ai-automation-tools-with-annual-discount"
+}
+]

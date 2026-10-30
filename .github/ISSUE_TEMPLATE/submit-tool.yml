@@ -1,0 +1,48 @@
+name: Submit a tool
+description: Submit an AI tool for a free ToolRank listing (editorial review, inclusion not guaranteed).
+title: "Submit tool: "
+labels: ["submission"]
+body:
+  - type: input
+    id: name
+    attributes: {label: Tool name}
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes: {label: Tool URL, placeholder: "https://"}
+    validations: {required: true}
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - "AI Assistants"
+        - "Coding & App Building"
+        - "Image & Design"
+        - "Video & Animation"
+        - "Writing & Content"
+        - "Voice & Audio"
+        - "Automation & Agents"
+        - "Research & Productivity"
+        - "Marketing & Sales"
+        - "Business & Data"
+        - "Restaurants & Bars"
+        - "Hospitality & Travel"
+        - "Crypto & Web3"
+        - "Education & Learning"
+        - "Health & Fitness"
+        - "Gaming"
+        - "Other / new category"
+    validations: {required: true}
+  - type: input
+    id: desc
+    attributes: {label: One-line description}
+    validations: {required: true}
+  - type: dropdown
+    id: pricing
+    attributes: {label: Pricing, options: [free, freemium, paid]}
+    validations: {required: true}
+  - type: input
+    id: email
+    attributes: {label: Contact email, description: "Visible publicly on this issue."}
+    validations: {required: true}

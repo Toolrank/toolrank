@@ -1,0 +1,150 @@
+{
+ "fetched": "2026-10-30 21:48 UTC",
+ "fetched_ts": 1793396896,
+ "stars_baseline": "2026-10-23",
+ "repos_tracked": 16,
+ "stars": [
+  {
+   "tool": "logo-design-skill",
+   "repo": "kaankiziltug/logo-design-skill",
+   "gained": 1193,
+   "stars": 5390,
+   "url": "https://github.com/kaankiziltug/logo-design-skill"
+  },
+  {
+   "tool": "Gemini CLI",
+   "repo": "google-gemini/gemini-cli",
+   "gained": 1102,
+   "stars": 108634,
+   "url": "https://github.com/google-gemini/gemini-cli"
+  },
+  {
+   "tool": "geo-sleuth",
+   "repo": "Oldcircle/geo-sleuth",
+   "gained": 740,
+   "stars": 4606,
+   "url": "https://github.com/Oldcircle/geo-sleuth"
+  },
+  {
+   "tool": "OpenAI Whisper",
+   "repo": "openai/whisper",
+   "gained": 502,
+   "stars": 111598,
+   "url": "https://github.com/openai/whisper"
+  },
+  {
+   "tool": "scroll-craft",
+   "repo": "nateherkai/scroll-craft",
+   "gained": 365,
+   "stars": 4262,
+   "url": "https://github.com/nateherkai/scroll-craft"
+  },
+  {
+   "tool": "jevgrep",
+   "repo": "dzhng/jevgrep",
+   "gained": 249,
+   "stars": 3102,
+   "url": "https://github.com/dzhng/jevgrep"
+  },
+  {
+   "tool": "Easel",
+   "repo": "ZJU-REAL/Easel",
+   "gained": 203,
+   "stars": 4218,
+   "url": "https://github.com/ZJU-REAL/Easel"
+  },
+  {
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 201,
+   "stars": 4070,
+   "url": "https://github.com/nykooi1/vibe-wise"
+  },
+  {
+   "tool": "ReelMimic",
+   "repo": "edenfunf/reelmimic",
+   "gained": 194,
+   "stars": 290,
+   "url": "https://github.com/edenfunf/reelmimic"
+  },
+  {
+   "tool": "VoiceMem",
+   "repo": "xzf-thu/VoiceMem",
+   "gained": 132,
+   "stars": 2780,
+   "url": "https://github.com/xzf-thu/VoiceMem"
+  }
+ ],
+ "hn": [
+  {
+   "tool": "Cursor",
+   "stories": 2,
+   "points": 155,
+   "top_title": "The Agent SDK",
+   "top_url": "https://news.ycombinator.com/item?id=50273731"
+  },
+  {
+   "tool": "Cartesia",
+   "stories": 1,
+   "points": 92,
+   "top_title": "Scaling Hierarchical Networks",
+   "top_url": "https://news.ycombinator.com/item?id=50278253"
+  },
+  {
+   "tool": "Claude",
+   "stories": 2,
+   "points": 5,
+   "top_title": "Show HN: Measuring how much of an AI-assisted design is yours",
+   "top_url": "https://news.ycombinator.com/item?id=50278863"
+  },
+  {
+   "tool": "IFTTT",
+   "stories": 2,
+   "points": 5,
+   "top_title": "IFTTT ends unlimited runs on its free plan",
+   "top_url": "https://news.ycombinator.com/item?id=50278827"
+  },
+  {
+   "tool": "Google AI Mode",
+   "stories": 1,
+   "points": 5,
+   "top_title": "Google plans to support shared AI training opt-out via robots.txt",
+   "top_url": "https://news.ycombinator.com/item?id=50309270"
+  },
+  {
+   "tool": "Agno",
+   "stories": 3,
+   "points": 4,
+   "top_title": "How to improve agents: simulations, traces and evaluations",
+   "top_url": "https://news.ycombinator.com/item?id=50306150"
+  },
+  {
+   "tool": "CodeRabbit",
+   "stories": 2,
+   "points": 4,
+   "top_title": "New CodeRabbit Features: Security Agents for Multi-Repo Deep Scans",
+   "top_url": "https://news.ycombinator.com/item?id=50263609"
+  },
+  {
+   "tool": "Anatomy",
+   "stories": 1,
+   "points": 4,
+   "top_title": "Generates polished SVGs with optional WebGL shaders and 3D effects",
+   "top_url": "https://news.ycombinator.com/item?id=50247313"
+  },
+  {
+   "tool": "Amp",
+   "stories": 2,
+   "points": 3,
+   "top_title": "Self-Hosted Orbs",
+   "top_url": "https://news.ycombinator.com/item?id=50273447"
+  },
+  {
+   "tool": "Perplexity",
+   "stories": 2,
+   "points": 2,
+   "top_title": "Rethinking Search as Code Generation",
+   "top_url": "https://news.ycombinator.com/item?id=50278103"
+  }
+ ]
+}

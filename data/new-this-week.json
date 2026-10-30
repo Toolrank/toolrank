@@ -1,0 +1,237 @@
+{
+ "updated": "2026-10-23",
+ "note": "GitHub items dated by trending snapshot date, not repo creation date.",
+ "items": [
+  {
+   "date": "2026-10-23",
+   "title": "Graphify-Labs/graphify",
+   "summary": "GitHub daily trending: turns a codebase, with its docs, SQL schemas, configs and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex and Gemini CLI, using local AST parsing and no vector store.",
+   "url": "https://github.com/Graphify-Labs/graphify",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-23",
+   "title": "DietrichGebert/ponytail",
+   "summary": "GitHub daily trending: a coding-agent add-on that pushes your agent to write as little code as possible, like the laziest senior dev in the room.",
+   "url": "https://github.com/DietrichGebert/ponytail",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-22",
+   "title": "OpenAI Decisions API (GA)",
+   "summary": "OpenAI's Decisions API is now generally available. Built on GPT-6 Luna, it returns typed answers (yes/no probabilities, fixed choices or rubric scores) from text, images or JSON, up to 10x faster than the Responses API. Adds prompt caching, GPT-Live integration and up to 400 questions per request.",
+   "url": "https://openai.com/index/decisions-api/",
+   "type": "launch"
+  },
+  {
+   "date": "2026-10-22",
+   "title": "Hugging Face Carbon-X",
+   "summary": "An open 14.8B model that reads raw DNA in an ordinary chat and answers in English: variant-effect prediction, regulatory regions, organism classification and next-base prediction. Built on Qwen3-14B, fits one 80 GB GPU, GGUF builds available. Research use only, not clinically validated.",
+   "url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-22",
+   "title": "akitaonrails/ai-memory",
+   "summary": "GitHub daily trending: long-term memory for coding-agent CLIs that also makes it easier to hand work off between different agent vendors. MIT licensed.",
+   "url": "https://github.com/akitaonrails/ai-memory",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-21",
+   "title": "Claude Duet (research preview)",
+   "summary": "Anthropic's new proactive agent app for iOS, Android and claude.ai. It watches your connected apps, sends a morning brief, keeps working on its own cloud computer, and asks before sensitive actions. Waitlist for US Pro and Max subscribers; uses your plan's usage limits.",
+   "url": "https://claude.com/resources/articles/claude-duet",
+   "type": "launch"
+  },
+  {
+   "date": "2026-10-21",
+   "title": "Base Labs mammoth-1 and elephant-1",
+   "summary": "Two open-weight decision models from Base Labs at Baseten (27B and 9B, post-trained from Qwen3.5) that return calibrated probabilities for yes/no, choice and score questions in one pass. Weights on Hugging Face; free on Baseten Model APIs until 27 Oct 2026.",
+   "url": "https://labs.baseten.co/articles/mammoth-1-and-elephant-1-frontier-decision-models",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-21",
+   "title": "cloudflare/security-audit-skill",
+   "summary": "GitHub daily trending: a coding-agent skill from Cloudflare for multi-phase security audits, with independently verified, machine-readable findings. MIT licensed.",
+   "url": "https://github.com/cloudflare/security-audit-skill",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-21",
+   "title": "Recursive Flint",
+   "summary": "Recursive's first model: a 40B mixture-of-experts coding model with about 2.5B active per token, built for fast agentic coding on local hardware. Over 125 tokens/s on an M4 Pro MacBook Pro, up to 512k context. Free open weights on Hugging Face under Apache 2.0.",
+   "url": "https://recursive.com/updates/introducing-recursive-flint",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-21",
+   "title": "Gradium Phonon",
+   "summary": "Open-source text-to-speech that runs fully on-device, in as little as 64.5 MB with 31M parameters, on phones, laptops, embedded hardware and in the browser. Apache 2.0 weights on Hugging Face; voice cloning and design via the Gradium API.",
+   "url": "https://gradium.ai/blog/gradium-releases-phonon",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "Perplexity Computer runs fully local on Mac",
+   "summary": "Perplexity's Computer agent can now run entirely on-device in the Mac app, using Qwen 3.6 or PPLX Pro, and work with local files and apps like Notes, Mail and Numbers. For Pro, Max and Enterprise subscribers; 36 GB+ unified memory recommended.",
+   "url": "https://www.perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac",
+   "type": "launch"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "Mistral Voxtral 3",
+   "summary": "New speech-to-text and text-to-speech models plus a LiveKit-based voice agent SDK: transcription in 50+ languages with diarization, expressive speech in 35+ languages, and sub-second turns. From $0.0035/min transcription and $13 per 1M characters for speech; EU-hosted API or self-deployment.",
+   "url": "https://mistral.ai/news/voxtral-3/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "ElevenLabs Eleven Realtime",
+   "summary": "Two speech-to-speech models that each act as a complete voice agent: v1 Mini for natural, low-cost conversations and v1 Max for complex, tool-heavy tasks. 90+ languages, 17,000+ voices, in ElevenAgents and an OpenAI Realtime-compatible API; rolling out gradually.",
+   "url": "https://elevenlabs.io/blog/realtime",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "Bria Fibo 2",
+   "summary": "Bria's new image generation and editing model, trained on 100% licensed data. Open weights for Generate and Edit on Hugging Face, and the same Bria API with no code changes.",
+   "url": "https://docs.bria.ai/whats-new/fibo-2",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "i14 Sugar Glider 120B",
+   "summary": "A 120B model on i14's constant-memory Cerbearus architecture that reads up to a million tokens with fixed memory per token, fitting many more long-context requests per server. Early access via waitlist, in i14's cloud, your VPC or on-premises.",
+   "url": "https://www.i14.ai/news/sugar-glider-120b",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "stablyai/orca",
+   "summary": "GitHub daily trending: a place for working with a fleet of coding agents. Run any coding agent with your own subscription, on desktop, mobile or a remote runtime.",
+   "url": "https://github.com/stablyai/orca",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "headroomlabs-ai/headroom",
+   "summary": "GitHub daily trending: compresses tool outputs, logs, files and RAG chunks before they reach the LLM, claiming 20% fewer tokens for coding agents and 60-95% fewer for JSON. Library, proxy and MCP server.",
+   "url": "https://github.com/headroomlabs-ai/headroom",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "humans& Ampersand v0.1",
+   "summary": "A 'collaborator' model built on GLM 5.3 and trained to help groups reach individual and shared goals over months, for example inside a group chat. Available now through an OpenAI Agents API-compatible API, no waitlist.",
+   "url": "https://ampersand.humansand.ai/blog/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-20",
+   "title": "Ornith-1.5-122B (open weights)",
+   "summary": "A 122B mixture-of-experts model from Ornith, trained with a self-improvement loop and designed for single-GPU deployment. MIT-licensed weights and GGUF quantizations on Hugging Face.",
+   "url": "https://huggingface.co/ornith-ai/Ornith-1.5-122B",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "Gemini API CLI (experimental)",
+   "summary": "Google's zero-dependency gemini-api command-line tool brings Gemini models, image, video and speech generation, media analysis and Managed Agents into your terminal and any coding agent with shell access. macOS, Linux and Windows; needs a Gemini API key.",
+   "url": "https://aistudio.google.com/learn/introducing-the-gemini-api-cli",
+   "type": "launch"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "Inception Mercury 3",
+   "summary": "Inception's largest diffusion language model, claimed at 1,068 tokens/s on NVIDIA GPUs with a 1M-token context. $0.20/$0.70 per 1M input/output tokens (50% off at launch); OpenAI-compatible API, OpenRouter, Baseten and Vercel. Weights not released.",
+   "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "MiniMax M3.1 Flash",
+   "summary": "MiniMax's next-generation Flash model for agentic tasks, coding, computer use and cybersecurity, revealed as the anonymous 'Space Bunny'. $0.15/$0.60 per 1M tokens via the MiniMax API, M Plan and MiniMax Code; weights to follow.",
+   "url": "https://www.minimax.io/blog/minimax-m31f",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "Cloudflare Clairic (preview)",
+   "summary": "Cloudflare's first extraction model pulls typed values (text spans, numbers, dates, lists) from text or images and estimates or forecasts values with confidence scores, in one pass with no output tokens. Preview on Workers AI; open weights planned.",
+   "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "Viggle JST-2",
+   "summary": "Viggle's physics-native world model generates explorable 3D scenes in about one second, plus animation-ready 3D characters and full-body motion from text, images or video. Free to try in the PINOC browser app.",
+   "url": "https://viggle.ai/jst2",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "cathrynlavery/diagram-design",
+   "summary": "GitHub weekly trending: editorial diagram design for coding agents (Claude Code, Codex, GitHub Copilot, Cursor and more), with 44 diagram types as self-contained HTML + SVG.",
+   "url": "https://github.com/cathrynlavery/diagram-design",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "debpalash/VoiceStudio",
+   "summary": "GitHub daily trending: an open-source, fully local ElevenLabs alternative for voice cloning, voice design, video dubbing, dictation, transcription and audiobook creation.",
+   "url": "https://github.com/debpalash/VoiceStudio",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-19",
+   "title": "MadsLorentzen/ai-job-search",
+   "summary": "GitHub daily trending: a job-search framework built on Claude Code that runs on your machine to evaluate postings, tailor CVs, write cover letters and prep interviews.",
+   "url": "https://github.com/MadsLorentzen/ai-job-search",
+   "type": "github"
+  },
+  {
+   "date": "2026-10-17",
+   "title": "DeepSeek-V4.1-Flash-1017",
+   "summary": "A minor update to DeepSeek-V4.1-Flash with better reasoning, coding, agentic and visual benchmark scores, faster task completion and shorter outputs. Live on DeepSeek's website, app and API, with open weights on Hugging Face and ModelScope.",
+   "url": "https://api-docs.deepseek.com/news/news261017/",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "GPT-6 Pro update in ChatGPT",
+   "summary": "GPT-6 Pro in ChatGPT's chat tab now gives faster responses, makes better use of plugins and tools, and can run multiple agents on different parts of a task in parallel. Rolling out to eligible Pro users.",
+   "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+   "type": "launch"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "Reflection Beam (open weights)",
+   "summary": "Reflection has released the weights for Beam, its first open-weight model: a 501B-parameter MoE (23B active) with a 1M-token context, built for coding and long-horizon agentic work. Apache 2.0, on Hugging Face.",
+   "url": "https://reflection.ai/blog/beam-is-available",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "Elorian Glimpse",
+   "summary": "Elorian's first model, a visual-thinking model that reasons over images and video, uses multimodal tools and can coordinate subagents. Available via API and chat UI at $0.60/$3 per 1M tokens.",
+   "url": "https://elorian.ai/blog/introducing-glimpse",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "Perplexity pplx-decider-v1.2",
+   "summary": "Perplexity's 27B decision model for text and images (Qwen3.8-27B backbone) returns typed probabilities for yes/no, choice and score questions, answering several questions about one input in a single pass. Weights on Hugging Face.",
+   "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.2",
+   "type": "model"
+  },
+  {
+   "date": "2026-10-16",
+   "title": "Junie Local on Windows and NVIDIA RTX Spark",
+   "summary": "JetBrains' free, fully local Junie coding agent now runs on NVIDIA RTX Spark PCs and is stable on Windows with 24GB+ RTX GPUs. No token charges or quotas, and code never leaves the machine; choose Qwen3.6-27B or JetBrains' merged Qwen3.8-3.6-27B-blend.",
+   "url": "https://junie.jetbrains.com/blog/junie-local-rtx-spark/",
+   "type": "launch"
+  }
+ ]
+}

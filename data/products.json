@@ -1,0 +1,1782 @@
+{
+ "_note": "Shop products (public). Fields: id (URL slug), sku (TR-XX-000), name, category, description, specs, image(s), our_price (AUD, final price incl. delivery to most metro areas; not GST-registered), regular_price + sale_label + sale_ends (launch sale: our own regular price applies after sale_ends), stock ('in_stock' only when the supplier showed it at stock_checked), stripe_link or order_by_email (mailto order; we confirm stock and send a secure payment link), status 'draft' | 'active' | 'paused'. Supplier, cost and margin data is private: kept outside the repo (TOOLRANK_PRIVATE, default /workspace/toolrank-private/costs.json) and never committed. Never invent prices, reviews, ratings or stock claims.",
+ "currency": "AUD",
+ "products": [
+  {
+   "id": "folding-sawhorse-pair",
+   "name": "Folding sawhorse pair",
+   "category": "building",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "quick-release-bar-clamp-set",
+   "name": "Quick-release bar clamp set",
+   "category": "building",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "leather-tool-belt-with-pouches",
+   "name": "Leather tool belt with pouches",
+   "category": "building",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "aluminium-step-ladder",
+   "name": "Aluminium step ladder",
+   "category": "building",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "socket-and-ratchet-set",
+   "name": "Socket and ratchet set",
+   "category": "automotive",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "combination-spanner-set",
+   "name": "Combination spanner set",
+   "category": "automotive",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "hydraulic-trolley-jack",
+   "name": "Hydraulic trolley jack",
+   "category": "automotive",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "axle-stand-pair",
+   "name": "Axle stand pair",
+   "category": "automotive",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "garden-hand-tool-set",
+   "name": "Garden hand tool set",
+   "category": "garden",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "bypass-pruning-secateurs",
+   "name": "Bypass pruning secateurs",
+   "category": "garden",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "expandable-garden-hose-with-spray-nozzle",
+   "name": "Expandable garden hose with spray nozzle",
+   "category": "garden",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "pressure-washer-surface-cleaner-attachment",
+   "name": "Pressure washer surface cleaner attachment",
+   "category": "cleaning",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "pressure-washer-extension-wand",
+   "name": "Pressure washer extension wand",
+   "category": "cleaning",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "telescopic-cleaning-brush",
+   "name": "Telescopic cleaning brush",
+   "category": "cleaning",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "rolling-tool-chest",
+   "name": "Rolling tool chest",
+   "category": "workshop-storage",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "steel-workbench-with-pegboard",
+   "name": "Steel workbench with pegboard",
+   "category": "workshop-storage",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "mobile-parts-trolley",
+   "name": "Mobile parts trolley",
+   "category": "workshop-storage",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "drill-bit-set",
+   "name": "Drill-bit set",
+   "category": "hand-tools",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "hole-saw-kit",
+   "name": "Hole-saw kit",
+   "category": "hand-tools",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "screwdriver-set",
+   "name": "Screwdriver set",
+   "category": "hand-tools",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "pliers-set",
+   "name": "Pliers set",
+   "category": "hand-tools",
+   "description": "Placeholder entry for layout only.",
+   "image": null,
+   "our_price": null,
+   "stripe_link": null,
+   "status": "draft"
+  },
+  {
+   "id": "zirconia-flap-discs-115mm-40-grit-50-pack",
+   "sku": "TR-PT-001",
+   "name": "Zirconia flap discs 115mm, 40 grit (50 pack)",
+   "category": "power-tools",
+   "description": "Coarse 40-grit flap discs for fast stock removal and weld clean-up on steel, stainless, timber and plastic.",
+   "specs": [
+    "115mm diameter, 22mm bore",
+    "40 grit zirconia",
+    "50 discs",
+    "Fits 115mm angle grinders"
+   ],
+   "our_price": 96.95,
+   "image": "/assets/shop/p/tr-pt-001-1.webp",
+   "images": [
+    "/assets/shop/p/tr-pt-001-1.webp",
+    "/assets/shop/p/tr-pt-001-2.webp",
+    "/assets/shop/p/tr-pt-001-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "cutting-discs-125mm-50-pack",
+   "sku": "TR-PT-002",
+   "name": "Metal cutting discs 125mm (50 pack)",
+   "category": "power-tools",
+   "description": "Thin cut-off wheels for steel tube, bar and sheet. A bulk pack for site and workshop use.",
+   "specs": [
+    "125mm (5 in) diameter",
+    "50 discs",
+    "For 125mm angle grinders"
+   ],
+   "our_price": 52.95,
+   "image": "/assets/shop/p/tr-pt-002-1.webp",
+   "images": [
+    "/assets/shop/p/tr-pt-002-1.webp",
+    "/assets/shop/p/tr-pt-002-2.webp",
+    "/assets/shop/p/tr-pt-002-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "bolt-cutters-900mm",
+   "sku": "TR-HT-001",
+   "name": "Heavy-duty bolt cutters 900mm",
+   "category": "hand-tools",
+   "description": "Long-handle bolt cutters with heat-treated alloy steel blades for chain, rod, bolts and padlocks.",
+   "specs": [
+    "900mm (36 in) length",
+    "Heat-treated alloy steel blades",
+    "Tubular steel handles"
+   ],
+   "our_price": 58.95,
+   "image": "/assets/shop/p/tr-ht-001-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ht-001-1.webp",
+    "/assets/shop/p/tr-ht-001-2.webp",
+    "/assets/shop/p/tr-ht-001-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "locking-c-clamps-150mm-10-pack",
+   "sku": "TR-HT-002",
+   "name": "Locking C-clamps 150mm (10 pack)",
+   "category": "hand-tools",
+   "description": "Ten locking C-clamp pliers with swivel pads for welding, fabrication and glue-ups.",
+   "specs": [
+    "150mm (6 in) clamps",
+    "Swivel pads",
+    "Quick-release trigger",
+    "Nickel-plated"
+   ],
+   "our_price": 76.95,
+   "image": "/assets/shop/p/tr-ht-002-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ht-002-1.webp",
+    "/assets/shop/p/tr-ht-002-2.webp",
+    "/assets/shop/p/tr-ht-002-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "pipe-clamps-3-4-inch-4-pack",
+   "sku": "TR-HT-003",
+   "name": "Pipe clamp heads 3/4 in (4 pack)",
+   "category": "hand-tools",
+   "description": "Cast-iron clamp heads that slide onto 3/4 in pipe, so you set the clamp length per job.",
+   "specs": [
+    "Fits 3/4 in pipe (not included)",
+    "4 cast-iron clamp sets",
+    "Quick-release clutch"
+   ],
+   "our_price": 70.95,
+   "image": "/assets/shop/p/tr-ht-003-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ht-003-1.webp",
+    "/assets/shop/p/tr-ht-003-2.webp",
+    "/assets/shop/p/tr-ht-003-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "bench-vise-150mm-with-anvil",
+   "sku": "TR-HT-004",
+   "name": "Bench vise 150mm with anvil",
+   "category": "hand-tools",
+   "description": "Ductile-iron bench vise with a 360° swivel base, pipe jaws and a built-in anvil.",
+   "specs": [
+    "150mm jaw width, 150mm opening",
+    "360° swivel base",
+    "Pipe jaws 15–74mm",
+    "Replaceable serrated jaws"
+   ],
+   "our_price": 86.95,
+   "regular_price": 94.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-ht-004-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ht-004-1.webp",
+    "/assets/shop/p/tr-ht-004-2.webp",
+    "/assets/shop/p/tr-ht-004-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "thread-repair-kit-m5-m12-131pc",
+   "sku": "TR-HT-005",
+   "name": "Thread repair kit M5–M12 (131 pc)",
+   "category": "hand-tools",
+   "description": "Taps, drills, inserts and install tools to repair stripped metric threads, in a steel case.",
+   "specs": [
+    "M5, M6, M8, M10, M12 coarse",
+    "131 pieces",
+    "Steel storage case"
+   ],
+   "our_price": 60.95,
+   "image": "/assets/shop/p/tr-ht-005-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ht-005-1.webp",
+    "/assets/shop/p/tr-ht-005-2.webp",
+    "/assets/shop/p/tr-ht-005-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "stainless-sliding-door-bolt-200mm-10-pack",
+   "sku": "TR-HW-001",
+   "name": "Stainless sliding door bolts 200mm (10 pack)",
+   "category": "hardware",
+   "description": "Brushed stainless barrel bolts for timber doors, gates and windows.",
+   "specs": [
+    "200mm (8 in) length",
+    "Stainless steel",
+    "10 bolts"
+   ],
+   "our_price": 36.95,
+   "image": "/assets/shop/p/tr-hw-001-1.webp",
+   "images": [
+    "/assets/shop/p/tr-hw-001-1.webp",
+    "/assets/shop/p/tr-hw-001-2.webp",
+    "/assets/shop/p/tr-hw-001-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "soft-close-drawer-runners-500mm-10-pairs",
+   "sku": "TR-HW-002",
+   "name": "Soft-close drawer runners 500mm (10 pairs)",
+   "category": "hardware",
+   "description": "Full-extension, ball-bearing runners with soft close. Enough for a full kitchen or workshop fit-out.",
+   "specs": [
+    "500mm length",
+    "30kg per pair",
+    "Full extension, soft close",
+    "10 pairs"
+   ],
+   "our_price": 175.95,
+   "image": "/assets/shop/p/tr-hw-002-1.webp",
+   "images": [
+    "/assets/shop/p/tr-hw-002-1.webp",
+    "/assets/shop/p/tr-hw-002-2.webp",
+    "/assets/shop/p/tr-hw-002-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "castor-wheels-150mm-set-of-4",
+   "sku": "TR-HW-003",
+   "name": "Heavy-duty castor wheels 150mm (set of 4)",
+   "category": "hardware",
+   "description": "Swivel rubber castors to make benches and trolleys mobile. Two have brakes.",
+   "specs": [
+    "150mm rubber wheels",
+    "800kg total (set)",
+    "2 with brakes",
+    "100 × 110mm plates"
+   ],
+   "our_price": 76.95,
+   "image": "/assets/shop/p/tr-hw-003-1.webp",
+   "images": [
+    "/assets/shop/p/tr-hw-003-1.webp",
+    "/assets/shop/p/tr-hw-003-2.webp",
+    "/assets/shop/p/tr-hw-003-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "wall-mounted-key-safe",
+   "sku": "TR-HW-004",
+   "name": "Wall-mounted key safe",
+   "category": "hardware",
+   "description": "Combination key box with a weather cover. Holds up to five keys.",
+   "specs": [
+    "4-digit combination",
+    "Metal body, weather shutter",
+    "Wall mount, fixings included"
+   ],
+   "our_price": 33.95,
+   "image": "/assets/shop/p/tr-hw-004-1.webp",
+   "images": [
+    "/assets/shop/p/tr-hw-004-1.webp",
+    "/assets/shop/p/tr-hw-004-2.webp",
+    "/assets/shop/p/tr-hw-004-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "4-step-steel-ladder-with-handrails",
+   "sku": "TR-BC-001",
+   "name": "4-step steel ladder with handrails",
+   "category": "building",
+   "description": "Folding steel step ladder with wide rubber treads and dual handrails.",
+   "specs": [
+    "Top step approx. 96.5cm",
+    "150kg rated",
+    "Folds to 105mm",
+    "10.9kg"
+   ],
+   "our_price": 145.95,
+   "regular_price": 158.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-bc-001-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bc-001-1.webp",
+    "/assets/shop/p/tr-bc-001-2.webp",
+    "/assets/shop/p/tr-bc-001-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "3-step-aluminium-step-stool",
+   "sku": "TR-BC-002",
+   "name": "3-step aluminium step stool",
+   "category": "building",
+   "description": "Light folding step stool with wide textured steps for jobs around the house.",
+   "specs": [
+    "3 steps",
+    "150kg rated",
+    "Folds to approx. 5cm",
+    "Aluminium frame"
+   ],
+   "our_price": 112.95,
+   "image": "/assets/shop/p/tr-bc-002-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bc-002-1.webp",
+    "/assets/shop/p/tr-bc-002-2.webp",
+    "/assets/shop/p/tr-bc-002-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "5-step-aluminium-ladder",
+   "sku": "TR-BC-003",
+   "name": "5-step aluminium ladder",
+   "category": "building",
+   "description": "Folding aluminium ladder with wide anti-slip treads and a top handle.",
+   "specs": [
+    "5 steps",
+    "Folds to approx. 5cm",
+    "6.7kg"
+   ],
+   "our_price": 204.95,
+   "image": "/assets/shop/p/tr-bc-003-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bc-003-1.webp",
+    "/assets/shop/p/tr-bc-003-2.webp",
+    "/assets/shop/p/tr-bc-003-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "laminate-flooring-install-kit-48pc",
+   "sku": "TR-BC-004",
+   "name": "Flooring install kit (48 pc)",
+   "category": "building",
+   "description": "Mallet, tapping block, pull bar and spacers for laminate, vinyl plank and timber floors.",
+   "specs": [
+    "PVC double-face mallet",
+    "Tapping block",
+    "304mm steel pull bar",
+    "44 spacers"
+   ],
+   "our_price": 45.95,
+   "image": "/assets/shop/p/tr-bc-004-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bc-004-1.webp",
+    "/assets/shop/p/tr-bc-004-2.webp",
+    "/assets/shop/p/tr-bc-004-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "pvc-tarpaulin-3x4m-670gsm",
+   "sku": "TR-BC-005",
+   "name": "Heavy-duty PVC tarp 3 × 4m",
+   "category": "building",
+   "description": "670gsm waterproof PVC tarp with welded hems and metal eyelets.",
+   "specs": [
+    "3 × 4m",
+    "670gsm PVC",
+    "UV resistant",
+    "Metal eyelets"
+   ],
+   "our_price": 130.95,
+   "image": "/assets/shop/p/tr-bc-005-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bc-005-1.webp",
+    "/assets/shop/p/tr-bc-005-2.webp",
+    "/assets/shop/p/tr-bc-005-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "mechanics-creeper-92cm",
+   "sku": "TR-AU-001",
+   "name": "Mechanics creeper 92cm",
+   "category": "automotive",
+   "description": "Padded rolling creeper with a headrest and two side tool trays.",
+   "specs": [
+    "92 × 43 × 10cm",
+    "6 castor wheels",
+    "2 tool trays"
+   ],
+   "our_price": 78.95,
+   "image": "/assets/shop/p/tr-au-001-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-001-1.webp",
+    "/assets/shop/p/tr-au-001-2.webp",
+    "/assets/shop/p/tr-au-001-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "pressure-brake-bleeder-3l",
+   "sku": "TR-AU-002",
+   "name": "Pressure brake bleeder 3L",
+   "category": "automotive",
+   "description": "Hand-pump pressure bleeder for brake and clutch fluid. No compressor needed.",
+   "specs": [
+    "3L capacity, 2 bar",
+    "45mm threaded cap (most European models)",
+    "1L catch bottle"
+   ],
+   "our_price": 94.95,
+   "image": "/assets/shop/p/tr-au-002-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-002-1.webp",
+    "/assets/shop/p/tr-au-002-2.webp",
+    "/assets/shop/p/tr-au-002-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "4wd-tyre-deflators-4-pack",
+   "sku": "TR-AU-003",
+   "name": "4WD tyre deflators (4 pack)",
+   "category": "automotive",
+   "description": "Set 10–30 PSI, screw onto each valve and all four stop at the same pressure.",
+   "specs": [
+    "10–30 PSI adjustable",
+    "Auto shut-off",
+    "Schrader valves",
+    "Set of 4"
+   ],
+   "our_price": 49.95,
+   "image": "/assets/shop/p/tr-au-003-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-003-1.webp",
+    "/assets/shop/p/tr-au-003-2.webp",
+    "/assets/shop/p/tr-au-003-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "rear-motorcycle-paddock-stand",
+   "sku": "TR-AU-004",
+   "name": "Rear motorcycle paddock stand",
+   "category": "automotive",
+   "description": "Adjustable rear stand to lift the back wheel for chain work, cleaning or storage.",
+   "specs": [
+    "200kg rated",
+    "32mm powder-coated steel",
+    "Adjustable arms"
+   ],
+   "our_price": 97.95,
+   "image": "/assets/shop/p/tr-au-004-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-004-1.webp",
+    "/assets/shop/p/tr-au-004-2.webp",
+    "/assets/shop/p/tr-au-004-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "tyre-inflator-with-gauge-160psi",
+   "sku": "TR-AU-005",
+   "name": "Tyre inflator with gauge 160 PSI",
+   "category": "automotive",
+   "description": "Air-line inflator that inflates, deflates and reads pressure. Twin-head chuck for dual wheels.",
+   "specs": [
+    "Up to 160 PSI / 11 bar",
+    "Twin-sided chuck",
+    "Needs an air compressor"
+   ],
+   "our_price": 81.95,
+   "image": "/assets/shop/p/tr-au-005-1.webp",
+   "images": [
+    "/assets/shop/p/tr-au-005-1.webp",
+    "/assets/shop/p/tr-au-005-2.webp",
+    "/assets/shop/p/tr-au-005-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "expandable-garden-hose-30m",
+   "sku": "TR-GD-001",
+   "name": "Expandable garden hose 30m",
+   "category": "garden",
+   "description": "Expands to 30m and shrinks back for storage. Comes with a multi-pattern spray nozzle.",
+   "specs": [
+    "Up to 30m",
+    "Multi-function nozzle",
+    "Light and compact"
+   ],
+   "our_price": 64.95,
+   "regular_price": 70.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-gd-001-1.webp",
+   "images": [
+    "/assets/shop/p/tr-gd-001-1.webp",
+    "/assets/shop/p/tr-gd-001-2.webp",
+    "/assets/shop/p/tr-gd-001-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "garden-edging-kit-10m",
+   "sku": "TR-GD-002",
+   "name": "Garden edging kit 10m",
+   "category": "garden",
+   "description": "Flexible no-dig edging for lawns, beds and paths, with 30 spikes.",
+   "specs": [
+    "10m strip",
+    "30 spikes",
+    "Recycled polyethylene"
+   ],
+   "our_price": 70.95,
+   "image": "/assets/shop/p/tr-gd-002-1.webp",
+   "images": [
+    "/assets/shop/p/tr-gd-002-1.webp",
+    "/assets/shop/p/tr-gd-002-2.webp",
+    "/assets/shop/p/tr-gd-002-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "garden-kneeler-seat",
+   "sku": "TR-GD-003",
+   "name": "Garden kneeler and seat",
+   "category": "garden",
+   "description": "Flip it one way to kneel, the other to sit. Handles help you get back up.",
+   "specs": [
+    "Powder-coated steel",
+    "EVA foam pad",
+    "Folds flat"
+   ],
+   "our_price": 64.95,
+   "image": "/assets/shop/p/tr-gd-003-1.webp",
+   "images": [
+    "/assets/shop/p/tr-gd-003-1.webp",
+    "/assets/shop/p/tr-gd-003-2.webp",
+    "/assets/shop/p/tr-gd-003-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "weed-mat-30m-x-1-83m",
+   "sku": "TR-GD-004",
+   "name": "Woven weed mat 30 × 1.83m",
+   "category": "garden",
+   "description": "Tough woven weed barrier for beds, paths and under paving.",
+   "specs": [
+    "30 × 1.83m roll",
+    "95gsm woven PP",
+    "UV rated up to 5 years"
+   ],
+   "our_price": 70.95,
+   "image": "/assets/shop/p/tr-gd-004-1.webp",
+   "images": [
+    "/assets/shop/p/tr-gd-004-1.webp",
+    "/assets/shop/p/tr-gd-004-2.webp",
+    "/assets/shop/p/tr-gd-004-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "mop-wringer-bucket-20l",
+   "sku": "TR-CL-001",
+   "name": "Mop bucket with wringer 20L",
+   "category": "cleaning",
+   "description": "Commercial-style mop bucket on wheels with a press wringer.",
+   "specs": [
+    "20L",
+    "4 castor wheels",
+    "40 × 27 × 67cm"
+   ],
+   "our_price": 96.95,
+   "image": "/assets/shop/p/tr-cl-001-1.webp",
+   "images": [
+    "/assets/shop/p/tr-cl-001-1.webp",
+    "/assets/shop/p/tr-cl-001-2.webp",
+    "/assets/shop/p/tr-cl-001-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "pressure-washer-surface-cleaner-44cm",
+   "sku": "TR-CL-002",
+   "name": "Pressure washer surface cleaner 44cm",
+   "category": "cleaning",
+   "description": "Spinning-nozzle surface cleaner for driveways, paths and decks. Includes two extension wands.",
+   "specs": [
+    "44cm cleaning width",
+    "Rated to 4000 PSI",
+    "1/4 in quick connect",
+    "2 extension wands"
+   ],
+   "our_price": 103.95,
+   "regular_price": 112.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-cl-002-1.webp",
+   "images": [
+    "/assets/shop/p/tr-cl-002-1.webp",
+    "/assets/shop/p/tr-cl-002-2.webp",
+    "/assets/shop/p/tr-cl-002-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "telescopic-gutter-cleaning-kit-4m",
+   "sku": "TR-CL-003",
+   "name": "Telescopic gutter cleaning kit 4m",
+   "category": "cleaning",
+   "description": "Extending pole with brush and rake heads to clear gutters from the ground.",
+   "specs": [
+    "Extends to 4m",
+    "Brush and rake heads",
+    "Stainless steel pole"
+   ],
+   "our_price": 64.95,
+   "image": "/assets/shop/p/tr-cl-003-1.webp",
+   "images": [
+    "/assets/shop/p/tr-cl-003-1.webp",
+    "/assets/shop/p/tr-cl-003-2.webp",
+    "/assets/shop/p/tr-cl-003-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "gel-knee-pads",
+   "sku": "TR-SF-001",
+   "name": "Gel knee pads",
+   "category": "safety",
+   "description": "Gel and foam knee pads with non-slip straps for flooring, concreting and garden work.",
+   "specs": [
+    "Gel + neoprene foam",
+    "Adjustable straps",
+    "One size"
+   ],
+   "our_price": 57.95,
+   "image": "/assets/shop/p/tr-sf-001-1.webp",
+   "images": [
+    "/assets/shop/p/tr-sf-001-1.webp",
+    "/assets/shop/p/tr-sf-001-2.webp",
+    "/assets/shop/p/tr-sf-001-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "hi-vis-reflective-tape-yellow-2-pack",
+   "sku": "TR-SF-002",
+   "name": "Hi-vis reflective tape, yellow (2 pack)",
+   "category": "safety",
+   "description": "Adhesive reflective tape for marking hazards, vehicles, trailers and signage.",
+   "specs": [
+    "50mm × 50m per roll",
+    "2 rolls",
+    "Fluorescent yellow PVC"
+   ],
+   "our_price": 51.95,
+   "image": "/assets/shop/p/tr-sf-002-1.webp",
+   "images": [
+    "/assets/shop/p/tr-sf-002-1.webp",
+    "/assets/shop/p/tr-sf-002-2.webp",
+    "/assets/shop/p/tr-sf-002-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "traffic-cones-45cm-4-pack",
+   "sku": "TR-SF-003",
+   "name": "Traffic cones 45cm (4 pack)",
+   "category": "safety",
+   "description": "Stackable orange cones with reflective bands for driveways, sites and car parks.",
+   "specs": [
+    "45cm (18 in)",
+    "Reflective band",
+    "Flexible PVC, 0.83kg each",
+    "4 cones"
+   ],
+   "our_price": 77.95,
+   "image": "/assets/shop/p/tr-sf-003-1.webp",
+   "images": [
+    "/assets/shop/p/tr-sf-003-1.webp",
+    "/assets/shop/p/tr-sf-003-2.webp",
+    "/assets/shop/p/tr-sf-003-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "22-drawer-parts-cabinet",
+   "sku": "TR-WS-001",
+   "name": "22-drawer parts cabinet",
+   "category": "workshop-storage",
+   "description": "Clear-drawer organiser for screws, bolts and small parts. Bench or wall mount.",
+   "specs": [
+    "22 clear drawers",
+    "Adjustable dividers",
+    "Wall-mountable"
+   ],
+   "our_price": 50.95,
+   "regular_price": 55.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-ws-001-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-001-1.webp",
+    "/assets/shop/p/tr-ws-001-2.webp",
+    "/assets/shop/p/tr-ws-001-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "rubber-workbench-mat-2m",
+   "sku": "TR-WS-002",
+   "name": "Rubber workbench mat 2m",
+   "category": "workshop-storage",
+   "description": "3mm rubber bench cover that protects your workbench. Cut it to size.",
+   "specs": [
+    "2m roll",
+    "3mm thick",
+    "Up to 70% recycled rubber"
+   ],
+   "our_price": 58.95,
+   "image": "/assets/shop/p/tr-ws-002-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-002-1.webp",
+    "/assets/shop/p/tr-ws-002-2.webp",
+    "/assets/shop/p/tr-ws-002-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "wall-mounted-drill-organiser",
+   "sku": "TR-WS-003",
+   "name": "Wall-mounted drill organiser",
+   "category": "workshop-storage",
+   "description": "Steel wall rack with four drill holders, a charger shelf and a screwdriver rail.",
+   "specs": [
+    "4 drill holders",
+    "Shelf for chargers",
+    "Holds 10+ screwdrivers",
+    "Alloy steel"
+   ],
+   "our_price": 40.95,
+   "image": "/assets/shop/p/tr-ws-003-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-003-1.webp",
+    "/assets/shop/p/tr-ws-003-2.webp",
+    "/assets/shop/p/tr-ws-003-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "steel-garage-shelving-120x40x183",
+   "sku": "TR-WS-004",
+   "name": "Steel garage shelving 120 × 40 × 183cm",
+   "category": "workshop-storage",
+   "description": "All-steel shelving unit with solid steel shelves for garages and sheds.",
+   "specs": [
+    "120 × 40 × 183cm",
+    "Solid steel shelves",
+    "Double-layer uprights"
+   ],
+   "our_price": 180.95,
+   "image": "/assets/shop/p/tr-ws-004-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-004-1.webp",
+    "/assets/shop/p/tr-ws-004-2.webp",
+    "/assets/shop/p/tr-ws-004-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "rolling-garage-stool",
+   "sku": "TR-WS-005",
+   "name": "Rolling garage stool",
+   "category": "workshop-storage",
+   "description": "Height-adjustable mechanic's seat with a tool tray and footrest storage.",
+   "specs": [
+    "Seat 42–56cm",
+    "185kg rated",
+    "5 castors",
+    "Tool tray"
+   ],
+   "our_price": 75.95,
+   "regular_price": 82.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-ws-005-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-005-1.webp",
+    "/assets/shop/p/tr-ws-005-2.webp",
+    "/assets/shop/p/tr-ws-005-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T01:18+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "x-frame-keyboard-stand",
+   "sku": "TR-MU-001",
+   "name": "X-frame keyboard stand",
+   "category": "music-gear",
+   "description": "Folding double-braced X stand for keyboards, with 5 height settings and locking straps.",
+   "specs": [
+    "5 height settings",
+    "Rated 40–50kg",
+    "Folds flat, 3kg",
+    "Non-slip rubber feet"
+   ],
+   "our_price": 46.95,
+   "image": "/assets/shop/p/tr-mu-001-1.webp",
+   "images": [
+    "/assets/shop/p/tr-mu-001-1.webp",
+    "/assets/shop/p/tr-mu-001-2.webp",
+    "/assets/shop/p/tr-mu-001-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:00+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "z-style-keyboard-stand-with-wheels",
+   "sku": "TR-MU-002",
+   "name": "Z-style keyboard stand with wheels",
+   "category": "music-gear",
+   "description": "Heavy-duty Z stand for 54, 66 or 88-key keyboards, with lockable wheels and a headphone hook.",
+   "specs": [
+    "Adjustable width and height",
+    "Rated 120kg",
+    "Lockable wheels",
+    "Headphone hanger"
+   ],
+   "our_price": 103.95,
+   "regular_price": 112.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-mu-002-1.webp",
+   "images": [
+    "/assets/shop/p/tr-mu-002-1.webp",
+    "/assets/shop/p/tr-mu-002-2.webp",
+    "/assets/shop/p/tr-mu-002-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:00+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "boom-mic-stands-2-pack",
+   "sku": "TR-MU-003",
+   "name": "Boom mic stands (2 pack)",
+   "category": "music-gear",
+   "description": "Two tripod mic stands with 26 in booms. Fold down for gigs and rehearsals.",
+   "specs": [
+    "2 stands",
+    "26 in (66cm) boom",
+    "Adjustable height",
+    "Folding tripod base"
+   ],
+   "our_price": 53.95,
+   "regular_price": 58.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-mu-003-1.webp",
+   "images": [
+    "/assets/shop/p/tr-mu-003-1.webp",
+    "/assets/shop/p/tr-mu-003-2.webp",
+    "/assets/shop/p/tr-mu-003-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:00+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "mic-isolation-shield-3-panel",
+   "sku": "TR-MU-004",
+   "name": "Mic isolation shield, 3 panel",
+   "category": "music-gear",
+   "description": "Foldable foam-lined shield that cuts room reflections for vocals and podcasts.",
+   "specs": [
+    "3 adjustable panels",
+    "Sound-absorbing foam",
+    "Desk or stand mount"
+   ],
+   "our_price": 45.95,
+   "image": "/assets/shop/p/tr-mu-004-1.webp",
+   "images": [
+    "/assets/shop/p/tr-mu-004-1.webp",
+    "/assets/shop/p/tr-mu-004-2.webp",
+    "/assets/shop/p/tr-mu-004-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:00+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "acoustic-foam-bass-traps-20-pack",
+   "sku": "TR-MU-005",
+   "name": "Acoustic foam bass traps (20 pack)",
+   "category": "music-gear",
+   "description": "Corner foam traps to tame boom and echo in studios and music rooms.",
+   "specs": [
+    "20 pieces",
+    "12 × 12 × 24cm each",
+    "25kg/m³ PU foam",
+    "Black"
+   ],
+   "our_price": 64.95,
+   "image": "/assets/shop/p/tr-mu-005-1.webp",
+   "images": [
+    "/assets/shop/p/tr-mu-005-1.webp",
+    "/assets/shop/p/tr-mu-005-2.webp",
+    "/assets/shop/p/tr-mu-005-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:00+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "acoustic-foam-panels-40-pack",
+   "sku": "TR-MU-006",
+   "name": "Acoustic foam panels (40 pack)",
+   "category": "music-gear",
+   "description": "Wedge foam tiles for treating walls in home studios and rehearsal rooms.",
+   "specs": [
+    "40 tiles, 30 × 30cm",
+    "5cm thick",
+    "Approx. 3.6m² coverage",
+    "25kg/m³ PU foam"
+   ],
+   "our_price": 138.95,
+   "image": "/assets/shop/p/tr-mu-006-1.webp",
+   "images": [
+    "/assets/shop/p/tr-mu-006-1.webp",
+    "/assets/shop/p/tr-mu-006-2.webp",
+    "/assets/shop/p/tr-mu-006-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:00+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "rack-drawer-19-inch-2u-lockable",
+   "sku": "TR-MU-007",
+   "name": "19 in rack drawer, 2U lockable",
+   "category": "music-gear",
+   "description": "Steel 2U rack drawer with lock and key for cables, mics and set lists.",
+   "specs": [
+    "19 in rack, 2U",
+    "Lock with key",
+    "Steel, 4.6kg"
+   ],
+   "our_price": 106.95,
+   "image": "/assets/shop/p/tr-mu-007-1.webp",
+   "images": [
+    "/assets/shop/p/tr-mu-007-1.webp",
+    "/assets/shop/p/tr-mu-007-2.webp",
+    "/assets/shop/p/tr-mu-007-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:00+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "speaker-stands-adjustable-pair",
+   "sku": "TR-MU-008",
+   "name": "Speaker stands, adjustable (pair)",
+   "category": "music-gear",
+   "description": "Height-adjustable stands for small speakers, with cable routing through the tube.",
+   "specs": [
+    "75–118cm height",
+    "Pair",
+    "Hollow tube cable routing",
+    "Powder-coated steel base"
+   ],
+   "our_price": 70.95,
+   "image": "/assets/shop/p/tr-mu-008-1.webp",
+   "images": [
+    "/assets/shop/p/tr-mu-008-1.webp",
+    "/assets/shop/p/tr-mu-008-2.webp",
+    "/assets/shop/p/tr-mu-008-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:00+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "dynamic-vocal-microphone",
+   "sku": "TR-MU-009",
+   "name": "Dynamic vocal microphone",
+   "category": "music-gear",
+   "description": "Wired supercardioid dynamic mic for vocals, rehearsals and karaoke. No batteries needed.",
+   "specs": [
+    "Supercardioid dynamic",
+    "Steel mesh grille",
+    "Wired, passive"
+   ],
+   "our_price": 29.95,
+   "image": "/assets/shop/p/tr-mu-009-1.webp",
+   "images": [
+    "/assets/shop/p/tr-mu-009-1.webp",
+    "/assets/shop/p/tr-mu-009-2.webp",
+    "/assets/shop/p/tr-mu-009-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:00+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "cable-protector-ramp-3m",
+   "sku": "TR-MU-010",
+   "name": "Cable protector ramp 3m",
+   "category": "music-gear",
+   "description": "Rubber cable ramp in three 1m sections. Keeps stage and event cable runs safe to walk over.",
+   "specs": [
+    "3 × 1m sections",
+    "2 channels, 33 × 30mm",
+    "Thermoplastic rubber",
+    "Indoor and outdoor"
+   ],
+   "our_price": 125.95,
+   "image": "/assets/shop/p/tr-mu-010-1.webp",
+   "images": [
+    "/assets/shop/p/tr-mu-010-1.webp",
+    "/assets/shop/p/tr-mu-010-2.webp",
+    "/assets/shop/p/tr-mu-010-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:00+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "garage-shelving-5-tier-2-pack",
+   "sku": "TR-WS-006",
+   "name": "Garage shelving, 5 tier (2 pack)",
+   "category": "workshop-storage",
+   "description": "Two adjustable 5-tier steel shelving units for the garage or shed.",
+   "specs": [
+    "2 units, 90 × 40 × 180cm each",
+    "5 adjustable tiers",
+    "200kg per tier"
+   ],
+   "our_price": 154.95,
+   "regular_price": 168.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-ws-006-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-006-1.webp",
+    "/assets/shop/p/tr-ws-006-2.webp",
+    "/assets/shop/p/tr-ws-006-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "wire-shelving-35x35-chrome",
+   "sku": "TR-WS-007",
+   "name": "Wire shelving 35 × 35cm, chrome",
+   "category": "workshop-storage",
+   "description": "Four adjustable wire shelves on a steel frame, 180cm tall.",
+   "specs": [
+    "35 × 35 × 180cm",
+    "4 adjustable shelves",
+    "Chrome, fixed legs"
+   ],
+   "our_price": 158.95,
+   "image": "/assets/shop/p/tr-ws-007-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-007-1.webp",
+    "/assets/shop/p/tr-ws-007-2.webp",
+    "/assets/shop/p/tr-ws-007-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "wire-shelving-60x60-chrome",
+   "sku": "TR-WS-008",
+   "name": "Wire shelving 60 × 60cm, chrome",
+   "category": "workshop-storage",
+   "description": "Four adjustable wire shelves on a steel frame, 180cm tall.",
+   "specs": [
+    "60 × 60 × 180cm",
+    "4 adjustable shelves",
+    "Chrome, fixed legs"
+   ],
+   "our_price": 226.95,
+   "image": "/assets/shop/p/tr-ws-008-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-008-1.webp",
+    "/assets/shop/p/tr-ws-008-2.webp",
+    "/assets/shop/p/tr-ws-008-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "wire-shelving-90x45-black",
+   "sku": "TR-WS-009",
+   "name": "Wire shelving 90 × 45cm, black",
+   "category": "workshop-storage",
+   "description": "Four adjustable wire shelves on a steel frame, 180cm tall.",
+   "specs": [
+    "90 × 45 × 180cm",
+    "4 adjustable shelves",
+    "Black, fixed legs"
+   ],
+   "our_price": 206.95,
+   "image": "/assets/shop/p/tr-ws-009-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-009-1.webp",
+    "/assets/shop/p/tr-ws-009-2.webp",
+    "/assets/shop/p/tr-ws-009-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "wire-shelving-90x45-chrome-wheels",
+   "sku": "TR-WS-010",
+   "name": "Wire shelving 90 × 45cm on wheels",
+   "category": "workshop-storage",
+   "description": "Four adjustable wire shelves on a steel frame, 180cm tall.",
+   "specs": [
+    "90 × 45 × 180cm",
+    "4 adjustable shelves",
+    "Chrome, castor wheels"
+   ],
+   "our_price": 276.95,
+   "image": "/assets/shop/p/tr-ws-010-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-010-1.webp",
+    "/assets/shop/p/tr-ws-010-2.webp",
+    "/assets/shop/p/tr-ws-010-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "wire-shelving-120x45-black",
+   "sku": "TR-WS-011",
+   "name": "Wire shelving 120 × 45cm, black",
+   "category": "workshop-storage",
+   "description": "Four adjustable wire shelves on a steel frame, 180cm tall.",
+   "specs": [
+    "120 × 45 × 180cm",
+    "4 adjustable shelves",
+    "Black, fixed legs"
+   ],
+   "our_price": 264.95,
+   "image": "/assets/shop/p/tr-ws-011-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-011-1.webp",
+    "/assets/shop/p/tr-ws-011-2.webp",
+    "/assets/shop/p/tr-ws-011-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "wire-shelving-150x60-chrome",
+   "sku": "TR-WS-012",
+   "name": "Wire shelving 150 × 60cm, chrome",
+   "category": "workshop-storage",
+   "description": "Four adjustable wire shelves on a steel frame, 180cm tall.",
+   "specs": [
+    "150 × 60 × 180cm",
+    "4 adjustable shelves",
+    "Chrome, fixed legs"
+   ],
+   "our_price": 320.95,
+   "image": "/assets/shop/p/tr-ws-012-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-012-1.webp",
+    "/assets/shop/p/tr-ws-012-2.webp",
+    "/assets/shop/p/tr-ws-012-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "slatwall-panels-6-pack-black",
+   "sku": "TR-WS-013",
+   "name": "Slatwall panels, black (6 pack)",
+   "category": "workshop-storage",
+   "description": "PVC slatwall panels to turn a garage wall into hook-on tool storage.",
+   "specs": [
+    "6 PVC panels",
+    "Black",
+    "Wall mounted"
+   ],
+   "our_price": 144.95,
+   "image": "/assets/shop/p/tr-ws-013-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-013-1.webp",
+    "/assets/shop/p/tr-ws-013-2.webp",
+    "/assets/shop/p/tr-ws-013-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "garage-wall-hooks-12-pack",
+   "sku": "TR-WS-014",
+   "name": "Garage wall hooks (12 pack)",
+   "category": "workshop-storage",
+   "description": "Steel U and J hooks for tools, ladders, bikes and garden gear. Fixings included.",
+   "specs": [
+    "12 hooks, 5 sizes",
+    "Up to 18kg each",
+    "PVC coated steel",
+    "Screws and plugs included"
+   ],
+   "our_price": 68.95,
+   "image": "/assets/shop/p/tr-ws-014-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-014-1.webp",
+    "/assets/shop/p/tr-ws-014-2.webp",
+    "/assets/shop/p/tr-ws-014-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "39-drawer-parts-cabinet",
+   "sku": "TR-WS-015",
+   "name": "39-drawer parts cabinet",
+   "category": "workshop-storage",
+   "description": "Clear-drawer organiser with 30 small and 9 large drawers for screws and fittings.",
+   "specs": [
+    "39 drawers (30 small, 9 large)",
+    "Clear fronts",
+    "Bench or wall"
+   ],
+   "our_price": 61.95,
+   "regular_price": 66.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-ws-015-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-015-1.webp",
+    "/assets/shop/p/tr-ws-015-2.webp",
+    "/assets/shop/p/tr-ws-015-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "folding-bench-brackets-500mm-pair",
+   "sku": "TR-WS-016",
+   "name": "Folding bench brackets 500mm (pair)",
+   "category": "workshop-storage",
+   "description": "Stainless fold-down brackets to build a wall-mounted workbench or shelf.",
+   "specs": [
+    "2 brackets, 20 in (approx. 500mm)",
+    "Stainless steel",
+    "Push-release folding"
+   ],
+   "our_price": 45.95,
+   "image": "/assets/shop/p/tr-ws-016-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-016-1.webp",
+    "/assets/shop/p/tr-ws-016-2.webp",
+    "/assets/shop/p/tr-ws-016-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "ceiling-bike-hoist",
+   "sku": "TR-WS-017",
+   "name": "Ceiling bike hoist",
+   "category": "workshop-storage",
+   "description": "Pulley lift that raises a bike, ladder or bench up to the garage ceiling.",
+   "specs": [
+    "Ceiling mounted",
+    "Pulley with safety lock",
+    "Rubber-coated hooks"
+   ],
+   "our_price": 33.95,
+   "image": "/assets/shop/p/tr-ws-017-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-017-1.webp",
+    "/assets/shop/p/tr-ws-017-2.webp",
+    "/assets/shop/p/tr-ws-017-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "workbench-levelling-castors-4-pack",
+   "sku": "TR-WS-018",
+   "name": "Workbench levelling castors (4 pack)",
+   "category": "workshop-storage",
+   "description": "Swivel castors with drop-down feet: roll the bench, then lock it level.",
+   "specs": [
+    "Set of 4",
+    "1000kg rated (set)",
+    "Adjustable levelling feet",
+    "360° swivel"
+   ],
+   "our_price": 106.95,
+   "image": "/assets/shop/p/tr-ws-018-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-018-1.webp",
+    "/assets/shop/p/tr-ws-018-2.webp",
+    "/assets/shop/p/tr-ws-018-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "kayak-wall-rack",
+   "sku": "TR-WS-019",
+   "name": "Kayak and board wall rack",
+   "category": "workshop-storage",
+   "description": "Folding wall brackets with foam pads for a kayak or surfboard, plus accessory hooks.",
+   "specs": [
+    "Pair of folding brackets",
+    "Foam pads",
+    "Accessory hooks"
+   ],
+   "our_price": 58.95,
+   "image": "/assets/shop/p/tr-ws-019-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-019-1.webp",
+    "/assets/shop/p/tr-ws-019-2.webp",
+    "/assets/shop/p/tr-ws-019-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "vented-garage-floor-tiles-50-pack",
+   "sku": "TR-WS-020",
+   "name": "Vented garage floor tiles (50 pack)",
+   "category": "workshop-storage",
+   "description": "Interlocking vented tiles that let water drain through. Takes vehicle loads.",
+   "specs": [
+    "50 tiles, 30 × 30cm",
+    "Polypropylene",
+    "Interlocking, vented"
+   ],
+   "our_price": 201.95,
+   "image": "/assets/shop/p/tr-ws-020-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-020-1.webp",
+    "/assets/shop/p/tr-ws-020-2.webp",
+    "/assets/shop/p/tr-ws-020-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "furniture-dolly-200kg",
+   "sku": "TR-WS-021",
+   "name": "Furniture dolly 200kg",
+   "category": "workshop-storage",
+   "description": "Low plywood dolly on four castors for moving benches, cabinets and whitegoods.",
+   "specs": [
+    "200kg rated",
+    "580 × 290mm platform",
+    "130mm high",
+    "18mm plywood"
+   ],
+   "our_price": 58.95,
+   "image": "/assets/shop/p/tr-ws-021-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-021-1.webp",
+    "/assets/shop/p/tr-ws-021-2.webp",
+    "/assets/shop/p/tr-ws-021-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  },
+  {
+   "id": "outdoor-storage-bench-450l",
+   "sku": "TR-WS-022",
+   "name": "Outdoor storage bench 450L",
+   "category": "workshop-storage",
+   "description": "Lidded deck box for garden tools and outdoor gear that doubles as a bench.",
+   "specs": [
+    "450L",
+    "120 × 61 × 63cm",
+    "Seat rated 79kg"
+   ],
+   "our_price": 170.95,
+   "image": "/assets/shop/p/tr-ws-022-1.webp",
+   "images": [
+    "/assets/shop/p/tr-ws-022-1.webp",
+    "/assets/shop/p/tr-ws-022-2.webp",
+    "/assets/shop/p/tr-ws-022-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-10-31T10:02+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active"
+  }
+ ]
+}
