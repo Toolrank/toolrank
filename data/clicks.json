@@ -1,17 +1,12 @@
 {
- "fetched": "2026-10-31 12:58 UTC",
- "fetched_ts": 1793451506,
+ "fetched": "2026-10-31 13:52 UTC",
+ "fetched_ts": 1793454768,
  "window": "last 7 days",
  "source": "GoatCounter click/ events (unique visitors)",
  "top": [
   {
    "slug": "cursor",
    "tool": "Cursor",
-   "count": 1
-  },
-  {
-   "slug": "roo-code",
-   "tool": "Roo Code",
    "count": 1
   }
  ]
