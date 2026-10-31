@@ -1,77 +1,77 @@
 {
- "fetched": "2026-10-30 21:48 UTC",
- "fetched_ts": 1793396896,
- "stars_baseline": "2026-10-23",
+ "fetched": "2026-10-31 18:54 UTC",
+ "fetched_ts": 1793472886,
+ "stars_baseline": "2026-10-24",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 1193,
-   "stars": 5390,
+   "gained": 1140,
+   "stars": 5585,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
-  },
-  {
-   "tool": "Gemini CLI",
-   "repo": "google-gemini/gemini-cli",
-   "gained": 1102,
-   "stars": 108634,
-   "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 740,
-   "stars": 4606,
+   "gained": 824,
+   "stars": 4867,
    "url": "https://github.com/Oldcircle/geo-sleuth"
+  },
+  {
+   "tool": "Gemini CLI",
+   "repo": "google-gemini/gemini-cli",
+   "gained": 688,
+   "stars": 108651,
+   "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 502,
-   "stars": 111598,
+   "gained": 448,
+   "stars": 111646,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 365,
-   "stars": 4262,
+   "gained": 327,
+   "stars": 4317,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "jevgrep",
    "repo": "dzhng/jevgrep",
-   "gained": 249,
-   "stars": 3102,
+   "gained": 221,
+   "stars": 3113,
    "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 203,
-   "stars": 4218,
+   "gained": 194,
+   "stars": 4242,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 201,
-   "stars": 4070,
+   "gained": 172,
+   "stars": 4087,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 194,
-   "stars": 290,
+   "gained": 145,
+   "stars": 304,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "VoiceMem",
    "repo": "xzf-thu/VoiceMem",
-   "gained": 132,
-   "stars": 2780,
+   "gained": 118,
+   "stars": 2798,
    "url": "https://github.com/xzf-thu/VoiceMem"
   }
  ],
@@ -91,39 +91,25 @@
    "top_url": "https://news.ycombinator.com/item?id=50278253"
   },
   {
-   "tool": "Claude",
-   "stories": 2,
-   "points": 5,
-   "top_title": "Show HN: Measuring how much of an AI-assisted design is yours",
-   "top_url": "https://news.ycombinator.com/item?id=50278863"
-  },
-  {
    "tool": "IFTTT",
    "stories": 2,
-   "points": 5,
-   "top_title": "IFTTT ends unlimited runs on its free plan",
-   "top_url": "https://news.ycombinator.com/item?id=50278827"
+   "points": 7,
+   "top_title": "Put AI to Work for You",
+   "top_url": "https://news.ycombinator.com/item?id=50308597"
   },
   {
    "tool": "Google AI Mode",
    "stories": 1,
-   "points": 5,
+   "points": 7,
    "top_title": "Google plans to support shared AI training opt-out via robots.txt",
    "top_url": "https://news.ycombinator.com/item?id=50309270"
   },
   {
    "tool": "Agno",
-   "stories": 3,
-   "points": 4,
+   "stories": 4,
+   "points": 5,
    "top_title": "How to improve agents: simulations, traces and evaluations",
    "top_url": "https://news.ycombinator.com/item?id=50306150"
-  },
-  {
-   "tool": "CodeRabbit",
-   "stories": 2,
-   "points": 4,
-   "top_title": "New CodeRabbit Features: Security Agents for Multi-Repo Deep Scans",
-   "top_url": "https://news.ycombinator.com/item?id=50263609"
   },
   {
    "tool": "Anatomy",
@@ -140,11 +126,25 @@
    "top_url": "https://news.ycombinator.com/item?id=50273447"
   },
   {
-   "tool": "Perplexity",
-   "stories": 2,
-   "points": 2,
-   "top_title": "Rethinking Search as Code Generation",
-   "top_url": "https://news.ycombinator.com/item?id=50278103"
+   "tool": "Claude",
+   "stories": 1,
+   "points": 3,
+   "top_title": "Show HN: Measuring how much of an AI-assisted design is yours",
+   "top_url": "https://news.ycombinator.com/item?id=50278863"
+  },
+  {
+   "tool": "Raycast",
+   "stories": 1,
+   "points": 3,
+   "top_title": "Power of Raycast, Now on iOS",
+   "top_url": "https://news.ycombinator.com/item?id=50313818"
+  },
+  {
+   "tool": "Chainalysis",
+   "stories": 1,
+   "points": 3,
+   "top_title": "Chainalysis Security Incident Information",
+   "top_url": "https://news.ycombinator.com/item?id=50310615"
   }
  ]
 }
