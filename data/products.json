@@ -2823,6 +2823,1051 @@
    "order_by_email": true,
    "stripe_link": null,
    "status": "active"
+  },
+  {
+   "id": "folding-charcoal-bbq-with-griddle",
+   "sku": "TR-BQ-001",
+   "name": "Folding charcoal BBQ with griddle",
+   "category": "bbq-camping",
+   "description": "Fold-out charcoal BBQ with a stainless griddle and two enamel grill plates. Use on a table or its own legs.",
+   "specs": [
+    "Cooking area 61 × 26cm",
+    "Folds to 65 × 17 × 30.5cm",
+    "Removable charcoal tray",
+    "7kg"
+   ],
+   "our_price": 149.95,
+   "image": "/assets/shop/p/tr-bq-001-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-001-1.webp",
+    "/assets/shop/p/tr-bq-001-2.webp",
+    "/assets/shop/p/tr-bq-001-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "BBQs & grills"
+  },
+  {
+   "id": "portable-charcoal-bbq-with-lid",
+   "sku": "TR-BQ-002",
+   "name": "Portable charcoal BBQ with lid",
+   "category": "bbq-camping",
+   "description": "Charcoal grill with a steel lid, deep charcoal tray and fold-away legs.",
+   "specs": [
+    "60 × 30 × 72cm",
+    "Height 62 or 72cm",
+    "Chrome steel grill",
+    "Carry handle"
+   ],
+   "our_price": 162.95,
+   "image": "/assets/shop/p/tr-bq-002-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-002-1.webp",
+    "/assets/shop/p/tr-bq-002-2.webp",
+    "/assets/shop/p/tr-bq-002-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "BBQs & grills"
+  },
+  {
+   "id": "charcoal-bbq-trolley-with-rotisserie",
+   "sku": "TR-BQ-003",
+   "name": "Charcoal BBQ trolley with rotisserie",
+   "category": "bbq-camping",
+   "description": "Wheeled charcoal grill with a manual rotisserie spit and two timber shelves.",
+   "specs": [
+    "55 × 34.5cm grill",
+    "Enamel-coated firebox",
+    "Manual rotisserie stick",
+    "87 × 83 × 45.5cm, 5.8kg"
+   ],
+   "our_price": 92.95,
+   "image": "/assets/shop/p/tr-bq-003-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-003-1.webp",
+    "/assets/shop/p/tr-bq-003-2.webp",
+    "/assets/shop/p/tr-bq-003-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "BBQs & grills"
+  },
+  {
+   "id": "compact-folding-bbq-fire-pit",
+   "sku": "TR-BQ-004",
+   "name": "Compact folding BBQ and fire pit",
+   "category": "bbq-camping",
+   "description": "Small steel charcoal grill that doubles as a fire pit. Packs flat into its bag.",
+   "specs": [
+    "50 × 35 × 27cm",
+    "Adjustable grill rack",
+    "Steel body",
+    "Carry bag included"
+   ],
+   "our_price": 73.95,
+   "image": "/assets/shop/p/tr-bq-004-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-004-1.webp",
+    "/assets/shop/p/tr-bq-004-2.webp",
+    "/assets/shop/p/tr-bq-004-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "BBQs & grills"
+  },
+  {
+   "id": "stainless-fire-pit-bbq-with-bag",
+   "sku": "TR-BQ-005",
+   "name": "Stainless fire pit BBQ with carry bag",
+   "category": "bbq-camping",
+   "description": "Fire pit and BBQ in one, in food-grade stainless steel. Folds flat.",
+   "specs": [
+    "Grill 35.5 × 36cm",
+    "3 grill heights",
+    "Wood or charcoal",
+    "8.5kg, carry bag"
+   ],
+   "our_price": 105.95,
+   "regular_price": 115.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-bq-005-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-005-1.webp",
+    "/assets/shop/p/tr-bq-005-2.webp",
+    "/assets/shop/p/tr-bq-005-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "BBQs & grills"
+  },
+  {
+   "id": "tripod-fire-pit-bbq-58cm",
+   "sku": "TR-BQ-006",
+   "name": "Tripod fire pit BBQ 58cm",
+   "category": "bbq-camping",
+   "description": "Cast iron fire bowl with a hanging grill that adjusts in height.",
+   "specs": [
+    "58cm bowl, 22.5cm deep",
+    "Adjustable tripod grill",
+    "Cast iron and steel",
+    "Heat-resistant coating"
+   ],
+   "our_price": 156.95,
+   "image": "/assets/shop/p/tr-bq-006-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-006-1.webp",
+    "/assets/shop/p/tr-bq-006-2.webp",
+    "/assets/shop/p/tr-bq-006-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "BBQs & grills"
+  },
+  {
+   "id": "charcoal-smoker-3-in-1",
+   "sku": "TR-BQ-007",
+   "name": "3-in-1 charcoal smoker",
+   "category": "bbq-camping",
+   "description": "Vertical charcoal smoker that also works as a grill or roaster.",
+   "specs": [
+    "38cm grills",
+    "Smoke, grill or roast",
+    "Water pan, adjustable vent",
+    "Stainless grill plate"
+   ],
+   "our_price": 115.95,
+   "image": "/assets/shop/p/tr-bq-007-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-007-1.webp",
+    "/assets/shop/p/tr-bq-007-2.webp",
+    "/assets/shop/p/tr-bq-007-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Smokers & pizza ovens"
+  },
+  {
+   "id": "offset-charcoal-smoker-bbq",
+   "sku": "TR-BQ-008",
+   "name": "Offset charcoal smoker BBQ",
+   "category": "bbq-camping",
+   "description": "Charcoal BBQ with a side firebox, lid thermometer, front shelf and wheels.",
+   "specs": [
+    "113 × 104 × 42cm",
+    "Side firebox",
+    "Built-in thermometer",
+    "Wheels and front shelf"
+   ],
+   "our_price": 178.95,
+   "image": "/assets/shop/p/tr-bq-008-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-008-1.webp",
+    "/assets/shop/p/tr-bq-008-2.webp",
+    "/assets/shop/p/tr-bq-008-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Smokers & pizza ovens"
+  },
+  {
+   "id": "pellet-pizza-oven-12in",
+   "sku": "TR-BQ-009",
+   "name": "Pellet pizza oven 12in",
+   "category": "bbq-camping",
+   "description": "Portable stainless pizza oven fired by wood pellets, chips or charcoal.",
+   "specs": [
+    "12in pizzas",
+    "Max 1000°F (stated)",
+    "Built-in thermometer",
+    "430 stainless shell"
+   ],
+   "our_price": 198.95,
+   "image": "/assets/shop/p/tr-bq-009-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-009-1.webp",
+    "/assets/shop/p/tr-bq-009-2.webp",
+    "/assets/shop/p/tr-bq-009-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Smokers & pizza ovens"
+  },
+  {
+   "id": "bbq-pizza-oven-box-with-stone",
+   "sku": "TR-BQ-010",
+   "name": "BBQ pizza oven box with stone",
+   "category": "bbq-camping",
+   "description": "Steel box that sits on a gas or charcoal BBQ and turns it into a pizza oven.",
+   "specs": [
+    "40 × 35 × 14cm, 6.5kg",
+    "Pizza stone included",
+    "Built-in thermometer",
+    "Grill min. 50 × 45cm (round 53cm)"
+   ],
+   "our_price": 132.95,
+   "image": "/assets/shop/p/tr-bq-010-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-010-1.webp",
+    "/assets/shop/p/tr-bq-010-2.webp",
+    "/assets/shop/p/tr-bq-010-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Smokers & pizza ovens"
+  },
+  {
+   "id": "pizza-peel-90cm",
+   "sku": "TR-BQ-011",
+   "name": "Pizza peel 90cm",
+   "category": "bbq-camping",
+   "description": "Long-handled pizza peel for wood-fired and BBQ pizza ovens.",
+   "specs": [
+    "90cm long",
+    "Head 31 × 36cm",
+    "Aluminium head, wood handle"
+   ],
+   "our_price": 46.95,
+   "image": "/assets/shop/p/tr-bq-011-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-011-1.webp",
+    "/assets/shop/p/tr-bq-011-2.webp",
+    "/assets/shop/p/tr-bq-011-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Smokers & pizza ovens"
+  },
+  {
+   "id": "bbq-tool-set-18pc-alloy-case",
+   "sku": "TR-BQ-012",
+   "name": "BBQ tool set 18 piece, alloy case",
+   "category": "bbq-camping",
+   "description": "Stainless BBQ tools in a lockable aluminium carry case.",
+   "specs": [
+    "Tongs, spatula, fork, knife",
+    "Basting and cleaning brushes",
+    "4 skewers, 6 corn holders, 2 shakers",
+    "Case 43 × 21 × 8cm"
+   ],
+   "our_price": 54.95,
+   "image": "/assets/shop/p/tr-bq-012-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-012-1.webp",
+    "/assets/shop/p/tr-bq-012-2.webp",
+    "/assets/shop/p/tr-bq-012-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "BBQ tools & accessories"
+  },
+  {
+   "id": "wireless-meat-thermometer-4-probe",
+   "sku": "TR-BQ-013",
+   "name": "Wireless meat thermometer, 4 probes",
+   "category": "bbq-camping",
+   "description": "Wireless thermometer with four probes, a remote receiver and alarms.",
+   "specs": [
+    "4 stainless probes",
+    "Range up to 100m",
+    "-20 to 300°C",
+    "AAA batteries (not included)"
+   ],
+   "our_price": 83.95,
+   "image": "/assets/shop/p/tr-bq-013-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-013-1.webp",
+    "/assets/shop/p/tr-bq-013-2.webp",
+    "/assets/shop/p/tr-bq-013-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "BBQ tools & accessories"
+  },
+  {
+   "id": "digital-meat-thermometer",
+   "sku": "TR-BQ-014",
+   "name": "Digital meat thermometer",
+   "category": "bbq-camping",
+   "description": "Instant-read probe thermometer with a magnetic back.",
+   "specs": [
+    "-50 to 300°C, ±1°C",
+    "11.8cm stainless probe",
+    "Magnetic back",
+    "1 × AAA (not included)"
+   ],
+   "our_price": 27.95,
+   "image": "/assets/shop/p/tr-bq-014-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-014-1.webp",
+    "/assets/shop/p/tr-bq-014-2.webp",
+    "/assets/shop/p/tr-bq-014-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "BBQ tools & accessories"
+  },
+  {
+   "id": "cast-iron-reversible-griddle-46cm",
+   "sku": "TR-BQ-015",
+   "name": "Cast iron reversible griddle 46cm",
+   "category": "bbq-camping",
+   "description": "Ridged on one side, flat on the other. Use on a BBQ or across two hobs.",
+   "specs": [
+    "46 × 22cm, cook area 42 × 18cm",
+    "Ridged and flat sides",
+    "Drip tray, 2 handles"
+   ],
+   "our_price": 58.95,
+   "image": "/assets/shop/p/tr-bq-015-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-015-1.webp",
+    "/assets/shop/p/tr-bq-015-2.webp",
+    "/assets/shop/p/tr-bq-015-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "BBQ tools & accessories"
+  },
+  {
+   "id": "folding-camp-kitchen-table",
+   "sku": "TR-BQ-016",
+   "name": "Folding camp kitchen table",
+   "category": "bbq-camping",
+   "description": "Aluminium camp kitchen with four side tables and zip storage, in a carry bag.",
+   "specs": [
+    "3 heights: 54, 62, 70cm",
+    "Aluminium frame, MDF top",
+    "4 side tables",
+    "Folds 7cm thin"
+   ],
+   "our_price": 123.95,
+   "image": "/assets/shop/p/tr-bq-016-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-016-1.webp",
+    "/assets/shop/p/tr-bq-016-2.webp",
+    "/assets/shop/p/tr-bq-016-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Camp kitchen"
+  },
+  {
+   "id": "camping-cookware-set-11pc",
+   "sku": "TR-BQ-017",
+   "name": "Camping cookware set 11 piece",
+   "category": "bbq-camping",
+   "description": "Nesting pot, pan and kettle with plates and cutlery for 2–3 people.",
+   "specs": [
+    "Pot, non-stick pan, kettle",
+    "2 steel plates, 2 forks, 2 spoons",
+    "Anodised aluminium",
+    "Folding handles, 2 bags"
+   ],
+   "our_price": 75.95,
+   "image": "/assets/shop/p/tr-bq-017-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-017-1.webp",
+    "/assets/shop/p/tr-bq-017-2.webp",
+    "/assets/shop/p/tr-bq-017-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Camp kitchen"
+  },
+  {
+   "id": "camp-wood-stove-with-flue",
+   "sku": "TR-BQ-018",
+   "name": "Camp wood stove with flue",
+   "category": "bbq-camping",
+   "description": "Folding wood and charcoal camp stove with a glass door and stainless chimney.",
+   "specs": [
+    "Open 55 × 42 × 54cm",
+    "Folds to 22 × 30 × 35cm",
+    "126cm stainless chimney",
+    "Gloves and hook included"
+   ],
+   "our_price": 192.95,
+   "image": "/assets/shop/p/tr-bq-018-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-018-1.webp",
+    "/assets/shop/p/tr-bq-018-2.webp",
+    "/assets/shop/p/tr-bq-018-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Camp kitchen"
+  },
+  {
+   "id": "folding-camping-table-70cm",
+   "sku": "TR-BQ-019",
+   "name": "Folding camping table 70cm",
+   "category": "bbq-camping",
+   "description": "Steel and aluminium table rated to 100kg, with a storage net and bag.",
+   "specs": [
+    "70 × 70cm top, 70cm high",
+    "Rated 100kg",
+    "3.2kg",
+    "Storage net, carry bag"
+   ],
+   "our_price": 106.95,
+   "image": "/assets/shop/p/tr-bq-019-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-019-1.webp",
+    "/assets/shop/p/tr-bq-019-2.webp",
+    "/assets/shop/p/tr-bq-019-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Camp kitchen"
+  },
+  {
+   "id": "portable-camp-shower-12l",
+   "sku": "TR-BQ-020",
+   "name": "Portable camp shower 12L",
+   "category": "bbq-camping",
+   "description": "Hand-pump shower with a 3m hose and 10 spray modes. No power needed.",
+   "specs": [
+    "12L tank",
+    "10 spray modes, flow lock",
+    "3m coiled hose",
+    "Neoprene cover"
+   ],
+   "our_price": 78.95,
+   "image": "/assets/shop/p/tr-bq-020-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-020-1.webp",
+    "/assets/shop/p/tr-bq-020-2.webp",
+    "/assets/shop/p/tr-bq-020-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Camp kitchen"
+  },
+  {
+   "id": "dome-tent-2-person",
+   "sku": "TR-BQ-021",
+   "name": "Dome tent 2 person",
+   "category": "bbq-camping",
+   "description": "Lightweight dome tent with a removable rainfly.",
+   "specs": [
+    "217 × 155 × 128cm",
+    "PU3000mm rainfly",
+    "Fibreglass poles",
+    "2.5kg"
+   ],
+   "our_price": 79.95,
+   "image": "/assets/shop/p/tr-bq-021-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-021-1.webp",
+    "/assets/shop/p/tr-bq-021-2.webp",
+    "/assets/shop/p/tr-bq-021-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Tents & sleeping"
+  },
+  {
+   "id": "instant-up-tent-4-person",
+   "sku": "TR-BQ-022",
+   "name": "Instant-up tent 4 person",
+   "category": "bbq-camping",
+   "description": "Pre-attached frame pitches in about two minutes. Entrance awning included.",
+   "specs": [
+    "258 × 258 × 194cm",
+    "210T PU3000mm polyester",
+    "Steel poles",
+    "Mesh windows, carry bag"
+   ],
+   "our_price": 176.95,
+   "regular_price": 192.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-bq-022-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-022-1.webp",
+    "/assets/shop/p/tr-bq-022-2.webp",
+    "/assets/shop/p/tr-bq-022-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Tents & sleeping"
+  },
+  {
+   "id": "family-tent-6-person",
+   "sku": "TR-BQ-023",
+   "name": "Family tent 6 person",
+   "category": "bbq-camping",
+   "description": "Roomy double-layer tent with a shade awning and a big door.",
+   "specs": [
+    "405 × 310 × 200cm",
+    "190T PU3000mm polyester",
+    "Steel and fibreglass poles",
+    "Carry bag"
+   ],
+   "our_price": 159.95,
+   "image": "/assets/shop/p/tr-bq-023-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-023-1.webp",
+    "/assets/shop/p/tr-bq-023-2.webp",
+    "/assets/shop/p/tr-bq-023-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Tents & sleeping"
+  },
+  {
+   "id": "instant-up-tent-8-person-2-rooms",
+   "sku": "TR-BQ-024",
+   "name": "Instant-up tent 8 person, 2 rooms",
+   "category": "bbq-camping",
+   "description": "Large pre-attached-frame tent split into two sleeping rooms.",
+   "specs": [
+    "425 × 245 × 212cm",
+    "2 rooms",
+    "210T PU3000mm polyester",
+    "Awning poles included"
+   ],
+   "our_price": 249.95,
+   "image": "/assets/shop/p/tr-bq-024-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-024-1.webp",
+    "/assets/shop/p/tr-bq-024-2.webp",
+    "/assets/shop/p/tr-bq-024-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Tents & sleeping"
+  },
+  {
+   "id": "suv-rear-hatch-tent",
+   "sku": "TR-BQ-025",
+   "name": "SUV rear hatch tent",
+   "category": "bbq-camping",
+   "description": "Attaches to the back of an SUV or hatch to extend your space.",
+   "specs": [
+    "292 × 144 × 203cm",
+    "Sleeps 3",
+    "Oxford fabric, UV coated",
+    "6kg"
+   ],
+   "our_price": 150.95,
+   "image": "/assets/shop/p/tr-bq-025-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-025-1.webp",
+    "/assets/shop/p/tr-bq-025-2.webp",
+    "/assets/shop/p/tr-bq-025-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Tents & sleeping"
+  },
+  {
+   "id": "self-inflating-sleeping-mat",
+   "sku": "TR-BQ-026",
+   "name": "Self-inflating sleeping mat",
+   "category": "bbq-camping",
+   "description": "9.5cm foam mat that inflates itself in about 60 seconds. Joins to a second mat.",
+   "specs": [
+    "187 × 66 × 9.5cm",
+    "Self-inflates in ~60s",
+    "Joinable",
+    "2.8kg, carry bag"
+   ],
+   "our_price": 87.95,
+   "image": "/assets/shop/p/tr-bq-026-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-026-1.webp",
+    "/assets/shop/p/tr-bq-026-2.webp",
+    "/assets/shop/p/tr-bq-026-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Tents & sleeping"
+  },
+  {
+   "id": "double-inflatable-sleeping-pad",
+   "sku": "TR-BQ-027",
+   "name": "Double inflatable sleeping pad",
+   "category": "bbq-camping",
+   "description": "Two-person air pad that packs down small.",
+   "specs": [
+    "192 × 132 × 6cm",
+    "Packs to 25.5 × 12.5 × 12.5cm",
+    "1.2kg",
+    "Patch kit and bag"
+   ],
+   "our_price": 84.95,
+   "image": "/assets/shop/p/tr-bq-027-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-027-1.webp",
+    "/assets/shop/p/tr-bq-027-2.webp",
+    "/assets/shop/p/tr-bq-027-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Tents & sleeping"
+  },
+  {
+   "id": "double-moon-camping-chair",
+   "sku": "TR-BQ-028",
+   "name": "Double moon camping chair",
+   "category": "bbq-camping",
+   "description": "Two-seater folding moon chair with a drink holder. No assembly.",
+   "specs": [
+    "133 × 48 × 90cm",
+    "Rated 240kg",
+    "600D Oxford, iron frame",
+    "5.4kg, carry bag"
+   ],
+   "our_price": 101.95,
+   "image": "/assets/shop/p/tr-bq-028-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-028-1.webp",
+    "/assets/shop/p/tr-bq-028-2.webp",
+    "/assets/shop/p/tr-bq-028-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Camp furniture"
+  },
+  {
+   "id": "padded-camping-chairs-2-pack",
+   "sku": "TR-BQ-029",
+   "name": "Padded camping chairs, 2 pack",
+   "category": "bbq-camping",
+   "description": "High-back padded armchairs with a drink holder and side pouch.",
+   "specs": [
+    "2 chairs",
+    "Rated 100kg each",
+    "85 × 60 × 106cm",
+    "Steel frame, 600D Oxford"
+   ],
+   "our_price": 99.95,
+   "image": "/assets/shop/p/tr-bq-029-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-029-1.webp",
+    "/assets/shop/p/tr-bq-029-2.webp",
+    "/assets/shop/p/tr-bq-029-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Camp furniture"
+  },
+  {
+   "id": "folding-camping-stretcher",
+   "sku": "TR-BQ-030",
+   "name": "Folding camping stretcher",
+   "category": "bbq-camping",
+   "description": "Lightweight aluminium stretcher that folds into a carry bag.",
+   "specs": [
+    "190 × 64 × 42cm",
+    "Rated 150kg",
+    "Aluminium frame",
+    "Packs to 95 × 15 × 11cm"
+   ],
+   "our_price": 72.95,
+   "image": "/assets/shop/p/tr-bq-030-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-030-1.webp",
+    "/assets/shop/p/tr-bq-030-2.webp",
+    "/assets/shop/p/tr-bq-030-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Camp furniture"
+  },
+  {
+   "id": "camping-table-and-2-chairs",
+   "sku": "TR-BQ-031",
+   "name": "Camping table and 2 chairs",
+   "category": "bbq-camping",
+   "description": "Folding aluminium table with two steel-frame chairs.",
+   "specs": [
+    "Table 60 × 45cm, 27 or 55cm high",
+    "Chairs 40 × 40 × 69cm",
+    "Table rated 30kg",
+    "2 carry bags"
+   ],
+   "our_price": 103.95,
+   "image": "/assets/shop/p/tr-bq-031-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-031-1.webp",
+    "/assets/shop/p/tr-bq-031-2.webp",
+    "/assets/shop/p/tr-bq-031-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Camp furniture"
+  },
+  {
+   "id": "elevated-camp-cot-with-mattress",
+   "sku": "TR-BQ-032",
+   "name": "Elevated camp cot with mattress",
+   "category": "bbq-camping",
+   "description": "Padded cot that opens with no assembly and folds in under 10 seconds.",
+   "specs": [
+    "Rated 180kg",
+    "37cm high",
+    "600D Oxford, 25mm tubes",
+    "Side pockets, bag"
+   ],
+   "our_price": 108.95,
+   "image": "/assets/shop/p/tr-bq-032-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-032-1.webp",
+    "/assets/shop/p/tr-bq-032-2.webp",
+    "/assets/shop/p/tr-bq-032-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Camp furniture"
+  },
+  {
+   "id": "led-camping-lantern-2-pack",
+   "sku": "TR-BQ-033",
+   "name": "LED camping lantern, 2 pack",
+   "category": "bbq-camping",
+   "description": "Collapsible 30-LED lanterns that run on AA batteries.",
+   "specs": [
+    "2 lanterns",
+    "30 LEDs each",
+    "3 × AA each (not included)",
+    "Fold-away handle"
+   ],
+   "our_price": 27.95,
+   "image": "/assets/shop/p/tr-bq-033-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-033-1.webp",
+    "/assets/shop/p/tr-bq-033-2.webp",
+    "/assets/shop/p/tr-bq-033-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Lighting & power"
+  },
+  {
+   "id": "solar-rechargeable-lantern-1500lm",
+   "sku": "TR-BQ-034",
+   "name": "Solar rechargeable lantern 1500lm",
+   "category": "bbq-camping",
+   "description": "Lantern that charges by solar or USB-C, and can top up a phone.",
+   "specs": [
+    "1500 lumens",
+    "7200mAh battery",
+    "Solar and USB-C charging",
+    "Waterproof"
+   ],
+   "our_price": 74.95,
+   "image": "/assets/shop/p/tr-bq-034-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-034-1.webp",
+    "/assets/shop/p/tr-bq-034-2.webp",
+    "/assets/shop/p/tr-bq-034-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Lighting & power"
+  },
+  {
+   "id": "cygnett-roam-200w-power-station",
+   "sku": "TR-BQ-035",
+   "name": "Cygnett Roam 200W power station",
+   "category": "bbq-camping",
+   "description": "Compact LiFePO4 power station with AC, USB-C and UPS backup.",
+   "specs": [
+    "102.4Wh, 200W AC",
+    "2 × USB-C 65W, 2 × USB-A, DC",
+    "LiFePO4, 3,000 cycles",
+    "2kg, 2 year warranty"
+   ],
+   "our_price": 399.95,
+   "image": "/assets/shop/p/tr-bq-035-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-035-1.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Lighting & power"
+  },
+  {
+   "id": "foldable-solar-panel-100w",
+   "sku": "TR-BQ-036",
+   "name": "Foldable solar panel 100W",
+   "category": "bbq-camping",
+   "description": "Portable mono panel with leads for most power stations.",
+   "specs": [
+    "100W, ≥24% efficiency",
+    "USB-A, QC3.0, USB-C, DC out",
+    "MC4 to XT60 / Anderson / DC5521",
+    "IP65"
+   ],
+   "our_price": 148.95,
+   "image": "/assets/shop/p/tr-bq-036-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-036-1.webp",
+    "/assets/shop/p/tr-bq-036-2.webp",
+    "/assets/shop/p/tr-bq-036-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Lighting & power"
+  },
+  {
+   "id": "portable-fridge-freezer-30l",
+   "sku": "TR-BQ-037",
+   "name": "Portable fridge freezer 30L",
+   "category": "bbq-camping",
+   "description": "Compressor fridge or freezer for 12V, 24V or 240V, with wheels.",
+   "specs": [
+    "30L, -20 to 20°C",
+    "12V / 24V / 240V",
+    "Battery protection",
+    "Wheels, drain plug"
+   ],
+   "our_price": 254.95,
+   "regular_price": 277.95,
+   "sale_label": "Launch price",
+   "sale_ends": "2026-11-30",
+   "image": "/assets/shop/p/tr-bq-037-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-037-1.webp",
+    "/assets/shop/p/tr-bq-037-2.webp",
+    "/assets/shop/p/tr-bq-037-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Coolers & 12V fridges"
+  },
+  {
+   "id": "portable-fridge-freezer-50l",
+   "sku": "TR-BQ-038",
+   "name": "Portable fridge freezer 50L",
+   "category": "bbq-camping",
+   "description": "Compressor fridge or freezer for 12V, 24V or 240V, with wheels.",
+   "specs": [
+    "50L, -20 to 20°C",
+    "12V / 24V / 240V",
+    "Reversible lid, 4 cup holders",
+    "Wheels, drain plug"
+   ],
+   "our_price": 335.95,
+   "image": "/assets/shop/p/tr-bq-038-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-038-1.webp",
+    "/assets/shop/p/tr-bq-038-2.webp",
+    "/assets/shop/p/tr-bq-038-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Coolers & 12V fridges"
+  },
+  {
+   "id": "cooler-box-33l",
+   "sku": "TR-BQ-039",
+   "name": "Cooler box 33L",
+   "category": "bbq-camping",
+   "description": "Hard cooler with a carry handle, detachable lid and drain plug.",
+   "specs": [
+    "33L",
+    "48.5 × 29 × 45cm",
+    "3.1kg",
+    "Drain plug"
+   ],
+   "our_price": 105.95,
+   "image": "/assets/shop/p/tr-bq-039-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-039-1.webp",
+    "/assets/shop/p/tr-bq-039-2.webp",
+    "/assets/shop/p/tr-bq-039-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Coolers & 12V fridges"
+  },
+  {
+   "id": "cooler-box-22l",
+   "sku": "TR-BQ-040",
+   "name": "Cooler box 22L",
+   "category": "bbq-camping",
+   "description": "Sealed cooler with 3cm PU insulation and dual latches. Doubles as a seat.",
+   "specs": [
+    "22L, about 30 cans",
+    "3cm PU insulation",
+    "Dual latches, seal",
+    "Ice packs included"
+   ],
+   "our_price": 78.95,
+   "image": "/assets/shop/p/tr-bq-040-1.webp",
+   "images": [
+    "/assets/shop/p/tr-bq-040-1.webp",
+    "/assets/shop/p/tr-bq-040-2.webp",
+    "/assets/shop/p/tr-bq-040-3.webp"
+   ],
+   "stock": "in_stock",
+   "stock_checked": "2026-11-01T22:38+11:00",
+   "order_by_email": true,
+   "stripe_link": null,
+   "status": "active",
+   "group": "Coolers & 12V fridges"
   }
  ]
 }

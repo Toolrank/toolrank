@@ -56,6 +56,7 @@ IC = {
  "cleaning": '<path d="M5.5 8h13l-1.6 12H7.1zM4 8h16M9 8V5h6v3"/>',
  "safety": '<path d="M3 18h18M5 18v-2a7 7 0 0 1 14 0v2M10 9.2V6h4v3.2"/>',
  "workshop-storage": '<path d="M3 9h18v10H3zM8.5 9V6h7v3M3 13.5h18M11 13.5v2h2v-2"/>',
+ "bbq-camping": '<path d="M12 4 3 20h18zM12 4v0M9 20l3-6 3 6M2 20h20"/>',
  "music-gear": '<path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/>',
  "search": '<circle cx="11" cy="11" r="7"/><path d="M20.5 20.5 16 16"/>',
  "quote": '<path d="M4 5h16v11H8l-4 4z"/><path d="M8 9.5h8M8 12.5h5"/>',
@@ -93,8 +94,8 @@ def header():
     return ('<a class="skip" href="#main">Skip to content</a><header class="hd"><div class="wrap hdr">' + LOGO + search_form("hs", "q1") +
             f'<nav class="hico" aria-label="Help"><a href="/shop/shipping/">{ic("help")}<span>Help</span></a><a href="mailto:{MAIL}?subject={urllib.parse.quote("Quote request")}">{ic("quote")}<span>Get a quote</span></a></nav></div>'
             '<div class="nb"><div class="wrap nbr"><details class="allc"><summary>' + ic("menu") + 'All Categories</summary><div class="allm">' + cats + '<a href="/shop/">All products</a></div></details>'
-            '<nav class="nl" aria-label="Main"><a href="/">Home</a><a href="/shop/">Shop</a><a href="/shop/music-gear/">Music gear</a><a href="/shop/#sale">Launch sale</a>'
-            f'<a href="{trade}">Trade &amp; Bulk</a><a href="/shop/shipping/">Shipping</a><a href="/shop/returns/">Returns</a><a href="mailto:{MAIL}">Contact</a></nav>'
+            '<nav class="nl" aria-label="Main"><a href="/">Home</a><a href="/shop/">Shop</a><a href="/shop/bbq-camping/">BBQ &amp; Camping</a><a href="/shop/music-gear/">Music gear</a><a href="/shop/#sale">Launch sale</a>'
+            f'<a href="{trade}">Trade &amp; Bulk</a><a class="nx" href="/shop/shipping/">Shipping</a><a class="nx" href="/shop/returns/">Returns</a><a href="mailto:{MAIL}">Contact</a></nav>'
             '<p class="strip">' + ic("pin") + 'Australian suppliers<span>|</span>' + ic("truck") + 'Ships direct</p></div></div></header>')
 
 def footer():
@@ -206,12 +207,14 @@ def empty():
 def tiles():
     t = "".join(f'<a class="tile" href="/shop/{c["id"]}/"><img src="/assets/img/cat-{c["id"]}.webp" alt="{E(ALT[c["id"]])}" width="640" height="480" loading="lazy"><span>{E(c["title"])}</span></a>' for c in CATS)
     if len(CATS) % 5: t += '<a class="tile" href="/shop/"><img src="/assets/img/hero.webp" alt="Tools on a workbench by Sydney Harbour" width="640" height="360" loading="lazy"><span>All products</span></a>'
-    return '<div class="tiles">' + t + "</div>"
+    n = len(CATS) + (1 if len(CATS) % 5 else 0)
+    return f'<div class="tiles{" t6" if n % 6 == 0 and n % 5 else ""}">' + t + "</div>"  # t6: 12 tiles sit in two even rows of 6 on desktop
 ALT = {"power-tools": "Cordless drill with drill bits and a saw blade on a workbench", "hand-tools": "Spanners, screwdrivers, pliers and a hammer on a wooden bench",
        "hardware": "Screws, bolts, nuts, washers and a brass hinge", "building": "Hard hat on a stack of bricks with a trowel and spirit levels",
        "automotive": "Car wheel, socket set, torque wrench and floor jack in a garage", "garden": "Secateurs, garden fork, rake, hose and gloves on a lawn",
        "cleaning": "Bucket, scrubbing brushes, squeegee, cloths and a spray bottle", "safety": "Hi-vis vest, safety glasses, earmuffs, work gloves and a hard hat",
        "workshop-storage": "Steel tool chest, workbench, pegboard and shelving in a workshop",
+       "bbq-camping": "Charcoal BBQ with fresh vegetables in front of a canvas bell tent",
        "music-gear": "Acoustic guitar on a stand, boom mic stand, cables, drumsticks and a music stand"}
 
 TRUST = ('<ul class="trust"><li>' + ic("pin") + '<span>Australian<br>suppliers</span></li><li>' + ic("truck") + '<span>Ships<br>direct</span></li>'
@@ -247,7 +250,7 @@ def site_home(C, prods, preview):
            "potentialAction": {"@type": "SearchAction", "target": BASE + "/shop/?q={q}", "query-input": "required name=q"}},
           {"@type": "ItemList", "name": "Shop categories", "itemListElement": [{"@type": "ListItem", "position": i, "name": c["title"], "url": f'{BASE}/shop/{c["id"]}/'} for i, c in enumerate(CATS, 1)]}]
     return doc(C, prods, head("ToolRank | Tools for every trade, shipped direct",
-                       "Hand tools, hardware, building, automotive, garden, cleaning, safety and workshop storage gear, shipped direct from Australian suppliers.", "/", ld), main, preview)
+                       "Hand tools, hardware, building, automotive, BBQ and camping, garden, cleaning, safety and workshop storage gear, shipped direct from Australian suppliers.", "/", ld), main, preview)
 
 def home_page(C, prods, preview):
     L = listed(prods) if not preview else prods

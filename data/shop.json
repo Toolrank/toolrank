@@ -37,6 +37,21 @@
    ]
   },
   {
+   "id": "bbq-camping",
+   "title": "BBQ & Camping",
+   "blurb": "BBQs, smokers, tents, camp furniture, lighting and portable fridges.",
+   "groups": [
+    "BBQs & grills",
+    "Smokers & pizza ovens",
+    "BBQ tools & accessories",
+    "Camp kitchen",
+    "Tents & sleeping",
+    "Camp furniture",
+    "Lighting & power",
+    "Coolers & 12V fridges"
+   ]
+  },
+  {
    "id": "garden",
    "title": "Garden & outdoor",
    "blurb": "Pruners, rakes, hoses and outdoor gear."

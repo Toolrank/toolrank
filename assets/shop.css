@@ -125,3 +125,6 @@ body.store{margin:0;font:400 15px/1.5 var(--hf);color:var(--txt);background:var(
 .fit{font-size:14px;margin:4px 0 8px;color:#3b4456}.fit b{color:#1b2333}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}.chips a{display:inline-flex;gap:6px;align-items:center;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid #d9dee8;color:#1b2333!important;font-weight:600;font-size:14px;text-decoration:none!important}.chips a:hover{border-color:var(--y);background:#fff8d6}.chips span{background:#1b2333;color:#fff;border-radius:999px;padding:0 7px;font-size:12px}
 .grp{scroll-margin-top:90px;margin:0 0 26px}.grp h2{font-size:20px;margin:0 0 12px;padding-bottom:6px;border-bottom:3px solid var(--y);display:inline-block}
+/* main nav fits with the BBQ & Camping link: trust strip hidden (same info is in the hero and footer); Shipping/Returns links drop to Help below 1100px */
+.strip{display:none!important}@media(max-width:1100px){.nl a.nx{display:none}}
+@media(min-width:1101px){.tiles.t6{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}.tiles.t6 .tile span{font-size:13px;padding:9px 6px 11px}}
