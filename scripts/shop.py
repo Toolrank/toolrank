@@ -336,7 +336,7 @@ def policies(C, prods, preview):
 <h2>What isn&rsquo;t covered</h2><p>Consumer guarantees don&rsquo;t cover damage caused by misuse, abnormal use, or ignoring the instructions, or normal wear and tear.</p>"""
     who = operator()
     terms = f"""<h2>Who we are</h2><p>{who} &ldquo;We&rdquo;, &ldquo;us&rdquo; and &ldquo;our&rdquo; refer to ToolRank. Contact: <a href="mailto:{MAIL}">{MAIL}</a>.</p>
-<h2>Products</h2><p>We try to describe and picture every product accurately. Photos are supplied by our supplier; check the product details for specifications. We sell non-electrical tools and equipment.</p>
+<h2>Products</h2><p>We try to describe and picture every product accurately. Photos are supplied by our supplier; check the product details for specifications. We sell tools and equipment.</p>
 <h2>Prices</h2><p>Prices are in Australian dollars and are the final price, including standard delivery to most metro areas. We are not registered for GST, so no GST is charged. Launch sale prices apply until the date shown; after that the regular price shown applies.</p>
 <h2>How ordering works</h2><p>Click &ldquo;Order now&rdquo; to email us your order. We confirm stock, delivery and the total, then send you a secure payment link. Your order is accepted once you pay. We never see or store your full card details.</p>
 <h2>Your order</h2><p>After you pay, you&rsquo;ll receive an order confirmation by email. If an item turns out to be unavailable, or was listed at an obviously wrong price, we&rsquo;ll tell you and give you a full refund for that item.</p>
