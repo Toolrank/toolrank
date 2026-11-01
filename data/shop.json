@@ -49,6 +49,34 @@
     "Camp furniture",
     "Lighting & power",
     "Coolers & 12V fridges"
+   ],
+   "guide": [
+    {
+     "h": "Charcoal BBQ or smoker?",
+     "p": "Grill fast over direct heat on a charcoal BBQ. Smoke low and slow in a smoker. A thermometer takes the guesswork out of both.",
+     "links": [
+      "portable-charcoal-bbq-with-lid",
+      "offset-charcoal-smoker-bbq",
+      "wireless-meat-thermometer-4-probe"
+     ]
+    },
+    {
+     "h": "Choosing a tent",
+     "p": "Pick one size up from your group so there&rsquo;s room for bags. Instant-up tents are quickest to pitch.",
+     "links": [
+      "dome-tent-2-person",
+      "instant-up-tent-4-person",
+      "family-tent-6-person"
+     ]
+    },
+    {
+     "h": "Cooler box or 12V fridge?",
+     "p": "A cooler box suits day trips. For longer trips, a 12V fridge freezer keeps food cold without ice.",
+     "links": [
+      "cooler-box-33l",
+      "portable-fridge-freezer-50l"
+     ]
+    }
    ]
   },
   {

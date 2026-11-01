@@ -128,3 +128,4 @@ body.store{margin:0;font:400 15px/1.5 var(--hf);color:var(--txt);background:var(
 /* main nav fits with the BBQ & Camping link: trust strip hidden (same info is in the hero and footer); Shipping/Returns links drop to Help below 1100px */
 .strip{display:none!important}@media(max-width:1100px){.nl a.nx{display:none}}
 @media(min-width:1101px){.tiles.t6{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}.tiles.t6 .tile span{font-size:13px;padding:9px 6px 11px}}
+.guide{margin:22px 0 8px;padding:16px 18px;background:#fff;border:1px solid #e3e7ef;border-radius:10px;max-width:860px}.guide h2{font-size:18px;margin:0 0 6px}.guide h3{font-size:15px;margin:12px 0 2px}.guide p{margin:0 0 4px;font-size:14px}.guide .gl{font-size:13.5px}

@@ -265,11 +265,20 @@ def home_page(C, prods, preview):
           {"@type": "ItemList", "name": "Products", "itemListElement": [{"@type": "ListItem", "position": i, "name": p["name"], "url": f'{BASE}/shop/p/{p["id"]}/'} for i, p in enumerate(listed(prods), 1)]}]
     return doc(C, prods, head("Shop all tools | ToolRank", f"{len(listed(prods))} tools and workshop products, shipped direct from Australian suppliers. Order by email, pay by secure link.", "/shop/", ld), main, preview)
 
+def guide(c, items):
+    """Optional short buying guide for a category (data/shop.json "guide"); links only to listed products."""
+    if not c.get("guide"): return ""
+    live = {p["id"]: p for p in items}; out = []
+    for g in c["guide"]:
+        ln = " &middot; ".join(f'<a href="/shop/p/{i}/">{E(live[i]["name"])}</a>' for i in g.get("links", []) if i in live)
+        out.append(f'<h3>{E(g["h"])}</h3><p>{g["p"]}</p>' + (f'<p class="gl">{ln}</p>' if ln else ""))
+    return f'<section class="guide"><h2>{E(c["title"])} buying guide</h2>' + "".join(out) + "</section>"
+
 def cat_page(C, c, prods, preview):
     items = [p for p in (prods if preview else listed(prods)) if p["category"] == c["id"]]
     main = ('<div class="wrap">' + crumbs((c["title"], None)) + '<div class="lay">' + sidebar(c["id"]) + '<div class="mc">'
             f'<div class="ph cph"><img src="/assets/img/cat-{c["id"]}.webp" alt="{E(ALT[c["id"]])}" width="640" height="480"><div><h1>{E(c["title"])}</h1><p>{E(c["blurb"])}</p></div></div>'
-            + grouped(c, items, preview) + '<p class="note">Prices in Australian dollars, delivery included to most metro areas. <a href="/shop/shipping/">Shipping</a> &middot; <a href="/shop/returns/">Returns</a></p>'
+            + grouped(c, items, preview) + guide(c, items) + '<p class="note">Prices in Australian dollars, delivery included to most metro areas. <a href="/shop/shipping/">Shipping</a> &middot; <a href="/shop/returns/">Returns</a></p>'
             + '</div></div></div>')
     ld = [{"@type": "CollectionPage", "name": c["title"], "url": f'{BASE}/shop/{c["id"]}/'}, crumb_ld((c["title"], f'{BASE}/shop/{c["id"]}/'))]
     if items: ld.append({"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i, "name": p["name"], "url": f'{BASE}/shop/p/{p["id"]}/'} for i, p in enumerate(items, 1)]})
