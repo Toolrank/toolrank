@@ -25,6 +25,11 @@
    "blurb": "Sawhorses, clamps, ladders and site gear."
   },
   {
+   "id": "workshop-storage",
+   "title": "Workshop storage",
+   "blurb": "Tool chests, workbenches, trolleys and racking."
+  },
+  {
    "id": "automotive",
    "title": "Automotive & 4WD",
    "blurb": "Upgrades for older cars, 4WD and recovery gear, towing, caravan and car care.",
@@ -35,6 +40,11 @@
     "Car care & interior",
     "Garage & servicing"
    ]
+  },
+  {
+   "id": "garden",
+   "title": "Garden & outdoor",
+   "blurb": "Pruners, rakes, hoses and outdoor gear."
   },
   {
    "id": "bbq-camping",
@@ -80,11 +90,6 @@
    ]
   },
   {
-   "id": "garden",
-   "title": "Garden & outdoor",
-   "blurb": "Pruners, rakes, hoses and outdoor gear."
-  },
-  {
    "id": "cleaning",
    "title": "Cleaning",
    "blurb": "Pressure-washer gear, brushes and buckets."
@@ -95,9 +100,88 @@
    "blurb": "Gloves, glasses, hearing protection and hi-vis."
   },
   {
-   "id": "workshop-storage",
-   "title": "Workshop storage",
-   "blurb": "Tool chests, workbenches, trolleys and racking."
+   "id": "furniture",
+   "title": "Furniture",
+   "blurb": "Beds, sofas, tables, chairs and outdoor settings.",
+   "alt": "White corduroy lounge sofa in a living room"
+  },
+  {
+   "id": "home-living",
+   "title": "Home & living",
+   "blurb": "Bedding, decor, lighting, rugs and storage.",
+   "alt": "Blue and red textured cushion covers"
+  },
+  {
+   "id": "kitchen",
+   "title": "Kitchen",
+   "blurb": "Cookware, utensils, small appliances and bins.",
+   "alt": "Cast iron frying pan with lid"
+  },
+  {
+   "id": "bathroom",
+   "title": "Bathroom",
+   "blurb": "Vanities, tapware, showers and accessories.",
+   "alt": "Navy striped bath towels by a basin"
+  },
+  {
+   "id": "appliances",
+   "title": "Appliances",
+   "blurb": "Heating, cooling, fridges, laundry and air care.",
+   "alt": "Portable folding pedestal fan"
+  },
+  {
+   "id": "electronics",
+   "title": "Electronics",
+   "blurb": "Computer, phone, audio, camera and TV gear.",
+   "alt": "Black wireless over-ear headphones"
+  },
+  {
+   "id": "office",
+   "title": "Office",
+   "blurb": "Desks, chairs, stationery and packaging.",
+   "alt": "Home office desk with laptop and lamp"
+  },
+  {
+   "id": "sports-fitness",
+   "title": "Sports & fitness",
+   "blurb": "Gym, bikes, water sports, fishing and more.",
+   "alt": "Exercise bike with standing desk"
+  },
+  {
+   "id": "pets",
+   "title": "Pets",
+   "blurb": "Beds, crates, toys, aquariums and farm supplies.",
+   "alt": "Dog resting on a fluffy round pet bed"
+  },
+  {
+   "id": "baby-kids",
+   "title": "Baby & kids",
+   "blurb": "Nursery, kids furniture, clothing and feeding.",
+   "alt": "Silicone baby feeding set"
+  },
+  {
+   "id": "toys-games",
+   "title": "Toys & games",
+   "blurb": "Toys, ride-ons, puzzles, games and crafts.",
+   "alt": "Remote control excavator toy"
+  },
+  {
+   "id": "health-beauty",
+   "title": "Health & beauty",
+   "blurb": "Hair, makeup, skincare and personal care.",
+   "alt": "Pink makeup brush set"
+  },
+  {
+   "id": "fashion",
+   "title": "Fashion",
+   "blurb": "Clothing, shoes, bags, jewellery and travel.",
+   "alt": "Tote handbags in four colours"
+  },
+  {
+   "id": "party-gifts",
+   "title": "Party & gifts",
+   "blurb": "Christmas, costumes, party supplies and gifts.",
+   "alt": "Mini Christmas tree with lights and gifts"
   },
   {
    "id": "music-gear",

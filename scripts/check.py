@@ -64,6 +64,22 @@ for p in pages:
         tgt = (ROOT/path.lstrip("/")) if path.startswith("/") else (p.parent/path)
         if tgt.is_dir(): tgt = tgt/"index.html"
         if not tgt.exists(): fails.append(f"{r}: broken internal link {h}")
+CDN = "https://cdn.dropshipzone.com.au/"  # hotlinked item photos: only a sample is checked (tens of thousands of URLs)
+cdn = sorted(u for u in ext if u.startswith(CDN)); ext = (ext - set(cdn)) | set(cdn[::max(1, len(cdn) // 20)])
+DZ_PUB = {"n", "name", "cat", "sub", "price_cents", "img"}
+dz = ROOT/"data/dsz/cards.json"
+if dz.exists():
+    dj = json.loads(dz.read_text())
+    if set(dj) - {"_note", "updated", "fields", "img_base", "items"}: fails.append(f"data/dsz/cards.json: unexpected top-level key(s) {sorted(set(dj) - {'fields', 'img_base', 'items', 'generated', 'feed_date'})}")
+    if set(dj.get("fields", [])) - DZ_PUB: fails.append(f"data/dsz/cards.json: non-public field(s) {sorted(set(dj['fields']) - DZ_PUB)}")
+    if any(not (isinstance(x[4], int) and x[4] > 0) for x in dj.get("items", [])): fails.append("data/dsz/cards.json: item without a real price")
+SUPPLIER_TXT = re.compile(r"drop\s*ship\s*zone", re.I)
+for p in pages:
+    if p.parts[-4:-2] != ("shop", "i") and "shop-data" not in p.parts: continue
+    if SUPPLIER_TXT.search(re.sub(re.escape(CDN) + r'[^"\s<]*', "", p.read_text())): fails.append(f"{p.relative_to(ROOT)}: supplier name visible on the page")
+for sm in sorted(ROOT.glob("sitemap-items-*.xml")):
+    for u in re.findall(r"<loc>(.*?)</loc>", sm.read_text()):
+        if not (ROOT/u.replace(BASE, "").lstrip("/")/"index.html").exists(): fails.append(f"{sm.name} entry missing file: {u}")
 for f in ("sitemap.xml", "robots.txt", "llms.txt", "llms-full.txt"):
     if not (ROOT/f).exists(): fails.append(f"missing {f}")
 for u in re.findall(r"<loc>(.*?)</loc>", (ROOT/"sitemap.xml").read_text()):

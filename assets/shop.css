@@ -129,3 +129,11 @@ body.store{margin:0;font:400 15px/1.5 var(--hf);color:var(--txt);background:var(
 .strip{display:none!important}@media(max-width:1100px){.nl a.nx{display:none}}
 @media(min-width:1101px){.tiles.t6{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}.tiles.t6 .tile span{font-size:13px;padding:9px 6px 11px}}
 .guide{margin:22px 0 8px;padding:16px 18px;background:#fff;border:1px solid #e3e7ef;border-radius:10px;max-width:860px}.guide h2{font-size:18px;margin:0 0 6px}.guide h3{font-size:15px;margin:12px 0 2px}.guide p{margin:0 0 4px;font-size:14px}.guide .gl{font-size:13.5px}
+/* bulk catalogue (many categories) */
+.allm{display:grid;grid-template-columns:1fr 1fr;width:min(560px,94vw);max-height:min(76vh,640px);overflow-y:auto}
+.side{max-height:calc(100vh - 24px);overflow-y:auto}.side nav a{padding:7px 16px}
+.pc h3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.more{text-align:center;margin:18px 0 6px}.more .btn{min-width:200px}
+.chips.subs{max-height:132px;overflow-y:auto;padding:2px}.chips a[aria-current=page]{background:#fff3bf;border-color:var(--y)}
+.pdesc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px 26px;margin:0 0 20px}.pdesc h2{font-size:20px;margin:0 0 10px}.pdesc .dsc{margin:0 0 14px;max-width:860px}.pdesc h4{margin:14px 0 6px;font-size:16px}.pdesc ul{padding-left:20px}
+@media(max-width:720px){.allm{grid-template-columns:1fr;width:min(320px,94vw)}.pdesc{padding:16px}}

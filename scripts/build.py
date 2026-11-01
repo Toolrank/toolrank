@@ -1199,7 +1199,7 @@ def main():
         "".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{UPD}</lastmod></url>\n" for u in urls) + "</urlset>\n")
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Perplexity-User", "Google-Extended", "Googlebot", "Bingbot", "Applebot", "Applebot-Extended"]
     (ROOT/"robots.txt").write_text("# ToolRank: search engines and AI crawlers are welcome.\n" + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in bots) +
-                                   f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
+                                   f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n" + "".join(f"Sitemap: {BASE}/{p.name}\n" for p in sorted(ROOT.glob("sitemap-items-*.xml"))))
     L = [f"# ToolRank\n\n> ToolRank is a Sydney-based studio that builds websites, web apps and custom business software (browser-based booking systems, client portals, dashboards, internal tools) for small businesses, bands and startups: fixed prices, 1-2 week builds, full ownership (domain, code, accounts) handed over. Packages: {BASE}/studio/ (Starter site A$499, Business site A$899, Web app / business software from A$1,990, Care plan A$29/month). Contact: {STUDIO_MAIL}. ToolRank also publishes free, independent AI tool rankings by use case. Last updated {UPD}. Rankings are editorial; paid builds and sponsorships never affect rank; featured placements are labelled. Launch offer: free for the first 100 tools (including featured placement); after that, free listing plus paid options at founding prices.\n\n## Categories\n"]
     L += [f"\nAudiences: 'For You' (consumer and creator tools) and 'For Business' (B2B and developer tools). {NT} tools ranked across {len(cats)} categories; {len(R)} approved user reviews.\n"]
     L += [f"- [{c['title']}]({BASE}/best/{c['id']}/): {c['blurb']} {len(c['tools'])} tools; #1: {c['tools'][0]['name']}." for c in cats]
@@ -1228,6 +1228,7 @@ def main():
     V = {a: hashlib.sha1((ROOT/"assets"/a).read_bytes()).hexdigest()[:8] for a in ("app.js", "style.css", "hero.js", "ev.css", "compare.js", "pwa.js")}
     for h in ROOT.rglob("*.html"):
         if "shots" in h.parts or h.parent.name in REDIRECTS: continue
+        if h.parts[-4:-2] == ("shop", "i"): continue  # bulk item pages (scripts/dsz_import.py) are self-contained and kept lean
         s = h.read_text(); n = re.sub(r"<!--GC-->.*?<!--/GC-->", "", s, flags=re.S); n = re.sub(r"<!--PRIV-->.*?<!--/PRIV-->", "", n, flags=re.S)
         n = n.replace('<p class="muted small">©', PRIV + '<p class="muted small">©', 1).replace("</body>", GC + "</body>", 1)
         n = re.sub(r'<a (?![^>]*\brel=)([^>]*href="/compare/\?tools=[^"]*"[^>]*)>', r'<a rel="nofollow" \1>', n)
