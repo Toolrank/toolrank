@@ -1,78 +1,78 @@
 {
- "fetched": "2026-10-31 18:54 UTC",
- "fetched_ts": 1793472886,
- "stars_baseline": "2026-10-24",
+ "fetched": "2026-11-01 15:45 UTC",
+ "fetched_ts": 1793547920,
+ "stars_baseline": "2026-10-25",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 1140,
-   "stars": 5585,
+   "gained": 1150,
+   "stars": 5695,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 824,
-   "stars": 4867,
+   "gained": 1037,
+   "stars": 5178,
    "url": "https://github.com/Oldcircle/geo-sleuth"
-  },
-  {
-   "tool": "Gemini CLI",
-   "repo": "google-gemini/gemini-cli",
-   "gained": 688,
-   "stars": 108651,
-   "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 448,
-   "stars": 111646,
+   "gained": 460,
+   "stars": 111708,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 327,
-   "stars": 4317,
+   "gained": 314,
+   "stars": 4345,
    "url": "https://github.com/nateherkai/scroll-craft"
+  },
+  {
+   "tool": "Gemini CLI",
+   "repo": "google-gemini/gemini-cli",
+   "gained": 272,
+   "stars": 108651,
+   "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "jevgrep",
    "repo": "dzhng/jevgrep",
-   "gained": 221,
-   "stars": 3113,
+   "gained": 228,
+   "stars": 3129,
    "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 194,
-   "stars": 4242,
+   "gained": 209,
+   "stars": 4279,
    "url": "https://github.com/ZJU-REAL/Easel"
+  },
+  {
+   "tool": "Microsoft Agent Framework",
+   "repo": "microsoft/agent-framework",
+   "gained": 159,
+   "stars": 14472,
+   "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 172,
-   "stars": 4087,
+   "gained": 150,
+   "stars": 4097,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 145,
-   "stars": 304,
+   "gained": 138,
+   "stars": 317,
    "url": "https://github.com/edenfunf/reelmimic"
-  },
-  {
-   "tool": "VoiceMem",
-   "repo": "xzf-thu/VoiceMem",
-   "gained": 118,
-   "stars": 2798,
-   "url": "https://github.com/xzf-thu/VoiceMem"
   }
  ],
  "hn": [
@@ -89,6 +89,13 @@
    "points": 92,
    "top_title": "Scaling Hierarchical Networks",
    "top_url": "https://news.ycombinator.com/item?id=50278253"
+  },
+  {
+   "tool": "Chainalysis",
+   "stories": 2,
+   "points": 8,
+   "top_title": "Chainalysis security incident with customers PII compromised",
+   "top_url": "https://news.ycombinator.com/item?id=50321437"
   },
   {
    "tool": "IFTTT",
@@ -138,13 +145,6 @@
    "points": 3,
    "top_title": "Power of Raycast, Now on iOS",
    "top_url": "https://news.ycombinator.com/item?id=50313818"
-  },
-  {
-   "tool": "Chainalysis",
-   "stories": 1,
-   "points": 3,
-   "top_title": "Chainalysis Security Incident Information",
-   "top_url": "https://news.ycombinator.com/item?id=50310615"
   }
  ]
 }
