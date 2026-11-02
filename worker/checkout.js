@@ -1,9 +1,11 @@
-// ToolRank checkout Worker. POST /checkout {items:[{id, qty}]} -> {url}
+// ToolRank checkout Worker. POST /checkout {items:[{id, qty}]} -> {url} (hosted redirect, default)
+// POST /checkout {items, ui:"embedded"} -> {client_secret} (Stripe Embedded Checkout on toolrank.io/shop/checkout/)
 // Prices and titles come only from the published price files on toolrank.io (never from the request).
 // Secret: STRIPE_SECRET_KEY (restricted key, Checkout Sessions: Write only).
 const SITE = "https://toolrank.io";
 const ORIGINS = new Set(["https://toolrank.io", "https://www.toolrank.io"]);
 const MAX_QTY = 10, MAX_LINES = 20;
+const EMBED_UI = "embedded_page";  // Stripe ui_mode for embedded checkout (the old value "embedded" is rejected by Stripe)
 
 function cors(origin) {
   return ORIGINS.has(origin)
@@ -82,10 +84,12 @@ export default {
 
     const ref = lines.map(l => `${l.id}x${l.qty}`).join(",").slice(0, 500);
     const meta = { business: "toolrank", items: ref };
+    const embedded = body.ui === "embedded" || body.ui === "embedded_page";  // anything else keeps the hosted redirect flow
     const params = {
       mode: "payment",
-      success_url: SITE + "/shop/thanks/?s={CHECKOUT_SESSION_ID}",
-      cancel_url: SITE + "/shop/cart/",
+      ...(embedded
+        ? { ui_mode: EMBED_UI, return_url: SITE + "/shop/thanks/?s={CHECKOUT_SESSION_ID}" }
+        : { success_url: SITE + "/shop/thanks/?s={CHECKOUT_SESSION_ID}", cancel_url: SITE + "/shop/cart/" }),
       shipping_address_collection: { allowed_countries: ["AU"] },
       phone_number_collection: { enabled: true },
       billing_address_collection: "auto",
@@ -102,11 +106,11 @@ export default {
       body: form(params),
     });
     const s = await r.json().catch(() => ({}));
-    if (!r.ok || !s.url) {
+    if (!r.ok || !(embedded ? s.client_secret : s.url)) {
       console.log("stripe error", r.status, s.error && s.error.type, s.error && s.error.code, s.error && s.error.message);
       return json({ error: "Checkout unavailable, please order by email", stripe: s.error ? { type: s.error.type, code: s.error.code, message: s.error.message } : { status: r.status } }, 502, origin);
     }
-    return json({ url: s.url, id: s.id, amount_total: s.amount_total, currency: s.currency, metadata: s.metadata,
+    return json({ ...(embedded ? { client_secret: s.client_secret, ui_mode: s.ui_mode } : { url: s.url }), id: s.id, amount_total: s.amount_total, currency: s.currency, metadata: s.metadata,
                   lines: lines.map(l => ({ id: l.id, name: l.name, unit_amount: l.cents, qty: l.qty })) }, 200, origin);
   },
 };
