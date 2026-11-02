@@ -1,77 +1,77 @@
 {
- "fetched": "2026-11-01 15:45 UTC",
- "fetched_ts": 1793547920,
- "stars_baseline": "2026-10-25",
+ "fetched": "2026-11-02 12:02 UTC",
+ "fetched_ts": 1793620953,
+ "stars_baseline": "2026-10-26",
  "repos_tracked": 16,
  "stars": [
   {
-   "tool": "logo-design-skill",
-   "repo": "kaankiziltug/logo-design-skill",
-   "gained": 1150,
-   "stars": 5695,
-   "url": "https://github.com/kaankiziltug/logo-design-skill"
-  },
-  {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 1037,
-   "stars": 5178,
+   "gained": 1266,
+   "stars": 5509,
    "url": "https://github.com/Oldcircle/geo-sleuth"
+  },
+  {
+   "tool": "logo-design-skill",
+   "repo": "kaankiziltug/logo-design-skill",
+   "gained": 1113,
+   "stars": 5776,
+   "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 460,
-   "stars": 111708,
+   "gained": 452,
+   "stars": 111765,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 314,
-   "stars": 4345,
+   "gained": 325,
+   "stars": 4389,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 272,
-   "stars": 108651,
+   "gained": 263,
+   "stars": 108667,
    "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "jevgrep",
    "repo": "dzhng/jevgrep",
-   "gained": 228,
-   "stars": 3129,
+   "gained": 238,
+   "stars": 3146,
    "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 209,
-   "stars": 4279,
+   "gained": 221,
+   "stars": 4327,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 159,
-   "stars": 14472,
+   "gained": 168,
+   "stars": 14494,
    "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 150,
-   "stars": 4097,
+   "gained": 139,
+   "stars": 4113,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 138,
-   "stars": 317,
+   "gained": 132,
+   "stars": 331,
    "url": "https://github.com/edenfunf/reelmimic"
   }
  ],
@@ -92,8 +92,8 @@
   },
   {
    "tool": "Chainalysis",
-   "stories": 2,
-   "points": 8,
+   "stories": 3,
+   "points": 11,
    "top_title": "Chainalysis security incident with customers PII compromised",
    "top_url": "https://news.ycombinator.com/item?id=50321437"
   },
