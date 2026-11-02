@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Reprice hand-built FactoryFast / ZNTS products with the store's standard formula (same as the bulk import):
-regular price = (cost incl. Sydney metro delivery x 1.10 + A$0.30) / (1 - 1.65%), rounded UP to .95; never below a 5% margin after Stripe fees.
+regular price = (cost incl. Sydney metro delivery x 1.25 (dsz_rules.MARKUP) + A$0.30) / (1 - 1.65%), rounded UP to .95; never below a 5% margin after Stripe fees.
 Launch-sale items keep their sale price (or the new regular price if that is lower) until sale_ends.
 Costs are PRIVATE (TOOLRANK_PRIVATE, default /workspace/toolrank-private/costs.json); without that file this does nothing.
 Run: python3 scripts/reprice.py [--dry-run]"""

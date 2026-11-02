@@ -55,7 +55,7 @@ def exclusion(title, cat, desc):
     return None
 
 # ---------- pricing ----------
-STRIPE_PCT, STRIPE_FIX, MARKUP, FLOOR = 0.0165, 0.30, 1.10, 0.05
+STRIPE_PCT, STRIPE_FIX, MARKUP, FLOOR = 0.0165, 0.30, 1.25, 0.05  # 25% markup on cost incl. delivery (owner, 2 Nov 2026); 5% minimum margin after Stripe fees
 def up95(x):
     """Round UP to the next price ending in .95."""
     n = math.floor(x)
@@ -70,7 +70,9 @@ def down95_below(x):
     return round(v, 2)
 def net(price): return price * (1 - STRIPE_PCT) - STRIPE_FIX
 def sell_price(cost_total, rrp=None):
-    """(price, reason). cost_total = supplier price incl. GST + Sydney metro delivery."""
+    """(price, reason). cost_total = supplier price incl. GST + Sydney metro delivery.
+    price = (cost_total x MARKUP + Stripe fixed fee) / (1 - Stripe %), rounded UP to .95. Where that reaches the supplier RRP, the highest .95
+    price below RRP is used instead, provided it still leaves FLOOR (5%) margin after Stripe fees; otherwise the item is not listed."""
     base = cost_total * MARKUP
     p = up95((base + STRIPE_FIX) / (1 - STRIPE_PCT))
     if rrp and p >= rrp:

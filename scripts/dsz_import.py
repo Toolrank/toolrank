@@ -2,6 +2,8 @@
 """Bulk catalogue import from the supplier's zone-rates CSV (re-runnable; the daily ops routine runs it after downloading a fresh file).
 
   python3 scripts/dsz_import.py [path/to/sku_list_zone_rates.csv] [--target 50000] [--dry-run]
+  python3 scripts/dsz_import.py --reprice-only [--dry-run]   re-price the CURRENT listing with dsz_rules (same items, ids, categories and
+      recorded costs; text and photos re-read from the feed recorded in dsz_costs.json). Items that can no longer keep the 5% floor under RRP are dropped.
 
 Default CSV: newest /workspace/dsz/x_sku_list_zone_rates_*/sku_list_zone_rates.csv.
 Streams the CSV (never loads it into RAM), applies eligibility + safety rules (scripts/dsz_rules.py), prices every item, collapses
@@ -140,6 +142,7 @@ def main():
     target = int(a[a.index("--target") + 1]) if "--target" in a else 50000
     dry = "--dry-run" in a
     pos = [x for i, x in enumerate(a) if not x.startswith("--") and (i == 0 or a[i-1] != "--target")]
+    if "--reprice-only" in a: return reprice_only(pos[0] if pos else None, dry)
     src = pos[0] if pos else default_csv()
     today = datetime.date.today()
     feed_date = datetime.date.fromtimestamp(os.path.getmtime(src))
@@ -291,6 +294,58 @@ def write_all(sel, cnt, src, feed_date, ids, target, cap):
            "price_min": prices[0] if prices else None, "price_median": prices[len(prices)//2] if prices else None, "price_max": prices[-1] if prices else None}
     (PRIV/"dsz_report.json").write_text(json.dumps(rep, indent=1))
     print(json.dumps(rep, indent=1))
+
+def reprice_only(src, dry):
+    t0 = time.time(); today = datetime.date.today()
+    old = load_json(PRIV/"dsz_costs.json", {}); costs = old.get("products", {})
+    if not costs: raise SystemExit("reprice-only: no dsz_costs.json")
+    src = src or old["feed"]; feed_date = datetime.date.fromisoformat(old["feed_date"])
+    ids = load_json(PRIV/"dsz_ids.json", {}); pairs = load_json(PRIV/"dsz_pairs.json", {})
+    cards = load_json(CARDS, {}).get("items", [])
+    by_n = {x[0]: x for x in cards}; cnt = collections.Counter(); want = {}; sel = []
+    for x in cards:  # keep current order (category, subcategory, rank)
+        i = pid(x[0]); c = costs.get(i)
+        if not c: raise SystemExit(f"reprice-only: {i} has no cost record")
+        if c.get("special_price_used") and c.get("special_end"):
+            try:
+                if datetime.date.fromisoformat(c["special_end"][:10]) <= today: cnt["special_price_expired_kept_recorded_cost"] += 1
+            except ValueError: pass
+        ct = round(c["cost"] + c["shipping_nsw_m"], 2); rrp = c.get("rrp")
+        sell, why = R.sell_price(ct, rrp if rrp and rrp > 0 else None)
+        if not sell: cnt["x_" + why] += 1; continue
+        cnt["priced_" + why] += 1
+        it = {"sku": c["supplier_sku"], "n": x[0], "id": i, "title": x[1], "cat": x[2], "sub": x[3], "src_cat": c["supplier_category"], "price": sell,
+              "old_price": x[4] / 100, "cost": c["cost"], "ship": c["shipping_nsw_m"], "rrp": rrp, "special": c["special_price_used"], "special_end": c["special_end"],
+              "stock": c["stock_qty"], "url": c["supplier_url"], "supplier": c["supplier_code"], "rebate_pct": c["rebate_pct"], "rebate_start": c["rebate_start"],
+              "rebate_end": c["rebate_end"], "card_img": x[5]}
+        if ids.get(it["sku"]) != x[0]: raise SystemExit(f"reprice-only: id map mismatch for {i}")
+        want[it["sku"]] = it; sel.append(it)
+    print(f"reprice-only: {len(cards)} listed -> {len(sel)} kept; {dict(cnt)}")
+    if dry: return sel, cnt
+    with open(src, newline="", encoding="utf-8", errors="replace") as f:  # text, photos and specs for the page (unchanged data)
+        rd = csv.reader(f); h = next(rd); ix = {k: i for i, k in enumerate(h)}
+        def g(r, k): return r[ix[k]] if k in ix and ix[k] < len(r) else ""
+        for r in rd:
+            if len(r) != len(h): continue
+            it = want.get(g(r, "SKU").strip())
+            if it is None or "desc" in it: continue
+            imgs = [g(r, f"Image {i}").strip() for i in range(1, 17)]; it["imgs"] = [u for u in imgs if u.startswith("https://")][:MAX_IMGS]
+            it.update(ean=g(r, "EAN Code").strip(), color=g(r, "Color").strip(), weight=R.num(g(r, "Weight (kg)")),
+                      dims=[R.num(g(r, "Carton Length (cm)")), R.num(g(r, "Carton Width (cm)")), R.num(g(r, "Carton Height (cm)"))])
+            d = r[ix["Description"]]
+            m = R_DAYS.search(re.sub(r"<[^>]+>", " ", d)); it["days"] = f"{m.group(1)}–{m.group(2)}" if m and int(m.group(1)) < int(m.group(2)) <= 30 else None
+            it["desc"] = sanitize(d)
+    miss = [it["id"] for it in sel if "desc" not in it]
+    if miss: raise SystemExit(f"reprice-only: {len(miss)} listed items not found in {src}, e.g. {miss[:5]}")
+    bad = [it["id"] for it in sel if not it["imgs"] or it["imgs"][0].replace(IMG_BASE, "") != it["card_img"]]
+    if bad: raise SystemExit(f"reprice-only: feed photos differ from the listing for {len(bad)} items, e.g. {bad[:5]}")
+    print(f"  feed re-read ({time.time()-t0:.0f}s)")
+    target = load_json(PRIV/"dsz_report.json", {}).get("target", 50000); cap = load_json(PRIV/"dsz_report.json", {}).get("subcategory_cap")
+    cnt["reprice_only"] = 1
+    write_all(sel, cnt, src, feed_date, ids, target, cap)
+    apply_pins(sel, pairs.get("pin", {}))
+    print(f"reprice-only: done in {time.time()-t0:.0f}s")
+    return sel, cnt
 
 def apply_pins(sel, pins):
     """Hand-built products with a cheaper identical bulk item: pause them and point their URL at the bulk page (scripts/shop.py writes a redirect).
