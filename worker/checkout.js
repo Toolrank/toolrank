@@ -17,7 +17,7 @@ function sydneyToday() {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Australia/Sydney", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
 }
 async function getJSON(path) {
-  const r = await fetch(SITE + path, { cf: { cacheTtl: 300, cacheEverything: true } });
+  const r = await fetch(SITE + path, { cf: { cacheTtlByStatus: { "200-299": 300, "404": 1, "500-599": 0 }, cacheEverything: true } });
   if (r.status === 404) return {};
   if (!r.ok) throw new Error("price data " + r.status);
   return r.json();
