@@ -2,7 +2,7 @@
  "_note": "Store config. The seller shown on the site is always 'ToolRank' (contact hello@toolrank.io); never add a personal name or ABN here. Products only appear on the site when status is 'active' AND our_price is set AND (stripe_link is set OR order_by_email is true).",
  "contact_email": "hello@toolrank.io",
  "change_of_mind_days": null,
- "policies_updated": "2026-10-27",
+ "policies_updated": "2026-11-02",
  "categories": [
   {
    "id": "power-tools",

@@ -13,7 +13,7 @@ return Promise.all(w.map(function(t){return get("/shop-data/q/"+t.slice(0,3)+".j
 r.sort(function(a,b){return b[1]-a[1]||a[0]-b[0]});return r.map(function(x){return x[0]})})}
 function items(pre,ps){var need={};ps.forEach(function(p){need[Math.floor(p/CH)]=1});var ks=Object.keys(need);
 return Promise.all(ks.map(function(k){return get(pre+k+".json")})).then(function(A){var m={};ks.forEach(function(k,i){m[k]=A[i]});return ps.map(function(p){return m[Math.floor(p/CH)][p%CH]})})}
-function card(x,B){var h="/shop/i/"+pid(x[0])+"/";return'<article class="pc"><a class="pci" href="'+h+'"><img src="'+esc(B.img+x[3])+'" alt="'+esc(x[1])+'" width="400" height="400" loading="lazy"></a><div class="pcb"><p class="pcc">'+esc(B.subs[x[5]][1])+'</p><h3><a href="'+h+'">'+esc(x[1])+'</a></h3><p class="pp"><span class="pr">'+money(x[2])+'</span></p><a class="btn ob" href="'+h+'">View details</a></div></article>'}
+function card(x,B){var h="/shop/i/"+pid(x[0])+"/";return'<article class="pc"><a class="pci" href="'+h+'"><img src="'+esc(B.img+x[3])+'" alt="'+esc(x[1])+'" width="400" height="400" loading="lazy"></a><div class="pcb"><p class="pcc">'+esc(B.subs[x[5]][1])+'</p><h3><a href="'+h+'">'+esc(x[1])+'</a></h3><p class="pp"><span class="pr">'+money(x[2])+'</span></p><button type="button" class="btn ob" data-add="'+pid(x[0]).toUpperCase()+'" data-t="'+esc(x[1])+'" data-p="'+x[2]+'" data-u="'+h+'" data-i="'+esc(B.img+x[3])+'">Add to cart</button></div></article>'}
 function more(b,g){b.addEventListener("click",function(){var f=+g.getAttribute("data-from"),t=+g.getAttribute("data-to"),e=Math.min(t,f+CH),ps=[];for(var p=f;p<e;p++)ps.push(g.P?g.P[p]:p);b.disabled=true;
 Promise.all([base(),items(g.getAttribute("data-list"),ps)]).then(function(r){g.insertAdjacentHTML("beforeend",r[1].map(function(x){return card(x,r[0])}).join(""));g.setAttribute("data-from",e);b.disabled=false;if(e>=t)b.hidden=true}).catch(function(){b.disabled=false})})}
 document.querySelectorAll("[data-more]").forEach(function(b){var g=document.getElementById(b.getAttribute("data-more"));if(g)more(b,g)});
@@ -37,4 +37,29 @@ b.hidden=false;more(b,g);b.click()})}).catch(function(){});sr.scrollIntoView()}}
 document.querySelectorAll("[data-car]").forEach(function(c){var t=c.querySelector(".track");c.querySelectorAll("[data-dir]").forEach(function(b){b.addEventListener("click",function(){t.scrollBy({left:(+b.dataset.dir)*t.clientWidth*.9,behavior:"smooth"})})})});
 document.querySelectorAll(".gal").forEach(function(g){var m=g.querySelector(".gm img");g.querySelectorAll(".gt button").forEach(function(b){b.addEventListener("click",function(){m.src=b.dataset.src||b.querySelector("img").src;g.querySelectorAll(".gt button").forEach(function(x){x.removeAttribute("aria-current")});b.setAttribute("aria-current","true")})})});
 document.querySelectorAll("[data-cats]").forEach(function(m){var d=m.closest("details");d&&d.addEventListener("toggle",function(){if(!d.open||m.F)return;m.F=1;base().then(function(B){m.insertAdjacentHTML("afterbegin",B.cats.map(function(c){return'<a href="/shop/'+c[0]+'/">'+esc(c[1])+"</a>"}).join(""))})})});
-document.addEventListener("click",function(e){var d=document.querySelector(".allc[open]");if(d&&!d.contains(e.target))d.removeAttribute("open")})})();
+document.addEventListener("click",function(e){var d=document.querySelector(".allc[open]");if(d&&!d.contains(e.target))d.removeAttribute("open")});
+/* cart (localStorage). Shown prices are a guide; checkout re-prices every item on the server. */
+var CK="tr_cart";function cget(){try{var c=JSON.parse(localStorage.getItem(CK)||"[]");return Array.isArray(c)?c.filter(function(x){return x&&x.id&&x.q>0}):[]}catch(e){return[]}}
+function cset(c){try{localStorage.setItem(CK,JSON.stringify(c))}catch(e){}cnt()}
+function cnt(){var n=cget().reduce(function(a,x){return a+x.q},0);document.querySelectorAll("[data-cartn]").forEach(function(b){b.textContent=n;b.hidden=!n})}
+function safeu(u){return/^\/shop\/[a-z0-9\/-]+$/.test(u||"")?u:"/shop/"}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-add]");if(!b)return;e.preventDefault();var c=cget(),id=b.getAttribute("data-add"),x=c.filter(function(y){return y.id===id})[0];
+if(x)x.q=Math.min(10,x.q+1);else c.push({id:id,t:b.getAttribute("data-t"),p:+b.getAttribute("data-p"),u:b.getAttribute("data-u"),i:b.getAttribute("data-i"),q:1});cset(c);
+b.textContent="Added \u2713";clearTimeout(b.T);b.T=setTimeout(function(){b.textContent="Add to cart"},1600);
+if(!b.nextElementSibling||!b.nextElementSibling.classList.contains("vc"))b.insertAdjacentHTML("afterend",'<a class="vc" href="/shop/cart/">View cart</a>')});
+var cw=document.getElementById("cart");
+function mail(c){var t=0,l=c.map(function(x){t+=x.p*x.q;return x.q+" x "+x.t+" ("+x.id+") "+money(x.p*x.q)}).join("\n");
+return"mailto:hello@toolrank.io?subject="+encodeURIComponent("Order: "+c.length+" item"+(c.length>1?"s":""))+"&body="+encodeURIComponent("Hi ToolRank,\n\nI would like to order:\n"+l+"\nTotal: "+money(t)+"\n\nName:\nDelivery address (incl. postcode):\nPhone:\n\nThanks")}
+function draw(){var c=cget();if(!c.length){cw.innerHTML='<p class="cemp">Your cart is empty. <a href="/shop/">Shop all products</a></p>';return}
+var t=0,h='<ul class="cl">';c.forEach(function(x,i){t+=x.p*x.q;var u=esc(safeu(x.u));h+='<li><a class="ci" href="'+u+'"><img src="'+esc(x.i||"")+'" alt="" width="72" height="72" loading="lazy"></a><div class="cd"><a href="'+u+'">'+esc(x.t)+'</a><small>'+esc(x.id)+' &middot; '+money(x.p)+'</small></div>'
++'<div class="cq"><button type="button" data-q="'+i+'" data-d="-1" aria-label="One less">&minus;</button><span>'+x.q+'</span><button type="button" data-q="'+i+'" data-d="1" aria-label="One more"'+(x.q>=10?" disabled":"")+'>+</button></div><b class="cp">'+money(x.p*x.q)+'</b><button type="button" class="cx" data-x="'+i+'" aria-label="Remove">&times;</button></li>'});
+cw.innerHTML=h+'</ul><div class="csum"><p class="ctot"><span>Total</span><b>'+money(t)+'</b></p><p class="small">Price includes delivery to Sydney metro, other areas confirmed before dispatch. Outside Sydney metro we may contact you to confirm delivery, or refund you in full if we can&rsquo;t deliver.</p><button type="button" class="btn ob xl" id="cgo">Checkout</button><p class="cerr" role="alert" hidden></p><p class="small"><a class="oe" href="'+esc(mail(c))+'">Order by email</a></p></div>'}
+if(cw){draw();cw.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;var c=cget();
+if(b.hasAttribute("data-q")){var x=c[+b.getAttribute("data-q")];if(x){x.q=Math.max(0,Math.min(10,x.q+(+b.getAttribute("data-d"))));if(!x.q)c.splice(c.indexOf(x),1);cset(c);draw()}return}
+if(b.hasAttribute("data-x")){c.splice(+b.getAttribute("data-x"),1);cset(c);draw();return}
+if(b.id==="cgo"){var er=cw.querySelector(".cerr");er.hidden=true;b.disabled=true;b.textContent="Going to checkout\u2026";
+fetch(cw.getAttribute("data-co"),{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({items:c.map(function(x){return{id:x.id,qty:x.q}})})})
+.then(function(r){return r.json().catch(function(){return{}})}).then(function(d){if(d.url){location.href=d.url;return}throw new Error(d.error||"Checkout unavailable")})
+.catch(function(err){b.disabled=false;b.textContent="Checkout";er.textContent=(err&&err.message&&err.message!=="Failed to fetch"?err.message:"Checkout unavailable")+". Try again, or order by email.";er.hidden=false})}})}
+if(document.getElementById("thanks")&&/[?&]s=/.test(location.search))cset([]);
+cnt();window.addEventListener("storage",function(){cnt();if(cw)draw()})})();

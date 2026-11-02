@@ -19,6 +19,17 @@ CH = 48  # cards per data chunk / per "Show more"
 MAIL = CFG["contact_email"]
 POLICIES = [("shipping", "Shipping"), ("returns", "Returns & refunds"), ("terms", "Terms of sale"), ("privacy", "Privacy")]
 TAGLINE = "Tools for every trade"
+CHECKOUT = "https://toolrank-checkout.gigmates.workers.dev/checkout"  # Cloudflare Worker (worker/checkout.js): prices from /shop-data/pr/, Stripe Checkout
+DELIV = "Price includes delivery to Sydney metro, other areas confirmed before dispatch."
+DELIV2 = "Outside Sydney metro we may contact you to confirm delivery, or refund you in full if we can&rsquo;t deliver."
+def add_btn(pid_, name, cents, url, image, cls="btn ob"):
+    """Add-to-cart button. Price/title here are for display only; the checkout Worker re-prices every item from /shop-data/pr/."""
+    return (f'<button type="button" class="{cls}" data-add="{E(pid_)}" data-t="{E(name)}" data-p="{int(cents)}" data-u="{E(url)}" data-i="{E(image)}">Add to cart</button>')
+def buy_block(pid_, name, cents, url, image, mail_href):
+    return (f'<p class="buy">{add_btn(pid_, name, cents, url, image, "btn ob xl")}</p>'
+            f'<p class="small">Secure checkout by Stripe. <a class="oe" href="{E(mail_href)}">Order by email</a></p>')
+def cart_link(icon):
+    return f'<a class="hcart" href="/shop/cart/">{icon}<span>Cart</span><b data-cartn hidden></b></a>'
 
 def store_ld():
     o = {"@type": "OnlineStore", "@id": BASE + "/#store", "name": "ToolRank", "url": BASE + "/", "email": MAIL, "slogan": TAGLINE,
@@ -86,6 +97,7 @@ IC = {
  "tag": '<path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.4"/>',
  "check": '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
  "mail": '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/>',
+ "cart": '<path d="M2.5 3.5h3l2.2 11.2h11l2-8H6.6"/><circle cx="9.5" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/>',
 }
 def ic(k, cls="ic"):
     return f'<svg class="{cls}" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{IC[k]}</svg>'
@@ -109,7 +121,7 @@ def header(icons=True):
     cats = "".join(f'<a href="/shop/{c["id"]}/">{ic(c["id"]) if icons else ""}{E(c["title"])}</a>' for c in CATS)
     trade = f"mailto:{MAIL}?subject={urllib.parse.quote('Trade / bulk quote')}"
     return ('<a class="skip" href="#main">Skip to content</a><header class="hd"><div class="wrap hdr">' + LOGO + search_form("hs", "q1") +
-            f'<nav class="hico" aria-label="Help"><a href="/shop/shipping/">{ic("help")}<span>Help</span></a><a href="mailto:{MAIL}?subject={urllib.parse.quote("Quote request")}">{ic("quote")}<span>Get a quote</span></a></nav></div>'
+            f'<nav class="hico" aria-label="Help"><a href="/shop/shipping/">{ic("help")}<span>Help</span></a><a href="mailto:{MAIL}?subject={urllib.parse.quote("Quote request")}">{ic("quote")}<span>Get a quote</span></a>{cart_link(ic("cart"))}</nav></div>'
             '<div class="nb"><div class="wrap nbr"><details class="allc"><summary>' + ic("menu") + 'All Categories</summary><div class="allm">' + cats + '<a href="/shop/">All products</a></div></details>'
             '<nav class="nl" aria-label="Main"><a href="/">Home</a><a href="/shop/">Shop</a><a href="/shop/furniture/">Furniture</a><a href="/shop/home-living/">Home</a><a href="/shop/kitchen/">Kitchen</a><a href="/shop/bbq-camping/">BBQ &amp; Camping</a><a href="/shop/#sale">Launch sale</a>'
             f'<a href="{trade}">Trade &amp; Bulk</a><a class="nx" href="/shop/shipping/">Shipping</a><a class="nx" href="/shop/returns/">Returns</a><a href="mailto:{MAIL}">Contact</a></nav>'
@@ -206,7 +218,7 @@ def card(p, preview=False, lazy=True):
                 f'<div class="pcb"><p class="pcc">{E(CAT[p["category"]]["title"])}</p><h3><a href="{href}">{E(p["name"])}</a></h3><p class="pp"><span class="tbc">Draft, not for sale</span></p></div></article>')
     return (f'<article class="pc"><a class="pci" href="{href}"><img src="{E(img(p))}" alt="{E(p["name"])}" width="400" height="400"{" loading=lazy" if lazy else ""}></a>'
             f'<div class="pcb"><p class="pcc">{E(CAT[p["category"]]["title"])}</p><h3><a href="{href}">{E(p["name"])}</a></h3>{'<p class="uf">Universal fit</p>' if p.get("universal") else ""}{price_html(p)}{stock_html(p)}'
-            f'<a class="btn ob" href="{E(buy_href(p))}">Order now</a></div></article>')
+            + add_btn(p["id"], p["name"], round(p["our_price"] * 100), href, img(p)) + '</div></article>')
 
 def carousel(title, items, more_href, hid, preview=False):
     if not items: return ""
@@ -279,13 +291,13 @@ def home_page(C, prods, preview):
         return f'<section class="blk" id="c-{c["id"]}"><div class="bh"><h2>{E(c["title"])}</h2><div class="cnav"><a href="/shop/{c["id"]}/">View all {n_cat(c["id"]):,}</a></div></div>{body}</section>'
     by = "".join(sec(c) for c in CATS if any(p["category"] == c["id"] for p in L) or dz_has(c["id"]))
     main = ('<div class="wrap">' + crumbs() + '<div class="lay">' + sidebar("all") + '<div class="mc"><div class="ph"><h1>Shop all products</h1>'
-            f'<p>{n_live():,} products. Prices include delivery to most metro areas.</p></div>'
+            f'<p>{n_live():,} products. Prices include delivery to Sydney metro, other areas confirmed before dispatch.</p></div>'
             '<section class="blk" id="sr" hidden><div class="bh"><h2>Search results</h2></div><div class="pg" id="srg"></div><p class="more"><button type="button" class="btn dk" id="srm" hidden>Show more</button></p></section>'
             + (f'<section class="blk" id="sale"><div class="bh"><h2>Launch sale</h2></div><p class="note">Launch prices until {nice_date(sale[0]["sale_ends"])}. After that, the regular price shown applies.</p>{grid(sale, preview)}</section>' if sale else "")
             + (by or empty()) + '</div></div></div>')
     ld = [{"@type": "CollectionPage", "name": "ToolRank Shop", "url": BASE + "/shop/"},
           {"@type": "ItemList", "name": "Products", "itemListElement": [{"@type": "ListItem", "position": i, "name": p["name"], "url": f'{BASE}/shop/p/{p["id"]}/'} for i, p in enumerate(listed(prods), 1)]}]
-    return doc(C, prods, head("Shop all products | ToolRank", f"{n_live():,} products: tools, home, garden, outdoor and more, shipped direct from Australian suppliers. Order by email, pay by secure link.", "/shop/", ld), main, preview)
+    return doc(C, prods, head("Shop all products | ToolRank", f"{n_live():,} products: tools, home, garden, outdoor and more, shipped direct from Australian suppliers. Secure checkout.", "/shop/", ld), main, preview)
 
 def guide(c, items):
     """Optional short buying guide for a category (data/shop.json "guide"); links only to listed products."""
@@ -300,7 +312,7 @@ def cat_page(C, c, prods, preview):
     items = [p for p in (prods if preview else listed(prods)) if p["category"] == c["id"]]
     main = ('<div class="wrap">' + crumbs((c["title"], None)) + '<div class="lay">' + sidebar(c["id"]) + '<div class="mc">'
             f'<div class="ph cph"><img src="/assets/img/cat-{c["id"]}.webp" alt="{E(alt(c))}" width="640" height="480"><div><h1>{E(c["title"])}</h1><p>{E(c["blurb"])}</p></div></div>'
-            + ((grouped(c, items, preview) if items else "") + dz_block(c, bool(items)) if (items or dz_has(c["id"])) else empty()) + guide(c, items) + '<p class="note">Prices in Australian dollars, delivery included to most metro areas. <a href="/shop/shipping/">Shipping</a> &middot; <a href="/shop/returns/">Returns</a></p>'
+            + ((grouped(c, items, preview) if items else "") + dz_block(c, bool(items)) if (items or dz_has(c["id"])) else empty()) + guide(c, items) + '<p class="note">Prices in Australian dollars. Prices include delivery to Sydney metro, other areas confirmed before dispatch. <a href="/shop/shipping/">Shipping</a> &middot; <a href="/shop/returns/">Returns</a></p>'
             + '</div></div></div>')
     ld = [{"@type": "CollectionPage", "name": c["title"], "url": f'{BASE}/shop/{c["id"]}/'}, crumb_ld((c["title"], f'{BASE}/shop/{c["id"]}/'))]
     if items: ld.append({"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i, "name": p["name"], "url": f'{BASE}/shop/p/{p["id"]}/'} for i, p in enumerate(items, 1)]})
@@ -312,8 +324,7 @@ def product_page(C, p, prods, preview):
     thumbs = "".join(f'<button type="button" data-src="{E(u)}"{" aria-current=true" if i == 0 else ""} aria-label="Photo {i+1}"><img src="{E(u)}" alt="" width="80" height="80" loading="lazy"></button>' for i, u in enumerate(ims)) if len(ims) > 1 else ""
     gal = f'<div class="gal"><figure class="gm"><img src="{E(ims[0])}" alt="{E(p["name"])}" width="800" height="800"></figure>{f"<div class=gt>{thumbs}</div>" if thumbs else ""}</div>'
     if ok:
-        buy = (f'<p class="buy"><a class="btn ob xl" href="{E(buy_href(p))}">Order now</a></p>'
-               + ('<p class="small">We&rsquo;ll confirm stock and send a secure payment link.</p>' if not p.get("stripe_link") else '<p class="small">Secure checkout by Stripe.</p>'))
+        buy = buy_block(p["id"], p["name"], round(p["our_price"] * 100), f'/shop/p/{p["id"]}/', ims[0], order_href(p))
     else:
         buy = '<p class="small">Not available to buy yet.</p>'
     specs = "".join(f"<li>{E(s)}</li>" for s in p.get("specs") or [])
@@ -323,7 +334,7 @@ def product_page(C, p, prods, preview):
             f'<div class="pinf"><p class="pcc"><a href="/shop/{c["id"]}/">{E(c["title"])}</a></p><h1>{E(p["name"])}</h1><p class="sku">Product ID: {E(p.get("sku") or p["id"])}</p>' + fit_html(p) +
             f'{price}{stock}{buy}<p class="dsc">{E(str(p.get("description") or ""))}</p>'
             + (f'<h2>Specs</h2><ul class="spec">{specs}</ul>' if specs else "") +
-            f'<ul class="pfacts"><li>{ic("truck", "ic sm")}Ships direct from an Australian supplier, usually within 1&ndash;3 business days. Delivery included to most metro areas.</li>'
+            f'<ul class="pfacts"><li>{ic("truck", "ic sm")}Ships direct from an Australian supplier, usually within 1&ndash;3 business days. {DELIV} {DELIV2}</li>'
             f'<li>{ic("check", "ic sm")}Australian Consumer Law guarantees apply. <a href="/shop/returns/">Returns</a></li>'
             f'<li>{ic("mail", "ic sm")}Questions? <a href="mailto:{MAIL}?subject={urllib.parse.quote("Question: " + p.get("sku", "") + " " + p["name"])}">{MAIL}</a></li></ul></div></div>'
             + carousel("More in " + c["title"], [x for x in listed(prods) if x["category"] == c["id"] and x["id"] != p["id"]], f'/shop/{c["id"]}/', "more", preview) + '</div>')
@@ -374,7 +385,7 @@ def dcard(x):
     h = purl(x[0])
     return (f'<article class="pc"><a class="pci" href="{h}"><img src="{E(IMGB + x[5])}" alt="{E(x[1])}" width="400" height="400" loading="lazy"></a>'
             f'<div class="pcb"><p class="pcc">{E(x[3])}</p><h3><a href="{h}">{E(x[1])}</a></h3><p class="pp"><span class="pr">{money(x[4] / 100)}</span></p>'
-            f'<a class="btn ob" href="{h}">View details</a></div></article>')
+            + add_btn(pid(x[0]), x[1], x[4], h, IMGB + x[5]) + '</div></article>')
 def more_grid(gid, cards, lst, frm, to):
     return (f'<div class="pg" id="{gid}" data-list="{lst}" data-from="{frm}" data-to="{to}">' + "".join(dcard(x) for x in cards) + '</div>'
             + (f'<p class="more"><button type="button" class="btn dk" data-more="{gid}">Show more</button></p>' if to > frm else ""))
@@ -391,7 +402,7 @@ def sub_page(C, c, sl, t, lst, prods):
     main = ('<div class="wrap">' + crumbs((c["title"], f'/shop/{c["id"]}/'), (t, None)) + '<div class="lay">' + sidebar(c["id"]) + '<div class="mc">'
             f'<div class="ph"><h1>{E(t)}</h1><p>{len(lst):,} products in <a href="/shop/{c["id"]}/">{E(c["title"])}</a>.</p></div>' + chips(c, sl)
             + more_grid("cg", lst[:CH], f"/shop-data/s/{c['id']}/{sl}/", CH, len(lst))
-            + '<p class="note">Prices in Australian dollars and include standard delivery to Sydney metro. Other areas: we confirm delivery before you pay. <a href="/shop/shipping/">Shipping</a> &middot; <a href="/shop/returns/">Returns</a></p></div></div></div>')
+            + '<p class="note">Prices in Australian dollars. Prices include delivery to Sydney metro, other areas confirmed before dispatch. <a href="/shop/shipping/">Shipping</a> &middot; <a href="/shop/returns/">Returns</a></p></div></div></div>')
     ld = [{"@type": "CollectionPage", "name": t, "url": BASE + path}, crumb_ld((c["title"], f'{BASE}/shop/{c["id"]}/'), (t, BASE + path)),
           {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i, "name": x[1], "url": BASE + purl(x[0])} for i, x in enumerate(lst[:CH], 1)]}]
     return doc(C, prods, head(f'{t} | {c["title"]} | ToolRank', f'{t}: {len(lst):,} products in {c["title"]}, shipped direct from Australian suppliers.', path, ld,
@@ -434,6 +445,12 @@ def write_data(out, prods):
         for w in set(toks(x[1]) + toks(x[3])):
             sh.setdefault(w[:3], {}).setdefault(w, []).append(pos)
     for k, v in sh.items(): (D/"q"/f"{k}.json").write_text(jd(dict(sorted(v.items()))))
+    P = D/"pr"; P.mkdir()  # public prices for the checkout Worker: pr/<n//1000>.json {n: [cents, title]}, pr/h.json {id: [cents, title, regular_cents, sale_ends]}
+    pr = {}
+    for x in G: pr.setdefault(x[0] // 1000, {})[str(x[0])] = [x[4], x[1]]
+    for k, v in pr.items(): (P/f"{k}.json").write_text(jd(v))
+    (P/"h.json").write_text(jd({p["id"]: [round(p["our_price"] * 100), p["name"], round(p["regular_price"] * 100) if on_sale(p) else None, p["sale_ends"] if on_sale(p) else None]
+                                for p in prods if sellable(p)}))
     (out/"assets/shop.js").write_text(SHOP_JS); (out/"assets/icons.svg").write_text(sprite())
     for f in out.glob("sitemap-items-*.xml"): f.unlink()
     ids = sorted(x[0] for x in G); upd = DZ.get("updated") or ""
@@ -453,7 +470,7 @@ def header_lite():
             f'<span class="lt"><span class="ln">Tool<b>Rank</b></span><span class="lg">{TAGLINE}</span></span></a>'
             '<form class="sf hs" action="/shop/" method="get" role="search" data-search><label class="sr" for="q1">Search the store</label><input id="q1" name="q" type="search" placeholder="Search products&hellip;" autocomplete="off">'
             f'<button type="submit" aria-label="Search">{icu("search")}</button><div class="sres" role="listbox" hidden></div></form>'
-            f'<nav class="hico" aria-label="Help"><a href="/shop/shipping/">{icu("help")}<span>Help</span></a><a href="mailto:{MAIL}?subject=Quote%20request">{icu("quote")}<span>Get a quote</span></a></nav></div>'
+            f'<nav class="hico" aria-label="Help"><a href="/shop/shipping/">{icu("help")}<span>Help</span></a><a href="mailto:{MAIL}?subject=Quote%20request">{icu("quote")}<span>Get a quote</span></a>{cart_link(icu("cart"))}</nav></div>'
             f'<div class="nb"><div class="wrap nbr"><details class="allc"><summary>{icu("menu")}All Categories</summary><div class="allm" data-cats><a href="/shop/">All products</a></div></details>'
             '<nav class="nl" aria-label="Main"><a href="/">Home</a><a href="/shop/">Shop</a><a href="/shop/furniture/">Furniture</a><a href="/shop/home-living/">Home</a><a href="/shop/kitchen/">Kitchen</a>'
             f'<a href="/shop/bbq-camping/">BBQ &amp; Camping</a><a href="/shop/shipping/">Shipping</a><a href="mailto:{MAIL}">Contact</a></nav></div></div></header>')
@@ -485,9 +502,8 @@ def dsz_page(C, it, feed_date):
             f'<div class="pinf"><p class="pcc"><a href="/shop/{c["id"]}/">{E(c["title"])}</a></p><h1>{T}</h1><p class="sku">Product ID: {it["id"]}</p>'
             f'<p class="pp big"><span class="pr">{money(it["price"])}</span></p>'
             f'<p class="stk">{icu("check", "ic sm")}In stock <span>(checked {nice_date(feed_date.isoformat())})</span></p>'
-            f'<p class="buy"><a class="btn ob xl" href="{E(dz_order_href(it))}" data-id="{it["id"]}" data-price-cents="{int(round(it["price"] * 100))}">Order now</a></p>'
-            '<p class="small">We&rsquo;ll confirm stock and send a secure payment link.</p>'
-            f'<ul class="pfacts"><li>{icu("truck", "ic sm")}Price includes standard delivery to Sydney metro. Other areas: we confirm delivery before you pay.{days}</li>'
+            + buy_block(it["id"], it["title"], int(round(it["price"] * 100)), path, ims[0], dz_order_href(it)) +
+            f'<ul class="pfacts"><li>{icu("truck", "ic sm")}{DELIV} {DELIV2}{days}</li>'
             f'<li>{icu("check", "ic sm")}Australian Consumer Law guarantees apply. <a href="/shop/returns/">Returns</a></li>'
             f'<li>{icu("mail", "ic sm")}Questions? <a href="mailto:{MAIL}?subject=Question%3A%20{it["id"]}">{MAIL}</a></li></ul></div></div>'
             + (f'<section class="pdesc"><h2>Details</h2><div class="dsc">{it["desc"]}</div>' + (f'<ul class="spec">{sp}</ul>' if sp else "") + '</section>' if it.get("desc") or sp else "")
@@ -529,7 +545,7 @@ return Promise.all(w.map(function(t){return get("/shop-data/q/"+t.slice(0,3)+".j
 r.sort(function(a,b){return b[1]-a[1]||a[0]-b[0]});return r.map(function(x){return x[0]})})}
 function items(pre,ps){var need={};ps.forEach(function(p){need[Math.floor(p/CH)]=1});var ks=Object.keys(need);
 return Promise.all(ks.map(function(k){return get(pre+k+".json")})).then(function(A){var m={};ks.forEach(function(k,i){m[k]=A[i]});return ps.map(function(p){return m[Math.floor(p/CH)][p%CH]})})}
-function card(x,B){var h="/shop/i/"+pid(x[0])+"/";return'<article class="pc"><a class="pci" href="'+h+'"><img src="'+esc(B.img+x[3])+'" alt="'+esc(x[1])+'" width="400" height="400" loading="lazy"></a><div class="pcb"><p class="pcc">'+esc(B.subs[x[5]][1])+'</p><h3><a href="'+h+'">'+esc(x[1])+'</a></h3><p class="pp"><span class="pr">'+money(x[2])+'</span></p><a class="btn ob" href="'+h+'">View details</a></div></article>'}
+function card(x,B){var h="/shop/i/"+pid(x[0])+"/";return'<article class="pc"><a class="pci" href="'+h+'"><img src="'+esc(B.img+x[3])+'" alt="'+esc(x[1])+'" width="400" height="400" loading="lazy"></a><div class="pcb"><p class="pcc">'+esc(B.subs[x[5]][1])+'</p><h3><a href="'+h+'">'+esc(x[1])+'</a></h3><p class="pp"><span class="pr">'+money(x[2])+'</span></p><button type="button" class="btn ob" data-add="'+pid(x[0]).toUpperCase()+'" data-t="'+esc(x[1])+'" data-p="'+x[2]+'" data-u="'+h+'" data-i="'+esc(B.img+x[3])+'">Add to cart</button></div></article>'}
 function more(b,g){b.addEventListener("click",function(){var f=+g.getAttribute("data-from"),t=+g.getAttribute("data-to"),e=Math.min(t,f+CH),ps=[];for(var p=f;p<e;p++)ps.push(g.P?g.P[p]:p);b.disabled=true;
 Promise.all([base(),items(g.getAttribute("data-list"),ps)]).then(function(r){g.insertAdjacentHTML("beforeend",r[1].map(function(x){return card(x,r[0])}).join(""));g.setAttribute("data-from",e);b.disabled=false;if(e>=t)b.hidden=true}).catch(function(){b.disabled=false})})}
 document.querySelectorAll("[data-more]").forEach(function(b){var g=document.getElementById(b.getAttribute("data-more"));if(g)more(b,g)});
@@ -553,8 +569,33 @@ b.hidden=false;more(b,g);b.click()})}).catch(function(){});sr.scrollIntoView()}}
 document.querySelectorAll("[data-car]").forEach(function(c){var t=c.querySelector(".track");c.querySelectorAll("[data-dir]").forEach(function(b){b.addEventListener("click",function(){t.scrollBy({left:(+b.dataset.dir)*t.clientWidth*.9,behavior:"smooth"})})})});
 document.querySelectorAll(".gal").forEach(function(g){var m=g.querySelector(".gm img");g.querySelectorAll(".gt button").forEach(function(b){b.addEventListener("click",function(){m.src=b.dataset.src||b.querySelector("img").src;g.querySelectorAll(".gt button").forEach(function(x){x.removeAttribute("aria-current")});b.setAttribute("aria-current","true")})})});
 document.querySelectorAll("[data-cats]").forEach(function(m){var d=m.closest("details");d&&d.addEventListener("toggle",function(){if(!d.open||m.F)return;m.F=1;base().then(function(B){m.insertAdjacentHTML("afterbegin",B.cats.map(function(c){return'<a href="/shop/'+c[0]+'/">'+esc(c[1])+"</a>"}).join(""))})})});
-document.addEventListener("click",function(e){var d=document.querySelector(".allc[open]");if(d&&!d.contains(e.target))d.removeAttribute("open")})})();
-""".replace("__CH__", str(CH))
+document.addEventListener("click",function(e){var d=document.querySelector(".allc[open]");if(d&&!d.contains(e.target))d.removeAttribute("open")});
+/* cart (localStorage). Shown prices are a guide; checkout re-prices every item on the server. */
+var CK="tr_cart";function cget(){try{var c=JSON.parse(localStorage.getItem(CK)||"[]");return Array.isArray(c)?c.filter(function(x){return x&&x.id&&x.q>0}):[]}catch(e){return[]}}
+function cset(c){try{localStorage.setItem(CK,JSON.stringify(c))}catch(e){}cnt()}
+function cnt(){var n=cget().reduce(function(a,x){return a+x.q},0);document.querySelectorAll("[data-cartn]").forEach(function(b){b.textContent=n;b.hidden=!n})}
+function safeu(u){return/^\/shop\/[a-z0-9\/-]+$/.test(u||"")?u:"/shop/"}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-add]");if(!b)return;e.preventDefault();var c=cget(),id=b.getAttribute("data-add"),x=c.filter(function(y){return y.id===id})[0];
+if(x)x.q=Math.min(10,x.q+1);else c.push({id:id,t:b.getAttribute("data-t"),p:+b.getAttribute("data-p"),u:b.getAttribute("data-u"),i:b.getAttribute("data-i"),q:1});cset(c);
+b.textContent="Added \u2713";clearTimeout(b.T);b.T=setTimeout(function(){b.textContent="Add to cart"},1600);
+if(!b.nextElementSibling||!b.nextElementSibling.classList.contains("vc"))b.insertAdjacentHTML("afterend",'<a class="vc" href="/shop/cart/">View cart</a>')});
+var cw=document.getElementById("cart");
+function mail(c){var t=0,l=c.map(function(x){t+=x.p*x.q;return x.q+" x "+x.t+" ("+x.id+") "+money(x.p*x.q)}).join("\n");
+return"mailto:hello@toolrank.io?subject="+encodeURIComponent("Order: "+c.length+" item"+(c.length>1?"s":""))+"&body="+encodeURIComponent("Hi ToolRank,\n\nI would like to order:\n"+l+"\nTotal: "+money(t)+"\n\nName:\nDelivery address (incl. postcode):\nPhone:\n\nThanks")}
+function draw(){var c=cget();if(!c.length){cw.innerHTML='<p class="cemp">Your cart is empty. <a href="/shop/">Shop all products</a></p>';return}
+var t=0,h='<ul class="cl">';c.forEach(function(x,i){t+=x.p*x.q;var u=esc(safeu(x.u));h+='<li><a class="ci" href="'+u+'"><img src="'+esc(x.i||"")+'" alt="" width="72" height="72" loading="lazy"></a><div class="cd"><a href="'+u+'">'+esc(x.t)+'</a><small>'+esc(x.id)+' &middot; '+money(x.p)+'</small></div>'
++'<div class="cq"><button type="button" data-q="'+i+'" data-d="-1" aria-label="One less">&minus;</button><span>'+x.q+'</span><button type="button" data-q="'+i+'" data-d="1" aria-label="One more"'+(x.q>=10?" disabled":"")+'>+</button></div><b class="cp">'+money(x.p*x.q)+'</b><button type="button" class="cx" data-x="'+i+'" aria-label="Remove">&times;</button></li>'});
+cw.innerHTML=h+'</ul><div class="csum"><p class="ctot"><span>Total</span><b>'+money(t)+'</b></p><p class="small">__DELIV__ __DELIV2__</p><button type="button" class="btn ob xl" id="cgo">Checkout</button><p class="cerr" role="alert" hidden></p><p class="small"><a class="oe" href="'+esc(mail(c))+'">Order by email</a></p></div>'}
+if(cw){draw();cw.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;var c=cget();
+if(b.hasAttribute("data-q")){var x=c[+b.getAttribute("data-q")];if(x){x.q=Math.max(0,Math.min(10,x.q+(+b.getAttribute("data-d"))));if(!x.q)c.splice(c.indexOf(x),1);cset(c);draw()}return}
+if(b.hasAttribute("data-x")){c.splice(+b.getAttribute("data-x"),1);cset(c);draw();return}
+if(b.id==="cgo"){var er=cw.querySelector(".cerr");er.hidden=true;b.disabled=true;b.textContent="Going to checkout\u2026";
+fetch(cw.getAttribute("data-co"),{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({items:c.map(function(x){return{id:x.id,qty:x.q}})})})
+.then(function(r){return r.json().catch(function(){return{}})}).then(function(d){if(d.url){location.href=d.url;return}throw new Error(d.error||"Checkout unavailable")})
+.catch(function(err){b.disabled=false;b.textContent="Checkout";er.textContent=(err&&err.message&&err.message!=="Failed to fetch"?err.message:"Checkout unavailable")+". Try again, or order by email.";er.hidden=false})}})}
+if(document.getElementById("thanks")&&/[?&]s=/.test(location.search))cset([]);
+cnt();window.addEventListener("storage",function(){cnt();if(cw)draw()})})();
+""".replace("__CH__", str(CH)).replace("__DELIV__", DELIV).replace("__DELIV2__", DELIV2)
 
 # ---------- policy pages (Australian Consumer Law) ----------
 def policy(C, prods, key, title, lead, body, preview):
@@ -571,9 +612,9 @@ def policies(C, prods, preview):
     com_txt = (f"<p>If you change your mind, you can return an unused item in its original packaging within {int(com)} days of delivery for a refund of the item price. Return postage for change-of-mind returns is paid by you.</p>"
                if com else "<p>We don&rsquo;t offer refunds or exchanges for change of mind (for example, if you ordered the wrong size or no longer need the item), unless a product page says otherwise. This doesn&rsquo;t affect your rights under the Australian Consumer Law if an item is faulty, not as described or doesn&rsquo;t match a sample.</p>")
     shipping = f"""<h2>Where we deliver</h2><p>We deliver within Australia. Orders ship directly from our Australian supplier&rsquo;s warehouse to you.</p>
-<h2>Delivery cost</h2><p>Our prices include standard delivery to most metro addresses. Before you pay, we confirm stock and delivery to your postcode. If delivery to your address would cost more, we tell you first and you decide. You won&rsquo;t be charged anything extra after you pay.</p>
+<h2>Delivery cost</h2><p>Prices include delivery to Sydney metro, other areas confirmed before dispatch. Checkout accepts any Australian address. For orders outside Sydney metro we may contact you to confirm delivery, or refund you in full if we can&rsquo;t deliver. You won&rsquo;t be charged anything extra after you pay.</p>
 <h2>Dispatch and delivery times</h2><p>Orders are usually dispatched within 1&ndash;3 business days after payment. Most arrive sooner, but please allow up to 15 business days (excluding weekends and public holidays). We email tracking details once your order is dispatched.</p>
-<h2>Small and large items</h2><ul><li><b>Smaller items</b> go by Australia Post and can be delivered to any Australian address, including PO boxes.</li><li><b>Large or heavy items</b> go by freight. Freight delivers to metro street addresses only (no PO boxes or parcel lockers). Outside metro areas you may need to collect from your local freight depot. We tell you before you pay if this applies.</li></ul>
+<h2>Small and large items</h2><ul><li><b>Smaller items</b> go by Australia Post and can be delivered to any Australian address, including PO boxes.</li><li><b>Large or heavy items</b> go by freight. Freight delivers to metro street addresses only (no PO boxes or parcel lockers). Outside metro areas you may need to collect from your local freight depot. We tell you before dispatch if this applies.</li></ul>
 <h2>On delivery day</h2><p>Delivery is to the front door, ground floor, by one driver. For large items, please help the driver unload. Someone needs to be there to receive freight.</p>
 <h2>Damaged, lost or wrong items</h2><p>If your order arrives damaged, doesn&rsquo;t arrive, or the wrong item turns up, email <a href="mailto:{MAIL}">{MAIL}</a> with your order number (and photos for damage). We deal with the supplier and courier for you.</p>
 <h2>Undeliverable orders</h2><p>If a parcel comes back because the address was wrong or freight couldn&rsquo;t be received, the supplier charges return and re-delivery costs. We&rsquo;ll tell you the amount before re-sending or refunding.</p>
@@ -588,8 +629,8 @@ def policies(C, prods, preview):
     who = operator()
     terms = f"""<h2>Who we are</h2><p>{who} &ldquo;We&rdquo;, &ldquo;us&rdquo; and &ldquo;our&rdquo; refer to ToolRank. Contact: <a href="mailto:{MAIL}">{MAIL}</a>.</p>
 <h2>Products</h2><p>We try to describe and picture every product accurately. Photos are supplied by our supplier; check the product details for specifications. We sell tools, equipment and household goods.</p>
-<h2>Prices</h2><p>Prices are in Australian dollars and are the final price, including standard delivery to most metro areas. We are not registered for GST, so no GST is charged. Launch sale prices apply until the date shown; after that the regular price shown applies.</p>
-<h2>How ordering works</h2><p>Click &ldquo;Order now&rdquo; to email us your order. We confirm stock, delivery and the total, then send you a secure payment link. Your order is accepted once you pay. We never see or store your full card details.</p>
+<h2>Prices</h2><p>Prices are in Australian dollars and are the final price, including delivery to Sydney metro. Other areas are confirmed before dispatch (see our <a href="/shop/shipping/">shipping policy</a>). We are not registered for GST, so no GST is charged. Launch sale prices apply until the date shown; after that the regular price shown applies.</p>
+<h2>How ordering works</h2><p>Add items to your cart and pay by card through Stripe&rsquo;s secure checkout, or use &ldquo;Order by email&rdquo; and we&rsquo;ll send you a secure payment link. Your order is accepted once you pay. If we can&rsquo;t deliver to your address, we refund you in full. We never see or store your full card details.</p>
 <h2>Your order</h2><p>After you pay, you&rsquo;ll receive an order confirmation by email. If an item turns out to be unavailable, or was listed at an obviously wrong price, we&rsquo;ll tell you and give you a full refund for that item.</p>
 <h2>Delivery</h2><p>Delivery is covered in our <a href="/shop/shipping/">shipping policy</a>. Risk in the goods passes to you on delivery.</p>
 <h2>Returns and your consumer rights</h2><p>{ACL}</p><p>See <a href="/shop/returns/">returns &amp; refunds</a> for how to make a claim. Nothing in these terms excludes, restricts or modifies any right or remedy you have under the Australian Consumer Law.</p>
@@ -598,7 +639,7 @@ def policies(C, prods, preview):
 <h2>Privacy</h2><p>How we handle your details is set out in our <a href="/shop/privacy/">privacy policy</a>.</p>
 <h2>Governing law</h2><p>These terms are governed by the laws of New South Wales, Australia.</p>
 <h2>Changes</h2><p>We may update these terms. The version published when you place your order applies to that order.</p>"""
-    privacy = f"""<h2>What we collect</h2><p>When you order, we collect your name, email address, phone number, delivery address and the details of your order. Payment card details are collected and processed by our payment provider (Stripe) through a secure payment link; we never see or store them.</p>
+    privacy = f"""<h2>What we collect</h2><p>When you order, we collect your name, email address, phone number, delivery address and the details of your order. Payment card details are collected and processed by our payment provider (Stripe) through its secure checkout; we never see or store them.</p>
 <h2>Why we collect it</h2><p>To process and deliver your order, send order and tracking updates, handle returns and questions, prevent fraud, and keep the business records the law requires.</p>
 <h2>Who we share it with</h2><ul><li><b>Stripe</b>, to take your payment.</li><li><b>Our supplier</b>, who receives your name, delivery address and phone number so it can ship your order directly to you.</li><li><b>Couriers</b>, who receive your name, delivery address and phone number so they can ship your order directly to you.</li><li>Government or regulators, only where the law requires it.</li></ul><p>We don&rsquo;t sell your personal information, and we don&rsquo;t use it for marketing unless you ask us to.</p>
 <h2>Overseas processing</h2><p>Stripe and some of our service providers may store or process information outside Australia, under their own privacy and security commitments.</p>
@@ -609,6 +650,16 @@ def policies(C, prods, preview):
             "returns": policy(C, prods, "returns", "Returns & refunds", "Your rights under the Australian Consumer Law, and how we handle faulty or incorrect items.", returns, preview),
             "terms": policy(C, prods, "terms", "Terms of sale", "The terms that apply when you buy from ToolRank.", terms, preview),
             "privacy": policy(C, prods, "privacy", "Privacy", "What we collect when you order, why, and who we share it with.", privacy, preview)}
+
+def cart_page(C, prods):
+    main = ('<div class="wrap">' + crumbs(("Cart", None)) + '<div class="ph"><h1>Your cart</h1></div>'
+            f'<div id="cart" class="cart" data-co="{CHECKOUT}"><p class="small">Loading&hellip;</p></div>'
+            f'<noscript><p>Your cart needs JavaScript. You can also order by email: <a href="mailto:{MAIL}">{MAIL}</a></p></noscript></div>')
+    return doc(C, prods, head("Your cart | ToolRank", "Your ToolRank cart. Secure checkout by Stripe.", "/shop/cart/", [], robots="noindex,follow"), main)
+def thanks_page(C, prods):
+    main = ('<div class="wrap"><div class="ph thx" id="thanks"><h1>Thanks, your order&rsquo;s in.</h1><p>We&rsquo;ll email tracking soon.</p>'
+            f'<p class="small">Questions? <a href="mailto:{MAIL}">{MAIL}</a></p><p><a class="btn dk" href="/shop/">Keep shopping</a></p></div></div>')
+    return doc(C, prods, head("Thanks for your order | ToolRank", "Thanks for your ToolRank order. We'll email tracking soon.", "/shop/thanks/", [], robots="noindex,follow"), main)
 
 def urls():
     return (["/", "/shop/"] + [f'/shop/{c["id"]}/' for c in CATS] + [f'/shop/{c["id"]}/{sl}/' for c in CATS for sl, _, _ in SUBS.get(c["id"], [])]
@@ -632,6 +683,7 @@ def build(out=None, preview=False):
     for p in PJ["products"]:  # replaced by a cheaper identical item: keep the old URL working
         if p.get("replaced_by") and not sellable(p) and p["replaced_by"].startswith("TR-DZ-"): w(f"shop/p/{p['id']}", moved_page(p))
     for k, s in policies(C, prods, preview).items(): w(f"shop/{k}", s)
+    w("shop/cart", cart_page(C, prods)); w("shop/thanks", thanks_page(C, prods))
     for c in CATS:  # bulk subcategory pages; stale ones removed
         want = {sl for sl, _, _ in SUBS.get(c["id"], [])}
         cd = out/"shop"/c["id"]

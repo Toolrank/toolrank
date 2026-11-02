@@ -1,0 +1,7 @@
+# ToolRank checkout Worker (separate from every other Worker on the account).
+# Deploy: cd worker && env -u CLOUDFLARE_API_TOKEN -u CLOUDFLARE_ACCOUNT_ID npx wrangler@3 deploy
+# Secret: STRIPE_SECRET_KEY (set with `wrangler secret put`, never in this file).
+name = "toolrank-checkout"
+main = "checkout.js"
+compatibility_date = "2024-11-01"
+workers_dev = true
