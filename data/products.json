@@ -2562,7 +2562,7 @@
     "/assets/shop/p/tr-au-034-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-02T09:09+11:00",
+   "stock_checked": "2026-11-03T09:02+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "paused",
@@ -2591,7 +2591,7 @@
     "/assets/shop/p/tr-au-035-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-02T09:09+11:00",
+   "stock_checked": "2026-11-03T09:02+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "paused",
@@ -3188,7 +3188,7 @@
     "/assets/shop/p/tr-bq-013-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-03T09:02+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "paused",
@@ -3742,7 +3742,7 @@
     "/assets/shop/p/tr-bq-034-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-03T09:02+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "paused",
