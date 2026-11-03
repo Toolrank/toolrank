@@ -27,7 +27,36 @@
   {
    "id": "workshop-storage",
    "title": "Workshop storage",
-   "blurb": "Tool chests, workbenches, trolleys and racking."
+   "blurb": "Tool chests, workbenches, trolleys and racking.",
+   "guide": [
+    {
+     "h": "Shelving: steel or wire?",
+     "p": "Steel shelving suits heavy boxes and tools in the garage. Wire shelving lets air through and is easy to wipe down. Check each listing for the rated load per shelf.",
+     "links": [
+      "steel-garage-shelving-120x40x183",
+      "garage-shelving-5-tier-2-pack",
+      "wire-shelving-90x45-black"
+     ]
+    },
+    {
+     "h": "Get it off the floor",
+     "p": "Slatwall panels and wall hooks hold tools, hoses and leads where you can see them. A ceiling hoist frees up floor space for the car.",
+     "links": [
+      "slatwall-panels-6-pack-black",
+      "garage-wall-hooks-12-pack",
+      "ceiling-bike-hoist",
+      "wall-mounted-drill-organiser"
+     ]
+    },
+    {
+     "h": "Sorting small parts",
+     "p": "Drawer cabinets keep screws, bolts and fittings sorted by size. Pick more drawers if you keep lots of small parts.",
+     "links": [
+      "22-drawer-parts-cabinet",
+      "39-drawer-parts-cabinet"
+     ]
+    }
+   ]
   },
   {
    "id": "automotive",
