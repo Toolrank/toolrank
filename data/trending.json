@@ -1,77 +1,77 @@
 {
- "fetched": "2026-11-02 12:02 UTC",
- "fetched_ts": 1793620953,
- "stars_baseline": "2026-10-26",
+ "fetched": "2026-11-03 09:01 UTC",
+ "fetched_ts": 1793696517,
+ "stars_baseline": "2026-10-27",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 1266,
-   "stars": 5509,
+   "gained": 1367,
+   "stars": 5691,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 1113,
-   "stars": 5776,
+   "gained": 1072,
+   "stars": 5847,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 452,
-   "stars": 111765,
+   "gained": 470,
+   "stars": 111843,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 325,
-   "stars": 4389,
+   "gained": 335,
+   "stars": 4436,
    "url": "https://github.com/nateherkai/scroll-craft"
-  },
-  {
-   "tool": "Gemini CLI",
-   "repo": "google-gemini/gemini-cli",
-   "gained": 263,
-   "stars": 108667,
-   "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "jevgrep",
    "repo": "dzhng/jevgrep",
-   "gained": 238,
-   "stars": 3146,
+   "gained": 246,
+   "stars": 3159,
    "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 221,
-   "stars": 4327,
+   "gained": 223,
+   "stars": 4349,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 168,
-   "stars": 14494,
+   "gained": 169,
+   "stars": 14509,
    "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 139,
-   "stars": 4113,
+   "gained": 142,
+   "stars": 4130,
    "url": "https://github.com/nykooi1/vibe-wise"
+  },
+  {
+   "tool": "Gemini CLI",
+   "repo": "google-gemini/gemini-cli",
+   "gained": 134,
+   "stars": 108697,
+   "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 132,
-   "stars": 331,
+   "gained": 125,
+   "stars": 348,
    "url": "https://github.com/edenfunf/reelmimic"
   }
  ],
@@ -91,6 +91,13 @@
    "top_url": "https://news.ycombinator.com/item?id=50278253"
   },
   {
+   "tool": "Google AI Mode",
+   "stories": 3,
+   "points": 12,
+   "top_title": "Google plans to support shared AI training opt-out via robots.txt",
+   "top_url": "https://news.ycombinator.com/item?id=50309270"
+  },
+  {
    "tool": "Chainalysis",
    "stories": 3,
    "points": 11,
@@ -105,25 +112,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50308597"
   },
   {
-   "tool": "Google AI Mode",
-   "stories": 1,
-   "points": 7,
-   "top_title": "Google plans to support shared AI training opt-out via robots.txt",
-   "top_url": "https://news.ycombinator.com/item?id=50309270"
-  },
-  {
    "tool": "Agno",
    "stories": 4,
    "points": 5,
    "top_title": "How to improve agents: simulations, traces and evaluations",
    "top_url": "https://news.ycombinator.com/item?id=50306150"
-  },
-  {
-   "tool": "Anatomy",
-   "stories": 1,
-   "points": 4,
-   "top_title": "Generates polished SVGs with optional WebGL shaders and 3D effects",
-   "top_url": "https://news.ycombinator.com/item?id=50247313"
   },
   {
    "tool": "Amp",
@@ -145,6 +138,13 @@
    "points": 3,
    "top_title": "Power of Raycast, Now on iOS",
    "top_url": "https://news.ycombinator.com/item?id=50313818"
+  },
+  {
+   "tool": "Replit",
+   "stories": 2,
+   "points": 2,
+   "top_title": "ViBench 2.0: A Benchmark for Long-Horizon Software Building",
+   "top_url": "https://news.ycombinator.com/item?id=50317860"
   }
  ]
 }
