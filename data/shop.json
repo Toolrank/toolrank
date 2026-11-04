@@ -68,6 +68,44 @@
     "Towing & caravan",
     "Car care & interior",
     "Garage & servicing"
+   ],
+   "guide": [
+    {
+     "h": "Air down, air up",
+     "p": "Lower tyre pressure gives more grip on sand and rough tracks. Pack deflators to let air out evenly and a 12V compressor to pump back up before the bitumen.",
+     "links": [
+      "4wd-tyre-deflators-4-pack",
+      "12v-tyre-compressor-85l",
+      "tyre-inflator-with-gauge-160psi"
+     ]
+    },
+    {
+     "h": "Get yourself unstuck",
+     "p": "Recovery tracks help when you bog in sand or mud. A jump starter gets a flat battery going without a second car.",
+     "links": [
+      "recovery-tracks-pair",
+      "jump-starter-2000a",
+      "rechargeable-spotlight-10w"
+     ]
+    },
+    {
+     "h": "Roof racks and shade",
+     "p": "Check your roof type first: some bars clamp to rails, others fit cars without rails. Check the listing's bar length and load rating against your car's roof limit.",
+     "links": [
+      "roof-rack-cross-bars-1350mm",
+      "roof-rack-bars-no-rails-105cm",
+      "roof-rack-side-awning-1-4x2m"
+     ]
+    },
+    {
+     "h": "See more on the road",
+     "p": "A dash cam records the road ahead and behind. A mirror monitor kit adds a reversing camera to older cars.",
+     "links": [
+      "dash-cam-front-rear-10in",
+      "reversing-camera-mirror-kit",
+      "clip-on-towing-mirrors-pair"
+     ]
+    }
    ]
   },
   {
