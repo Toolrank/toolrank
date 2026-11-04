@@ -1,78 +1,78 @@
 {
- "fetched": "2026-11-03 09:01 UTC",
- "fetched_ts": 1793696517,
- "stars_baseline": "2026-10-27",
+ "fetched": "2026-11-04 05:08 UTC",
+ "fetched_ts": 1793768926,
+ "stars_baseline": "2026-10-28",
  "repos_tracked": 16,
  "stars": [
   {
+   "tool": "ReelMimic",
+   "repo": "edenfunf/reelmimic",
+   "gained": 1532,
+   "stars": 1774,
+   "url": "https://github.com/edenfunf/reelmimic"
+  },
+  {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 1367,
-   "stars": 5691,
+   "gained": 1469,
+   "stars": 5843,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 1072,
-   "stars": 5847,
+   "gained": 1061,
+   "stars": 5920,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
    "gained": 470,
-   "stars": 111843,
+   "stars": 111907,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 335,
-   "stars": 4436,
+   "gained": 343,
+   "stars": 4477,
    "url": "https://github.com/nateherkai/scroll-craft"
-  },
-  {
-   "tool": "jevgrep",
-   "repo": "dzhng/jevgrep",
-   "gained": 246,
-   "stars": 3159,
-   "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 223,
-   "stars": 4349,
+   "gained": 236,
+   "stars": 4380,
    "url": "https://github.com/ZJU-REAL/Easel"
+  },
+  {
+   "tool": "jevgrep",
+   "repo": "dzhng/jevgrep",
+   "gained": 191,
+   "stars": 3168,
+   "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 169,
-   "stars": 14509,
+   "gained": 176,
+   "stars": 14527,
    "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 142,
-   "stars": 4130,
+   "gained": 138,
+   "stars": 4148,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
-   "tool": "Gemini CLI",
-   "repo": "google-gemini/gemini-cli",
-   "gained": 134,
-   "stars": 108697,
-   "url": "https://github.com/google-gemini/gemini-cli"
-  },
-  {
-   "tool": "ReelMimic",
-   "repo": "edenfunf/reelmimic",
-   "gained": 125,
-   "stars": 348,
-   "url": "https://github.com/edenfunf/reelmimic"
+   "tool": "VoiceMem",
+   "repo": "xzf-thu/VoiceMem",
+   "gained": 135,
+   "stars": 2867,
+   "url": "https://github.com/xzf-thu/VoiceMem"
   }
  ],
  "hn": [
@@ -93,9 +93,16 @@
   {
    "tool": "Google AI Mode",
    "stories": 3,
-   "points": 12,
+   "points": 13,
    "top_title": "Google plans to support shared AI training opt-out via robots.txt",
    "top_url": "https://news.ycombinator.com/item?id=50309270"
+  },
+  {
+   "tool": "Canva AI",
+   "stories": 2,
+   "points": 12,
+   "top_title": "Canva CEO's letter to staff: Major restructuring affecting 22% of employees",
+   "top_url": "https://news.ycombinator.com/item?id=50359746"
   },
   {
    "tool": "Chainalysis",
@@ -103,6 +110,13 @@
    "points": 11,
    "top_title": "Chainalysis security incident with customers PII compromised",
    "top_url": "https://news.ycombinator.com/item?id=50321437"
+  },
+  {
+   "tool": "Krea",
+   "stories": 1,
+   "points": 8,
+   "top_title": "Krea 3 Technical Report",
+   "top_url": "https://news.ycombinator.com/item?id=50359051"
   },
   {
    "tool": "IFTTT",
@@ -113,38 +127,24 @@
   },
   {
    "tool": "Agno",
-   "stories": 4,
+   "stories": 3,
    "points": 5,
    "top_title": "How to improve agents: simulations, traces and evaluations",
    "top_url": "https://news.ycombinator.com/item?id=50306150"
   },
   {
-   "tool": "Amp",
-   "stories": 2,
-   "points": 3,
-   "top_title": "Self-Hosted Orbs",
-   "top_url": "https://news.ycombinator.com/item?id=50273447"
-  },
-  {
    "tool": "Claude",
-   "stories": 1,
-   "points": 3,
+   "stories": 2,
+   "points": 4,
    "top_title": "Show HN: Measuring how much of an AI-assisted design is yours",
    "top_url": "https://news.ycombinator.com/item?id=50278863"
   },
   {
-   "tool": "Raycast",
-   "stories": 1,
-   "points": 3,
-   "top_title": "Power of Raycast, Now on iOS",
-   "top_url": "https://news.ycombinator.com/item?id=50313818"
-  },
-  {
-   "tool": "Replit",
+   "tool": "LlamaIndex",
    "stories": 2,
-   "points": 2,
-   "top_title": "ViBench 2.0: A Benchmark for Long-Horizon Software Building",
-   "top_url": "https://news.ycombinator.com/item?id=50317860"
+   "points": 4,
+   "top_title": "The Inference Stack Behind OCRia",
+   "top_url": "https://news.ycombinator.com/item?id=50355821"
   }
  ]
 }

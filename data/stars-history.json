@@ -357,5 +357,23 @@
   "software-mansion-labs/goldie": 2586,
   "tigerless-labs/agent-memory": 4301,
   "xzf-thu/VoiceMem": 2843
+ },
+ "2026-11-04": {
+  "Nanako0129/sepia": 3611,
+  "Oldcircle/geo-sleuth": 5843,
+  "RooCodeInc/Roo-Code": 24251,
+  "ZJU-REAL/Easel": 4380,
+  "dzhng/jevgrep": 3168,
+  "edenfunf/reelmimic": 1774,
+  "google-gemini/gemini-cli": 108712,
+  "kaankiziltug/logo-design-skill": 5920,
+  "microsoft/agent-framework": 14527,
+  "nateherkai/scroll-craft": 4477,
+  "nykooi1/vibe-wise": 4148,
+  "openai/whisper": 111907,
+  "shadcn-ui/lint": 3306,
+  "software-mansion-labs/goldie": 2586,
+  "tigerless-labs/agent-memory": 4303,
+  "xzf-thu/VoiceMem": 2867
  }
 }
