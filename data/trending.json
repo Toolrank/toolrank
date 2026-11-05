@@ -1,94 +1,94 @@
 {
- "fetched": "2026-11-04 05:08 UTC",
- "fetched_ts": 1793768926,
- "stars_baseline": "2026-10-28",
+ "fetched": "2026-11-05 01:19 UTC",
+ "fetched_ts": 1793841573,
+ "stars_baseline": "2026-10-29",
  "repos_tracked": 16,
  "stars": [
   {
-   "tool": "ReelMimic",
-   "repo": "edenfunf/reelmimic",
-   "gained": 1532,
-   "stars": 1774,
-   "url": "https://github.com/edenfunf/reelmimic"
-  },
-  {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 1469,
-   "stars": 5843,
+   "gained": 1538,
+   "stars": 5978,
    "url": "https://github.com/Oldcircle/geo-sleuth"
+  },
+  {
+   "tool": "ReelMimic",
+   "repo": "edenfunf/reelmimic",
+   "gained": 1518,
+   "stars": 1773,
+   "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 1061,
-   "stars": 5920,
+   "gained": 946,
+   "stars": 6004,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
    "gained": 470,
-   "stars": 111907,
+   "stars": 111966,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 343,
-   "stars": 4477,
+   "gained": 359,
+   "stars": 4534,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 236,
-   "stars": 4380,
+   "gained": 256,
+   "stars": 4415,
    "url": "https://github.com/ZJU-REAL/Easel"
-  },
-  {
-   "tool": "jevgrep",
-   "repo": "dzhng/jevgrep",
-   "gained": 191,
-   "stars": 3168,
-   "url": "https://github.com/dzhng/jevgrep"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 176,
-   "stars": 14527,
+   "gained": 169,
+   "stars": 14537,
    "url": "https://github.com/microsoft/agent-framework"
-  },
-  {
-   "tool": "vibe-wise",
-   "repo": "nykooi1/vibe-wise",
-   "gained": 138,
-   "stars": 4148,
-   "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "VoiceMem",
    "repo": "xzf-thu/VoiceMem",
-   "gained": 135,
-   "stars": 2867,
+   "gained": 137,
+   "stars": 2883,
    "url": "https://github.com/xzf-thu/VoiceMem"
+  },
+  {
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 133,
+   "stars": 4158,
+   "url": "https://github.com/nykooi1/vibe-wise"
+  },
+  {
+   "tool": "Gemini CLI",
+   "repo": "google-gemini/gemini-cli",
+   "gained": 126,
+   "stars": 108731,
+   "url": "https://github.com/google-gemini/gemini-cli"
   }
  ],
  "hn": [
   {
-   "tool": "Cursor",
-   "stories": 2,
-   "points": 155,
-   "top_title": "The Agent SDK",
-   "top_url": "https://news.ycombinator.com/item?id=50273731"
+   "tool": "Kagi",
+   "stories": 1,
+   "points": 115,
+   "top_title": "Education shouldn't be held for ransom",
+   "top_url": "https://news.ycombinator.com/item?id=50369657"
   },
   {
-   "tool": "Cartesia",
-   "stories": 1,
-   "points": 92,
-   "top_title": "Scaling Hierarchical Networks",
-   "top_url": "https://news.ycombinator.com/item?id=50278253"
+   "tool": "Canva AI",
+   "stories": 4,
+   "points": 36,
+   "top_title": "Canva CEO's letter to staff: Major restructuring affecting 22% of employees",
+   "top_url": "https://news.ycombinator.com/item?id=50359746"
   },
   {
    "tool": "Google AI Mode",
@@ -98,11 +98,18 @@
    "top_url": "https://news.ycombinator.com/item?id=50309270"
   },
   {
-   "tool": "Canva AI",
+   "tool": "Krea",
    "stories": 2,
    "points": 12,
-   "top_title": "Canva CEO's letter to staff: Major restructuring affecting 22% of employees",
-   "top_url": "https://news.ycombinator.com/item?id=50359746"
+   "top_title": "Krea 3 Technical Report",
+   "top_url": "https://news.ycombinator.com/item?id=50359051"
+  },
+  {
+   "tool": "Cursor",
+   "stories": 1,
+   "points": 12,
+   "top_title": "Malicious Claude Code Extension Found in Cursor Marketplace",
+   "top_url": "https://news.ycombinator.com/item?id=50301004"
   },
   {
    "tool": "Chainalysis",
@@ -112,18 +119,18 @@
    "top_url": "https://news.ycombinator.com/item?id=50321437"
   },
   {
-   "tool": "Krea",
-   "stories": 1,
-   "points": 8,
-   "top_title": "Krea 3 Technical Report",
-   "top_url": "https://news.ycombinator.com/item?id=50359051"
+   "tool": "Lovable",
+   "stories": 2,
+   "points": 10,
+   "top_title": "How we built Lovable, and why we keep rebuilding it",
+   "top_url": "https://news.ycombinator.com/item?id=50365530"
   },
   {
-   "tool": "IFTTT",
-   "stories": 2,
-   "points": 7,
-   "top_title": "Put AI to Work for You",
-   "top_url": "https://news.ycombinator.com/item?id=50308597"
+   "tool": "Factory",
+   "stories": 1,
+   "points": 6,
+   "top_title": "Factory Acquires HumanLayer",
+   "top_url": "https://news.ycombinator.com/item?id=50369245"
   },
   {
    "tool": "Agno",
@@ -131,13 +138,6 @@
    "points": 5,
    "top_title": "How to improve agents: simulations, traces and evaluations",
    "top_url": "https://news.ycombinator.com/item?id=50306150"
-  },
-  {
-   "tool": "Claude",
-   "stories": 2,
-   "points": 4,
-   "top_title": "Show HN: Measuring how much of an AI-assisted design is yours",
-   "top_url": "https://news.ycombinator.com/item?id=50278863"
   },
   {
    "tool": "LlamaIndex",
