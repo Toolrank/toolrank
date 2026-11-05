@@ -12,7 +12,32 @@
   {
    "id": "hand-tools",
    "title": "Hand tools",
-   "blurb": "Spanners, screwdrivers, pliers, hammers and bit sets."
+   "blurb": "Spanners, screwdrivers, pliers, hammers and bit sets.",
+   "guide": [
+    {
+     "h": "Clamp it before you cut",
+     "p": "Locking C-clamps and pipe clamp heads hold stock still so cuts stay straight. Grab a pack when you clamp several pieces at once.",
+     "links": [
+      "locking-c-clamps-150mm-10-pack",
+      "pipe-clamps-3-4-inch-4-pack"
+     ]
+    },
+    {
+     "h": "A vise for the bench",
+     "p": "A 150mm bench vise with anvil grips pipe, plate and odd shapes while you file, tap or hammer. Bolt it to a solid workbench.",
+     "links": [
+      "bench-vise-150mm-with-anvil"
+     ]
+    },
+    {
+     "h": "Cut and repair fasteners",
+     "p": "Heavy-duty bolt cutters snip padlocks, chain and wire. A thread repair kit restores stripped M5–M12 holes without replacing the whole part.",
+     "links": [
+      "bolt-cutters-900mm",
+      "thread-repair-kit-m5-m12-131pc"
+     ]
+    }
+   ]
   },
   {
    "id": "hardware",
