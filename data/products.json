@@ -3083,7 +3083,7 @@
     "/assets/shop/p/tr-bq-009-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-06T09:11+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "active",
@@ -3532,7 +3532,7 @@
     "/assets/shop/p/tr-bq-026-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-06T09:11+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "active",
@@ -3584,11 +3584,12 @@
     "/assets/shop/p/tr-bq-028-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-06T09:11+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active",
-   "group": "Camp furniture"
+   "status": "paused",
+   "group": "Camp furniture",
+   "paused_reason": "low_margin"
   },
   {
    "id": "padded-camping-chairs-2-pack",
@@ -3610,7 +3611,7 @@
     "/assets/shop/p/tr-bq-029-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-06T09:11+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "active",
@@ -3793,12 +3794,13 @@
     "/assets/shop/p/tr-bq-036-2.webp",
     "/assets/shop/p/tr-bq-036-3.webp"
    ],
-   "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock": "out",
+   "stock_checked": "2026-11-06T09:11+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active",
-   "group": "Lighting & power"
+   "status": "paused",
+   "group": "Lighting & power",
+   "paused_reason": "out_of_stock"
   },
   {
    "id": "portable-fridge-freezer-30l",
