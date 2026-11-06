@@ -1,101 +1,108 @@
 {
- "fetched": "2026-11-05 21:56 UTC",
- "fetched_ts": 1793915809,
- "stars_baseline": "2026-10-29",
+ "fetched": "2026-11-06 19:04 UTC",
+ "fetched_ts": 1793991848,
+ "stars_baseline": "2026-10-30",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 1695,
-   "stars": 6135,
+   "gained": 1647,
+   "stars": 6253,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 1507,
-   "stars": 1762,
+   "gained": 1493,
+   "stars": 1783,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 1005,
-   "stars": 6063,
+   "gained": 756,
+   "stars": 6146,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 536,
-   "stars": 112032,
+   "gained": 500,
+   "stars": 112098,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 406,
-   "stars": 4581,
+   "gained": 367,
+   "stars": 4629,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 281,
-   "stars": 4440,
+   "gained": 250,
+   "stars": 4468,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 180,
-   "stars": 14548,
+   "gained": 174,
+   "stars": 14565,
    "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 168,
-   "stars": 4193,
+   "gained": 142,
+   "stars": 4212,
    "url": "https://github.com/nykooi1/vibe-wise"
-  },
-  {
-   "tool": "VoiceMem",
-   "repo": "xzf-thu/VoiceMem",
-   "gained": 147,
-   "stars": 2893,
-   "url": "https://github.com/xzf-thu/VoiceMem"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 135,
-   "stars": 108740,
+   "gained": 117,
+   "stars": 108751,
    "url": "https://github.com/google-gemini/gemini-cli"
+  },
+  {
+   "tool": "VoiceMem",
+   "repo": "xzf-thu/VoiceMem",
+   "gained": 113,
+   "stars": 2893,
+   "url": "https://github.com/xzf-thu/VoiceMem"
   }
  ],
  "hn": [
   {
    "tool": "Kagi",
    "stories": 2,
-   "points": 285,
-   "top_title": "Kagi Search for Everyone",
+   "points": 858,
+   "top_title": "Search for everyone",
    "top_url": "https://news.ycombinator.com/item?id=50383740"
   },
   {
    "tool": "Claude",
    "stories": 2,
-   "points": 143,
+   "points": 185,
    "top_title": "My psychophysics as a bilateral cochlear implant user",
    "top_url": "https://news.ycombinator.com/item?id=50381033"
   },
   {
    "tool": "Canva AI",
    "stories": 4,
-   "points": 52,
+   "points": 53,
    "top_title": "Canva Layoffs",
    "top_url": "https://news.ycombinator.com/item?id=50373416"
+  },
+  {
+   "tool": "Perplexity",
+   "stories": 4,
+   "points": 24,
+   "top_title": "Perplexity launches AI agents for work",
+   "top_url": "https://news.ycombinator.com/item?id=50395866"
   },
   {
    "tool": "Google AI Mode",
@@ -112,13 +119,6 @@
    "top_url": "https://news.ycombinator.com/item?id=50359051"
   },
   {
-   "tool": "Cursor",
-   "stories": 1,
-   "points": 12,
-   "top_title": "Malicious Claude Code Extension Found in Cursor Marketplace",
-   "top_url": "https://news.ycombinator.com/item?id=50301004"
-  },
-  {
    "tool": "Chainalysis",
    "stories": 3,
    "points": 11,
@@ -126,18 +126,18 @@
    "top_url": "https://news.ycombinator.com/item?id=50321437"
   },
   {
-   "tool": "Lovable",
-   "stories": 2,
-   "points": 10,
-   "top_title": "How we built Lovable, and why we keep rebuilding it",
-   "top_url": "https://news.ycombinator.com/item?id=50365530"
-  },
-  {
    "tool": "Factory",
    "stories": 2,
    "points": 8,
    "top_title": "Factory Acquires HumanLayer",
    "top_url": "https://news.ycombinator.com/item?id=50369245"
+  },
+  {
+   "tool": "Lovable",
+   "stories": 1,
+   "points": 8,
+   "top_title": "How we built Lovable, and why we keep rebuilding it",
+   "top_url": "https://news.ycombinator.com/item?id=50365530"
   },
   {
    "tool": "Google AI Studio (Build)",
