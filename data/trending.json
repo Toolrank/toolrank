@@ -1,94 +1,108 @@
 {
- "fetched": "2026-11-06 19:04 UTC",
- "fetched_ts": 1793991848,
- "stars_baseline": "2026-10-30",
+ "fetched": "2026-11-07 15:49 UTC",
+ "fetched_ts": 1794066542,
+ "stars_baseline": "2026-10-31",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 1647,
-   "stars": 6253,
+   "gained": 1538,
+   "stars": 6405,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 1493,
-   "stars": 1783,
+   "gained": 1495,
+   "stars": 1799,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 756,
-   "stars": 6146,
+   "gained": 646,
+   "stars": 6231,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 500,
-   "stars": 112098,
+   "gained": 521,
+   "stars": 112167,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 367,
-   "stars": 4629,
+   "gained": 381,
+   "stars": 4698,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 250,
-   "stars": 4468,
+   "gained": 245,
+   "stars": 4487,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 174,
-   "stars": 14565,
+   "gained": 154,
+   "stars": 14573,
    "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 142,
-   "stars": 4212,
+   "gained": 138,
+   "stars": 4225,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 117,
-   "stars": 108751,
+   "gained": 114,
+   "stars": 108765,
    "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
-   "tool": "VoiceMem",
-   "repo": "xzf-thu/VoiceMem",
-   "gained": 113,
-   "stars": 2893,
-   "url": "https://github.com/xzf-thu/VoiceMem"
+   "tool": "Sepia",
+   "repo": "Nanako0129/sepia",
+   "gained": 111,
+   "stars": 3676,
+   "url": "https://github.com/Nanako0129/sepia"
   }
  ],
  "hn": [
   {
    "tool": "Kagi",
    "stories": 2,
-   "points": 858,
+   "points": 878,
    "top_title": "Search for everyone",
    "top_url": "https://news.ycombinator.com/item?id=50383740"
   },
   {
    "tool": "Claude",
    "stories": 2,
-   "points": 185,
+   "points": 188,
    "top_title": "My psychophysics as a bilateral cochlear implant user",
    "top_url": "https://news.ycombinator.com/item?id=50381033"
+  },
+  {
+   "tool": "Replit",
+   "stories": 2,
+   "points": 95,
+   "top_title": "Replit rebuilt its sandbox engine with microVMs",
+   "top_url": "https://news.ycombinator.com/item?id=50396834"
+  },
+  {
+   "tool": "Perplexity",
+   "stories": 5,
+   "points": 67,
+   "top_title": "Perplexity launches AI agents for work",
+   "top_url": "https://news.ycombinator.com/item?id=50395866"
   },
   {
    "tool": "Canva AI",
@@ -98,18 +112,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50373416"
   },
   {
-   "tool": "Perplexity",
-   "stories": 4,
-   "points": 24,
-   "top_title": "Perplexity launches AI agents for work",
-   "top_url": "https://news.ycombinator.com/item?id=50395866"
-  },
-  {
-   "tool": "Google AI Mode",
+   "tool": "Factory",
    "stories": 3,
-   "points": 13,
-   "top_title": "Google plans to support shared AI training opt-out via robots.txt",
-   "top_url": "https://news.ycombinator.com/item?id=50309270"
+   "points": 15,
+   "top_title": "Test your defenses against a nation-state level attack",
+   "top_url": "https://news.ycombinator.com/item?id=50400176"
   },
   {
    "tool": "Krea",
@@ -119,32 +126,25 @@
    "top_url": "https://news.ycombinator.com/item?id=50359051"
   },
   {
-   "tool": "Chainalysis",
-   "stories": 3,
-   "points": 11,
-   "top_title": "Chainalysis security incident with customers PII compromised",
-   "top_url": "https://news.ycombinator.com/item?id=50321437"
-  },
-  {
-   "tool": "Factory",
-   "stories": 2,
-   "points": 8,
-   "top_title": "Factory Acquires HumanLayer",
-   "top_url": "https://news.ycombinator.com/item?id=50369245"
-  },
-  {
    "tool": "Lovable",
-   "stories": 1,
-   "points": 8,
+   "stories": 2,
+   "points": 11,
    "top_title": "How we built Lovable, and why we keep rebuilding it",
    "top_url": "https://news.ycombinator.com/item?id=50365530"
   },
   {
-   "tool": "Google AI Studio (Build)",
+   "tool": "Chainalysis",
    "stories": 2,
-   "points": 5,
-   "top_title": "Voice remixing in Gemini 3.8 Flash TTS",
-   "top_url": "https://news.ycombinator.com/item?id=50369043"
+   "points": 8,
+   "top_title": "Chainalysis security incident with customers PII compromised",
+   "top_url": "https://news.ycombinator.com/item?id=50321437"
+  },
+  {
+   "tool": "Zapier",
+   "stories": 2,
+   "points": 6,
+   "top_title": "What we learned by watching Claude read Zapier.com",
+   "top_url": "https://news.ycombinator.com/item?id=50392829"
   }
  ]
 }
