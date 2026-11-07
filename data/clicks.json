@@ -1,13 +1,7 @@
 {
- "fetched": "2026-11-07 05:56 UTC",
- "fetched_ts": 1794031011,
+ "fetched": "2026-11-07 07:12 UTC",
+ "fetched_ts": 1794035537,
  "window": "last 7 days",
  "source": "GoatCounter click/ events (unique visitors)",
- "top": [
-  {
-   "slug": "cursor",
-   "tool": "Cursor",
-   "count": 1
-  }
- ]
+ "top": []
 }
