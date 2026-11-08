@@ -1,98 +1,98 @@
 {
- "fetched": "2026-11-07 15:49 UTC",
- "fetched_ts": 1794066542,
- "stars_baseline": "2026-10-31",
+ "fetched": "2026-11-08 11:49 UTC",
+ "fetched_ts": 1794138584,
+ "stars_baseline": "2026-11-01",
  "repos_tracked": 16,
  "stars": [
   {
-   "tool": "geo-sleuth",
-   "repo": "Oldcircle/geo-sleuth",
-   "gained": 1538,
-   "stars": 6405,
-   "url": "https://github.com/Oldcircle/geo-sleuth"
-  },
-  {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 1495,
-   "stars": 1799,
+   "gained": 1489,
+   "stars": 1806,
    "url": "https://github.com/edenfunf/reelmimic"
+  },
+  {
+   "tool": "geo-sleuth",
+   "repo": "Oldcircle/geo-sleuth",
+   "gained": 1308,
+   "stars": 6486,
+   "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 646,
-   "stars": 6231,
+   "gained": 609,
+   "stars": 6304,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 521,
-   "stars": 112167,
+   "gained": 512,
+   "stars": 112220,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 381,
-   "stars": 4698,
+   "gained": 396,
+   "stars": 4741,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 245,
-   "stars": 4487,
+   "gained": 220,
+   "stars": 4499,
    "url": "https://github.com/ZJU-REAL/Easel"
-  },
-  {
-   "tool": "Microsoft Agent Framework",
-   "repo": "microsoft/agent-framework",
-   "gained": 154,
-   "stars": 14573,
-   "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 138,
-   "stars": 4225,
+   "gained": 150,
+   "stars": 4247,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 114,
-   "stars": 108765,
+   "gained": 127,
+   "stars": 108778,
    "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 111,
-   "stars": 3676,
+   "gained": 118,
+   "stars": 3687,
    "url": "https://github.com/Nanako0129/sepia"
+  },
+  {
+   "tool": "Microsoft Agent Framework",
+   "repo": "microsoft/agent-framework",
+   "gained": 112,
+   "stars": 14584,
+   "url": "https://github.com/microsoft/agent-framework"
   }
  ],
  "hn": [
   {
    "tool": "Kagi",
    "stories": 2,
-   "points": 878,
+   "points": 881,
    "top_title": "Search for everyone",
    "top_url": "https://news.ycombinator.com/item?id=50383740"
   },
   {
    "tool": "Claude",
    "stories": 2,
-   "points": 188,
+   "points": 189,
    "top_title": "My psychophysics as a bilateral cochlear implant user",
    "top_url": "https://news.ycombinator.com/item?id=50381033"
   },
   {
    "tool": "Replit",
-   "stories": 2,
+   "stories": 1,
    "points": 95,
    "top_title": "Replit rebuilt its sandbox engine with microVMs",
    "top_url": "https://news.ycombinator.com/item?id=50396834"
@@ -100,7 +100,7 @@
   {
    "tool": "Perplexity",
    "stories": 5,
-   "points": 67,
+   "points": 70,
    "top_title": "Perplexity launches AI agents for work",
    "top_url": "https://news.ycombinator.com/item?id=50395866"
   },
@@ -114,7 +114,7 @@
   {
    "tool": "Factory",
    "stories": 3,
-   "points": 15,
+   "points": 16,
    "top_title": "Test your defenses against a nation-state level attack",
    "top_url": "https://news.ycombinator.com/item?id=50400176"
   },
@@ -133,18 +133,18 @@
    "top_url": "https://news.ycombinator.com/item?id=50365530"
   },
   {
-   "tool": "Chainalysis",
-   "stories": 2,
-   "points": 8,
-   "top_title": "Chainalysis security incident with customers PII compromised",
-   "top_url": "https://news.ycombinator.com/item?id=50321437"
-  },
-  {
    "tool": "Zapier",
    "stories": 2,
    "points": 6,
    "top_title": "What we learned by watching Claude read Zapier.com",
    "top_url": "https://news.ycombinator.com/item?id=50392829"
+  },
+  {
+   "tool": "Google AI Mode",
+   "stories": 2,
+   "points": 6,
+   "top_title": "Ocarina of Time – Google Search",
+   "top_url": "https://news.ycombinator.com/item?id=50341170"
   }
  ]
 }
