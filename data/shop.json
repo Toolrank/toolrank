@@ -278,7 +278,43 @@
   {
    "id": "music-gear",
    "title": "Music gear",
-   "blurb": "Stands, mics, studio foam, rack gear and stage essentials."
+   "blurb": "Stands, mics, studio foam, rack gear and stage essentials.",
+   "guide": [
+    {
+     "h": "Home studio basics",
+     "p": "Start with one good dynamic mic on a solid boom stand. A small isolation shield cuts room echo while you record.",
+     "links": [
+      "dynamic-vocal-microphone",
+      "boom-mic-stands-2-pack",
+      "mic-isolation-shield-3-panel"
+     ]
+    },
+    {
+     "h": "Treating your room",
+     "p": "Put foam panels at ear height beside and behind you. Bass traps go in the corners, where low end builds up.",
+     "links": [
+      "acoustic-foam-panels-40-pack",
+      "acoustic-foam-bass-traps-20-pack"
+     ]
+    },
+    {
+     "h": "Keyboard stand: X or Z?",
+     "p": "An X-frame folds flat and suits gigs. A Z-style stand is steadier and leaves room for your legs.",
+     "links": [
+      "x-frame-keyboard-stand",
+      "z-style-keyboard-stand-with-wheels"
+     ]
+    },
+    {
+     "h": "Stage and rack",
+     "p": "Raise speakers to ear height with stands. Cover floor cables with a ramp, and lock small gear in a rack drawer.",
+     "links": [
+      "speaker-stands-adjustable-pair",
+      "cable-protector-ramp-3m",
+      "rack-drawer-19-inch-2u-lockable"
+     ]
+    }
+   ]
   }
  ]
 }
