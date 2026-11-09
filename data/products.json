@@ -1556,11 +1556,12 @@
     "/assets/shop/p/tr-ws-013-2.webp",
     "/assets/shop/p/tr-ws-013-3.webp"
    ],
-   "stock": "in_stock",
-   "stock_checked": "2026-10-31T10:02+11:00",
+   "stock": "out",
+   "stock_checked": "2026-11-10T09:05+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active"
+   "status": "paused",
+   "paused_reason": "out_of_stock"
   },
   {
    "id": "garage-wall-hooks-12-pack",

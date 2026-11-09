@@ -136,7 +136,37 @@
   {
    "id": "garden",
    "title": "Garden & outdoor",
-   "blurb": "Pruners, rakes, hoses and outdoor gear."
+   "blurb": "Pruners, rakes, hoses and outdoor gear.",
+   "guide": [
+    {
+     "h": "Watering made easy",
+     "p": "An expandable hose shrinks back when the tap is off, so it stores in a bucket. Drain it after use and keep it out of hot sun.",
+     "links": [
+      "expandable-garden-hose-30m"
+     ]
+    },
+    {
+     "h": "Stop weeds before they start",
+     "p": "Lay woven weed mat over cleared soil, overlap the joins and pin it down. Cover it with mulch or pebbles so it lasts longer.",
+     "links": [
+      "weed-mat-30m-x-1-83m"
+     ]
+    },
+    {
+     "h": "Clean bed edges",
+     "p": "Edging keeps lawn out of garden beds and mulch off paths. Dig a narrow trench, set the edge level with the grass, then backfill.",
+     "links": [
+      "garden-edging-kit-10m"
+     ]
+    },
+    {
+     "h": "Save your knees",
+     "p": "A kneeler pad cushions weeding time. Flip it over and it becomes a low seat for planting.",
+     "links": [
+      "garden-kneeler-seat"
+     ]
+    }
+   ]
   },
   {
    "id": "bbq-camping",
