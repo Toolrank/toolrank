@@ -1,77 +1,77 @@
 {
- "fetched": "2026-11-08 11:49 UTC",
- "fetched_ts": 1794138584,
- "stars_baseline": "2026-11-01",
+ "fetched": "2026-11-09 09:23 UTC",
+ "fetched_ts": 1794216197,
+ "stars_baseline": "2026-11-02",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 1489,
-   "stars": 1806,
+   "gained": 1548,
+   "stars": 1879,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 1308,
-   "stars": 6486,
+   "gained": 1130,
+   "stars": 6639,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 609,
-   "stars": 6304,
+   "gained": 601,
+   "stars": 6377,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 512,
-   "stars": 112220,
+   "gained": 511,
+   "stars": 112276,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 396,
-   "stars": 4741,
+   "gained": 390,
+   "stars": 4779,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 220,
-   "stars": 4499,
+   "gained": 202,
+   "stars": 4529,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 150,
-   "stars": 4247,
+   "gained": 155,
+   "stars": 4268,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 127,
-   "stars": 108778,
+   "gained": 132,
+   "stars": 108799,
    "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 118,
-   "stars": 3687,
+   "gained": 115,
+   "stars": 3696,
    "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 112,
-   "stars": 14584,
+   "gained": 105,
+   "stars": 14599,
    "url": "https://github.com/microsoft/agent-framework"
   }
  ],
@@ -79,7 +79,7 @@
   {
    "tool": "Kagi",
    "stories": 2,
-   "points": 881,
+   "points": 883,
    "top_title": "Search for everyone",
    "top_url": "https://news.ycombinator.com/item?id=50383740"
   },
@@ -93,7 +93,7 @@
   {
    "tool": "Replit",
    "stories": 1,
-   "points": 95,
+   "points": 98,
    "top_title": "Replit rebuilt its sandbox engine with microVMs",
    "top_url": "https://news.ycombinator.com/item?id=50396834"
   },
@@ -112,6 +112,13 @@
    "top_url": "https://news.ycombinator.com/item?id=50373416"
   },
   {
+   "tool": "Lovable",
+   "stories": 3,
+   "points": 24,
+   "top_title": "We deleted almost all our agent code, and other lessons from 100k PRs",
+   "top_url": "https://news.ycombinator.com/item?id=50414445"
+  },
+  {
    "tool": "Factory",
    "stories": 3,
    "points": 16,
@@ -124,13 +131,6 @@
    "points": 12,
    "top_title": "Krea 3 Technical Report",
    "top_url": "https://news.ycombinator.com/item?id=50359051"
-  },
-  {
-   "tool": "Lovable",
-   "stories": 2,
-   "points": 11,
-   "top_title": "How we built Lovable, and why we keep rebuilding it",
-   "top_url": "https://news.ycombinator.com/item?id=50365530"
   },
   {
    "tool": "Zapier",
