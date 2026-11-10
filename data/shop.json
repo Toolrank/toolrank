@@ -47,7 +47,38 @@
   {
    "id": "building",
    "title": "Building & construction",
-   "blurb": "Sawhorses, clamps, ladders and site gear."
+   "blurb": "Sawhorses, clamps, ladders and site gear.",
+   "guide": [
+    {
+     "h": "Ladder or step stool?",
+     "p": "A step stool suits quick jobs at home, like shelves and light fittings. For gutters, painting or ceilings, pick a taller ladder.",
+     "links": [
+      "3-step-aluminium-step-stool",
+      "5-step-aluminium-ladder"
+     ]
+    },
+    {
+     "h": "Handrails for longer jobs",
+     "p": "A platform ladder with handrails gives you something to hold while both hands work. Always set it on firm, level ground.",
+     "links": [
+      "4-step-steel-ladder-with-handrails"
+     ]
+    },
+    {
+     "h": "Laying floating floors",
+     "p": "An install kit keeps boards tight and spacing even along the walls. Check the board maker's own fitting guide first.",
+     "links": [
+      "laminate-flooring-install-kit-48pc"
+     ]
+    },
+    {
+     "h": "Covering the job site",
+     "p": "A heavy-duty tarp keeps rain off timber, tools and open roofs. Tie it down at every eyelet in wind.",
+     "links": [
+      "pvc-tarpaulin-3x4m-670gsm"
+     ]
+    }
+   ]
   },
   {
    "id": "workshop-storage",
