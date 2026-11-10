@@ -1,92 +1,92 @@
 {
- "fetched": "2026-11-09 09:23 UTC",
- "fetched_ts": 1794216197,
- "stars_baseline": "2026-11-02",
+ "fetched": "2026-11-10 06:02 UTC",
+ "fetched_ts": 1794290546,
+ "stars_baseline": "2026-11-03",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 1548,
-   "stars": 1879,
+   "gained": 1576,
+   "stars": 1924,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 1130,
-   "stars": 6639,
+   "gained": 1063,
+   "stars": 6754,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 601,
-   "stars": 6377,
+   "gained": 591,
+   "stars": 6438,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 511,
-   "stars": 112276,
+   "gained": 475,
+   "stars": 112318,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 390,
-   "stars": 4779,
+   "gained": 391,
+   "stars": 4827,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 202,
-   "stars": 4529,
+   "gained": 197,
+   "stars": 4546,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 155,
-   "stars": 4268,
+   "gained": 159,
+   "stars": 4289,
    "url": "https://github.com/nykooi1/vibe-wise"
-  },
-  {
-   "tool": "Gemini CLI",
-   "repo": "google-gemini/gemini-cli",
-   "gained": 132,
-   "stars": 108799,
-   "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 115,
-   "stars": 3696,
+   "gained": 154,
+   "stars": 3750,
    "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 105,
-   "stars": 14599,
+   "gained": 102,
+   "stars": 14611,
    "url": "https://github.com/microsoft/agent-framework"
+  },
+  {
+   "tool": "VoiceMem",
+   "repo": "xzf-thu/VoiceMem",
+   "gained": 53,
+   "stars": 2896,
+   "url": "https://github.com/xzf-thu/VoiceMem"
   }
  ],
  "hn": [
   {
    "tool": "Kagi",
    "stories": 2,
-   "points": 883,
+   "points": 885,
    "top_title": "Search for everyone",
    "top_url": "https://news.ycombinator.com/item?id=50383740"
   },
   {
    "tool": "Claude",
-   "stories": 2,
-   "points": 189,
+   "stories": 3,
+   "points": 190,
    "top_title": "My psychophysics as a bilateral cochlear implant user",
    "top_url": "https://news.ycombinator.com/item?id=50381033"
   },
@@ -140,11 +140,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50392829"
   },
   {
-   "tool": "Google AI Mode",
+   "tool": "Google AI Studio (Build)",
    "stories": 2,
-   "points": 6,
-   "top_title": "Ocarina of Time – Google Search",
-   "top_url": "https://news.ycombinator.com/item?id=50341170"
+   "points": 5,
+   "top_title": "Voice remixing in Gemini 3.8 Flash TTS",
+   "top_url": "https://news.ycombinator.com/item?id=50369043"
   }
  ]
 }
