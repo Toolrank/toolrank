@@ -1,92 +1,92 @@
 {
- "fetched": "2026-11-11 02:59 UTC",
- "fetched_ts": 1794365984,
+ "fetched": "2026-11-11 23:01 UTC",
+ "fetched_ts": 1794438089,
  "stars_baseline": "2026-11-04",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 981,
-   "stars": 6824,
+   "gained": 1024,
+   "stars": 6867,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 587,
-   "stars": 6507,
+   "gained": 713,
+   "stars": 6633,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 470,
-   "stars": 112377,
+   "gained": 610,
+   "stars": 112517,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 414,
-   "stars": 4891,
+   "gained": 460,
+   "stars": 4937,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 187,
-   "stars": 4567,
+   "gained": 221,
+   "stars": 4601,
    "url": "https://github.com/ZJU-REAL/Easel"
-  },
-  {
-   "tool": "vibe-wise",
-   "repo": "nykooi1/vibe-wise",
-   "gained": 159,
-   "stars": 4307,
-   "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 158,
-   "stars": 3769,
+   "gained": 176,
+   "stars": 3787,
    "url": "https://github.com/Nanako0129/sepia"
+  },
+  {
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 174,
+   "stars": 4322,
+   "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 119,
-   "stars": 1893,
+   "gained": 152,
+   "stars": 1926,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 96,
-   "stars": 14623,
+   "gained": 110,
+   "stars": 14637,
    "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 53,
-   "stars": 108765,
+   "gained": 68,
+   "stars": 108780,
    "url": "https://github.com/google-gemini/gemini-cli"
   }
  ],
  "hn": [
   {
    "tool": "Kagi",
-   "stories": 2,
-   "points": 885,
+   "stories": 1,
+   "points": 756,
    "top_title": "Search for everyone",
    "top_url": "https://news.ycombinator.com/item?id=50383740"
   },
   {
    "tool": "Claude",
-   "stories": 4,
-   "points": 249,
+   "stories": 5,
+   "points": 266,
    "top_title": "My psychophysics as a bilateral cochlear implant user",
    "top_url": "https://news.ycombinator.com/item?id=50381033"
   },
@@ -106,31 +106,31 @@
   },
   {
    "tool": "Canva AI",
-   "stories": 2,
-   "points": 35,
+   "stories": 1,
+   "points": 23,
    "top_title": "Canva Layoffs",
    "top_url": "https://news.ycombinator.com/item?id=50373416"
   },
   {
-   "tool": "Lovable",
+   "tool": "Google AI Studio (Build)",
    "stories": 3,
-   "points": 24,
+   "points": 19,
+   "top_title": "Gemini Decision 1 is Free on Google AI Studio",
+   "top_url": "https://news.ycombinator.com/item?id=50457853"
+  },
+  {
+   "tool": "Lovable",
+   "stories": 2,
+   "points": 16,
    "top_title": "We deleted almost all our agent code, and other lessons from 100k PRs",
    "top_url": "https://news.ycombinator.com/item?id=50414445"
   },
   {
    "tool": "Factory",
-   "stories": 3,
-   "points": 16,
+   "stories": 2,
+   "points": 10,
    "top_title": "Test your defenses against a nation-state level attack",
    "top_url": "https://news.ycombinator.com/item?id=50400176"
-  },
-  {
-   "tool": "Google AI Studio (Build)",
-   "stories": 3,
-   "points": 8,
-   "top_title": "Gemini Carbon API out today",
-   "top_url": "https://news.ycombinator.com/item?id=50442025"
   },
   {
    "tool": "Amp",
@@ -140,11 +140,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50395786"
   },
   {
-   "tool": "Framer",
+   "tool": "Grok",
    "stories": 2,
    "points": 5,
-   "top_title": "Technical/eng breakdown of Framer's Lighthouse 13.6 optimizations",
-   "top_url": "https://news.ycombinator.com/item?id=50390194"
+   "top_title": "Serving open-weight models at scale with vLLM",
+   "top_url": "https://news.ycombinator.com/item?id=50439363"
   }
  ]
 }
