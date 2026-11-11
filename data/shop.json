@@ -42,7 +42,37 @@
   {
    "id": "hardware",
    "title": "Hardware & fasteners",
-   "blurb": "Screws, bolts, anchors, hinges and fixings."
+   "blurb": "Screws, bolts, anchors, hinges and fixings.",
+   "guide": [
+    {
+     "h": "Making a bench mobile",
+     "p": "Bolt a castor to each corner, with the braked pair at one end. Check the total load rating covers the bench plus tools.",
+     "links": [
+      "castor-wheels-150mm-set-of-4"
+     ]
+    },
+    {
+     "h": "Drawer runners",
+     "p": "Measure the cabinet depth and pick runners that match it. Full-extension runners let you reach the back of every drawer.",
+     "links": [
+      "soft-close-drawer-runners-500mm-10-pairs"
+     ]
+    },
+    {
+     "h": "Bolts for doors and gates",
+     "p": "Barrel bolts give a simple lock for sheds, gates and cupboard doors. Stainless steel suits outdoor use.",
+     "links": [
+      "stainless-sliding-door-bolt-200mm-10-pack"
+     ]
+    },
+    {
+     "h": "Spare keys for tradies",
+     "p": "A wall key safe lets trades or family get in without you home. Mount it out of plain sight.",
+     "links": [
+      "wall-mounted-key-safe"
+     ]
+    }
+   ]
   },
   {
    "id": "building",
