@@ -280,7 +280,30 @@
   {
    "id": "safety",
    "title": "Safety & workwear",
-   "blurb": "Gloves, glasses, hearing protection and hi-vis."
+   "blurb": "Gloves, glasses, hearing protection and hi-vis.",
+   "guide": [
+    {
+     "h": "Protecting your knees",
+     "p": "Gel knee pads spread the load when tiling, concreting or weeding. Check the straps sit above and below the joint, not on it.",
+     "links": [
+      "gel-knee-pads"
+     ]
+    },
+    {
+     "h": "Being seen on site",
+     "p": "Reflective tape marks trailers, posts, steps and hazards so they show up in headlights. Clean and dry the surface before you stick it.",
+     "links": [
+      "hi-vis-reflective-tape-yellow-2-pack"
+     ]
+    },
+    {
+     "h": "Marking off an area",
+     "p": "Cones with reflective bands close off a driveway, work zone or wet floor fast. Stackable sets store flat in a ute or shed.",
+     "links": [
+      "traffic-cones-45cm-4-pack"
+     ]
+    }
+   ]
   },
   {
    "id": "furniture",

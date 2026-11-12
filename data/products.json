@@ -2869,12 +2869,13 @@
     "/assets/shop/p/tr-bq-001-2.webp",
     "/assets/shop/p/tr-bq-001-3.webp"
    ],
-   "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock": "out",
+   "stock_checked": "2026-11-13T08:53+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active",
-   "group": "BBQs & grills"
+   "status": "paused",
+   "group": "BBQs & grills",
+   "paused_reason": "out_of_stock"
   },
   {
    "id": "portable-charcoal-bbq-with-lid",
@@ -3163,12 +3164,13 @@
     "/assets/shop/p/tr-bq-012-2.webp",
     "/assets/shop/p/tr-bq-012-3.webp"
    ],
-   "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock": "out",
+   "stock_checked": "2026-11-13T08:53+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active",
-   "group": "BBQ tools & accessories"
+   "status": "paused",
+   "group": "BBQ tools & accessories",
+   "paused_reason": "out_of_stock"
   },
   {
    "id": "wireless-meat-thermometer-4-probe",
