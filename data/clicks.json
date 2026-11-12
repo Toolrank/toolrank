@@ -1,13 +1,7 @@
 {
- "fetched": "2026-11-12 22:56 UTC",
- "fetched_ts": 1794524218,
+ "fetched": "2026-11-12 23:54 UTC",
+ "fetched_ts": 1794527657,
  "window": "last 7 days",
  "source": "GoatCounter click/ events (unique visitors)",
- "top": [
-  {
-   "slug": "webflow",
-   "tool": "Webflow",
-   "count": 1
-  }
- ]
+ "top": []
 }
