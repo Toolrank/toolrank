@@ -1,77 +1,77 @@
 {
- "fetched": "2026-11-11 23:01 UTC",
- "fetched_ts": 1794438089,
- "stars_baseline": "2026-11-04",
+ "fetched": "2026-11-12 19:08 UTC",
+ "fetched_ts": 1794510517,
+ "stars_baseline": "2026-11-05",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 1024,
-   "stars": 6867,
+   "gained": 778,
+   "stars": 6913,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 713,
-   "stars": 6633,
+   "gained": 666,
+   "stars": 6729,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 610,
-   "stars": 112517,
+   "gained": 557,
+   "stars": 112589,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 460,
-   "stars": 4937,
+   "gained": 400,
+   "stars": 4981,
    "url": "https://github.com/nateherkai/scroll-craft"
-  },
-  {
-   "tool": "Easel",
-   "repo": "ZJU-REAL/Easel",
-   "gained": 221,
-   "stars": 4601,
-   "url": "https://github.com/ZJU-REAL/Easel"
-  },
-  {
-   "tool": "Sepia",
-   "repo": "Nanako0129/sepia",
-   "gained": 176,
-   "stars": 3787,
-   "url": "https://github.com/Nanako0129/sepia"
-  },
-  {
-   "tool": "vibe-wise",
-   "repo": "nykooi1/vibe-wise",
-   "gained": 174,
-   "stars": 4322,
-   "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 152,
-   "stars": 1926,
+   "gained": 199,
+   "stars": 1961,
    "url": "https://github.com/edenfunf/reelmimic"
+  },
+  {
+   "tool": "Easel",
+   "repo": "ZJU-REAL/Easel",
+   "gained": 187,
+   "stars": 4627,
+   "url": "https://github.com/ZJU-REAL/Easel"
+  },
+  {
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 146,
+   "stars": 4339,
+   "url": "https://github.com/nykooi1/vibe-wise"
+  },
+  {
+   "tool": "Sepia",
+   "repo": "Nanako0129/sepia",
+   "gained": 142,
+   "stars": 3798,
+   "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 110,
-   "stars": 14637,
+   "gained": 105,
+   "stars": 14653,
    "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 68,
-   "stars": 108780,
+   "gained": 58,
+   "stars": 108798,
    "url": "https://github.com/google-gemini/gemini-cli"
   }
  ],
@@ -84,13 +84,6 @@
    "top_url": "https://news.ycombinator.com/item?id=50383740"
   },
   {
-   "tool": "Claude",
-   "stories": 5,
-   "points": 266,
-   "top_title": "My psychophysics as a bilateral cochlear implant user",
-   "top_url": "https://news.ycombinator.com/item?id=50381033"
-  },
-  {
    "tool": "Replit",
    "stories": 1,
    "points": 99,
@@ -98,23 +91,23 @@
    "top_url": "https://news.ycombinator.com/item?id=50396834"
   },
   {
-   "tool": "Perplexity",
+   "tool": "Claude",
    "stories": 5,
-   "points": 70,
+   "points": 78,
+   "top_title": "Saltline: First-person shooter built by Fable 5.2",
+   "top_url": "https://news.ycombinator.com/item?id=50444850"
+  },
+  {
+   "tool": "Perplexity",
+   "stories": 6,
+   "points": 73,
    "top_title": "Perplexity launches AI agents for work",
    "top_url": "https://news.ycombinator.com/item?id=50395866"
   },
   {
-   "tool": "Canva AI",
-   "stories": 1,
-   "points": 23,
-   "top_title": "Canva Layoffs",
-   "top_url": "https://news.ycombinator.com/item?id=50373416"
-  },
-  {
    "tool": "Google AI Studio (Build)",
    "stories": 3,
-   "points": 19,
+   "points": 32,
    "top_title": "Gemini Decision 1 is Free on Google AI Studio",
    "top_url": "https://news.ycombinator.com/item?id=50457853"
   },
@@ -128,7 +121,7 @@
   {
    "tool": "Factory",
    "stories": 2,
-   "points": 10,
+   "points": 12,
    "top_title": "Test your defenses against a nation-state level attack",
    "top_url": "https://news.ycombinator.com/item?id=50400176"
   },
@@ -140,11 +133,18 @@
    "top_url": "https://news.ycombinator.com/item?id=50395786"
   },
   {
-   "tool": "Grok",
+   "tool": "Framer",
    "stories": 2,
    "points": 5,
-   "top_title": "Serving open-weight models at scale with vLLM",
-   "top_url": "https://news.ycombinator.com/item?id=50439363"
+   "top_title": "Technical/eng breakdown of Framer's Lighthouse 13.6 optimizations",
+   "top_url": "https://news.ycombinator.com/item?id=50390194"
+  },
+  {
+   "tool": "Photoroom",
+   "stories": 1,
+   "points": 4,
+   "top_title": "How SkyPilot on Slurm and Kubernetes put 1k idle GPU hours a week to work",
+   "top_url": "https://news.ycombinator.com/item?id=50424525"
   }
  ]
 }
