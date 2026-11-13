@@ -1,99 +1,92 @@
 {
- "fetched": "2026-11-12 19:08 UTC",
- "fetched_ts": 1794510517,
- "stars_baseline": "2026-11-05",
+ "fetched": "2026-11-13 15:59 UTC",
+ "fetched_ts": 1794585552,
+ "stars_baseline": "2026-11-06",
  "repos_tracked": 16,
  "stars": [
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 778,
-   "stars": 6913,
+   "gained": 704,
+   "stars": 6957,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 666,
-   "stars": 6729,
+   "gained": 668,
+   "stars": 6814,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 557,
-   "stars": 112589,
+   "gained": 550,
+   "stars": 112648,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 400,
-   "stars": 4981,
+   "gained": 398,
+   "stars": 5027,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 199,
-   "stars": 1961,
+   "gained": 193,
+   "stars": 1976,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 187,
-   "stars": 4627,
+   "gained": 192,
+   "stars": 4660,
    "url": "https://github.com/ZJU-REAL/Easel"
-  },
-  {
-   "tool": "vibe-wise",
-   "repo": "nykooi1/vibe-wise",
-   "gained": 146,
-   "stars": 4339,
-   "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 142,
-   "stars": 3798,
+   "gained": 144,
+   "stars": 3806,
    "url": "https://github.com/Nanako0129/sepia"
+  },
+  {
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 141,
+   "stars": 4353,
+   "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 105,
-   "stars": 14653,
+   "gained": 94,
+   "stars": 14659,
    "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 58,
-   "stars": 108798,
+   "gained": 62,
+   "stars": 108813,
    "url": "https://github.com/google-gemini/gemini-cli"
   }
  ],
  "hn": [
   {
-   "tool": "Kagi",
-   "stories": 1,
-   "points": 756,
-   "top_title": "Search for everyone",
-   "top_url": "https://news.ycombinator.com/item?id=50383740"
-  },
-  {
    "tool": "Replit",
-   "stories": 1,
-   "points": 99,
+   "stories": 2,
+   "points": 100,
    "top_title": "Replit rebuilt its sandbox engine with microVMs",
    "top_url": "https://news.ycombinator.com/item?id=50396834"
   },
   {
    "tool": "Claude",
-   "stories": 5,
-   "points": 78,
+   "stories": 6,
+   "points": 79,
    "top_title": "Saltline: First-person shooter built by Fable 5.2",
    "top_url": "https://news.ycombinator.com/item?id=50444850"
   },
@@ -107,9 +100,9 @@
   {
    "tool": "Google AI Studio (Build)",
    "stories": 3,
-   "points": 32,
-   "top_title": "Gemini Decision 1 is Free on Google AI Studio",
-   "top_url": "https://news.ycombinator.com/item?id=50457853"
+   "points": 38,
+   "top_title": "Gemini 4 Hydrogen",
+   "top_url": "https://news.ycombinator.com/item?id=50471455"
   },
   {
    "tool": "Lovable",
@@ -133,11 +126,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50395786"
   },
   {
-   "tool": "Framer",
+   "tool": "Devin",
    "stories": 2,
    "points": 5,
-   "top_title": "Technical/eng breakdown of Framer's Lighthouse 13.6 optimizations",
-   "top_url": "https://news.ycombinator.com/item?id=50390194"
+   "top_title": "Devin Apps",
+   "top_url": "https://news.ycombinator.com/item?id=50484928"
   },
   {
    "tool": "Photoroom",
@@ -145,6 +138,13 @@
    "points": 4,
    "top_title": "How SkyPilot on Slurm and Kubernetes put 1k idle GPU hours a week to work",
    "top_url": "https://news.ycombinator.com/item?id=50424525"
+  },
+  {
+   "tool": "Grok",
+   "stories": 1,
+   "points": 3,
+   "top_title": "What the heck is the Public Suffix List?",
+   "top_url": "https://news.ycombinator.com/item?id=50484222"
   }
  ]
 }
