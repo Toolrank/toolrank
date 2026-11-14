@@ -1,136 +1,122 @@
 {
- "fetched": "2026-11-13 15:59 UTC",
- "fetched_ts": 1794585552,
- "stars_baseline": "2026-11-06",
+ "fetched": "2026-11-14 18:03 UTC",
+ "fetched_ts": 1794679428,
+ "stars_baseline": "2026-11-07",
  "repos_tracked": 16,
  "stars": [
   {
-   "tool": "geo-sleuth",
-   "repo": "Oldcircle/geo-sleuth",
-   "gained": 704,
-   "stars": 6957,
-   "url": "https://github.com/Oldcircle/geo-sleuth"
-  },
-  {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 668,
-   "stars": 6814,
+   "gained": 682,
+   "stars": 6913,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
+  },
+  {
+   "tool": "geo-sleuth",
+   "repo": "Oldcircle/geo-sleuth",
+   "gained": 617,
+   "stars": 7022,
+   "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 550,
-   "stars": 112648,
+   "gained": 530,
+   "stars": 112697,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 398,
-   "stars": 5027,
+   "gained": 366,
+   "stars": 5064,
    "url": "https://github.com/nateherkai/scroll-craft"
-  },
-  {
-   "tool": "ReelMimic",
-   "repo": "edenfunf/reelmimic",
-   "gained": 193,
-   "stars": 1976,
-   "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 192,
-   "stars": 4660,
+   "gained": 195,
+   "stars": 4682,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
-   "tool": "Sepia",
-   "repo": "Nanako0129/sepia",
-   "gained": 144,
-   "stars": 3806,
-   "url": "https://github.com/Nanako0129/sepia"
+   "tool": "ReelMimic",
+   "repo": "edenfunf/reelmimic",
+   "gained": 164,
+   "stars": 1963,
+   "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 141,
-   "stars": 4353,
+   "gained": 153,
+   "stars": 4378,
    "url": "https://github.com/nykooi1/vibe-wise"
+  },
+  {
+   "tool": "Sepia",
+   "repo": "Nanako0129/sepia",
+   "gained": 140,
+   "stars": 3816,
+   "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "Microsoft Agent Framework",
    "repo": "microsoft/agent-framework",
-   "gained": 94,
-   "stars": 14659,
+   "gained": 102,
+   "stars": 14675,
    "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 62,
-   "stars": 108813,
+   "gained": 65,
+   "stars": 108830,
    "url": "https://github.com/google-gemini/gemini-cli"
   }
  ],
  "hn": [
   {
-   "tool": "Replit",
-   "stories": 2,
-   "points": 100,
-   "top_title": "Replit rebuilt its sandbox engine with microVMs",
-   "top_url": "https://news.ycombinator.com/item?id=50396834"
+   "tool": "Perplexity",
+   "stories": 5,
+   "points": 152,
+   "top_title": "Perplexity Decider v1.3: Training, eval, and use cases",
+   "top_url": "https://news.ycombinator.com/item?id=50488464"
   },
   {
    "tool": "Claude",
-   "stories": 6,
-   "points": 79,
+   "stories": 7,
+   "points": 81,
    "top_title": "Saltline: First-person shooter built by Fable 5.2",
    "top_url": "https://news.ycombinator.com/item?id=50444850"
   },
   {
-   "tool": "Perplexity",
-   "stories": 6,
-   "points": 73,
-   "top_title": "Perplexity launches AI agents for work",
-   "top_url": "https://news.ycombinator.com/item?id=50395866"
-  },
-  {
    "tool": "Google AI Studio (Build)",
    "stories": 3,
-   "points": 38,
+   "points": 39,
    "top_title": "Gemini 4 Hydrogen",
    "top_url": "https://news.ycombinator.com/item?id=50471455"
   },
   {
    "tool": "Lovable",
-   "stories": 2,
-   "points": 16,
+   "stories": 1,
+   "points": 13,
    "top_title": "We deleted almost all our agent code, and other lessons from 100k PRs",
    "top_url": "https://news.ycombinator.com/item?id=50414445"
   },
   {
+   "tool": "Cursor",
+   "stories": 1,
+   "points": 5,
+   "top_title": "Cursor - An update on our recent security incident",
+   "top_url": "https://news.ycombinator.com/item?id=50496937"
+  },
+  {
    "tool": "Factory",
-   "stories": 2,
-   "points": 12,
-   "top_title": "Test your defenses against a nation-state level attack",
-   "top_url": "https://news.ycombinator.com/item?id=50400176"
-  },
-  {
-   "tool": "Amp",
-   "stories": 3,
-   "points": 5,
-   "top_title": "Culture Stops Slop",
-   "top_url": "https://news.ycombinator.com/item?id=50395786"
-  },
-  {
-   "tool": "Devin",
-   "stories": 2,
-   "points": 5,
-   "top_title": "Devin Apps",
-   "top_url": "https://news.ycombinator.com/item?id=50484928"
+   "stories": 1,
+   "points": 4,
+   "top_title": "Factory's New Cyber Defense Network Featuring Palo Alto Networks, Casco, & More",
+   "top_url": "https://news.ycombinator.com/item?id=50470802"
   },
   {
    "tool": "Photoroom",
@@ -140,11 +126,25 @@
    "top_url": "https://news.ycombinator.com/item?id=50424525"
   },
   {
-   "tool": "Grok",
+   "tool": "Devin",
    "stories": 1,
    "points": 3,
-   "top_title": "What the heck is the Public Suffix List?",
-   "top_url": "https://news.ycombinator.com/item?id=50484222"
+   "top_title": "Devin Apps",
+   "top_url": "https://news.ycombinator.com/item?id=50484928"
+  },
+  {
+   "tool": "CodeRabbit",
+   "stories": 1,
+   "points": 3,
+   "top_title": "CodeRabbit Tops $100M in ARR as Demand Surges for Governance of Agentic Software",
+   "top_url": "https://news.ycombinator.com/item?id=50472154"
+  },
+  {
+   "tool": "Amp",
+   "stories": 2,
+   "points": 2,
+   "top_title": "Boxes",
+   "top_url": "https://news.ycombinator.com/item?id=50443150"
   }
  ]
 }
