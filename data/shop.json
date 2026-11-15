@@ -7,7 +7,32 @@
   {
    "id": "power-tools",
    "title": "Power tools",
-   "blurb": "Drills, drivers, saws, grinders and accessories."
+   "blurb": "Drills, drivers, saws, grinders and accessories.",
+   "guide": [
+    {
+     "h": "Corded or cordless?",
+     "p": "Cordless suits site work and quick jobs. Corded tools give steady power for long cuts and sanding. See <a href=\"/shop/power-tools/power-drills-accessories/\">drills</a> and <a href=\"/shop/power-tools/saws/\">saws</a>.",
+     "links": []
+    },
+    {
+     "h": "Grinder discs",
+     "p": "Use a thin cutting disc to cut steel. Use a flap disc to shape and smooth welds. Match the disc size to your grinder, 115mm or 125mm.",
+     "links": [
+      "zirconia-flap-discs-115mm-40-grit-50-pack",
+      "cutting-discs-125mm-50-pack"
+     ]
+    },
+    {
+     "h": "Air tools",
+     "p": "Check the compressor's free air delivery (L/min) is above what your nailer or spray gun needs. Browse <a href=\"/shop/power-tools/air-compressors/\">compressors</a> and <a href=\"/shop/power-tools/nailers-staplers/\">nailers</a>.",
+     "links": []
+    },
+    {
+     "h": "Sanding",
+     "p": "Start with a coarse grit to remove material, then step up for a smooth finish. See <a href=\"/shop/power-tools/sanders/\">sanders</a> and <a href=\"/shop/power-tools/sanding-accessories/\">sanding accessories</a>.",
+     "links": []
+    }
+   ]
   },
   {
    "id": "hand-tools",
