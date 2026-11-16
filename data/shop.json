@@ -300,7 +300,33 @@
   {
    "id": "cleaning",
    "title": "Cleaning",
-   "blurb": "Pressure-washer gear, brushes and buckets."
+   "blurb": "Pressure-washer gear, brushes and buckets.",
+   "guide": [
+    {
+     "h": "Pressure washer add-ons",
+     "p": "A surface cleaner washes paths and driveways evenly without stripes. Check the fitting matches your washer before you buy.",
+     "links": [
+      "pressure-washer-surface-cleaner-44cm"
+     ]
+    },
+    {
+     "h": "Floors and wet areas",
+     "p": "A wringer bucket keeps mop water off the floor and saves your back on big jobs. See <a href=\"/shop/cleaning/commercial-cleaning-equipment/\">commercial cleaning gear</a>.",
+     "links": [
+      "mop-wringer-bucket-20l"
+     ]
+    },
+    {
+     "h": "Vacuums",
+     "p": "Stick vacuums suit quick daily cleans. Bigger <a href=\"/shop/cleaning/vacuums/\">vacuums</a> handle workshops and long runs. Grab spare <a href=\"/shop/cleaning/vacuum-cleaner-accessories/\">filters and heads</a> too.",
+     "links": []
+    },
+    {
+     "h": "Steam cleaning",
+     "p": "Steam lifts grime from tiles, grout and benches without harsh chemicals. Browse <a href=\"/shop/cleaning/steam-cleaners/\">steam cleaners</a>.",
+     "links": []
+    }
+   ]
   },
   {
    "id": "safety",
