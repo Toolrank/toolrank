@@ -1,81 +1,88 @@
 {
- "fetched": "2026-11-16 22:03 UTC",
- "fetched_ts": 1794866626,
- "stars_baseline": "2026-11-09",
+ "fetched": "2026-11-17 22:52 UTC",
+ "fetched_ts": 1794955972,
+ "stars_baseline": "2026-11-10",
  "repos_tracked": 16,
  "stars": [
   {
-   "tool": "logo-design-skill",
-   "repo": "kaankiziltug/logo-design-skill",
-   "gained": 694,
-   "stars": 7071,
-   "url": "https://github.com/kaankiziltug/logo-design-skill"
-  },
-  {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 568,
-   "stars": 112844,
+   "gained": 770,
+   "stars": 113088,
    "url": "https://github.com/openai/whisper"
+  },
+  {
+   "tool": "logo-design-skill",
+   "repo": "kaankiziltug/logo-design-skill",
+   "gained": 739,
+   "stars": 7177,
+   "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 492,
-   "stars": 7131,
+   "gained": 454,
+   "stars": 7208,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 363,
-   "stars": 5142,
+   "gained": 367,
+   "stars": 5194,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 195,
-   "stars": 4724,
+   "gained": 203,
+   "stars": 4749,
    "url": "https://github.com/ZJU-REAL/Easel"
-  },
-  {
-   "tool": "Sepia",
-   "repo": "Nanako0129/sepia",
-   "gained": 144,
-   "stars": 3840,
-   "url": "https://github.com/Nanako0129/sepia"
-  },
-  {
-   "tool": "vibe-wise",
-   "repo": "nykooi1/vibe-wise",
-   "gained": 134,
-   "stars": 4402,
-   "url": "https://github.com/nykooi1/vibe-wise"
-  },
-  {
-   "tool": "ReelMimic",
-   "repo": "edenfunf/reelmimic",
-   "gained": 127,
-   "stars": 2006,
-   "url": "https://github.com/edenfunf/reelmimic"
-  },
-  {
-   "tool": "Microsoft Agent Framework",
-   "repo": "microsoft/agent-framework",
-   "gained": 115,
-   "stars": 14714,
-   "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 69,
-   "stars": 108868,
+   "gained": 153,
+   "stars": 108901,
    "url": "https://github.com/google-gemini/gemini-cli"
+  },
+  {
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 119,
+   "stars": 4408,
+   "url": "https://github.com/nykooi1/vibe-wise"
+  },
+  {
+   "tool": "Sepia",
+   "repo": "Nanako0129/sepia",
+   "gained": 116,
+   "stars": 3866,
+   "url": "https://github.com/Nanako0129/sepia"
+  },
+  {
+   "tool": "Microsoft Agent Framework",
+   "repo": "microsoft/agent-framework",
+   "gained": 116,
+   "stars": 14727,
+   "url": "https://github.com/microsoft/agent-framework"
+  },
+  {
+   "tool": "ReelMimic",
+   "repo": "edenfunf/reelmimic",
+   "gained": 104,
+   "stars": 2028,
+   "url": "https://github.com/edenfunf/reelmimic"
   }
  ],
  "hn": [
+  {
+   "tool": "OpenCode",
+   "stories": 1,
+   "points": 323,
+   "top_title": "OpenCode Browse",
+   "top_url": "https://news.ycombinator.com/item?id=50523459"
+  },
   {
    "tool": "Perplexity",
    "stories": 9,
@@ -84,18 +91,25 @@
    "top_url": "https://news.ycombinator.com/item?id=50488464"
   },
   {
-   "tool": "Claude",
-   "stories": 8,
-   "points": 87,
-   "top_title": "Saltline: First-person shooter built by Fable 5.2",
-   "top_url": "https://news.ycombinator.com/item?id=50444850"
+   "tool": "Mem",
+   "stories": 1,
+   "points": 77,
+   "top_title": "Mem Is Shutting Down",
+   "top_url": "https://news.ycombinator.com/item?id=50526537"
   },
   {
    "tool": "Google AI Studio (Build)",
-   "stories": 3,
-   "points": 39,
+   "stories": 2,
+   "points": 36,
    "top_title": "Gemini 4 Hydrogen",
    "top_url": "https://news.ycombinator.com/item?id=50471455"
+  },
+  {
+   "tool": "Claude",
+   "stories": 7,
+   "points": 15,
+   "top_title": "I got Claude to rewrite curl in Rust in ~4 weeks",
+   "top_url": "https://news.ycombinator.com/item?id=50517458"
   },
   {
    "tool": "Cursor",
@@ -105,11 +119,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50496937"
   },
   {
-   "tool": "OpenCode",
-   "stories": 1,
-   "points": 5,
-   "top_title": "OpenCode Browse",
-   "top_url": "https://news.ycombinator.com/item?id=50523459"
+   "tool": "Devin",
+   "stories": 2,
+   "points": 4,
+   "top_title": "Devin Apps",
+   "top_url": "https://news.ycombinator.com/item?id=50484928"
   },
   {
    "tool": "Factory",
@@ -119,13 +133,6 @@
    "top_url": "https://news.ycombinator.com/item?id=50470802"
   },
   {
-   "tool": "Devin",
-   "stories": 1,
-   "points": 3,
-   "top_title": "Devin Apps",
-   "top_url": "https://news.ycombinator.com/item?id=50484928"
-  },
-  {
    "tool": "CodeRabbit",
    "stories": 1,
    "points": 3,
@@ -133,18 +140,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50472154"
   },
   {
-   "tool": "Replit",
+   "tool": "Grok",
    "stories": 1,
    "points": 2,
-   "top_title": "Replit Agent can now buy for your business and help reach customers",
-   "top_url": "https://news.ycombinator.com/item?id=50485249"
-  },
-  {
-   "tool": "ElevenLabs",
-   "stories": 1,
-   "points": 2,
-   "top_title": "Scribe v3 and v3 Live",
-   "top_url": "https://news.ycombinator.com/item?id=50457165"
+   "top_title": "2027 AI Power Shortfall of 15 GW",
+   "top_url": "https://news.ycombinator.com/item?id=50525654"
   }
  ]
 }

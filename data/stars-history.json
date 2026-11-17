@@ -1,22 +1,4 @@
 {
- "2026-10-18": {
-  "Nanako0129/sepia": 3235,
-  "Oldcircle/geo-sleuth": 3354,
-  "RooCodeInc/Roo-Code": 24272,
-  "ZJU-REAL/Easel": 3830,
-  "dzhng/jevgrep": 2792,
-  "edenfunf/reelmimic": 3623,
-  "google-gemini/gemini-cli": 107440,
-  "kaankiziltug/logo-design-skill": 3682,
-  "microsoft/agent-framework": 14193,
-  "nateherkai/scroll-craft": 3631,
-  "nykooi1/vibe-wise": 3755,
-  "openai/whisper": 110827,
-  "shadcn-ui/lint": 3221,
-  "software-mansion-labs/goldie": 2507,
-  "tigerless-labs/agent-memory": 4223,
-  "xzf-thu/VoiceMem": 2578
- },
  "2026-10-19": {
   "Nanako0129/sepia": 3248,
   "Oldcircle/geo-sleuth": 3461,
@@ -537,6 +519,24 @@
   "shadcn-ui/lint": 3366,
   "software-mansion-labs/goldie": 2608,
   "tigerless-labs/agent-memory": 4322,
+  "xzf-thu/VoiceMem": 2902
+ },
+ "2026-11-17": {
+  "Nanako0129/sepia": 3866,
+  "Oldcircle/geo-sleuth": 7208,
+  "RooCodeInc/Roo-Code": 24237,
+  "ZJU-REAL/Easel": 4749,
+  "dzhng/jevgrep": 3241,
+  "edenfunf/reelmimic": 2028,
+  "google-gemini/gemini-cli": 108901,
+  "kaankiziltug/logo-design-skill": 7177,
+  "microsoft/agent-framework": 14727,
+  "nateherkai/scroll-craft": 5194,
+  "nykooi1/vibe-wise": 4408,
+  "openai/whisper": 113088,
+  "shadcn-ui/lint": 3366,
+  "software-mansion-labs/goldie": 2609,
+  "tigerless-labs/agent-memory": 4323,
   "xzf-thu/VoiceMem": 2902
  }
 }
