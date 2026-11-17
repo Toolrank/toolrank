@@ -308,6 +308,10 @@ def guide(c, items):
         out.append(f'<h3>{E(g["h"])}</h3><p>{g["p"]}</p>' + (f'<p class="gl">{ln}</p>' if ln else ""))
     return f'<section class="guide"><h2>{E(c["title"])} buying guide</h2>' + "".join(out) + "</section>"
 
+def cat_desc(c):
+    d = f'{c["title"]}: {c["blurb"]} Shipped direct from Australian suppliers.'
+    return d + " Plus a short buying guide." if c.get("guide") and len(d) < 130 else d
+
 def cat_page(C, c, prods, preview):
     items = [p for p in (prods if preview else listed(prods)) if p["category"] == c["id"]]
     main = ('<div class="wrap">' + crumbs((c["title"], None)) + '<div class="lay">' + sidebar(c["id"]) + '<div class="mc">'
@@ -316,7 +320,7 @@ def cat_page(C, c, prods, preview):
             + '</div></div></div>')
     ld = [{"@type": "CollectionPage", "name": c["title"], "url": f'{BASE}/shop/{c["id"]}/'}, crumb_ld((c["title"], f'{BASE}/shop/{c["id"]}/'))]
     if items: ld.append({"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i, "name": p["name"], "url": f'{BASE}/shop/p/{p["id"]}/'} for i, p in enumerate(items, 1)]})
-    return doc(C, prods, head(f'{c["title"]} | ToolRank', f'{c["title"]}: {c["blurb"]} Shipped direct from Australian suppliers.', f'/shop/{c["id"]}/', ld, image=f'/assets/img/cat-{c["id"]}.webp'), main, preview)
+    return doc(C, prods, head(f'{c["title"]} online in Australia | ToolRank', cat_desc(c), f'/shop/{c["id"]}/', ld, image=f'/assets/img/cat-{c["id"]}.webp'), main, preview)
 
 def product_page(C, p, prods, preview):
     c = CAT[p["category"]]; ok = sellable(p)
