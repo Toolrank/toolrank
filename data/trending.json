@@ -1,113 +1,113 @@
 {
- "fetched": "2026-11-17 22:52 UTC",
- "fetched_ts": 1794955972,
- "stars_baseline": "2026-11-10",
- "repos_tracked": 16,
+ "fetched": "2026-11-18 21:57 UTC",
+ "fetched_ts": 1795039064,
+ "stars_baseline": "2026-11-11",
+ "repos_tracked": 15,
  "stars": [
-  {
-   "tool": "OpenAI Whisper",
-   "repo": "openai/whisper",
-   "gained": 770,
-   "stars": 113088,
-   "url": "https://github.com/openai/whisper"
-  },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 739,
-   "stars": 7177,
+   "gained": 650,
+   "stars": 7283,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
+  },
+  {
+   "tool": "OpenAI Whisper",
+   "repo": "openai/whisper",
+   "gained": 501,
+   "stars": 113018,
+   "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 454,
-   "stars": 7208,
+   "gained": 373,
+   "stars": 7240,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 367,
-   "stars": 5194,
+   "gained": 297,
+   "stars": 5234,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 203,
-   "stars": 4749,
+   "gained": 172,
+   "stars": 4773,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 153,
-   "stars": 108901,
+   "gained": 144,
+   "stars": 108924,
    "url": "https://github.com/google-gemini/gemini-cli"
-  },
-  {
-   "tool": "vibe-wise",
-   "repo": "nykooi1/vibe-wise",
-   "gained": 119,
-   "stars": 4408,
-   "url": "https://github.com/nykooi1/vibe-wise"
-  },
-  {
-   "tool": "Sepia",
-   "repo": "Nanako0129/sepia",
-   "gained": 116,
-   "stars": 3866,
-   "url": "https://github.com/Nanako0129/sepia"
-  },
-  {
-   "tool": "Microsoft Agent Framework",
-   "repo": "microsoft/agent-framework",
-   "gained": 116,
-   "stars": 14727,
-   "url": "https://github.com/microsoft/agent-framework"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 104,
-   "stars": 2028,
+   "gained": 125,
+   "stars": 2051,
    "url": "https://github.com/edenfunf/reelmimic"
+  },
+  {
+   "tool": "Sepia",
+   "repo": "Nanako0129/sepia",
+   "gained": 102,
+   "stars": 3889,
+   "url": "https://github.com/Nanako0129/sepia"
+  },
+  {
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 91,
+   "stars": 4413,
+   "url": "https://github.com/nykooi1/vibe-wise"
+  },
+  {
+   "tool": "jevgrep",
+   "repo": "dzhng/jevgrep",
+   "gained": 34,
+   "stars": 3246,
+   "url": "https://github.com/dzhng/jevgrep"
   }
  ],
  "hn": [
   {
    "tool": "OpenCode",
    "stories": 1,
-   "points": 323,
+   "points": 331,
    "top_title": "OpenCode Browse",
    "top_url": "https://news.ycombinator.com/item?id=50523459"
   },
   {
    "tool": "Perplexity",
-   "stories": 9,
-   "points": 161,
+   "stories": 11,
+   "points": 167,
    "top_title": "Perplexity Decider v1.3: Training, eval, and use cases",
    "top_url": "https://news.ycombinator.com/item?id=50488464"
   },
   {
    "tool": "Mem",
    "stories": 1,
-   "points": 77,
+   "points": 79,
    "top_title": "Mem Is Shutting Down",
    "top_url": "https://news.ycombinator.com/item?id=50526537"
   },
   {
    "tool": "Google AI Studio (Build)",
-   "stories": 2,
-   "points": 36,
+   "stories": 3,
+   "points": 42,
    "top_title": "Gemini 4 Hydrogen",
    "top_url": "https://news.ycombinator.com/item?id=50471455"
   },
   {
    "tool": "Claude",
-   "stories": 7,
-   "points": 15,
+   "stories": 8,
+   "points": 17,
    "top_title": "I got Claude to rewrite curl in Rust in ~4 weeks",
    "top_url": "https://news.ycombinator.com/item?id=50517458"
   },
@@ -120,10 +120,24 @@
   },
   {
    "tool": "Devin",
+   "stories": 3,
+   "points": 8,
+   "top_title": "Devin Bots",
+   "top_url": "https://news.ycombinator.com/item?id=50551739"
+  },
+  {
+   "tool": "Replit",
    "stories": 2,
    "points": 4,
-   "top_title": "Devin Apps",
-   "top_url": "https://news.ycombinator.com/item?id=50484928"
+   "top_title": "Introducing Replit Missions",
+   "top_url": "https://news.ycombinator.com/item?id=50548764"
+  },
+  {
+   "tool": "CodeRabbit",
+   "stories": 2,
+   "points": 4,
+   "top_title": "CodeRabbit Tops $100M in ARR as Demand Surges for Governance of Agentic Software",
+   "top_url": "https://news.ycombinator.com/item?id=50472154"
   },
   {
    "tool": "Factory",
@@ -131,20 +145,6 @@
    "points": 4,
    "top_title": "Factory's New Cyber Defense Network Featuring Palo Alto Networks, Casco, & More",
    "top_url": "https://news.ycombinator.com/item?id=50470802"
-  },
-  {
-   "tool": "CodeRabbit",
-   "stories": 1,
-   "points": 3,
-   "top_title": "CodeRabbit Tops $100M in ARR as Demand Surges for Governance of Agentic Software",
-   "top_url": "https://news.ycombinator.com/item?id=50472154"
-  },
-  {
-   "tool": "Grok",
-   "stories": 1,
-   "points": 2,
-   "top_title": "2027 AI Power Shortfall of 15 GW",
-   "top_url": "https://news.ycombinator.com/item?id=50525654"
   }
  ]
 }
