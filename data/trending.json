@@ -1,77 +1,77 @@
 {
- "fetched": "2026-11-18 21:57 UTC",
- "fetched_ts": 1795039064,
- "stars_baseline": "2026-11-11",
+ "fetched": "2026-11-19 21:36 UTC",
+ "fetched_ts": 1795124182,
+ "stars_baseline": "2026-11-12",
  "repos_tracked": 15,
  "stars": [
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 650,
-   "stars": 7283,
+   "gained": 622,
+   "stars": 7351,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 501,
-   "stars": 113018,
+   "gained": 526,
+   "stars": 113115,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 373,
-   "stars": 7240,
+   "gained": 368,
+   "stars": 7281,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 297,
-   "stars": 5234,
+   "gained": 282,
+   "stars": 5263,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 172,
-   "stars": 4773,
+   "gained": 173,
+   "stars": 4800,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 144,
-   "stars": 108924,
+   "gained": 139,
+   "stars": 108937,
    "url": "https://github.com/google-gemini/gemini-cli"
-  },
-  {
-   "tool": "ReelMimic",
-   "repo": "edenfunf/reelmimic",
-   "gained": 125,
-   "stars": 2051,
-   "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 102,
-   "stars": 3889,
+   "gained": 103,
+   "stars": 3901,
    "url": "https://github.com/Nanako0129/sepia"
+  },
+  {
+   "tool": "ReelMimic",
+   "repo": "edenfunf/reelmimic",
+   "gained": 101,
+   "stars": 2062,
+   "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 91,
-   "stars": 4413,
+   "gained": 76,
+   "stars": 4415,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "jevgrep",
    "repo": "dzhng/jevgrep",
-   "gained": 34,
-   "stars": 3246,
+   "gained": 39,
+   "stars": 3252,
    "url": "https://github.com/dzhng/jevgrep"
   }
  ],
@@ -79,14 +79,14 @@
   {
    "tool": "OpenCode",
    "stories": 1,
-   "points": 331,
+   "points": 333,
    "top_title": "OpenCode Browse",
    "top_url": "https://news.ycombinator.com/item?id=50523459"
   },
   {
    "tool": "Perplexity",
-   "stories": 11,
-   "points": 167,
+   "stories": 9,
+   "points": 164,
    "top_title": "Perplexity Decider v1.3: Training, eval, and use cases",
    "top_url": "https://news.ycombinator.com/item?id=50488464"
   },
@@ -99,15 +99,15 @@
   },
   {
    "tool": "Google AI Studio (Build)",
-   "stories": 3,
-   "points": 42,
-   "top_title": "Gemini 4 Hydrogen",
-   "top_url": "https://news.ycombinator.com/item?id=50471455"
+   "stories": 2,
+   "points": 27,
+   "top_title": "Gemini 4 Neon",
+   "top_url": "https://news.ycombinator.com/item?id=50552067"
   },
   {
    "tool": "Claude",
-   "stories": 8,
-   "points": 17,
+   "stories": 7,
+   "points": 16,
    "top_title": "I got Claude to rewrite curl in Rust in ~4 weeks",
    "top_url": "https://news.ycombinator.com/item?id=50517458"
   },
@@ -133,18 +133,18 @@
    "top_url": "https://news.ycombinator.com/item?id=50548764"
   },
   {
-   "tool": "CodeRabbit",
-   "stories": 2,
-   "points": 4,
-   "top_title": "CodeRabbit Tops $100M in ARR as Demand Surges for Governance of Agentic Software",
-   "top_url": "https://news.ycombinator.com/item?id=50472154"
+   "tool": "Grok",
+   "stories": 1,
+   "points": 2,
+   "top_title": "2027 AI Power Shortfall of 15 GW",
+   "top_url": "https://news.ycombinator.com/item?id=50525654"
   },
   {
-   "tool": "Factory",
+   "tool": "Lovable",
    "stories": 1,
-   "points": 4,
-   "top_title": "Factory's New Cyber Defense Network Featuring Palo Alto Networks, Casco, & More",
-   "top_url": "https://news.ycombinator.com/item?id=50470802"
+   "points": 2,
+   "top_title": "Lovable: Now you can explore any idea in parallel without touching what's live",
+   "top_url": "https://news.ycombinator.com/item?id=50531009"
   }
  ]
 }
