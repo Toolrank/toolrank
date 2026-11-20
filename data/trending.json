@@ -1,94 +1,87 @@
 {
- "fetched": "2026-11-19 21:36 UTC",
- "fetched_ts": 1795124182,
- "stars_baseline": "2026-11-12",
+ "fetched": "2026-11-20 21:06 UTC",
+ "fetched_ts": 1795208762,
+ "stars_baseline": "2026-11-13",
  "repos_tracked": 15,
  "stars": [
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 622,
-   "stars": 7351,
+   "gained": 607,
+   "stars": 7421,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 526,
-   "stars": 113115,
+   "gained": 525,
+   "stars": 113173,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 368,
-   "stars": 7281,
+   "gained": 391,
+   "stars": 7348,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 282,
-   "stars": 5263,
+   "gained": 264,
+   "stars": 5291,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 173,
-   "stars": 4800,
+   "gained": 157,
+   "stars": 4817,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 139,
-   "stars": 108937,
+   "gained": 144,
+   "stars": 108957,
    "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 103,
-   "stars": 3901,
+   "gained": 106,
+   "stars": 3912,
    "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 101,
-   "stars": 2062,
+   "gained": 104,
+   "stars": 2080,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 76,
-   "stars": 4415,
+   "gained": 73,
+   "stars": 4426,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
-   "tool": "jevgrep",
-   "repo": "dzhng/jevgrep",
-   "gained": 39,
-   "stars": 3252,
-   "url": "https://github.com/dzhng/jevgrep"
+   "tool": "shadcn lint",
+   "repo": "shadcn-ui/lint",
+   "gained": 42,
+   "stars": 3398,
+   "url": "https://github.com/shadcn-ui/lint"
   }
  ],
  "hn": [
   {
    "tool": "OpenCode",
    "stories": 1,
-   "points": 333,
+   "points": 334,
    "top_title": "OpenCode Browse",
    "top_url": "https://news.ycombinator.com/item?id=50523459"
-  },
-  {
-   "tool": "Perplexity",
-   "stories": 9,
-   "points": 164,
-   "top_title": "Perplexity Decider v1.3: Training, eval, and use cases",
-   "top_url": "https://news.ycombinator.com/item?id=50488464"
   },
   {
    "tool": "Mem",
@@ -98,6 +91,13 @@
    "top_url": "https://news.ycombinator.com/item?id=50526537"
   },
   {
+   "tool": "Lovable",
+   "stories": 1,
+   "points": 30,
+   "top_title": "Lovable: Now you can explore any idea in parallel without touching what's live",
+   "top_url": "https://news.ycombinator.com/item?id=50531009"
+  },
+  {
    "tool": "Google AI Studio (Build)",
    "stories": 2,
    "points": 27,
@@ -105,9 +105,16 @@
    "top_url": "https://news.ycombinator.com/item?id=50552067"
   },
   {
-   "tool": "Claude",
+   "tool": "Perplexity",
    "stories": 7,
-   "points": 16,
+   "points": 15,
+   "top_title": "Perplexity Computer’s Multiagent for the Most Complex Work",
+   "top_url": "https://news.ycombinator.com/item?id=50550311"
+  },
+  {
+   "tool": "Claude",
+   "stories": 6,
+   "points": 15,
    "top_title": "I got Claude to rewrite curl in Rust in ~4 weeks",
    "top_url": "https://news.ycombinator.com/item?id=50517458"
   },
@@ -120,17 +127,17 @@
   },
   {
    "tool": "Devin",
-   "stories": 3,
-   "points": 8,
+   "stories": 2,
+   "points": 5,
    "top_title": "Devin Bots",
    "top_url": "https://news.ycombinator.com/item?id=50551739"
   },
   {
-   "tool": "Replit",
+   "tool": "CodeRabbit",
    "stories": 2,
    "points": 4,
-   "top_title": "Introducing Replit Missions",
-   "top_url": "https://news.ycombinator.com/item?id=50548764"
+   "top_title": "GPT-6.2 Sol and Astra review: should you switch?",
+   "top_url": "https://news.ycombinator.com/item?id=50580780"
   },
   {
    "tool": "Grok",
@@ -138,13 +145,6 @@
    "points": 2,
    "top_title": "2027 AI Power Shortfall of 15 GW",
    "top_url": "https://news.ycombinator.com/item?id=50525654"
-  },
-  {
-   "tool": "Lovable",
-   "stories": 1,
-   "points": 2,
-   "top_title": "Lovable: Now you can explore any idea in parallel without touching what's live",
-   "top_url": "https://news.ycombinator.com/item?id=50531009"
   }
  ]
 }
