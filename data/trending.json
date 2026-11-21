@@ -1,78 +1,78 @@
 {
- "fetched": "2026-11-20 21:06 UTC",
- "fetched_ts": 1795208762,
- "stars_baseline": "2026-11-13",
+ "fetched": "2026-11-21 17:33 UTC",
+ "fetched_ts": 1795282431,
+ "stars_baseline": "2026-11-14",
  "repos_tracked": 15,
  "stars": [
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 607,
-   "stars": 7421,
+   "gained": 546,
+   "stars": 7459,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 525,
-   "stars": 113173,
+   "gained": 522,
+   "stars": 113219,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 391,
-   "stars": 7348,
+   "gained": 357,
+   "stars": 7379,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 264,
-   "stars": 5291,
+   "gained": 252,
+   "stars": 5316,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 157,
-   "stars": 4817,
+   "gained": 146,
+   "stars": 4828,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 144,
-   "stars": 108957,
+   "gained": 137,
+   "stars": 108967,
    "url": "https://github.com/google-gemini/gemini-cli"
-  },
-  {
-   "tool": "Sepia",
-   "repo": "Nanako0129/sepia",
-   "gained": 106,
-   "stars": 3912,
-   "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 104,
-   "stars": 2080,
+   "gained": 134,
+   "stars": 2097,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
-   "tool": "vibe-wise",
-   "repo": "nykooi1/vibe-wise",
-   "gained": 73,
-   "stars": 4426,
-   "url": "https://github.com/nykooi1/vibe-wise"
+   "tool": "Sepia",
+   "repo": "Nanako0129/sepia",
+   "gained": 100,
+   "stars": 3916,
+   "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "shadcn lint",
    "repo": "shadcn-ui/lint",
-   "gained": 42,
-   "stars": 3398,
+   "gained": 66,
+   "stars": 3428,
    "url": "https://github.com/shadcn-ui/lint"
+  },
+  {
+   "tool": "vibe-wise",
+   "repo": "nykooi1/vibe-wise",
+   "gained": 50,
+   "stars": 4428,
+   "url": "https://github.com/nykooi1/vibe-wise"
   }
  ],
  "hn": [
@@ -93,7 +93,7 @@
   {
    "tool": "Lovable",
    "stories": 1,
-   "points": 30,
+   "points": 34,
    "top_title": "Lovable: Now you can explore any idea in parallel without touching what's live",
    "top_url": "https://news.ycombinator.com/item?id=50531009"
   },
@@ -113,17 +113,10 @@
   },
   {
    "tool": "Claude",
-   "stories": 6,
-   "points": 15,
+   "stories": 5,
+   "points": 14,
    "top_title": "I got Claude to rewrite curl in Rust in ~4 weeks",
    "top_url": "https://news.ycombinator.com/item?id=50517458"
-  },
-  {
-   "tool": "Cursor",
-   "stories": 3,
-   "points": 9,
-   "top_title": "Cursor - An update on our recent security incident",
-   "top_url": "https://news.ycombinator.com/item?id=50496937"
   },
   {
    "tool": "Devin",
@@ -138,6 +131,13 @@
    "points": 4,
    "top_title": "GPT-6.2 Sol and Astra review: should you switch?",
    "top_url": "https://news.ycombinator.com/item?id=50580780"
+  },
+  {
+   "tool": "Cursor",
+   "stories": 2,
+   "points": 3,
+   "top_title": "Cursor: An update on our recent security incident",
+   "top_url": "https://news.ycombinator.com/item?id=50518739"
   },
   {
    "tool": "Grok",
