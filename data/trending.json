@@ -1,77 +1,77 @@
 {
- "fetched": "2026-11-21 17:33 UTC",
- "fetched_ts": 1795282431,
- "stars_baseline": "2026-11-14",
+ "fetched": "2026-11-22 15:18 UTC",
+ "fetched_ts": 1795360716,
+ "stars_baseline": "2026-11-15",
  "repos_tracked": 15,
  "stars": [
   {
-   "tool": "logo-design-skill",
-   "repo": "kaankiziltug/logo-design-skill",
-   "gained": 546,
-   "stars": 7459,
-   "url": "https://github.com/kaankiziltug/logo-design-skill"
-  },
-  {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 522,
-   "stars": 113219,
+   "gained": 578,
+   "stars": 113342,
    "url": "https://github.com/openai/whisper"
+  },
+  {
+   "tool": "logo-design-skill",
+   "repo": "kaankiziltug/logo-design-skill",
+   "gained": 524,
+   "stars": 7505,
+   "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 357,
-   "stars": 7379,
+   "gained": 328,
+   "stars": 7408,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 252,
-   "stars": 5316,
+   "gained": 240,
+   "stars": 5336,
    "url": "https://github.com/nateherkai/scroll-craft"
-  },
-  {
-   "tool": "Easel",
-   "repo": "ZJU-REAL/Easel",
-   "gained": 146,
-   "stars": 4828,
-   "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 137,
-   "stars": 108967,
+   "gained": 143,
+   "stars": 108992,
    "url": "https://github.com/google-gemini/gemini-cli"
+  },
+  {
+   "tool": "Easel",
+   "repo": "ZJU-REAL/Easel",
+   "gained": 134,
+   "stars": 4837,
+   "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 134,
-   "stars": 2097,
+   "gained": 117,
+   "stars": 2104,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 100,
-   "stars": 3916,
+   "gained": 106,
+   "stars": 3927,
    "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "shadcn lint",
    "repo": "shadcn-ui/lint",
-   "gained": 66,
-   "stars": 3428,
+   "gained": 77,
+   "stars": 3440,
    "url": "https://github.com/shadcn-ui/lint"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 50,
-   "stars": 4428,
+   "gained": 44,
+   "stars": 4429,
    "url": "https://github.com/nykooi1/vibe-wise"
   }
  ],
@@ -79,7 +79,7 @@
   {
    "tool": "OpenCode",
    "stories": 1,
-   "points": 334,
+   "points": 336,
    "top_title": "OpenCode Browse",
    "top_url": "https://news.ycombinator.com/item?id=50523459"
   },
@@ -93,7 +93,7 @@
   {
    "tool": "Lovable",
    "stories": 1,
-   "points": 34,
+   "points": 35,
    "top_title": "Lovable: Now you can explore any idea in parallel without touching what's live",
    "top_url": "https://news.ycombinator.com/item?id=50531009"
   },
@@ -113,10 +113,17 @@
   },
   {
    "tool": "Claude",
-   "stories": 5,
-   "points": 14,
+   "stories": 4,
+   "points": 12,
    "top_title": "I got Claude to rewrite curl in Rust in ~4 weeks",
    "top_url": "https://news.ycombinator.com/item?id=50517458"
+  },
+  {
+   "tool": "Replit",
+   "stories": 3,
+   "points": 6,
+   "top_title": "Why agent swarms get better at optimizing code as they grow",
+   "top_url": "https://news.ycombinator.com/item?id=50596818"
   },
   {
    "tool": "Devin",
@@ -138,13 +145,6 @@
    "points": 3,
    "top_title": "Cursor: An update on our recent security incident",
    "top_url": "https://news.ycombinator.com/item?id=50518739"
-  },
-  {
-   "tool": "Grok",
-   "stories": 1,
-   "points": 2,
-   "top_title": "2027 AI Power Shortfall of 15 GW",
-   "top_url": "https://news.ycombinator.com/item?id=50525654"
   }
  ]
 }
