@@ -202,7 +202,7 @@ Page: https://toolrank.io/best/automation/
 11. OpenAI Agents SDK (free; audience: business): OpenAI's lightweight framework for multi-agent workflows. https://openai.github.io/openai-agents-python/
 12. Claude Agent SDK (free; audience: business): Anthropic's SDK for building agents on Claude Code's harness. https://code.claude.com/docs/en/agent-sdk/overview
 13. Google ADK (free; audience: business): Google's open-source Agent Development Kit. https://adk.dev/
-14. Microsoft Agent Framework (free; audience: business): Microsoft's open-source successor to AutoGen and Semantic Kernel agents. https://github.com/microsoft/agent-framework
+14. Microsoft Agent Framework (free; audience: business): Microsoft's open-source successor to AutoGen and Semantic Kernel agents. https://learn.microsoft.com/en-us/agent-framework/
 15. LlamaIndex (freemium; audience: business): Framework and cloud for agents over your documents. https://www.llamaindex.ai
 16. Pydantic AI (free; audience: business): Type-safe Python agent framework from the Pydantic team. https://pydantic.dev/docs/ai/overview/
 17. Mastra (freemium; audience: business): Open-source TypeScript agent framework. https://mastra.ai

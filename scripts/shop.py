@@ -306,7 +306,7 @@ def guide(c, items):
     for g in c["guide"]:
         ln = " &middot; ".join(f'<a href="/shop/p/{i}/">{E(live[i]["name"])}</a>' for i in g.get("links", []) if i in live)
         out.append(f'<h3>{E(g["h"])}</h3><p>{g["p"]}</p>' + (f'<p class="gl">{ln}</p>' if ln else ""))
-    return f'<section class="guide"><h2>{E(c["title"])} buying guide</h2>' + "".join(out) + "</section>"
+    return f'<section class="guide" id="guide"><h2>{E(c["title"])} buying guide</h2>' + "".join(out) + "</section>"
 
 def cat_desc(c):
     d = f'{c["title"]}: {c["blurb"]} Shipped direct from Australian suppliers.'
@@ -341,10 +341,12 @@ def product_page(C, p, prods, preview):
             f'<ul class="pfacts"><li>{ic("truck", "ic sm")}Ships direct from an Australian supplier, usually within 1&ndash;3 business days. {DELIV} {DELIV2}</li>'
             f'<li>{ic("check", "ic sm")}Australian Consumer Law guarantees apply. <a href="/shop/returns/">Returns</a></li>'
             f'<li>{ic("mail", "ic sm")}Questions? <a href="mailto:{MAIL}?subject={urllib.parse.quote("Question: " + p.get("sku", "") + " " + p["name"])}">{MAIL}</a></li></ul></div></div>'
+            + (f'<p class="small"><a href="/shop/{c["id"]}/#guide">{E(c["title"])} buying guide</a></p>' if c.get("guide") else "")
             + carousel("More in " + c["title"], [x for x in listed(prods) if x["category"] == c["id"] and x["id"] != p["id"]], f'/shop/{c["id"]}/', "more", preview) + '</div>')
     ld = [crumb_ld((c["title"], f'{BASE}/shop/{c["id"]}/'), (p["name"], f'{BASE}/shop/p/{p["id"]}/'))]
     prod = {"@type": "Product", "name": p["name"], "sku": p.get("sku"), "description": str(p.get("description") or ""), "image": [BASE + u if u.startswith("/") else u for u in ims], "category": c["title"]}
     if ok: prod["offers"] = {"@type": "Offer", "price": f'{p["our_price"]:.2f}', "priceCurrency": "AUD", "url": f'{BASE}/shop/p/{p["id"]}/',
+                             "itemCondition": "https://schema.org/NewCondition", "seller": {"@id": BASE + "/#store"},
                              "availability": "https://schema.org/InStock" if p.get("stock") == "in_stock" else "https://schema.org/LimitedAvailability",
                              **({"priceValidUntil": p["sale_ends"]} if on_sale(p) else {})}
     ld.append(prod)

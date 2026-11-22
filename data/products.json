@@ -3007,12 +3007,13 @@
     "/assets/shop/p/tr-bq-006-2.webp",
     "/assets/shop/p/tr-bq-006-3.webp"
    ],
-   "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock": "out",
+   "stock_checked": "2026-11-23T09:19+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active",
-   "group": "BBQs & grills"
+   "status": "paused",
+   "group": "BBQs & grills",
+   "paused_reason": "out_of_stock"
   },
   {
    "id": "charcoal-smoker-3-in-1",
@@ -3060,11 +3061,12 @@
     "/assets/shop/p/tr-bq-008-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-23T09:19+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active",
-   "group": "Smokers & pizza ovens"
+   "status": "paused",
+   "group": "Smokers & pizza ovens",
+   "paused_reason": "low_margin"
   },
   {
    "id": "pellet-pizza-oven-12in",
@@ -3112,7 +3114,7 @@
     "/assets/shop/p/tr-bq-010-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-23T09:19+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "paused",
@@ -3485,7 +3487,7 @@
     "/assets/shop/p/tr-bq-024-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-23T09:19+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "active",
@@ -3830,11 +3832,12 @@
     "/assets/shop/p/tr-bq-037-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-23T09:19+11:00",
    "order_by_email": true,
    "stripe_link": null,
-   "status": "active",
-   "group": "Coolers & 12V fridges"
+   "status": "paused",
+   "group": "Coolers & 12V fridges",
+   "paused_reason": "low_margin"
   },
   {
    "id": "portable-fridge-freezer-50l",
@@ -3856,7 +3859,7 @@
     "/assets/shop/p/tr-bq-038-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-23T09:19+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "active",
