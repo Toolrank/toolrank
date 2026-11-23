@@ -9,7 +9,7 @@ Run standalone:  python3 scripts/shop.py      Preview with drafts (outside the r
 scripts/build.py calls build() too (hourly workflow), so a full site build regenerates the store and adds its URLs to sitemap.xml."""
 import json, re, html, pathlib, shutil, sys, hashlib, urllib.parse, datetime
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-BASE = "https://toolrank.io"; E = html.escape
+BASE = "https://toolrank.io"; E = lambda s, quote=True: html.escape(html.unescape(str(s)), quote)
 CFG = json.loads((ROOT/"data/shop.json").read_text())
 PJ = json.loads((ROOT/"data/products.json").read_text())
 CATS = CFG["categories"]; CAT = {c["id"]: c for c in CATS}
