@@ -1,77 +1,77 @@
 {
- "fetched": "2026-11-22 15:18 UTC",
- "fetched_ts": 1795360716,
- "stars_baseline": "2026-11-15",
+ "fetched": "2026-11-23 12:44 UTC",
+ "fetched_ts": 1795437885,
+ "stars_baseline": "2026-11-16",
  "repos_tracked": 15,
  "stars": [
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 578,
-   "stars": 113342,
+   "gained": 567,
+   "stars": 113411,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 524,
-   "stars": 7505,
+   "gained": 491,
+   "stars": 7562,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 328,
-   "stars": 7408,
+   "gained": 310,
+   "stars": 7441,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 240,
-   "stars": 5336,
+   "gained": 214,
+   "stars": 5356,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 143,
-   "stars": 108992,
+   "gained": 149,
+   "stars": 109017,
    "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 134,
-   "stars": 4837,
+   "gained": 138,
+   "stars": 4862,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 117,
-   "stars": 2104,
+   "gained": 109,
+   "stars": 2115,
    "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 106,
-   "stars": 3927,
+   "gained": 97,
+   "stars": 3937,
    "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "shadcn lint",
    "repo": "shadcn-ui/lint",
-   "gained": 77,
-   "stars": 3440,
+   "gained": 86,
+   "stars": 3452,
    "url": "https://github.com/shadcn-ui/lint"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 44,
-   "stars": 4429,
+   "gained": 32,
+   "stars": 4434,
    "url": "https://github.com/nykooi1/vibe-wise"
   }
  ],
@@ -79,9 +79,16 @@
   {
    "tool": "OpenCode",
    "stories": 1,
-   "points": 336,
+   "points": 337,
    "top_title": "OpenCode Browse",
    "top_url": "https://news.ycombinator.com/item?id=50523459"
+  },
+  {
+   "tool": "Claude",
+   "stories": 5,
+   "points": 255,
+   "top_title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+   "top_url": "https://news.ycombinator.com/item?id=50605045"
   },
   {
    "tool": "Mem",
@@ -106,17 +113,10 @@
   },
   {
    "tool": "Perplexity",
-   "stories": 7,
-   "points": 15,
+   "stories": 5,
+   "points": 12,
    "top_title": "Perplexity Computer’s Multiagent for the Most Complex Work",
    "top_url": "https://news.ycombinator.com/item?id=50550311"
-  },
-  {
-   "tool": "Claude",
-   "stories": 4,
-   "points": 12,
-   "top_title": "I got Claude to rewrite curl in Rust in ~4 weeks",
-   "top_url": "https://news.ycombinator.com/item?id=50517458"
   },
   {
    "tool": "Replit",
@@ -140,11 +140,11 @@
    "top_url": "https://news.ycombinator.com/item?id=50580780"
   },
   {
-   "tool": "Cursor",
-   "stories": 2,
-   "points": 3,
-   "top_title": "Cursor: An update on our recent security incident",
-   "top_url": "https://news.ycombinator.com/item?id=50518739"
+   "tool": "Grok",
+   "stories": 1,
+   "points": 2,
+   "top_title": "2027 AI Power Shortfall of 15 GW",
+   "top_url": "https://news.ycombinator.com/item?id=50525654"
   }
  ]
 }
