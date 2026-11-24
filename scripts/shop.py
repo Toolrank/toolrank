@@ -35,7 +35,9 @@ def store_ld():
     o = {"@type": "OnlineStore", "@id": BASE + "/#store", "name": "ToolRank", "url": BASE + "/", "email": MAIL, "slogan": TAGLINE,
          "description": "Tools and equipment for every trade, shipped direct from Australian suppliers.",
          "logo": BASE + "/assets/icons/icon-512.png", "areaServed": {"@type": "Country", "name": "Australia"},
-         "contactPoint": {"@type": "ContactPoint", "contactType": "customer service", "email": MAIL, "areaServed": "AU", "availableLanguage": "en"}}
+         "contactPoint": {"@type": "ContactPoint", "contactType": "customer service", "email": MAIL, "areaServed": "AU", "availableLanguage": "en"},
+         "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "AU", "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+                                     "merchantReturnLink": BASE + "/shop/returns/"}}
     return o
 def seller_line():
     return "ToolRank"
