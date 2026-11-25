@@ -1,77 +1,77 @@
 {
- "fetched": "2026-11-24 10:56 UTC",
- "fetched_ts": 1795517767,
- "stars_baseline": "2026-11-17",
+ "fetched": "2026-11-25 14:25 UTC",
+ "fetched_ts": 1795616715,
+ "stars_baseline": "2026-11-18",
  "repos_tracked": 15,
  "stars": [
   {
-   "tool": "logo-design-skill",
-   "repo": "kaankiziltug/logo-design-skill",
-   "gained": 437,
-   "stars": 7614,
-   "url": "https://github.com/kaankiziltug/logo-design-skill"
-  },
-  {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 291,
-   "stars": 113379,
+   "gained": 469,
+   "stars": 113487,
    "url": "https://github.com/openai/whisper"
+  },
+  {
+   "tool": "logo-design-skill",
+   "repo": "kaankiziltug/logo-design-skill",
+   "gained": 443,
+   "stars": 7726,
+   "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 271,
-   "stars": 7479,
+   "gained": 296,
+   "stars": 7536,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 208,
-   "stars": 5402,
+   "gained": 219,
+   "stars": 5453,
    "url": "https://github.com/nateherkai/scroll-craft"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 140,
-   "stars": 109041,
+   "gained": 175,
+   "stars": 109099,
    "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 133,
-   "stars": 4882,
+   "gained": 153,
+   "stars": 4926,
    "url": "https://github.com/ZJU-REAL/Easel"
   },
   {
    "tool": "shadcn lint",
    "repo": "shadcn-ui/lint",
-   "gained": 96,
-   "stars": 3462,
+   "gained": 127,
+   "stars": 3498,
    "url": "https://github.com/shadcn-ui/lint"
-  },
-  {
-   "tool": "ReelMimic",
-   "repo": "edenfunf/reelmimic",
-   "gained": 80,
-   "stars": 2108,
-   "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 80,
-   "stars": 3946,
+   "gained": 65,
+   "stars": 3954,
    "url": "https://github.com/Nanako0129/sepia"
+  },
+  {
+   "tool": "ReelMimic",
+   "repo": "edenfunf/reelmimic",
+   "gained": 40,
+   "stars": 2091,
+   "url": "https://github.com/edenfunf/reelmimic"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 32,
-   "stars": 4440,
+   "gained": 36,
+   "stars": 4449,
    "url": "https://github.com/nykooi1/vibe-wise"
   }
  ],
@@ -79,30 +79,23 @@
   {
    "tool": "Kagi",
    "stories": 2,
-   "points": 437,
+   "points": 466,
    "top_title": "Kagi Mail (public beta)",
    "top_url": "https://news.ycombinator.com/item?id=50615481"
   },
   {
    "tool": "Claude",
    "stories": 4,
-   "points": 265,
+   "points": 269,
    "top_title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
    "top_url": "https://news.ycombinator.com/item?id=50605045"
   },
   {
    "tool": "Greptile",
    "stories": 1,
-   "points": 51,
+   "points": 58,
    "top_title": "How should an LLM see a computer?",
    "top_url": "https://news.ycombinator.com/item?id=50615520"
-  },
-  {
-   "tool": "Lovable",
-   "stories": 1,
-   "points": 35,
-   "top_title": "Lovable: Now you can explore any idea in parallel without touching what's live",
-   "top_url": "https://news.ycombinator.com/item?id=50531009"
   },
   {
    "tool": "Google AI Studio (Build)",
@@ -126,18 +119,25 @@
    "top_url": "https://news.ycombinator.com/item?id=50622607"
   },
   {
-   "tool": "Devin",
-   "stories": 2,
-   "points": 5,
-   "top_title": "Devin Bots",
-   "top_url": "https://news.ycombinator.com/item?id=50551739"
-  },
-  {
    "tool": "CodeRabbit",
    "stories": 2,
    "points": 4,
    "top_title": "GPT-6.2 Sol and Astra review: should you switch?",
    "top_url": "https://news.ycombinator.com/item?id=50580780"
+  },
+  {
+   "tool": "Devin",
+   "stories": 1,
+   "points": 4,
+   "top_title": "Devin Bots",
+   "top_url": "https://news.ycombinator.com/item?id=50551739"
+  },
+  {
+   "tool": "Suno",
+   "stories": 2,
+   "points": 2,
+   "top_title": "Dangerously Skip Permissions (Song)",
+   "top_url": "https://news.ycombinator.com/item?id=50641503"
   },
   {
    "tool": "ElevenLabs",
