@@ -297,7 +297,8 @@ def home_page(C, prods, preview):
             '<section class="blk" id="sr" hidden><div class="bh"><h2>Search results</h2></div><div class="pg" id="srg"></div><p class="more"><button type="button" class="btn dk" id="srm" hidden>Show more</button></p></section>'
             + (f'<section class="blk" id="sale"><div class="bh"><h2>Launch sale</h2></div><p class="note">Launch prices until {nice_date(sale[0]["sale_ends"])}. After that, the regular price shown applies.</p>{grid(sale, preview)}</section>' if sale else "")
             + (by or empty()) + '</div></div></div>')
-    ld = [{"@type": "CollectionPage", "name": "ToolRank Shop", "url": BASE + "/shop/"},
+    ld = [{"@type": "CollectionPage", "@id": BASE + "/shop/#page", "name": "ToolRank Shop", "url": BASE + "/shop/", "inLanguage": "en-AU", "isPartOf": {"@type": "WebSite", "@id": BASE + "/#website", "name": "ToolRank", "url": BASE + "/"},
+           "description": "Tools, home, garden, outdoor and more, shipped direct from Australian suppliers."},
           {"@type": "ItemList", "name": "Products", "itemListElement": [{"@type": "ListItem", "position": i, "name": p["name"], "url": f'{BASE}/shop/p/{p["id"]}/'} for i, p in enumerate(listed(prods), 1)]}]
     return doc(C, prods, head("Shop all products | ToolRank", f"{n_live():,} products: tools, home, garden, outdoor and more, shipped direct from Australian suppliers. Secure checkout.", "/shop/", ld), main, preview)
 
@@ -320,7 +321,8 @@ def cat_page(C, c, prods, preview):
             f'<div class="ph cph"><img src="/assets/img/cat-{c["id"]}.webp" alt="{E(alt(c))}" width="640" height="480"><div><h1>{E(c["title"])}</h1><p>{E(c["blurb"])}</p></div></div>'
             + ((grouped(c, items, preview) if items else "") + dz_block(c, bool(items)) if (items or dz_has(c["id"])) else empty()) + guide(c, items) + '<p class="note">Prices in Australian dollars. Prices include delivery to Sydney metro, other areas confirmed before dispatch. <a href="/shop/shipping/">Shipping</a> &middot; <a href="/shop/returns/">Returns</a></p>'
             + '</div></div></div>')
-    ld = [{"@type": "CollectionPage", "name": c["title"], "url": f'{BASE}/shop/{c["id"]}/'}, crumb_ld((c["title"], f'{BASE}/shop/{c["id"]}/'))]
+    ld = [{"@type": "CollectionPage", "@id": f'{BASE}/shop/{c["id"]}/#page', "name": c["title"], "url": f'{BASE}/shop/{c["id"]}/', "description": cat_desc(c),
+           "image": f'{BASE}/assets/img/cat-{c["id"]}.webp', "inLanguage": "en-AU", "isPartOf": {"@type": "WebSite", "@id": BASE + "/#website", "name": "ToolRank", "url": BASE + "/"}}, crumb_ld((c["title"], f'{BASE}/shop/{c["id"]}/'))]
     if items: ld.append({"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i, "name": p["name"], "url": f'{BASE}/shop/p/{p["id"]}/'} for i, p in enumerate(items, 1)]})
     return doc(C, prods, head(f'{c["title"]} online in Australia | ToolRank', cat_desc(c), f'/shop/{c["id"]}/', ld, image=f'/assets/img/cat-{c["id"]}.webp'), main, preview)
 
