@@ -315,11 +315,30 @@ def cat_desc(c):
     d = f'{c["title"]}: {c["blurb"]} Shipped direct from Australian suppliers.'
     return d + " Plus a short buying guide." if c.get("guide") and len(d) < 130 else d
 
+RELATED = {"power-tools": ["hand-tools", "workshop-storage", "safety"], "hand-tools": ["power-tools", "hardware", "workshop-storage"],
+    "hardware": ["building", "hand-tools", "workshop-storage"], "building": ["hardware", "power-tools", "safety"],
+    "workshop-storage": ["power-tools", "hand-tools", "automotive"], "automotive": ["workshop-storage", "electronics", "cleaning"],
+    "garden": ["bbq-camping", "power-tools", "pets"], "bbq-camping": ["garden", "kitchen", "sports-fitness"],
+    "cleaning": ["appliances", "bathroom", "home-living"], "safety": ["power-tools", "building", "workshop-storage"],
+    "furniture": ["home-living", "office", "garden"], "home-living": ["furniture", "kitchen", "bathroom"],
+    "kitchen": ["appliances", "home-living", "bbq-camping"], "bathroom": ["cleaning", "home-living", "building"],
+    "appliances": ["kitchen", "cleaning", "electronics"], "electronics": ["appliances", "office", "automotive"],
+    "office": ["furniture", "electronics", "party-gifts"], "sports-fitness": ["bbq-camping", "health-beauty", "toys-games"],
+    "pets": ["garden", "cleaning", "home-living"], "baby-kids": ["toys-games", "furniture", "home-living"],
+    "toys-games": ["baby-kids", "party-gifts", "sports-fitness"], "health-beauty": ["sports-fitness", "fashion", "bathroom"],
+    "fashion": ["health-beauty", "sports-fitness", "party-gifts"], "party-gifts": ["toys-games", "home-living", "music-gear"],
+    "music-gear": ["electronics", "party-gifts", "office"]}
+def related(c):
+    """Short row of links to related categories (internal linking)."""
+    r = [CAT[i] for i in RELATED.get(c["id"], []) if i in CAT]
+    return ('<section class="blk rel"><h2>Related categories</h2><nav class="chips" aria-label="Related categories">'
+            + "".join(f'<a href="/shop/{x["id"]}/">{E(x["title"])}</a>' for x in r) + '</nav></section>') if r else ""
+
 def cat_page(C, c, prods, preview):
     items = [p for p in (prods if preview else listed(prods)) if p["category"] == c["id"]]
     main = ('<div class="wrap">' + crumbs((c["title"], None)) + '<div class="lay">' + sidebar(c["id"]) + '<div class="mc">'
             f'<div class="ph cph"><img src="/assets/img/cat-{c["id"]}.webp" alt="{E(alt(c))}" width="640" height="480"><div><h1>{E(c["title"])}</h1><p>{E(c["blurb"])}</p></div></div>'
-            + ((grouped(c, items, preview) if items else "") + dz_block(c, bool(items)) if (items or dz_has(c["id"])) else empty()) + guide(c, items) + '<p class="note">Prices in Australian dollars. Prices include delivery to Sydney metro, other areas confirmed before dispatch. <a href="/shop/shipping/">Shipping</a> &middot; <a href="/shop/returns/">Returns</a></p>'
+            + ((grouped(c, items, preview) if items else "") + dz_block(c, bool(items)) if (items or dz_has(c["id"])) else empty()) + guide(c, items) + related(c) + '<p class="note">Prices in Australian dollars. Prices include delivery to Sydney metro, other areas confirmed before dispatch. <a href="/shop/shipping/">Shipping</a> &middot; <a href="/shop/returns/">Returns</a></p>'
             + '</div></div></div>')
     ld = [{"@type": "CollectionPage", "@id": f'{BASE}/shop/{c["id"]}/#page', "name": c["title"], "url": f'{BASE}/shop/{c["id"]}/', "description": cat_desc(c),
            "image": f'{BASE}/assets/img/cat-{c["id"]}.webp', "inLanguage": "en-AU", "isPartOf": {"@type": "WebSite", "@id": BASE + "/#website", "name": "ToolRank", "url": BASE + "/"}}, crumb_ld((c["title"], f'{BASE}/shop/{c["id"]}/'))]

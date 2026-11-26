@@ -3116,7 +3116,7 @@
     "/assets/shop/p/tr-bq-010-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-23T09:19+11:00",
+   "stock_checked": "2026-11-27T09:21+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "paused",
@@ -3674,7 +3674,7 @@
     "/assets/shop/p/tr-bq-031-3.webp"
    ],
    "stock": "in_stock",
-   "stock_checked": "2026-11-01T22:38+11:00",
+   "stock_checked": "2026-11-27T09:21+11:00",
    "order_by_email": true,
    "stripe_link": null,
    "status": "active",
