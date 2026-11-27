@@ -1,77 +1,77 @@
 {
- "fetched": "2026-11-26 19:01 UTC",
- "fetched_ts": 1795719677,
- "stars_baseline": "2026-11-19",
+ "fetched": "2026-11-27 19:57 UTC",
+ "fetched_ts": 1795809470,
+ "stars_baseline": "2026-11-20",
  "repos_tracked": 15,
  "stars": [
   {
    "tool": "logo-design-skill",
    "repo": "kaankiziltug/logo-design-skill",
-   "gained": 512,
-   "stars": 7863,
+   "gained": 513,
+   "stars": 7934,
    "url": "https://github.com/kaankiziltug/logo-design-skill"
   },
   {
    "tool": "OpenAI Whisper",
    "repo": "openai/whisper",
-   "gained": 477,
-   "stars": 113592,
+   "gained": 481,
+   "stars": 113654,
    "url": "https://github.com/openai/whisper"
   },
   {
    "tool": "geo-sleuth",
    "repo": "Oldcircle/geo-sleuth",
-   "gained": 318,
-   "stars": 7599,
+   "gained": 384,
+   "stars": 7732,
    "url": "https://github.com/Oldcircle/geo-sleuth"
   },
   {
    "tool": "Gemini CLI",
    "repo": "google-gemini/gemini-cli",
-   "gained": 248,
-   "stars": 109185,
+   "gained": 292,
+   "stars": 109249,
    "url": "https://github.com/google-gemini/gemini-cli"
   },
   {
    "tool": "scroll-craft",
    "repo": "nateherkai/scroll-craft",
-   "gained": 240,
-   "stars": 5503,
+   "gained": 238,
+   "stars": 5529,
    "url": "https://github.com/nateherkai/scroll-craft"
-  },
-  {
-   "tool": "shadcn lint",
-   "repo": "shadcn-ui/lint",
-   "gained": 156,
-   "stars": 3537,
-   "url": "https://github.com/shadcn-ui/lint"
   },
   {
    "tool": "Easel",
    "repo": "ZJU-REAL/Easel",
-   "gained": 152,
-   "stars": 4952,
+   "gained": 154,
+   "stars": 4971,
    "url": "https://github.com/ZJU-REAL/Easel"
+  },
+  {
+   "tool": "shadcn lint",
+   "repo": "shadcn-ui/lint",
+   "gained": 152,
+   "stars": 3550,
+   "url": "https://github.com/shadcn-ui/lint"
   },
   {
    "tool": "Sepia",
    "repo": "Nanako0129/sepia",
-   "gained": 59,
-   "stars": 3960,
+   "gained": 54,
+   "stars": 3966,
    "url": "https://github.com/Nanako0129/sepia"
   },
   {
    "tool": "vibe-wise",
    "repo": "nykooi1/vibe-wise",
-   "gained": 39,
-   "stars": 4454,
+   "gained": 34,
+   "stars": 4460,
    "url": "https://github.com/nykooi1/vibe-wise"
   },
   {
    "tool": "ReelMimic",
    "repo": "edenfunf/reelmimic",
-   "gained": 37,
-   "stars": 2099,
+   "gained": 27,
+   "stars": 2107,
    "url": "https://github.com/edenfunf/reelmimic"
   }
  ],
@@ -79,14 +79,14 @@
   {
    "tool": "Kagi",
    "stories": 3,
-   "points": 512,
+   "points": 614,
    "top_title": "Kagi Mail (public beta)",
    "top_url": "https://news.ycombinator.com/item?id=50615481"
   },
   {
    "tool": "Claude",
-   "stories": 6,
-   "points": 279,
+   "stories": 8,
+   "points": 285,
    "top_title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
    "top_url": "https://news.ycombinator.com/item?id=50605045"
   },
@@ -105,6 +105,13 @@
    "top_url": "https://news.ycombinator.com/item?id=50643836"
   },
   {
+   "tool": "Google AI Mode",
+   "stories": 1,
+   "points": 11,
+   "top_title": "Google Search now ignores `site:` operator for anonymous users",
+   "top_url": "https://news.ycombinator.com/item?id=50660723"
+  },
+  {
    "tool": "Replit",
    "stories": 3,
    "points": 6,
@@ -115,15 +122,8 @@
    "tool": "Perplexity",
    "stories": 2,
    "points": 4,
-   "top_title": "Self-Improving Skills",
-   "top_url": "https://news.ycombinator.com/item?id=50619991"
-  },
-  {
-   "tool": "CodeRabbit",
-   "stories": 1,
-   "points": 2,
-   "top_title": "GPT-6.2 Sol and Astra review: should you switch?",
-   "top_url": "https://news.ycombinator.com/item?id=50580780"
+   "top_title": "Freeze the Web with Perplexity Time Machine",
+   "top_url": "https://news.ycombinator.com/item?id=50669731"
   },
   {
    "tool": "LlamaIndex",
@@ -131,6 +131,13 @@
    "points": 2,
    "top_title": "OCRia-Nano-1",
    "top_url": "https://news.ycombinator.com/item?id=50651970"
+  },
+  {
+   "tool": "OpenCode",
+   "stories": 1,
+   "points": 1,
+   "top_title": "OpenCode Compaction",
+   "top_url": "https://news.ycombinator.com/item?id=50669372"
   },
   {
    "tool": "Suno",
